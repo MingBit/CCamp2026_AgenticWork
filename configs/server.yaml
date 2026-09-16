@@ -1,0 +1,29 @@
+# Relative paths resolve from this configuration file; CLI paths resolve from cwd.
+input_path: null
+metadata_path: null
+output_dir: ../results/real
+seed: 17
+workers: 2
+transient_retries: 1
+matrix_kind: auto
+counts_layer: null
+sample_column: null
+donor_column: null
+condition_column: null
+batch_column: null
+organism: null
+tissue: null
+biological_question: null
+primary_comparison: null # [reference_condition, test_condition]
+paired: false
+longitudinal: false
+de_min_cells_per_sample: 10
+de_min_total_count: 10
+mitochondrial_prefix: null
+n_neighbors: 15
+n_pcs: 30
+n_top_genes: 2000
+resolutions: [0.4, 0.8, 1.2]
+markers: {}
+tf_list: null
+tf_resource_organism: null
