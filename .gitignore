@@ -4,3 +4,6 @@ __pycache__/
 *.egg-info/
 results/
 smoke_data/
+# Large public dataset (~2.7 GB); download instructions in public_data/pbmc10k_multiome/README.md
+public_data/pbmc10k_multiome/*
+!public_data/pbmc10k_multiome/README.md
