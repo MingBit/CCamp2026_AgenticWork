@@ -8,7 +8,6 @@ import pandas as pd
 import anndata as ad
 from scipy import sparse
 from scrna_workflow.core import inspect_data, _countlike
-from scrna_workflow.graph import graph
 
 
 class CoreTests(unittest.TestCase):
@@ -45,22 +44,3 @@ class CoreTests(unittest.TestCase):
             ctx['config']['matrix_kind']='counts'
             with self.assertRaisesRegex(ValueError,'noninteger'):
                 inspect_data(ctx)
-
-    def test_graph_writes_human_readable_summary_and_overview(self):
-        with tempfile.TemporaryDirectory() as d:
-            root = Path(d) / 'output'
-            representation = ad.AnnData(np.arange(20, dtype=float).reshape(5, 4),
-                                        obs=pd.DataFrame(index=list('abcde')))
-            representation.obsm['X_pca'] = representation.X[:, :2]
-            representation.layers['counts'] = representation.X.copy()
-            representation.uns['workflow_has_counts'] = True
-            source = root / 'qc' / 'filtered.h5ad'
-            source.parent.mkdir(parents=True)
-            representation.write_h5ad(source)
-            ctx = {'root': root, 'config': {'n_neighbors': 2},
-                    'artifacts': {'qc': {'outputs': {'dataset': str(source)}}}, 'seed': 1}
-            result = graph(ctx)
-            self.assertEqual(result['status'], 'completed')
-            self.assertTrue(Path(result['outputs']['summary']).is_file())
-            self.assertTrue(Path(result['outputs']['overview']).is_file())
-            self.assertIn('Expression graph overview', Path(result['outputs']['summary']).read_text())

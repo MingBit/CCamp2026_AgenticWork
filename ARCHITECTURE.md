@@ -5,9 +5,7 @@
 | Inspection | Orchestrator/QC | Local h5ad or 10x, optional metadata | Source snapshot, inventory, aligned dataset |
 | QC | QC specialist | Inspection dataset | QC metrics/thresholds, filtered counts |
 | Representation | Member 1 | Filtered dataset | Log representation, selected genes, PCA |
-| Cell graph | Member 2 | PCA and cell IDs | Versioned cell neighbors, edges, diagnostics |
-| Gene graph | Graph specialist | QC-filtered normalized expression | Gene neighborhoods, edges, diagnostics |
-| Graph interpretation | Graph specialist | PCA, gene graph, markers, candidate regulons | Cross-evidence interpretation |
+| Graph | Member 2 | PCA and cell IDs | Versioned neighbors, edges, diagnostics |
 | Clustering | Member 1 | Validated graph | Labels, marker evidence, annotation confidence |
 | Regulon | Member 3 | Counts + compatible local TF resource | Candidate TF–target edges, cell activities |
 | Discovery | Integration | Annotated counts + design | Sample summaries, pseudobulk, eligible DE |
@@ -16,20 +14,13 @@
 
 ```mermaid
 flowchart LR
-  input[Read-only input] --> inspection --> qc
-  qc --> representation --> graph[Cell graph] --> clustering
-  qc --> gene_graph[Gene graph]
+  input[Read-only input] --> inspection --> qc --> representation --> graph --> clustering
   clustering --> regulon
   clustering --> discovery
-  representation --> graph_interpretation[Compare PCA, markers, regulon]
-  gene_graph --> graph_interpretation
-  regulon --> graph_interpretation
-  clustering --> graph_interpretation
   regulon --> validation
   discovery --> validation
   qc --> validation
   graph --> validation
-  gene_graph --> validation
   validation --> report
   validation -. review issue; max 2 revisions .-> orchestrator
   regulon -. candidate state evidence; review only .-> clustering
