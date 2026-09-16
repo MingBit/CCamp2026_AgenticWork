@@ -1,0 +1,51 @@
+test_declared_counts_must_be_integer (test_core.CoreTests.test_declared_counts_must_be_integer) ... Matplotlib is building the font cache; this may take a moment.
+ok
+test_metadata_alignment_required (test_core.CoreTests.test_metadata_alignment_required) ... ok
+test_noncounts_not_misrepresented (test_core.CoreTests.test_noncounts_not_misrepresented) ... ok
+test_source_and_counts_preserved (test_core.CoreTests.test_source_and_counts_preserved) ... ok
+test_integrity_and_design_guards (test_downstream.DownstreamTests.test_integrity_and_design_guards) ... ok
+test_synthetic_run_and_resume (test_integration.IntegrationTests.test_synthetic_run_and_resume) ... OMP: Info #276: omp_set_nested routine deprecated, please use omp_set_max_active_levels instead.
+/Users/mingwu/Documents/ChatGPT/CCamp2026_AgenticWork/scrna_workflow/core.py:342: FutureWarning: In the future, the default backend for leiden will be igraph instead of leidenalg.
+
+ To achieve the future defaults please pass: flavor="igraph" and n_iterations=2.  directed must also be False to work with igraph's implementation.
+  sc.tl.leiden(a,resolution=float(r),key_added="candidate",random_state=seed)
+WARNING: .obsp["connectivities"] have not been computed using umap
+ok
+test_artifact_tampering_invalidates_checkpoint (test_runner.RunnerTests.test_artifact_tampering_invalidates_checkpoint) ... ok
+test_dependency_graph_acyclic (test_runner.RunnerTests.test_dependency_graph_acyclic) ... ok
+test_output_lock_prevents_overwrite (test_runner.RunnerTests.test_output_lock_prevents_overwrite) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 30.228s
+
+OK
+{
+  "status": "completed",
+  "output_dir": "/private/var/folders/50/lh3smv2n3z3crkqhkd0trc0rm2f0g6/T/tmp10_otpkx/run",
+  "tasks": {
+    "inspection": "completed",
+    "qc": "completed",
+    "representation": "completed",
+    "graph": "completed",
+    "clustering": "completed",
+    "regulon": "completed",
+    "discovery": "completed",
+    "validation": "completed",
+    "report": "completed"
+  }
+}
+{
+  "status": "completed",
+  "output_dir": "/private/var/folders/50/lh3smv2n3z3crkqhkd0trc0rm2f0g6/T/tmp10_otpkx/run",
+  "tasks": {
+    "inspection": "completed",
+    "qc": "completed",
+    "representation": "completed",
+    "graph": "completed",
+    "clustering": "completed",
+    "discovery": "completed",
+    "regulon": "completed",
+    "validation": "completed",
+    "report": "completed"
+  }
+}
