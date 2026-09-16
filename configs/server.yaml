@@ -7,6 +7,7 @@ workers: 2
 transient_retries: 1
 matrix_kind: auto
 counts_layer: null
+gene_symbol_column: null # Optional var column used for RPL/RPS filtering.
 sample_column: null
 donor_column: null
 condition_column: null
@@ -25,5 +26,8 @@ n_pcs: 30
 n_top_genes: 2000
 resolutions: [0.4, 0.8, 1.2]
 markers: {}
+knowledge_base_path: null # Local YAML marker knowledge base with a source.
+annotation_backend: markers # Set ollama for local LLM review of observed marker evidence.
+annotation_model: qwen2.5:7b
 tf_list: null
 tf_resource_organism: null

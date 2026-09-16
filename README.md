@@ -1,6 +1,25 @@
 # Reproducible single-cell evidence workflow
 
-A local Python workflow connecting specialist functions through a dependency DAG and shared, versioned artifacts. It runs without an LLM or network connection; scientific calculations are executable, and biological interpretation remains evidence-bounded. The coding agents implementing the workflow are distinct from its deterministic runtime specialists. No biological dataset was supplied with this project. Any bundled execution evidence is **synthetic software-test output**, not biological findings.
+A local Python workflow connecting specialist functions through a dependency DAG and shared, versioned artifacts. Scientific calculations remain executable and evidence-bounded. The `ask` command uses a local Ollama model by default to plan a natural-language request and review cluster annotations against a local marker knowledge base; `run` and `ask --planner rules` work without an LLM. The repository can be verified with a public PBMC3k count dataset when it is installed locally. One donor and one condition do not support condition-level differential expression.
+
+The package separates orchestration, specialist ownership, and executable tools, following the planner/executor/tool-registry separation in [CellAgent](https://github.com/liu-shiqiang/CellAgent/tree/master). `cli.py` provides terminal commands; `orchestrator.py` owns dependencies, run state, and checkpoints; `agents/` assigns each stage to one specialist; `tools/` contains the scientific functions. `core.py`, `downstream.py`, and `runner.py` retain import compatibility. CellAgent is an architecture reference, not a runtime dependency.
+
+```text
+scrna_workflow/
+  cli.py             ask, run, resume, plan, tools
+  question.py        conservative question parsing and result summary
+  llm_planner.py     local LLM question-to-workflow planning
+  planner.py         offline stage selection rules
+  orchestrator.py    dependency DAG, checkpoints, shared run state
+  agents/            cell_state, annotation, network, regulon, discovery, evaluator, reporter
+  knowledge/         sourced local marker knowledge bases
+  tools/             inspection, QC, preprocessing, graph, clustering, annotation,
+                     regulon, pseudobulk discovery, validation, reporting
+  core.py            compatibility imports
+  downstream.py      compatibility imports
+  runner.py          compatibility entry point
+tests/               CLI, scientific guards, end-to-end resume
+```
 
 ## Run on a server
 
@@ -11,11 +30,37 @@ python -m venv .venv
 . .venv/bin/activate
 pip install -r requirements-tested.txt
 pip install --no-deps .
-python -m scrna_workflow --config configs/server.yaml --input /data/counts.h5ad --output /work/results/run01
-python -m scrna_workflow --config configs/server.yaml --input /data/counts.h5ad --output /work/results/run01 --resume
+python -m scrna_workflow plan --config configs/server.yaml
+python -m scrna_workflow tools
+python -m scrna_workflow run --config configs/server.yaml --input /data/counts.h5ad --markers /data/markers.yaml --output /work/results/run01
+python -m scrna_workflow run --config configs/server.yaml --input /data/counts.h5ad --markers /data/markers.yaml --output /work/results/run01 --resume
 ```
 
+For a plain-language request, use `ask`. Include an existing `.h5ad` or 10x `.h5` path in the question, or pass `--input` for a 10x Matrix Market directory. If `--output` is omitted, a new timestamped directory is created under `results/`. The LLM proposes a structured plan, the scheduler adds dependencies, and `question_summary.md` reports only recorded outputs. An explicit QC-only request runs inspection and QC.
+
+```bash
+python -m scrna_workflow ask "Analyze the human PBMC cells in /data/pbmc.h5ad and annotate the clusters"
+python -m scrna_workflow ask "Analyze /data/pbmc.h5ad and only do the QC"
+python -m scrna_workflow ask "Which cell types and condition changes are present?" \
+  --input /data/pbmc.h5ad --knowledge-base /data/markers.yaml \
+  --config /data/study.yaml --output /work/results/question01
+```
+
+By default, `ask` sends the question text and already configured fields to an installed **local** Ollama model (`qwen2.5:7b`). Start Ollama before using it, or select another installed model with `--llm-model`. The model returns a structured plan containing explicit paths, study fields, and requested analyses. The CLI validates paths against the user's words, maps analyses to a fixed tool list, and adds dependencies. It never executes a model-generated shell command. For offline stage selection and marker overlap annotation, add `--planner rules --annotation-backend markers`. If Ollama is unavailable, the default command fails with a setup message. The expression matrix is never sent to Ollama; cloud model names ending in `:cloud` are rejected.
+
+When annotation is requested, the Ollama annotation agent reviews positive cluster markers against a local knowledge base. The bundled human PBMC panel is used only when both human species and PBMC tissue are explicit in the question or config. It is derived from the [Seurat PBMC3k marker tutorial](https://satijalab.org/seurat/articles/pbmc3k_tutorial); other tissues require `--knowledge-base` or `--markers`. A model label is accepted only when at least two observed positive markers support a type in that database. Its proposed labels, accepted labels, supporting genes, and model reasons are saved in `clustering/llm_annotation_audit.json`. The database and model are recorded in run state. Unknown and ambiguous remain valid results.
+
+`ask` interprets explicit local paths and runs the established scientific steps; it does not infer biological facts from the sentence. If no suitable marker panel is supplied, cluster identities remain `unknown`. Condition comparisons need sample/donor/condition columns and a reviewed contrast in the YAML; unsupported analyses are reported as skipped. The selected plan is stored in the run manifest. The optional local LLM route follows [Ollama's structured-output API](https://docs.ollama.com/capabilities/structured-outputs).
+
 Set `primary_comparison: [reference, test]` for unpaired pseudobulk DE (requires at least three independent donors per condition). Paired or longitudinal designs are explicitly skipped pending a reviewed design. Set sample/donor/condition columns, organism, matrix provenance, and locally supplied resource paths in a copied YAML before scientific use. CLI paths are relative to the working directory; YAML paths are relative to the YAML file. Supported count inputs and QC details are documented in `core.py`. Metadata must have cell identifiers in its first column and align exactly to the input cells. Input files remain unchanged; the inspection stage keeps a source snapshot.
+
+Preprocessing removes features whose gene symbols begin with `RPL` or `RPS` (case insensitive) before normalization and PCA. It uses `var['gene_symbols']`, `gene_symbol`, or `gene_name` when present, otherwise feature names; set `gene_symbol_column` in the YAML when another column holds symbols. The QC dataset and source snapshot retain the original genes, while `representation/removed_rpl_rps_genes.tsv` records exclusions. To annotate clusters, supply `--markers` with a local YAML/JSON file, or set `markers` in the workflow YAML. Marker names match gene symbols even when feature IDs are Ensembl IDs. Labels require at least two positive ranked markers and remain `unknown` or `ambiguous` when evidence is insufficient. Open `clustering/report.html` for QC, selected PCs, clusters, annotations, and top markers.
+
+```yaml
+markers:
+  T cells: [CD3D, CD3E, TRAC]
+  B cells: [MS4A1, CD79A, CD79B]
+```
 
 A portable container specification is provided (container build not tested here):
 
@@ -26,40 +71,42 @@ docker run --rm -v /server/data:/data:ro -v /server/results:/results scrna-workf
 
 For organism, comparison and donor-aware settings, mount a configuration file and pass `--config /data/config.yaml`. Set thread limits appropriate to your scheduler; `workers` controls concurrent specialist tasks, not BLAS/Numba threads. Memory use depends on cell/feature counts; no GPU is required. Large datasets may need an HPC allocation, particularly regulon correlation and embedding. Do not run two orchestrators in the same output directory.
 
-## Synthetic integration test
+## Public PBMC integration test
 
 ```bash
 export MPLBACKEND=Agg OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 NUMBA_NUM_THREADS=1
-python -m scrna_workflow.synthetic --output /tmp/scrna-smoke
-python -m scrna_workflow --config /tmp/scrna-smoke/config.yaml
-python -m scrna_workflow --config /tmp/scrna-smoke/config.yaml --resume
+python -m scrna_workflow ask "Analyze the human PBMC cells in results/pbmc3k/pbmc3k_counts_annotated.h5ad and annotate the clusters" \
+  --config results/pbmc3k/config.yaml \
+  --knowledge-base scrna_workflow/knowledge/human_pbmc_markers.yaml \
+  --output /tmp/pbmc-workflow-check
 python -m unittest discover -s tests -v
+# Optional fresh end-to-end rerun (uses the public PBMC dataset):
+SCRNA_RUN_PBMC_INTEGRATION=1 python -m unittest discover -s tests -p test_integration.py -v
 ```
 
-The generator explicitly marks a 240-cell, 120-feature dataset with six simulated samples. It supplies artificial TF identifiers solely to exercise the candidate-module code. These identifiers are not organism-specific biological resources.
+The optional integration test uses the locally installed public PBMC3k dataset. It is skipped in routine unit test runs to avoid repeatedly running the full pipeline. The local Ollama annotation check requires an installed model; unit tests mock model responses to validate plan and label boundaries. Reference labels in the public PBMC file were inferred from expression and are not independent biological ground truth.
 
 ## Architecture and ownership
 
 ```mermaid
 flowchart TD
-  O[Orchestrator: config, input hashes, checkpoints] --> I[Inspection and metadata alignment]
-  I --> Q[Sample-aware QC]
-  Q --> R[Member 1: normalization and PCA]
-  R --> G[Member 2: versioned expression graph]
-  G --> C[Member 1: clustering and evidence-based annotation]
-  C --> T[Member 3: candidate TF-target programs]
-  C --> D[Discovery: sample summaries and pseudobulk]
+  O[CLI and orchestrator] --> I[Cell-state agent: inspection and QC]
+  I --> R[Cell-state agent: normalization and PCA]
+  R --> G[Network agent: expression graph]
+  G --> C[Cell-state agent: clustering and marker annotation]
+  C --> T[Regulon agent: candidate TF-target programs]
+  C --> D[Discovery agent: sample summaries and pseudobulk]
   T --> V[Validation and critique]
   D --> V
-  Q --> V
+  I --> V
   G --> V
-  V --> P[Scientific report and figures]
+  V --> P[Reporting agent: scientific report and figures]
   V -. actionable issues, at most 2 reviewed revisions .-> O
   T -. state evidence for human annotation review .-> C
   O <--> E[(Shared evidence workspace)]
 ```
 
-The dashed edges are review requests, not automatic circular redefinition of states. Runtime execution follows the acyclic dependencies in `runner.DEPS`. Regulon and discovery tasks run concurrently after clustering. Only the orchestrator writes run state; every specialist owns its named subdirectory. Large arrays travel by artifact path, never in agent messages.
+The dashed edges are review requests, not automatic circular redefinition of states. Runtime execution follows the acyclic dependencies in `orchestrator.DEPS`. Regulon and discovery tasks run concurrently after clustering. Only the orchestrator writes run state; every specialist owns its named subdirectory. Large arrays travel by artifact path, never in agent messages.
 
 Each specialist accepts `ctx = {config, root, artifacts, seed}` and returns JSON-compatible `status`, `input_references`, `outputs`, `metrics`, `warnings`, and `recommended_next_actions`. Outputs are absolute paths. `run_state.json`, `manifest.json`, per-task `result.json`, and `events.jsonl` record input/code/environment hashes, parameters, task calls, results and decisions. Internal numerical operations are documented by function implementations and task metrics; this is task-level tracing, not tracing every library function call.
 
