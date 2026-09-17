@@ -74,9 +74,12 @@ def summarize_run(output_dir, question):
     annotation_file = cluster.get("outputs", {}).get("annotations")
     if annotation_file and Path(annotation_file).is_file():
         annotations = json.loads(Path(annotation_file).read_text(encoding="utf-8"))
-        lines.append("Marker-based cluster labels: " + "; ".join(
+        provisional = cluster.get("metrics", {}).get("annotation_backend") == "ollama_provisional"
+        lines.append(("Provisional LLM marker hypotheses: " if provisional else "Marker-based cluster labels: ") + "; ".join(
             f"{item['cluster']} = {item['label']} (heuristic confidence {item['confidence']:.2f})"
             for item in annotations) + ".")
+        if provisional:
+            lines.append("No compatible annotation reference was used; review these identities before biological inference.")
         if all(item["label"] in {"unknown", "ambiguous"} for item in annotations):
             lines.append("No supported cell identities were assigned. Supply suitable multi-gene marker sets or a validated reference.")
     elif cluster.get("status") in {"failed", "blocked", "skipped"}:

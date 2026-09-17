@@ -5,7 +5,7 @@ from .annotation import annotate_clusters
 from .embedding import compute_umap, plot_embedding
 from .markers import rank_cluster_markers
 from .cluster_report import render_cluster_report
-from .knowledge import load_knowledge_base
+from .knowledge import load_knowledge_base, detected_immune_panel
 
 
 def _cluster(adata, resolutions, seed):
@@ -50,17 +50,40 @@ def clustering(ctx):
             raise ValueError("Knowledge-base organism conflicts with workflow organism")
     backend = config.get("annotation_backend", "markers")
     annotation_audit = []
-    if backend == "ollama" and marker_sets:
-        from ..agents.annotation import OllamaAnnotationAgent
-        annotations, annotation_audit = OllamaAnnotationAgent(
-            config.get("annotation_model", "qwen2.5:7b")
-        ).annotate(adata, markers, marker_sets, config.get("gene_symbol_column"))
-    elif backend == "markers" or not marker_sets:
+    if backend == "ollama":
+        detected_panel = None
+        if not marker_sets:
+            detected_panel = detected_immune_panel(
+                adata, markers, config.get("organism"), config.get("gene_symbol_column"))
+            if detected_panel:
+                marker_sets, knowledge = load_knowledge_base(detected_panel)
+                knowledge["selection"] = "detected multi-lineage immune marker signature"
+        if detected_panel:
+            annotations = annotate_clusters(adata, markers, marker_sets,
+                                            config.get("gene_symbol_column"))
+            adata.obs["annotation_source"] = "auto_detected_immune_marker_panel"
+            warnings.append("Bundled human immune marker panel was selected from a multi-lineage expression signature; labels remain computational inferences.")
+        elif marker_sets:
+            from ..agents.annotation import OllamaAnnotationAgent
+            agent = OllamaAnnotationAgent(config.get("annotation_model", "qwen2.5:7b"))
+            annotations, annotation_audit = agent.annotate(
+                adata, markers, marker_sets, config.get("gene_symbol_column")
+            )
+        else:
+            from ..agents.annotation import OllamaAnnotationAgent
+            agent = OllamaAnnotationAgent(config.get("annotation_model", "qwen2.5:7b"))
+            annotations, annotation_audit = agent.annotate_from_markers(
+                adata, markers, config.get("organism"), config.get("tissue"),
+                config.get("gene_symbol_column"),
+            )
+            knowledge = {"path": None, "source": "local LLM prior knowledge; no external reference"}
+            warnings.append("Cell identities are provisional LLM hypotheses from observed markers; no reference database validated them.")
+    elif backend == "markers":
         annotations = annotate_clusters(adata, markers, marker_sets,
                                         config.get("gene_symbol_column"))
     else:
         raise ValueError("annotation_backend must be markers or ollama")
-    if not marker_sets:
+    if not marker_sets and backend == "markers":
         warnings.append("No compatible marker knowledge base supplied: biological annotations remain unknown.")
     warning = compute_umap(adata, seed)
     if warning:
@@ -87,7 +110,9 @@ def clustering(ctx):
         markers, diagnostics, annotations, warnings,
     ))
     metrics = {"method": "leiden", "selected": selected, "cells": adata.n_obs,
-               "annotation_backend": backend if marker_sets else "none",
+               "annotation_backend": ("auto_immune_marker_panel" if backend == "ollama" and detected_panel
+                                      else "ollama_provisional" if backend == "ollama" and not marker_sets
+                                      else backend if marker_sets else "none"),
                "knowledge_base": knowledge,
                "annotation_confidence_type": "heuristic marker overlap, not calibrated probability"}
     return _result(outputs, metrics, warnings, inputs=[source])

@@ -1,12 +1,13 @@
 # Reproducible single-cell evidence workflow
 
-A local Python workflow connecting specialist functions through a dependency DAG and shared, versioned artifacts. Scientific calculations remain executable and evidence-bounded. The `ask` command uses a local Ollama model by default to plan a natural-language request and review cluster annotations against a local marker knowledge base; `run` and `ask --planner rules` work without an LLM. The repository can be verified with a public PBMC3k count dataset when it is installed locally. One donor and one condition do not support condition-level differential expression.
+A local Python workflow connecting specialist functions through a dependency DAG and shared, versioned artifacts. Scientific calculations remain executable and evidence-bounded. The `ask` command uses a local Ollama model by default to plan a natural-language request and review cluster markers for cell annotation; a marker knowledge base is optional. `run` and `ask --planner rules` can work without an LLM. The repository can be verified with a public PBMC3k count dataset when it is installed locally. One donor and one condition do not support condition-level differential expression.
 
 The package separates orchestration, specialist ownership, and executable tools, following the planner/executor/tool-registry separation in [CellAgent](https://github.com/liu-shiqiang/CellAgent/tree/master). `cli.py` provides terminal commands; `orchestrator.py` owns dependencies, run state, and checkpoints; `agents/` assigns each stage to one specialist; `tools/` contains the scientific functions. `core.py`, `downstream.py`, and `runner.py` retain import compatibility. CellAgent is an architecture reference, not a runtime dependency.
 
 ```text
 scrna_workflow/
-  cli.py             ask, run, resume, plan, tools
+  cli.py             ask, chat, run, resume, plan, tools
+  interactive.py     follow-up answers from saved run evidence
   question.py        conservative question parsing and result summary
   llm_planner.py     local LLM question-to-workflow planning
   planner.py         offline stage selection rules
@@ -46,15 +47,29 @@ python -m scrna_workflow ask "Which cell types and condition changes are present
   --config /data/study.yaml --output /work/results/question01
 ```
 
+For an interactive session, use `chat`. It accepts any supported `.h5ad`, 10x `.h5`, or 10x Matrix Market directory. The first command runs inspection, QC, preprocessing, graph building, clustering, and annotation once; then a `scRNA>` prompt accepts follow-up questions. Reopen the same artifacts later with `--run-dir`. `exit` ends the conversation. Follow-up answers are stored in `conversation.jsonl` and do not rerun clustering.
+
+```bash
+python -m scrna_workflow chat --input /data/cells.h5ad \
+  --output /work/results/my_cells
+# At the prompt: What markers support cluster 4?
+# Later, without running clustering again:
+python -m scrna_workflow chat --run-dir /work/results/my_cells
+```
+
+Add `--knowledge-base /data/tissue_markers.yaml` when a compatible, sourced reference is available. It makes labels more traceable than the reference-free provisional mode.
+
+The local model receives a compact evidence packet from saved run artifacts, not the expression matrix. It can explain recorded QC, clusters, markers, and annotation uncertainty. Questions requiring an analysis that has not run, such as a condition-level differential-expression test, are not answered from clustering alone. Without a marker knowledge base, any assigned identity is explicitly provisional and needs independent review.
+
 By default, `ask` sends the question text and already configured fields to an installed **local** Ollama model (`qwen2.5:7b`). Start Ollama before using it, or select another installed model with `--llm-model`. The model returns a structured plan containing explicit paths, study fields, and requested analyses. The CLI validates paths against the user's words, maps analyses to a fixed tool list, and adds dependencies. It never executes a model-generated shell command. For offline stage selection and marker overlap annotation, add `--planner rules --annotation-backend markers`. If Ollama is unavailable, the default command fails with a setup message. The expression matrix is never sent to Ollama; cloud model names ending in `:cloud` are rejected.
 
-When annotation is requested, the Ollama annotation agent reviews positive cluster markers against a local knowledge base. The bundled human PBMC panel is used only when both human species and PBMC tissue are explicit in the question or config. It is derived from the [Seurat PBMC3k marker tutorial](https://satijalab.org/seurat/articles/pbmc3k_tutorial); other tissues require `--knowledge-base` or `--markers`. A model label is accepted only when at least two observed positive markers support a type in that database. Its proposed labels, accepted labels, supporting genes, and model reasons are saved in `clustering/llm_annotation_audit.json`. The database and model are recorded in run state. Unknown and ambiguous remain valid results.
+When annotation is requested, the workflow uses a supplied marker panel if present. Without one, it automatically selects the bundled human immune panel only if positive cluster markers support at least three broad immune lineages and the configured organism is human or unspecified. This panel is derived from the [Seurat PBMC3k marker tutorial](https://satijalab.org/seurat/articles/pbmc3k_tutorial); its automatic selection and inferred labels are recorded in the run. Other datasets use local Ollama to propose **provisional broad identities** from observed positive markers. Code accepts a reference-free label only when at least two cited genes occur in that cluster's positive marker list; otherwise it stays `unknown` or `ambiguous`. An all-unknown response gets one targeted retry. These calls are hypotheses, not validated annotation. Model proposals and decisions are saved in `clustering/llm_annotation_audit.json` when Ollama is used.
 
-`ask` interprets explicit local paths and runs the established scientific steps; it does not infer biological facts from the sentence. If no suitable marker panel is supplied, cluster identities remain `unknown`. Condition comparisons need sample/donor/condition columns and a reviewed contrast in the YAML; unsupported analyses are reported as skipped. The selected plan is stored in the run manifest. The optional local LLM route follows [Ollama's structured-output API](https://docs.ollama.com/capabilities/structured-outputs).
+`ask` interprets explicit local paths and runs the established scientific steps; it does not infer biological facts from the sentence. Without a suitable marker panel, identities are provisional LLM hypotheses or remain `unknown`. Condition comparisons need sample/donor/condition columns and a reviewed contrast in the YAML; unsupported analyses are reported as skipped. The selected plan is stored in the run manifest. The local LLM route follows [Ollama's structured-output API](https://docs.ollama.com/capabilities/structured-outputs).
 
 Set `primary_comparison: [reference, test]` for unpaired pseudobulk DE (requires at least three independent donors per condition). Paired or longitudinal designs are explicitly skipped pending a reviewed design. Set sample/donor/condition columns, organism, matrix provenance, and locally supplied resource paths in a copied YAML before scientific use. CLI paths are relative to the working directory; YAML paths are relative to the YAML file. Supported count inputs and QC details are documented in `core.py`. Metadata must have cell identifiers in its first column and align exactly to the input cells. Input files remain unchanged; the inspection stage keeps a source snapshot.
 
-Preprocessing removes features whose gene symbols begin with `RPL` or `RPS` (case insensitive) before normalization and PCA. It uses `var['gene_symbols']`, `gene_symbol`, or `gene_name` when present, otherwise feature names; set `gene_symbol_column` in the YAML when another column holds symbols. The QC dataset and source snapshot retain the original genes, while `representation/removed_rpl_rps_genes.tsv` records exclusions. To annotate clusters, supply `--markers` with a local YAML/JSON file, or set `markers` in the workflow YAML. Marker names match gene symbols even when feature IDs are Ensembl IDs. Labels require at least two positive ranked markers and remain `unknown` or `ambiguous` when evidence is insufficient. Open `clustering/report.html` for QC, selected PCs, clusters, annotations, and top markers.
+Preprocessing removes features whose gene symbols begin with `RPL` or `RPS` (case insensitive) before normalization and PCA. It uses `var['gene_symbols']`, `gene_symbol`, or `gene_name` when present, otherwise feature names; set `gene_symbol_column` in the YAML when another column holds symbols. The QC dataset and source snapshot retain the original genes, while `representation/removed_rpl_rps_genes.tsv` records exclusions. A local marker panel can be supplied with `--markers` or in the workflow YAML. Marker names match gene symbols even when feature IDs are Ensembl IDs. Labels require at least two positive ranked markers and remain `unknown` or `ambiguous` when evidence is insufficient. Open the self-contained `clustering/report.html` to filter clusters, color the embedding by a top marker gene, inspect cells on hover, and review QC, selected PCs, annotations, and marker tables.
 
 ```yaml
 markers:
@@ -117,7 +132,7 @@ Resume requires identical input bytes, code, configuration and package versions.
 - Count-like integer values are a heuristic, not proof of raw provenance. Explicit `matrix_kind: counts` or a documented count layer is preferred; never reinterpret scaled residuals as counts.
 - QC thresholds are within-sample robust outlier rules and require review. Doublet calls and ambient correction have method/input prerequisites; unavailable analyses are reported, not silently assumed complete.
 - Batch correction is not automatic. Biological condition and batch may be inseparable, and integration can remove genuine signals.
-- Cluster markers are descriptive discovery evidence, not donor-replicated condition DE. Cell identity needs supplied multi-gene marker evidence; absent evidence yields unknown labels.
+- Cluster markers are descriptive discovery evidence, not donor-replicated condition DE. Reference-free LLM labels are provisional hypotheses; two matching genes verify only that the model cited observed markers, not that the cell identity is correct.
 - Expression graph edges and embedding distances do not imply physical contact. Spatial graphs, ligand–receptor networks, and TF–target networks require distinct resources and definitions.
 - TF coexpression without motif support is a candidate module, not a validated regulon or causal interaction. Module activities are relative computational scores.
 - Condition-level inference requires independent biological replication and a specified design; missing donor identifiers cannot be repaired by treating cells as replicates. Paired/longitudinal designs must be preserved.

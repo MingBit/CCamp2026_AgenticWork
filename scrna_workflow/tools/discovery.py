@@ -24,13 +24,18 @@ def discovery(ctx):
     sample = cfg.get("sample_column")
     condition = cfg.get("condition_column")
     donor = cfg.get("donor_column")
-    label = "annotation" if "annotation" in a.obs and (a.obs["annotation"].astype(str) != "unknown").any() else "cluster"
+    provisional = ("annotation_source" in a.obs and
+                   a.obs["annotation_source"].astype(str).eq("provisional_llm_no_reference").all())
+    label = ("annotation" if not provisional and "annotation" in a.obs
+             and (a.obs["annotation"].astype(str) != "unknown").any() else "cluster")
     if label not in a.obs or not sample or sample not in a.obs:
         return _result("skipped", [source], warnings=["Sample-level discovery requires sample_column and clustering labels."], actions=["Supply validated biological sample identifiers; do not substitute individual cells."])
     if a.obs[sample].isna().any():
         return _result("skipped", [source], warnings=["Missing sample identifiers prevent defensible sample-level aggregation."])
     obs = a.obs.copy()
     warnings = []
+    if provisional:
+        warnings.append("Reference-free LLM labels are provisional; discovery groups cells by cluster IDs.")
     columns = list(dict.fromkeys(c for c in (condition, donor, cfg.get("batch_column")) if c and c in obs))
     metadata = obs.groupby(sample, observed=True)[columns].first() if columns else pd.DataFrame(index=pd.Index(obs[sample].unique(), name=sample))
     inconsistent = [c for c in columns if (obs.groupby(sample, observed=True)[c].nunique(dropna=False) > 1).any()]

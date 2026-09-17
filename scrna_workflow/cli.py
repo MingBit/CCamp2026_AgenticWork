@@ -1,5 +1,6 @@
 """Command-line interface for questions, planning, and running analyses."""
 import argparse
+from datetime import datetime, timezone
 import json
 from pathlib import Path
 import sys
@@ -99,6 +100,12 @@ def main(argv=None):
     ask.add_argument("--llm-model", default="qwen2.5:7b", help="Installed local Ollama model")
     ask.add_argument("--annotation-backend", choices=("ollama", "markers"),
                      help="Use local Ollama or direct marker overlap for cell labels")
+    chat = sub.add_parser("chat", help="Cluster a dataset once, then ask follow-up questions")
+    _add_run_options(chat)
+    chat.add_argument("--run-dir", help="Reopen a completed clustering run without rerunning it")
+    chat.add_argument("--llm-model", default="qwen2.5:7b", help="Installed local Ollama model")
+    chat.add_argument("--annotation-backend", choices=("ollama", "markers"),
+                      help="Initial cluster annotation method")
     plan = sub.add_parser("plan", help="Show agent ownership and task dependencies")
     plan.add_argument("--config", help="Optional YAML configuration")
     sub.add_parser("tools", help="List executable scientific tools")
@@ -155,6 +162,25 @@ def main(argv=None):
             status = execute(config, resume=args.resume)
             print("\n" + summarize_run(config["output_dir"], question))
             return status
+        if args.command == "chat":
+            from .interactive import run_chat
+            if args.run_dir:
+                return run_chat(args.run_dir, model=args.llm_model)
+            config = _config(args)
+            if not config.get("input_path"):
+                raise ValueError("Start chat with --input or a config containing input_path")
+            if not config.get("output_dir"):
+                stamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%S%fZ")
+                config["output_dir"] = str((Path.cwd() / "results" / f"chat_{stamp}").resolve())
+            config["requested_tasks"] = ["clustering"]
+            config.setdefault("biological_question", "Interactive clustering and annotation")
+            if not config.get("knowledge_base_path") and not config.get("markers"):
+                from .tools.knowledge import built_in_pbmc_knowledge
+                config["knowledge_base_path"] = built_in_pbmc_knowledge(config, "")
+            config["annotation_backend"] = args.annotation_backend or "ollama"
+            config["annotation_model"] = args.llm_model
+            status = execute(config, resume=args.resume)
+            return status if status else run_chat(config["output_dir"], model=args.llm_model)
         return execute(_config(args), resume=args.resume)
     except (OSError, ValueError, RuntimeError) as exc:
         print(f"ERROR: {exc}", file=sys.stderr)
