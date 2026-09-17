@@ -3,7 +3,184 @@ import hashlib
 import json
 from pathlib import Path
 
+from matplotlib import pyplot as plt
+import numpy as np
+from scipy import sparse
+
 from .core import _dir, _json, _previous, _result
+
+
+def _multimodal_dir(ctx):
+    root = Path(ctx["root"])
+    out = root if root.name == "multimodal analysis output" else root / "multimodal analysis output"
+    out.mkdir(parents=True, exist_ok=True)
+    return out
+
+
+def spatial_cell_graph(ctx, dataset_path=None, n_neighbors=8):
+    """Build a spatial KNN graph from Xenium cell centroids."""
+    import anndata as ad
+    import numpy as np
+    import pandas as pd
+    from scipy import sparse
+    from sklearn.neighbors import NearestNeighbors
+
+    path = dataset_path or _previous(ctx, "graph")
+    data = ad.read_h5ad(path)
+    if "spatial" not in data.obsm:
+        raise ValueError("Spatial graph requires obsm['spatial'] with x/y coordinates.")
+    coordinates = np.asarray(data.obsm["spatial"], dtype=float)[:, :2]
+    k = min(int(n_neighbors), data.n_obs - 1)
+    if k < 1:
+        raise ValueError("At least three cells are required for a spatial graph.")
+    distances, indices = NearestNeighbors(n_neighbors=k + 1).fit(coordinates).kneighbors(coordinates)
+    rows = np.repeat(np.arange(data.n_obs), k)
+    columns = np.concatenate([ids[ids != row][:k] for row, ids in enumerate(indices)])
+    values = np.concatenate([dist[ids != row][:k] for row, (ids, dist) in enumerate(zip(indices, distances))])
+    scale = max(float(np.median(values[values > 0])) if (values > 0).any() else 1.0, 1e-12)
+    weights = sparse.csr_matrix((np.exp(-values / scale), (rows, columns)), shape=(data.n_obs, data.n_obs))
+    weights = weights.maximum(weights.T)
+    weights.setdiag(0)
+    weights.eliminate_zeros()
+    upper = sparse.triu(weights).tocoo()
+    out = _multimodal_dir(ctx)
+    edges = pd.DataFrame({"source": data.obs_names[upper.row], "target": data.obs_names[upper.col], "weight": upper.data})
+    edge_path = out / "spatial_cell_edges.csv"
+    edges.to_csv(edge_path, index=False)
+    data.obsp["spatial_connectivities"] = weights
+    data.uns["spatial_graph"] = {"n_neighbors": k, "metric": "euclidean", "kernel": "exp(-distance / median_positive_distance)"}
+    dataset = out / "spatial_graph.h5ad"
+    data.write_h5ad(dataset)
+    return _result(outputs={"dataset": str(dataset), "edges": str(edge_path)},
+                   metrics={"nodes": data.n_obs, "edges": len(edges), "n_neighbors": k},
+                   warnings=["Spatial edges indicate centroid proximity, not physical or molecular interaction."], inputs=[str(path)])
+
+
+def plot_spatial_cells(ctx, dataset_path=None):
+    """Plot whole-slide transcript density alongside a zoomed-in spatial KNN graph ROI."""
+    import anndata as ad
+    import matplotlib.pyplot as plt
+    import numpy as np
+    from scipy import sparse
+
+    path = dataset_path or _previous(ctx, "spatial_graph")
+    data = ad.read_h5ad(path)
+    
+    coords = np.asarray(data.obsm["spatial"], dtype=float)[:, :2]
+    matrix = sparse.csr_matrix(data.obsp["spatial_connectivities"])
+    edges = sparse.triu(matrix).tocoo()
+    
+    k_neighbors = data.uns.get("spatial_graph", {}).get("n_neighbors", 8)
+    counts = np.log1p(np.asarray(data.X.sum(axis=1)).ravel())
+    
+    fig, axes = plt.subplots(1, 2, figsize=(14, 6), constrained_layout=True)
+    
+    # 1. Whole-slide transcript density
+    sc1 = axes[0].scatter(
+        coords[:, 0], coords[:, 1], 
+        c=counts, s=1.0, cmap="viridis", linewidths=0, alpha=0.8
+    )
+    axes[0].set_title("Whole Slide Cell Transcript Density", fontsize=12, fontweight="bold")
+    axes[0].set_xlabel("X Centroid Coordinate (µm)", fontsize=10)
+    axes[0].set_ylabel("Y Centroid Coordinate (µm)", fontsize=10)
+    axes[0].set_aspect("equal")
+    axes[0].invert_yaxis()
+    
+    cb1 = fig.colorbar(sc1, ax=axes[0], fraction=0.046, pad=0.04)
+    cb1.set_label("Total Expression [log1p(counts)]", fontsize=9)
+    
+    # 2. Zoomed-in ROI (700 µm x 700 µm patch at tissue center)
+    x_mid, y_mid = np.median(coords[:, 0]), np.median(coords[:, 1])
+    roi_radius = 350.0  # µm
+    
+    roi_mask = (
+        (coords[:, 0] >= x_mid - roi_radius) & (coords[:, 0] <= x_mid + roi_radius) &
+        (coords[:, 1] >= y_mid - roi_radius) & (coords[:, 1] <= y_mid + roi_radius)
+    )
+    roi_indices = set(np.where(roi_mask)[0])
+    
+    # Draw graph edges inside ROI
+    for row, col in zip(edges.row, edges.col):
+        if row in roi_indices and col in roi_indices:
+            axes[1].plot(
+                coords[[row, col], 0], coords[[row, col], 1],
+                color="#e74c3c", alpha=0.7, linewidth=0.8, zorder=1
+            )
+            
+    # Draw ROI cell nodes
+    sc2 = axes[1].scatter(
+        coords[roi_mask, 0], coords[roi_mask, 1],
+        c=counts[roi_mask], s=20, cmap="viridis", edgecolors="black", linewidths=0.3, zorder=2
+    )
+    
+    axes[1].set_title(f"Spatial {k_neighbors}-NN Graph Topology (700 µm ROI)", fontsize=12, fontweight="bold")
+    axes[1].set_xlabel("X Centroid Coordinate (µm)", fontsize=10)
+    axes[1].set_ylabel("Y Centroid Coordinate (µm)", fontsize=10)
+    axes[1].set_aspect("equal")
+    axes[1].set_xlim(x_mid - roi_radius, x_mid + roi_radius)
+    axes[1].set_ylim(y_mid + roi_radius, y_mid - roi_radius)  # Match inverted Y orientation
+    
+    cb2 = fig.colorbar(sc2, ax=axes[1], fraction=0.046, pad=0.04)
+    cb2.set_label("Total Expression [log1p(counts)]", fontsize=9)
+    
+    # Draw ROI indicator box on full slide
+    rect = plt.Rectangle(
+        (x_mid - roi_radius, y_mid - roi_radius), roi_radius * 2, roi_radius * 2,
+        fill=False, edgecolor="#e74c3c", linewidth=1.5, linestyle="--"
+    )
+    axes[0].add_patch(rect)
+    
+    out = _multimodal_dir(ctx) / "spatial_cells_overview.png"
+    fig.savefig(out, dpi=300)
+    plt.close(fig)
+    return _result(outputs={"overview": str(out)})
+
+
+def plot_spatial_gene_density(ctx, dataset_path=None, gene="EPCAM"):
+    """Plot gene expression sorted by intensity so expressing cells render on top."""
+    import anndata as ad
+    import matplotlib.pyplot as plt
+    import numpy as np
+    from scipy import sparse
+
+    path = dataset_path or _previous(ctx, "spatial_graph")
+    data = ad.read_h5ad(path)
+    
+    values = data[:, gene].X
+    values = np.asarray(values.toarray()).ravel() if sparse.issparse(values) else np.asarray(values).ravel()
+    coords = np.asarray(data.obsm["spatial"], dtype=float)[:, :2]
+    
+    # Sort cells so high-expressing cells are drawn ON TOP of zero-expressing cells
+    sort_idx = np.argsort(values)
+    coords_sorted = coords[sort_idx]
+    values_sorted = np.log1p(values[sort_idx])
+    
+    fig, ax = plt.subplots(figsize=(8, 6.5), constrained_layout=True)
+    
+    # Pass 1D X and Y coordinate vectors explicitly
+    sc = ax.scatter(
+        coords_sorted[:, 0], 
+        coords_sorted[:, 1], 
+        c=values_sorted, 
+        s=2.0, 
+        cmap="magma", 
+        linewidths=0, 
+        alpha=0.85
+    )
+    
+    ax.set_title(f"Spatial Expression: {gene}", fontsize=13, fontweight="bold")
+    ax.set_xlabel("X Centroid Coordinate (µm)", fontsize=10)
+    ax.set_ylabel("Y Centroid Coordinate (µm)", fontsize=10)
+    ax.set_aspect("equal")
+    ax.invert_yaxis()
+    
+    cbar = fig.colorbar(sc, ax=ax, pad=0.03)
+    cbar.set_label("Expression Level [log1p(counts)]", fontsize=10)
+    
+    out = _multimodal_dir(ctx) / f"spatial_gene_{gene}.png"
+    fig.savefig(out, dpi=300)
+    plt.close(fig)
+    return _result(outputs={"overview": str(out)})
 
 
 def gene_graph(ctx):
@@ -17,8 +194,8 @@ def gene_graph(ctx):
     import scanpy as sc
     from scipy import sparse
     from scipy.sparse.csgraph import connected_components
-    from sklearn.manifold import SpectralEmbedding
     from sklearn.neighbors import NearestNeighbors
+    from sklearn.decomposition import TruncatedSVD
 
     p = _previous(ctx, "qc")
     a = sc.read_h5ad(p)
@@ -133,13 +310,15 @@ def gene_graph(ctx):
     rng = np.random.default_rng(ctx.get("seed", 0))
     edge_limit = min(len(edges), 5000)
     chosen = rng.choice(len(edges), edge_limit, replace=False) if edge_limit else np.array([], dtype=int)
-    layout = SpectralEmbedding(n_components=2, affinity="precomputed",
-                               random_state=ctx.get("seed", 0)).fit_transform(weights)
+    layout = TruncatedSVD(n_components=2, random_state=ctx.get("seed", 0)).fit_transform(x)
+    layout -= layout.mean(axis=0, keepdims=True)
     fig, axes = plt.subplots(1, 2, figsize=(13, 5), constrained_layout=True)
     axes[0].scatter(layout[:, 0], layout[:, 1], c=degree, s=7, cmap="viridis", alpha=.75, linewidths=0)
     axes[0].set_title("Gene graph layout colored by degree")
-    axes[0].set_xlabel("Graph layout 1")
-    axes[0].set_ylabel("Graph layout 2")
+    axes[0].set_xlabel("SVD 1 of log-expression gene profiles")
+    axes[0].set_ylabel("SVD 2 of log-expression gene profiles")
+    degree_plot = axes[0].collections[-1]
+    fig.colorbar(degree_plot, ax=axes[0], fraction=.046, pad=.04, label="Number of gene neighbors")
     for row in edges.iloc[chosen].itertuples():
         source = gene_data.obs_names.get_loc(row.source)
         target = gene_data.obs_names.get_loc(row.target)
@@ -147,8 +326,10 @@ def gene_graph(ctx):
                      color="0.55", alpha=.08, linewidth=.4)
     axes[1].scatter(layout[:, 0], layout[:, 1], c=strength, s=7, cmap="plasma", alpha=.8, linewidths=0)
     axes[1].set_title(f"Sampled gene edges ({edge_limit:,} of {len(edges):,})")
-    axes[1].set_xlabel("Graph layout 1")
-    axes[1].set_ylabel("Graph layout 2")
+    axes[1].set_xlabel("SVD 1 of log-expression gene profiles")
+    axes[1].set_ylabel("SVD 2 of log-expression gene profiles")
+    strength_plot = axes[1].collections[-1]
+    fig.colorbar(strength_plot, ax=axes[1], fraction=.046, pad=.04, label="Sum of edge similarities")
     fig.suptitle("Gene expression similarity graph", fontsize=14)
     fig.savefig(out / "overview.png", dpi=180)
     plt.close(fig)
@@ -294,6 +475,7 @@ def interpret_pca(ctx, pca_dataset=None, gene_graph_dataset=None, top_n=20, top_
     colors = ["#b2182b" if value < 0 else "#2166ac" for value in signed_values]
     signed_axis.barh(np.arange(len(labels)), signed_values, color=colors)
     signed_axis.set_yticks(np.arange(len(labels)), labels, fontsize=8)
+    signed_axis.set_ylabel("Gene")
     signed_axis.set_title("Largest absolute loadings: PC1")
     signed_axis.set_xlabel("Signed loading")
     signed_axis.axvline(0, color="0.25", linewidth=.8)
@@ -310,6 +492,7 @@ def interpret_pca(ctx, pca_dataset=None, gene_graph_dataset=None, top_n=20, top_
     heatmap_axis.set_yticks(np.arange(len(heatmap_genes)), [str(shared[i]) for i in heatmap_genes], fontsize=8)
     heatmap_axis.set_xticks(np.arange(leading_pcs), [f"PC{i}" for i in range(1, leading_pcs + 1)])
     heatmap_axis.set_title("Top loading genes across leading PCs")
+    heatmap_axis.set_ylabel("Gene")
     heatmap_axis.set_xlabel("Blue = negative, red = positive")
     figure.colorbar(image, ax=heatmap_axis, fraction=.046, pad=.04, label="Loading")
     figure.suptitle("PCA interpretation through the gene expression graph", fontsize=16)

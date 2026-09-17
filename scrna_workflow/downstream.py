@@ -2,4 +2,4 @@
 from .tools.regulon import regulon
 from .tools.discovery import discovery, _differential_expression
 from .tools.validation import validation
-from .tools.report import report
+from .tools.report import report, plot_custom_tf_network

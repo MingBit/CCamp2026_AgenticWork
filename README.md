@@ -24,6 +24,10 @@ scrna_workflow/
 tests/               CLI, scientific guards, end-to-end resume
 ```
 
+## Modality-aware routing
+
+The input boundary detects `rna`, `atac`, and `protein` modalities from `.h5`, `.h5ad`, and `.h5mu` inputs. RNA follows the existing path. ATAC inputs trigger TF-IDF plus LSI, protein inputs trigger CLR normalization, and multi-modal inputs request optional Muon WNN or scvi-tools MultiVI integration. Missing modalities and unavailable optional backends are recorded as explicit skips in the run state. Detected modalities are written to `inspection/modalities.json`.
+
 ## Run on a server
 
 Python 3.10+; CPU is sufficient. Install in an isolated environment:

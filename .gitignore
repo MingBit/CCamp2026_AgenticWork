@@ -15,4 +15,4 @@ public_data/scenicplus_resources/**
 !public_data/scenicplus_resources/README.md
 !public_data/scenicplus_resources/hg38/genome/make_annotations.py
 tools/*
-!tools/README.md
+!tools/README.mdpublic_data/xenium_breast_cancer

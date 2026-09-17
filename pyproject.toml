@@ -11,6 +11,7 @@ dependencies = ["numpy>=1.26,<3", "scipy>=1.11,<2", "pandas>=2.1,<3", "anndata>=
 
 [project.optional-dependencies]
 de = ["pydeseq2>=0.5,<0.6"]
+multimodal = ["mudata>=0.2", "muon>=0.1", "scvi-tools>=1.1"]
 
 [project.scripts]
 scrna-workflow = "scrna_workflow.cli:main"
