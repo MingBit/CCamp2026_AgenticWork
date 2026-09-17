@@ -87,6 +87,9 @@ def report(ctx):
                 plt.close(fig)
                 figures.append(str(f))
         edgesfile = artifacts.get("regulon", {}).get("outputs", {}).get("edges")
+        tf_fig = plot_custom_tf_network(edgesfile, out)
+        if tf_fig:
+            figures.append(tf_fig)
         if edgesfile and Path(edgesfile).is_file():
             edges = pd.read_csv(edgesfile, sep="\t")
             weight = "rho_tf2g" if scenicplus else "spearman_r"
@@ -205,3 +208,38 @@ def report(ctx):
     f = out / "scientific_report.md"
     f.write_text("\n".join(lines))
     return _result(inputs=[source] if source else [], outputs={"report": str(f), "evidence_ledger": str(ledger), **{f"figure_{i}": p for i, p in enumerate(figures)}}, metrics={"figures": len(figures)}, warnings=[] if source else ["Biological reporting blocked by missing input data."])
+
+
+
+from pathlib import Path
+import matplotlib.pyplot as plt
+import numpy as np
+import pandas as pd
+
+def plot_custom_tf_network(edgesfile, out):
+    """Custom TF network graph logic extracted from stashed report function."""
+    if not edgesfile or not Path(edgesfile).is_file():
+        return None
+    edges = pd.read_csv(edgesfile, sep="\t")
+    if not len(edges):
+        return None
+
+    tf = edges.groupby("tf")["spearman_r"].mean().idxmax()
+    selected = edges[edges["tf"] == tf].nlargest(15, "spearman_r")
+    
+    fig, ax = plt.subplots(figsize=(7, 6))
+    angle = np.linspace(0, 2 * np.pi, len(selected), endpoint=False)
+    for theta, (_, row) in zip(angle, selected.iterrows()):
+        xx, yy = np.cos(theta), np.sin(theta)
+        ax.plot([0, xx], [0, yy], color="#8497ad", lw=1 + row["spearman_r"], alpha=0.7)
+        ax.scatter(xx, yy, s=250, color="#cbe3e8", zorder=2)
+        ax.text(xx * 1.13, yy * 1.13, str(row["target"]), ha="center", va="center", fontsize=8)
+    ax.scatter([0], [0], s=500, color="#efb86b", zorder=3)
+    ax.text(0, 0, str(tf), ha="center", va="center", fontsize=9, fontweight="bold")
+    ax.set_title(f"Selected TF–Target Candidates ({tf})", fontsize=11, fontweight="bold")
+    ax.axis("off")
+    
+    f = Path(out) / "candidate_tf_network.png"
+    fig.savefig(f, dpi=300, bbox_inches="tight")
+    plt.close(fig)
+    return str(f)
