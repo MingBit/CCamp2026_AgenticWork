@@ -7,7 +7,7 @@
 | Representation | Member 1 | Filtered dataset | Log representation, selected genes, PCA |
 | Graph | Member 2 | PCA and cell IDs | Versioned neighbors, edges, diagnostics |
 | Clustering | Member 1 | Validated graph | Labels, marker evidence, annotation confidence |
-| Regulon | Member 3 | Counts + compatible local TF resource | Candidate TF–target edges, cell activities |
+| Regulon | Member 3 | Counts + compatible local TF resource; for SCENIC+ also cell-type labels, ATAC fragments, motif databases (separate conda env) | Candidate TF–target edges or SCENIC+ eRegulon triplets, cell activities |
 | Discovery | Integration | Annotated counts + design | Sample summaries, pseudobulk, eligible DE |
 | Validation | Independent critique | All preceding task results | Integrity checks, issues and review requests |
 | Reporting | Report specialist | Validation + evidence files | Scientific report, figures |

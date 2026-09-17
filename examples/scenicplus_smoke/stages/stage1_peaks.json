@@ -1,0 +1,28 @@
+{
+  "fingerprint": "ebd25341ec40cab3018c80bb43e001e354b63bacf9990641cad8b209785127a4",
+  "metrics": {
+    "cells_in_pseudobulks": 982,
+    "consensus_peaks": 38753,
+    "consensus_peaks_before_chromosome_filter": 38753,
+    "consensus_peaks_removed_outside_keep_chromosomes": 0,
+    "peaks_per_pseudobulk": {
+      "B_cell": 11643,
+      "Myeloid": 26833,
+      "T_cell": 23269
+    },
+    "pseudobulks": 3
+  },
+  "outputs": {
+    "consensus_regions": "/mnt/storageBig8/work/muratli/Smoke_Data/work/stage1_peaks/consensus_regions.bed",
+    "macs2_dir": "/mnt/storageBig8/work/muratli/Smoke_Data/work/stage1_peaks/macs2",
+    "pseudobulk_bed_dir": "/mnt/storageBig8/work/muratli/Smoke_Data/work/stage1_peaks/pseudobulk_bed",
+    "pseudobulk_bigwig_dir": "/mnt/storageBig8/work/muratli/Smoke_Data/work/stage1_peaks/pseudobulk_bigwig"
+  },
+  "status": "completed",
+  "versions": {
+    "MACS2": "2.2.9.1",
+    "pycisTopic": "2.0a0",
+    "pyranges": "0.0.111"
+  },
+  "warnings": []
+}

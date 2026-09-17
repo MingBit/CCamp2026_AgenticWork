@@ -1,0 +1,30 @@
+{
+  "fingerprint": "5bd1174dce767dd83fe7559f2d41d63fc9a9ea582a664dae81196a63630a1ebe",
+  "metrics": {
+    "annotated_motif_fraction": 1.0,
+    "checksums": {
+      "ctx_db": "verified",
+      "dem_db": "verified"
+    },
+    "consensus_peak_coverage_fraction": 0.4633,
+    "consensus_peaks": 38753,
+    "consensus_peaks_covered_by_database": 17955,
+    "database_motifs": 5876,
+    "database_regions": 1837304,
+    "dem_database_motifs": 5876
+  },
+  "outputs": {
+    "ctx_db": "/mnt/storageBig8/work/muratli/Coding_Camps/2026/public_data/scenicplus_resources/hg38/cistarget/hg38_screen_v10_clust.regions_vs_motifs.rankings.feather",
+    "dem_db": "/mnt/storageBig8/work/muratli/Coding_Camps/2026/public_data/scenicplus_resources/hg38/cistarget/hg38_screen_v10_clust.regions_vs_motifs.scores.feather",
+    "motif_annotations": "/mnt/storageBig8/work/muratli/Coding_Camps/2026/public_data/scenicplus_resources/hg38/cistarget/motifs-v10nr_clust-nr.hgnc-m0.001-o0.0.tbl"
+  },
+  "status": "completed",
+  "versions": {
+    "pyarrow": "15.0.0",
+    "pycistarget": "1.1",
+    "pyranges": "0.0.111"
+  },
+  "warnings": [
+    "Only 46.3% of consensus peaks overlap database regions by > 40% of either region; consider a custom cisTarget database built from the consensus peaks."
+  ]
+}

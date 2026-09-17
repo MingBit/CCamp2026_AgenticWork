@@ -1,0 +1,127 @@
+# PBMC 10k Multiome (RNA + ATAC) run with SCENIC+ regulon inference.
+# Relative paths resolve from this configuration file; CLI paths resolve from cwd.
+# The regulon task runs SCENIC+ (scrna_workflow/regulon_scenicplus.py) in the separate conda env
+# from envs/scenicplus.yml. Resource files are hashed into the run fingerprint (cached for large files).
+input_path: ../public_data/pbmc10k_multiome/pbmc_granulocyte_sorted_10k_filtered_feature_bc_matrix.h5
+metadata_path: null
+output_dir: ../results/pbmc10k_multiome
+seed: 17
+workers: 2
+transient_retries: 1
+matrix_kind: auto
+counts_layer: null
+sample_column: null
+donor_column: null
+condition_column: null
+batch_column: null
+organism: human
+tissue: peripheral blood mononuclear cells
+biological_question: null
+primary_comparison: null # [reference_condition, test_condition]
+paired: false
+longitudinal: false
+de_min_cells_per_sample: 10
+de_min_total_count: 10
+mitochondrial_prefix: "MT-"
+n_neighbors: 15
+n_pcs: 30
+n_top_genes: 2000
+resolutions: [0.4, 0.8, 1.2]
+markers: {} # supply curated marker sets: SCENIC+ needs >= 2 labelled cell types for pseudobulk peak calling
+tf_list: ../public_data/scenicplus_resources/hg38/cistarget/allTFs_hg38.txt # used by regulon_method: coexpression
+tf_resource_organism: human
+
+# ---------------------------------------------------------------- SCENIC+
+regulon_method: scenicplus # scenicplus | coexpression (existing RNA-only method)
+
+# Execution: SCENIC+ runs as a subprocess in its own conda env (envs/scenicplus.yml).
+scenicplus_conda_env: scenicplus # run via `conda run -n`; ignored when scenicplus_python is set
+scenicplus_python: null # optional explicit interpreter, e.g. ~/.conda/envs/scenicplus/bin/python
+scenicplus_work_dir: ../results/scenicplus_work # stage outputs reused across runs when inputs/parameters match
+scenicplus_n_cpu: 20 # set to the server allocation
+scenicplus_temp_dir: null # large, fast scratch (Ray/MALLET/Dask); default <work_dir>/tmp; keep the path short for Ray sockets
+scenicplus_mallet_path: ../tools/Mallet-202108/bin/mallet
+scenicplus_mallet_memory_gb: 100 # MALLET_MEMORY; size to the server
+
+# ATAC input (Cell Ranger ARC) and cell identity
+scenicplus_sample_id: pbmc10k # cisTopic cell names become <barcode>___<sample_id>
+scenicplus_fragments_path: ../public_data/pbmc10k_multiome/pbmc_granulocyte_sorted_10k_atac_fragments.tsv.gz
+scenicplus_barcode_column: null # obs column holding ATAC fragment barcodes; null = obs_names (Cell Ranger ARC)
+scenicplus_cell_type_column: annotation # obs column from clustering used for pseudobulks and DARs
+scenicplus_excluded_cell_types: [unknown, ambiguous] # labels not used as pseudobulk/DAR groups (cells are kept)
+scenicplus_min_cells_per_cell_type: 10 # cell types below this are excluded from pseudobulk peak calling
+scenicplus_min_cells: 50 # minimum cells passing both ATAC and RNA QC
+
+# Reference resources (public_data/scenicplus_resources/README.md)
+scenicplus_ctx_db_path: ../public_data/scenicplus_resources/hg38/cistarget/hg38_screen_v10_clust.regions_vs_motifs.rankings.feather
+scenicplus_dem_db_path: ../public_data/scenicplus_resources/hg38/cistarget/hg38_screen_v10_clust.regions_vs_motifs.scores.feather
+scenicplus_motif_annotations_path: ../public_data/scenicplus_resources/hg38/cistarget/motifs-v10nr_clust-nr.hgnc-m0.001-o0.0.tbl
+scenicplus_blacklist_path: ../public_data/scenicplus_resources/hg38/genome/hg38-blacklist.v2.bed
+scenicplus_tss_annotation_path: ../public_data/scenicplus_resources/hg38/genome/tss_ensembl98_protein_coding.bed
+scenicplus_genome_annotation_path: ../public_data/scenicplus_resources/hg38/genome/genome_annotation.tsv
+scenicplus_chromsizes_path: ../public_data/scenicplus_resources/hg38/genome/chromsizes.tsv
+scenicplus_species: homo_sapiens
+scenicplus_motif_annotation_version: v10nr_clust
+
+# pycisTopic: pseudobulk peak calling (MACS2) and consensus peaks
+scenicplus_keep_chromosomes: [chr1, chr2, chr3, chr4, chr5, chr6, chr7, chr8, chr9, chr10, chr11, chr12, chr13, chr14, chr15, chr16, chr17, chr18, chr19, chr20, chr21, chr22, chrX, chrY] # drops GL/KI contigs and chrM
+scenicplus_macs_genome_size: hs
+scenicplus_macs_shift: 73
+scenicplus_macs_extsize: 146
+scenicplus_macs_qvalue: 0.05
+scenicplus_macs_keep_dup: all
+scenicplus_peak_half_width: 250
+
+# pycisTopic: ATAC cell QC (automatic Otsu thresholds, bounded below by these minima)
+scenicplus_qc_min_unique_fragments_in_peaks: 1000
+scenicplus_qc_min_tss_enrichment: 5
+scenicplus_qc_min_frip: 0
+scenicplus_qc_use_automatic_thresholds: true
+
+# pycisTopic: topic modelling (MALLET) and region sets
+scenicplus_n_topics: [2, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50]
+scenicplus_topic_n_iter: 500
+scenicplus_topic_alpha: 50
+scenicplus_topic_alpha_by_topic: true
+scenicplus_topic_eta: 0.1
+scenicplus_topic_eta_by_topic: false
+scenicplus_topic_selection: auto # "auto" = model-selection metrics, or an integer topic count
+scenicplus_topic_binarization_otsu: true
+scenicplus_topic_binarization_ntop: 3000
+scenicplus_dar_adjpval_threshold: 0.05
+scenicplus_dar_log2fc_threshold: 0.585 # log2(1.5)
+
+# SCENIC+ Snakemake parameters (upstream defaults, scenicplus v1.0a2)
+scenicplus_allow_direct_only: true # if no extended eRegulon passes the filters, keep direct results (with a warning) instead of failing
+scenicplus_is_multiome: true
+scenicplus_nr_cells_per_metacells: 10
+scenicplus_search_space_upstream: [1000, 150000]
+scenicplus_search_space_downstream: [1000, 150000]
+scenicplus_search_space_extend_tss: [10, 10]
+scenicplus_motif_similarity_fdr: 0.001
+scenicplus_orthologous_identity_threshold: 0.0
+scenicplus_annotations_to_use: [Direct_annot, Orthology_annot]
+scenicplus_fraction_overlap_w_dem_database: 0.4
+scenicplus_dem_max_bg_regions: 500
+scenicplus_dem_balance_number_of_promoters: true
+scenicplus_dem_promoter_space: 1000
+scenicplus_dem_adj_pval_thr: 0.05
+scenicplus_dem_log2fc_thr: 1.0
+scenicplus_dem_mean_fg_thr: 0.0
+scenicplus_dem_motif_hit_thr: 3.0
+scenicplus_fraction_overlap_w_ctx_database: 0.4
+scenicplus_ctx_auc_threshold: 0.005
+scenicplus_ctx_nes_threshold: 3.0
+scenicplus_ctx_rank_threshold: 0.05
+scenicplus_tf_to_gene_importance_method: GBM
+scenicplus_region_to_gene_importance_method: GBM
+scenicplus_region_to_gene_correlation_method: SR
+scenicplus_order_regions_to_genes_by: importance
+scenicplus_order_tfs_to_genes_by: importance
+scenicplus_gsea_n_perm: 1000
+scenicplus_quantile_thresholds_region_to_gene: [0.85, 0.90, 0.95]
+scenicplus_top_n_region_to_genes_per_gene: [5, 10, 15]
+scenicplus_top_n_region_to_genes_per_region: []
+scenicplus_min_regions_per_gene: 0
+scenicplus_rho_threshold: 0.05
+scenicplus_min_target_genes: 10

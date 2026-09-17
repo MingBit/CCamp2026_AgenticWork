@@ -26,6 +26,19 @@ docker run --rm -v /server/data:/data:ro -v /server/results:/results scrna-workf
 
 For organism, comparison and donor-aware settings, mount a configuration file and pass `--config /data/config.yaml`. Set thread limits appropriate to your scheduler; `workers` controls concurrent specialist tasks, not BLAS/Numba threads. Memory use depends on cell/feature counts; no GPU is required. Large datasets may need an HPC allocation, particularly regulon correlation and embedding. Do not run two orchestrators in the same output directory.
 
+## SCENIC+ regulons (paired RNA + ATAC)
+
+Set `regulon_method: scenicplus` to replace the RNA-only coexpression candidates with SCENIC+ eRegulons; `configs/pbmc10k_multiome.yaml` is a complete example. SCENIC+ runs as subprocesses in its own conda environment (`envs/scenicplus.yml`, build commands in its header) because it pins pandas 1.5 and scanpy 1.8. Reference resources and MALLET are local files (`public_data/scenicplus_resources/README.md`, `tools/README.md`); nothing is downloaded at run time.
+
+The regulon task (`scrna_workflow/regulon_scenicplus.py`) runs four stages from `scrna_workflow/scenicplus_stages/`:
+
+1. `stage1_peaks`: fragments of each labelled cell type become a pseudobulk; MACS2 peaks are merged into consensus peaks, keeping only `scenicplus_keep_chromosomes` (contigs and chrM removed).
+2. `stage2_cistopic`: pycisTopic ATAC QC (cells must also pass RNA QC), cisTopic object, MALLET topic models, and region sets from binarized topics and cell-type DARs.
+3. `stage3_motif_databases`: cisTarget database checksums, database/annotation consistency and consensus-peak coverage.
+4. `stage4_scenicplus`: the SCENIC+ Snakemake pipeline with offline gene annotation; eRegulon triplets and AUC scores are exported as TSV.
+
+Cell-type labels (`scenicplus_cell_type_column`) must contain at least two types with `scenicplus_min_cells_per_cell_type` cells; `unknown`/`ambiguous` labels are not pseudobulk groups. Completed stages are fingerprinted (parameters, resource size/mtime, upstream results, stage code) in `scenicplus_work_dir` and reused, so a failed run restarted in a new output directory resumes at the failed stage; CPU count and temp directory do not invalidate stages. Expect topic modelling and GRN inference to need a server (tens of GB of RAM, many cores); set `scenicplus_n_cpu`, `scenicplus_mallet_memory_gb` and a short, fast `scenicplus_temp_dir`. Input checksums of files larger than 256 MB are cached in `~/.cache/scrna_workflow/input_digests.json` (override with `SCRNA_WORKFLOW_DIGEST_CACHE`).
+
 ## Synthetic integration test
 
 ```bash
@@ -47,7 +60,7 @@ flowchart TD
   Q --> R[Member 1: normalization and PCA]
   R --> G[Member 2: versioned expression graph]
   G --> C[Member 1: clustering and evidence-based annotation]
-  C --> T[Member 3: candidate TF-target programs]
+  C --> T[Member 3: regulon step, TF-target programs]
   C --> D[Discovery: sample summaries and pseudobulk]
   T --> V[Validation and critique]
   D --> V
@@ -57,6 +70,21 @@ flowchart TD
   V -. actionable issues, at most 2 reviewed revisions .-> O
   T -. state evidence for human annotation review .-> C
   O <--> E[(Shared evidence workspace)]
+  P ~~~ REG
+  T -. "regulon_method" .-> REG
+  subgraph REG["Regulon step detail"]
+    direction TB
+    RC["coexpression (RNA only): TF list, Spearman TF-target candidates, bootstrap sign support"]
+    subgraph SP["scenicplus (RNA + ATAC): separate conda env, fingerprinted stages in scenicplus_work_dir"]
+      direction TB
+      S0["Handoff: counts, barcodes, cell-type pseudobulk groups"] --> S1["Stage 1: cell-type pseudobulks, MACS2 peaks, consensus peaks, contig and chrM removal"]
+      S1 --> S2["Stage 2: ATAC QC with RNA QC cells, cisTopic object, MALLET topics, topic and DAR region sets"]
+      S1 --> S3["Stage 3: cisTarget database checksums, motif annotation and peak coverage checks"]
+      S0 --> S4["Stage 4: SCENIC+ Snakemake, offline gene annotation, eRegulon triplets and AUC activity"]
+      S2 --> S4
+      S3 --> S4
+    end
+  end
 ```
 
 The dashed edges are review requests, not automatic circular redefinition of states. Runtime execution follows the acyclic dependencies in `runner.DEPS`. Regulon and discovery tasks run concurrently after clustering. Only the orchestrator writes run state; every specialist owns its named subdirectory. Large arrays travel by artifact path, never in agent messages.
@@ -73,6 +101,7 @@ Resume requires identical input bytes, code, configuration and package versions.
 - Cluster markers are descriptive discovery evidence, not donor-replicated condition DE. Cell identity needs supplied multi-gene marker evidence; absent evidence yields unknown labels.
 - Expression graph edges and embedding distances do not imply physical contact. Spatial graphs, ligand–receptor networks, and TF–target networks require distinct resources and definitions.
 - TF coexpression without motif support is a candidate module, not a validated regulon or causal interaction. Module activities are relative computational scores.
+- SCENIC+ eRegulons add chromatin accessibility and motif enrichment but remain associations inferred from the same cells: not TF binding, perturbation or causal evidence. AUC activities are empty for cells failing ATAC QC. Precomputed SCREEN motif databases only score peaks that overlap SCREEN regions; stage 3 reports that coverage.
 - Condition-level inference requires independent biological replication and a specified design; missing donor identifiers cannot be repaired by treating cells as replicates. Paired/longitudinal designs must be preserved.
 - External validation, motif enrichment, ligand–receptor inference, pathway testing, and trajectories are not claimed when their prerequisites are absent. Review the generated report for the precise skip reasons and next steps.
 

@@ -38,14 +38,31 @@ def _json(path, value):
 
 
 def regulon(ctx):
-    """Infer bounded, bootstrap-tested TF coexpression candidates from local resources.
+    """Infer regulatory candidates with the configured `regulon_method`.
+
+    `coexpression` (default, RNA only): bounded, bootstrap-tested TF coexpression
+    candidates from a local TF list. `scenicplus` (paired RNA + ATAC): SCENIC+ eRegulons
+    run in the separate SCENIC+ environment (see regulon_scenicplus).
+    """
+    out, cfg, artifacts = _base(ctx, "regulon")
+    source = _dataset(artifacts)
+    method = cfg.get("regulon_method") or "coexpression"
+    if method == "scenicplus":
+        from . import regulon_scenicplus
+        return regulon_scenicplus.run(ctx, out, cfg, source, _result)
+    if method != "coexpression":
+        message = f"Unknown regulon_method '{method}'; use 'coexpression' or 'scenicplus'."
+        return _result("skipped", warnings=[message], actions=[message])
+    return _coexpression_regulon(out, cfg, source, _get(ctx, "seed", 0))
+
+
+def _coexpression_regulon(out, cfg, source, seed):
+    """Bounded, bootstrap-tested TF coexpression candidates from local resources.
 
     Requires a local one-column TF-symbol list with matching declared organism and
     verified counts. Rank association is computed on log library-normalized counts.
     Activity is a target-expression score, not a binding or causal estimate.
     """
-    out, cfg, artifacts = _base(ctx, "regulon")
-    source = _dataset(artifacts)
     tf_file = cfg.get("tf_list")
     prerequisites = []
     if not source:
@@ -77,7 +94,7 @@ def regulon(ctx):
     mean = np.asarray(x.mean(axis=0)).ravel()
     var = np.asarray(x.multiply(x).mean(axis=0)).ravel() - mean ** 2
     target_idx = np.argsort(var)[-min(int(cfg.get("regulon_max_genes", 2000)), a.n_vars):]
-    rng = np.random.default_rng(_get(ctx, "seed", 0))
+    rng = np.random.default_rng(seed)
     sample = np.sort(rng.choice(a.n_obs, min(a.n_obs, int(cfg.get("regulon_max_cells", 2000))), replace=False))
     target = x[sample][:, target_idx].toarray()
     ranks = stats.rankdata(target, axis=0)
@@ -131,7 +148,7 @@ def regulon(ctx):
                  "sampling_unit": "cells; bootstrap is internal consistency only"})
     return _result(inputs=[source, str(tf_file)], outputs={"edges": str(edgefile), "activity": str(afile), "diagnostics": info,
                    **{f"summary_{i}": s["path"] for i, s in enumerate(summary_files)}},
-                   metrics={"candidate_tfs": len(activity.columns), "edges": len(edges), "cells_used_for_inference": len(sample)},
+                   metrics={"method": "coexpression", "candidate_tfs": len(activity.columns), "edges": len(edges), "cells_used_for_inference": len(sample)},
                    warnings=["Coexpression-only candidates: no motif or causal support; cell identity, batch, and cell cycle can confound associations.", "Activity uses the same data as inference and is not independent evidence of a cell state."])
 
 
@@ -416,6 +433,8 @@ def report(ctx):
                 fig.savefig(f, dpi=300, bbox_inches="tight")
                 plt.close(fig)
                 figures.append(str(f))
+        regulon_method = artifacts.get("regulon", {}).get("metrics", {}).get("method", "coexpression")
+        scenicplus = regulon_method == "scenicplus"
         activities = artifacts.get("regulon", {}).get("outputs", {}).get("activity")
         if activities and Path(activities).is_file():
             values = pd.read_csv(activities, sep="\t", index_col=0)
@@ -430,32 +449,40 @@ def report(ctx):
                 plot = ax.imshow(means, cmap="viridis", aspect="auto")
                 ax.set_xticks(range(len(chosen)), chosen, rotation=90)
                 ax.set_yticks(range(len(means)), means.index)
-                ax.set(title="Candidate coexpression module activity", ylabel="Cluster")
-                fig.colorbar(plot, ax=ax, label="Mean target log-normalized expression")
+                ax.set(title="SCENIC+ eRegulon activity (direct, gene-based)" if scenicplus else "Candidate coexpression module activity", ylabel="Cluster")
+                fig.colorbar(plot, ax=ax, label="Mean AUC (cells with ATAC and RNA QC)" if scenicplus else "Mean target log-normalized expression")
                 fig.tight_layout()
-                f = out / "candidate_module_heatmap.png"
+                f = out / ("eregulon_activity_heatmap.png" if scenicplus else "candidate_module_heatmap.png")
                 fig.savefig(f, dpi=300)
                 plt.close(fig)
                 figures.append(str(f))
         edgesfile = artifacts.get("regulon", {}).get("outputs", {}).get("edges")
         if edgesfile and Path(edgesfile).is_file():
             edges = pd.read_csv(edgesfile, sep="\t")
-            if len(edges):
-                tf = edges.groupby("tf")["spearman_r"].mean().idxmax()
-                selected = edges[edges["tf"] == tf].nlargest(15, "spearman_r")
+            weight = "rho_tf2g" if scenicplus else "spearman_r"
+            if len(edges) and weight in edges:
+                if scenicplus:
+                    edges = edges.sort_values("importance_tf2g", ascending=False).drop_duplicates(["tf", "target"])
+                    tf = edges.groupby("tf")["target"].nunique().idxmax()
+                    selected = edges[edges["tf"] == tf].nlargest(15, "importance_tf2g")
+                else:
+                    tf = edges.groupby("tf")["spearman_r"].mean().idxmax()
+                    selected = edges[edges["tf"] == tf].nlargest(15, "spearman_r")
                 fig, ax = plt.subplots(figsize=(7, 6))
                 angle = np.linspace(0, 2 * np.pi, len(selected), endpoint=False)
                 for theta, (_, row) in zip(angle, selected.iterrows()):
                     xx, yy = np.cos(theta), np.sin(theta)
-                    ax.plot([0, xx], [0, yy], color="#8497ad", lw=1 + row.spearman_r)
+                    ax.plot([0, xx], [0, yy], color="#8497ad", lw=1 + abs(row[weight]))
                     ax.scatter(xx, yy, s=250, color="#cbe3e8", zorder=2)
                     ax.text(xx * 1.13, yy * 1.13, str(row.target), ha="center", va="center", fontsize=8)
                 ax.scatter([0], [0], s=500, color="#efb86b", zorder=3)
                 ax.text(0, 0, str(tf), ha="center", va="center", fontsize=9)
-                ax.set(title="Selected TF–target coexpression candidates\nNo motif or causal support", xlim=(-1.4, 1.4), ylim=(-1.4, 1.4), aspect="equal")
+                title = ("Selected SCENIC+ eRegulon targets (top 15 by TF-gene importance)\nMotif-supported association, not causal evidence"
+                         if scenicplus else "Selected TF–target coexpression candidates\nNo motif or causal support")
+                ax.set(title=title, xlim=(-1.4, 1.4), ylim=(-1.4, 1.4), aspect="equal")
                 ax.axis("off")
                 fig.tight_layout()
-                f = out / "candidate_tf_network.png"
+                f = out / ("eregulon_tf_network.png" if scenicplus else "candidate_tf_network.png")
                 fig.savefig(f, dpi=300)
                 plt.close(fig)
                 figures.append(str(f))
@@ -500,13 +527,20 @@ def report(ctx):
     else:
         lines += ["No supplied dataset was available for biological analysis. No biological result has been fabricated.", ""]
     findings = []
+    scenicplus = artifacts.get("regulon", {}).get("metrics", {}).get("method") == "scenicplus"
+    regulon_finding = (("SCENIC+ eRegulons (TF-region-gene triplets)", "pycisTopic topics/DARs, cisTarget/DEM motif enrichment, GBM TF-gene and region-gene importance with correlation (SCENIC+)",
+                        "Exploratory; motif and accessibility supported association in the same cells, no binding or causal support",
+                        "Validate key TF-region-target links with perturbation, TF ChIP/CUT&RUN, or held-out donors.")
+                       if scenicplus else
+                       ("Candidate TF-target coexpression modules", "Spearman correlation and same-data bootstrap sign support",
+                        "Exploratory; no motif, binding or causal support", "Validate candidate TFs with perturbation and compatible motif/binding evidence."))
     if source:
         findings.append({"type": "observation", "finding": f"Retained dataset: {a.n_obs} cells and {a.n_vars} features",
                          "artifact": source, "method": "AnnData dimensions after QC", "confidence": "High for recorded dimensions; depends on QC integrity",
                          "follow_up": "Review per-sample cell losses and sample metadata."})
     for task, artifact_key, finding, method, confidence, follow_up in (
         ("clustering", "dataset", "Expression-based cluster assignments", "PCA neighborhood graph and Leiden clustering", "Exploratory; review stability and marker evidence", "Validate cell identities with independent marker panels or a compatible reference."),
-        ("regulon", "edges", "Candidate TF-target coexpression modules", "Spearman correlation and same-data bootstrap sign support", "Exploratory; no motif, binding or causal support", "Validate candidate TFs with perturbation and compatible motif/binding evidence."),
+        ("regulon", "edges", *regulon_finding),
         ("discovery", "abundance", "Sample-level population proportions", "Retained-cell counts divided by each sample total", "Descriptive; capture and filtering can alter proportions", "Test in independently sampled biological replicates with the correct design."),
         ("discovery", "differential_expression", "Donor-aware expression contrasts", "PyDESeq2 independent-donor pseudobulk; BH adjusted p-values", "Conditional on specified design and model assumptions", "Replicate leading effects in held-out donors and orthogonal assays."),
     ):
@@ -535,7 +569,7 @@ def report(ctx):
         for action in result.get("recommended_next_actions", []):
             lines += ["- Follow-up: " + str(action)]
         lines += [""]
-    lines += ["## Evidence interpretation", "", "Dataset counts and QC summaries are observations. Clusters, annotations and coexpression modules are computational inferences. Regulatory mechanisms remain hypotheses requiring independent perturbation or binding evidence. Sample-level descriptive tables do not establish statistically significant condition effects.", "", "Confidence is limited by the checks and unresolved warnings recorded above; successful execution is not biological validation.", "", "## Figures", ""]
+    lines += ["## Evidence interpretation", "", "Dataset counts and QC summaries are observations. Clusters, annotations and regulatory modules (coexpression candidates or SCENIC+ eRegulons) are computational inferences. Regulatory mechanisms remain hypotheses requiring independent perturbation or binding evidence. Sample-level descriptive tables do not establish statistically significant condition effects.", "", "Confidence is limited by the checks and unresolved warnings recorded above; successful execution is not biological validation.", "", "## Figures", ""]
     for f in figures:
         lines += [f"![{Path(f).stem}]({Path(f).name})", ""]
     f = out / "scientific_report.md"

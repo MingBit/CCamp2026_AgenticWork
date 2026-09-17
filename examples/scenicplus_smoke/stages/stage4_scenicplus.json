@@ -1,0 +1,44 @@
+{
+  "fingerprint": "a5d7961d77f12c2022fcc3e7fcb1022800ec5ac343dce1ad8ec7d6dfb1a80c6f",
+  "metrics": {
+    "direct": {
+      "cells_scored": 1155,
+      "eregulons": 28,
+      "regions": 328,
+      "target_genes": 146,
+      "tfs": 23,
+      "triplets": 428
+    },
+    "extended": {
+      "cells_scored": 1155,
+      "eregulons": 7,
+      "regions": 52,
+      "target_genes": 27,
+      "tfs": 6,
+      "triplets": 56
+    },
+    "gex_cells": 1200,
+    "gex_genes": 2474
+  },
+  "outputs": {
+    "auc_gene_based_direct": "/mnt/storageBig8/work/muratli/Smoke_Data/work/stage4_scenicplus/auc_gene_based_direct.tsv.gz",
+    "auc_gene_based_extended": "/mnt/storageBig8/work/muratli/Smoke_Data/work/stage4_scenicplus/auc_gene_based_extended.tsv.gz",
+    "auc_region_based_direct": "/mnt/storageBig8/work/muratli/Smoke_Data/work/stage4_scenicplus/auc_region_based_direct.tsv.gz",
+    "auc_region_based_extended": "/mnt/storageBig8/work/muratli/Smoke_Data/work/stage4_scenicplus/auc_region_based_extended.tsv.gz",
+    "gex_anndata": "/mnt/storageBig8/work/muratli/Smoke_Data/work/stage4_scenicplus/gex.h5ad",
+    "scplus_mudata": "/mnt/storageBig8/work/muratli/Smoke_Data/work/stage4_scenicplus/Snakemake/scplusmdata.h5mu",
+    "snakemake_dir": "/mnt/storageBig8/work/muratli/Smoke_Data/work/stage4_scenicplus/Snakemake",
+    "triplets_direct": "/mnt/storageBig8/work/muratli/Smoke_Data/work/stage4_scenicplus/eregulon_triplets_direct.tsv",
+    "triplets_extended": "/mnt/storageBig8/work/muratli/Smoke_Data/work/stage4_scenicplus/eregulon_triplets_extended.tsv"
+  },
+  "status": "completed",
+  "versions": {
+    "anndata": "0.10.5.post1",
+    "mudata": "0.2.3",
+    "pycisTopic": "2.0a0",
+    "pycistarget": "1.1",
+    "scenicplus": "1.0a2",
+    "snakemake": "8.5.5"
+  },
+  "warnings": []
+}

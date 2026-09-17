@@ -18,6 +18,13 @@ DEPS = {'inspection': [], 'qc': ['inspection'], 'representation': ['qc'],
         'validation': ['qc', 'graph', 'clustering', 'regulon', 'discovery'],
         'report': ['validation']}
 REVIEW_TASKS = {'validation', 'report'}
+# Input files hashed into the run fingerprint; path keys are also resolved relative to the config file.
+INPUT_KEYS = ('input_path','metadata_path','tf_list','motif_evidence_path',
+              'scenicplus_fragments_path','scenicplus_ctx_db_path','scenicplus_dem_db_path',
+              'scenicplus_motif_annotations_path','scenicplus_blacklist_path','scenicplus_tss_annotation_path',
+              'scenicplus_genome_annotation_path','scenicplus_chromsizes_path','scenicplus_mallet_path')
+PATH_KEYS = INPUT_KEYS + ('output_dir','scenicplus_python','scenicplus_work_dir','scenicplus_temp_dir')
+LARGE_INPUT_BYTES = 256 * 1024 * 1024
 
 def digest(path):
     p = Path(path)
@@ -27,6 +34,22 @@ def digest(path):
     with p.open('rb') as f:
         for block in iter(lambda: f.read(1024 * 1024), b''): h.update(block)
     return h.hexdigest()
+
+def input_digest(path):
+    """SHA-256 of an input; large immutable files are cached by resolved path, size and mtime."""
+    p = Path(path).resolve()
+    if not p.is_file() or p.stat().st_size < LARGE_INPUT_BYTES:
+        return digest(p)
+    cache = Path(os.environ.get('SCRNA_WORKFLOW_DIGEST_CACHE', Path.home() / '.cache' / 'scrna_workflow' / 'input_digests.json'))
+    stat = p.stat(); key = f'{p}|{stat.st_size}|{stat.st_mtime_ns}'
+    try: known = json.loads(cache.read_text())
+    except (OSError, ValueError): known = {}
+    if key not in known:
+        known[key] = digest(p)
+        try:
+            cache.parent.mkdir(parents=True, exist_ok=True); write_json(cache, known)
+        except OSError: pass
+    return known[key]
 
 def write_json(path, data):
     path = Path(path)
@@ -68,10 +91,10 @@ def _execute(config, root, resume, core, downstream):
         try: versions[name] = importlib.metadata.version(name)
         except importlib.metadata.PackageNotFoundError: versions[name] = None
     inputs = {}
-    for key in ('input_path','metadata_path','tf_list','motif_evidence_path'):
+    for key in INPUT_KEYS:
         value = config.get(key)
         if value and Path(value).exists():
-            inputs[key] = {'path': str(Path(value).resolve()), 'sha256': digest(value)}
+            inputs[key] = {'path': str(Path(value).resolve()), 'sha256': input_digest(value)}
     source_hash = hashlib.sha256(json.dumps([(p.name,digest(p)) for p in sorted(Path(__file__).parent.glob('*.py'))]).encode()).hexdigest()
     fingerprint = hashlib.sha256(json.dumps({'config':config,'inputs':inputs,'source':source_hash,'versions':versions,'python':sys.version,'platform':platform.platform()},sort_keys=True).encode()).hexdigest()
     state_path = root / 'run_state.json'
@@ -158,11 +181,11 @@ def main():
     if args.config:
         config=yaml.safe_load(Path(args.config).read_text()) or {}
         base=Path(args.config).resolve().parent
-        for key in ('input_path','metadata_path','output_dir','tf_list','motif_evidence_path'):
+        for key in PATH_KEYS:
             if config.get(key): config[key]=str((base/Path(config[key]).expanduser()).resolve())
     for k in ('input_path','metadata_path','output_dir','seed','workers'):
         if getattr(args,k) is not None: config[k]=getattr(args,k)
-    for key in ('input_path','metadata_path','output_dir','tf_list','motif_evidence_path'):
+    for key in PATH_KEYS:
         if config.get(key): config[key]=str(Path(config[key]).expanduser().resolve())
     try: sys.exit(execute(config,args.resume))
     except Exception as exc: print(f'ERROR: {exc}',file=sys.stderr); sys.exit(2)
