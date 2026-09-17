@@ -13,6 +13,7 @@ def annotate_clusters(adata, markers, marker_sets, gene_symbol_column=None):
     available = set(feature_symbols.values())
     adata.obs["cell_type"] = "unknown"
     adata.obs["annotation_confidence"] = 0.0
+    adata.obs["annotation_source"] = "marker_set_overlap"
     annotations = []
     for cluster in adata.obs["cluster"].cat.categories:
         top = markers.loc[markers["group"].astype(str) == str(cluster)].head(50)

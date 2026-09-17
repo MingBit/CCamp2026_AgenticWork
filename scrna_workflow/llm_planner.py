@@ -33,11 +33,11 @@ SCHEMA = {
 }
 
 
-def _ollama_chat(messages, model, timeout=120, format_schema=None):
+def _ollama_chat(messages, model, timeout=120, format_schema=None, max_output_tokens=700):
     """Call only the loopback Ollama API; no dataset matrix is transmitted."""
     payload = json.dumps({"model": model, "messages": messages,
                           "format": format_schema or SCHEMA, "stream": False,
-                          "options": {"temperature": 0, "num_predict": 700}}).encode()
+                          "options": {"temperature": 0, "num_predict": max_output_tokens}}).encode()
     request = Request("http://127.0.0.1:11434/api/chat", data=payload,
                       headers={"Content-Type": "application/json"})
     try:
@@ -51,7 +51,7 @@ def _ollama_chat(messages, model, timeout=120, format_schema=None):
     try:
         return json.loads(result["message"]["content"])
     except (KeyError, TypeError, json.JSONDecodeError) as exc:
-        raise ValueError("The local model did not return a valid structured plan.") from exc
+        raise ValueError("The local model did not return a valid structured response.") from exc
 
 
 def _explicit_path(value, question, label):

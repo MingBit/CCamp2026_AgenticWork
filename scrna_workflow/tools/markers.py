@@ -1,9 +1,8 @@
 """Exploratory marker ranking by cluster."""
 import pandas as pd
-
+import scanpy as sc
 
 def rank_cluster_markers(adata):
-    import scanpy as sc
 
     markers = pd.DataFrame(columns=["group", "names", "scores", "logfoldchanges", "pvals", "pvals_adj"])
     sizes = adata.obs["cluster"].value_counts()
