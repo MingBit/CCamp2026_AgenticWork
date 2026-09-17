@@ -8,6 +8,8 @@ import pandas as pd
 import anndata as ad
 from scipy import sparse
 from scrna_workflow.core import inspect_data, _countlike
+from scrna_workflow.tools.gene_filter import remove_ribosomal_genes
+from scrna_workflow.tools.annotation import annotate_clusters
 
 
 class CoreTests(unittest.TestCase):
@@ -44,3 +46,27 @@ class CoreTests(unittest.TestCase):
             ctx['config']['matrix_kind']='counts'
             with self.assertRaisesRegex(ValueError,'noninteger'):
                 inspect_data(ctx)
+
+    def test_rpl_rps_filter_preserves_other_count_columns(self):
+        a = ad.AnnData(
+            sparse.csr_matrix([[1, 2, 3, 4, 5], [5, 6, 7, 8, 9]]),
+            var=pd.DataFrame(index=['RPLP0', 'RPS3', 'CD3D', 'MS4A1', 'LST1']),
+        )
+        a.layers['counts'] = a.X.copy()
+        filtered, removed = remove_ribosomal_genes(a)
+        self.assertEqual(filtered.var_names.tolist(), ['CD3D', 'MS4A1', 'LST1'])
+        self.assertEqual(removed['feature_id'].tolist(), ['RPLP0', 'RPS3'])
+        self.assertEqual((filtered.layers['counts'] != a[:, ['CD3D', 'MS4A1', 'LST1']].layers['counts']).nnz, 0)
+        self.assertEqual(a.n_vars, 5)
+
+    def test_marker_annotation_requires_multiple_supporting_genes(self):
+        a = ad.AnnData(np.ones((4, 4)),
+                       obs=pd.DataFrame({'cluster': pd.Categorical(['0','0','1','1'])}),
+                       var=pd.DataFrame(index=['CD3D','CD3E','MS4A1','CD79A']))
+        markers = pd.DataFrame({'group':['0','0','1','1'],
+                                'names':['CD3D','CD3E','MS4A1','CD79A'],
+                                'logfoldchanges':[2.,2.,2.,2.]})
+        result = annotate_clusters(a, markers, {'T cells':['CD3D','CD3E'],
+                                                'B cells':['MS4A1','CD79A']})
+        self.assertEqual([row['label'] for row in result], ['T cells','B cells'])
+        self.assertTrue((a.obs['annotation_confidence'] > 0).all())

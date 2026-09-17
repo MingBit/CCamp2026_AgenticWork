@@ -1,0 +1,30 @@
+node: evm03  cpus: 8
+openjdk version "1.8.0_452"
+prerequisites: ok
+{
+ "status": "completed",
+ "metrics": {
+  "method": "scenicplus",
+  "eregulons": 28,
+  "tfs": 23,
+  "target_genes": 146,
+  "regions": 328,
+  "triplets": 428,
+  "cells_with_activity": 1155,
+  "consensus_peaks": 38753,
+  "contig_peaks_removed": 0,
+  "atac_rna_cells": 1155,
+  "selected_topics": 10,
+  "stages_reused": [
+   "stage1_peaks",
+   "stage2_cistopic",
+   "stage3_motif_databases"
+  ]
+ },
+ "warnings": [
+  "eRegulons are inferred TF-region-gene associations (TF and target co-variation, region accessibility-gene correlation and motif enrichment in the same cells); they are not binding, perturbation or causal evidence.",
+  "AUC activity is computed on the same cells used for inference and is not independent evidence of a cell state.",
+  "Only 46.3% of consensus peaks overlap database regions by > 40% of either region; consider a custom cisTarget database built from the consensus peaks.",
+  "45 of 1200 RNA-QC cells have no eRegulon activity (failed ATAC QC); their activity is empty."
+ ]
+}

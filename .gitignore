@@ -5,3 +5,14 @@ __pycache__/
 results/
 smoke_data/
 public_data/xenium_breast_cancer
+
+# Large public dataset (~2.7 GB); download instructions in public_data/pbmc10k_multiome/README.md
+public_data/pbmc10k_multiome/*
+!public_data/pbmc10k_multiome/README.md
+# SCENIC+ reference resources (~49 GB) and MALLET; rebuild steps in their README.md
+public_data/scenicplus_resources/**
+!public_data/scenicplus_resources/**/
+!public_data/scenicplus_resources/README.md
+!public_data/scenicplus_resources/hg38/genome/make_annotations.py
+tools/*
+!tools/README.md

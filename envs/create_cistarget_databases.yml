@@ -1,0 +1,22 @@
+# Only needed to build custom cisTarget motif databases from our consensus peaks
+# (skip if using the precomputed hg38 SCREEN databases).
+# Build:  conda env create -f envs/create_cistarget_databases.yml
+# Then, with the env active:
+#   git clone https://github.com/aertslab/create_cisTarget_databases
+#   wget -O "$CONDA_PREFIX/bin/cbust" https://resources.aertslab.org/cistarget/programs/cbust
+#   chmod a+x "$CONDA_PREFIX/bin/cbust"
+name: create_cistarget_databases
+channels:
+  - conda-forge
+  - bioconda
+  - nodefaults
+dependencies:
+  - python=3.10
+  - numpy=1.21
+  - pandas>=1.4.1
+  - pyarrow>=7.0.0
+  - numba>=0.55.1
+  - python-flatbuffers
+  - bedtools               # create_fasta_with_padded_bg_from_bed.sh
+  - git
+  - wget

@@ -1,0 +1,196 @@
+{
+  "cell_type_labels": [
+    "B cell",
+    "Myeloid",
+    "T cell",
+    "unknown"
+  ],
+  "handoff": {
+    "cell_type_sizes": {
+      "B cell": 97,
+      "Myeloid": 514,
+      "T cell": 371
+    },
+    "cells": 1200,
+    "cells_in_pseudobulk_groups": 982,
+    "genes": 2474,
+    "pseudobulk_groups": 3
+  },
+  "interpretation": "eRegulons are inferred TF-region-gene associations (TF and target co-variation, region accessibility-gene correlation and motif enrichment in the same cells); they are not binding, perturbation or causal evidence.",
+  "method": "scenicplus",
+  "stages": {
+    "stage1_peaks": {
+      "fingerprint": "ebd25341ec40cab3018c80bb43e001e354b63bacf9990641cad8b209785127a4",
+      "metrics": {
+        "cells_in_pseudobulks": 982,
+        "consensus_peaks": 38753,
+        "consensus_peaks_before_chromosome_filter": 38753,
+        "consensus_peaks_removed_outside_keep_chromosomes": 0,
+        "peaks_per_pseudobulk": {
+          "B_cell": 11643,
+          "Myeloid": 26833,
+          "T_cell": 23269
+        },
+        "pseudobulks": 3
+      },
+      "outputs": {
+        "consensus_regions": "/mnt/storageBig8/work/muratli/Smoke_Data/work/stage1_peaks/consensus_regions.bed",
+        "macs2_dir": "/mnt/storageBig8/work/muratli/Smoke_Data/work/stage1_peaks/macs2",
+        "pseudobulk_bed_dir": "/mnt/storageBig8/work/muratli/Smoke_Data/work/stage1_peaks/pseudobulk_bed",
+        "pseudobulk_bigwig_dir": "/mnt/storageBig8/work/muratli/Smoke_Data/work/stage1_peaks/pseudobulk_bigwig"
+      },
+      "reused": true,
+      "versions": {
+        "MACS2": "2.2.9.1",
+        "pycisTopic": "2.0a0",
+        "pyranges": "0.0.111"
+      },
+      "warnings": []
+    },
+    "stage2_cistopic": {
+      "fingerprint": "4ee5c8e967df4d1c0f18d480b9d5eb401d234ab06dc2b322bfb24f7dd42daac9",
+      "metrics": {
+        "barcodes_passing_atac_qc": 1155,
+        "cells_used": 1155,
+        "otsu_thresholds": {
+          "tss_enrichment_otsu_threshold": 13.102617775515863,
+          "unique_fragments_in_peaks_count_otsu_threshold": 404.0384012471485
+        },
+        "qc_thresholds": {
+          "frip_threshold": 0.0,
+          "tss_enrichment_threshold": 1.0,
+          "unique_fragments_threshold": 10.0
+        },
+        "region_set_sizes": {
+          "DARs_cell_type/B_cell": 6787,
+          "DARs_cell_type/Myeloid": 6535,
+          "DARs_cell_type/T_cell": 1360,
+          "Topics_otsu/Topic1": 387,
+          "Topics_otsu/Topic10": 344,
+          "Topics_otsu/Topic2": 430,
+          "Topics_otsu/Topic3": 696,
+          "Topics_otsu/Topic4": 537,
+          "Topics_otsu/Topic5": 2098,
+          "Topics_otsu/Topic6": 531,
+          "Topics_otsu/Topic7": 389,
+          "Topics_otsu/Topic8": 387,
+          "Topics_otsu/Topic9": 362,
+          "Topics_top_3000/Topic1": 2995,
+          "Topics_top_3000/Topic10": 3000,
+          "Topics_top_3000/Topic2": 3000,
+          "Topics_top_3000/Topic3": 2996,
+          "Topics_top_3000/Topic4": 2999,
+          "Topics_top_3000/Topic5": 2545,
+          "Topics_top_3000/Topic6": 2990,
+          "Topics_top_3000/Topic7": 3000,
+          "Topics_top_3000/Topic8": 3000,
+          "Topics_top_3000/Topic9": 3000
+        },
+        "regions": 38744,
+        "rna_qc_cells": 1200,
+        "selected_topics": 10,
+        "variable_regions": 18387
+      },
+      "outputs": {
+        "cells": "/mnt/storageBig8/work/muratli/Smoke_Data/work/stage2_cistopic/cells_passing_atac_and_rna_qc.tsv",
+        "cistopic_object": "/mnt/storageBig8/work/muratli/Smoke_Data/work/stage2_cistopic/cistopic_object.pkl",
+        "qc_dir": "/mnt/storageBig8/work/muratli/Smoke_Data/work/stage2_cistopic/qc",
+        "region_set_folder": "/mnt/storageBig8/work/muratli/Smoke_Data/work/stage2_cistopic/region_sets",
+        "topic_models": "/mnt/storageBig8/work/muratli/Smoke_Data/work/stage2_cistopic/topic_models.pkl"
+      },
+      "reused": true,
+      "versions": {
+        "gensim": "4.3.2",
+        "lda": "3.0.0",
+        "pycisTopic": "2.0a0"
+      },
+      "warnings": []
+    },
+    "stage3_motif_databases": {
+      "fingerprint": "5bd1174dce767dd83fe7559f2d41d63fc9a9ea582a664dae81196a63630a1ebe",
+      "metrics": {
+        "annotated_motif_fraction": 1.0,
+        "checksums": {
+          "ctx_db": "verified",
+          "dem_db": "verified"
+        },
+        "consensus_peak_coverage_fraction": 0.4633,
+        "consensus_peaks": 38753,
+        "consensus_peaks_covered_by_database": 17955,
+        "database_motifs": 5876,
+        "database_regions": 1837304,
+        "dem_database_motifs": 5876
+      },
+      "outputs": {
+        "ctx_db": "/mnt/storageBig8/work/muratli/Coding_Camps/2026/public_data/scenicplus_resources/hg38/cistarget/hg38_screen_v10_clust.regions_vs_motifs.rankings.feather",
+        "dem_db": "/mnt/storageBig8/work/muratli/Coding_Camps/2026/public_data/scenicplus_resources/hg38/cistarget/hg38_screen_v10_clust.regions_vs_motifs.scores.feather",
+        "motif_annotations": "/mnt/storageBig8/work/muratli/Coding_Camps/2026/public_data/scenicplus_resources/hg38/cistarget/motifs-v10nr_clust-nr.hgnc-m0.001-o0.0.tbl"
+      },
+      "reused": true,
+      "versions": {
+        "pyarrow": "15.0.0",
+        "pycistarget": "1.1",
+        "pyranges": "0.0.111"
+      },
+      "warnings": [
+        "Only 46.3% of consensus peaks overlap database regions by > 40% of either region; consider a custom cisTarget database built from the consensus peaks."
+      ]
+    },
+    "stage4_scenicplus": {
+      "fingerprint": "a5d7961d77f12c2022fcc3e7fcb1022800ec5ac343dce1ad8ec7d6dfb1a80c6f",
+      "metrics": {
+        "direct": {
+          "cells_scored": 1155,
+          "eregulons": 28,
+          "regions": 328,
+          "target_genes": 146,
+          "tfs": 23,
+          "triplets": 428
+        },
+        "extended": {
+          "cells_scored": 1155,
+          "eregulons": 7,
+          "regions": 52,
+          "target_genes": 27,
+          "tfs": 6,
+          "triplets": 56
+        },
+        "gex_cells": 1200,
+        "gex_genes": 2474
+      },
+      "outputs": {
+        "auc_gene_based_direct": "/mnt/storageBig8/work/muratli/Smoke_Data/work/stage4_scenicplus/auc_gene_based_direct.tsv.gz",
+        "auc_gene_based_extended": "/mnt/storageBig8/work/muratli/Smoke_Data/work/stage4_scenicplus/auc_gene_based_extended.tsv.gz",
+        "auc_region_based_direct": "/mnt/storageBig8/work/muratli/Smoke_Data/work/stage4_scenicplus/auc_region_based_direct.tsv.gz",
+        "auc_region_based_extended": "/mnt/storageBig8/work/muratli/Smoke_Data/work/stage4_scenicplus/auc_region_based_extended.tsv.gz",
+        "gex_anndata": "/mnt/storageBig8/work/muratli/Smoke_Data/work/stage4_scenicplus/gex.h5ad",
+        "scplus_mudata": "/mnt/storageBig8/work/muratli/Smoke_Data/work/stage4_scenicplus/Snakemake/scplusmdata.h5mu",
+        "snakemake_dir": "/mnt/storageBig8/work/muratli/Smoke_Data/work/stage4_scenicplus/Snakemake",
+        "triplets_direct": "/mnt/storageBig8/work/muratli/Smoke_Data/work/stage4_scenicplus/eregulon_triplets_direct.tsv",
+        "triplets_extended": "/mnt/storageBig8/work/muratli/Smoke_Data/work/stage4_scenicplus/eregulon_triplets_extended.tsv"
+      },
+      "reused": false,
+      "versions": {
+        "anndata": "0.10.5.post1",
+        "mudata": "0.2.3",
+        "pycisTopic": "2.0a0",
+        "pycistarget": "1.1",
+        "scenicplus": "1.0a2",
+        "snakemake": "8.5.5"
+      },
+      "warnings": []
+    }
+  },
+  "summaries": [
+    {
+      "group_column": "annotation",
+      "path": "/mnt/storageBig8/work/muratli/Smoke_Data/run/regulon/activity_group_0.tsv"
+    },
+    {
+      "group_column": "cluster",
+      "path": "/mnt/storageBig8/work/muratli/Smoke_Data/run/regulon/activity_group_1.tsv"
+    }
+  ],
+  "temp_dir": "/mnt/storageBig8/work/muratli/Smoke_Data/t",
+  "work_dir": "/mnt/storageBig8/work/muratli/Smoke_Data/work"
+}

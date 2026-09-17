@@ -1,0 +1,3 @@
+# Build-time constraints for source-only pip packages in scenicplus.yml.
+# pybedtools 0.9.1's setup.py imports pkg_resources, removed in setuptools 81.
+setuptools<81
