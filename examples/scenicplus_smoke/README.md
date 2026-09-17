@@ -18,7 +18,9 @@ calls, and several parameters are relaxed.
   topics and 50 iterations, relaxed ATAC QC minima without Otsu thresholds, `gsea_n_perm` 100,
   `min_target_genes` 3, MALLET memory 8 GB.
 - **Execution:** SLURM, 8 CPUs; the regulon step called directly (no inspection/QC/clustering
-  tasks), see `run_scripts/`. Steps to reproduce are in the SCENIC+ section of the main README.
+  tasks), see `run_scripts/`. `run_scripts/smoke_regulon.py` is kept as it ran; with the current
+  package layout import `_result` from `scrna_workflow.tools._downstream_common` and `PATH_KEYS`
+  from `scrna_workflow.cli` instead of `scrna_workflow.downstream` / `scrna_workflow.runner`. Steps to reproduce are in the SCENIC+ section of the main README.
 - **Run recorded here:** SLURM job 6504131 on eodd, 2026-09-17, stages 1-3 from job 6504017
   (2026-09-16). Code as committed with these files, except that stage 4 ran before the
   direct-only fallback (`scenicplus_allow_direct_only`) was added; both eRegulon sets were built,

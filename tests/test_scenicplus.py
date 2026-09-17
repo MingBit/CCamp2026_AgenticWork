@@ -15,7 +15,8 @@ import pytest
 from scipy import sparse
 
 from scrna_workflow import regulon_scenicplus as rs
-from scrna_workflow.downstream import _result, regulon, report
+from scrna_workflow.downstream import regulon, report
+from scrna_workflow.tools._downstream_common import _result
 from scrna_workflow.scenicplus_stages import common
 from scrna_workflow.scenicplus_stages.stage2_cistopic import qc_thresholds
 from scrna_workflow.scenicplus_stages.stage4_scenicplus import empty_extended_egrn_failure

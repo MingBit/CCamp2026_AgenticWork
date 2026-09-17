@@ -59,9 +59,25 @@ def test_validation_catches_count_corruption(tmp_path):
     assert not result["metrics"]["checks"]["retained_counts_preserved_since_inspection"]
 
 
+def test_validation_accepts_documented_gene_removal(tmp_path):
+    ctx, a = make_context(tmp_path)
+    a.var_names = ["g1", "RPL2", "g3", "g4"]
+    a.write_h5ad(tmp_path / "data.h5ad")
+    filtered = a[:, ["g1", "g3", "g4"]].copy()
+    filtered.uns["workflow_gene_filter"] = {"removed_genes": 1, "symbol_source": "var_names"}
+    path = tmp_path / "filtered.h5ad"
+    filtered.write_h5ad(path)
+    ctx["artifacts"]["clustering"]["outputs"]["dataset"] = str(path)
+    result = validation(ctx)
+    assert result["status"] == "completed"
+    assert result["metrics"]["checks"]["qc_gene_subset_order_preserved"]
+    assert result["metrics"]["checks"]["counts_preserved_since_qc"]
+
+
 class DownstreamTests(unittest.TestCase):
     def test_integrity_and_design_guards(self):
         for check in (test_pseudobulk_preserves_each_sample_population_sum,
-                      test_unverified_counts_are_not_exported, test_validation_catches_count_corruption):
+                      test_unverified_counts_are_not_exported, test_validation_catches_count_corruption,
+                      test_validation_accepts_documented_gene_removal):
             with self.subTest(check=check.__name__), tempfile.TemporaryDirectory() as directory:
                 check(Path(directory))

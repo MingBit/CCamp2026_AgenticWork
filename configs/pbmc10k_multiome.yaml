@@ -28,6 +28,9 @@ n_pcs: 30
 n_top_genes: 2000
 resolutions: [0.4, 0.8, 1.2]
 markers: {} # supply curated marker sets: SCENIC+ needs >= 2 labelled cell types for pseudobulk peak calling
+knowledge_base_path: null # Local YAML marker knowledge base with a source.
+annotation_backend: markers # Set ollama for local LLM review of observed marker evidence.
+annotation_model: qwen2.5:7b
 tf_list: ../public_data/scenicplus_resources/hg38/cistarget/allTFs_hg38.txt # used by regulon_method: coexpression
 tf_resource_organism: human
 
