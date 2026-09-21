@@ -140,3 +140,37 @@ class CliTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class OllamaSettingsTests(unittest.TestCase):
+    """Environment overrides for slow CPU-only hosts; defaults stay unchanged."""
+
+    def _call(self, env):
+        from scrna_workflow import llm_planner
+        sent = {}
+
+        def fake_urlopen(request, timeout=None):
+            sent["payload"] = json.loads(request.data)
+            sent["timeout"] = timeout
+            raise OSError("no server")
+        with patch.dict("os.environ", env, clear=False), \
+             patch("scrna_workflow.llm_planner.urlopen", fake_urlopen), \
+             self.assertRaises(RuntimeError):
+            llm_planner._ollama_chat([{"role": "user", "content": "hi"}], "qwen2.5:7b")
+        return sent
+
+    def test_defaults_without_environment_overrides(self):
+        sent = self._call({"SCRNA_OLLAMA_TIMEOUT": "", "SCRNA_OLLAMA_NUM_THREADS": ""})
+        self.assertEqual(sent["timeout"], 120)
+        self.assertNotIn("num_thread", sent["payload"]["options"])
+
+    def test_environment_overrides_timeout_and_threads(self):
+        sent = self._call({"SCRNA_OLLAMA_TIMEOUT": "900", "SCRNA_OLLAMA_NUM_THREADS": "16"})
+        self.assertEqual(sent["timeout"], 900)
+        self.assertEqual(sent["payload"]["options"]["num_thread"], 16)
+
+    def test_invalid_override_is_rejected(self):
+        from scrna_workflow import llm_planner
+        with patch.dict("os.environ", {"SCRNA_OLLAMA_TIMEOUT": "0"}, clear=False), \
+             self.assertRaisesRegex(ValueError, "positive whole number"):
+            llm_planner._ollama_setting("SCRNA_OLLAMA_TIMEOUT", 120)

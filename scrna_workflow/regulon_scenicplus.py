@@ -50,6 +50,9 @@ STAGE_RESOURCES = {
     "stage3_motif_databases": ["ctx_db", "dem_db", "motif_annotations"],
     "stage4_scenicplus": ["ctx_db", "dem_db", "motif_annotations", "genome_annotation", "chromsizes"],
 }
+# Ray creates unix sockets under the temp directory: <temp_dir>/session_<40 chars>/sockets/plasma_store
+# must fit AF_UNIX's 107-byte limit, which leaves ~45 characters for the temp directory itself.
+MAX_TEMP_DIR_LENGTH = 45
 # Execution settings that do not change results; excluded from stage fingerprints.
 EXECUTION_KEYS = {"stage_dir", "n_cpu", "temp_dir", "mallet_memory_gb", "mallet_path"}
 INTERPRETATION = ("eRegulons are inferred TF-region-gene associations (TF and target co-variation, region "
@@ -229,6 +232,15 @@ def stage_parameters(cfg, handoff, work):
     return stage1, stage2, stage3, stage4, temp_dir
 
 
+# (modality, kind) -> (stage 4 output key, run output key, file stem); the first entry is the primary activity.
+ACTIVITY_TABLES = [
+    (("gene_based", "direct"), "auc_gene_based_direct", "activity", "eregulon_activity_gene_based_direct"),
+    (("region_based", "direct"), "auc_region_based_direct", "activity_region_based", "eregulon_activity_region_based_direct"),
+    (("gene_based", "extended"), "auc_gene_based_extended", "activity_extended", "eregulon_activity_gene_based_extended"),
+    (("region_based", "extended"), "auc_region_based_extended", "activity_region_based_extended", "eregulon_activity_region_based_extended"),
+]
+
+
 def _aligned_activity(path, index, destination):
     import pandas as pd
     values = pd.read_csv(path, sep="\t", index_col=0)
@@ -237,6 +249,102 @@ def _aligned_activity(path, index, destination):
     aligned.index.name = "cell_id"
     aligned.to_csv(destination, sep="\t")
     return aligned, int(aligned.notna().any(axis=1).sum())
+
+
+def group_activity_summary(activity, groups):
+    """Mean AUC per group over scored cells, with group size and number of scored cells first."""
+    import pandas as pd
+    groups = pd.Series(groups, index=activity.index, name="group").astype(str)
+    scored = activity.notna().any(axis=1)
+    counts = pd.DataFrame({"n_cells": groups.value_counts(), "n_cells_scored": groups[scored].value_counts()})
+    counts = counts.fillna(0).astype(int)
+    means = activity.groupby(groups.to_numpy(), observed=True).mean()
+    summary = counts.join(means)
+    summary.index.name = "group"
+    return summary.sort_index()
+
+
+def regulon_specificity_scores(activity, groups):
+    """Regulon specificity scores (Suo et al. 2018), as in `scenicplus.RSS.regulon_specificity_scores_df`.
+
+    RSS = 1 - Jensen-Shannon distance between an eRegulon's AUC distribution over scored
+    cells (normalized to sum 1) and a group's membership indicator (normalized to sum 1).
+    Cells without AUC (failed ATAC QC) are ignored; rows are groups, columns eRegulons.
+    """
+    import numpy as np
+    import pandas as pd
+    from scipy.spatial.distance import jensenshannon
+
+    groups = pd.Series(groups, index=activity.index).astype(str)
+    scored = activity.notna().any(axis=1)
+    labels = sorted(groups[scored].unique())
+    scores = pd.DataFrame(np.nan, index=pd.Index(labels, name="group"), columns=activity.columns)
+    for regulon in activity.columns:
+        valid = activity[regulon].notna().to_numpy()
+        values = activity[regulon].to_numpy(dtype=float)[valid]
+        members = groups.to_numpy()[valid]
+        if values.sum() <= 0:
+            continue
+        for label in labels:
+            indicator = (members == label).astype(float)
+            if indicator.sum() > 0:
+                scores.loc[label, regulon] = 1.0 - jensenshannon(values / values.sum(), indicator / indicator.sum())
+    return scores
+
+
+def _top_regulons(scores, top_n):
+    return list(dict.fromkeys(name for group in scores.index for name in scores.loc[group].dropna().nlargest(top_n).index))
+
+
+def plot_rss_ranks(scores, destination, top_n=5, title="eRegulon specificity"):
+    """One panel per group: RSS of all eRegulons by rank, top eRegulons labelled."""
+    import matplotlib
+    matplotlib.use("Agg")
+    import matplotlib.pyplot as plt
+    import numpy as np
+
+    ncols = min(3, len(scores.index))
+    nrows = int(np.ceil(len(scores.index) / ncols))
+    fig, axes = plt.subplots(nrows, ncols, figsize=(4.4 * ncols, 3.6 * nrows), squeeze=False)
+    for ax, group in zip(axes.ravel(), scores.index):
+        values = scores.loc[group].dropna().sort_values(ascending=False)
+        ranks = np.arange(1, len(values) + 1)
+        ax.scatter(ranks, values.to_numpy(), s=8, color="#8497ad", rasterized=True)
+        top = values.head(top_n)
+        ax.scatter(ranks[:len(top)], top.to_numpy(), s=18, color="#c0504d", zorder=3)
+        # Labels in a column at the upper right, in rank order, so leader lines do not cross.
+        for i, (name, score) in enumerate(top.items()):
+            ax.annotate(str(name), (i + 1, score), xytext=(0.42, 0.94 - 0.085 * i), textcoords="axes fraction",
+                        fontsize=7, va="center", bbox=dict(boxstyle="round,pad=0.15", fc="white", ec="none", alpha=0.85),
+                        arrowprops=dict(arrowstyle="-", color="#999999", lw=0.5))
+        ax.set(title=str(group), xlabel="eRegulon rank", ylabel="RSS")
+    for ax in axes.ravel()[len(scores.index):]:
+        ax.axis("off")
+    fig.suptitle(title)
+    fig.tight_layout()
+    fig.savefig(destination, dpi=150)
+    plt.close(fig)
+    return str(destination)
+
+
+def plot_rss_heatmap(scores, destination, top_n=5, title="eRegulon specificity (RSS)"):
+    """Groups x union of each group's top eRegulons by RSS."""
+    import matplotlib
+    matplotlib.use("Agg")
+    import matplotlib.pyplot as plt
+
+    chosen = _top_regulons(scores, top_n)
+    data = scores[chosen]
+    fig, ax = plt.subplots(figsize=(max(5, 0.32 * len(chosen) + 2), max(2.8, 0.38 * len(data.index) + 1.8)))
+    image = ax.imshow(data.to_numpy(dtype=float), cmap="viridis", aspect="auto")
+    ax.set_xticks(range(len(chosen)), chosen, rotation=90, fontsize=7)
+    ax.set_yticks(range(len(data.index)), data.index)
+    ax.set(title=title)
+    fig.colorbar(image, ax=ax, label="RSS")
+    fig.tight_layout()
+    fig.savefig(destination, dpi=150)
+    plt.close(fig)
+    return str(destination)
 
 
 def run(ctx, out, cfg, source, result, runner=None):
@@ -262,6 +370,10 @@ def run(ctx, out, cfg, source, result, runner=None):
                       actions=["Annotate cell types before running SCENIC+."])
 
     stage1, stage2, stage3, stage4, temp_dir = stage_parameters(cfg, handoff, work)
+    if len(temp_dir) > MAX_TEMP_DIR_LENGTH:
+        message = (f"scenicplus_temp_dir is {len(temp_dir)} characters ({temp_dir}); Ray's unix sockets need "
+                   f"at most {MAX_TEMP_DIR_LENGTH}. Set a short local path, e.g. /tmp/scenicplus.")
+        return result("skipped", [source], metrics={"handoff": handoff_metrics}, warnings=[message], actions=[message])
     stages = {}
     stages["stage1_peaks"] = run_stage("stage1_peaks", stage1, [handoff_fingerprint], work, cfg, runner)
     peaks = stages["stage1_peaks"]
@@ -282,31 +394,83 @@ def run(ctx, out, cfg, source, result, runner=None):
         edges = out / f"eregulon_triplets_{kind}.tsv"
         shutil.copyfile(final[f"triplets_{kind}"], edges)
         outputs["edges" if kind == "direct" else "edges_extended"] = str(edges)
-    activity, scored = _aligned_activity(final["auc_gene_based_direct"], a.obs_names.astype(str), out / "eregulon_activity_gene_based_direct.tsv.gz")
-    outputs["activity"] = str(out / "eregulon_activity_gene_based_direct.tsv.gz")
-    _aligned_activity(final["auc_region_based_direct"], a.obs_names.astype(str), out / "eregulon_activity_region_based_direct.tsv.gz")
-    outputs["activity_region_based"] = str(out / "eregulon_activity_region_based_direct.tsv.gz")
+    tables = {}
+    for (modality, kind), stage_key, output_key, stem in ACTIVITY_TABLES:
+        if stage_key not in final:  # extended tables are absent when only direct eRegulons were built
+            continue
+        destination = out / f"{stem}.tsv.gz"
+        tables[(modality, kind)], n_scored = _aligned_activity(final[stage_key], a.obs_names.astype(str), destination)
+        outputs[output_key] = str(destination)
+        if (modality, kind) == ("gene_based", "direct"):
+            scored = n_scored
 
+    # Per-group summaries for every activity table. Direct gene-based keeps the original
+    # activity_group_<n>.tsv names; the others add "_<modality>_<kind>".
     summaries = []
     labels = a.obs[cfg["scenicplus_cell_type_column"]].astype(str)
     groups = [c for c in dict.fromkeys([cfg["scenicplus_cell_type_column"], "cluster", cfg.get("sample_column"),
                                         cfg.get("donor_column"), cfg.get("condition_column")]) if c and c in a.obs]
     for number, column in enumerate(groups):
-        f = out / f"activity_group_{number}.tsv"
-        activity.groupby(a.obs[column].astype(str).to_numpy(), observed=True).mean().to_csv(f, sep="\t")
-        outputs[f"summary_{number}"] = str(f)
-        summaries.append({"group_column": column, "path": str(f)})
+        for (modality, kind), activity in tables.items():
+            primary = (modality, kind) == ("gene_based", "direct")
+            suffix = "" if primary else f"_{modality}_{kind}"
+            f = out / f"activity_group_{number}{suffix}.tsv"
+            group_activity_summary(activity, a.obs[column].to_numpy()).to_csv(f, sep="\t")
+            outputs[f"summary_{number}{suffix}"] = str(f)
+            summaries.append({"group_column": column, "modality": modality, "eregulon_kind": kind, "path": str(f)})
+
+    # Regulon specificity scores per group, with rank plots and heatmaps for the cell-type column.
+    rss_files, top_rss, cell_type_rss = [], {}, None
+    top_n = int(cfg.get("scenicplus_rss_top_n", 5))
+    for number, column in enumerate(groups):
+        for (modality, kind), activity in tables.items():
+            primary = (modality, kind) == ("gene_based", "direct")
+            suffix = "" if primary else f"_{modality}_{kind}"
+            scores = regulon_specificity_scores(activity, a.obs[column].to_numpy())
+            f = out / f"rss_group_{number}{suffix}.tsv"
+            scores.to_csv(f, sep="\t")
+            outputs[f"rss_{number}{suffix}"] = str(f)
+            entry = {"group_column": column, "modality": modality, "eregulon_kind": kind, "path": str(f)}
+            if column == cfg["scenicplus_cell_type_column"] and scores.size:
+                label = f"{modality.replace('_', '-')} {kind} eRegulons"
+                entry["rank_plot"] = outputs[f"rss_rank_plot{suffix}"] = plot_rss_ranks(
+                    scores, out / f"rss_ranks{suffix}.png", top_n, f"eRegulon specificity per {column} ({label})")
+                entry["heatmap"] = outputs[f"rss_heatmap{suffix}"] = plot_rss_heatmap(
+                    scores, out / f"rss_heatmap{suffix}.png", top_n, f"RSS per {column}, top {top_n} per group ({label})")
+                if primary:
+                    top_rss = {group: scores.loc[group].dropna().nlargest(3).round(4).to_dict() for group in scores.index}
+                    cell_type_rss = scores
+            rss_files.append(entry)
+    # Cell-type views of the direct eRegulon network (TF -> region -> target gene).
+    network_summary = []
     warnings = [w for s in stages.values() for w in s.get("warnings", [])]
+    if cell_type_rss is not None and "edges" in outputs and peaks["outputs"].get("macs2_dir"):
+        from .regulon_networks import build_cell_type_networks
+        network_outputs, network_summary, network_warnings = build_cell_type_networks(
+            outputs["edges"], cell_type_rss, handoff["cells_tsv"], peaks["outputs"]["macs2_dir"], a,
+            cfg["scenicplus_cell_type_column"], out / "networks",
+            top_eregulons=int(cfg.get("scenicplus_network_top_eregulons", 5)),
+            min_gene_fraction=float(cfg.get("scenicplus_network_min_gene_fraction", 0.1)),
+            max_targets_per_tf=int(cfg.get("scenicplus_network_max_targets_per_tf", 20)))
+        outputs.update(network_outputs)
+        warnings += network_warnings
     if scored < a.n_obs:
         warnings.append(f"{a.n_obs - scored} of {a.n_obs} RNA-QC cells have no eRegulon activity (failed ATAC QC); their activity is empty.")
     diagnostics = {"method": "scenicplus", "work_dir": str(work), "temp_dir": temp_dir, "handoff": handoff_metrics,
                    "stages": {name: {k: s.get(k) for k in ("fingerprint", "reused", "metrics", "warnings", "versions", "outputs")}
                               for name, s in stages.items()},
-                   "summaries": summaries, "cell_type_labels": sorted(set(labels)), "interpretation": INTERPRETATION}
+                   "summaries": summaries, "regulon_specificity": rss_files, "cell_type_networks": network_summary,
+                   "cell_type_labels": sorted(set(labels)),
+                   "interpretation": INTERPRETATION}
     outputs["diagnostics"] = common.write_json(out / "diagnostics.json", diagnostics)
     direct = stages["stage4_scenicplus"]["metrics"]["direct"]
+    extended = stages["stage4_scenicplus"]["metrics"].get("extended") or {}
     metrics = {"method": "scenicplus", "eregulons": direct["eregulons"], "tfs": direct["tfs"], "target_genes": direct["target_genes"],
                "regions": direct["regions"], "triplets": direct["triplets"], "cells_with_activity": scored,
+               "extended_eregulons": extended.get("eregulons"), "extended_triplets": extended.get("triplets"),
+               "top_rss_per_cell_type": top_rss,
+               "cell_type_networks": {row["cell_type"]: {k: row[k] for k in ("tfs", "regions", "target_genes", "edges")}
+                                      for row in network_summary},
                "consensus_peaks": peaks["metrics"]["consensus_peaks"],
                "contig_peaks_removed": peaks["metrics"]["consensus_peaks_removed_outside_keep_chromosomes"],
                "atac_rna_cells": topics["metrics"]["cells_used"], "selected_topics": topics["metrics"]["selected_topics"],
@@ -314,4 +478,5 @@ def run(ctx, out, cfg, source, result, runner=None):
     if direct["eregulons"] == 0:
         return result("inconclusive", [source], outputs, metrics, warnings + ["No direct eRegulons were inferred."])
     return result(inputs=[source] + [cfg[k] for k in RESOURCE_KEYS.values()], outputs=outputs, metrics=metrics,
-                  warnings=[INTERPRETATION, "AUC activity is computed on the same cells used for inference and is not independent evidence of a cell state."] + warnings)
+                  warnings=[INTERPRETATION, "AUC activity is computed on the same cells used for inference and is not independent evidence of a cell state.",
+                            "RSS ranks eRegulons by how concentrated their activity is in a group relative to all scored cells; it is descriptive, depends on the group definitions, and is not a statistical test."] + warnings)

@@ -23,10 +23,11 @@ copy_if_present() {  # copy_if_present <source> <destination>
 }
 
 # Final regulon outputs, as produced by the workflow's regulon task.
-cp "$SRC"/run/regulon/* "$DEST/regulon/"
-# Extended activity scores exist only when extended eRegulons were built.
+cp -r "$SRC"/run/regulon/. "$DEST/regulon/"
+# Runs made before extended activity was exported to run/regulon: take it from stage 4 (scored cells only).
 for f in auc_gene_based_extended.tsv.gz auc_region_based_extended.tsv.gz; do
-  copy_if_present "$WORK/stage4_scenicplus/$f" "$DEST/regulon/eregulon_activity_${f#auc_}"
+  target="$DEST/regulon/eregulon_activity_${f#auc_}"
+  [ -f "$SRC/run/regulon/${target##*/}" ] || copy_if_present "$WORK/stage4_scenicplus/$f" "$target"
 done
 
 # Per-stage metrics, warnings, package versions and fingerprints.

@@ -4,6 +4,7 @@ The model proposes structured configuration; it never executes shell commands or
 supplies biological marker evidence. Only explicitly named local paths are used.
 """
 import json
+import os
 from pathlib import Path
 import re
 from urllib.error import URLError
@@ -33,11 +34,35 @@ SCHEMA = {
 }
 
 
-def _ollama_chat(messages, model, timeout=120, format_schema=None, max_output_tokens=700):
+def _ollama_setting(name, default):
+    """Read a positive integer override from the environment; keep the default otherwise.
+
+    CPU-only hosts need a longer timeout than the 120 s default (SCRNA_OLLAMA_TIMEOUT), and
+    Ollama otherwise starts one thread per host core, which oversubscribes a job that was
+    allocated fewer cores (SCRNA_OLLAMA_NUM_THREADS).
+    """
+    value = os.environ.get(name)
+    if value is None or not value.strip():
+        return default
+    try:
+        number = int(value)
+    except ValueError as exc:
+        raise ValueError(f"{name} must be a positive whole number, got {value!r}") from exc
+    if number <= 0:
+        raise ValueError(f"{name} must be a positive whole number, got {value!r}")
+    return number
+
+
+def _ollama_chat(messages, model, timeout=None, format_schema=None, max_output_tokens=700):
     """Call only the loopback Ollama API; no dataset matrix is transmitted."""
+    options = {"temperature": 0, "num_predict": max_output_tokens}
+    threads = _ollama_setting("SCRNA_OLLAMA_NUM_THREADS", None)
+    if threads:
+        options["num_thread"] = threads
+    timeout = timeout if timeout is not None else _ollama_setting("SCRNA_OLLAMA_TIMEOUT", 120)
     payload = json.dumps({"model": model, "messages": messages,
                           "format": format_schema or SCHEMA, "stream": False,
-                          "options": {"temperature": 0, "num_predict": max_output_tokens}}).encode()
+                          "options": options}).encode()
     request = Request("http://127.0.0.1:11434/api/chat", data=payload,
                       headers={"Content-Type": "application/json"})
     try:
@@ -45,8 +70,9 @@ def _ollama_chat(messages, model, timeout=120, format_schema=None, max_output_to
             result = json.load(response)
     except (OSError, URLError) as exc:
         raise RuntimeError(
-            "Local Ollama planning failed. Start Ollama and install the selected model, "
-            "or use --planner rules for explicit path-based parsing."
+            f"Local Ollama call failed after {timeout} s ({type(exc).__name__}). Start Ollama and install "
+            "the selected model, raise SCRNA_OLLAMA_TIMEOUT for slow CPU-only hosts, choose a smaller "
+            "model, or use --planner rules / annotation_backend: markers."
         ) from exc
     try:
         return json.loads(result["message"]["content"])

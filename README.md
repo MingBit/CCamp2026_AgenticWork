@@ -99,6 +99,10 @@ The regulon task (`scrna_workflow/regulon_scenicplus.py`) runs four stages from 
 3. `stage3_motif_databases`: cisTarget database checksums, database/annotation consistency and consensus-peak coverage.
 4. `stage4_scenicplus`: the SCENIC+ Snakemake pipeline with offline gene annotation; eRegulon triplets and AUC scores are exported as TSV.
 
+Besides eRegulon triplets and AUC activity (direct and extended, gene- and region-based), the regulon outputs include per-group activity summaries with cell counts and regulon specificity scores (`rss_group_*.tsv`, as in `scenicplus.RSS`) with rank plots and heatmaps per cell type; the report shows the direct gene-based RSS heatmap.
+
+`run/regulon/networks/` holds one TF -> region -> target gene network per pseudobulk cell type (PNG, GraphML for Cytoscape/Gephi, node and edge TSVs, `summary.tsv`). SCENIC+ infers a single network from all cells, so these are cell-type *views* of it: the direct eRegulons with the highest RSS for the type (`scenicplus_network_top_eregulons`), restricted to regions overlapping that type's MACS2 pseudobulk peaks and to target genes detected in at least `scenicplus_network_min_gene_fraction` of its cells, with at most `scenicplus_network_max_targets_per_tf` targets per TF. They are for navigation and hypothesis generation, not separately inferred networks.
+
 Cell-type labels (`scenicplus_cell_type_column`) must contain at least two types with `scenicplus_min_cells_per_cell_type` cells; `unknown`/`ambiguous` labels are not pseudobulk groups. Completed stages are fingerprinted (parameters, resource size/mtime, upstream results, stage code) in `scenicplus_work_dir` and reused, so a failed run restarted in a new output directory resumes at the failed stage; CPU count and temp directory do not invalidate stages. Expect topic modelling and GRN inference to need a server (tens of GB of RAM, many cores); set `scenicplus_n_cpu`, `scenicplus_mallet_memory_gb` and a short, fast `scenicplus_temp_dir`. Input checksums of files larger than 256 MB are cached in `~/.cache/scrna_workflow/input_digests.json` (override with `SCRNA_WORKFLOW_DIGEST_CACHE`).
 
 ## Public PBMC integration test

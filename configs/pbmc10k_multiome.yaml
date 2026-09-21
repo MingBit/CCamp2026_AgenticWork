@@ -54,6 +54,10 @@ scenicplus_cell_type_column: annotation # obs column from clustering used for ps
 scenicplus_excluded_cell_types: [unknown, ambiguous] # labels not used as pseudobulk/DAR groups (cells are kept)
 scenicplus_min_cells_per_cell_type: 10 # cell types below this are excluded from pseudobulk peak calling
 scenicplus_min_cells: 50 # minimum cells passing both ATAC and RNA QC
+scenicplus_rss_top_n: 5 # eRegulons labelled per group in RSS rank plots and heatmaps
+scenicplus_network_top_eregulons: 5 # cell-type networks: direct eRegulons with the highest RSS per cell type
+scenicplus_network_min_gene_fraction: 0.1 # cell-type networks: target genes detected in at least this fraction of the type's cells
+scenicplus_network_max_targets_per_tf: 20 # cell-type networks: strongest targets (TF-gene importance) kept per TF
 
 # Reference resources (public_data/scenicplus_resources/README.md)
 scenicplus_ctx_db_path: ../public_data/scenicplus_resources/hg38/cistarget/hg38_screen_v10_clust.regions_vs_motifs.rankings.feather

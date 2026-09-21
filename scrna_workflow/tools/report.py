@@ -86,6 +86,14 @@ def report(ctx):
                 fig.savefig(f, dpi=300)
                 plt.close(fig)
                 figures.append(str(f))
+        rssfile = artifacts.get("regulon", {}).get("outputs", {}).get("rss_0")
+        if scenicplus and rssfile and Path(rssfile).is_file():
+            from ..regulon_scenicplus import plot_rss_heatmap
+            scores = pd.read_csv(rssfile, sep="\t", index_col=0)
+            if scores.notna().any().any():
+                figures.append(plot_rss_heatmap(scores, out / "eregulon_rss_heatmap.png", int(cfg.get("scenicplus_rss_top_n", 5)),
+                                                "SCENIC+ eRegulon specificity (RSS, direct gene-based) per cell type"))
+                lines += ["Regulon specificity scores (RSS) describe how concentrated eRegulon activity is in each cell type; they are descriptive, not a statistical test.", ""]
         edgesfile = artifacts.get("regulon", {}).get("outputs", {}).get("edges")
         if edgesfile and Path(edgesfile).is_file():
             edges = pd.read_csv(edgesfile, sep="\t")

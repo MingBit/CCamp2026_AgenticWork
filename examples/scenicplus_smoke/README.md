@@ -34,8 +34,11 @@ calls, and several parameters are relaxed.
 | `regulon/eregulon_triplets_extended.tsv` | Same for motifs linked to the TF through orthology (weaker evidence); absent if none were built |
 | `regulon/eregulon_activity_gene_based_direct.tsv.gz` | Cells x eRegulons, AUC of each eRegulon's target genes; cells failing ATAC QC are empty |
 | `regulon/eregulon_activity_region_based_direct.tsv.gz` | Same, scored on target regions |
-| `regulon/eregulon_activity_*_extended.tsv.gz` | Extended-eRegulon AUC (cell ids as `<barcode>`, only scored cells) |
-| `regulon/activity_group_*.tsv` | Mean gene-based activity per `annotation` and per `cluster` (identical here) |
+| `regulon/eregulon_activity_*_extended.tsv.gz` | Extended-eRegulon AUC. In this example taken from stage 4, so only scored cells are listed; newer runs write it aligned to all cells like the direct tables |
+| `regulon/activity_group_<n>.tsv` | Mean direct gene-based AUC per group over scored cells; `<n>` follows `summaries` in `diagnostics.json` (here 0 = `annotation`, 1 = `cluster`, identical labels) |
+| `regulon/activity_group_<n>_<modality>_<kind>.tsv` | Same for region-based and extended AUC. Newer runs only; every summary also starts with `n_cells` and `n_cells_scored` columns. This example predates both |
+| `regulon/rss_group_<n>[_<modality>_<kind>].tsv`, `rss_ranks*.png`, `rss_heatmap*.png` | Regulon specificity scores per group and, for the cell-type column, rank plots and heatmaps. Newer runs only; this example predates them |
+| `regulon/networks/<cell type>.png`, `.graphml`, `_nodes.tsv`, `_edges.tsv`, `summary.tsv` | Cell-type views of the direct eRegulon network (TF -> region -> gene). Newer runs only; this example predates them |
 | `regulon/diagnostics.json` | Hand-off numbers and every stage's fingerprint, metrics, warnings, versions and output paths |
 | `stages/<stage>.json` | Each stage's result record; `stage2_otsu_thresholds.tsv` holds pycisTopic's automatic QC thresholds |
 | `scenicplus_reports/ctx_results.html`, `dem_results.html` | SCENIC+ motif enrichment reports (cisTarget and DEM) |

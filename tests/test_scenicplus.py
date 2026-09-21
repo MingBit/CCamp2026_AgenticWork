@@ -21,6 +21,9 @@ from scrna_workflow.scenicplus_stages import common
 from scrna_workflow.scenicplus_stages.stage2_cistopic import qc_thresholds
 from scrna_workflow.scenicplus_stages.stage4_scenicplus import empty_extended_egrn_failure
 
+# Ray needs a short socket path, so real runs use a short temp dir; pytest's tmp_path is too long.
+SHORT_TEMP_DIR = "/tmp/scrna_scenicplus_tests"
+
 LABELS = ["B cell"] * 20 + ["T/NK"] * 20 + ["unknown"] * 15 + ["rare"] * 3
 
 
@@ -42,6 +45,7 @@ def make_config(tmp_path):
     resources = tmp_path / "resources"
     resources.mkdir()
     cfg = {"regulon_method": "scenicplus", "seed": 3, "scenicplus_python": str(tmp_path / "python"),
+           "scenicplus_temp_dir": SHORT_TEMP_DIR,
            "scenicplus_work_dir": str(tmp_path / "work"), "scenicplus_sample_id": "s1",
            "scenicplus_cell_type_column": "annotation", "scenicplus_min_cells_per_cell_type": 10,
            "scenicplus_n_cpu": 2, "scenicplus_species": "homo_sapiens", "scenicplus_motif_annotation_version": "v10nr_clust"}
@@ -72,6 +76,10 @@ class FakeStages:
         if name == "stage1_peaks":
             outputs["consensus_regions"] = str(stage / "consensus_regions.bed")
             Path(outputs["consensus_regions"]).write_text("chr1\t100\t600\n")
+            outputs["macs2_dir"] = str(stage / "macs2")
+            Path(outputs["macs2_dir"]).mkdir(exist_ok=True)
+            for group in ("B_cell", "T_NK"):  # both types have a peak over the triplet region
+                (stage / "macs2" / f"{group}_peaks.narrowPeak").write_text(f"chr1\t50\t300\t{group}_peak_1\t10\t.\t2\t5\t3\t40\n")
             metrics = {"consensus_peaks": 1, "consensus_peaks_removed_outside_keep_chromosomes": 2}
         elif name == "stage2_cistopic":
             assert params["consensus_regions"].endswith("consensus_regions.bed")
@@ -85,7 +93,9 @@ class FakeStages:
             for kind in ("direct", "extended") if self.extended else ("direct",):
                 triplets = pd.DataFrame({"tf": ["TF1", "TF1", "TF2"], "target": ["G1", "G2", "G3"],
                                          "region": ["chr1:100-600"] * 3, "eregulon": ["TF1_+/+", "TF1_+/+", "TF2_+/+"],
-                                         "importance_tf2g": [3.0, 2.0, 1.0], "rho_tf2g": [0.4, 0.3, 0.2]})
+                                         "gene_signature": ["TF1_+/+_(2g)", "TF1_+/+_(2g)", "TF2_+/+_(1g)"],
+                                         "importance_tf2g": [3.0, 2.0, 1.0], "rho_tf2g": [0.4, 0.3, 0.2],
+                                         "importance_r2g": [0.02, 0.01, 0.03], "rho_r2g": [0.5, -0.2, 0.1]})
                 outputs[f"triplets_{kind}"] = str(stage / f"eregulon_triplets_{kind}.tsv")
                 triplets.to_csv(outputs[f"triplets_{kind}"], sep="\t", index=False)
                 for modality in ("gene_based", "region_based"):
@@ -168,6 +178,36 @@ def test_handoff_stages_reuse_and_aligned_outputs(tmp_path):
     assert any("no eRegulon activity" in w for w in result["warnings"])
     assert pd.read_csv(result["outputs"]["edges"], sep="\t")["tf"].tolist() == ["TF1", "TF1", "TF2"]
 
+    # All four activity tables are aligned to the dataset and summarized per group with cell counts.
+    for key in ("activity", "activity_region_based", "activity_extended", "activity_region_based_extended"):
+        table = pd.read_csv(result["outputs"][key], sep="\t", index_col=0)
+        assert list(table.index) == list(a.obs_names) and table.iloc[-2:].isna().all().all()
+    summary = pd.read_csv(result["outputs"]["summary_0"], sep="\t", index_col=0)
+    assert Path(result["outputs"]["summary_0"]).name == "activity_group_0.tsv"
+    assert list(summary.columns[:2]) == ["n_cells", "n_cells_scored"]
+    assert summary.loc["rare", "n_cells"] == 3 and summary.loc["rare", "n_cells_scored"] == 1  # last two cells unscored
+    for suffix in ("_region_based_direct", "_gene_based_extended", "_region_based_extended"):
+        assert Path(result["outputs"][f"summary_0{suffix}"]).name == f"activity_group_0{suffix}.tsv"
+    listed = json.loads(Path(result["outputs"]["diagnostics"]).read_text())["summaries"]
+    assert {(x["group_column"], x["modality"], x["eregulon_kind"]) for x in listed} == {
+        (c, m, k) for c in ("annotation", "cluster") for m in ("gene_based", "region_based") for k in ("direct", "extended")}
+    assert result["metrics"]["extended_eregulons"] == 2
+    rss = pd.read_csv(result["outputs"]["rss_0"], sep="\t", index_col=0)
+    assert list(rss.index) == ["B cell", "T/NK", "rare", "unknown"] and list(rss.columns) == list(summary.columns[2:])
+    for suffix in ("", "_region_based_direct", "_gene_based_extended", "_region_based_extended"):
+        for key in ("rss_rank_plot", "rss_heatmap"):
+            assert Path(result["outputs"][f"{key}{suffix}"]).stat().st_size > 0
+    assert sum(k.startswith("rss_rank_plot") for k in result["outputs"]) == 4  # plots only for the cell-type column
+    assert "rss_1" in result["outputs"]  # scores are still written for the cluster column
+    assert set(result["metrics"]["top_rss_per_cell_type"]) == {"B cell", "T/NK", "rare", "unknown"}
+    # One network per pseudobulk cell type (not for "rare" or "unknown").
+    assert set(result["metrics"]["cell_type_networks"]) == {"B cell", "T/NK"}
+    for stem in ("B_cell", "T_NK"):
+        for key in ("network_plot", "network_graphml", "network_nodes", "network_edges"):
+            assert Path(result["outputs"][f"{key}_{stem}"]).stat().st_size > 0
+    nodes = pd.read_csv(result["outputs"]["network_nodes_B_cell"], sep="\t")
+    assert set(nodes["id"]) == {"TF:TF1", "region:chr1:100-600", "gene:G1", "gene:G2"}  # only the RSS-selected eRegulon
+
     # Identical inputs: every stage is reused. A peak-calling change reruns stage 1 and its dependents.
     fake.calls.clear()
     again = run_regulon(tmp_path, cfg, a, source, fake)
@@ -238,9 +278,71 @@ def test_direct_only_fallback_detection_and_results(tmp_path):
     result = run_regulon(tmp_path, cfg, a, source, FakeStages(a.obs_names, extended=False))
     assert result["status"] == "completed"
     assert "edges" in result["outputs"] and "edges_extended" not in result["outputs"]
+    assert "activity_extended" not in result["outputs"] and "summary_0_gene_based_extended" not in result["outputs"]
+    assert "summary_0_region_based_direct" in result["outputs"] and result["metrics"]["extended_eregulons"] is None
     assert any("only direct-annotation" in w for w in result["warnings"])
     params = json.loads((Path(cfg["scenicplus_work_dir"]) / "stage4_scenicplus" / "params.json").read_text())
     assert params["allow_direct_only"] is True
+
+
+def test_group_activity_summary_means_over_scored_cells():
+    activity = pd.DataFrame({"R1": [1.0, 3.0, np.nan, 4.0], "R2": [0.0, 2.0, np.nan, np.nan]},
+                            index=["c1", "c2", "c3", "c4"])
+    summary = rs.group_activity_summary(activity, ["A", "A", "A", "B"])
+    assert summary.loc["A"].tolist() == [3, 2, 2.0, 1.0]  # n_cells, n_cells_scored, mean R1, mean R2
+    assert summary.loc["B", "n_cells_scored"] == 1 and summary.loc["B", "R1"] == 4.0 and np.isnan(summary.loc["B", "R2"])
+
+
+def test_regulon_specificity_scores_match_scenicplus_definition():
+    from scipy.spatial.distance import jensenshannon
+    activity = pd.DataFrame({"specific": [1.0, 1.0, 0.0, 0.0, np.nan],
+                             "broad": [0.5, 0.2, 0.4, 0.9, np.nan]}, index=list("abcde"))
+    groups = ["A", "A", "B", "B", "A"]  # cell e has no AUC and is ignored
+    scores = rs.regulon_specificity_scores(activity, groups)
+    assert scores.loc["A", "specific"] == pytest.approx(1.0)  # activity exactly matches group A
+    expected = 1 - jensenshannon(np.array([.5, .2, .4, .9]) / 2.0, np.array([0, 0, 1, 1]) / 2)
+    assert scores.loc["B", "broad"] == pytest.approx(expected)
+    assert scores.loc["A", "specific"] > scores.loc["A", "broad"]
+
+
+def test_cell_type_network_filters(tmp_path):
+    from scrna_workflow import regulon_networks as rn
+    peaks = tmp_path / "type_peaks.narrowPeak"
+    peaks.write_text("chr1\t0\t1000\tp1\nchr1\t100\t150\tp2\nchr2\t500\t600\tp3\n")
+    index = rn.read_peaks(peaks)
+    # chr1:900-950 overlaps the long first peak even though a later peak ends before it (running max of ends).
+    assert rn.overlapping_regions(["chr1:900-950", "chr1:1000-1100", "chr2:599-700", "chr2:600-700", "chr3:1-5"], index) == {
+        "chr1:900-950", "chr2:599-700"}
+    triplets = pd.DataFrame({
+        "tf": ["A", "A", "A", "B"], "target": ["g1", "g2", "g3", "g4"],
+        "region": ["chr1:900-950", "chr1:900-950", "chr1:1000-1100", "chr2:599-700"],
+        "eregulon": ["A_+/+", "A_+/+", "A_+/+", "B_+/+"], "gene_signature": ["A_+/+_(3g)"] * 3 + ["B_+/+_(1g)"],
+        "importance_tf2g": [5.0, 1.0, 9.0, 2.0], "rho_tf2g": [0.5, 0.1, 0.9, 0.2],
+        "importance_r2g": [0.1, 0.2, 0.3, 0.4], "rho_r2g": [0.3, -0.4, 0.5, 0.6]})
+    rss = pd.Series({"A_+/+_(3g)": 0.9, "B_+/+_(1g)": 0.2})
+    accessible = rn.overlapping_regions(triplets["region"], index)
+    fractions = {"g1": 0.5, "g2": 0.05, "g3": 0.9, "g4": 0.9, "A": 0.3}
+    nodes, edges, selected = rn.cell_type_network(triplets, rss, accessible, fractions, top_eregulons=1,
+                                                  min_gene_fraction=0.1, max_targets_per_tf=5)
+    assert selected == ["A_+/+_(3g)"]  # B is not among the top eRegulons
+    # g2 is rarely detected, g3's region is not accessible: only g1 remains.
+    assert set(nodes["id"]) == {"TF:A", "region:chr1:900-950", "gene:g1"}
+    assert set(edges["interaction"]) == {"tf_binds_region", "region_regulates_gene", "tf_regulates_gene"}
+    assert nodes.set_index("id").loc["gene:g1", "detected_fraction"] == 0.5
+    import networkx as nx
+    graph = nx.read_graphml(rn.write_graphml(nodes, edges, tmp_path / "net.graphml"))
+    assert graph.number_of_nodes() == 3 and graph.number_of_edges() == 3
+    assert Path(rn.draw_network(nodes, edges, tmp_path / "net.png", "test")).stat().st_size > 0
+
+
+def test_long_temp_dir_is_refused_before_any_stage_runs(tmp_path):
+    a, source = make_dataset(tmp_path)
+    cfg = make_config(tmp_path)
+    cfg["scenicplus_temp_dir"] = str(tmp_path / ("very_long_scratch_path_" + "x" * 60))
+    fake = FakeStages(a.obs_names)
+    result = run_regulon(tmp_path, cfg, a, source, fake)
+    assert result["status"] == "skipped" and fake.calls == []
+    assert "Ray" in result["warnings"][0] and "scenicplus_temp_dir" in result["warnings"][0]
 
 
 def test_single_cell_type_and_stage_failure(tmp_path):
@@ -270,7 +372,7 @@ def test_report_uses_eregulon_outputs(tmp_path):
            "artifacts": {"clustering": {"status": "completed", "outputs": {"dataset": str(source)}}, "regulon": regulon_result}}
     result = report(ctx)
     names = {Path(p).name for k, p in result["outputs"].items() if k.startswith("figure_")}
-    assert {"eregulon_activity_heatmap.png", "eregulon_tf_network.png"} <= names
+    assert {"eregulon_activity_heatmap.png", "eregulon_tf_network.png", "eregulon_rss_heatmap.png"} <= names
     ledger = pd.read_csv(result["outputs"]["evidence_ledger"], sep="\t")
     assert ledger["finding"].str.contains("SCENIC\\+ eRegulons").any()
 
@@ -279,8 +381,12 @@ class ScenicPlusTests(unittest.TestCase):
     def test_scenicplus_contract(self):
         for check in (test_regions_labels_and_qc_thresholds, test_missing_resources_skip_without_running,
                       test_handoff_stages_reuse_and_aligned_outputs, test_failed_attempt_keeps_files_only_for_same_parameters,
-                      test_direct_only_fallback_detection_and_results, test_single_cell_type_and_stage_failure,
+                      test_direct_only_fallback_detection_and_results, test_cell_type_network_filters,
+                      test_long_temp_dir_is_refused_before_any_stage_runs,
+                      test_single_cell_type_and_stage_failure,
                       test_report_uses_eregulon_outputs):
             with self.subTest(check=check.__name__), tempfile.TemporaryDirectory() as directory:
                 check(Path(directory))
         test_snakemake_overrides_and_missing_template_keys()
+        test_group_activity_summary_means_over_scored_cells()
+        test_regulon_specificity_scores_match_scenicplus_definition()
