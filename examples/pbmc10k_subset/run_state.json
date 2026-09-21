@@ -1,0 +1,774 @@
+{
+  "schema_version": 1,
+  "fingerprint": "adeb78b435df89aabdb4e4e438f35ce2d1c9f56ab89910e44eb6d2ddc550faa8",
+  "config": {
+    "input_path": "/mnt/storageBig8/work/muratli/PBMC10k_subset/pbmc10k_subset3000.h5ad",
+    "metadata_path": null,
+    "output_dir": "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4",
+    "seed": 17,
+    "workers": 2,
+    "transient_retries": 1,
+    "matrix_kind": "auto",
+    "counts_layer": null,
+    "sample_column": null,
+    "donor_column": null,
+    "condition_column": null,
+    "batch_column": null,
+    "organism": "human",
+    "tissue": "peripheral blood mononuclear cells",
+    "biological_question": null,
+    "primary_comparison": null,
+    "paired": false,
+    "longitudinal": false,
+    "de_min_cells_per_sample": 10,
+    "de_min_total_count": 10,
+    "mitochondrial_prefix": "MT-",
+    "n_neighbors": 15,
+    "n_pcs": 30,
+    "n_top_genes": 2000,
+    "resolutions": [
+      0.4,
+      0.8,
+      1.2
+    ],
+    "markers": {},
+    "knowledge_base_path": "/mnt/storageBig8/work/muratli/Coding_Camps/2026/scrna_workflow/knowledge/human_pbmc_markers.yaml",
+    "annotation_backend": "ollama",
+    "annotation_model": "qwen2.5:7b",
+    "tf_list": "/mnt/storageBig8/work/muratli/Coding_Camps/2026/public_data/scenicplus_resources/hg38/cistarget/allTFs_hg38.txt",
+    "tf_resource_organism": "human",
+    "regulon_method": "scenicplus",
+    "scenicplus_conda_env": "scenicplus",
+    "scenicplus_python": "/mnt/storageBig8/home/muratli/.conda/envs/multiome/bin/python3.11",
+    "scenicplus_work_dir": "/mnt/storageBig8/work/muratli/PBMC10k_subset/scenicplus_work",
+    "scenicplus_n_cpu": 16,
+    "scenicplus_temp_dir": "/tmp/sp_muratli",
+    "scenicplus_mallet_path": "/mnt/storageBig8/work/muratli/Mallet-202108/bin/mallet",
+    "scenicplus_mallet_memory_gb": 32,
+    "scenicplus_sample_id": "pbmc10k",
+    "scenicplus_fragments_path": "/mnt/storageBig8/work/muratli/PBMC10k_subset/fragments_subset.tsv.gz",
+    "scenicplus_barcode_column": null,
+    "scenicplus_cell_type_column": "annotation",
+    "scenicplus_excluded_cell_types": [
+      "unknown",
+      "ambiguous"
+    ],
+    "scenicplus_min_cells_per_cell_type": 10,
+    "scenicplus_min_cells": 50,
+    "scenicplus_rss_top_n": 5,
+    "scenicplus_ctx_db_path": "/mnt/storageBig8/work/muratli/Coding_Camps/2026/public_data/scenicplus_resources/hg38/cistarget/hg38_screen_v10_clust.regions_vs_motifs.rankings.feather",
+    "scenicplus_dem_db_path": "/mnt/storageBig8/work/muratli/Coding_Camps/2026/public_data/scenicplus_resources/hg38/cistarget/hg38_screen_v10_clust.regions_vs_motifs.scores.feather",
+    "scenicplus_motif_annotations_path": "/mnt/storageBig8/work/muratli/Coding_Camps/2026/public_data/scenicplus_resources/hg38/cistarget/motifs-v10nr_clust-nr.hgnc-m0.001-o0.0.tbl",
+    "scenicplus_blacklist_path": "/mnt/storageBig8/work/muratli/Coding_Camps/2026/public_data/scenicplus_resources/hg38/genome/hg38-blacklist.v2.bed",
+    "scenicplus_tss_annotation_path": "/mnt/storageBig8/work/muratli/Coding_Camps/2026/public_data/scenicplus_resources/hg38/genome/tss_ensembl98_protein_coding.bed",
+    "scenicplus_genome_annotation_path": "/mnt/storageBig8/work/muratli/Coding_Camps/2026/public_data/scenicplus_resources/hg38/genome/genome_annotation.tsv",
+    "scenicplus_chromsizes_path": "/mnt/storageBig8/work/muratli/Coding_Camps/2026/public_data/scenicplus_resources/hg38/genome/chromsizes.tsv",
+    "scenicplus_species": "homo_sapiens",
+    "scenicplus_motif_annotation_version": "v10nr_clust",
+    "scenicplus_keep_chromosomes": [
+      "chr1",
+      "chr2",
+      "chr3",
+      "chr4",
+      "chr5",
+      "chr6",
+      "chr7",
+      "chr8",
+      "chr9",
+      "chr10",
+      "chr11",
+      "chr12",
+      "chr13",
+      "chr14",
+      "chr15",
+      "chr16",
+      "chr17",
+      "chr18",
+      "chr19",
+      "chr20",
+      "chr21",
+      "chr22",
+      "chrX",
+      "chrY"
+    ],
+    "scenicplus_macs_genome_size": "hs",
+    "scenicplus_macs_shift": 73,
+    "scenicplus_macs_extsize": 146,
+    "scenicplus_macs_qvalue": 0.05,
+    "scenicplus_macs_keep_dup": "all",
+    "scenicplus_peak_half_width": 250,
+    "scenicplus_qc_min_unique_fragments_in_peaks": 1000,
+    "scenicplus_qc_min_tss_enrichment": 5,
+    "scenicplus_qc_min_frip": 0,
+    "scenicplus_qc_use_automatic_thresholds": true,
+    "scenicplus_n_topics": [
+      10,
+      20,
+      30
+    ],
+    "scenicplus_topic_n_iter": 150,
+    "scenicplus_topic_alpha": 50,
+    "scenicplus_topic_alpha_by_topic": true,
+    "scenicplus_topic_eta": 0.1,
+    "scenicplus_topic_eta_by_topic": false,
+    "scenicplus_topic_selection": "auto",
+    "scenicplus_topic_binarization_otsu": true,
+    "scenicplus_topic_binarization_ntop": 3000,
+    "scenicplus_dar_adjpval_threshold": 0.05,
+    "scenicplus_dar_log2fc_threshold": 0.585,
+    "scenicplus_allow_direct_only": true,
+    "scenicplus_is_multiome": true,
+    "scenicplus_nr_cells_per_metacells": 10,
+    "scenicplus_search_space_upstream": [
+      1000,
+      150000
+    ],
+    "scenicplus_search_space_downstream": [
+      1000,
+      150000
+    ],
+    "scenicplus_search_space_extend_tss": [
+      10,
+      10
+    ],
+    "scenicplus_motif_similarity_fdr": 0.001,
+    "scenicplus_orthologous_identity_threshold": 0.0,
+    "scenicplus_annotations_to_use": [
+      "Direct_annot",
+      "Orthology_annot"
+    ],
+    "scenicplus_fraction_overlap_w_dem_database": 0.4,
+    "scenicplus_dem_max_bg_regions": 500,
+    "scenicplus_dem_balance_number_of_promoters": true,
+    "scenicplus_dem_promoter_space": 1000,
+    "scenicplus_dem_adj_pval_thr": 0.05,
+    "scenicplus_dem_log2fc_thr": 1.0,
+    "scenicplus_dem_mean_fg_thr": 0.0,
+    "scenicplus_dem_motif_hit_thr": 3.0,
+    "scenicplus_fraction_overlap_w_ctx_database": 0.4,
+    "scenicplus_ctx_auc_threshold": 0.005,
+    "scenicplus_ctx_nes_threshold": 3.0,
+    "scenicplus_ctx_rank_threshold": 0.05,
+    "scenicplus_tf_to_gene_importance_method": "GBM",
+    "scenicplus_region_to_gene_importance_method": "GBM",
+    "scenicplus_region_to_gene_correlation_method": "SR",
+    "scenicplus_order_regions_to_genes_by": "importance",
+    "scenicplus_order_tfs_to_genes_by": "importance",
+    "scenicplus_gsea_n_perm": 1000,
+    "scenicplus_quantile_thresholds_region_to_gene": [
+      0.85,
+      0.9,
+      0.95
+    ],
+    "scenicplus_top_n_region_to_genes_per_gene": [
+      5,
+      10,
+      15
+    ],
+    "scenicplus_top_n_region_to_genes_per_region": [],
+    "scenicplus_min_regions_per_gene": 0,
+    "scenicplus_rho_threshold": 0.05,
+    "scenicplus_min_target_genes": 10,
+    "scenicplus_network_top_eregulons": 5,
+    "scenicplus_network_min_gene_fraction": 0.1,
+    "scenicplus_network_max_targets_per_tf": 20
+  },
+  "inputs": {
+    "input_path": {
+      "path": "/mnt/storageBig8/work/muratli/PBMC10k_subset/pbmc10k_subset3000.h5ad",
+      "sha256": "998c3fe9490f2340cb6f895bdc1308bc6617f8a28b1ced5277ec1e783ab76b53"
+    },
+    "tf_list": {
+      "path": "/mnt/storageBig8/work/muratli/Coding_Camps/2026/public_data/scenicplus_resources/hg38/cistarget/allTFs_hg38.txt",
+      "sha256": "3953034f84112c60d3d8ef15b0e0c8ac5fce0b40d2c7c0824c2945c70cee2523"
+    },
+    "knowledge_base_path": {
+      "path": "/mnt/storageBig8/work/muratli/Coding_Camps/2026/scrna_workflow/knowledge/human_pbmc_markers.yaml",
+      "sha256": "6850ab99a1c0592f8bda7a80f15a2ed2096a6785469bb01837ce9b2504cae237"
+    },
+    "scenicplus_fragments_path": {
+      "path": "/mnt/storageBig8/work/muratli/PBMC10k_subset/fragments_subset.tsv.gz",
+      "sha256": "d9838b478291378ee1e6781e9be162981299772e3c9a0e4a5a5811e8471d23d3"
+    },
+    "scenicplus_ctx_db_path": {
+      "path": "/mnt/storageBig8/work/muratli/Coding_Camps/2026/public_data/scenicplus_resources/hg38/cistarget/hg38_screen_v10_clust.regions_vs_motifs.rankings.feather",
+      "sha256": "cf9f5905a1c1ae93c20f62e21b772cc28438ecbb293cf577c5b59b7db62dd685"
+    },
+    "scenicplus_dem_db_path": {
+      "path": "/mnt/storageBig8/work/muratli/Coding_Camps/2026/public_data/scenicplus_resources/hg38/cistarget/hg38_screen_v10_clust.regions_vs_motifs.scores.feather",
+      "sha256": "9dfaf815b6f9c923f9161a8148cb973838416510b37446cac447245f20bfe574"
+    },
+    "scenicplus_motif_annotations_path": {
+      "path": "/mnt/storageBig8/work/muratli/Coding_Camps/2026/public_data/scenicplus_resources/hg38/cistarget/motifs-v10nr_clust-nr.hgnc-m0.001-o0.0.tbl",
+      "sha256": "81eb754118e27e854974301b1400fcf519489f8be5249239671fb288cb501c31"
+    },
+    "scenicplus_blacklist_path": {
+      "path": "/mnt/storageBig8/work/muratli/Coding_Camps/2026/public_data/scenicplus_resources/hg38/genome/hg38-blacklist.v2.bed",
+      "sha256": "31c69342df43bbc19dd8ef2886611a8150cb53e90f341de14d30e742c9251737"
+    },
+    "scenicplus_tss_annotation_path": {
+      "path": "/mnt/storageBig8/work/muratli/Coding_Camps/2026/public_data/scenicplus_resources/hg38/genome/tss_ensembl98_protein_coding.bed",
+      "sha256": "749d4c54860c77146a139793720f1316dea94a2ff44e4b422091fcc73bce0f25"
+    },
+    "scenicplus_genome_annotation_path": {
+      "path": "/mnt/storageBig8/work/muratli/Coding_Camps/2026/public_data/scenicplus_resources/hg38/genome/genome_annotation.tsv",
+      "sha256": "7fffda7291d9293ae7c6573d5006023bb563c4343261d1eda49765de1be13df9"
+    },
+    "scenicplus_chromsizes_path": {
+      "path": "/mnt/storageBig8/work/muratli/Coding_Camps/2026/public_data/scenicplus_resources/hg38/genome/chromsizes.tsv",
+      "sha256": "706b38f075b6d29940cfa8b62a2400869add6d40a2f573853342e35648f59792"
+    },
+    "scenicplus_mallet_path": {
+      "path": "/mnt/storageBig8/work/muratli/Mallet-202108/bin/mallet",
+      "sha256": "ff1be08e5353b61edb1e5df9bd4e24b71f5fd3efcc5ab8473814d71d3be493a2"
+    }
+  },
+  "versions": {
+    "numpy": "2.3.3",
+    "scipy": "1.16.2",
+    "pandas": "2.3.3",
+    "scanpy": "1.11.4",
+    "anndata": "0.12.2",
+    "scikit-learn": "1.7.2",
+    "matplotlib": "3.10.6",
+    "igraph": "0.11.9",
+    "leidenalg": "0.10.2",
+    "PyYAML": "6.0.3",
+    "pydeseq2": "0.5.2",
+    "numba": "0.67.0",
+    "umap-learn": "0.5.12",
+    "statsmodels": "0.15.0",
+    "networkx": "3.6.1",
+    "h5py": "3.16.0"
+  },
+  "resources": {
+    "logical_cpus": 56,
+    "gpu_required": false,
+    "workers": 2,
+    "physical_memory_bytes": 372431253504
+  },
+  "python": "3.12.14 (main, Sep  2 2026, 23:27:36) [GCC 15.3.0]",
+  "platform": "Linux-5.4.0-216-generic-x86_64-with-glibc2.31",
+  "source_sha256": "a0b35ccf10995ab5e337b1771d3a398bdbc037c9e5bb1a7eb85ccc5a220a80e2",
+  "seed": 17,
+  "dependencies": {
+    "inspection": [],
+    "qc": [
+      "inspection"
+    ],
+    "representation": [
+      "qc"
+    ],
+    "graph": [
+      "representation"
+    ],
+    "clustering": [
+      "graph"
+    ],
+    "regulon": [
+      "clustering"
+    ],
+    "discovery": [
+      "clustering"
+    ],
+    "validation": [
+      "qc",
+      "graph",
+      "clustering",
+      "regulon",
+      "discovery"
+    ],
+    "report": [
+      "validation"
+    ]
+  },
+  "tasks": {
+    "inspection": {
+      "status": "completed",
+      "input_references": [
+        "/mnt/storageBig8/work/muratli/PBMC10k_subset/pbmc10k_subset3000.h5ad"
+      ],
+      "outputs": {
+        "dataset": "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/inspection/inspected.h5ad",
+        "inventory": "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/inspection/inventory.json",
+        "source_manifest": "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/inspection/source_manifest.json"
+      },
+      "metrics": {
+        "cells": 3000,
+        "genes": 36601,
+        "duplicate_genes": 0,
+        "matrix_kind": "counts",
+        "counts_available": true,
+        "sparse": true,
+        "metadata_columns": [],
+        "metadata_missing": {},
+        "existing_obsm": [],
+        "existing_layers": [
+          "counts"
+        ],
+        "existing_graphs": []
+      },
+      "warnings": [
+        "Expression scale is inferred; integer nonnegative values do not prove raw-count provenance."
+      ],
+      "recommended_next_actions": [],
+      "attempts": 1,
+      "artifact_hashes": {
+        "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/inspection/inspected.h5ad": "827a0dfd77ec678f33b18ae51b7768c96dc33159ccc0fbc8258782701dec69c7",
+        "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/inspection/inventory.json": "bed77349c7801d0b2fc2de18ead9d0a8b5df587dc83cc53d5a1f13bd7d089c79",
+        "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/inspection/source_manifest.json": "faf147988c68fdc10ccda569767ce7e2cf10c9bcb5c5574e873d20f758e31cd6"
+      }
+    },
+    "qc": {
+      "status": "completed",
+      "input_references": [
+        "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/inspection/inspected.h5ad"
+      ],
+      "outputs": {
+        "thresholds": "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/qc/thresholds.json",
+        "dataset": "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/qc/filtered.h5ad",
+        "cell_qc": "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/qc/cell_qc.csv"
+      },
+      "metrics": {
+        "input_cells": 3000,
+        "retained_cells": 2904,
+        "retained_genes": 26257,
+        "unique_cell_ids": true,
+        "retained_counts_exactly_preserved": true
+      },
+      "warnings": [
+        "No sample identifier: pooled QC may mask sample effects.",
+        "High counts flag potential doublets only. Dedicated doublet/ambient RNA inference requires suitable inputs and configuration."
+      ],
+      "recommended_next_actions": [],
+      "attempts": 1,
+      "artifact_hashes": {
+        "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/qc/thresholds.json": "6bc935a2da8ec4f6bb9c85fd1985789f691a050dca3363f3203784e40f1f5f58",
+        "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/qc/filtered.h5ad": "d8890b6e8d69ae3649adb61fd92dd8f398fbcf9fa972ba5573b5d6eefe1fa405",
+        "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/qc/cell_qc.csv": "12f0013af01a076697d4fce3275ca7a0c326fdf018dd40954d5712ddf930c9d6"
+      }
+    },
+    "representation": {
+      "status": "completed",
+      "input_references": [
+        "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/qc/filtered.h5ad"
+      ],
+      "outputs": {
+        "dataset": "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/representation/representation.h5ad",
+        "removed_rpl_rps_genes": "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/representation/removed_rpl_rps_genes.tsv"
+      },
+      "metrics": {
+        "n_pcs": 30,
+        "highly_variable_genes": 2000,
+        "removed_rpl_rps_genes": 100
+      },
+      "warnings": [
+        "Batch integration is not applied automatically; it requires a justified study design."
+      ],
+      "recommended_next_actions": [],
+      "attempts": 1,
+      "artifact_hashes": {
+        "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/representation/representation.h5ad": "1dc0165849106dfc8fa0506599de343a4e64bbf304f4ef54328dde19f0bb07a5",
+        "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/representation/removed_rpl_rps_genes.tsv": "9e81041415aae96202efba6169abd2f38198454949d2115b80e949e612b06160"
+      }
+    },
+    "graph": {
+      "status": "completed",
+      "input_references": [
+        "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/representation/representation.h5ad"
+      ],
+      "outputs": {
+        "dataset": "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/graph/graph.h5ad",
+        "graph": "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/graph/expression_graph.npz",
+        "edges": "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/graph/edges.csv",
+        "diagnostics": "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/graph/diagnostics.json"
+      },
+      "metrics": {
+        "type": "expression_similarity",
+        "representation": "X_pca",
+        "metric": "euclidean",
+        "method": "scanpy.pp.neighbors",
+        "n_neighbors": 15,
+        "version": "9aa7ebb17f0024a1",
+        "components": 2,
+        "cells": 2904,
+        "edges": 29813
+      },
+      "warnings": [
+        "Expression-similarity edges do not imply physical proximity."
+      ],
+      "recommended_next_actions": [],
+      "attempts": 1,
+      "artifact_hashes": {
+        "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/graph/graph.h5ad": "8c36b367b145b00307d00712816bad427a4240c5f2dc568975a03021b93b82ca",
+        "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/graph/expression_graph.npz": "d93d2c1cb761a7161d6993d4a2532eff71a9bbe7ea4984af9f16bc0000780576",
+        "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/graph/edges.csv": "5138ac03761965498eb19d0eada5f199af6314d1eff4ff2ea9a0d2d574b382a3",
+        "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/graph/diagnostics.json": "1da17e3bb972e379f56997138b0d8e4fac0433ed33a6abeb6d555049b689eaa5"
+      }
+    },
+    "clustering": {
+      "status": "completed",
+      "input_references": [
+        "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/graph/graph.h5ad"
+      ],
+      "outputs": {
+        "dataset": "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/clustering/annotated.h5ad",
+        "markers": "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/clustering/markers.csv",
+        "annotations": "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/clustering/annotations.json",
+        "embedding": "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/clustering/embedding.png",
+        "resolution_diagnostics": "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/clustering/resolution_diagnostics.csv",
+        "llm_annotation_audit": "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/clustering/llm_annotation_audit.json",
+        "html_report": "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/clustering/report.html",
+        "qc_figure": "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/clustering/cluster_qc.png",
+        "pc_figure": "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/clustering/selected_pcs.png"
+      },
+      "metrics": {
+        "method": "leiden",
+        "selected": {
+          "resolution": 0.4,
+          "n_clusters": 9,
+          "silhouette": 0.20900118350982666,
+          "seed_ARI": 0.9839258588215907
+        },
+        "cells": 2904,
+        "annotation_backend": "ollama",
+        "knowledge_base": {
+          "path": "/mnt/storageBig8/work/muratli/Coding_Camps/2026/scrna_workflow/knowledge/human_pbmc_markers.yaml",
+          "name": "Human PBMC broad cell types",
+          "organism": "human",
+          "tissue": "peripheral blood mononuclear cells",
+          "source": [
+            "https://satijalab.org/seurat/articles/pbmc3k_tutorial",
+            "https://pmc.ncbi.nlm.nih.gov/articles/PMC5775029/"
+          ]
+        },
+        "annotation_confidence_type": "heuristic marker overlap, not calibrated probability"
+      },
+      "warnings": [
+        "Marker p-values are exploratory cell-level rankings, not condition-level inference."
+      ],
+      "recommended_next_actions": [],
+      "attempts": 1,
+      "artifact_hashes": {
+        "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/clustering/annotated.h5ad": "70285d5881304e638bf503f73e3af34669182162357593bf332bcc0e8d814eab",
+        "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/clustering/markers.csv": "dc5e5d7ea961f990623beada63b7d365cb227e59cabc2deea6b47fc6a92ad8db",
+        "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/clustering/annotations.json": "1b12810913bcbafd62b8d348c5e623a8df180fbfe016c924e3b47b4908389477",
+        "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/clustering/embedding.png": "3a65ebd121c15de9d2053066056fd0dd79be7643f99e0519477a2c5fd8ef07f5",
+        "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/clustering/resolution_diagnostics.csv": "e1f43e60729cf42e7021e7f6a104f15d6196a4d3cf90f0265ae41b5d89af3e7b",
+        "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/clustering/llm_annotation_audit.json": "9ca128e00a73ea4c637cf3fbaf12e737a26fd1dc8703fe69f6a3cbc00497fc3c",
+        "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/clustering/report.html": "29be8624b54db9a0bf1e4ceecdc2b2e1be069d571555797c20a0c533a40e005e",
+        "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/clustering/cluster_qc.png": "eef651e64ab31891281812ccc6053e48499381193228b0c4fa90cf594fbd098f",
+        "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/clustering/selected_pcs.png": "0e60ec9b965e04a0f4b514557ab49d76d3c0e7312ad831518880be16a0ba11e5"
+      }
+    },
+    "discovery": {
+      "status": "skipped",
+      "input_references": [
+        "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/clustering/annotated.h5ad"
+      ],
+      "outputs": {},
+      "metrics": {},
+      "warnings": [
+        "Sample-level discovery requires sample_column and clustering labels."
+      ],
+      "recommended_next_actions": [
+        "Supply validated biological sample identifiers; do not substitute individual cells."
+      ],
+      "attempts": 1,
+      "artifact_hashes": {}
+    },
+    "regulon": {
+      "status": "completed",
+      "input_references": [
+        "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/clustering/annotated.h5ad",
+        "/mnt/storageBig8/work/muratli/PBMC10k_subset/fragments_subset.tsv.gz",
+        "/mnt/storageBig8/work/muratli/Coding_Camps/2026/public_data/scenicplus_resources/hg38/cistarget/hg38_screen_v10_clust.regions_vs_motifs.rankings.feather",
+        "/mnt/storageBig8/work/muratli/Coding_Camps/2026/public_data/scenicplus_resources/hg38/cistarget/hg38_screen_v10_clust.regions_vs_motifs.scores.feather",
+        "/mnt/storageBig8/work/muratli/Coding_Camps/2026/public_data/scenicplus_resources/hg38/cistarget/motifs-v10nr_clust-nr.hgnc-m0.001-o0.0.tbl",
+        "/mnt/storageBig8/work/muratli/Coding_Camps/2026/public_data/scenicplus_resources/hg38/genome/hg38-blacklist.v2.bed",
+        "/mnt/storageBig8/work/muratli/Coding_Camps/2026/public_data/scenicplus_resources/hg38/genome/tss_ensembl98_protein_coding.bed",
+        "/mnt/storageBig8/work/muratli/Coding_Camps/2026/public_data/scenicplus_resources/hg38/genome/genome_annotation.tsv",
+        "/mnt/storageBig8/work/muratli/Coding_Camps/2026/public_data/scenicplus_resources/hg38/genome/chromsizes.tsv",
+        "/mnt/storageBig8/work/muratli/Mallet-202108/bin/mallet"
+      ],
+      "outputs": {
+        "edges": "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/eregulon_triplets_direct.tsv",
+        "edges_extended": "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/eregulon_triplets_extended.tsv",
+        "activity": "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/eregulon_activity_gene_based_direct.tsv.gz",
+        "activity_region_based": "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/eregulon_activity_region_based_direct.tsv.gz",
+        "activity_extended": "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/eregulon_activity_gene_based_extended.tsv.gz",
+        "activity_region_based_extended": "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/eregulon_activity_region_based_extended.tsv.gz",
+        "summary_0": "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/activity_group_0.tsv",
+        "summary_0_region_based_direct": "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/activity_group_0_region_based_direct.tsv",
+        "summary_0_gene_based_extended": "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/activity_group_0_gene_based_extended.tsv",
+        "summary_0_region_based_extended": "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/activity_group_0_region_based_extended.tsv",
+        "summary_1": "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/activity_group_1.tsv",
+        "summary_1_region_based_direct": "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/activity_group_1_region_based_direct.tsv",
+        "summary_1_gene_based_extended": "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/activity_group_1_gene_based_extended.tsv",
+        "summary_1_region_based_extended": "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/activity_group_1_region_based_extended.tsv",
+        "rss_0": "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/rss_group_0.tsv",
+        "rss_rank_plot": "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/rss_ranks.png",
+        "rss_heatmap": "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/rss_heatmap.png",
+        "rss_0_region_based_direct": "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/rss_group_0_region_based_direct.tsv",
+        "rss_rank_plot_region_based_direct": "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/rss_ranks_region_based_direct.png",
+        "rss_heatmap_region_based_direct": "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/rss_heatmap_region_based_direct.png",
+        "rss_0_gene_based_extended": "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/rss_group_0_gene_based_extended.tsv",
+        "rss_rank_plot_gene_based_extended": "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/rss_ranks_gene_based_extended.png",
+        "rss_heatmap_gene_based_extended": "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/rss_heatmap_gene_based_extended.png",
+        "rss_0_region_based_extended": "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/rss_group_0_region_based_extended.tsv",
+        "rss_rank_plot_region_based_extended": "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/rss_ranks_region_based_extended.png",
+        "rss_heatmap_region_based_extended": "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/rss_heatmap_region_based_extended.png",
+        "rss_1": "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/rss_group_1.tsv",
+        "rss_1_region_based_direct": "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/rss_group_1_region_based_direct.tsv",
+        "rss_1_gene_based_extended": "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/rss_group_1_gene_based_extended.tsv",
+        "rss_1_region_based_extended": "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/rss_group_1_region_based_extended.tsv",
+        "network_nodes_B_cells": "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/networks/B_cells_nodes.tsv",
+        "network_edges_B_cells": "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/networks/B_cells_edges.tsv",
+        "network_graphml_B_cells": "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/networks/B_cells.graphml",
+        "network_plot_B_cells": "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/networks/B_cells.png",
+        "network_nodes_FCGR3A_monocytes": "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/networks/FCGR3A_monocytes_nodes.tsv",
+        "network_edges_FCGR3A_monocytes": "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/networks/FCGR3A_monocytes_edges.tsv",
+        "network_graphml_FCGR3A_monocytes": "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/networks/FCGR3A_monocytes.graphml",
+        "network_plot_FCGR3A_monocytes": "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/networks/FCGR3A_monocytes.png",
+        "network_nodes_NK_cells": "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/networks/NK_cells_nodes.tsv",
+        "network_edges_NK_cells": "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/networks/NK_cells_edges.tsv",
+        "network_graphml_NK_cells": "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/networks/NK_cells.graphml",
+        "network_plot_NK_cells": "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/networks/NK_cells.png",
+        "network_nodes_Plasmacytoid_dendritic_cells": "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/networks/Plasmacytoid_dendritic_cells_nodes.tsv",
+        "network_edges_Plasmacytoid_dendritic_cells": "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/networks/Plasmacytoid_dendritic_cells_edges.tsv",
+        "network_graphml_Plasmacytoid_dendritic_cells": "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/networks/Plasmacytoid_dendritic_cells.graphml",
+        "network_plot_Plasmacytoid_dendritic_cells": "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/networks/Plasmacytoid_dendritic_cells.png",
+        "network_nodes_T_cells": "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/networks/T_cells_nodes.tsv",
+        "network_edges_T_cells": "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/networks/T_cells_edges.tsv",
+        "network_graphml_T_cells": "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/networks/T_cells.graphml",
+        "network_plot_T_cells": "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/networks/T_cells.png",
+        "network_summary": "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/networks/summary.tsv",
+        "diagnostics": "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/diagnostics.json"
+      },
+      "metrics": {
+        "method": "scenicplus",
+        "eregulons": 45,
+        "tfs": 24,
+        "target_genes": 3026,
+        "regions": 8674,
+        "triplets": 13412,
+        "cells_with_activity": 1558,
+        "extended_eregulons": 25,
+        "extended_triplets": 7394,
+        "top_rss_per_cell_type": {
+          "B cells": {
+            "SPIB_direct_+/-_(38g)": 0.4938,
+            "POU2AF1_direct_+/+_(73g)": 0.4915,
+            "SPIB_direct_+/+_(241g)": 0.4752
+          },
+          "FCGR3A+ monocytes": {
+            "TCF7L2_direct_+/+_(451g)": 0.2805,
+            "SPI1_direct_+/+_(721g)": 0.2748,
+            "RXRA_direct_+/+_(616g)": 0.2731
+          },
+          "NK cells": {
+            "TBX21_direct_+/+_(228g)": 0.4704,
+            "RUNX3_direct_+/+_(208g)": 0.4385,
+            "FOXO1_direct_-/+_(203g)": 0.3949
+          },
+          "Plasmacytoid dendritic cells": {
+            "BCL11A_direct_+/+_(275g)": 0.1705,
+            "SPIB_direct_+/+_(241g)": 0.1705,
+            "ZEB1_direct_-/+_(10g)": 0.1703
+          },
+          "T cells": {
+            "KLF6_direct_-/-_(16g)": 0.3837,
+            "LEF1_direct_+/+_(188g)": 0.382,
+            "TBX21_direct_-/+_(26g)": 0.3804
+          },
+          "unknown": {
+            "TBX21_direct_-/+_(26g)": 0.5638,
+            "TCF7_direct_+/+_(141g)": 0.5635,
+            "BCL11A_direct_-/+_(57g)": 0.56
+          }
+        },
+        "cell_type_networks": {
+          "B cells": {
+            "tfs": 3,
+            "regions": 122,
+            "target_genes": 45,
+            "edges": 324
+          },
+          "FCGR3A+ monocytes": {
+            "tfs": 4,
+            "regions": 205,
+            "target_genes": 73,
+            "edges": 498
+          },
+          "NK cells": {
+            "tfs": 5,
+            "regions": 185,
+            "target_genes": 87,
+            "edges": 499
+          },
+          "Plasmacytoid dendritic cells": {
+            "tfs": 5,
+            "regions": 92,
+            "target_genes": 63,
+            "edges": 270
+          },
+          "T cells": {
+            "tfs": 5,
+            "regions": 117,
+            "target_genes": 66,
+            "edges": 354
+          }
+        },
+        "consensus_peaks": 187083,
+        "contig_peaks_removed": 0,
+        "atac_rna_cells": 1558,
+        "selected_topics": 20,
+        "stages_reused": []
+      },
+      "warnings": [
+        "eRegulons are inferred TF-region-gene associations (TF and target co-variation, region accessibility-gene correlation and motif enrichment in the same cells); they are not binding, perturbation or causal evidence.",
+        "AUC activity is computed on the same cells used for inference and is not independent evidence of a cell state.",
+        "RSS ranks eRegulons by how concentrated their activity is in a group relative to all scored cells; it is descriptive, depends on the group definitions, and is not a statistical test.",
+        "No DARs passed thresholds for: ['Plasmacytoid_dendritic_cells']",
+        "1346 of 2904 RNA-QC cells have no eRegulon activity (failed ATAC QC); their activity is empty."
+      ],
+      "recommended_next_actions": [],
+      "attempts": 1,
+      "artifact_hashes": {
+        "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/eregulon_triplets_direct.tsv": "5b897d4b062f4e2595e3e3faa61693d9e6762e4f9718c4c7eff1f80cdb070f8c",
+        "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/eregulon_triplets_extended.tsv": "438657c3a57a0d05f7bafa2b02fca87efef5c61d4370df39c5020173c3529085",
+        "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/eregulon_activity_gene_based_direct.tsv.gz": "841f5ae778f4486ce814c583405b58b53d0bbf625cd5348bd397ac50e24ea630",
+        "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/eregulon_activity_region_based_direct.tsv.gz": "28bdc83c7fc1439b1ad7ff00730f1a0af7078b2e8501bebb41f02154b8cdd4e8",
+        "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/eregulon_activity_gene_based_extended.tsv.gz": "386880216075b6e171ecedb8215d565c444e1281ae9fa53db3f7d95a0fa8862e",
+        "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/eregulon_activity_region_based_extended.tsv.gz": "c857f40e6a008417733059665a212315b3f50bcfeebd6badff39f4892725bbb8",
+        "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/activity_group_0.tsv": "b30152c2ae7d0a280d2fe46f89940edf2539a57f05b39d555130bfa735b1fe25",
+        "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/activity_group_0_region_based_direct.tsv": "43395bb84290712680fccbc8837d41b31b1f320f825109bff1930a1c4e727157",
+        "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/activity_group_0_gene_based_extended.tsv": "4d88d7dbdf1c060ac38cb641a73c5fc90c0f79b9ebff1f9b67f47b49dac37c31",
+        "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/activity_group_0_region_based_extended.tsv": "66ffc79bf19afa3305f9cd46a55c8aad6bb544b8edd74bfca469dd49c9792816",
+        "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/activity_group_1.tsv": "1d462af1b4f4b9bc12ee50e81bad74951079a8fee0902097ebf65a11b9723338",
+        "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/activity_group_1_region_based_direct.tsv": "da175ad534ff82e2da399af85a779296bac5aa4d38cfbd0c58a29620b55a82ca",
+        "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/activity_group_1_gene_based_extended.tsv": "48c07c3db1c12993ccb719173c48ae0c13b9cb43d89f4e78cb81754b266015b6",
+        "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/activity_group_1_region_based_extended.tsv": "9f4a77b83443a95974b926d36926eebfa008bf6a0a4527d71e22a1ef24fde772",
+        "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/rss_group_0.tsv": "714e28743f46c3a393025239001a8ae9d839e20b0d67a08b62536237bf408df7",
+        "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/rss_ranks.png": "db73ac96d9fda6d383e5986c01c9c5eaa5a7962a0a4998ec4559450f192b6d9a",
+        "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/rss_heatmap.png": "723d327e132773b5f6ab40bd70b9c261096faf1ce6ade6e504f54d53900ba7bb",
+        "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/rss_group_0_region_based_direct.tsv": "8d20f0cc2eaae094dd7d6df64062aeddfee6972465e18586cf0a40d4813cb98a",
+        "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/rss_ranks_region_based_direct.png": "c3478334faa6bd8aa92d503cfe30aa0e0e1fcc8df8f7b80e02373e54e8e885fc",
+        "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/rss_heatmap_region_based_direct.png": "7b777744f9f2e8f0cd369e17c9963a27eca44b3b7e66a97b6096f7a88abcd9a0",
+        "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/rss_group_0_gene_based_extended.tsv": "6439f42ce7b290eadd451dd95f6f117e61c3ec8a06ff7ceda0da59820cfb4377",
+        "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/rss_ranks_gene_based_extended.png": "b3068deedf79246848d3f426b1390ebdd09b297aad6249f9611210da18900f08",
+        "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/rss_heatmap_gene_based_extended.png": "83aef32ed82342ddc1caa0873b7aa77d4125b739c904a4967542807432c09e11",
+        "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/rss_group_0_region_based_extended.tsv": "f240d3c852288edca399915b8e07d35f2c21b4cd63cc6826e5498dcefa8d49da",
+        "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/rss_ranks_region_based_extended.png": "d2da0bbbdbea1572f97c2c3961b3bdea3590abb246eca211593fff0bfff02aa4",
+        "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/rss_heatmap_region_based_extended.png": "1c919742297fbcfdb34af0a7ed7a730595062a19e67bf0dcebad777e9f5f6b50",
+        "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/rss_group_1.tsv": "ff2ed644a691912198ef05aeffa39f96da1c0b61a050b3ee70f55a8394d45c50",
+        "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/rss_group_1_region_based_direct.tsv": "14be5cc0dddefef67d39bc9cddfb838d7351e55e3d77ce490e56882e98a306e5",
+        "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/rss_group_1_gene_based_extended.tsv": "db7cf7c5dc99fdd1674dce36e45f257dda914535c22bf539d7fc497bf4867b7e",
+        "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/rss_group_1_region_based_extended.tsv": "a47717aab6343d8d06c9411c0b365980c49213f62b31b2e36d9ba272ccb96308",
+        "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/networks/B_cells_nodes.tsv": "e212648879aee4c88b9ca2ca00f01cd29701a7e3874cf72a1feec3a911367216",
+        "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/networks/B_cells_edges.tsv": "72a8e7412d9abffefb371a89607764e3daa8cc7772ac7306cd1fdd53cfc838d9",
+        "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/networks/B_cells.graphml": "0a87215e738679a81ed3ca92e53c587995dfd28afca4b2dca845963d04da4241",
+        "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/networks/B_cells.png": "097bc672ca1a820a64e98157572c6e4b4cabfbff32b0bf89e4748e968ddb76de",
+        "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/networks/FCGR3A_monocytes_nodes.tsv": "d70fa4881ac0715abe9ea54ecc67e38d95175c6b2077fd074343b1242d44d207",
+        "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/networks/FCGR3A_monocytes_edges.tsv": "401a301f185cf10e5758baedad7ead26ffcd288038fc420bfb25fcba20b93dca",
+        "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/networks/FCGR3A_monocytes.graphml": "0eea67892e70dd21c620a0ccf23e04f0efce0058fe73eeaef27df78422717604",
+        "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/networks/FCGR3A_monocytes.png": "a53f085d14db16bf3ff37f432c80cf9b6ebb98ccebd48025054dac1d8587ac02",
+        "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/networks/NK_cells_nodes.tsv": "102bfb16bbd8420172384e3dd643f08d15824677e557777319d8844a9f23e6c3",
+        "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/networks/NK_cells_edges.tsv": "7fcb9ac0e2d55fe29dc20d7f3ee2e9c09b9c1e41843ce8ece257f77488dfc16e",
+        "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/networks/NK_cells.graphml": "6733c93ff66b90137bbe5a2dd9d209b2a5e63ce57f2793838c8b487fe133c3f4",
+        "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/networks/NK_cells.png": "d676717a906ea2d28902ac2f572861a30d3a27bc3a4a7f31f4692a0c653af6d2",
+        "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/networks/Plasmacytoid_dendritic_cells_nodes.tsv": "f60494d630e67042797242912da36470d1bd0d625fd3e738c3f9ae5cd57ea7a6",
+        "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/networks/Plasmacytoid_dendritic_cells_edges.tsv": "be917ca961005361bd193919c3d23d597c61f88342b4a3288e266656f9e7e6f4",
+        "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/networks/Plasmacytoid_dendritic_cells.graphml": "e3443c0337bcd3cad40d7d30c7d5071b3f9f2d6b01cc3806d4c49b1a051e2c66",
+        "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/networks/Plasmacytoid_dendritic_cells.png": "209069c7dd56efe0e37daad8df083b2398c4d5ba1547e3b5796683b6176c7495",
+        "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/networks/T_cells_nodes.tsv": "9f99580a4c0d49c0a75740483f1280616fd4a6c9e2a8f2ee1c55474d517da9c8",
+        "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/networks/T_cells_edges.tsv": "72fbf1f6cf4655f352d6db0810828ce54a1f59f9695ffe7a6238a09b23442b12",
+        "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/networks/T_cells.graphml": "790661a4b5b9620517e555a37977e6c3dcef6a4d8d38f3301ff650b619c0c444",
+        "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/networks/T_cells.png": "8e0ef539a087e0b278c1ee719d450dcb4333e107d95b950766e9562edd28b0af",
+        "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/networks/summary.tsv": "9c69359779f8d4311da1dcf7388112a16ac60d59f78c388b7bbcce1fef2a61f1",
+        "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/diagnostics.json": "0f7a263476d70586cc2266fa75a0286c2be9338c6e4676639780519095b0edf9"
+      }
+    },
+    "validation": {
+      "status": "completed",
+      "input_references": [
+        "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/clustering/annotated.h5ad"
+      ],
+      "outputs": {
+        "validation": "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/validation/validation.json"
+      },
+      "metrics": {
+        "checks": {
+          "cell_identifiers_unique": true,
+          "gene_identifiers_unique": true,
+          "metadata_aligned": true,
+          "graph_dimensions_connectivities": true,
+          "graph_dimensions_distances": true,
+          "count_shape": true,
+          "counts_nonnegative_integer": true,
+          "qc_cell_order_preserved": true,
+          "qc_gene_subset_order_preserved": true,
+          "gene_filter_accounted_for": true,
+          "excluded_genes_match_rpl_rps_rule": true,
+          "counts_preserved_since_qc": true,
+          "retained_identifiers_in_inspected_input": true,
+          "retained_counts_preserved_since_inspection": true
+        },
+        "failed_checks": 0
+      },
+      "warnings": [
+        "These checks establish internal integrity, not independent biological validation.",
+        "No external dataset or held-out donor validation was performed.",
+        "Regulons defining a state cannot independently validate that state."
+      ],
+      "recommended_next_actions": [
+        "Review unresolved issues and use targeted donor-held-out or external validation where available."
+      ],
+      "attempts": 1,
+      "artifact_hashes": {
+        "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/validation/validation.json": "2ed599600b1d04214b9d2fc8b8a1b7828238a9beb016a8dbae41ef94fe1ef5e9"
+      }
+    },
+    "report": {
+      "status": "completed",
+      "input_references": [
+        "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/clustering/annotated.h5ad"
+      ],
+      "outputs": {
+        "report": "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/report/scientific_report.md",
+        "evidence_ledger": "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/report/evidence_ledger.tsv",
+        "figure_0": "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/report/qc_distributions.png",
+        "figure_1": "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/report/embedding.png",
+        "figure_2": "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/report/eregulon_activity_heatmap.png",
+        "figure_3": "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/report/eregulon_rss_heatmap.png",
+        "figure_4": "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/report/eregulon_tf_network.png",
+        "figure_5": "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/report/cluster_marker_heatmap.png"
+      },
+      "metrics": {
+        "figures": 6
+      },
+      "warnings": [],
+      "recommended_next_actions": [],
+      "attempts": 1,
+      "artifact_hashes": {
+        "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/report/scientific_report.md": "d51d906cac35296fe918c65b099c163b90549e219ab8a76c4f7f87bb4701c2a4",
+        "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/report/evidence_ledger.tsv": "e154d2f9ff6c1877d64082a83320a25e64cd2600b7643a5e58b4491c7cb51666",
+        "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/report/qc_distributions.png": "87725aaeef41940d0a832175a10367c49ec2c783769da50d0185cd677b7ea095",
+        "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/report/embedding.png": "de9f4400cdecf7ebda27e84c2de09fdf75c52f857d080eaf4926e4442c978e1a",
+        "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/report/eregulon_activity_heatmap.png": "1d2ffefd9e37c7dc4f6def1bad5976b56410975fb5ed4d5c40cedfaf55a65b2f",
+        "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/report/eregulon_rss_heatmap.png": "0a420d88b022ee11d6d14151371fe1a7c0e308af851448d6788ab9a2a1c76f66",
+        "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/report/eregulon_tf_network.png": "bc1b76cf62423c307e3e95d8fd02846326da8f0754ec40547f00e094db4e07bd",
+        "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/report/cluster_marker_heatmap.png": "5b087e6712f06e18c84918749360a79f43785216da260f831e2d08086dee5988"
+      }
+    }
+  },
+  "started_at": "2026-09-21T11:41:56.575256+00:00",
+  "decisions": [
+    "No automatic biological annotation without supplied marker evidence.",
+    "No repeated scientific failure: automatic retries limited to transient OSError.",
+    "Validation requests are recorded; revisions require a specific changed assumption and at most two cycles per issue.",
+    "Input data are never sent to external services."
+  ],
+  "completed_at": "2026-09-21T12:42:06.510034+00:00",
+  "status": "completed"
+}

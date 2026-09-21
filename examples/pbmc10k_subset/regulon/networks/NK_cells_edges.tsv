@@ -1,0 +1,500 @@
+source	target	interaction	eregulons	importance	rho
+TF:FOXO1	region:chr10:69048025-69048525	tf_binds_region	FOXO1_direct_-/+		
+TF:FOXO1	region:chr10:69088816-69089316	tf_binds_region	FOXO1_direct_-/+		
+TF:FOXO1	region:chr12:6534964-6535464	tf_binds_region	FOXO1_direct_-/+		
+TF:FOXO1	region:chr12:6557952-6558452	tf_binds_region	FOXO1_direct_-/+		
+TF:FOXO1	region:chr12:6606216-6606716	tf_binds_region	FOXO1_direct_-/+		
+TF:FOXO1	region:chr13:23980053-23980553	tf_binds_region	FOXO1_direct_-/+		
+TF:FOXO1	region:chr14:105398280-105398780	tf_binds_region	FOXO1_direct_-/+		
+TF:FOXO1	region:chr17:80471870-80472370	tf_binds_region	FOXO1_direct_-/+		
+TF:FOXO1	region:chr19:1174041-1174541	tf_binds_region	FOXO1_direct_-/+		
+TF:FOXO1	region:chr19:1259152-1259652	tf_binds_region	FOXO1_direct_-/+		
+TF:FOXO1	region:chr19:1265749-1266249	tf_binds_region	FOXO1_direct_-/+		
+TF:FOXO1	region:chr1:161013564-161014064	tf_binds_region	FOXO1_direct_-/+		
+TF:FOXO1	region:chr1:161069702-161070202	tf_binds_region	FOXO1_direct_-/+		
+TF:FOXO1	region:chr1:161185241-161185741	tf_binds_region	FOXO1_direct_-/+		
+TF:FOXO1	region:chr1:161209741-161210241	tf_binds_region	FOXO1_direct_-/+		
+TF:FOXO1	region:chr1:161216834-161217334	tf_binds_region	FOXO1_direct_-/+		
+TF:FOXO1	region:chr1:161217714-161218214	tf_binds_region	FOXO1_direct_-/+		
+TF:FOXO1	region:chr1:223716505-223717005	tf_binds_region	FOXO1_direct_-/+		
+TF:FOXO1	region:chr1:26169620-26170120	tf_binds_region	FOXO1_direct_-/+		
+TF:FOXO1	region:chr1:26278839-26279339	tf_binds_region	FOXO1_direct_-/+		
+TF:FOXO1	region:chr1:26314281-26314781	tf_binds_region	FOXO1_direct_-/+		
+TF:FOXO1	region:chr1:39995924-39996424	tf_binds_region	FOXO1_direct_-/+		
+TF:FOXO1	region:chr5:141682960-141683460	tf_binds_region	FOXO1_direct_-/+		
+TF:FOXO1	region:chr5:177300228-177300728	tf_binds_region	FOXO1_direct_-/+		
+TF:FOXO1	region:chr5:177307861-177308361	tf_binds_region	FOXO1_direct_-/+		
+TF:FOXO1	region:chr5:179914050-179914550	tf_binds_region	FOXO1_direct_-/+		
+TF:FOXO1	region:chr6:29748850-29749350	tf_binds_region	FOXO1_direct_-/+		
+TF:FOXO1	region:chr6:29752970-29753470	tf_binds_region	FOXO1_direct_-/+		
+TF:FOXO1	region:chr6:31592814-31593314	tf_binds_region	FOXO1_direct_-/+		
+TF:FOXO1	region:chr6:31727402-31727902	tf_binds_region	FOXO1_direct_-/+		
+TF:FOXO1	region:chr6:31734750-31735250	tf_binds_region	FOXO1_direct_-/+		
+TF:FOXO1	region:chr6:31736111-31736611	tf_binds_region	FOXO1_direct_-/+		
+TF:FOXO1	region:chr6:32845277-32845777	tf_binds_region	FOXO1_direct_-/+		
+TF:FOXO1	region:chr6:32969091-32969591	tf_binds_region	FOXO1_direct_-/+		
+TF:FOXO1	region:chr9:36150820-36151320	tf_binds_region	FOXO1_direct_-/+		
+TF:FOXO1	region:chrX:153829965-153830465	tf_binds_region	FOXO1_direct_-/+		
+TF:FOXO1	region:chrX:153934783-153935283	tf_binds_region	FOXO1_direct_-/+		
+TF:FOXO1	region:chrX:65601463-65601963	tf_binds_region	FOXO1_direct_-/+		
+TF:FOXO1	region:chrX:65723646-65724146	tf_binds_region	FOXO1_direct_-/+		
+TF:FOXO1	region:chrX:65750607-65751107	tf_binds_region	FOXO1_direct_-/+		
+TF:LEF1	region:chr13:46160431-46160931	tf_binds_region	LEF1_direct_-/-		
+TF:LEF1	region:chr15:60548003-60548503	tf_binds_region	LEF1_direct_-/-		
+TF:LEF1	region:chr15:90539753-90540253	tf_binds_region	LEF1_direct_-/-		
+TF:LEF1	region:chr16:85448740-85449240	tf_binds_region	LEF1_direct_-/-		
+TF:LEF1	region:chr16:88681670-88682170	tf_binds_region	LEF1_direct_-/-		
+TF:LEF1	region:chr19:45406258-45406758	tf_binds_region	LEF1_direct_-/-		
+TF:LEF1	region:chr19:45558317-45558817	tf_binds_region	LEF1_direct_-/-		
+TF:LEF1	region:chr19:8610433-8610933	tf_binds_region	LEF1_direct_-/-		
+TF:LEF1	region:chr1:21294425-21294925	tf_binds_region	LEF1_direct_-/-		
+TF:LEF1	region:chr2:201158014-201158514	tf_binds_region	LEF1_direct_-/-		
+TF:LEF1	region:chr2:201191512-201192012	tf_binds_region	LEF1_direct_-/-		
+TF:LEF1	region:chr2:230415943-230416443	tf_binds_region	LEF1_direct_-/-		
+TF:LEF1	region:chr2:233251341-233251841	tf_binds_region	LEF1_direct_-/-		
+TF:LEF1	region:chr3:18438475-18438975	tf_binds_region	LEF1_direct_-/-		
+TF:LEF1	region:chr3:188788513-188789013	tf_binds_region	LEF1_direct_-/-		
+TF:LEF1	region:chr5:100904535-100905035	tf_binds_region	LEF1_direct_-/-		
+TF:LEF1	region:chr5:1315610-1316110	tf_binds_region	LEF1_direct_-/-		
+TF:LEF1	region:chr5:96703125-96703625	tf_binds_region	LEF1_direct_-/-		
+TF:LEF1	region:chr5:96875670-96876170	tf_binds_region	LEF1_direct_-/-		
+TF:LEF1	region:chr6:16483463-16483963	tf_binds_region	LEF1_direct_-/-		
+TF:LEF1	region:chr7:27739878-27740378	tf_binds_region	LEF1_direct_-/-		
+TF:LEF1	region:chr7:45110635-45111135	tf_binds_region	LEF1_direct_-/-		
+TF:LEF1	region:chr7:77354452-77354952	tf_binds_region	LEF1_direct_-/-		
+TF:RUNX3	region:chr11:65928016-65928516	tf_binds_region	RUNX3_direct_+/+		
+TF:RUNX3	region:chr12:10279843-10280343	tf_binds_region	RUNX3_direct_+/+		
+TF:RUNX3	region:chr12:10285887-10286387	tf_binds_region	RUNX3_direct_+/+		
+TF:RUNX3	region:chr12:10288957-10289457	tf_binds_region	RUNX3_direct_+/+		
+TF:RUNX3	region:chr12:10389912-10390412	tf_binds_region	RUNX3_direct_+/+		
+TF:RUNX3	region:chr12:10392305-10392805	tf_binds_region	RUNX3_direct_+/+		
+TF:RUNX3	region:chr12:10394470-10394970	tf_binds_region	RUNX3_direct_+/+		
+TF:RUNX3	region:chr12:10395348-10395848	tf_binds_region	RUNX3_direct_+/+		
+TF:RUNX3	region:chr12:10497537-10498037	tf_binds_region	RUNX3_direct_+/+		
+TF:RUNX3	region:chr12:10499196-10499696	tf_binds_region	RUNX3_direct_+/+		
+TF:RUNX3	region:chr16:11556890-11557390	tf_binds_region	RUNX3_direct_+/+		
+TF:RUNX3	region:chr16:11572188-11572688	tf_binds_region	RUNX3_direct_+/+		
+TF:RUNX3	region:chr16:30186707-30187207	tf_binds_region	RUNX3_direct_+/+		
+TF:RUNX3	region:chr16:87754523-87755023	tf_binds_region	RUNX3_direct_+/+		
+TF:RUNX3	region:chr16:87762124-87762624	tf_binds_region	RUNX3_direct_+/+		
+TF:RUNX3	region:chr16:87865795-87866295	tf_binds_region	RUNX3_direct_+/+		
+TF:RUNX3	region:chr17:35890652-35891152	tf_binds_region	RUNX3_direct_+/+		
+TF:RUNX3	region:chr17:35896221-35896721	tf_binds_region	RUNX3_direct_+/+		
+TF:RUNX3	region:chr17:35900216-35900716	tf_binds_region	RUNX3_direct_+/+		
+TF:RUNX3	region:chr17:75435885-75436385	tf_binds_region	RUNX3_direct_+/+		
+TF:RUNX3	region:chr17:75535010-75535510	tf_binds_region	RUNX3_direct_+/+		
+TF:RUNX3	region:chr19:543724-544224	tf_binds_region	RUNX3_direct_+/+		
+TF:RUNX3	region:chr19:575182-575682	tf_binds_region	RUNX3_direct_+/+		
+TF:RUNX3	region:chr1:162400722-162401222	tf_binds_region	RUNX3_direct_+/+		
+TF:RUNX3	region:chr1:162548132-162548632	tf_binds_region	RUNX3_direct_+/+		
+TF:RUNX3	region:chr1:24914103-24914603	tf_binds_region	RUNX3_direct_+/+		
+TF:RUNX3	region:chr1:25099653-25100153	tf_binds_region	RUNX3_direct_+/+		
+TF:RUNX3	region:chr1:40186400-40186900	tf_binds_region	RUNX3_direct_+/+		
+TF:RUNX3	region:chr22:37164107-37164607	tf_binds_region	RUNX3_direct_+/+		
+TF:RUNX3	region:chr22:37229952-37230452	tf_binds_region	RUNX3_direct_+/+		
+TF:RUNX3	region:chr22:37279385-37279885	tf_binds_region	RUNX3_direct_+/+		
+TF:RUNX3	region:chr22:37306919-37307419	tf_binds_region	RUNX3_direct_+/+		
+TF:RUNX3	region:chr22:44620021-44620521	tf_binds_region	RUNX3_direct_+/+		
+TF:RUNX3	region:chr22:44685364-44685864	tf_binds_region	RUNX3_direct_+/+		
+TF:RUNX3	region:chr22:44710434-44710934	tf_binds_region	RUNX3_direct_+/+		
+TF:RUNX3	region:chr2:86785374-86785874	tf_binds_region	RUNX3_direct_+/+		
+TF:RUNX3	region:chr2:86788812-86789312	tf_binds_region	RUNX3_direct_+/+		
+TF:RUNX3	region:chr2:86793713-86794213	tf_binds_region	RUNX3_direct_+/+		
+TF:RUNX3	region:chr2:98465673-98466173	tf_binds_region	RUNX3_direct_+/+		
+TF:RUNX3	region:chr2:98508621-98509121	tf_binds_region	RUNX3_direct_+/+		
+TF:RUNX3	region:chr2:98634514-98635014	tf_binds_region	RUNX3_direct_+/+		
+TF:RUNX3	region:chr2:98656698-98657198	tf_binds_region	RUNX3_direct_+/+		
+TF:RUNX3	region:chr6:33322006-33322506	tf_binds_region	RUNX3_direct_+/+		
+TF:RUNX3	region:chr7:5643268-5643768	tf_binds_region	RUNX3_direct_+/+		
+TF:RUNX3	region:chr7:5656110-5656610	tf_binds_region	RUNX3_direct_+/+		
+TF:RUNX3	region:chr9:114385560-114386060	tf_binds_region	RUNX3_direct_+/+		
+TF:RUNX3	region:chr9:133374608-133375108	tf_binds_region	RUNX3_direct_+/+		
+TF:TBX21	region:chr10:17509071-17509571	tf_binds_region	TBX21_direct_+/+		
+TF:TBX21	region:chr10:17511283-17511783	tf_binds_region	TBX21_direct_+/+		
+TF:TBX21	region:chr12:10389912-10390412	tf_binds_region	TBX21_direct_+/+		
+TF:TBX21	region:chr12:10411199-10411699	tf_binds_region	TBX21_direct_+/+		
+TF:TBX21	region:chr12:10497537-10498037	tf_binds_region	TBX21_direct_+/+		
+TF:TBX21	region:chr12:10499196-10499696	tf_binds_region	TBX21_direct_+/+		
+TF:TBX21	region:chr12:128794584-128795084	tf_binds_region	TBX21_direct_+/+		
+TF:TBX21	region:chr12:128796317-128796817	tf_binds_region	TBX21_direct_+/+		
+TF:TBX21	region:chr12:128810103-128810603	tf_binds_region	TBX21_direct_+/+		
+TF:TBX21	region:chr12:128823755-128824255	tf_binds_region	TBX21_direct_+/+		
+TF:TBX21	region:chr12:68119657-68120157	tf_binds_region	TBX21_direct_+/+		
+TF:TBX21	region:chr14:24609620-24610120	tf_binds_region	TBX21_direct_+/+		
+TF:TBX21	region:chr14:24680639-24681139	tf_binds_region	TBX21_direct_+/+		
+TF:TBX21	region:chr14:24692945-24693445	tf_binds_region	TBX21_direct_+/+		
+TF:TBX21	region:chr16:57669266-57669766	tf_binds_region	TBX21_direct_+/+		
+TF:TBX21	region:chr16:57720202-57720702	tf_binds_region	TBX21_direct_+/+		
+TF:TBX21	region:chr17:35890652-35891152	tf_binds_region	TBX21_direct_+/+		
+TF:TBX21	region:chr17:35896221-35896721	tf_binds_region	TBX21_direct_+/+		
+TF:TBX21	region:chr17:35900797-35901297	tf_binds_region	TBX21_direct_+/+		
+TF:TBX21	region:chr17:47700691-47701191	tf_binds_region	TBX21_direct_+/+		
+TF:TBX21	region:chr17:47703031-47703531	tf_binds_region	TBX21_direct_+/+		
+TF:TBX21	region:chr17:47714490-47714990	tf_binds_region	TBX21_direct_+/+		
+TF:TBX21	region:chr17:47730632-47731132	tf_binds_region	TBX21_direct_+/+		
+TF:TBX21	region:chr17:47810176-47810676	tf_binds_region	TBX21_direct_+/+		
+TF:TBX21	region:chr1:158924657-158925157	tf_binds_region	TBX21_direct_+/+		
+TF:TBX21	region:chr1:158978682-158979182	tf_binds_region	TBX21_direct_+/+		
+TF:TBX21	region:chr1:159008702-159009202	tf_binds_region	TBX21_direct_+/+		
+TF:TBX21	region:chr1:168410346-168410846	tf_binds_region	TBX21_direct_+/+		
+TF:TBX21	region:chr1:168421375-168421875	tf_binds_region	TBX21_direct_+/+		
+TF:TBX21	region:chr1:168513213-168513713	tf_binds_region	TBX21_direct_+/+		
+TF:TBX21	region:chr1:168520190-168520690	tf_binds_region	TBX21_direct_+/+		
+TF:TBX21	region:chr1:168543807-168544307	tf_binds_region	TBX21_direct_+/+		
+TF:TBX21	region:chr1:168553921-168554421	tf_binds_region	TBX21_direct_+/+		
+TF:TBX21	region:chr1:168576232-168576732	tf_binds_region	TBX21_direct_+/+		
+TF:TBX21	region:chr1:91533558-91534058	tf_binds_region	TBX21_direct_+/+		
+TF:TBX21	region:chr1:91548264-91548764	tf_binds_region	TBX21_direct_+/+		
+TF:TBX21	region:chr1:91555909-91556409	tf_binds_region	TBX21_direct_+/+		
+TF:TBX21	region:chr1:91731356-91731856	tf_binds_region	TBX21_direct_+/+		
+TF:TBX21	region:chr1:91876024-91876524	tf_binds_region	TBX21_direct_+/+		
+TF:TBX21	region:chr1:91948431-91948931	tf_binds_region	TBX21_direct_+/+		
+TF:TBX21	region:chr22:37149846-37150346	tf_binds_region	TBX21_direct_+/+		
+TF:TBX21	region:chr22:37158672-37159172	tf_binds_region	TBX21_direct_+/+		
+TF:TBX21	region:chr22:37162501-37163001	tf_binds_region	TBX21_direct_+/+		
+TF:TBX21	region:chr22:37164107-37164607	tf_binds_region	TBX21_direct_+/+		
+TF:TBX21	region:chr22:37229952-37230452	tf_binds_region	TBX21_direct_+/+		
+TF:TBX21	region:chr22:37279385-37279885	tf_binds_region	TBX21_direct_+/+		
+TF:TBX21	region:chr22:37306919-37307419	tf_binds_region	TBX21_direct_+/+		
+TF:TBX21	region:chr22:39090558-39091058	tf_binds_region	TBX21_direct_+/+		
+TF:TBX21	region:chr22:39097107-39097607	tf_binds_region	TBX21_direct_+/+		
+TF:TBX21	region:chr2:212958651-212959151	tf_binds_region	TBX21_direct_+/+		
+TF:TBX21	region:chr2:213125829-213126329	tf_binds_region	TBX21_direct_+/+		
+TF:TBX21	region:chr2:8543601-8544101	tf_binds_region	TBX21_direct_+/+		
+TF:TBX21	region:chr2:8588444-8588944	tf_binds_region	TBX21_direct_+/+		
+TF:TBX21	region:chr2:8664600-8665100	tf_binds_region	TBX21_direct_+/+		
+TF:TBX21	region:chr2:8680908-8681408	tf_binds_region	TBX21_direct_+/+		
+TF:TBX21	region:chr3:4834237-4834737	tf_binds_region	TBX21_direct_+/+		
+TF:TBX21	region:chr3:4850773-4851273	tf_binds_region	TBX21_direct_+/+		
+TF:TBX21	region:chr3:4977175-4977675	tf_binds_region	TBX21_direct_+/+		
+TF:TBX21	region:chr3:4980211-4980711	tf_binds_region	TBX21_direct_+/+		
+TF:TBX21	region:chr3:4981788-4982288	tf_binds_region	TBX21_direct_+/+		
+TF:TBX21	region:chr3:5002453-5002953	tf_binds_region	TBX21_direct_+/+		
+TF:TBX21	region:chr3:5006635-5007135	tf_binds_region	TBX21_direct_+/+		
+TF:TBX21	region:chr3:5026341-5026841	tf_binds_region	TBX21_direct_+/+		
+TF:TBX21	region:chr6:130215458-130215958	tf_binds_region	TBX21_direct_+/+		
+TF:TBX21	region:chr6:130216561-130217061	tf_binds_region	TBX21_direct_+/+		
+TF:TBX21	region:chr6:152634713-152635213	tf_binds_region	TBX21_direct_+/+		
+TF:TBX21	region:chr6:152636672-152637172	tf_binds_region	TBX21_direct_+/+		
+TF:TBX21	region:chr6:158564785-158565285	tf_binds_region	TBX21_direct_+/+		
+TF:TBX21	region:chr6:158652903-158653403	tf_binds_region	TBX21_direct_+/+		
+TF:TBX21	region:chr9:16870526-16871026	tf_binds_region	TBX21_direct_+/+		
+TF:TBX21	region:chr9:16871620-16872120	tf_binds_region	TBX21_direct_+/+		
+TF:TBX21	region:chr9:16884833-16885333	tf_binds_region	TBX21_direct_+/+		
+TF:TCF7	region:chr11:128716901-128717401	tf_binds_region	TCF7_direct_-/-		
+TF:TCF7	region:chr11:128729135-128729635	tf_binds_region	TCF7_direct_-/-		
+TF:TCF7	region:chr11:1845435-1845935	tf_binds_region	TCF7_direct_-/-		
+TF:TCF7	region:chr11:3014285-3014785	tf_binds_region	TCF7_direct_-/-		
+TF:TCF7	region:chr15:60548003-60548503	tf_binds_region	TCF7_direct_-/-		
+TF:TCF7	region:chr15:90539753-90540253	tf_binds_region	TCF7_direct_-/-		
+TF:TCF7	region:chr15:90561908-90562408	tf_binds_region	TCF7_direct_-/-		
+TF:TCF7	region:chr16:85448740-85449240	tf_binds_region	TCF7_direct_-/-		
+TF:TCF7	region:chr19:8610433-8610933	tf_binds_region	TCF7_direct_-/-		
+TF:TCF7	region:chr2:201191512-201192012	tf_binds_region	TCF7_direct_-/-		
+TF:TCF7	region:chr3:188788513-188789013	tf_binds_region	TCF7_direct_-/-		
+TF:TCF7	region:chr3:33659387-33659887	tf_binds_region	TCF7_direct_-/-		
+TF:TCF7	region:chr5:14413337-14413837	tf_binds_region	TCF7_direct_-/-		
+TF:TCF7	region:chr5:55102347-55102847	tf_binds_region	TCF7_direct_-/-		
+TF:TCF7	region:chr5:96875670-96876170	tf_binds_region	TCF7_direct_-/-		
+TF:TCF7	region:chr6:16483463-16483963	tf_binds_region	TCF7_direct_-/-		
+TF:TCF7	region:chr7:45110635-45111135	tf_binds_region	TCF7_direct_-/-		
+TF:TCF7	region:chr7:77354452-77354952	tf_binds_region	TCF7_direct_-/-		
+TF:TCF7	region:chr8:132979018-132979518	tf_binds_region	TCF7_direct_-/-		
+TF:TCF7	region:chr8:133016479-133016979	tf_binds_region	TCF7_direct_-/-		
+TF:TCF7	region:chr8:27378651-27379151	tf_binds_region	TCF7_direct_-/-		
+TF:TCF7	region:chr9:99112973-99113473	tf_binds_region	TCF7_direct_-/-		
+region:chr10:17509071-17509571	gene:ST8SIA6	region_regulates_gene	TBX21_direct_+/+	0.0796561881696657	0.3008866438969366
+region:chr10:17511283-17511783	gene:ST8SIA6	region_regulates_gene	TBX21_direct_+/+	0.0696099613905117	0.323590770533764
+region:chr10:69048025-69048525	gene:SRGN	region_regulates_gene	FOXO1_direct_-/+	0.0582314916872505	0.4820678315498227
+region:chr10:69088816-69089316	gene:SRGN	region_regulates_gene	FOXO1_direct_-/+	0.0206648488647885	0.1439660100122568
+region:chr11:128716901-128717401	gene:FLI1	region_regulates_gene	TCF7_direct_-/-	0.0181169660559258	-0.084709349957545
+region:chr11:128729135-128729635	gene:FLI1	region_regulates_gene	TCF7_direct_-/-	0.0173499827607946	-0.0777046112067375
+region:chr11:1845435-1845935	gene:CTSD	region_regulates_gene	TCF7_direct_-/-	0.0128328184436909	-0.169610974162375
+region:chr11:1845435-1845935	gene:LSP1	region_regulates_gene	TCF7_direct_-/-	0.0131070328466485	-0.0787494460886805
+region:chr11:3014285-3014785	gene:OSBPL5	region_regulates_gene	TCF7_direct_-/-	0.0151317406749191	-0.225663402221256
+region:chr11:65928016-65928516	gene:CTSW	region_regulates_gene	RUNX3_direct_+/+	0.0360375791518696	0.3137626849280864
+region:chr12:10279843-10280343	gene:KLRC3	region_regulates_gene	RUNX3_direct_+/+	0.0245632061337482	0.2482128837624834
+region:chr12:10285887-10286387	gene:KLRC3	region_regulates_gene	RUNX3_direct_+/+	0.0287287167275974	0.2314125940242964
+region:chr12:10288957-10289457	gene:KLRC3	region_regulates_gene	RUNX3_direct_+/+	0.0299651303722766	0.2488952062394522
+region:chr12:10389912-10390412	gene:KLRK1	region_regulates_gene	RUNX3_direct_+/+;TBX21_direct_+/+	0.0580378177463754	0.5460328859987005
+region:chr12:10392305-10392805	gene:KLRC3	region_regulates_gene	RUNX3_direct_+/+	0.0543017142289417	0.1966636241992656
+region:chr12:10394470-10394970	gene:KLRC3	region_regulates_gene	RUNX3_direct_+/+	0.0244352953136278	0.1551820901726084
+region:chr12:10394470-10394970	gene:KLRK1	region_regulates_gene	RUNX3_direct_+/+	0.0411058221619189	0.5316757882354265
+region:chr12:10395348-10395848	gene:KLRC3	region_regulates_gene	RUNX3_direct_+/+	0.0399486775953941	0.1926497617007715
+region:chr12:10395348-10395848	gene:KLRK1	region_regulates_gene	RUNX3_direct_+/+	0.0247657323424396	0.4842421236040681
+region:chr12:10411199-10411699	gene:KLRK1	region_regulates_gene	TBX21_direct_+/+	0.0322792283201051	0.5408938297594407
+region:chr12:10497537-10498037	gene:KLRC3	region_regulates_gene	RUNX3_direct_+/+	0.0288845540919565	0.1846089807309704
+region:chr12:10497537-10498037	gene:KLRK1	region_regulates_gene	RUNX3_direct_+/+;TBX21_direct_+/+	0.0575556779558834	0.547238449004737
+region:chr12:10499196-10499696	gene:KLRK1	region_regulates_gene	RUNX3_direct_+/+;TBX21_direct_+/+	0.071938816058549	0.561776583378182
+region:chr12:128794584-128795084	gene:SLC15A4	region_regulates_gene	TBX21_direct_+/+	0.0568671170928524	0.3125748089451161
+region:chr12:128796317-128796817	gene:SLC15A4	region_regulates_gene	TBX21_direct_+/+	0.0466817778680267	0.2453520623729335
+region:chr12:128810103-128810603	gene:SLC15A4	region_regulates_gene	TBX21_direct_+/+	0.0637725816397102	0.3210274911320147
+region:chr12:128823755-128824255	gene:SLC15A4	region_regulates_gene	TBX21_direct_+/+	0.048687807182906	0.1501903840485361
+region:chr12:6534964-6535464	gene:GAPDH	region_regulates_gene	FOXO1_direct_-/+	0.0287832925141741	0.2231483963244216
+region:chr12:6557952-6558452	gene:GAPDH	region_regulates_gene	FOXO1_direct_-/+	0.0183314084464249	0.0751858934903397
+region:chr12:6606216-6606716	gene:GAPDH	region_regulates_gene	FOXO1_direct_-/+	0.0218044398928929	0.0675603028173627
+region:chr12:68119657-68120157	gene:IFNG	region_regulates_gene	TBX21_direct_+/+	0.0958101890055448	0.3413923794566503
+region:chr13:23980053-23980553	gene:SPATA13	region_regulates_gene	FOXO1_direct_-/+	0.0403996525930013	0.1147229523670529
+region:chr13:46160431-46160931	gene:LCP1	region_regulates_gene	LEF1_direct_-/-	0.0101736513502322	-0.1943831081897179
+region:chr14:105398280-105398780	gene:CRIP1	region_regulates_gene	FOXO1_direct_-/+	0.0223086010668402	0.2168639867032104
+region:chr14:24609620-24610120	gene:GZMH	region_regulates_gene	TBX21_direct_+/+	0.0913121812022944	0.6497338127206571
+region:chr14:24680639-24681139	gene:GZMH	region_regulates_gene	TBX21_direct_+/+	0.0337791072036428	0.6809893150789076
+region:chr14:24692945-24693445	gene:GZMH	region_regulates_gene	TBX21_direct_+/+	0.0489609107652935	0.4910593479789162
+region:chr15:60548003-60548503	gene:ANXA2	region_regulates_gene	LEF1_direct_-/-;TCF7_direct_-/-	0.020253642259093	-0.1439034013510335
+region:chr15:90539753-90540253	gene:IQGAP1	region_regulates_gene	LEF1_direct_-/-;TCF7_direct_-/-	0.0525187624660936	-0.3276155391436247
+region:chr15:90561908-90562408	gene:IQGAP1	region_regulates_gene	TCF7_direct_-/-	0.0195362184953394	-0.3064815330679631
+region:chr16:11556890-11557390	gene:LITAF	region_regulates_gene	RUNX3_direct_+/+	0.0184152215176496	0.1760785651191596
+region:chr16:11572188-11572688	gene:LITAF	region_regulates_gene	RUNX3_direct_+/+	0.0205366833561499	0.2189858848489205
+region:chr16:30186707-30187207	gene:CORO1A	region_regulates_gene	RUNX3_direct_+/+	0.0465130802821214	0.2049862187207373
+region:chr16:57669266-57669766	gene:ADGRG1	region_regulates_gene	TBX21_direct_+/+	0.0353160549384267	0.5700532729598283
+region:chr16:57720202-57720702	gene:ADGRG1	region_regulates_gene	TBX21_direct_+/+	0.0593380777173678	0.5180848857988947
+region:chr16:85448740-85449240	gene:GSE1	region_regulates_gene	LEF1_direct_-/-;TCF7_direct_-/-	0.0083669184736101	-0.2031825281040166
+region:chr16:87754523-87755023	gene:KLHDC4	region_regulates_gene	RUNX3_direct_+/+	0.0194964968825035	0.1441365083308887
+region:chr16:87762124-87762624	gene:KLHDC4	region_regulates_gene	RUNX3_direct_+/+	0.0341684589461109	0.1170440275924134
+region:chr16:87865795-87866295	gene:KLHDC4	region_regulates_gene	RUNX3_direct_+/+	0.0382071074701946	0.0868971964957019
+region:chr16:88681670-88682170	gene:CYBA	region_regulates_gene	LEF1_direct_-/-	0.0136603471951047	-0.1333749975902478
+region:chr17:35890652-35891152	gene:CCL5	region_regulates_gene	RUNX3_direct_+/+;TBX21_direct_+/+	0.0710265117860988	0.6190732624370718
+region:chr17:35896221-35896721	gene:CCL5	region_regulates_gene	RUNX3_direct_+/+;TBX21_direct_+/+	0.068489126350127	0.6756105662547598
+region:chr17:35900216-35900716	gene:CCL5	region_regulates_gene	RUNX3_direct_+/+	0.0955769151710679	0.7673589513079236
+region:chr17:35900797-35901297	gene:CCL5	region_regulates_gene	TBX21_direct_+/+	0.0518231539244363	0.7679077960733204
+region:chr17:47700691-47701191	gene:TBX21	region_regulates_gene	TBX21_direct_+/+	0.0417397889395013	0.4154200192423717
+region:chr17:47703031-47703531	gene:TBX21	region_regulates_gene	TBX21_direct_+/+	0.0213126062856323	0.3540324198797068
+region:chr17:47714490-47714990	gene:TBX21	region_regulates_gene	TBX21_direct_+/+	0.040482026497437	0.381624346365789
+region:chr17:47730632-47731132	gene:TBX21	region_regulates_gene	TBX21_direct_+/+	0.0363869522655023	0.402572518961721
+region:chr17:47810176-47810676	gene:TBX21	region_regulates_gene	TBX21_direct_+/+	0.0250547792355374	0.47684651653963
+region:chr17:75435885-75436385	gene:TSEN54	region_regulates_gene	RUNX3_direct_+/+	0.0524610705704238	0.2018504477146496
+region:chr17:75535010-75535510	gene:TSEN54	region_regulates_gene	RUNX3_direct_+/+	0.0762153874156745	0.2122758882274761
+region:chr17:80471870-80472370	gene:RNF213	region_regulates_gene	FOXO1_direct_-/+	0.0320038458900821	0.2297910136518414
+region:chr19:1174041-1174541	gene:ATP5F1D	region_regulates_gene	FOXO1_direct_-/+	0.0396047628780941	0.0666454441928176
+region:chr19:1259152-1259652	gene:ATP5F1D	region_regulates_gene	FOXO1_direct_-/+	0.0173385575452944	0.087863925602028
+region:chr19:1265749-1266249	gene:ATP5F1D	region_regulates_gene	FOXO1_direct_-/+	0.0114699073617825	0.0843708515904057
+region:chr19:45406258-45406758	gene:VASP	region_regulates_gene	LEF1_direct_-/-	0.0091756097109032	-0.1687623991147877
+region:chr19:45558317-45558817	gene:VASP	region_regulates_gene	LEF1_direct_-/-	0.0160042307251372	-0.2096616078406454
+region:chr19:543724-544224	gene:GZMM	region_regulates_gene	RUNX3_direct_+/+	0.1068116897935612	0.4007318009943978
+region:chr19:575182-575682	gene:GZMM	region_regulates_gene	RUNX3_direct_+/+	0.0162763953392092	0.2628481218978137
+region:chr19:8610433-8610933	gene:MYO1F	region_regulates_gene	LEF1_direct_-/-;TCF7_direct_-/-	0.0058615609020178	-0.4493463529618007
+region:chr1:158924657-158925157	gene:PYHIN1	region_regulates_gene	TBX21_direct_+/+	0.1032537700059777	0.5379190525954675
+region:chr1:158978682-158979182	gene:PYHIN1	region_regulates_gene	TBX21_direct_+/+	0.1190933967731961	0.5265366686784471
+region:chr1:159008702-159009202	gene:PYHIN1	region_regulates_gene	TBX21_direct_+/+	0.0844289170909534	0.4930658522602092
+region:chr1:161013564-161014064	gene:ARHGAP30	region_regulates_gene	FOXO1_direct_-/+	0.0100339249038782	0.0872613754794799
+region:chr1:161069702-161070202	gene:ARHGAP30	region_regulates_gene	FOXO1_direct_-/+	0.0155082180438914	0.0870563732731847
+region:chr1:161185241-161185741	gene:ARHGAP30	region_regulates_gene	FOXO1_direct_-/+	0.0273690737012756	0.0648775443909862
+region:chr1:161209741-161210241	gene:ARHGAP30	region_regulates_gene	FOXO1_direct_-/+	0.0112622519810629	0.090471279480211
+region:chr1:161216834-161217334	gene:ARHGAP30	region_regulates_gene	FOXO1_direct_-/+	0.0093829051328598	0.0524277930335851
+region:chr1:161217714-161218214	gene:ARHGAP30	region_regulates_gene	FOXO1_direct_-/+	0.0121355409925735	0.0700306692299394
+region:chr1:162400722-162401222	gene:SH2D1B	region_regulates_gene	RUNX3_direct_+/+	0.0728263060984246	0.3094454656653823
+region:chr1:162548132-162548632	gene:SH2D1B	region_regulates_gene	RUNX3_direct_+/+	0.1294712506608994	0.2720888831851965
+region:chr1:168410346-168410846	gene:XCL2	region_regulates_gene	TBX21_direct_+/+	0.0407234028152105	0.2730667905227474
+region:chr1:168421375-168421875	gene:XCL2	region_regulates_gene	TBX21_direct_+/+	0.0304706687236573	0.110735065981663
+region:chr1:168513213-168513713	gene:XCL2	region_regulates_gene	TBX21_direct_+/+	0.044924664615035	0.2581627992538646
+region:chr1:168520190-168520690	gene:XCL2	region_regulates_gene	TBX21_direct_+/+	0.0651027990854015	0.2677812830908886
+region:chr1:168543807-168544307	gene:XCL2	region_regulates_gene	TBX21_direct_+/+	0.0717692691635545	0.3502567733597959
+region:chr1:168553921-168554421	gene:XCL2	region_regulates_gene	TBX21_direct_+/+	0.0478099335972391	0.3665604034917825
+region:chr1:168576232-168576732	gene:XCL2	region_regulates_gene	TBX21_direct_+/+	0.0578765075514707	0.3503627517961025
+region:chr1:21294425-21294925	gene:EIF4G3	region_regulates_gene	LEF1_direct_-/-	0.0418563981481053	-0.169480869095865
+region:chr1:223716505-223717005	gene:CAPN2	region_regulates_gene	FOXO1_direct_-/+	0.0840255991906283	0.2039959222137177
+region:chr1:24914103-24914603	gene:RUNX3	region_regulates_gene	RUNX3_direct_+/+	0.0422877445980122	0.3391681609577876
+region:chr1:25099653-25100153	gene:RUNX3	region_regulates_gene	RUNX3_direct_+/+	0.0472399186249523	0.3413907435567596
+region:chr1:26169620-26170120	gene:SH3BGRL3	region_regulates_gene	FOXO1_direct_-/+	0.0172157545306468	0.210065460838849
+region:chr1:26278839-26279339	gene:SH3BGRL3	region_regulates_gene	FOXO1_direct_-/+	0.0433401863258179	0.298414699623195
+region:chr1:26314281-26314781	gene:SH3BGRL3	region_regulates_gene	FOXO1_direct_-/+	0.0304503955417622	0.3713966001895636
+region:chr1:39995924-39996424	gene:CAP1	region_regulates_gene	FOXO1_direct_-/+	0.0162287080110251	0.0660241479381862
+region:chr1:40186400-40186900	gene:CAP1	region_regulates_gene	RUNX3_direct_+/+	0.0238603166866347	0.1326116216559026
+region:chr1:91533558-91534058	gene:TGFBR3	region_regulates_gene	TBX21_direct_+/+	0.0558495074892162	0.6200419321744246
+region:chr1:91548264-91548764	gene:TGFBR3	region_regulates_gene	TBX21_direct_+/+	0.0742249592025104	0.5618291792200591
+region:chr1:91555909-91556409	gene:TGFBR3	region_regulates_gene	TBX21_direct_+/+	0.0268752106967546	0.5401267747603382
+region:chr1:91731356-91731856	gene:TGFBR3	region_regulates_gene	TBX21_direct_+/+	0.0238396081914517	0.5728480786544476
+region:chr1:91876024-91876524	gene:TGFBR3	region_regulates_gene	TBX21_direct_+/+	0.0398228483991137	0.5510279827960299
+region:chr1:91948431-91948931	gene:TGFBR3	region_regulates_gene	TBX21_direct_+/+	0.0262221971207493	0.4165081396359259
+region:chr22:37149846-37150346	gene:IL2RB	region_regulates_gene	TBX21_direct_+/+	0.0264575272404112	0.3518162228517941
+region:chr22:37158672-37159172	gene:IL2RB	region_regulates_gene	TBX21_direct_+/+	0.0520770500929534	0.3707757060257426
+region:chr22:37162501-37163001	gene:IL2RB	region_regulates_gene	TBX21_direct_+/+	0.0365649948021143	0.3886770010632152
+region:chr22:37164107-37164607	gene:IL2RB	region_regulates_gene	TBX21_direct_+/+	0.037981053867235	0.3644840344630381
+region:chr22:37164107-37164607	gene:RAC2	region_regulates_gene	RUNX3_direct_+/+	0.0360142068926008	0.2000291419582207
+region:chr22:37229952-37230452	gene:IL2RB	region_regulates_gene	TBX21_direct_+/+	0.0269011554063582	0.2948586224991825
+region:chr22:37229952-37230452	gene:RAC2	region_regulates_gene	RUNX3_direct_+/+	0.0164452435652157	0.2031864257263545
+region:chr22:37279385-37279885	gene:IL2RB	region_regulates_gene	TBX21_direct_+/+	0.0409359564973186	0.3239222002386415
+region:chr22:37279385-37279885	gene:RAC2	region_regulates_gene	RUNX3_direct_+/+	0.0190576577976873	0.1219515467122726
+region:chr22:37306919-37307419	gene:IL2RB	region_regulates_gene	TBX21_direct_+/+	0.0175449673951073	0.2528619079838038
+region:chr22:37306919-37307419	gene:RAC2	region_regulates_gene	RUNX3_direct_+/+	0.0178717419623881	0.2164146127139525
+region:chr22:39090558-39091058	gene:APOBEC3C	region_regulates_gene	TBX21_direct_+/+	0.0299280291044168	0.173814081355407
+region:chr22:39097107-39097607	gene:APOBEC3C	region_regulates_gene	TBX21_direct_+/+	0.0231332651779108	0.2550704420061387
+region:chr22:44620021-44620521	gene:PRR5	region_regulates_gene	RUNX3_direct_+/+	0.078894884049457	0.2508539118004005
+region:chr22:44685364-44685864	gene:PRR5	region_regulates_gene	RUNX3_direct_+/+	0.0662411559260581	0.240439527466117
+region:chr22:44710434-44710934	gene:PRR5	region_regulates_gene	RUNX3_direct_+/+	0.0419618142587507	0.2426262719893618
+region:chr2:201158014-201158514	gene:CFLAR	region_regulates_gene	LEF1_direct_-/-	0.0090268833170813	-0.1044003385154041
+region:chr2:201191512-201192012	gene:CFLAR	region_regulates_gene	LEF1_direct_-/-;TCF7_direct_-/-	0.0149274116012317	-0.1906673995106536
+region:chr2:212958651-212959151	gene:IKZF2	region_regulates_gene	TBX21_direct_+/+	0.069842467669278	0.2339727076724563
+region:chr2:213125829-213126329	gene:IKZF2	region_regulates_gene	TBX21_direct_+/+	0.0486955258082718	0.2405274068676741
+region:chr2:230415943-230416443	gene:SP140	region_regulates_gene	LEF1_direct_-/-	0.0115280411035771	-0.0732098717196254
+region:chr2:233251341-233251841	gene:INPP5D	region_regulates_gene	LEF1_direct_-/-	0.0345888822413298	-0.1088625886357823
+region:chr2:8543601-8544101	gene:ID2	region_regulates_gene	TBX21_direct_+/+	0.0710284545730856	0.2763773249374889
+region:chr2:8588444-8588944	gene:ID2	region_regulates_gene	TBX21_direct_+/+	0.0654727627356633	0.2809855140125644
+region:chr2:8664600-8665100	gene:ID2	region_regulates_gene	TBX21_direct_+/+	0.0430041330206547	0.2454273432724853
+region:chr2:86785374-86785874	gene:CD8A	region_regulates_gene	RUNX3_direct_+/+	0.0342281191338446	0.4592932242294215
+region:chr2:86788812-86789312	gene:CD8A	region_regulates_gene	RUNX3_direct_+/+	0.0772840604998297	0.4617074619082417
+region:chr2:86793713-86794213	gene:CD8A	region_regulates_gene	RUNX3_direct_+/+	0.0308180760157044	0.4636019530621247
+region:chr2:8680908-8681408	gene:ID2	region_regulates_gene	TBX21_direct_+/+	0.0344791406797332	0.2706963467495226
+region:chr2:98465673-98466173	gene:INPP4A	region_regulates_gene	RUNX3_direct_+/+	0.0152830230391843	0.0982751113386645
+region:chr2:98508621-98509121	gene:INPP4A	region_regulates_gene	RUNX3_direct_+/+	0.0358373956768113	0.1758178036124353
+region:chr2:98634514-98635014	gene:INPP4A	region_regulates_gene	RUNX3_direct_+/+	0.026727806502531	0.2358989447936553
+region:chr2:98656698-98657198	gene:INPP4A	region_regulates_gene	RUNX3_direct_+/+	0.0289649525837947	0.1962937337311886
+region:chr3:18438475-18438975	gene:TBC1D5	region_regulates_gene	LEF1_direct_-/-	0.0168773146644107	-0.1853850040925228
+region:chr3:188788513-188789013	gene:LPP	region_regulates_gene	LEF1_direct_-/-;TCF7_direct_-/-	0.0448916160320518	-0.2589255322618984
+region:chr3:33659387-33659887	gene:PDCD6IP	region_regulates_gene	TCF7_direct_-/-	0.0745105697348464	-0.0505865132295246
+region:chr3:4834237-4834737	gene:BHLHE40	region_regulates_gene	TBX21_direct_+/+	0.0635770361182484	0.1894082496694188
+region:chr3:4850773-4851273	gene:BHLHE40	region_regulates_gene	TBX21_direct_+/+	0.0412557948337067	0.1733249751829709
+region:chr3:4977175-4977675	gene:BHLHE40	region_regulates_gene	TBX21_direct_+/+	0.0439310705966033	0.2720373388230165
+region:chr3:4980211-4980711	gene:BHLHE40	region_regulates_gene	TBX21_direct_+/+	0.0301986674180038	0.2443082074019192
+region:chr3:4981788-4982288	gene:BHLHE40	region_regulates_gene	TBX21_direct_+/+	0.0254898870498724	0.2637120196182347
+region:chr3:5002453-5002953	gene:BHLHE40	region_regulates_gene	TBX21_direct_+/+	0.0357103160009227	0.2071419766485284
+region:chr3:5006635-5007135	gene:BHLHE40	region_regulates_gene	TBX21_direct_+/+	0.0313392228147253	0.2618599684895101
+region:chr3:5026341-5026841	gene:BHLHE40	region_regulates_gene	TBX21_direct_+/+	0.0412880325027879	0.2324523237521455
+region:chr5:100904535-100905035	gene:ST8SIA4	region_regulates_gene	LEF1_direct_-/-	0.0236509323635045	-0.0758659478856893
+region:chr5:1315610-1316110	gene:LPCAT1	region_regulates_gene	LEF1_direct_-/-	0.0204263781044706	-0.2594099254445328
+region:chr5:141682960-141683460	gene:DIAPH1	region_regulates_gene	FOXO1_direct_-/+	0.0621148380143783	0.2101349353185019
+region:chr5:14413337-14413837	gene:TRIO	region_regulates_gene	TCF7_direct_-/-	0.015230831374947	-0.4884784842595827
+region:chr5:177300228-177300728	gene:PRELID1	region_regulates_gene	FOXO1_direct_-/+	0.0132511919855977	0.1655018545475397
+region:chr5:177307861-177308361	gene:PRELID1	region_regulates_gene	FOXO1_direct_-/+	0.0285705626318525	0.1698105601207908
+region:chr5:179914050-179914550	gene:SQSTM1	region_regulates_gene	FOXO1_direct_-/+	0.0137743840848251	0.1043155204195586
+region:chr5:55102347-55102847	gene:GZMA	region_regulates_gene	TCF7_direct_-/-	0.0119574495280714	-0.1679091449492709
+region:chr5:96703125-96703625	gene:CAST	region_regulates_gene	LEF1_direct_-/-	0.0745431018938106	-0.2823730638324371
+region:chr5:96875670-96876170	gene:CAST	region_regulates_gene	LEF1_direct_-/-;TCF7_direct_-/-	0.039791097329693	-0.2495123928402374
+region:chr6:130215458-130215958	gene:SAMD3	region_regulates_gene	TBX21_direct_+/+	0.0714164555038925	0.4693772765254925
+region:chr6:130216561-130217061	gene:SAMD3	region_regulates_gene	TBX21_direct_+/+	0.1054543838403295	0.537505744496613
+region:chr6:152634713-152635213	gene:SYNE1	region_regulates_gene	TBX21_direct_+/+	0.1427893208761255	0.4021597698699985
+region:chr6:152636672-152637172	gene:SYNE1	region_regulates_gene	TBX21_direct_+/+	0.1338127292498577	0.4642431431557436
+region:chr6:158564785-158565285	gene:TMEM181	region_regulates_gene	TBX21_direct_+/+	0.0603208146890666	0.2519080453226756
+region:chr6:158652903-158653403	gene:TMEM181	region_regulates_gene	TBX21_direct_+/+	0.0283686738178028	0.172928271333686
+region:chr6:16483463-16483963	gene:ATXN1	region_regulates_gene	LEF1_direct_-/-;TCF7_direct_-/-	0.0025182032001425	-0.2500666023328688
+region:chr6:29748850-29749350	gene:HLA-F	region_regulates_gene	FOXO1_direct_-/+	0.0317807325312552	0.087416846418093
+region:chr6:29752970-29753470	gene:HLA-F	region_regulates_gene	FOXO1_direct_-/+	0.0168972194806152	0.071108928221137
+region:chr6:31592814-31593314	gene:CLIC1	region_regulates_gene	FOXO1_direct_-/+	0.0211705283965921	0.1783548868669494
+region:chr6:31727402-31727902	gene:CLIC1	region_regulates_gene	FOXO1_direct_-/+	0.013276920584392	0.2779951407693961
+region:chr6:31734750-31735250	gene:CLIC1	region_regulates_gene	FOXO1_direct_-/+	0.0403469966343645	0.4026906220285559
+region:chr6:31734750-31735250	gene:HSPA1A	region_regulates_gene	FOXO1_direct_-/+	0.024434243030938	0.1618482519063083
+region:chr6:31736111-31736611	gene:CLIC1	region_regulates_gene	FOXO1_direct_-/+	0.0752318913883727	0.380413861730678
+region:chr6:31736111-31736611	gene:HSPA1A	region_regulates_gene	FOXO1_direct_-/+	0.0165323218501155	0.1731584498328245
+region:chr6:32845277-32845777	gene:PSMB9	region_regulates_gene	FOXO1_direct_-/+	0.0249231091911584	0.0771333058648004
+region:chr6:32969091-32969591	gene:PSMB9	region_regulates_gene	FOXO1_direct_-/+	0.0110548142784239	0.0743426283766327
+region:chr6:33322006-33322506	gene:DAXX	region_regulates_gene	RUNX3_direct_+/+	0.0237634291821105	0.1489306954784032
+region:chr7:27739878-27740378	gene:JAZF1	region_regulates_gene	LEF1_direct_-/-	0.0145073637754576	-0.1932823801372827
+region:chr7:45110635-45111135	gene:MYO1G	region_regulates_gene	LEF1_direct_-/-;TCF7_direct_-/-	0.0332610355194268	-0.2043219037846655
+region:chr7:5643268-5643768	gene:ACTB	region_regulates_gene	RUNX3_direct_+/+	0.0293214066096724	0.3124080258643575
+region:chr7:5656110-5656610	gene:ACTB	region_regulates_gene	RUNX3_direct_+/+	0.0266605646617199	0.3479625595606314
+region:chr7:77354452-77354952	gene:GSAP	region_regulates_gene	LEF1_direct_-/-;TCF7_direct_-/-	0.0043319597531576	-0.2118895398240027
+region:chr8:132979018-132979518	gene:SLA	region_regulates_gene	TCF7_direct_-/-	0.0136858828497483	-0.053800025559073
+region:chr8:133016479-133016979	gene:SLA	region_regulates_gene	TCF7_direct_-/-	0.0077838136922198	-0.0817449921606692
+region:chr8:27378651-27379151	gene:PTK2B	region_regulates_gene	TCF7_direct_-/-	0.0509998598915091	-0.2273923620362516
+region:chr9:114385560-114386060	gene:AKNA	region_regulates_gene	RUNX3_direct_+/+	0.0459411381260618	0.1029065331579238
+region:chr9:133374608-133375108	gene:SURF4	region_regulates_gene	RUNX3_direct_+/+	0.0658446508770663	0.1615288282616307
+region:chr9:16870526-16871026	gene:BNC2	region_regulates_gene	TBX21_direct_+/+	0.304619287857977	0.4775516095478913
+region:chr9:16871620-16872120	gene:BNC2	region_regulates_gene	TBX21_direct_+/+	0.2643269132738147	0.4013870604796907
+region:chr9:16884833-16885333	gene:BNC2	region_regulates_gene	TBX21_direct_+/+	0.2255989317324352	0.4354829990240115
+region:chr9:36150820-36151320	gene:CLTA	region_regulates_gene	FOXO1_direct_-/+	0.0203696874375065	0.0907318165401037
+region:chr9:99112973-99113473	gene:SEC61B	region_regulates_gene	TCF7_direct_-/-	0.0295775044949113	-0.0633531000586321
+region:chrX:153829965-153830465	gene:SSR4	region_regulates_gene	FOXO1_direct_-/+	0.0285211107231262	0.1189848487211609
+region:chrX:153934783-153935283	gene:SSR4	region_regulates_gene	FOXO1_direct_-/+	0.0451978917628227	0.1115459156030307
+region:chrX:65601463-65601963	gene:MSN	region_regulates_gene	FOXO1_direct_-/+	0.0324406519026871	0.0593214012259036
+region:chrX:65723646-65724146	gene:MSN	region_regulates_gene	FOXO1_direct_-/+	0.0607201615884046	0.206093510700637
+region:chrX:65750607-65751107	gene:MSN	region_regulates_gene	FOXO1_direct_-/+	0.0465019403100376	0.1784706332401339
+TF:FOXO1	gene:ARHGAP30	tf_regulates_gene	FOXO1_direct_-/+	1.6265504009632603	-0.0883050743037047
+TF:FOXO1	gene:ATP5F1D	tf_regulates_gene	FOXO1_direct_-/+	1.967163088295456	-0.0641763575673086
+TF:FOXO1	gene:CAP1	tf_regulates_gene	FOXO1_direct_-/+	2.363217836702977	-0.1383238388954632
+TF:FOXO1	gene:CAPN2	tf_regulates_gene	FOXO1_direct_-/+	1.9241357171399216	-0.1349635605801215
+TF:FOXO1	gene:CLIC1	tf_regulates_gene	FOXO1_direct_-/+	1.5049231672482666	-0.186671229768527
+TF:FOXO1	gene:CLTA	tf_regulates_gene	FOXO1_direct_-/+	1.5102495606107649	-0.0836089958089396
+TF:FOXO1	gene:CRIP1	tf_regulates_gene	FOXO1_direct_-/+	2.364992538578591	-0.129133147077362
+TF:FOXO1	gene:DIAPH1	tf_regulates_gene	FOXO1_direct_-/+	1.8229792347469784	-0.1401861929506469
+TF:FOXO1	gene:GAPDH	tf_regulates_gene	FOXO1_direct_-/+	1.7578136644142983	-0.1175789146257978
+TF:FOXO1	gene:HLA-F	tf_regulates_gene	FOXO1_direct_-/+	2.3400180036885736	-0.0601577706297132
+TF:FOXO1	gene:HSPA1A	tf_regulates_gene	FOXO1_direct_-/+	1.3617496603457966	-0.1185178281178846
+TF:FOXO1	gene:MSN	tf_regulates_gene	FOXO1_direct_-/+	2.33821554930604	-0.1438273180682859
+TF:FOXO1	gene:PRELID1	tf_regulates_gene	FOXO1_direct_-/+	1.5403401797822551	-0.1031096584511085
+TF:FOXO1	gene:PSMB9	tf_regulates_gene	FOXO1_direct_-/+	2.9658359659754736	-0.1150558808680178
+TF:FOXO1	gene:RNF213	tf_regulates_gene	FOXO1_direct_-/+	1.998764946445637	-0.163582776039169
+TF:FOXO1	gene:SH3BGRL3	tf_regulates_gene	FOXO1_direct_-/+	1.4444398537547771	-0.1776891545032115
+TF:FOXO1	gene:SPATA13	tf_regulates_gene	FOXO1_direct_-/+	1.5558316897356066	-0.0887722831361112
+TF:FOXO1	gene:SQSTM1	tf_regulates_gene	FOXO1_direct_-/+	1.6916603292447818	-0.0851865136218799
+TF:FOXO1	gene:SRGN	tf_regulates_gene	FOXO1_direct_-/+	1.554405486534293	-0.2311447540080602
+TF:FOXO1	gene:SSR4	tf_regulates_gene	FOXO1_direct_-/+	1.4175548001745046	-0.0842051504638303
+TF:LEF1	gene:ANXA2	tf_regulates_gene	LEF1_direct_-/-	4.660255775528774	-0.2534658991699202
+TF:LEF1	gene:ATXN1	tf_regulates_gene	LEF1_direct_-/-	5.059259503701617	-0.2482626345438149
+TF:LEF1	gene:CAST	tf_regulates_gene	LEF1_direct_-/-	6.289713255682741	-0.2360633468818944
+TF:LEF1	gene:CFLAR	tf_regulates_gene	LEF1_direct_-/-	3.300830202096057	-0.1706657720142672
+TF:LEF1	gene:CYBA	tf_regulates_gene	LEF1_direct_-/-	5.680325867550753	-0.2695038711232081
+TF:LEF1	gene:EIF4G3	tf_regulates_gene	LEF1_direct_-/-	5.230428097012692	-0.2539257134570185
+TF:LEF1	gene:GSAP	tf_regulates_gene	LEF1_direct_-/-	4.435177011126911	-0.3277197165624979
+TF:LEF1	gene:GSE1	tf_regulates_gene	LEF1_direct_-/-	3.74529531925604	-0.1728558961893874
+TF:LEF1	gene:INPP5D	tf_regulates_gene	LEF1_direct_-/-	6.232875242254955	-0.249091917005457
+TF:LEF1	gene:IQGAP1	tf_regulates_gene	LEF1_direct_-/-	4.841585614389425	-0.2941674780902231
+TF:LEF1	gene:JAZF1	tf_regulates_gene	LEF1_direct_-/-	7.095774239121341	-0.4477616960160994
+TF:LEF1	gene:LCP1	tf_regulates_gene	LEF1_direct_-/-	4.068163293385415	-0.2314902527531415
+TF:LEF1	gene:LPCAT1	tf_regulates_gene	LEF1_direct_-/-	3.86786662361113	-0.2313659333833234
+TF:LEF1	gene:LPP	tf_regulates_gene	LEF1_direct_-/-	5.55342875722487	-0.2883132381779746
+TF:LEF1	gene:MYO1F	tf_regulates_gene	LEF1_direct_-/-	6.331930764054694	-0.4809144680843402
+TF:LEF1	gene:MYO1G	tf_regulates_gene	LEF1_direct_-/-	4.2448072383215845	-0.1845652074721742
+TF:LEF1	gene:SP140	tf_regulates_gene	LEF1_direct_-/-	3.4967957076155134	-0.2120337922373929
+TF:LEF1	gene:ST8SIA4	tf_regulates_gene	LEF1_direct_-/-	3.441129180912444	-0.1971498284206621
+TF:LEF1	gene:TBC1D5	tf_regulates_gene	LEF1_direct_-/-	3.865147393989076	-0.2056061371393529
+TF:LEF1	gene:VASP	tf_regulates_gene	LEF1_direct_-/-	3.457605086771732	-0.1728865616723812
+TF:RUNX3	gene:ACTB	tf_regulates_gene	RUNX3_direct_+/+	2.7135953035349814	0.1906191071030643
+TF:RUNX3	gene:AKNA	tf_regulates_gene	RUNX3_direct_+/+	3.9881558762391456	0.1370436880519473
+TF:RUNX3	gene:CAP1	tf_regulates_gene	RUNX3_direct_+/+	3.603637006303616	0.1390761724035511
+TF:RUNX3	gene:CCL5	tf_regulates_gene	RUNX3_direct_+/+	2.70526099341765	0.3341719018489009
+TF:RUNX3	gene:CD8A	tf_regulates_gene	RUNX3_direct_+/+	2.7514832757744085	0.1644597084614935
+TF:RUNX3	gene:CORO1A	tf_regulates_gene	RUNX3_direct_+/+	2.673419841187554	0.1448115613299477
+TF:RUNX3	gene:CTSW	tf_regulates_gene	RUNX3_direct_+/+	3.2342337025986176	0.2908388566050565
+TF:RUNX3	gene:DAXX	tf_regulates_gene	RUNX3_direct_+/+	2.7697636672645665	0.061109516284376
+TF:RUNX3	gene:GZMM	tf_regulates_gene	RUNX3_direct_+/+	2.870264898832604	0.1957841521204445
+TF:RUNX3	gene:INPP4A	tf_regulates_gene	RUNX3_direct_+/+	2.5817938859597054	0.1474117024703599
+TF:RUNX3	gene:KLHDC4	tf_regulates_gene	RUNX3_direct_+/+	2.8471714920985405	0.1072539852590943
+TF:RUNX3	gene:KLRC3	tf_regulates_gene	RUNX3_direct_+/+	2.69835681701588	0.1381533837890322
+TF:RUNX3	gene:KLRK1	tf_regulates_gene	RUNX3_direct_+/+	3.011554292136083	0.2175936806344302
+TF:RUNX3	gene:LITAF	tf_regulates_gene	RUNX3_direct_+/+	3.1095574849511247	0.134761663282869
+TF:RUNX3	gene:PRR5	tf_regulates_gene	RUNX3_direct_+/+	2.722777864257113	0.1827411779096571
+TF:RUNX3	gene:RAC2	tf_regulates_gene	RUNX3_direct_+/+	2.9201142384241443	0.1650313314877048
+TF:RUNX3	gene:RUNX3	tf_regulates_gene	RUNX3_direct_+/+	5.247772930406662	1.0
+TF:RUNX3	gene:SH2D1B	tf_regulates_gene	RUNX3_direct_+/+	3.3182546376521502	0.1849407147183671
+TF:RUNX3	gene:SURF4	tf_regulates_gene	RUNX3_direct_+/+	2.8787172393511247	0.1192070799555916
+TF:RUNX3	gene:TSEN54	tf_regulates_gene	RUNX3_direct_+/+	4.031321678458841	0.1626801588635225
+TF:TBX21	gene:ADGRG1	tf_regulates_gene	TBX21_direct_+/+	2.532858087970689	0.419454389353296
+TF:TBX21	gene:APOBEC3C	tf_regulates_gene	TBX21_direct_+/+	2.5437876641772283	0.1943337225018584
+TF:TBX21	gene:BHLHE40	tf_regulates_gene	TBX21_direct_+/+	2.912735800781035	0.2056330521892432
+TF:TBX21	gene:BNC2	tf_regulates_gene	TBX21_direct_+/+	2.162555504643493	0.2780491409218847
+TF:TBX21	gene:CCL5	tf_regulates_gene	TBX21_direct_+/+	2.2006931667399154	0.3719443106867393
+TF:TBX21	gene:GZMH	tf_regulates_gene	TBX21_direct_+/+	2.565471378384808	0.3475454539390032
+TF:TBX21	gene:ID2	tf_regulates_gene	TBX21_direct_+/+	3.646071708917884	0.2056700499977033
+TF:TBX21	gene:IFNG	tf_regulates_gene	TBX21_direct_+/+	2.4848134869875738	0.2820435486751078
+TF:TBX21	gene:IKZF2	tf_regulates_gene	TBX21_direct_+/+	2.9705753819292244	0.1484175630273381
+TF:TBX21	gene:IL2RB	tf_regulates_gene	TBX21_direct_+/+	3.720645965245312	0.3702568254712661
+TF:TBX21	gene:KLRK1	tf_regulates_gene	TBX21_direct_+/+	2.416840520525069	0.2176692910601731
+TF:TBX21	gene:PYHIN1	tf_regulates_gene	TBX21_direct_+/+	2.479446442683833	0.3461588519478878
+TF:TBX21	gene:SAMD3	tf_regulates_gene	TBX21_direct_+/+	2.6182163846854034	0.3086606820909994
+TF:TBX21	gene:SLC15A4	tf_regulates_gene	TBX21_direct_+/+	2.308191082538966	0.2385755776118399
+TF:TBX21	gene:ST8SIA6	tf_regulates_gene	TBX21_direct_+/+	3.1493040003959165	0.2865702549164923
+TF:TBX21	gene:SYNE1	tf_regulates_gene	TBX21_direct_+/+	3.2059172188142195	0.3327003667865446
+TF:TBX21	gene:TBX21	tf_regulates_gene	TBX21_direct_+/+	3.991596589899004	1.0
+TF:TBX21	gene:TGFBR3	tf_regulates_gene	TBX21_direct_+/+	2.221568236460655	0.3474085912325819
+TF:TBX21	gene:TMEM181	tf_regulates_gene	TBX21_direct_+/+	2.6567379977467223	0.1739604774188934
+TF:TBX21	gene:XCL2	tf_regulates_gene	TBX21_direct_+/+	2.156763676334079	0.2290751553596288
+TF:TCF7	gene:ANXA2	tf_regulates_gene	TCF7_direct_-/-	1.6173310162957455	-0.1469408152181339
+TF:TCF7	gene:ATXN1	tf_regulates_gene	TCF7_direct_-/-	1.3821935698986545	-0.1430335082796933
+TF:TCF7	gene:CAST	tf_regulates_gene	TCF7_direct_-/-	1.2287592798110871	-0.1575326835596177
+TF:TCF7	gene:CFLAR	tf_regulates_gene	TCF7_direct_-/-	1.714031882445146	-0.1260699644046362
+TF:TCF7	gene:CTSD	tf_regulates_gene	TCF7_direct_-/-	1.1659739687180624	-0.1253237319956338
+TF:TCF7	gene:FLI1	tf_regulates_gene	TCF7_direct_-/-	1.2027923183251612	-0.0823310882150112
+TF:TCF7	gene:GSAP	tf_regulates_gene	TCF7_direct_-/-	2.654984039493672	-0.2866271480867098
+TF:TCF7	gene:GSE1	tf_regulates_gene	TCF7_direct_-/-	1.2317279769134406	-0.1604875335086016
+TF:TCF7	gene:GZMA	tf_regulates_gene	TCF7_direct_-/-	1.1770269961830504	-0.2679375173728138
+TF:TCF7	gene:IQGAP1	tf_regulates_gene	TCF7_direct_-/-	2.294168735493592	-0.2278150721648924
+TF:TCF7	gene:LPP	tf_regulates_gene	TCF7_direct_-/-	1.5386706648390978	-0.1861452066063768
+TF:TCF7	gene:LSP1	tf_regulates_gene	TCF7_direct_-/-	1.3043924578529615	-0.0575877899291626
+TF:TCF7	gene:MYO1F	tf_regulates_gene	TCF7_direct_-/-	2.391024964396756	-0.3698196742882093
+TF:TCF7	gene:MYO1G	tf_regulates_gene	TCF7_direct_-/-	1.550499738915092	-0.1413978801236701
+TF:TCF7	gene:OSBPL5	tf_regulates_gene	TCF7_direct_-/-	1.27076732934114	-0.2115091608679903
+TF:TCF7	gene:PDCD6IP	tf_regulates_gene	TCF7_direct_-/-	1.4398044590688852	-0.0669030194748578
+TF:TCF7	gene:PTK2B	tf_regulates_gene	TCF7_direct_-/-	1.816955263367629	-0.1604589174260226
+TF:TCF7	gene:SEC61B	tf_regulates_gene	TCF7_direct_-/-	1.2105756858120549	-0.0753982387074995
+TF:TCF7	gene:SLA	tf_regulates_gene	TCF7_direct_-/-	1.629050377164207	-0.1012358061296171
+TF:TCF7	gene:TRIO	tf_regulates_gene	TCF7_direct_-/-	1.449909063219777	-0.3228416027758941

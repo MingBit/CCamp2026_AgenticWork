@@ -1,0 +1,499 @@
+source	target	interaction	eregulons	importance	rho
+TF:KLF4	region:chr10:20202238-20202738	tf_binds_region	KLF4_direct_+/+		
+TF:KLF4	region:chr11:63871967-63872467	tf_binds_region	KLF4_direct_+/+		
+TF:KLF4	region:chr12:123432529-123433029	tf_binds_region	KLF4_direct_+/+		
+TF:KLF4	region:chr12:66187788-66188288	tf_binds_region	KLF4_direct_+/+		
+TF:KLF4	region:chr14:75268800-75269300	tf_binds_region	KLF4_direct_+/+		
+TF:KLF4	region:chr17:59847694-59848194	tf_binds_region	KLF4_direct_+/+		
+TF:KLF4	region:chr19:54209701-54210201	tf_binds_region	KLF4_direct_+/+		
+TF:KLF4	region:chr1:157106202-157106702	tf_binds_region	KLF4_direct_+/+		
+TF:KLF4	region:chr1:212752535-212753035	tf_binds_region	KLF4_direct_+/+		
+TF:KLF4	region:chr20:41003387-41003887	tf_binds_region	KLF4_direct_+/+		
+TF:KLF4	region:chr20:41047885-41048385	tf_binds_region	KLF4_direct_+/+		
+TF:KLF4	region:chr2:40455516-40456016	tf_binds_region	KLF4_direct_+/+		
+TF:KLF4	region:chr3:187773186-187773686	tf_binds_region	KLF4_direct_+/+		
+TF:KLF4	region:chr3:38009948-38010448	tf_binds_region	KLF4_direct_+/+		
+TF:KLF4	region:chr4:152643399-152643899	tf_binds_region	KLF4_direct_+/+		
+TF:KLF4	region:chr4:152663052-152663552	tf_binds_region	KLF4_direct_+/+		
+TF:KLF4	region:chr4:153661361-153661861	tf_binds_region	KLF4_direct_+/+		
+TF:KLF4	region:chr6:144150134-144150634	tf_binds_region	KLF4_direct_+/+		
+TF:KLF4	region:chr7:106344765-106345265	tf_binds_region	KLF4_direct_+/+		
+TF:KLF4	region:chr7:139828939-139829439	tf_binds_region	KLF4_direct_+/+		
+TF:KLF4	region:chr7:139830959-139831459	tf_binds_region	KLF4_direct_+/+		
+TF:KLF4	region:chr8:115451426-115451926	tf_binds_region	KLF4_direct_+/+		
+TF:KLF4	region:chr8:89759076-89759576	tf_binds_region	KLF4_direct_+/+		
+TF:RXRA	region:chr11:10400860-10401360	tf_binds_region	RXRA_direct_+/+		
+TF:RXRA	region:chr12:51242065-51242565	tf_binds_region	RXRA_direct_+/+		
+TF:RXRA	region:chr12:51246225-51246725	tf_binds_region	RXRA_direct_+/+		
+TF:RXRA	region:chr14:100375224-100375724	tf_binds_region	RXRA_direct_+/+		
+TF:RXRA	region:chr14:92677190-92677690	tf_binds_region	RXRA_direct_+/+		
+TF:RXRA	region:chr14:92680997-92681497	tf_binds_region	RXRA_direct_+/+		
+TF:RXRA	region:chr16:17259248-17259748	tf_binds_region	RXRA_direct_+/+		
+TF:RXRA	region:chr16:17343666-17344166	tf_binds_region	RXRA_direct_+/+		
+TF:RXRA	region:chr16:17416566-17417066	tf_binds_region	RXRA_direct_+/+		
+TF:RXRA	region:chr17:21285899-21286399	tf_binds_region	RXRA_direct_+/+		
+TF:RXRA	region:chr17:78778872-78779372	tf_binds_region	RXRA_direct_+/+		
+TF:RXRA	region:chr19:54208068-54208568	tf_binds_region	RXRA_direct_+/+		
+TF:RXRA	region:chr1:248804914-248805414	tf_binds_region	RXRA_direct_+/+		
+TF:RXRA	region:chr1:248807058-248807558	tf_binds_region	RXRA_direct_+/+		
+TF:RXRA	region:chr1:248838078-248838578	tf_binds_region	RXRA_direct_+/+		
+TF:RXRA	region:chr1:88983814-88984314	tf_binds_region	RXRA_direct_+/+		
+TF:RXRA	region:chr20:32040126-32040626	tf_binds_region	RXRA_direct_+/+		
+TF:RXRA	region:chr20:32051198-32051698	tf_binds_region	RXRA_direct_+/+		
+TF:RXRA	region:chr20:32062761-32063261	tf_binds_region	RXRA_direct_+/+		
+TF:RXRA	region:chr20:32111726-32112226	tf_binds_region	RXRA_direct_+/+		
+TF:RXRA	region:chr20:32112818-32113318	tf_binds_region	RXRA_direct_+/+		
+TF:RXRA	region:chr20:40571724-40572224	tf_binds_region	RXRA_direct_+/+		
+TF:RXRA	region:chr20:40689916-40690416	tf_binds_region	RXRA_direct_+/+		
+TF:RXRA	region:chr20:40779001-40779501	tf_binds_region	RXRA_direct_+/+		
+TF:RXRA	region:chr21:33199790-33200290	tf_binds_region	RXRA_direct_+/+		
+TF:RXRA	region:chr21:33265708-33266208	tf_binds_region	RXRA_direct_+/+		
+TF:RXRA	region:chr2:229287762-229288262	tf_binds_region	RXRA_direct_+/+		
+TF:RXRA	region:chr2:229409004-229409504	tf_binds_region	RXRA_direct_+/+		
+TF:RXRA	region:chr2:40394488-40394988	tf_binds_region	RXRA_direct_+/+		
+TF:RXRA	region:chr2:40450024-40450524	tf_binds_region	RXRA_direct_+/+		
+TF:RXRA	region:chr2:40455516-40456016	tf_binds_region	RXRA_direct_+/+		
+TF:RXRA	region:chr2:40558720-40559220	tf_binds_region	RXRA_direct_+/+		
+TF:RXRA	region:chr7:150665852-150666352	tf_binds_region	RXRA_direct_+/+		
+TF:RXRA	region:chr7:150785340-150785840	tf_binds_region	RXRA_direct_+/+		
+TF:RXRA	region:chr7:150787590-150788090	tf_binds_region	RXRA_direct_+/+		
+TF:RXRA	region:chr8:117881503-117882003	tf_binds_region	RXRA_direct_+/+		
+TF:RXRA	region:chr8:117989383-117989883	tf_binds_region	RXRA_direct_+/+		
+TF:RXRA	region:chr8:118060746-118061246	tf_binds_region	RXRA_direct_+/+		
+TF:RXRA	region:chr8:118108667-118109167	tf_binds_region	RXRA_direct_+/+		
+TF:RXRA	region:chr9:134195457-134195957	tf_binds_region	RXRA_direct_+/+		
+TF:RXRA	region:chr9:134341252-134341752	tf_binds_region	RXRA_direct_+/+		
+TF:RXRA	region:chr9:134929107-134929607	tf_binds_region	RXRA_direct_+/+		
+TF:RXRA	region:chr9:134936713-134937213	tf_binds_region	RXRA_direct_+/+		
+TF:RXRA	region:chrX:48683505-48684005	tf_binds_region	RXRA_direct_+/+		
+TF:SPI1	region:chr10:19816522-19817022	tf_binds_region	SPI1_direct_+/+		
+TF:SPI1	region:chr10:19819320-19819820	tf_binds_region	SPI1_direct_+/+		
+TF:SPI1	region:chr10:19825121-19825621	tf_binds_region	SPI1_direct_+/+		
+TF:SPI1	region:chr10:19825695-19826195	tf_binds_region	SPI1_direct_+/+		
+TF:SPI1	region:chr10:20003617-20004117	tf_binds_region	SPI1_direct_+/+		
+TF:SPI1	region:chr10:20202238-20202738	tf_binds_region	SPI1_direct_+/+		
+TF:SPI1	region:chr10:71701443-71701943	tf_binds_region	SPI1_direct_+/+		
+TF:SPI1	region:chr10:71727474-71727974	tf_binds_region	SPI1_direct_+/-		
+TF:SPI1	region:chr10:71753471-71753971	tf_binds_region	SPI1_direct_+/+		
+TF:SPI1	region:chr10:71805784-71806284	tf_binds_region	SPI1_direct_+/+		
+TF:SPI1	region:chr10:71851075-71851575	tf_binds_region	SPI1_direct_+/-		
+TF:SPI1	region:chr10:71852434-71852934	tf_binds_region	SPI1_direct_+/+		
+TF:SPI1	region:chr10:71868063-71868563	tf_binds_region	SPI1_direct_+/+		
+TF:SPI1	region:chr10:71889975-71890475	tf_binds_region	SPI1_direct_+/+		
+TF:SPI1	region:chr10:75358919-75359419	tf_binds_region	SPI1_direct_+/+		
+TF:SPI1	region:chr10:75375814-75376314	tf_binds_region	SPI1_direct_+/+		
+TF:SPI1	region:chr10:75402095-75402595	tf_binds_region	SPI1_direct_+/+		
+TF:SPI1	region:chr10:75431500-75432000	tf_binds_region	SPI1_direct_+/+		
+TF:SPI1	region:chr10:75612801-75613301	tf_binds_region	SPI1_direct_+/+		
+TF:SPI1	region:chr10:76403798-76404298	tf_binds_region	SPI1_direct_+/+		
+TF:SPI1	region:chr11:47257590-47258090	tf_binds_region	SPI1_direct_+/+		
+TF:SPI1	region:chr11:47268979-47269479	tf_binds_region	SPI1_direct_+/-		
+TF:SPI1	region:chr11:47359497-47359997	tf_binds_region	SPI1_direct_+/+		
+TF:SPI1	region:chr11:47378336-47378836	tf_binds_region	SPI1_direct_+/+		
+TF:SPI1	region:chr11:47388046-47388546	tf_binds_region	SPI1_direct_+/+		
+TF:SPI1	region:chr11:47390969-47391469	tf_binds_region	SPI1_direct_+/+		
+TF:SPI1	region:chr11:47392861-47393361	tf_binds_region	SPI1_direct_+/+		
+TF:SPI1	region:chr11:47394637-47395137	tf_binds_region	SPI1_direct_+/+		
+TF:SPI1	region:chr11:47400128-47400628	tf_binds_region	SPI1_direct_+/-		
+TF:SPI1	region:chr11:47408196-47408696	tf_binds_region	SPI1_direct_+/-		
+TF:SPI1	region:chr11:47508910-47509410	tf_binds_region	SPI1_direct_+/+		
+TF:SPI1	region:chr12:66072019-66072519	tf_binds_region	SPI1_direct_+/+		
+TF:SPI1	region:chr12:66144946-66145446	tf_binds_region	SPI1_direct_+/+		
+TF:SPI1	region:chr12:66169635-66170135	tf_binds_region	SPI1_direct_+/-		
+TF:SPI1	region:chr12:66187788-66188288	tf_binds_region	SPI1_direct_+/+		
+TF:SPI1	region:chr12:66241538-66242038	tf_binds_region	SPI1_direct_+/+		
+TF:SPI1	region:chr12:66268511-66269011	tf_binds_region	SPI1_direct_+/+		
+TF:SPI1	region:chr12:66388441-66388941	tf_binds_region	SPI1_direct_+/+		
+TF:SPI1	region:chr12:89333798-89334298	tf_binds_region	SPI1_direct_+/+		
+TF:SPI1	region:chr12:89352334-89352834	tf_binds_region	SPI1_direct_+/+		
+TF:SPI1	region:chr13:51562079-51562579	tf_binds_region	SPI1_direct_+/+		
+TF:SPI1	region:chr13:51793790-51794290	tf_binds_region	SPI1_direct_+/+		
+TF:SPI1	region:chr14:100221449-100221949	tf_binds_region	SPI1_direct_+/-		
+TF:SPI1	region:chr14:100341266-100341766	tf_binds_region	SPI1_direct_+/+		
+TF:SPI1	region:chr14:100373676-100374176	tf_binds_region	SPI1_direct_+/+		
+TF:SPI1	region:chr14:100375224-100375724	tf_binds_region	SPI1_direct_+/+		
+TF:SPI1	region:chr14:94384841-94385341	tf_binds_region	SPI1_direct_+/+		
+TF:SPI1	region:chr14:94392476-94392976	tf_binds_region	SPI1_direct_+/+		
+TF:SPI1	region:chr14:94394565-94395065	tf_binds_region	SPI1_direct_+/+		
+TF:SPI1	region:chr16:12543995-12544495	tf_binds_region	SPI1_direct_+/+		
+TF:SPI1	region:chr16:12573234-12573734	tf_binds_region	SPI1_direct_+/+		
+TF:SPI1	region:chr16:12816713-12817213	tf_binds_region	SPI1_direct_+/+		
+TF:SPI1	region:chr16:84569534-84570034	tf_binds_region	SPI1_direct_+/+		
+TF:SPI1	region:chr16:84594103-84594603	tf_binds_region	SPI1_direct_+/-		
+TF:SPI1	region:chr16:84600698-84601198	tf_binds_region	SPI1_direct_+/+		
+TF:SPI1	region:chr16:84602956-84603456	tf_binds_region	SPI1_direct_+/+		
+TF:SPI1	region:chr16:84726038-84726538	tf_binds_region	SPI1_direct_+/+		
+TF:SPI1	region:chr16:84742524-84743024	tf_binds_region	SPI1_direct_+/+		
+TF:SPI1	region:chr16:84751977-84752477	tf_binds_region	SPI1_direct_+/+		
+TF:SPI1	region:chr18:10004997-10005497	tf_binds_region	SPI1_direct_+/+		
+TF:SPI1	region:chr18:9712523-9713023	tf_binds_region	SPI1_direct_+/+		
+TF:SPI1	region:chr18:9753868-9754368	tf_binds_region	SPI1_direct_+/+		
+TF:SPI1	region:chr18:9762463-9762963	tf_binds_region	SPI1_direct_+/+		
+TF:SPI1	region:chr18:9771103-9771603	tf_binds_region	SPI1_direct_+/+		
+TF:SPI1	region:chr18:9910571-9911071	tf_binds_region	SPI1_direct_+/+		
+TF:SPI1	region:chr19:10717612-10718112	tf_binds_region	SPI1_direct_+/-		
+TF:SPI1	region:chr19:10759658-10760158	tf_binds_region	SPI1_direct_+/-		
+TF:SPI1	region:chr19:10777271-10777771	tf_binds_region	SPI1_direct_+/+		
+TF:SPI1	region:chr19:10780258-10780758	tf_binds_region	SPI1_direct_+/+		
+TF:SPI1	region:chr19:10784196-10784696	tf_binds_region	SPI1_direct_+/+		
+TF:SPI1	region:chr19:10805385-10805885	tf_binds_region	SPI1_direct_+/+		
+TF:SPI1	region:chr19:10809761-10810261	tf_binds_region	SPI1_direct_+/+		
+TF:SPI1	region:chr19:10813029-10813529	tf_binds_region	SPI1_direct_+/+		
+TF:SPI1	region:chr19:10848174-10848674	tf_binds_region	SPI1_direct_+/+		
+TF:SPI1	region:chr19:10928483-10928983	tf_binds_region	SPI1_direct_+/-		
+TF:SPI1	region:chr1:11960666-11961166	tf_binds_region	SPI1_direct_+/+		
+TF:SPI1	region:chr1:11985793-11986293	tf_binds_region	SPI1_direct_+/+		
+TF:SPI1	region:chr1:12020082-12020582	tf_binds_region	SPI1_direct_+/+		
+TF:SPI1	region:chr1:12143152-12143652	tf_binds_region	SPI1_direct_+/+		
+TF:SPI1	region:chr1:12143654-12144154	tf_binds_region	SPI1_direct_+/+		
+TF:SPI1	region:chr1:12153199-12153699	tf_binds_region	SPI1_direct_+/+		
+TF:SPI1	region:chr1:12157800-12158300	tf_binds_region	SPI1_direct_+/+		
+TF:SPI1	region:chr1:12180230-12180730	tf_binds_region	SPI1_direct_+/+		
+TF:SPI1	region:chr1:12184150-12184650	tf_binds_region	SPI1_direct_+/+		
+TF:SPI1	region:chr1:12196576-12197076	tf_binds_region	SPI1_direct_+/+		
+TF:SPI1	region:chr1:12229759-12230259	tf_binds_region	SPI1_direct_+/-		
+TF:SPI1	region:chr20:23655765-23656265	tf_binds_region	SPI1_direct_+/+		
+TF:SPI1	region:chr2:173005713-173006213	tf_binds_region	SPI1_direct_+/+		
+TF:SPI1	region:chr2:173043368-173043868	tf_binds_region	SPI1_direct_+/+		
+TF:SPI1	region:chr2:173075626-173076126	tf_binds_region	SPI1_direct_+/+		
+TF:SPI1	region:chr2:173076383-173076883	tf_binds_region	SPI1_direct_+/+		
+TF:SPI1	region:chr5:94618419-94618919	tf_binds_region	SPI1_direct_+/-		
+TF:SPI1	region:chr5:95048620-95049120	tf_binds_region	SPI1_direct_+/+		
+TF:SPI1	region:chr5:95069806-95070306	tf_binds_region	SPI1_direct_+/+		
+TF:SPI1	region:chr5:95081424-95081924	tf_binds_region	SPI1_direct_+/+		
+TF:SPI1	region:chr6:18171792-18172292	tf_binds_region	SPI1_direct_+/+		
+TF:SPI1	region:chr6:18179908-18180408	tf_binds_region	SPI1_direct_+/+		
+TF:SPI1	region:chr6:18329672-18330172	tf_binds_region	SPI1_direct_+/+		
+TF:SPI1	region:chr6:18330563-18331063	tf_binds_region	SPI1_direct_+/+		
+TF:SPI1	region:chr9:87601217-87601717	tf_binds_region	SPI1_direct_+/+		
+TF:SPI1	region:chr9:87614317-87614817	tf_binds_region	SPI1_direct_+/+		
+TF:SPI1	region:chr9:87722288-87722788	tf_binds_region	SPI1_direct_+/+		
+TF:SPI1	region:chr9:87725918-87726418	tf_binds_region	SPI1_direct_+/+		
+TF:SPI1	region:chr9:87783099-87783599	tf_binds_region	SPI1_direct_+/+		
+TF:SPI1	region:chr9:87792702-87793202	tf_binds_region	SPI1_direct_+/+		
+TF:SPI1	region:chr9:87796051-87796551	tf_binds_region	SPI1_direct_+/+		
+TF:SPI1	region:chrX:23742338-23742838	tf_binds_region	SPI1_direct_+/+		
+TF:SPI1	region:chrX:23781151-23781651	tf_binds_region	SPI1_direct_+/+		
+TF:SPI1	region:chrX:23811102-23811602	tf_binds_region	SPI1_direct_+/+		
+TF:SPI1	region:chrX:23911212-23911712	tf_binds_region	SPI1_direct_+/+		
+TF:TCF7L2	region:chr10:112852203-112852703	tf_binds_region	TCF7L2_direct_+/+		
+TF:TCF7L2	region:chr10:113099549-113100049	tf_binds_region	TCF7L2_direct_+/+		
+TF:TCF7L2	region:chr10:113153678-113154178	tf_binds_region	TCF7L2_direct_+/+		
+TF:TCF7L2	region:chr10:113273396-113273896	tf_binds_region	TCF7L2_direct_+/+		
+TF:TCF7L2	region:chr11:47244893-47245393	tf_binds_region	TCF7L2_direct_+/+		
+TF:TCF7L2	region:chr11:47378336-47378836	tf_binds_region	TCF7L2_direct_+/+		
+TF:TCF7L2	region:chr11:60242704-60243204	tf_binds_region	TCF7L2_direct_+/+		
+TF:TCF7L2	region:chr11:60280315-60280815	tf_binds_region	TCF7L2_direct_+/+		
+TF:TCF7L2	region:chr11:60389449-60389949	tf_binds_region	TCF7L2_direct_+/+		
+TF:TCF7L2	region:chr11:60392366-60392866	tf_binds_region	TCF7L2_direct_+/+		
+TF:TCF7L2	region:chr11:93541711-93542211	tf_binds_region	TCF7L2_direct_+/+		
+TF:TCF7L2	region:chr12:7948800-7949300	tf_binds_region	TCF7L2_direct_+/+		
+TF:TCF7L2	region:chr12:8052638-8053138	tf_binds_region	TCF7L2_direct_+/+		
+TF:TCF7L2	region:chr12:8070610-8071110	tf_binds_region	TCF7L2_direct_+/+		
+TF:TCF7L2	region:chr12:8156769-8157269	tf_binds_region	TCF7L2_direct_+/+		
+TF:TCF7L2	region:chr14:100373676-100374176	tf_binds_region	TCF7L2_direct_+/+		
+TF:TCF7L2	region:chr14:22822603-22823103	tf_binds_region	TCF7L2_direct_+/+		
+TF:TCF7L2	region:chr14:22823184-22823684	tf_binds_region	TCF7L2_direct_+/+		
+TF:TCF7L2	region:chr17:74520125-74520625	tf_binds_region	TCF7L2_direct_+/+		
+TF:TCF7L2	region:chr17:74599430-74599930	tf_binds_region	TCF7L2_direct_+/+		
+TF:TCF7L2	region:chr17:74631809-74632309	tf_binds_region	TCF7L2_direct_+/+		
+TF:TCF7L2	region:chr19:14661411-14661911	tf_binds_region	TCF7L2_direct_+/+		
+TF:TCF7L2	region:chr19:18392397-18392897	tf_binds_region	TCF7L2_direct_+/+		
+TF:TCF7L2	region:chr19:54593472-54593972	tf_binds_region	TCF7L2_direct_+/+		
+TF:TCF7L2	region:chr19:54630144-54630644	tf_binds_region	TCF7L2_direct_+/+		
+TF:TCF7L2	region:chr19:54643475-54643975	tf_binds_region	TCF7L2_direct_+/+		
+TF:TCF7L2	region:chr4:158817906-158818406	tf_binds_region	TCF7L2_direct_+/+		
+TF:TCF7L2	region:chr5:150058683-150059183	tf_binds_region	TCF7L2_direct_+/+		
+TF:TCF7L2	region:chr6:108742032-108742532	tf_binds_region	TCF7L2_direct_+/+		
+TF:TCF7L2	region:chr6:18501601-18502101	tf_binds_region	TCF7L2_direct_+/+		
+TF:TCF7L2	region:chr6:31586511-31587011	tf_binds_region	TCF7L2_direct_+/+		
+TF:TCF7L2	region:chr7:28684536-28685036	tf_binds_region	TCF7L2_direct_+/+		
+TF:TCF7L2	region:chr7:43876116-43876616	tf_binds_region	TCF7L2_direct_+/+		
+TF:TCF7L2	region:chr9:134341252-134341752	tf_binds_region	TCF7L2_direct_+/+		
+TF:TCF7L2	region:chr9:134409236-134409736	tf_binds_region	TCF7L2_direct_+/+		
+region:chr10:112852203-112852703	gene:TCF7L2	region_regulates_gene	TCF7L2_direct_+/+	0.0340862668836063	0.6172239660961668
+region:chr10:113099549-113100049	gene:TCF7L2	region_regulates_gene	TCF7L2_direct_+/+	0.0153904188376037	0.644860664997764
+region:chr10:113153678-113154178	gene:TCF7L2	region_regulates_gene	TCF7L2_direct_+/+	0.061339579746094	0.6500112956262204
+region:chr10:113273396-113273896	gene:TCF7L2	region_regulates_gene	TCF7L2_direct_+/+	0.1017698092003188	0.6406538245145765
+region:chr10:19816522-19817022	gene:PLXDC2	region_regulates_gene	SPI1_direct_+/+	0.0694266075394635	0.8695233000655502
+region:chr10:19819320-19819820	gene:PLXDC2	region_regulates_gene	SPI1_direct_+/+	0.0712038870792637	0.8673310448674577
+region:chr10:19825121-19825621	gene:PLXDC2	region_regulates_gene	SPI1_direct_+/+	0.0424667867998519	0.8675478997636967
+region:chr10:19825695-19826195	gene:PLXDC2	region_regulates_gene	SPI1_direct_+/+	0.1059129052373115	0.8672713566311077
+region:chr10:20003617-20004117	gene:PLXDC2	region_regulates_gene	SPI1_direct_+/+	0.0789997342257887	0.6553990089996642
+region:chr10:20202238-20202738	gene:PLXDC2	region_regulates_gene	KLF4_direct_+/+;SPI1_direct_+/+	0.0451549509006918	0.7788056810839847
+region:chr10:71701443-71701943	gene:PSAP	region_regulates_gene	SPI1_direct_+/+	0.048263147653444	0.5035168931968721
+region:chr10:71727474-71727974	gene:PSAP	region_regulates_gene	SPI1_direct_+/-	0.013812586735089	-0.2191491424427915
+region:chr10:71753471-71753971	gene:PSAP	region_regulates_gene	SPI1_direct_+/+	0.029012959285036	0.3112741326852303
+region:chr10:71805784-71806284	gene:PSAP	region_regulates_gene	SPI1_direct_+/+	0.0468008863630703	0.4844334554671121
+region:chr10:71851075-71851575	gene:PSAP	region_regulates_gene	SPI1_direct_+/-	0.0049011169327008	-0.0988177431716714
+region:chr10:71852434-71852934	gene:PSAP	region_regulates_gene	SPI1_direct_+/+	0.0192383535458759	0.2946908657842436
+region:chr10:71868063-71868563	gene:PSAP	region_regulates_gene	SPI1_direct_+/+	0.0313507156084701	0.4885133335012736
+region:chr10:71889975-71890475	gene:PSAP	region_regulates_gene	SPI1_direct_+/+	0.0446245020687663	0.3870345121618072
+region:chr10:75358919-75359419	gene:LRMDA	region_regulates_gene	SPI1_direct_+/+	0.0758800975935199	0.8948645391490011
+region:chr10:75375814-75376314	gene:LRMDA	region_regulates_gene	SPI1_direct_+/+	0.051548519308341	0.8231336510818956
+region:chr10:75402095-75402595	gene:LRMDA	region_regulates_gene	SPI1_direct_+/+	0.071760174072246	0.5700699248575656
+region:chr10:75431500-75432000	gene:LRMDA	region_regulates_gene	SPI1_direct_+/+	0.0512833830444424	0.8080048098407151
+region:chr10:75612801-75613301	gene:LRMDA	region_regulates_gene	SPI1_direct_+/+	0.046115744126576	0.8897369772921447
+region:chr10:76403798-76404298	gene:LRMDA	region_regulates_gene	SPI1_direct_+/+	0.0710374418541256	0.8893674226877372
+region:chr11:10400860-10401360	gene:SBF2	region_regulates_gene	RXRA_direct_+/+	0.0255507667633873	0.5009842667153077
+region:chr11:47244893-47245393	gene:SPI1	region_regulates_gene	TCF7L2_direct_+/+	0.0354963968341012	0.4017853995792998
+region:chr11:47257590-47258090	gene:SPI1	region_regulates_gene	SPI1_direct_+/+	0.0615352819413894	0.3407722154222525
+region:chr11:47268979-47269479	gene:SPI1	region_regulates_gene	SPI1_direct_+/-	0.0073915127419404	-0.2429527339041782
+region:chr11:47359497-47359997	gene:SPI1	region_regulates_gene	SPI1_direct_+/+	0.0325308507760256	0.3362861995384748
+region:chr11:47378336-47378836	gene:SPI1	region_regulates_gene	SPI1_direct_+/+;TCF7L2_direct_+/+	0.0252854606328824	0.3759993132267227
+region:chr11:47388046-47388546	gene:SPI1	region_regulates_gene	SPI1_direct_+/+	0.0643634838047217	0.3843699851143815
+region:chr11:47390969-47391469	gene:SPI1	region_regulates_gene	SPI1_direct_+/+	0.0589860040325337	0.4238692459982774
+region:chr11:47392861-47393361	gene:SPI1	region_regulates_gene	SPI1_direct_+/+	0.0588731629615275	0.343353741960321
+region:chr11:47394637-47395137	gene:SPI1	region_regulates_gene	SPI1_direct_+/+	0.0326466483615445	0.3489689238171902
+region:chr11:47400128-47400628	gene:SPI1	region_regulates_gene	SPI1_direct_+/-	0.0140353032697606	-0.1873052805589317
+region:chr11:47408196-47408696	gene:SPI1	region_regulates_gene	SPI1_direct_+/-	0.0170561540545892	-0.1090025863790785
+region:chr11:47508910-47509410	gene:SPI1	region_regulates_gene	SPI1_direct_+/+	0.0349410451850859	0.3531641614491018
+region:chr11:60242704-60243204	gene:MS4A7	region_regulates_gene	TCF7L2_direct_+/+	0.028099114030859	0.5105548721439694
+region:chr11:60280315-60280815	gene:MS4A7	region_regulates_gene	TCF7L2_direct_+/+	0.0775926160590905	0.4324555070460041
+region:chr11:60389449-60389949	gene:MS4A7	region_regulates_gene	TCF7L2_direct_+/+	0.0430266867436481	0.4053218621642049
+region:chr11:60392366-60392866	gene:MS4A7	region_regulates_gene	TCF7L2_direct_+/+	0.0922999353576315	0.516760018701561
+region:chr11:63871967-63872467	gene:RTN3	region_regulates_gene	KLF4_direct_+/+	0.067073439987686	0.1897632396294415
+region:chr11:93541711-93542211	gene:SMCO4	region_regulates_gene	TCF7L2_direct_+/+	0.0288730710951346	0.2662875989720646
+region:chr12:123432529-123433029	gene:RILPL2	region_regulates_gene	KLF4_direct_+/+	0.0787179914738292	0.3313189132626328
+region:chr12:51242065-51242565	gene:TFCP2	region_regulates_gene	RXRA_direct_+/+	0.0219881037761046	0.0807363634402913
+region:chr12:51246225-51246725	gene:TFCP2	region_regulates_gene	RXRA_direct_+/+	0.042265602345834	0.0780280124607263
+region:chr12:66072019-66072519	gene:IRAK3	region_regulates_gene	SPI1_direct_+/+	0.050829897912281	0.7367075236036007
+region:chr12:66144946-66145446	gene:IRAK3	region_regulates_gene	SPI1_direct_+/+	0.0400915677664471	0.5267553560024834
+region:chr12:66169635-66170135	gene:IRAK3	region_regulates_gene	SPI1_direct_+/-	0.0048287585835717	-0.3998729357958126
+region:chr12:66187788-66188288	gene:IRAK3	region_regulates_gene	KLF4_direct_+/+;SPI1_direct_+/+	0.0898585176249275	0.7362973845657442
+region:chr12:66241538-66242038	gene:IRAK3	region_regulates_gene	SPI1_direct_+/+	0.0809673303665884	0.8455846996588353
+region:chr12:66268511-66269011	gene:IRAK3	region_regulates_gene	SPI1_direct_+/+	0.0720833360229125	0.6701666039608477
+region:chr12:66388441-66388941	gene:IRAK3	region_regulates_gene	SPI1_direct_+/+	0.0456791330088015	0.8155648543291166
+region:chr12:7948800-7949300	gene:C3AR1	region_regulates_gene	TCF7L2_direct_+/+	0.0228127385265933	0.2271853744766651
+region:chr12:8052638-8053138	gene:C3AR1	region_regulates_gene	TCF7L2_direct_+/+	0.0303518679009676	0.3393378776790706
+region:chr12:8070610-8071110	gene:C3AR1	region_regulates_gene	TCF7L2_direct_+/+	0.0661516710204512	0.367384585949268
+region:chr12:8156769-8157269	gene:C3AR1	region_regulates_gene	TCF7L2_direct_+/+	0.0251902573306887	0.3074650342213376
+region:chr12:89333798-89334298	gene:DUSP6	region_regulates_gene	SPI1_direct_+/+	0.1281312929326602	0.3939917641271194
+region:chr12:89352334-89352834	gene:DUSP6	region_regulates_gene	SPI1_direct_+/+	0.0320131884180159	0.3267608526819046
+region:chr13:51562079-51562579	gene:WDFY2	region_regulates_gene	SPI1_direct_+/+	0.0673102014300621	0.325764983493696
+region:chr13:51793790-51794290	gene:WDFY2	region_regulates_gene	SPI1_direct_+/+	0.0297247781837091	0.2902492776359487
+region:chr14:100221449-100221949	gene:WARS	region_regulates_gene	SPI1_direct_+/-	0.0056771172691364	-0.2551438863099218
+region:chr14:100341266-100341766	gene:WARS	region_regulates_gene	SPI1_direct_+/+	0.0297771459566348	0.4862069120292766
+region:chr14:100373676-100374176	gene:WARS	region_regulates_gene	SPI1_direct_+/+;TCF7L2_direct_+/+	0.0712672834424088	0.6343284521976195
+region:chr14:100375224-100375724	gene:WARS	region_regulates_gene	RXRA_direct_+/+;SPI1_direct_+/+	0.0318067136847784	0.3733946421218321
+region:chr14:22822603-22823103	gene:SLC7A7	region_regulates_gene	TCF7L2_direct_+/+	0.0199088721111178	0.1521036615861618
+region:chr14:22823184-22823684	gene:SLC7A7	region_regulates_gene	TCF7L2_direct_+/+	0.019580233680081	0.2743283588317395
+region:chr14:75268800-75269300	gene:FOS	region_regulates_gene	KLF4_direct_+/+	0.0209650097220575	0.2689244397791998
+region:chr14:92677190-92677690	gene:RIN3	region_regulates_gene	RXRA_direct_+/+	0.0056687549031743	0.2268205509308562
+region:chr14:92680997-92681497	gene:RIN3	region_regulates_gene	RXRA_direct_+/+	0.0112943569896404	0.2569311842296919
+region:chr14:94384841-94385341	gene:SERPINA1	region_regulates_gene	SPI1_direct_+/+	0.1153737363047882	0.5159308747935429
+region:chr14:94392476-94392976	gene:SERPINA1	region_regulates_gene	SPI1_direct_+/+	0.0990207916151256	0.5143002046627779
+region:chr14:94394565-94395065	gene:SERPINA1	region_regulates_gene	SPI1_direct_+/+	0.0897460401398003	0.5149128214017082
+region:chr16:12543995-12544495	gene:CPPED1	region_regulates_gene	SPI1_direct_+/+	0.0089712427222492	0.2076887785678389
+region:chr16:12573234-12573734	gene:CPPED1	region_regulates_gene	SPI1_direct_+/+	0.0684023522105345	0.6438056933251328
+region:chr16:12816713-12817213	gene:CPPED1	region_regulates_gene	SPI1_direct_+/+	0.0991310680714008	0.7194809601615261
+region:chr16:17259248-17259748	gene:XYLT1	region_regulates_gene	RXRA_direct_+/+	0.0146620438237457	0.1355759048566126
+region:chr16:17343666-17344166	gene:XYLT1	region_regulates_gene	RXRA_direct_+/+	0.0167413097854125	0.1073528536452827
+region:chr16:17416566-17417066	gene:XYLT1	region_regulates_gene	RXRA_direct_+/+	0.0145947984980289	0.075298821181611
+region:chr16:84569534-84570034	gene:COTL1	region_regulates_gene	SPI1_direct_+/+	0.0254285700971979	0.2783849741178001
+region:chr16:84594103-84594603	gene:COTL1	region_regulates_gene	SPI1_direct_+/-	0.0190767704798241	-0.1080294216098088
+region:chr16:84600698-84601198	gene:COTL1	region_regulates_gene	SPI1_direct_+/+	0.0182897121091302	0.2261226618410221
+region:chr16:84602956-84603456	gene:COTL1	region_regulates_gene	SPI1_direct_+/+	0.0337144683079961	0.1920250596698632
+region:chr16:84726038-84726538	gene:COTL1	region_regulates_gene	SPI1_direct_+/+	0.0193481126127553	0.1974455358752889
+region:chr16:84742524-84743024	gene:COTL1	region_regulates_gene	SPI1_direct_+/+	0.020173026823198	0.3159951289541735
+region:chr16:84751977-84752477	gene:COTL1	region_regulates_gene	SPI1_direct_+/+	0.0539177900643158	0.299718565148582
+region:chr17:21285899-21286399	gene:MAP2K3	region_regulates_gene	RXRA_direct_+/+	0.0516959382157599	0.160759185321194
+region:chr17:59847694-59848194	gene:VMP1	region_regulates_gene	KLF4_direct_+/+	0.1283007434116813	0.3214766701339214
+region:chr17:74520125-74520625	gene:CD300C	region_regulates_gene	TCF7L2_direct_+/+	0.0448485962867816	0.1581731115585896
+region:chr17:74599430-74599930	gene:CD300C	region_regulates_gene	TCF7L2_direct_+/+	0.0310788491513621	0.1829939693563123
+region:chr17:74631809-74632309	gene:CD300C	region_regulates_gene	TCF7L2_direct_+/+	0.0282137535666536	0.1672164674805848
+region:chr17:78778872-78779372	gene:TIMP2	region_regulates_gene	RXRA_direct_+/+	0.0272739728955594	0.2546145231688266
+region:chr18:10004997-10005497	gene:RAB31	region_regulates_gene	SPI1_direct_+/+	0.0535803902928161	0.7301726985569312
+region:chr18:9712523-9713023	gene:RAB31	region_regulates_gene	SPI1_direct_+/+	0.0225554104511406	0.6542866006587065
+region:chr18:9753868-9754368	gene:RAB31	region_regulates_gene	SPI1_direct_+/+	0.0663173048215687	0.6489673583863114
+region:chr18:9762463-9762963	gene:RAB31	region_regulates_gene	SPI1_direct_+/+	0.023023992109088	0.7307875555961026
+region:chr18:9771103-9771603	gene:RAB31	region_regulates_gene	SPI1_direct_+/+	0.0607033565880085	0.7204569392689513
+region:chr18:9910571-9911071	gene:RAB31	region_regulates_gene	SPI1_direct_+/+	0.0357829046725062	0.69776617820309
+region:chr19:10717612-10718112	gene:C19orf38	region_regulates_gene	SPI1_direct_+/-	0.0148976797565576	-0.081412503453395
+region:chr19:10759658-10760158	gene:C19orf38	region_regulates_gene	SPI1_direct_+/-	0.0465454048424475	-0.2313003805133866
+region:chr19:10777271-10777771	gene:C19orf38	region_regulates_gene	SPI1_direct_+/+	0.0161562838378425	0.2607362812621048
+region:chr19:10780258-10780758	gene:C19orf38	region_regulates_gene	SPI1_direct_+/+	0.0612767494711205	0.2558340417360307
+region:chr19:10784196-10784696	gene:C19orf38	region_regulates_gene	SPI1_direct_+/+	0.0414427321867495	0.3075823302388039
+region:chr19:10805385-10805885	gene:C19orf38	region_regulates_gene	SPI1_direct_+/+	0.0235506856112553	0.3634074196474042
+region:chr19:10809761-10810261	gene:C19orf38	region_regulates_gene	SPI1_direct_+/+	0.0415870415683845	0.1953794810243238
+region:chr19:10813029-10813529	gene:C19orf38	region_regulates_gene	SPI1_direct_+/+	0.0480649059291451	0.1960437170647168
+region:chr19:10848174-10848674	gene:C19orf38	region_regulates_gene	SPI1_direct_+/+	0.0327433383310836	0.2076809758850967
+region:chr19:10928483-10928983	gene:C19orf38	region_regulates_gene	SPI1_direct_+/-	0.0116150923901811	-0.1249187342643382
+region:chr19:14661411-14661911	gene:ADGRE2	region_regulates_gene	TCF7L2_direct_+/+	0.0693672906709124	0.6352233247972158
+region:chr19:18392397-18392897	gene:LRRC25	region_regulates_gene	TCF7L2_direct_+/+	0.0263632810084166	0.292810879990254
+region:chr19:54208068-54208568	gene:LILRB2	region_regulates_gene	RXRA_direct_+/+	0.0268465922228284	0.2913064475491253
+region:chr19:54209701-54210201	gene:OSCAR	region_regulates_gene	KLF4_direct_+/+	0.0712452669422088	0.4029649478127677
+region:chr19:54593472-54593972	gene:LILRB1	region_regulates_gene	TCF7L2_direct_+/+	0.0672672019156798	0.4329813239925499
+region:chr19:54630144-54630644	gene:LILRB1	region_regulates_gene	TCF7L2_direct_+/+	0.0368436547356164	0.4253366216764919
+region:chr19:54643475-54643975	gene:LILRB1	region_regulates_gene	TCF7L2_direct_+/+	0.0288800257468491	0.3907231382228654
+region:chr1:11960666-11961166	gene:TNFRSF8	region_regulates_gene	SPI1_direct_+/+	0.0149141275932959	0.2158676099500278
+region:chr1:11985793-11986293	gene:TNFRSF8	region_regulates_gene	SPI1_direct_+/+	0.0172643438022632	0.2108381137915907
+region:chr1:12020082-12020582	gene:TNFRSF8	region_regulates_gene	SPI1_direct_+/+	0.0486515247635385	0.1710329083023215
+region:chr1:12143152-12143652	gene:TNFRSF8	region_regulates_gene	SPI1_direct_+/+	0.0207418964136372	0.1416383781628138
+region:chr1:12143654-12144154	gene:TNFRSF8	region_regulates_gene	SPI1_direct_+/+	0.0165041054931014	0.1528485920780838
+region:chr1:12153199-12153699	gene:TNFRSF8	region_regulates_gene	SPI1_direct_+/+	0.0260636414875072	0.1689166662585935
+region:chr1:12157800-12158300	gene:TNFRSF8	region_regulates_gene	SPI1_direct_+/+	0.0255888454959712	0.1514110044883725
+region:chr1:12180230-12180730	gene:TNFRSF8	region_regulates_gene	SPI1_direct_+/+	0.0543837741570356	0.1829706498032407
+region:chr1:12184150-12184650	gene:TNFRSF8	region_regulates_gene	SPI1_direct_+/+	0.0245258507017327	0.168095124453575
+region:chr1:12196576-12197076	gene:TNFRSF8	region_regulates_gene	SPI1_direct_+/+	0.0188814814591463	0.2149021979929026
+region:chr1:12229759-12230259	gene:TNFRSF8	region_regulates_gene	SPI1_direct_+/-	0.019342085273579	-0.1711181570614308
+region:chr1:157106202-157106702	gene:ARHGEF11	region_regulates_gene	KLF4_direct_+/+	0.0446370161312617	0.5181306568903692
+region:chr1:212752535-212753035	gene:ATF3	region_regulates_gene	KLF4_direct_+/+	0.0493597655657602	0.2682960712911603
+region:chr1:248804914-248805414	gene:ZNF672	region_regulates_gene	RXRA_direct_+/+	0.0380090577522983	0.1565797584169729
+region:chr1:248807058-248807558	gene:ZNF672	region_regulates_gene	RXRA_direct_+/+	0.1008429423719115	0.1080243185559647
+region:chr1:248838078-248838578	gene:ZNF672	region_regulates_gene	RXRA_direct_+/+	0.0367180915263272	0.0662356213290705
+region:chr1:88983814-88984314	gene:GBP1	region_regulates_gene	RXRA_direct_+/+	0.024570922333462	0.1574797658707188
+region:chr20:23655765-23656265	gene:CST3	region_regulates_gene	SPI1_direct_+/+	0.1226584363143635	0.4519067544291655
+region:chr20:32040126-32040626	gene:TM9SF4	region_regulates_gene	RXRA_direct_+/+	0.0196970044520522	0.1544771715121429
+region:chr20:32051198-32051698	gene:TM9SF4	region_regulates_gene	RXRA_direct_+/+	0.0171842139876686	0.1938797256689741
+region:chr20:32062761-32063261	gene:TM9SF4	region_regulates_gene	RXRA_direct_+/+	0.0209180890150037	0.2440569227664898
+region:chr20:32111726-32112226	gene:TM9SF4	region_regulates_gene	RXRA_direct_+/+	0.0199900606409903	0.1661978671354744
+region:chr20:32112818-32113318	gene:TM9SF4	region_regulates_gene	RXRA_direct_+/+	0.0477701313201585	0.2064448231182706
+region:chr20:40571724-40572224	gene:MAFB	region_regulates_gene	RXRA_direct_+/+	0.0606345204629333	0.5628210584987587
+region:chr20:40689916-40690416	gene:MAFB	region_regulates_gene	RXRA_direct_+/+	0.0560404258541584	0.3493964092604686
+region:chr20:40779001-40779501	gene:MAFB	region_regulates_gene	RXRA_direct_+/+	0.0446342801443333	0.5559139878372023
+region:chr20:41003387-41003887	gene:TOP1	region_regulates_gene	KLF4_direct_+/+	0.0570445895993974	0.054318879993367
+region:chr20:41047885-41048385	gene:TOP1	region_regulates_gene	KLF4_direct_+/+	0.0187027741973013	0.0656465473309056
+region:chr21:33199790-33200290	gene:IFNAR2	region_regulates_gene	RXRA_direct_+/+	0.0258285023961924	0.0529314352269944
+region:chr21:33265708-33266208	gene:IFNAR2	region_regulates_gene	RXRA_direct_+/+	0.0151117219902448	0.0653886068436945
+region:chr2:173005713-173006213	gene:MAP3K20	region_regulates_gene	SPI1_direct_+/+	0.0677201931062745	0.5752131094237466
+region:chr2:173043368-173043868	gene:MAP3K20	region_regulates_gene	SPI1_direct_+/+	0.0842556579746008	0.5730373249736952
+region:chr2:173075626-173076126	gene:MAP3K20	region_regulates_gene	SPI1_direct_+/+	0.041140721620088	0.3459332898065208
+region:chr2:173076383-173076883	gene:MAP3K20	region_regulates_gene	SPI1_direct_+/+	0.0838197152256532	0.3802845096493906
+region:chr2:229287762-229288262	gene:PID1	region_regulates_gene	RXRA_direct_+/+	0.0785796635353032	0.7672474035389062
+region:chr2:229409004-229409504	gene:PID1	region_regulates_gene	RXRA_direct_+/+	0.0512884439145461	0.7597766178521892
+region:chr2:40394488-40394988	gene:SLC8A1	region_regulates_gene	RXRA_direct_+/+	0.0627288442997754	0.8929835801255464
+region:chr2:40450024-40450524	gene:SLC8A1	region_regulates_gene	RXRA_direct_+/+	0.0464175265211409	0.89573030062794
+region:chr2:40455516-40456016	gene:SLC8A1	region_regulates_gene	KLF4_direct_+/+;RXRA_direct_+/+	0.0969190356630406	0.8980510990329579
+region:chr2:40558720-40559220	gene:SLC8A1	region_regulates_gene	RXRA_direct_+/+	0.0541038528155775	0.8956386111562615
+region:chr3:187773186-187773686	gene:BCL6	region_regulates_gene	KLF4_direct_+/+	0.0198166310094087	0.3083532381817605
+region:chr3:38009948-38010448	gene:MYD88	region_regulates_gene	KLF4_direct_+/+	0.0175241187480255	0.1089276830717586
+region:chr4:152643399-152643899	gene:FBXW7	region_regulates_gene	KLF4_direct_+/+	0.0286078382568461	0.1807209991192326
+region:chr4:152663052-152663552	gene:FBXW7	region_regulates_gene	KLF4_direct_+/+	0.0182516258077632	0.0932873456805285
+region:chr4:153661361-153661861	gene:TLR2	region_regulates_gene	KLF4_direct_+/+	0.078702703636228	0.7904962533896424
+region:chr4:158817906-158818406	gene:FNIP2	region_regulates_gene	TCF7L2_direct_+/+	0.0602958547608346	0.2305184424169016
+region:chr5:150058683-150059183	gene:CSF1R	region_regulates_gene	TCF7L2_direct_+/+	0.0458564341877227	0.315588705338759
+region:chr5:94618419-94618919	gene:MCTP1	region_regulates_gene	SPI1_direct_+/-	0.0131539885676876	-0.4136238506629227
+region:chr5:95048620-95049120	gene:MCTP1	region_regulates_gene	SPI1_direct_+/+	0.081799195376162	0.866566339229909
+region:chr5:95069806-95070306	gene:MCTP1	region_regulates_gene	SPI1_direct_+/+	0.0561204003817778	0.8624259163428245
+region:chr5:95081424-95081924	gene:MCTP1	region_regulates_gene	SPI1_direct_+/+	0.0701415325380431	0.5880290578644807
+region:chr6:108742032-108742532	gene:FOXO3	region_regulates_gene	TCF7L2_direct_+/+	0.0528944536834312	0.3673599959092977
+region:chr6:144150134-144150634	gene:STX11	region_regulates_gene	KLF4_direct_+/+	0.027829854325046	0.4255342631893413
+region:chr6:18171792-18172292	gene:KDM1B	region_regulates_gene	SPI1_direct_+/+	0.0353110615844537	0.4590948864510942
+region:chr6:18179908-18180408	gene:KDM1B	region_regulates_gene	SPI1_direct_+/+	0.0305157051642717	0.4588866904689617
+region:chr6:18329672-18330172	gene:KDM1B	region_regulates_gene	SPI1_direct_+/+	0.02943579591817	0.4609788712548103
+region:chr6:18330563-18331063	gene:KDM1B	region_regulates_gene	SPI1_direct_+/+	0.0626689334352936	0.3629381250264193
+region:chr6:18501601-18502101	gene:RNF144B	region_regulates_gene	TCF7L2_direct_+/+	0.0428794668540507	0.6008864709235611
+region:chr6:31586511-31587011	gene:AIF1	region_regulates_gene	TCF7L2_direct_+/+	0.0862716260767586	0.1876811072731056
+region:chr6:31586511-31587011	gene:LST1	region_regulates_gene	TCF7L2_direct_+/+	0.0441061759516283	0.2206997257169895
+region:chr7:106344765-106345265	gene:NAMPT	region_regulates_gene	KLF4_direct_+/+	0.028480544630211	0.6440884537508633
+region:chr7:139828939-139829439	gene:TBXAS1	region_regulates_gene	KLF4_direct_+/+	0.0192476457972893	0.4896476084346816
+region:chr7:139830959-139831459	gene:TBXAS1	region_regulates_gene	KLF4_direct_+/+	0.0259342854766109	0.4513756483169147
+region:chr7:150665852-150666352	gene:TMEM176A	region_regulates_gene	RXRA_direct_+/+	0.0654951981439169	0.1341839721649159
+region:chr7:150785340-150785840	gene:TMEM176A	region_regulates_gene	RXRA_direct_+/+	0.0426576042330239	0.3241427687622876
+region:chr7:150787590-150788090	gene:TMEM176A	region_regulates_gene	RXRA_direct_+/+	0.040815956199691	0.3033530799089745
+region:chr7:28684536-28685036	gene:CREB5	region_regulates_gene	TCF7L2_direct_+/+	0.1073286376622294	0.5900921414369523
+region:chr7:43876116-43876616	gene:BLVRA	region_regulates_gene	TCF7L2_direct_+/+	0.0479664821991566	0.2751996039547796
+region:chr8:115451426-115451926	gene:TRPS1	region_regulates_gene	KLF4_direct_+/+	0.0712449559175295	0.2178412422874894
+region:chr8:117881503-117882003	gene:EXT1	region_regulates_gene	RXRA_direct_+/+	0.0554659832799562	0.2654818431922914
+region:chr8:117989383-117989883	gene:EXT1	region_regulates_gene	RXRA_direct_+/+	0.0560981134546371	0.3952366559534178
+region:chr8:118060746-118061246	gene:EXT1	region_regulates_gene	RXRA_direct_+/+	0.0701288816445441	0.3951749685930933
+region:chr8:118108667-118109167	gene:EXT1	region_regulates_gene	RXRA_direct_+/+	0.0875305856425031	0.2377712462521716
+region:chr8:89759076-89759576	gene:RIPK2	region_regulates_gene	KLF4_direct_+/+	0.0599433061372894	0.3270962377936102
+region:chr9:134195457-134195957	gene:RXRA	region_regulates_gene	RXRA_direct_+/+	0.0245175094562868	0.3496394553042639
+region:chr9:134341252-134341752	gene:RXRA	region_regulates_gene	RXRA_direct_+/+;TCF7L2_direct_+/+	0.0370114881409121	0.4792886582670994
+region:chr9:134409236-134409736	gene:RXRA	region_regulates_gene	TCF7L2_direct_+/+	0.030623147445645	0.3957533236030225
+region:chr9:134929107-134929607	gene:FCN1	region_regulates_gene	RXRA_direct_+/+	0.1104349527537156	0.5052070087675345
+region:chr9:134936713-134937213	gene:FCN1	region_regulates_gene	RXRA_direct_+/+	0.1050107682297516	0.5077012074047211
+region:chr9:87601217-87601717	gene:CTSL	region_regulates_gene	SPI1_direct_+/+	0.0353444919661232	0.1854160944480726
+region:chr9:87614317-87614817	gene:CTSL	region_regulates_gene	SPI1_direct_+/+	0.0330538181014536	0.1841156837907233
+region:chr9:87722288-87722788	gene:CTSL	region_regulates_gene	SPI1_direct_+/+	0.093568414113929	0.1869241271511307
+region:chr9:87725918-87726418	gene:CTSL	region_regulates_gene	SPI1_direct_+/+	0.0544289454304758	0.1250030342581055
+region:chr9:87783099-87783599	gene:CTSL	region_regulates_gene	SPI1_direct_+/+	0.0700789546254827	0.2016434227797718
+region:chr9:87792702-87793202	gene:CTSL	region_regulates_gene	SPI1_direct_+/+	0.0633768661987769	0.1113812984278869
+region:chr9:87796051-87796551	gene:CTSL	region_regulates_gene	SPI1_direct_+/+	0.0817886721090814	0.1993740641870801
+region:chrX:23742338-23742838	gene:SAT1	region_regulates_gene	SPI1_direct_+/+	0.056755314449034	0.3613048117543099
+region:chrX:23781151-23781651	gene:SAT1	region_regulates_gene	SPI1_direct_+/+	0.0919028825492463	0.36260234985169
+region:chrX:23811102-23811602	gene:SAT1	region_regulates_gene	SPI1_direct_+/+	0.0199608070781863	0.4733542763149634
+region:chrX:23911212-23911712	gene:SAT1	region_regulates_gene	SPI1_direct_+/+	0.0469257628126139	0.541597998895335
+region:chrX:48683505-48684005	gene:WAS	region_regulates_gene	RXRA_direct_+/+	0.0514835976596535	0.1411487889603871
+TF:KLF4	gene:ARHGEF11	tf_regulates_gene	KLF4_direct_+/+	2.2931255725453203	0.4220950530223692
+TF:KLF4	gene:ATF3	tf_regulates_gene	KLF4_direct_+/+	4.213673587600493	0.4170990300728773
+TF:KLF4	gene:BCL6	tf_regulates_gene	KLF4_direct_+/+	2.301756864179719	0.2858641427092287
+TF:KLF4	gene:FBXW7	tf_regulates_gene	KLF4_direct_+/+	2.376388501787457	0.2139866673564898
+TF:KLF4	gene:FOS	tf_regulates_gene	KLF4_direct_+/+	2.8151315935888084	0.3143517924230234
+TF:KLF4	gene:IRAK3	tf_regulates_gene	KLF4_direct_+/+	2.360176156799322	0.6132407143477934
+TF:KLF4	gene:MYD88	tf_regulates_gene	KLF4_direct_+/+	2.2672516770482227	0.1730924038517907
+TF:KLF4	gene:NAMPT	tf_regulates_gene	KLF4_direct_+/+	4.02366619254929	0.6222284210085115
+TF:KLF4	gene:OSCAR	tf_regulates_gene	KLF4_direct_+/+	2.4679044315785275	0.5074247300242363
+TF:KLF4	gene:PLXDC2	tf_regulates_gene	KLF4_direct_+/+	3.9289184447913175	0.7085673219096027
+TF:KLF4	gene:RILPL2	tf_regulates_gene	KLF4_direct_+/+	2.7063551046332	0.3188961046584639
+TF:KLF4	gene:RIPK2	tf_regulates_gene	KLF4_direct_+/+	3.149195223563893	0.4556329963945316
+TF:KLF4	gene:RTN3	tf_regulates_gene	KLF4_direct_+/+	3.27382610378839	0.2612324629065614
+TF:KLF4	gene:SLC8A1	tf_regulates_gene	KLF4_direct_+/+	4.048608446005394	0.7080294944412446
+TF:KLF4	gene:STX11	tf_regulates_gene	KLF4_direct_+/+	2.36058791069966	0.5494756863082007
+TF:KLF4	gene:TBXAS1	tf_regulates_gene	KLF4_direct_+/+	2.6207720991632075	0.5456373021282235
+TF:KLF4	gene:TLR2	tf_regulates_gene	KLF4_direct_+/+	2.247366101096861	0.5949468004711895
+TF:KLF4	gene:TOP1	tf_regulates_gene	KLF4_direct_+/+	2.441183783247429	0.1870701560653911
+TF:KLF4	gene:TRPS1	tf_regulates_gene	KLF4_direct_+/+	2.528814217320071	0.3135603224362883
+TF:KLF4	gene:VMP1	tf_regulates_gene	KLF4_direct_+/+	2.5402472665425373	0.4264452957164594
+TF:RXRA	gene:EXT1	tf_regulates_gene	RXRA_direct_+/+	3.3584913236901937	0.2394836395901909
+TF:RXRA	gene:FCN1	tf_regulates_gene	RXRA_direct_+/+	3.277187408856028	0.3993883423629462
+TF:RXRA	gene:GBP1	tf_regulates_gene	RXRA_direct_+/+	4.0484137384356815	0.2499950951662408
+TF:RXRA	gene:IFNAR2	tf_regulates_gene	RXRA_direct_+/+	2.93153832147774	0.1222940508851746
+TF:RXRA	gene:LILRB2	tf_regulates_gene	RXRA_direct_+/+	2.784218672761855	0.3405542291839259
+TF:RXRA	gene:MAFB	tf_regulates_gene	RXRA_direct_+/+	3.9819808271638593	0.3521398077255472
+TF:RXRA	gene:MAP2K3	tf_regulates_gene	RXRA_direct_+/+	3.0180626537594457	0.1708811937336102
+TF:RXRA	gene:PID1	tf_regulates_gene	RXRA_direct_+/+	3.264809691060132	0.450644525000737
+TF:RXRA	gene:RIN3	tf_regulates_gene	RXRA_direct_+/+	2.832838111366208	0.188462696064962
+TF:RXRA	gene:RXRA	tf_regulates_gene	RXRA_direct_+/+	4.738233726821694	1.0
+TF:RXRA	gene:SBF2	tf_regulates_gene	RXRA_direct_+/+	3.192649593301708	0.2959246569124025
+TF:RXRA	gene:SLC8A1	tf_regulates_gene	RXRA_direct_+/+	3.0350205945020714	0.4888169408549898
+TF:RXRA	gene:TFCP2	tf_regulates_gene	RXRA_direct_+/+	3.018541435038478	0.1308933796273087
+TF:RXRA	gene:TIMP2	tf_regulates_gene	RXRA_direct_+/+	3.079305213600396	0.2748071905332118
+TF:RXRA	gene:TM9SF4	tf_regulates_gene	RXRA_direct_+/+	2.761126454418291	0.1382261017498944
+TF:RXRA	gene:TMEM176A	tf_regulates_gene	RXRA_direct_+/+	3.905055197152396	0.2377151541578071
+TF:RXRA	gene:WARS	tf_regulates_gene	RXRA_direct_+/+	2.85475280415711	0.4068370634812665
+TF:RXRA	gene:WAS	tf_regulates_gene	RXRA_direct_+/+	2.7896796291647705	0.1298305593423583
+TF:RXRA	gene:XYLT1	tf_regulates_gene	RXRA_direct_+/+	2.7617474529498875	0.145364586257007
+TF:RXRA	gene:ZNF672	tf_regulates_gene	RXRA_direct_+/+	3.4539146566218912	0.1267845107486701
+TF:SPI1	gene:C19orf38	tf_regulates_gene	SPI1_direct_+/+;SPI1_direct_+/-	4.203417972399419	0.2987495945007476
+TF:SPI1	gene:COTL1	tf_regulates_gene	SPI1_direct_+/+;SPI1_direct_+/-	4.915047332788356	0.2552669777938114
+TF:SPI1	gene:CPPED1	tf_regulates_gene	SPI1_direct_+/+	4.105914315065535	0.450643998280285
+TF:SPI1	gene:CST3	tf_regulates_gene	SPI1_direct_+/+	5.694197432970467	0.3821003694708929
+TF:SPI1	gene:CTSL	tf_regulates_gene	SPI1_direct_+/+	4.039432219577139	0.1567505501622734
+TF:SPI1	gene:DUSP6	tf_regulates_gene	SPI1_direct_+/+	4.13570927636014	0.3650521357185519
+TF:SPI1	gene:IRAK3	tf_regulates_gene	SPI1_direct_+/+;SPI1_direct_+/-	4.045497528008082	0.4993457755699586
+TF:SPI1	gene:KDM1B	tf_regulates_gene	SPI1_direct_+/+	4.957230970972773	0.2892502532600767
+TF:SPI1	gene:LRMDA	tf_regulates_gene	SPI1_direct_+/+	4.111994170254787	0.4836025254692487
+TF:SPI1	gene:MAP3K20	tf_regulates_gene	SPI1_direct_+/+	4.605062558861566	0.3534444822136158
+TF:SPI1	gene:MCTP1	tf_regulates_gene	SPI1_direct_+/+;SPI1_direct_+/-	4.260073697432321	0.5064744921239263
+TF:SPI1	gene:PLXDC2	tf_regulates_gene	SPI1_direct_+/+	4.117557552101159	0.4960064514992829
+TF:SPI1	gene:PSAP	tf_regulates_gene	SPI1_direct_+/+;SPI1_direct_+/-	4.919268410575558	0.3552993186945688
+TF:SPI1	gene:RAB31	tf_regulates_gene	SPI1_direct_+/+	4.070524022626241	0.4345552552783889
+TF:SPI1	gene:SAT1	tf_regulates_gene	SPI1_direct_+/+	4.067650199743319	0.3888340500016322
+TF:SPI1	gene:SERPINA1	tf_regulates_gene	SPI1_direct_+/+	4.116958261517103	0.3592411858573401
+TF:SPI1	gene:SPI1	tf_regulates_gene	SPI1_direct_+/+;SPI1_direct_+/-	6.640258265984493	1.0
+TF:SPI1	gene:TNFRSF8	tf_regulates_gene	SPI1_direct_+/+;SPI1_direct_+/-	5.293020577983935	0.2629078631153164
+TF:SPI1	gene:WARS	tf_regulates_gene	SPI1_direct_+/+;SPI1_direct_+/-	4.209285676467682	0.4419910671904777
+TF:SPI1	gene:WDFY2	tf_regulates_gene	SPI1_direct_+/+	4.15331353944706	0.249777438865314
+TF:TCF7L2	gene:ADGRE2	tf_regulates_gene	TCF7L2_direct_+/+	4.650389431764726	0.5371561788122803
+TF:TCF7L2	gene:AIF1	tf_regulates_gene	TCF7L2_direct_+/+	3.5681764906965965	0.359992631314046
+TF:TCF7L2	gene:BLVRA	tf_regulates_gene	TCF7L2_direct_+/+	3.618096326329785	0.1912604310584165
+TF:TCF7L2	gene:C3AR1	tf_regulates_gene	TCF7L2_direct_+/+	4.451614561725911	0.2928566118196448
+TF:TCF7L2	gene:CD300C	tf_regulates_gene	TCF7L2_direct_+/+	3.72574177940068	0.2368656118054884
+TF:TCF7L2	gene:CREB5	tf_regulates_gene	TCF7L2_direct_+/+	3.3909301636655265	0.4130732396444591
+TF:TCF7L2	gene:CSF1R	tf_regulates_gene	TCF7L2_direct_+/+	5.078403613988376	0.467708269599449
+TF:TCF7L2	gene:FNIP2	tf_regulates_gene	TCF7L2_direct_+/+	3.761241195928255	0.2446254592581942
+TF:TCF7L2	gene:FOXO3	tf_regulates_gene	TCF7L2_direct_+/+	3.929522174437771	0.2464842460920935
+TF:TCF7L2	gene:LILRB1	tf_regulates_gene	TCF7L2_direct_+/+	3.493226693764691	0.3265727607255638
+TF:TCF7L2	gene:LRRC25	tf_regulates_gene	TCF7L2_direct_+/+	5.351132577277267	0.4381595934868208
+TF:TCF7L2	gene:LST1	tf_regulates_gene	TCF7L2_direct_+/+	4.355423276802359	0.3651671203262778
+TF:TCF7L2	gene:MS4A7	tf_regulates_gene	TCF7L2_direct_+/+	4.966694039176123	0.4898149331758498
+TF:TCF7L2	gene:RNF144B	tf_regulates_gene	TCF7L2_direct_+/+	3.3404669003093064	0.4587261184918578
+TF:TCF7L2	gene:RXRA	tf_regulates_gene	TCF7L2_direct_+/+	3.793208978691111	0.3836309842617871
+TF:TCF7L2	gene:SLC7A7	tf_regulates_gene	TCF7L2_direct_+/+	4.027702673596954	0.4019422347964302
+TF:TCF7L2	gene:SMCO4	tf_regulates_gene	TCF7L2_direct_+/+	3.4785153991478994	0.2789309506022288
+TF:TCF7L2	gene:SPI1	tf_regulates_gene	TCF7L2_direct_+/+	3.776456556888482	0.4326531819234864
+TF:TCF7L2	gene:TCF7L2	tf_regulates_gene	TCF7L2_direct_+/+	5.741863502006518	1.0
+TF:TCF7L2	gene:WARS	tf_regulates_gene	TCF7L2_direct_+/+	4.31644475948092	0.5433256356390043

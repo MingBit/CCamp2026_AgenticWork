@@ -1,0 +1,460 @@
+[
+  {
+    "cluster": "0",
+    "label": "unknown",
+    "confidence": 0.0,
+    "evidence": [
+      [
+        "T cells",
+        [
+          "IL7R"
+        ],
+        4
+      ],
+      [
+        "B cells",
+        [],
+        3
+      ],
+      [
+        "NK cells",
+        [],
+        3
+      ],
+      [
+        "CD14+ monocytes",
+        [],
+        4
+      ],
+      [
+        "FCGR3A+ monocytes",
+        [],
+        3
+      ],
+      [
+        "Dendritic cells",
+        [],
+        4
+      ],
+      [
+        "Plasmacytoid dendritic cells",
+        [],
+        4
+      ],
+      [
+        "Platelets",
+        [],
+        1
+      ]
+    ]
+  },
+  {
+    "cluster": "1",
+    "label": "unknown",
+    "confidence": 0.0,
+    "evidence": [
+      [
+        "T cells",
+        [],
+        4
+      ],
+      [
+        "B cells",
+        [],
+        3
+      ],
+      [
+        "NK cells",
+        [],
+        3
+      ],
+      [
+        "CD14+ monocytes",
+        [
+          "LYZ"
+        ],
+        4
+      ],
+      [
+        "FCGR3A+ monocytes",
+        [],
+        3
+      ],
+      [
+        "Dendritic cells",
+        [],
+        4
+      ],
+      [
+        "Plasmacytoid dendritic cells",
+        [],
+        4
+      ],
+      [
+        "Platelets",
+        [],
+        1
+      ]
+    ]
+  },
+  {
+    "cluster": "2",
+    "label": "T cells",
+    "confidence": 0.5,
+    "evidence": [
+      [
+        "T cells",
+        [
+          "CCR7",
+          "IL7R"
+        ],
+        4
+      ],
+      [
+        "B cells",
+        [],
+        3
+      ],
+      [
+        "NK cells",
+        [],
+        3
+      ],
+      [
+        "CD14+ monocytes",
+        [],
+        4
+      ],
+      [
+        "FCGR3A+ monocytes",
+        [],
+        3
+      ],
+      [
+        "Dendritic cells",
+        [],
+        4
+      ],
+      [
+        "Plasmacytoid dendritic cells",
+        [],
+        4
+      ],
+      [
+        "Platelets",
+        [],
+        1
+      ]
+    ]
+  },
+  {
+    "cluster": "3",
+    "label": "NK cells",
+    "confidence": 0.8,
+    "evidence": [
+      [
+        "T cells",
+        [],
+        4
+      ],
+      [
+        "B cells",
+        [],
+        3
+      ],
+      [
+        "NK cells",
+        [
+          "GNLY",
+          "NKG7",
+          "PRF1"
+        ],
+        3
+      ],
+      [
+        "CD14+ monocytes",
+        [],
+        4
+      ],
+      [
+        "FCGR3A+ monocytes",
+        [],
+        3
+      ],
+      [
+        "Dendritic cells",
+        [],
+        4
+      ],
+      [
+        "Plasmacytoid dendritic cells",
+        [],
+        4
+      ],
+      [
+        "Platelets",
+        [],
+        1
+      ]
+    ]
+  },
+  {
+    "cluster": "4",
+    "label": "FCGR3A+ monocytes",
+    "confidence": 0.6666666666666666,
+    "evidence": [
+      [
+        "T cells",
+        [],
+        4
+      ],
+      [
+        "B cells",
+        [],
+        3
+      ],
+      [
+        "NK cells",
+        [],
+        3
+      ],
+      [
+        "CD14+ monocytes",
+        [],
+        4
+      ],
+      [
+        "FCGR3A+ monocytes",
+        [
+          "LST1",
+          "MS4A7"
+        ],
+        3
+      ],
+      [
+        "Dendritic cells",
+        [
+          "CST3"
+        ],
+        4
+      ],
+      [
+        "Plasmacytoid dendritic cells",
+        [],
+        4
+      ],
+      [
+        "Platelets",
+        [],
+        1
+      ]
+    ]
+  },
+  {
+    "cluster": "5",
+    "label": "B cells",
+    "confidence": 0.8,
+    "evidence": [
+      [
+        "T cells",
+        [],
+        4
+      ],
+      [
+        "B cells",
+        [
+          "CD79A",
+          "CD79B",
+          "MS4A1"
+        ],
+        3
+      ],
+      [
+        "NK cells",
+        [],
+        3
+      ],
+      [
+        "CD14+ monocytes",
+        [],
+        4
+      ],
+      [
+        "FCGR3A+ monocytes",
+        [],
+        3
+      ],
+      [
+        "Dendritic cells",
+        [],
+        4
+      ],
+      [
+        "Plasmacytoid dendritic cells",
+        [
+          "TCF4"
+        ],
+        4
+      ],
+      [
+        "Platelets",
+        [],
+        1
+      ]
+    ]
+  },
+  {
+    "cluster": "6",
+    "label": "unknown",
+    "confidence": 0.0,
+    "evidence": [
+      [
+        "T cells",
+        [],
+        4
+      ],
+      [
+        "B cells",
+        [],
+        3
+      ],
+      [
+        "NK cells",
+        [],
+        3
+      ],
+      [
+        "CD14+ monocytes",
+        [
+          "LYZ"
+        ],
+        4
+      ],
+      [
+        "FCGR3A+ monocytes",
+        [],
+        3
+      ],
+      [
+        "Dendritic cells",
+        [
+          "CST3"
+        ],
+        4
+      ],
+      [
+        "Plasmacytoid dendritic cells",
+        [],
+        4
+      ],
+      [
+        "Platelets",
+        [],
+        1
+      ]
+    ]
+  },
+  {
+    "cluster": "7",
+    "label": "Plasmacytoid dendritic cells",
+    "confidence": 0.8,
+    "evidence": [
+      [
+        "T cells",
+        [],
+        4
+      ],
+      [
+        "B cells",
+        [],
+        3
+      ],
+      [
+        "NK cells",
+        [],
+        3
+      ],
+      [
+        "CD14+ monocytes",
+        [],
+        4
+      ],
+      [
+        "FCGR3A+ monocytes",
+        [],
+        3
+      ],
+      [
+        "Dendritic cells",
+        [],
+        4
+      ],
+      [
+        "Plasmacytoid dendritic cells",
+        [
+          "CLEC4C",
+          "LILRA4",
+          "PLD4",
+          "TCF4"
+        ],
+        4
+      ],
+      [
+        "Platelets",
+        [],
+        1
+      ]
+    ]
+  },
+  {
+    "cluster": "8",
+    "label": "B cells",
+    "confidence": 0.8,
+    "evidence": [
+      [
+        "T cells",
+        [],
+        4
+      ],
+      [
+        "B cells",
+        [
+          "CD79A",
+          "CD79B",
+          "MS4A1"
+        ],
+        3
+      ],
+      [
+        "NK cells",
+        [],
+        3
+      ],
+      [
+        "CD14+ monocytes",
+        [],
+        4
+      ],
+      [
+        "FCGR3A+ monocytes",
+        [],
+        3
+      ],
+      [
+        "Dendritic cells",
+        [],
+        4
+      ],
+      [
+        "Plasmacytoid dendritic cells",
+        [],
+        4
+      ],
+      [
+        "Platelets",
+        [],
+        1
+      ]
+    ]
+  }
+]

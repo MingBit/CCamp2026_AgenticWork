@@ -8,6 +8,7 @@ import pandas as pd
 import anndata as ad
 from scipy import sparse
 from scrna_workflow.core import inspect_data, _countlike
+from scrna_workflow.modalities import detect_modalities
 from scrna_workflow.tools.gene_filter import remove_ribosomal_genes
 from scrna_workflow.tools.annotation import annotate_clusters
 
@@ -70,3 +71,17 @@ class CoreTests(unittest.TestCase):
                                                 'B cells':['MS4A1','CD79A']})
         self.assertEqual([row['label'] for row in result], ['T cells','B cells'])
         self.assertTrue((a.obs['annotation_confidence'] > 0).all())
+
+    def test_modality_detection_defaults_h5ad_to_rna(self):
+        with tempfile.TemporaryDirectory() as d:
+            path = Path(d) / 'input.h5ad'
+            ad.AnnData(sparse.csr_matrix([[1, 0], [0, 1]])).write_h5ad(path)
+            self.assertEqual(detect_modalities(path), ['rna'])
+
+    def test_modality_detection_reads_h5ad_feature_types(self):
+        with tempfile.TemporaryDirectory() as d:
+            path = Path(d) / 'input.h5ad'
+            data = ad.AnnData(sparse.csr_matrix([[1, 0], [0, 1]]),
+                              var=pd.DataFrame({'feature_types': ['Peaks', 'Antibody Capture']}, index=['p1', 'a1']))
+            data.write_h5ad(path)
+            self.assertEqual(detect_modalities(path), ['atac', 'protein'])

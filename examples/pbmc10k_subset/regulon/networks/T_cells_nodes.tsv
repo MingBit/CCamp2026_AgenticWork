@@ -1,0 +1,189 @@
+id	label	node_type	eregulons	detected_fraction	n_targets
+TF:BACH2	BACH2	tf	BACH2_direct_+/-	0.9797979797979735	20
+TF:KLF6	KLF6	tf	KLF6_direct_-/-	0.2853535353535351	14
+TF:LEF1	LEF1	tf	LEF1_direct_+/+	0.9646464646464585	20
+TF:TBX21	TBX21	tf	TBX21_direct_-/+	0.007575757575757576	20
+TF:TCF7	TCF7	tf	TCF7_direct_+/+	0.8207070707070668	20
+region:chr10:119596581-119597081	chr10:119596581-119597081	region	BACH2_direct_+/-		1
+region:chr11:14768571-14769071	chr11:14768571-14769071	region	LEF1_direct_+/+		1
+region:chr11:62621924-62622424	chr11:62621924-62622424	region	BACH2_direct_+/-		1
+region:chr11:62640664-62641164	chr11:62640664-62641164	region	TBX21_direct_-/+		1
+region:chr11:85664868-85665368	chr11:85664868-85665368	region	BACH2_direct_+/-		1
+region:chr11:96016106-96016606	chr11:96016106-96016606	region	LEF1_direct_+/+;TCF7_direct_+/+		1
+region:chr11:96105556-96106056	chr11:96105556-96106056	region	LEF1_direct_+/+;TCF7_direct_+/+		1
+region:chr11:96278465-96278965	chr11:96278465-96278965	region	LEF1_direct_+/+		1
+region:chr12:21676728-21677228	chr12:21676728-21677228	region	TCF7_direct_+/+		1
+region:chr12:31728851-31729351	chr12:31728851-31729351	region	BACH2_direct_+/-		1
+region:chr13:40485585-40486085	chr13:40485585-40486085	region	TBX21_direct_-/+		1
+region:chr13:40666957-40667457	chr13:40666957-40667457	region	KLF6_direct_-/-		1
+region:chr14:68793068-68793568	chr14:68793068-68793568	region	BACH2_direct_+/-		1
+region:chr15:28876162-28876662	chr15:28876162-28876662	region	LEF1_direct_+/+;TCF7_direct_+/+		1
+region:chr15:28890755-28891255	chr15:28890755-28891255	region	LEF1_direct_+/+		1
+region:chr15:34366186-34366686	chr15:34366186-34366686	region	KLF6_direct_-/-		1
+region:chr15:90388536-90389036	chr15:90388536-90389036	region	KLF6_direct_-/-		1
+region:chr15:93028563-93029063	chr15:93028563-93029063	region	BACH2_direct_+/-		1
+region:chr15:98649378-98649878	chr15:98649378-98649878	region	LEF1_direct_+/+		1
+region:chr15:98650993-98651493	chr15:98650993-98651493	region	LEF1_direct_+/+		1
+region:chr16:27367453-27367953	chr16:27367453-27367953	region	BACH2_direct_+/-		1
+region:chr17:40480463-40480963	chr17:40480463-40480963	region	KLF6_direct_-/-		1
+region:chr17:40533368-40533868	chr17:40533368-40533868	region	LEF1_direct_+/+		1
+region:chr17:40547342-40547842	chr17:40547342-40547842	region	LEF1_direct_+/+;TCF7_direct_+/+		1
+region:chr17:40560776-40561276	chr17:40560776-40561276	region	BACH2_direct_+/-		1
+region:chr17:40564225-40564725	chr17:40564225-40564725	region	KLF6_direct_-/-		1
+region:chr17:40597110-40597610	chr17:40597110-40597610	region	LEF1_direct_+/+		1
+region:chr17:40605390-40605890	chr17:40605390-40605890	region	TBX21_direct_-/+		1
+region:chr17:66201735-66202235	chr17:66201735-66202235	region	TBX21_direct_-/+		1
+region:chr17:66285870-66286370	chr17:66285870-66286370	region	TBX21_direct_-/+		1
+region:chr17:66331099-66331599	chr17:66331099-66331599	region	LEF1_direct_+/+;TBX21_direct_-/+;TCF7_direct_+/+		1
+region:chr17:66426317-66426817	chr17:66426317-66426817	region	TBX21_direct_-/+		1
+region:chr17:66673599-66674099	chr17:66673599-66674099	region	LEF1_direct_+/+		1
+region:chr17:78186938-78187438	chr17:78186938-78187438	region	KLF6_direct_-/-		1
+region:chr19:12793458-12793958	chr19:12793458-12793958	region	TBX21_direct_-/+		1
+region:chr19:4051742-4052242	chr19:4051742-4052242	region	BACH2_direct_+/-		1
+region:chr19:4058233-4058733	chr19:4058233-4058733	region	BACH2_direct_+/-		1
+region:chr19:47600233-47600733	chr19:47600233-47600733	region	TBX21_direct_-/+		1
+region:chr19:47745388-47745888	chr19:47745388-47745888	region	TBX21_direct_-/+		1
+region:chr1:207336541-207337041	chr1:207336541-207337041	region	TBX21_direct_-/+		1
+region:chr1:44674121-44674621	chr1:44674121-44674621	region	KLF6_direct_-/-		1
+region:chr1:44809429-44809929	chr1:44809429-44809929	region	KLF6_direct_-/-		1
+region:chr1:61782615-61783115	chr1:61782615-61783115	region	TCF7_direct_+/+		1
+region:chr1:62271960-62272460	chr1:62271960-62272460	region	TCF7_direct_+/+		1
+region:chr1:62295882-62296382	chr1:62295882-62296382	region	TCF7_direct_+/+		1
+region:chr20:20712528-20713028	chr20:20712528-20713028	region	KLF6_direct_-/-		1
+region:chr20:21125715-21126215	chr20:21125715-21126215	region	KLF6_direct_-/-		1
+region:chr22:39940694-39941194	chr22:39940694-39941194	region	TCF7_direct_+/+		1
+region:chr22:39961385-39961885	chr22:39961385-39961885	region	BACH2_direct_+/-		1
+region:chr2:136008089-136008589	chr2:136008089-136008589	region	BACH2_direct_+/-		1
+region:chr2:136242674-136243174	chr2:136242674-136243174	region	BACH2_direct_+/-		1
+region:chr2:203740907-203741407	chr2:203740907-203741407	region	TCF7_direct_+/+		1
+region:chr2:203867488-203867988	chr2:203867488-203867988	region	TCF7_direct_+/+		1
+region:chr2:224764506-224765006	chr2:224764506-224765006	region	LEF1_direct_+/+		1
+region:chr2:84694139-84694639	chr2:84694139-84694639	region	LEF1_direct_+/+		1
+region:chr2:84846029-84846529	chr2:84846029-84846529	region	LEF1_direct_+/+		1
+region:chr2:84855668-84856168	chr2:84855668-84856168	region	LEF1_direct_+/+		1
+region:chr2:95074581-95075081	chr2:95074581-95075081	region	LEF1_direct_+/+;TBX21_direct_-/+		1
+region:chr3:60048469-60048969	chr3:60048469-60048969	region	LEF1_direct_+/+;TCF7_direct_+/+		1
+region:chr3:60056030-60056530	chr3:60056030-60056530	region	TBX21_direct_-/+		1
+region:chr3:71063839-71064339	chr3:71063839-71064339	region	KLF6_direct_-/-		1
+region:chr3:71127330-71127830	chr3:71127330-71127830	region	TBX21_direct_-/+		1
+region:chr3:71226730-71227230	chr3:71226730-71227230	region	BACH2_direct_+/-		1
+region:chr3:71421883-71422383	chr3:71421883-71422383	region	TBX21_direct_-/+		1
+region:chr4:108036227-108036727	chr4:108036227-108036727	region	LEF1_direct_+/+;TCF7_direct_+/+		1
+region:chr4:108045394-108045894	chr4:108045394-108045894	region	LEF1_direct_+/+;TCF7_direct_+/+		1
+region:chr4:108070765-108071265	chr4:108070765-108071265	region	LEF1_direct_+/+;TCF7_direct_+/+		1
+region:chr4:108072204-108072704	chr4:108072204-108072704	region	TBX21_direct_-/+		1
+region:chr4:108107966-108108466	chr4:108107966-108108466	region	LEF1_direct_+/+;TCF7_direct_+/+		1
+region:chr4:108113292-108113792	chr4:108113292-108113792	region	TBX21_direct_-/+		1
+region:chr4:108168498-108168998	chr4:108168498-108168998	region	LEF1_direct_+/+;TCF7_direct_+/+		1
+region:chr4:108315103-108315603	chr4:108315103-108315603	region	LEF1_direct_+/+;TCF7_direct_+/+		1
+region:chr4:109648512-109649012	chr4:109648512-109649012	region	TCF7_direct_+/+		1
+region:chr4:109649093-109649593	chr4:109649093-109649593	region	TBX21_direct_-/+		1
+region:chr4:142847129-142847629	chr4:142847129-142847629	region	LEF1_direct_+/+;TCF7_direct_+/+		1
+region:chr4:148060518-148061018	chr4:148060518-148061018	region	TCF7_direct_+/+		1
+region:chr4:153426440-153426940	chr4:153426440-153426940	region	TBX21_direct_-/+		1
+region:chr4:26857340-26857840	chr4:26857340-26857840	region	BACH2_direct_+/-		1
+region:chr5:111230323-111230823	chr5:111230323-111230823	region	LEF1_direct_+/+;TCF7_direct_+/+		1
+region:chr5:111252907-111253407	chr5:111252907-111253407	region	LEF1_direct_+/+;TBX21_direct_-/+;TCF7_direct_+/+		1
+region:chr5:134079644-134080144	chr5:134079644-134080144	region	LEF1_direct_+/+;TBX21_direct_-/+;TCF7_direct_+/+		1
+region:chr5:134086862-134087362	chr5:134086862-134087362	region	LEF1_direct_+/+;TCF7_direct_+/+		1
+region:chr5:134090523-134091023	chr5:134090523-134091023	region	LEF1_direct_+/+;TCF7_direct_+/+		1
+region:chr5:134137310-134137810	chr5:134137310-134137810	region	TBX21_direct_-/+		1
+region:chr5:142063772-142064272	chr5:142063772-142064272	region	LEF1_direct_+/+		1
+region:chr5:157217492-157217992	chr5:157217492-157217992	region	LEF1_direct_+/+		1
+region:chr5:16617457-16617957	chr5:16617457-16617957	region	TCF7_direct_+/+		1
+region:chr5:16617967-16618467	chr5:16617967-16618467	region	TBX21_direct_-/+		1
+region:chr5:16673129-16673629	chr5:16673129-16673629	region	TCF7_direct_+/+		1
+region:chr5:35780177-35780677	chr5:35780177-35780677	region	LEF1_direct_+/+;TCF7_direct_+/+		1
+region:chr5:35830560-35831060	chr5:35830560-35831060	region	LEF1_direct_+/+;TCF7_direct_+/+		1
+region:chr5:35854231-35854731	chr5:35854231-35854731	region	LEF1_direct_+/+;TCF7_direct_+/+		1
+region:chr5:56058769-56059269	chr5:56058769-56059269	region	LEF1_direct_+/+		1
+region:chr5:56071176-56071676	chr5:56071176-56071676	region	LEF1_direct_+/+		1
+region:chr5:56100322-56100822	chr5:56100322-56100822	region	LEF1_direct_+/+		1
+region:chr5:65035771-65036271	chr5:65035771-65036271	region	BACH2_direct_+/-		1
+region:chr5:80152743-80153243	chr5:80152743-80153243	region	LEF1_direct_+/+;TCF7_direct_+/+		1
+region:chr5:80218489-80218989	chr5:80218489-80218989	region	TBX21_direct_-/+		1
+region:chr5:80268910-80269410	chr5:80268910-80269410	region	TBX21_direct_-/+		1
+region:chr6:12011122-12011622	chr6:12011122-12011622	region	BACH2_direct_+/-		1
+region:chr6:158031299-158031799	chr6:158031299-158031799	region	BACH2_direct_+/-		1
+region:chr6:161273877-161274377	chr6:161273877-161274377	region	KLF6_direct_-/-		1
+region:chr6:31619997-31620497	chr6:31619997-31620497	region	BACH2_direct_+/-		1
+region:chr6:90219619-90220119	chr6:90219619-90220119	region	TBX21_direct_-/+		1
+region:chr6:90397866-90398366	chr6:90397866-90398366	region	BACH2_direct_+/-		1
+region:chr7:111009624-111010124	chr7:111009624-111010124	region	TBX21_direct_-/+		1
+region:chr7:111083363-111083863	chr7:111083363-111083863	region	TBX21_direct_-/+		1
+region:chr7:66075544-66076044	chr7:66075544-66076044	region	BACH2_direct_+/-		1
+region:chr7:66493430-66493930	chr7:66493430-66493930	region	BACH2_direct_+/-		1
+region:chr8:27351678-27352178	chr8:27351678-27352178	region	BACH2_direct_+/-		1
+region:chr8:30097848-30098348	chr8:30097848-30098348	region	TCF7_direct_+/+		1
+region:chr8:8228247-8228747	chr8:8228247-8228747	region	KLF6_direct_-/-		1
+region:chr9:125746390-125746890	chr9:125746390-125746890	region	KLF6_direct_-/-		1
+region:chr9:128092936-128093436	chr9:128092936-128093436	region	TCF7_direct_+/+		1
+region:chr9:76023815-76024315	chr9:76023815-76024315	region	LEF1_direct_+/+		1
+region:chrX:1468333-1468833	chrX:1468333-1468833	region	TBX21_direct_-/+		1
+region:chrX:53082008-53082508	chrX:53082008-53082508	region	KLF6_direct_-/-		1
+gene:ACTN1	ACTN1	gene	BACH2_direct_+/-	0.6414141414141403	0
+gene:ADAMTS6	ADAMTS6	gene	BACH2_direct_+/-	0.1565656565656565	0
+gene:AMN1	AMN1	gene	BACH2_direct_+/-	0.11868686868686876	0
+gene:APBA2	APBA2	gene	LEF1_direct_+/+;TCF7_direct_+/+	0.6868686868686851	0
+gene:ARMH1	ARMH1	gene	KLF6_direct_-/-	0.25252525252525204	0
+gene:BACH2	BACH2	gene	BACH2_direct_+/-;TBX21_direct_-/+	0.9797979797979735	0
+gene:CAMK4	CAMK4	gene	LEF1_direct_+/+;TBX21_direct_-/+;TCF7_direct_+/+	0.9040404040403989	0
+gene:CCR7	CCR7	gene	BACH2_direct_+/-;KLF6_direct_-/-;LEF1_direct_+/+;TBX21_direct_-/+;TCF7_direct_+/+	0.7499999999999972	0
+gene:CD28	CD28	gene	TCF7_direct_+/+	0.2121212121212118	0
+gene:CD55	CD55	gene	TBX21_direct_-/+	0.6237373737373729	0
+gene:CHD2	CHD2	gene	BACH2_direct_+/-	0.6893939393939376	0
+gene:CRTC3	CRTC3	gene	KLF6_direct_-/-	0.3888888888888893	0
+gene:CXCR4	CXCR4	gene	BACH2_direct_+/-	0.5050505050505061	0
+gene:DLG2	DLG2	gene	BACH2_direct_+/-	0.1767676767676766	0
+gene:DOCK10	DOCK10	gene	LEF1_direct_+/+	0.9545454545454486	0
+gene:EEF1G	EEF1G	gene	BACH2_direct_+/-;TBX21_direct_-/+	0.9419191919191862	0
+gene:EEF2	EEF2	gene	BACH2_direct_+/-	0.7777777777777746	0
+gene:EIF2B3	EIF2B3	gene	KLF6_direct_-/-	0.14393939393939392	0
+gene:EPHX2	EPHX2	gene	BACH2_direct_+/-	0.26515151515151475	0
+gene:FAM102A	FAM102A	gene	TCF7_direct_+/+	0.5303030303030309	0
+gene:FHIT	FHIT	gene	LEF1_direct_+/+;TBX21_direct_-/+;TCF7_direct_+/+	0.5404040404040409	0
+gene:FOXO1	FOXO1	gene	KLF6_direct_-/-;TBX21_direct_-/+	0.707070707070705	0
+gene:FOXP1	FOXP1	gene	BACH2_direct_+/-;KLF6_direct_-/-;TBX21_direct_-/+	0.9898989898989834	0
+gene:GRAP2	GRAP2	gene	TCF7_direct_+/+	0.6641414141414127	0
+gene:HIVEP1	HIVEP1	gene	BACH2_direct_+/-	0.3232323232323232	0
+gene:IGF1R	IGF1R	gene	LEF1_direct_+/+	0.5808080808080807	0
+gene:IL4R	IL4R	gene	BACH2_direct_+/-	0.15151515151515146	0
+gene:IL6ST	IL6ST	gene	LEF1_direct_+/+	0.6060606060606055	0
+gene:IL7R	IL7R	gene	LEF1_direct_+/+;TCF7_direct_+/+	0.8434343434343392	0
+gene:IMMP2L	IMMP2L	gene	TBX21_direct_-/+	0.6363636363636354	0
+gene:INPP4B	INPP4B	gene	LEF1_direct_+/+;TCF7_direct_+/+	0.696969696969695	0
+gene:ITK	ITK	gene	LEF1_direct_+/+	0.8005050505050469	0
+gene:JUNB	JUNB	gene	TBX21_direct_-/+	0.7803030303030271	0
+gene:KANTR	KANTR	gene	KLF6_direct_-/-	0.19949494949494923	0
+gene:KIZ	KIZ	gene	KLF6_direct_-/-	0.19949494949494923	0
+gene:LDHB	LDHB	gene	TCF7_direct_+/+	0.7651515151515121	0
+gene:LEF1	LEF1	gene	LEF1_direct_+/+;TBX21_direct_-/+;TCF7_direct_+/+	0.9646464646464585	0
+gene:LTB	LTB	gene	BACH2_direct_+/-	0.8510101010100967	0
+gene:MAL	MAL	gene	LEF1_direct_+/+;TBX21_direct_-/+	0.4520202020202028	0
+gene:MAML2	MAML2	gene	LEF1_direct_+/+;TCF7_direct_+/+	0.9469696969696911	0
+gene:MCUB	MCUB	gene	TBX21_direct_-/+;TCF7_direct_+/+	0.5606060606060608	0
+gene:NDFIP1	NDFIP1	gene	LEF1_direct_+/+	0.8484848484848442	0
+gene:NOP53	NOP53	gene	TBX21_direct_-/+	0.8156565656565619	0
+gene:NR3C2	NR3C2	gene	TCF7_direct_+/+	0.6792929292929276	0
+gene:PATJ	PATJ	gene	TCF7_direct_+/+	0.5000000000000011	0
+gene:PBX3	PBX3	gene	KLF6_direct_-/-	0.340909090909091	0
+gene:PCSK5	PCSK5	gene	LEF1_direct_+/+	0.5454545454545459	0
+gene:PDE3B	PDE3B	gene	LEF1_direct_+/+	0.9368686868686812	0
+gene:PRAG1	PRAG1	gene	KLF6_direct_-/-	0.22222222222222185	0
+gene:PRKCA	PRKCA	gene	LEF1_direct_+/+;TBX21_direct_-/+;TCF7_direct_+/+	0.8434343434343392	0
+gene:PRKN	PRKN	gene	KLF6_direct_-/-	0.4873737373737384	0
+gene:RALGAPA2	RALGAPA2	gene	KLF6_direct_-/-	0.3585858585858588	0
+gene:RETREG1	RETREG1	gene	TBX21_direct_-/+;TCF7_direct_+/+	0.4823232323232333	0
+gene:RGS10	RGS10	gene	BACH2_direct_+/-	0.38131313131313166	0
+gene:SARAF	SARAF	gene	TCF7_direct_+/+	0.9116161616161563	0
+gene:SERINC5	SERINC5	gene	LEF1_direct_+/+;TBX21_direct_-/+;TCF7_direct_+/+	0.8409090909090867	0
+gene:SLC12A6	SLC12A6	gene	KLF6_direct_-/-	0.3156565656565656	0
+gene:SLC25A6	SLC25A6	gene	TBX21_direct_-/+	0.6111111111111105	0
+gene:SNX9	SNX9	gene	BACH2_direct_+/-	0.3964646464646469	0
+gene:STIM2	STIM2	gene	BACH2_direct_+/-	0.4217171717171723	0
+gene:TCF7	TCF7	gene	LEF1_direct_+/+;TBX21_direct_-/+;TCF7_direct_+/+	0.8207070707070668	0
+gene:TMEM131L	TMEM131L	gene	TBX21_direct_-/+	0.7045454545454525	0
+gene:TNRC6B	TNRC6B	gene	BACH2_direct_+/-	0.9116161616161563	0
+gene:TNRC6C	TNRC6C	gene	KLF6_direct_-/-	0.6944444444444425	0
+gene:TPST1	TPST1	gene	BACH2_direct_+/-	0.18434343434343414	0
+gene:TRABD2A	TRABD2A	gene	LEF1_direct_+/+	0.618686868686868	0

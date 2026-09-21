@@ -1,0 +1,82 @@
+{
+  "fingerprint": "e03d09249d8c4091473bc24dd275ce4058fea2e63f40440f70027b5d127d6ad2",
+  "metrics": {
+    "barcodes_passing_atac_qc": 1580,
+    "cells_used": 1558,
+    "otsu_thresholds": {
+      "tss_enrichment_otsu_threshold": 23.095532496859303,
+      "unique_fragments_in_peaks_count_otsu_threshold": 4105.493738529434
+    },
+    "qc_thresholds": {
+      "frip_threshold": 0.0,
+      "tss_enrichment_threshold": 23.095532496859303,
+      "unique_fragments_threshold": 4105.493738529434
+    },
+    "region_set_sizes": {
+      "DARs_cell_type/B_cells": 9797,
+      "DARs_cell_type/FCGR3A_monocytes": 12731,
+      "DARs_cell_type/NK_cells": 7807,
+      "DARs_cell_type/T_cells": 6118,
+      "Topics_otsu/Topic1": 6599,
+      "Topics_otsu/Topic10": 4574,
+      "Topics_otsu/Topic11": 7271,
+      "Topics_otsu/Topic12": 7080,
+      "Topics_otsu/Topic13": 5088,
+      "Topics_otsu/Topic14": 7045,
+      "Topics_otsu/Topic15": 6584,
+      "Topics_otsu/Topic16": 9530,
+      "Topics_otsu/Topic17": 9541,
+      "Topics_otsu/Topic18": 7365,
+      "Topics_otsu/Topic19": 9327,
+      "Topics_otsu/Topic2": 7243,
+      "Topics_otsu/Topic20": 7080,
+      "Topics_otsu/Topic3": 5339,
+      "Topics_otsu/Topic4": 6382,
+      "Topics_otsu/Topic5": 5908,
+      "Topics_otsu/Topic6": 8816,
+      "Topics_otsu/Topic7": 6233,
+      "Topics_otsu/Topic8": 6439,
+      "Topics_otsu/Topic9": 10559,
+      "Topics_top_3000/Topic1": 3000,
+      "Topics_top_3000/Topic10": 3000,
+      "Topics_top_3000/Topic11": 3000,
+      "Topics_top_3000/Topic12": 3000,
+      "Topics_top_3000/Topic13": 3000,
+      "Topics_top_3000/Topic14": 3000,
+      "Topics_top_3000/Topic15": 3000,
+      "Topics_top_3000/Topic16": 2998,
+      "Topics_top_3000/Topic17": 3000,
+      "Topics_top_3000/Topic18": 3000,
+      "Topics_top_3000/Topic19": 3000,
+      "Topics_top_3000/Topic2": 3000,
+      "Topics_top_3000/Topic20": 3000,
+      "Topics_top_3000/Topic3": 3000,
+      "Topics_top_3000/Topic4": 3000,
+      "Topics_top_3000/Topic5": 3000,
+      "Topics_top_3000/Topic6": 3000,
+      "Topics_top_3000/Topic7": 3000,
+      "Topics_top_3000/Topic8": 3000,
+      "Topics_top_3000/Topic9": 3000
+    },
+    "regions": 186186,
+    "rna_qc_cells": 2904,
+    "selected_topics": 20,
+    "variable_regions": 35649
+  },
+  "outputs": {
+    "cells": "/mnt/storageBig8/work/muratli/PBMC10k_subset/scenicplus_work/stage2_cistopic/cells_passing_atac_and_rna_qc.tsv",
+    "cistopic_object": "/mnt/storageBig8/work/muratli/PBMC10k_subset/scenicplus_work/stage2_cistopic/cistopic_object.pkl",
+    "qc_dir": "/mnt/storageBig8/work/muratli/PBMC10k_subset/scenicplus_work/stage2_cistopic/qc",
+    "region_set_folder": "/mnt/storageBig8/work/muratli/PBMC10k_subset/scenicplus_work/stage2_cistopic/region_sets",
+    "topic_models": "/mnt/storageBig8/work/muratli/PBMC10k_subset/scenicplus_work/stage2_cistopic/topic_models.pkl"
+  },
+  "status": "completed",
+  "versions": {
+    "gensim": "4.3.2",
+    "lda": "3.0.0",
+    "pycisTopic": "2.0a0"
+  },
+  "warnings": [
+    "No DARs passed thresholds for: ['Plasmacytoid_dendritic_cells']"
+  ]
+}

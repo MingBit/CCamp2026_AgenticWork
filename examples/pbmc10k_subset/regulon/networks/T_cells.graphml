@@ -1,0 +1,3051 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d8" for="edge" attr.name="rho" attr.type="double" />
+  <key id="d7" for="edge" attr.name="importance" attr.type="double" />
+  <key id="d6" for="edge" attr.name="eregulons" attr.type="string" />
+  <key id="d5" for="edge" attr.name="interaction" attr.type="string" />
+  <key id="d4" for="node" attr.name="n_targets" attr.type="long" />
+  <key id="d3" for="node" attr.name="detected_fraction" attr.type="double" />
+  <key id="d2" for="node" attr.name="eregulons" attr.type="string" />
+  <key id="d1" for="node" attr.name="node_type" attr.type="string" />
+  <key id="d0" for="node" attr.name="label" attr.type="string" />
+  <graph edgedefault="directed">
+    <node id="TF:BACH2">
+      <data key="d0">BACH2</data>
+      <data key="d1">tf</data>
+      <data key="d2">BACH2_direct_+/-</data>
+      <data key="d3">0.9797979797979735</data>
+      <data key="d4">20</data>
+    </node>
+    <node id="TF:KLF6">
+      <data key="d0">KLF6</data>
+      <data key="d1">tf</data>
+      <data key="d2">KLF6_direct_-/-</data>
+      <data key="d3">0.2853535353535351</data>
+      <data key="d4">14</data>
+    </node>
+    <node id="TF:LEF1">
+      <data key="d0">LEF1</data>
+      <data key="d1">tf</data>
+      <data key="d2">LEF1_direct_+/+</data>
+      <data key="d3">0.9646464646464585</data>
+      <data key="d4">20</data>
+    </node>
+    <node id="TF:TBX21">
+      <data key="d0">TBX21</data>
+      <data key="d1">tf</data>
+      <data key="d2">TBX21_direct_-/+</data>
+      <data key="d3">0.007575757575757576</data>
+      <data key="d4">20</data>
+    </node>
+    <node id="TF:TCF7">
+      <data key="d0">TCF7</data>
+      <data key="d1">tf</data>
+      <data key="d2">TCF7_direct_+/+</data>
+      <data key="d3">0.8207070707070668</data>
+      <data key="d4">20</data>
+    </node>
+    <node id="region:chr10:119596581-119597081">
+      <data key="d0">chr10:119596581-119597081</data>
+      <data key="d1">region</data>
+      <data key="d2">BACH2_direct_+/-</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr11:14768571-14769071">
+      <data key="d0">chr11:14768571-14769071</data>
+      <data key="d1">region</data>
+      <data key="d2">LEF1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr11:62621924-62622424">
+      <data key="d0">chr11:62621924-62622424</data>
+      <data key="d1">region</data>
+      <data key="d2">BACH2_direct_+/-</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr11:62640664-62641164">
+      <data key="d0">chr11:62640664-62641164</data>
+      <data key="d1">region</data>
+      <data key="d2">TBX21_direct_-/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr11:85664868-85665368">
+      <data key="d0">chr11:85664868-85665368</data>
+      <data key="d1">region</data>
+      <data key="d2">BACH2_direct_+/-</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr11:96016106-96016606">
+      <data key="d0">chr11:96016106-96016606</data>
+      <data key="d1">region</data>
+      <data key="d2">LEF1_direct_+/+;TCF7_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr11:96105556-96106056">
+      <data key="d0">chr11:96105556-96106056</data>
+      <data key="d1">region</data>
+      <data key="d2">LEF1_direct_+/+;TCF7_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr11:96278465-96278965">
+      <data key="d0">chr11:96278465-96278965</data>
+      <data key="d1">region</data>
+      <data key="d2">LEF1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr12:21676728-21677228">
+      <data key="d0">chr12:21676728-21677228</data>
+      <data key="d1">region</data>
+      <data key="d2">TCF7_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr12:31728851-31729351">
+      <data key="d0">chr12:31728851-31729351</data>
+      <data key="d1">region</data>
+      <data key="d2">BACH2_direct_+/-</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr13:40485585-40486085">
+      <data key="d0">chr13:40485585-40486085</data>
+      <data key="d1">region</data>
+      <data key="d2">TBX21_direct_-/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr13:40666957-40667457">
+      <data key="d0">chr13:40666957-40667457</data>
+      <data key="d1">region</data>
+      <data key="d2">KLF6_direct_-/-</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr14:68793068-68793568">
+      <data key="d0">chr14:68793068-68793568</data>
+      <data key="d1">region</data>
+      <data key="d2">BACH2_direct_+/-</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr15:28876162-28876662">
+      <data key="d0">chr15:28876162-28876662</data>
+      <data key="d1">region</data>
+      <data key="d2">LEF1_direct_+/+;TCF7_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr15:28890755-28891255">
+      <data key="d0">chr15:28890755-28891255</data>
+      <data key="d1">region</data>
+      <data key="d2">LEF1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr15:34366186-34366686">
+      <data key="d0">chr15:34366186-34366686</data>
+      <data key="d1">region</data>
+      <data key="d2">KLF6_direct_-/-</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr15:90388536-90389036">
+      <data key="d0">chr15:90388536-90389036</data>
+      <data key="d1">region</data>
+      <data key="d2">KLF6_direct_-/-</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr15:93028563-93029063">
+      <data key="d0">chr15:93028563-93029063</data>
+      <data key="d1">region</data>
+      <data key="d2">BACH2_direct_+/-</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr15:98649378-98649878">
+      <data key="d0">chr15:98649378-98649878</data>
+      <data key="d1">region</data>
+      <data key="d2">LEF1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr15:98650993-98651493">
+      <data key="d0">chr15:98650993-98651493</data>
+      <data key="d1">region</data>
+      <data key="d2">LEF1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr16:27367453-27367953">
+      <data key="d0">chr16:27367453-27367953</data>
+      <data key="d1">region</data>
+      <data key="d2">BACH2_direct_+/-</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr17:40480463-40480963">
+      <data key="d0">chr17:40480463-40480963</data>
+      <data key="d1">region</data>
+      <data key="d2">KLF6_direct_-/-</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr17:40533368-40533868">
+      <data key="d0">chr17:40533368-40533868</data>
+      <data key="d1">region</data>
+      <data key="d2">LEF1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr17:40547342-40547842">
+      <data key="d0">chr17:40547342-40547842</data>
+      <data key="d1">region</data>
+      <data key="d2">LEF1_direct_+/+;TCF7_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr17:40560776-40561276">
+      <data key="d0">chr17:40560776-40561276</data>
+      <data key="d1">region</data>
+      <data key="d2">BACH2_direct_+/-</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr17:40564225-40564725">
+      <data key="d0">chr17:40564225-40564725</data>
+      <data key="d1">region</data>
+      <data key="d2">KLF6_direct_-/-</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr17:40597110-40597610">
+      <data key="d0">chr17:40597110-40597610</data>
+      <data key="d1">region</data>
+      <data key="d2">LEF1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr17:40605390-40605890">
+      <data key="d0">chr17:40605390-40605890</data>
+      <data key="d1">region</data>
+      <data key="d2">TBX21_direct_-/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr17:66201735-66202235">
+      <data key="d0">chr17:66201735-66202235</data>
+      <data key="d1">region</data>
+      <data key="d2">TBX21_direct_-/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr17:66285870-66286370">
+      <data key="d0">chr17:66285870-66286370</data>
+      <data key="d1">region</data>
+      <data key="d2">TBX21_direct_-/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr17:66331099-66331599">
+      <data key="d0">chr17:66331099-66331599</data>
+      <data key="d1">region</data>
+      <data key="d2">LEF1_direct_+/+;TBX21_direct_-/+;TCF7_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr17:66426317-66426817">
+      <data key="d0">chr17:66426317-66426817</data>
+      <data key="d1">region</data>
+      <data key="d2">TBX21_direct_-/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr17:66673599-66674099">
+      <data key="d0">chr17:66673599-66674099</data>
+      <data key="d1">region</data>
+      <data key="d2">LEF1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr17:78186938-78187438">
+      <data key="d0">chr17:78186938-78187438</data>
+      <data key="d1">region</data>
+      <data key="d2">KLF6_direct_-/-</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr19:12793458-12793958">
+      <data key="d0">chr19:12793458-12793958</data>
+      <data key="d1">region</data>
+      <data key="d2">TBX21_direct_-/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr19:4051742-4052242">
+      <data key="d0">chr19:4051742-4052242</data>
+      <data key="d1">region</data>
+      <data key="d2">BACH2_direct_+/-</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr19:4058233-4058733">
+      <data key="d0">chr19:4058233-4058733</data>
+      <data key="d1">region</data>
+      <data key="d2">BACH2_direct_+/-</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr19:47600233-47600733">
+      <data key="d0">chr19:47600233-47600733</data>
+      <data key="d1">region</data>
+      <data key="d2">TBX21_direct_-/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr19:47745388-47745888">
+      <data key="d0">chr19:47745388-47745888</data>
+      <data key="d1">region</data>
+      <data key="d2">TBX21_direct_-/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr1:207336541-207337041">
+      <data key="d0">chr1:207336541-207337041</data>
+      <data key="d1">region</data>
+      <data key="d2">TBX21_direct_-/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr1:44674121-44674621">
+      <data key="d0">chr1:44674121-44674621</data>
+      <data key="d1">region</data>
+      <data key="d2">KLF6_direct_-/-</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr1:44809429-44809929">
+      <data key="d0">chr1:44809429-44809929</data>
+      <data key="d1">region</data>
+      <data key="d2">KLF6_direct_-/-</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr1:61782615-61783115">
+      <data key="d0">chr1:61782615-61783115</data>
+      <data key="d1">region</data>
+      <data key="d2">TCF7_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr1:62271960-62272460">
+      <data key="d0">chr1:62271960-62272460</data>
+      <data key="d1">region</data>
+      <data key="d2">TCF7_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr1:62295882-62296382">
+      <data key="d0">chr1:62295882-62296382</data>
+      <data key="d1">region</data>
+      <data key="d2">TCF7_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr20:20712528-20713028">
+      <data key="d0">chr20:20712528-20713028</data>
+      <data key="d1">region</data>
+      <data key="d2">KLF6_direct_-/-</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr20:21125715-21126215">
+      <data key="d0">chr20:21125715-21126215</data>
+      <data key="d1">region</data>
+      <data key="d2">KLF6_direct_-/-</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr22:39940694-39941194">
+      <data key="d0">chr22:39940694-39941194</data>
+      <data key="d1">region</data>
+      <data key="d2">TCF7_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr22:39961385-39961885">
+      <data key="d0">chr22:39961385-39961885</data>
+      <data key="d1">region</data>
+      <data key="d2">BACH2_direct_+/-</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr2:136008089-136008589">
+      <data key="d0">chr2:136008089-136008589</data>
+      <data key="d1">region</data>
+      <data key="d2">BACH2_direct_+/-</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr2:136242674-136243174">
+      <data key="d0">chr2:136242674-136243174</data>
+      <data key="d1">region</data>
+      <data key="d2">BACH2_direct_+/-</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr2:203740907-203741407">
+      <data key="d0">chr2:203740907-203741407</data>
+      <data key="d1">region</data>
+      <data key="d2">TCF7_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr2:203867488-203867988">
+      <data key="d0">chr2:203867488-203867988</data>
+      <data key="d1">region</data>
+      <data key="d2">TCF7_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr2:224764506-224765006">
+      <data key="d0">chr2:224764506-224765006</data>
+      <data key="d1">region</data>
+      <data key="d2">LEF1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr2:84694139-84694639">
+      <data key="d0">chr2:84694139-84694639</data>
+      <data key="d1">region</data>
+      <data key="d2">LEF1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr2:84846029-84846529">
+      <data key="d0">chr2:84846029-84846529</data>
+      <data key="d1">region</data>
+      <data key="d2">LEF1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr2:84855668-84856168">
+      <data key="d0">chr2:84855668-84856168</data>
+      <data key="d1">region</data>
+      <data key="d2">LEF1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr2:95074581-95075081">
+      <data key="d0">chr2:95074581-95075081</data>
+      <data key="d1">region</data>
+      <data key="d2">LEF1_direct_+/+;TBX21_direct_-/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr3:60048469-60048969">
+      <data key="d0">chr3:60048469-60048969</data>
+      <data key="d1">region</data>
+      <data key="d2">LEF1_direct_+/+;TCF7_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr3:60056030-60056530">
+      <data key="d0">chr3:60056030-60056530</data>
+      <data key="d1">region</data>
+      <data key="d2">TBX21_direct_-/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr3:71063839-71064339">
+      <data key="d0">chr3:71063839-71064339</data>
+      <data key="d1">region</data>
+      <data key="d2">KLF6_direct_-/-</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr3:71127330-71127830">
+      <data key="d0">chr3:71127330-71127830</data>
+      <data key="d1">region</data>
+      <data key="d2">TBX21_direct_-/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr3:71226730-71227230">
+      <data key="d0">chr3:71226730-71227230</data>
+      <data key="d1">region</data>
+      <data key="d2">BACH2_direct_+/-</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr3:71421883-71422383">
+      <data key="d0">chr3:71421883-71422383</data>
+      <data key="d1">region</data>
+      <data key="d2">TBX21_direct_-/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr4:108036227-108036727">
+      <data key="d0">chr4:108036227-108036727</data>
+      <data key="d1">region</data>
+      <data key="d2">LEF1_direct_+/+;TCF7_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr4:108045394-108045894">
+      <data key="d0">chr4:108045394-108045894</data>
+      <data key="d1">region</data>
+      <data key="d2">LEF1_direct_+/+;TCF7_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr4:108070765-108071265">
+      <data key="d0">chr4:108070765-108071265</data>
+      <data key="d1">region</data>
+      <data key="d2">LEF1_direct_+/+;TCF7_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr4:108072204-108072704">
+      <data key="d0">chr4:108072204-108072704</data>
+      <data key="d1">region</data>
+      <data key="d2">TBX21_direct_-/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr4:108107966-108108466">
+      <data key="d0">chr4:108107966-108108466</data>
+      <data key="d1">region</data>
+      <data key="d2">LEF1_direct_+/+;TCF7_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr4:108113292-108113792">
+      <data key="d0">chr4:108113292-108113792</data>
+      <data key="d1">region</data>
+      <data key="d2">TBX21_direct_-/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr4:108168498-108168998">
+      <data key="d0">chr4:108168498-108168998</data>
+      <data key="d1">region</data>
+      <data key="d2">LEF1_direct_+/+;TCF7_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr4:108315103-108315603">
+      <data key="d0">chr4:108315103-108315603</data>
+      <data key="d1">region</data>
+      <data key="d2">LEF1_direct_+/+;TCF7_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr4:109648512-109649012">
+      <data key="d0">chr4:109648512-109649012</data>
+      <data key="d1">region</data>
+      <data key="d2">TCF7_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr4:109649093-109649593">
+      <data key="d0">chr4:109649093-109649593</data>
+      <data key="d1">region</data>
+      <data key="d2">TBX21_direct_-/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr4:142847129-142847629">
+      <data key="d0">chr4:142847129-142847629</data>
+      <data key="d1">region</data>
+      <data key="d2">LEF1_direct_+/+;TCF7_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr4:148060518-148061018">
+      <data key="d0">chr4:148060518-148061018</data>
+      <data key="d1">region</data>
+      <data key="d2">TCF7_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr4:153426440-153426940">
+      <data key="d0">chr4:153426440-153426940</data>
+      <data key="d1">region</data>
+      <data key="d2">TBX21_direct_-/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr4:26857340-26857840">
+      <data key="d0">chr4:26857340-26857840</data>
+      <data key="d1">region</data>
+      <data key="d2">BACH2_direct_+/-</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr5:111230323-111230823">
+      <data key="d0">chr5:111230323-111230823</data>
+      <data key="d1">region</data>
+      <data key="d2">LEF1_direct_+/+;TCF7_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr5:111252907-111253407">
+      <data key="d0">chr5:111252907-111253407</data>
+      <data key="d1">region</data>
+      <data key="d2">LEF1_direct_+/+;TBX21_direct_-/+;TCF7_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr5:134079644-134080144">
+      <data key="d0">chr5:134079644-134080144</data>
+      <data key="d1">region</data>
+      <data key="d2">LEF1_direct_+/+;TBX21_direct_-/+;TCF7_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr5:134086862-134087362">
+      <data key="d0">chr5:134086862-134087362</data>
+      <data key="d1">region</data>
+      <data key="d2">LEF1_direct_+/+;TCF7_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr5:134090523-134091023">
+      <data key="d0">chr5:134090523-134091023</data>
+      <data key="d1">region</data>
+      <data key="d2">LEF1_direct_+/+;TCF7_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr5:134137310-134137810">
+      <data key="d0">chr5:134137310-134137810</data>
+      <data key="d1">region</data>
+      <data key="d2">TBX21_direct_-/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr5:142063772-142064272">
+      <data key="d0">chr5:142063772-142064272</data>
+      <data key="d1">region</data>
+      <data key="d2">LEF1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr5:157217492-157217992">
+      <data key="d0">chr5:157217492-157217992</data>
+      <data key="d1">region</data>
+      <data key="d2">LEF1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr5:16617457-16617957">
+      <data key="d0">chr5:16617457-16617957</data>
+      <data key="d1">region</data>
+      <data key="d2">TCF7_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr5:16617967-16618467">
+      <data key="d0">chr5:16617967-16618467</data>
+      <data key="d1">region</data>
+      <data key="d2">TBX21_direct_-/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr5:16673129-16673629">
+      <data key="d0">chr5:16673129-16673629</data>
+      <data key="d1">region</data>
+      <data key="d2">TCF7_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr5:35780177-35780677">
+      <data key="d0">chr5:35780177-35780677</data>
+      <data key="d1">region</data>
+      <data key="d2">LEF1_direct_+/+;TCF7_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr5:35830560-35831060">
+      <data key="d0">chr5:35830560-35831060</data>
+      <data key="d1">region</data>
+      <data key="d2">LEF1_direct_+/+;TCF7_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr5:35854231-35854731">
+      <data key="d0">chr5:35854231-35854731</data>
+      <data key="d1">region</data>
+      <data key="d2">LEF1_direct_+/+;TCF7_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr5:56058769-56059269">
+      <data key="d0">chr5:56058769-56059269</data>
+      <data key="d1">region</data>
+      <data key="d2">LEF1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr5:56071176-56071676">
+      <data key="d0">chr5:56071176-56071676</data>
+      <data key="d1">region</data>
+      <data key="d2">LEF1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr5:56100322-56100822">
+      <data key="d0">chr5:56100322-56100822</data>
+      <data key="d1">region</data>
+      <data key="d2">LEF1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr5:65035771-65036271">
+      <data key="d0">chr5:65035771-65036271</data>
+      <data key="d1">region</data>
+      <data key="d2">BACH2_direct_+/-</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr5:80152743-80153243">
+      <data key="d0">chr5:80152743-80153243</data>
+      <data key="d1">region</data>
+      <data key="d2">LEF1_direct_+/+;TCF7_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr5:80218489-80218989">
+      <data key="d0">chr5:80218489-80218989</data>
+      <data key="d1">region</data>
+      <data key="d2">TBX21_direct_-/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr5:80268910-80269410">
+      <data key="d0">chr5:80268910-80269410</data>
+      <data key="d1">region</data>
+      <data key="d2">TBX21_direct_-/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr6:12011122-12011622">
+      <data key="d0">chr6:12011122-12011622</data>
+      <data key="d1">region</data>
+      <data key="d2">BACH2_direct_+/-</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr6:158031299-158031799">
+      <data key="d0">chr6:158031299-158031799</data>
+      <data key="d1">region</data>
+      <data key="d2">BACH2_direct_+/-</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr6:161273877-161274377">
+      <data key="d0">chr6:161273877-161274377</data>
+      <data key="d1">region</data>
+      <data key="d2">KLF6_direct_-/-</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr6:31619997-31620497">
+      <data key="d0">chr6:31619997-31620497</data>
+      <data key="d1">region</data>
+      <data key="d2">BACH2_direct_+/-</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr6:90219619-90220119">
+      <data key="d0">chr6:90219619-90220119</data>
+      <data key="d1">region</data>
+      <data key="d2">TBX21_direct_-/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr6:90397866-90398366">
+      <data key="d0">chr6:90397866-90398366</data>
+      <data key="d1">region</data>
+      <data key="d2">BACH2_direct_+/-</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr7:111009624-111010124">
+      <data key="d0">chr7:111009624-111010124</data>
+      <data key="d1">region</data>
+      <data key="d2">TBX21_direct_-/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr7:111083363-111083863">
+      <data key="d0">chr7:111083363-111083863</data>
+      <data key="d1">region</data>
+      <data key="d2">TBX21_direct_-/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr7:66075544-66076044">
+      <data key="d0">chr7:66075544-66076044</data>
+      <data key="d1">region</data>
+      <data key="d2">BACH2_direct_+/-</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr7:66493430-66493930">
+      <data key="d0">chr7:66493430-66493930</data>
+      <data key="d1">region</data>
+      <data key="d2">BACH2_direct_+/-</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr8:27351678-27352178">
+      <data key="d0">chr8:27351678-27352178</data>
+      <data key="d1">region</data>
+      <data key="d2">BACH2_direct_+/-</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr8:30097848-30098348">
+      <data key="d0">chr8:30097848-30098348</data>
+      <data key="d1">region</data>
+      <data key="d2">TCF7_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr8:8228247-8228747">
+      <data key="d0">chr8:8228247-8228747</data>
+      <data key="d1">region</data>
+      <data key="d2">KLF6_direct_-/-</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr9:125746390-125746890">
+      <data key="d0">chr9:125746390-125746890</data>
+      <data key="d1">region</data>
+      <data key="d2">KLF6_direct_-/-</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr9:128092936-128093436">
+      <data key="d0">chr9:128092936-128093436</data>
+      <data key="d1">region</data>
+      <data key="d2">TCF7_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr9:76023815-76024315">
+      <data key="d0">chr9:76023815-76024315</data>
+      <data key="d1">region</data>
+      <data key="d2">LEF1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chrX:1468333-1468833">
+      <data key="d0">chrX:1468333-1468833</data>
+      <data key="d1">region</data>
+      <data key="d2">TBX21_direct_-/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chrX:53082008-53082508">
+      <data key="d0">chrX:53082008-53082508</data>
+      <data key="d1">region</data>
+      <data key="d2">KLF6_direct_-/-</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="gene:ACTN1">
+      <data key="d0">ACTN1</data>
+      <data key="d1">gene</data>
+      <data key="d2">BACH2_direct_+/-</data>
+      <data key="d3">0.6414141414141403</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:ADAMTS6">
+      <data key="d0">ADAMTS6</data>
+      <data key="d1">gene</data>
+      <data key="d2">BACH2_direct_+/-</data>
+      <data key="d3">0.1565656565656565</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:AMN1">
+      <data key="d0">AMN1</data>
+      <data key="d1">gene</data>
+      <data key="d2">BACH2_direct_+/-</data>
+      <data key="d3">0.11868686868686876</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:APBA2">
+      <data key="d0">APBA2</data>
+      <data key="d1">gene</data>
+      <data key="d2">LEF1_direct_+/+;TCF7_direct_+/+</data>
+      <data key="d3">0.6868686868686851</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:ARMH1">
+      <data key="d0">ARMH1</data>
+      <data key="d1">gene</data>
+      <data key="d2">KLF6_direct_-/-</data>
+      <data key="d3">0.25252525252525204</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:BACH2">
+      <data key="d0">BACH2</data>
+      <data key="d1">gene</data>
+      <data key="d2">BACH2_direct_+/-;TBX21_direct_-/+</data>
+      <data key="d3">0.9797979797979735</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:CAMK4">
+      <data key="d0">CAMK4</data>
+      <data key="d1">gene</data>
+      <data key="d2">LEF1_direct_+/+;TBX21_direct_-/+;TCF7_direct_+/+</data>
+      <data key="d3">0.9040404040403989</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:CCR7">
+      <data key="d0">CCR7</data>
+      <data key="d1">gene</data>
+      <data key="d2">BACH2_direct_+/-;KLF6_direct_-/-;LEF1_direct_+/+;TBX21_direct_-/+;TCF7_direct_+/+</data>
+      <data key="d3">0.7499999999999972</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:CD28">
+      <data key="d0">CD28</data>
+      <data key="d1">gene</data>
+      <data key="d2">TCF7_direct_+/+</data>
+      <data key="d3">0.2121212121212118</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:CD55">
+      <data key="d0">CD55</data>
+      <data key="d1">gene</data>
+      <data key="d2">TBX21_direct_-/+</data>
+      <data key="d3">0.6237373737373729</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:CHD2">
+      <data key="d0">CHD2</data>
+      <data key="d1">gene</data>
+      <data key="d2">BACH2_direct_+/-</data>
+      <data key="d3">0.6893939393939376</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:CRTC3">
+      <data key="d0">CRTC3</data>
+      <data key="d1">gene</data>
+      <data key="d2">KLF6_direct_-/-</data>
+      <data key="d3">0.3888888888888893</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:CXCR4">
+      <data key="d0">CXCR4</data>
+      <data key="d1">gene</data>
+      <data key="d2">BACH2_direct_+/-</data>
+      <data key="d3">0.5050505050505061</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:DLG2">
+      <data key="d0">DLG2</data>
+      <data key="d1">gene</data>
+      <data key="d2">BACH2_direct_+/-</data>
+      <data key="d3">0.1767676767676766</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:DOCK10">
+      <data key="d0">DOCK10</data>
+      <data key="d1">gene</data>
+      <data key="d2">LEF1_direct_+/+</data>
+      <data key="d3">0.9545454545454486</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:EEF1G">
+      <data key="d0">EEF1G</data>
+      <data key="d1">gene</data>
+      <data key="d2">BACH2_direct_+/-;TBX21_direct_-/+</data>
+      <data key="d3">0.9419191919191862</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:EEF2">
+      <data key="d0">EEF2</data>
+      <data key="d1">gene</data>
+      <data key="d2">BACH2_direct_+/-</data>
+      <data key="d3">0.7777777777777746</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:EIF2B3">
+      <data key="d0">EIF2B3</data>
+      <data key="d1">gene</data>
+      <data key="d2">KLF6_direct_-/-</data>
+      <data key="d3">0.14393939393939392</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:EPHX2">
+      <data key="d0">EPHX2</data>
+      <data key="d1">gene</data>
+      <data key="d2">BACH2_direct_+/-</data>
+      <data key="d3">0.26515151515151475</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:FAM102A">
+      <data key="d0">FAM102A</data>
+      <data key="d1">gene</data>
+      <data key="d2">TCF7_direct_+/+</data>
+      <data key="d3">0.5303030303030309</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:FHIT">
+      <data key="d0">FHIT</data>
+      <data key="d1">gene</data>
+      <data key="d2">LEF1_direct_+/+;TBX21_direct_-/+;TCF7_direct_+/+</data>
+      <data key="d3">0.5404040404040409</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:FOXO1">
+      <data key="d0">FOXO1</data>
+      <data key="d1">gene</data>
+      <data key="d2">KLF6_direct_-/-;TBX21_direct_-/+</data>
+      <data key="d3">0.707070707070705</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:FOXP1">
+      <data key="d0">FOXP1</data>
+      <data key="d1">gene</data>
+      <data key="d2">BACH2_direct_+/-;KLF6_direct_-/-;TBX21_direct_-/+</data>
+      <data key="d3">0.9898989898989834</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:GRAP2">
+      <data key="d0">GRAP2</data>
+      <data key="d1">gene</data>
+      <data key="d2">TCF7_direct_+/+</data>
+      <data key="d3">0.6641414141414127</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:HIVEP1">
+      <data key="d0">HIVEP1</data>
+      <data key="d1">gene</data>
+      <data key="d2">BACH2_direct_+/-</data>
+      <data key="d3">0.3232323232323232</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:IGF1R">
+      <data key="d0">IGF1R</data>
+      <data key="d1">gene</data>
+      <data key="d2">LEF1_direct_+/+</data>
+      <data key="d3">0.5808080808080807</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:IL4R">
+      <data key="d0">IL4R</data>
+      <data key="d1">gene</data>
+      <data key="d2">BACH2_direct_+/-</data>
+      <data key="d3">0.15151515151515146</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:IL6ST">
+      <data key="d0">IL6ST</data>
+      <data key="d1">gene</data>
+      <data key="d2">LEF1_direct_+/+</data>
+      <data key="d3">0.6060606060606055</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:IL7R">
+      <data key="d0">IL7R</data>
+      <data key="d1">gene</data>
+      <data key="d2">LEF1_direct_+/+;TCF7_direct_+/+</data>
+      <data key="d3">0.8434343434343392</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:IMMP2L">
+      <data key="d0">IMMP2L</data>
+      <data key="d1">gene</data>
+      <data key="d2">TBX21_direct_-/+</data>
+      <data key="d3">0.6363636363636354</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:INPP4B">
+      <data key="d0">INPP4B</data>
+      <data key="d1">gene</data>
+      <data key="d2">LEF1_direct_+/+;TCF7_direct_+/+</data>
+      <data key="d3">0.696969696969695</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:ITK">
+      <data key="d0">ITK</data>
+      <data key="d1">gene</data>
+      <data key="d2">LEF1_direct_+/+</data>
+      <data key="d3">0.8005050505050469</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:JUNB">
+      <data key="d0">JUNB</data>
+      <data key="d1">gene</data>
+      <data key="d2">TBX21_direct_-/+</data>
+      <data key="d3">0.7803030303030271</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:KANTR">
+      <data key="d0">KANTR</data>
+      <data key="d1">gene</data>
+      <data key="d2">KLF6_direct_-/-</data>
+      <data key="d3">0.19949494949494923</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:KIZ">
+      <data key="d0">KIZ</data>
+      <data key="d1">gene</data>
+      <data key="d2">KLF6_direct_-/-</data>
+      <data key="d3">0.19949494949494923</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:LDHB">
+      <data key="d0">LDHB</data>
+      <data key="d1">gene</data>
+      <data key="d2">TCF7_direct_+/+</data>
+      <data key="d3">0.7651515151515121</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:LEF1">
+      <data key="d0">LEF1</data>
+      <data key="d1">gene</data>
+      <data key="d2">LEF1_direct_+/+;TBX21_direct_-/+;TCF7_direct_+/+</data>
+      <data key="d3">0.9646464646464585</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:LTB">
+      <data key="d0">LTB</data>
+      <data key="d1">gene</data>
+      <data key="d2">BACH2_direct_+/-</data>
+      <data key="d3">0.8510101010100967</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:MAL">
+      <data key="d0">MAL</data>
+      <data key="d1">gene</data>
+      <data key="d2">LEF1_direct_+/+;TBX21_direct_-/+</data>
+      <data key="d3">0.4520202020202028</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:MAML2">
+      <data key="d0">MAML2</data>
+      <data key="d1">gene</data>
+      <data key="d2">LEF1_direct_+/+;TCF7_direct_+/+</data>
+      <data key="d3">0.9469696969696911</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:MCUB">
+      <data key="d0">MCUB</data>
+      <data key="d1">gene</data>
+      <data key="d2">TBX21_direct_-/+;TCF7_direct_+/+</data>
+      <data key="d3">0.5606060606060608</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:NDFIP1">
+      <data key="d0">NDFIP1</data>
+      <data key="d1">gene</data>
+      <data key="d2">LEF1_direct_+/+</data>
+      <data key="d3">0.8484848484848442</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:NOP53">
+      <data key="d0">NOP53</data>
+      <data key="d1">gene</data>
+      <data key="d2">TBX21_direct_-/+</data>
+      <data key="d3">0.8156565656565619</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:NR3C2">
+      <data key="d0">NR3C2</data>
+      <data key="d1">gene</data>
+      <data key="d2">TCF7_direct_+/+</data>
+      <data key="d3">0.6792929292929276</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:PATJ">
+      <data key="d0">PATJ</data>
+      <data key="d1">gene</data>
+      <data key="d2">TCF7_direct_+/+</data>
+      <data key="d3">0.5000000000000011</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:PBX3">
+      <data key="d0">PBX3</data>
+      <data key="d1">gene</data>
+      <data key="d2">KLF6_direct_-/-</data>
+      <data key="d3">0.340909090909091</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:PCSK5">
+      <data key="d0">PCSK5</data>
+      <data key="d1">gene</data>
+      <data key="d2">LEF1_direct_+/+</data>
+      <data key="d3">0.5454545454545459</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:PDE3B">
+      <data key="d0">PDE3B</data>
+      <data key="d1">gene</data>
+      <data key="d2">LEF1_direct_+/+</data>
+      <data key="d3">0.9368686868686812</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:PRAG1">
+      <data key="d0">PRAG1</data>
+      <data key="d1">gene</data>
+      <data key="d2">KLF6_direct_-/-</data>
+      <data key="d3">0.22222222222222185</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:PRKCA">
+      <data key="d0">PRKCA</data>
+      <data key="d1">gene</data>
+      <data key="d2">LEF1_direct_+/+;TBX21_direct_-/+;TCF7_direct_+/+</data>
+      <data key="d3">0.8434343434343392</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:PRKN">
+      <data key="d0">PRKN</data>
+      <data key="d1">gene</data>
+      <data key="d2">KLF6_direct_-/-</data>
+      <data key="d3">0.4873737373737384</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:RALGAPA2">
+      <data key="d0">RALGAPA2</data>
+      <data key="d1">gene</data>
+      <data key="d2">KLF6_direct_-/-</data>
+      <data key="d3">0.3585858585858588</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:RETREG1">
+      <data key="d0">RETREG1</data>
+      <data key="d1">gene</data>
+      <data key="d2">TBX21_direct_-/+;TCF7_direct_+/+</data>
+      <data key="d3">0.4823232323232333</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:RGS10">
+      <data key="d0">RGS10</data>
+      <data key="d1">gene</data>
+      <data key="d2">BACH2_direct_+/-</data>
+      <data key="d3">0.38131313131313166</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:SARAF">
+      <data key="d0">SARAF</data>
+      <data key="d1">gene</data>
+      <data key="d2">TCF7_direct_+/+</data>
+      <data key="d3">0.9116161616161563</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:SERINC5">
+      <data key="d0">SERINC5</data>
+      <data key="d1">gene</data>
+      <data key="d2">LEF1_direct_+/+;TBX21_direct_-/+;TCF7_direct_+/+</data>
+      <data key="d3">0.8409090909090867</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:SLC12A6">
+      <data key="d0">SLC12A6</data>
+      <data key="d1">gene</data>
+      <data key="d2">KLF6_direct_-/-</data>
+      <data key="d3">0.3156565656565656</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:SLC25A6">
+      <data key="d0">SLC25A6</data>
+      <data key="d1">gene</data>
+      <data key="d2">TBX21_direct_-/+</data>
+      <data key="d3">0.6111111111111105</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:SNX9">
+      <data key="d0">SNX9</data>
+      <data key="d1">gene</data>
+      <data key="d2">BACH2_direct_+/-</data>
+      <data key="d3">0.3964646464646469</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:STIM2">
+      <data key="d0">STIM2</data>
+      <data key="d1">gene</data>
+      <data key="d2">BACH2_direct_+/-</data>
+      <data key="d3">0.4217171717171723</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:TCF7">
+      <data key="d0">TCF7</data>
+      <data key="d1">gene</data>
+      <data key="d2">LEF1_direct_+/+;TBX21_direct_-/+;TCF7_direct_+/+</data>
+      <data key="d3">0.8207070707070668</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:TMEM131L">
+      <data key="d0">TMEM131L</data>
+      <data key="d1">gene</data>
+      <data key="d2">TBX21_direct_-/+</data>
+      <data key="d3">0.7045454545454525</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:TNRC6B">
+      <data key="d0">TNRC6B</data>
+      <data key="d1">gene</data>
+      <data key="d2">BACH2_direct_+/-</data>
+      <data key="d3">0.9116161616161563</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:TNRC6C">
+      <data key="d0">TNRC6C</data>
+      <data key="d1">gene</data>
+      <data key="d2">KLF6_direct_-/-</data>
+      <data key="d3">0.6944444444444425</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:TPST1">
+      <data key="d0">TPST1</data>
+      <data key="d1">gene</data>
+      <data key="d2">BACH2_direct_+/-</data>
+      <data key="d3">0.18434343434343414</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:TRABD2A">
+      <data key="d0">TRABD2A</data>
+      <data key="d1">gene</data>
+      <data key="d2">LEF1_direct_+/+</data>
+      <data key="d3">0.618686868686868</data>
+      <data key="d4">0</data>
+    </node>
+    <edge source="TF:BACH2" target="region:chr10:119596581-119597081" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">BACH2_direct_+/-</data>
+    </edge>
+    <edge source="TF:BACH2" target="region:chr11:62621924-62622424" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">BACH2_direct_+/-</data>
+    </edge>
+    <edge source="TF:BACH2" target="region:chr11:85664868-85665368" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">BACH2_direct_+/-</data>
+    </edge>
+    <edge source="TF:BACH2" target="region:chr12:31728851-31729351" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">BACH2_direct_+/-</data>
+    </edge>
+    <edge source="TF:BACH2" target="region:chr14:68793068-68793568" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">BACH2_direct_+/-</data>
+    </edge>
+    <edge source="TF:BACH2" target="region:chr15:93028563-93029063" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">BACH2_direct_+/-</data>
+    </edge>
+    <edge source="TF:BACH2" target="region:chr16:27367453-27367953" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">BACH2_direct_+/-</data>
+    </edge>
+    <edge source="TF:BACH2" target="region:chr17:40560776-40561276" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">BACH2_direct_+/-</data>
+    </edge>
+    <edge source="TF:BACH2" target="region:chr19:4051742-4052242" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">BACH2_direct_+/-</data>
+    </edge>
+    <edge source="TF:BACH2" target="region:chr19:4058233-4058733" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">BACH2_direct_+/-</data>
+    </edge>
+    <edge source="TF:BACH2" target="region:chr22:39961385-39961885" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">BACH2_direct_+/-</data>
+    </edge>
+    <edge source="TF:BACH2" target="region:chr2:136008089-136008589" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">BACH2_direct_+/-</data>
+    </edge>
+    <edge source="TF:BACH2" target="region:chr2:136242674-136243174" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">BACH2_direct_+/-</data>
+    </edge>
+    <edge source="TF:BACH2" target="region:chr3:71226730-71227230" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">BACH2_direct_+/-</data>
+    </edge>
+    <edge source="TF:BACH2" target="region:chr4:26857340-26857840" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">BACH2_direct_+/-</data>
+    </edge>
+    <edge source="TF:BACH2" target="region:chr5:65035771-65036271" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">BACH2_direct_+/-</data>
+    </edge>
+    <edge source="TF:BACH2" target="region:chr6:12011122-12011622" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">BACH2_direct_+/-</data>
+    </edge>
+    <edge source="TF:BACH2" target="region:chr6:158031299-158031799" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">BACH2_direct_+/-</data>
+    </edge>
+    <edge source="TF:BACH2" target="region:chr6:31619997-31620497" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">BACH2_direct_+/-</data>
+    </edge>
+    <edge source="TF:BACH2" target="region:chr6:90397866-90398366" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">BACH2_direct_+/-</data>
+    </edge>
+    <edge source="TF:BACH2" target="region:chr7:66075544-66076044" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">BACH2_direct_+/-</data>
+    </edge>
+    <edge source="TF:BACH2" target="region:chr7:66493430-66493930" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">BACH2_direct_+/-</data>
+    </edge>
+    <edge source="TF:BACH2" target="region:chr8:27351678-27352178" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">BACH2_direct_+/-</data>
+    </edge>
+    <edge source="TF:BACH2" target="gene:ACTN1" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">BACH2_direct_+/-</data>
+      <data key="d7">3.7476247718274727</data>
+      <data key="d8">0.2680345394800399</data>
+    </edge>
+    <edge source="TF:BACH2" target="gene:ADAMTS6" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">BACH2_direct_+/-</data>
+      <data key="d7">1.9637109653285856</data>
+      <data key="d8">0.1681613119752575</data>
+    </edge>
+    <edge source="TF:BACH2" target="gene:AMN1" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">BACH2_direct_+/-</data>
+      <data key="d7">1.919699723086265</data>
+      <data key="d8">0.1214178991102598</data>
+    </edge>
+    <edge source="TF:BACH2" target="gene:BACH2" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">BACH2_direct_+/-</data>
+      <data key="d7">10.318698214247934</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="TF:BACH2" target="gene:CCR7" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">BACH2_direct_+/-</data>
+      <data key="d7">4.697285446509335</data>
+      <data key="d8">0.4227153216734887</data>
+    </edge>
+    <edge source="TF:BACH2" target="gene:CHD2" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">BACH2_direct_+/-</data>
+      <data key="d7">1.957783860896685</data>
+      <data key="d8">0.1002734552398613</data>
+    </edge>
+    <edge source="TF:BACH2" target="gene:CXCR4" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">BACH2_direct_+/-</data>
+      <data key="d7">3.2768567542921248</data>
+      <data key="d8">0.2076769962641591</data>
+    </edge>
+    <edge source="TF:BACH2" target="gene:DLG2" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">BACH2_direct_+/-</data>
+      <data key="d7">2.645738505218437</data>
+      <data key="d8">0.155969126088955</data>
+    </edge>
+    <edge source="TF:BACH2" target="gene:EEF1G" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">BACH2_direct_+/-</data>
+      <data key="d7">2.1215108914565977</data>
+      <data key="d8">0.2553961023456776</data>
+    </edge>
+    <edge source="TF:BACH2" target="gene:EEF2" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">BACH2_direct_+/-</data>
+      <data key="d7">2.170536046632172</data>
+      <data key="d8">0.1459325483119331</data>
+    </edge>
+    <edge source="TF:BACH2" target="gene:EPHX2" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">BACH2_direct_+/-</data>
+      <data key="d7">2.279932719446169</data>
+      <data key="d8">0.1924715757957841</data>
+    </edge>
+    <edge source="TF:BACH2" target="gene:FOXP1" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">BACH2_direct_+/-</data>
+      <data key="d7">4.247636828192661</data>
+      <data key="d8">0.4240435083853415</data>
+    </edge>
+    <edge source="TF:BACH2" target="gene:HIVEP1" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">BACH2_direct_+/-</data>
+      <data key="d7">2.934392159786726</data>
+      <data key="d8">0.1110397289031412</data>
+    </edge>
+    <edge source="TF:BACH2" target="gene:IL4R" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">BACH2_direct_+/-</data>
+      <data key="d7">6.357163436218012</data>
+      <data key="d8">0.1882653381091435</data>
+    </edge>
+    <edge source="TF:BACH2" target="gene:LTB" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">BACH2_direct_+/-</data>
+      <data key="d7">3.0627661739403864</data>
+      <data key="d8">0.2495384345820278</data>
+    </edge>
+    <edge source="TF:BACH2" target="gene:RGS10" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">BACH2_direct_+/-</data>
+      <data key="d7">2.2241005188076177</data>
+      <data key="d8">0.1499392539576466</data>
+    </edge>
+    <edge source="TF:BACH2" target="gene:SNX9" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">BACH2_direct_+/-</data>
+      <data key="d7">4.058458679917278</data>
+      <data key="d8">0.2065251685155877</data>
+    </edge>
+    <edge source="TF:BACH2" target="gene:STIM2" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">BACH2_direct_+/-</data>
+      <data key="d7">2.495223847633117</data>
+      <data key="d8">0.0762895843367994</data>
+    </edge>
+    <edge source="TF:BACH2" target="gene:TNRC6B" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">BACH2_direct_+/-</data>
+      <data key="d7">3.065308883020754</data>
+      <data key="d8">0.196567655400984</data>
+    </edge>
+    <edge source="TF:BACH2" target="gene:TPST1" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">BACH2_direct_+/-</data>
+      <data key="d7">2.0722346987532845</data>
+      <data key="d8">0.1608015570562945</data>
+    </edge>
+    <edge source="TF:KLF6" target="region:chr13:40666957-40667457" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">KLF6_direct_-/-</data>
+    </edge>
+    <edge source="TF:KLF6" target="region:chr15:34366186-34366686" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">KLF6_direct_-/-</data>
+    </edge>
+    <edge source="TF:KLF6" target="region:chr15:90388536-90389036" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">KLF6_direct_-/-</data>
+    </edge>
+    <edge source="TF:KLF6" target="region:chr17:40480463-40480963" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">KLF6_direct_-/-</data>
+    </edge>
+    <edge source="TF:KLF6" target="region:chr17:40564225-40564725" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">KLF6_direct_-/-</data>
+    </edge>
+    <edge source="TF:KLF6" target="region:chr17:78186938-78187438" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">KLF6_direct_-/-</data>
+    </edge>
+    <edge source="TF:KLF6" target="region:chr1:44674121-44674621" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">KLF6_direct_-/-</data>
+    </edge>
+    <edge source="TF:KLF6" target="region:chr1:44809429-44809929" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">KLF6_direct_-/-</data>
+    </edge>
+    <edge source="TF:KLF6" target="region:chr20:20712528-20713028" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">KLF6_direct_-/-</data>
+    </edge>
+    <edge source="TF:KLF6" target="region:chr20:21125715-21126215" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">KLF6_direct_-/-</data>
+    </edge>
+    <edge source="TF:KLF6" target="region:chr3:71063839-71064339" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">KLF6_direct_-/-</data>
+    </edge>
+    <edge source="TF:KLF6" target="region:chr6:161273877-161274377" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">KLF6_direct_-/-</data>
+    </edge>
+    <edge source="TF:KLF6" target="region:chr8:8228247-8228747" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">KLF6_direct_-/-</data>
+    </edge>
+    <edge source="TF:KLF6" target="region:chr9:125746390-125746890" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">KLF6_direct_-/-</data>
+    </edge>
+    <edge source="TF:KLF6" target="region:chrX:53082008-53082508" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">KLF6_direct_-/-</data>
+    </edge>
+    <edge source="TF:KLF6" target="gene:ARMH1" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">KLF6_direct_-/-</data>
+      <data key="d7">0.572816407786233</data>
+      <data key="d8">-0.133682370263801</data>
+    </edge>
+    <edge source="TF:KLF6" target="gene:CCR7" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">KLF6_direct_-/-</data>
+      <data key="d7">1.956806467134992</data>
+      <data key="d8">-0.3021084692152157</data>
+    </edge>
+    <edge source="TF:KLF6" target="gene:CRTC3" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">KLF6_direct_-/-</data>
+      <data key="d7">0.7790107761844836</data>
+      <data key="d8">-0.1280613119859571</data>
+    </edge>
+    <edge source="TF:KLF6" target="gene:EIF2B3" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">KLF6_direct_-/-</data>
+      <data key="d7">1.807905481171167</data>
+      <data key="d8">-0.0994819629821169</data>
+    </edge>
+    <edge source="TF:KLF6" target="gene:FOXO1" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">KLF6_direct_-/-</data>
+      <data key="d7">0.8169356885464361</data>
+      <data key="d8">-0.1531406329395648</data>
+    </edge>
+    <edge source="TF:KLF6" target="gene:FOXP1" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">KLF6_direct_-/-</data>
+      <data key="d7">1.169411115628148</data>
+      <data key="d8">-0.2452047828991183</data>
+    </edge>
+    <edge source="TF:KLF6" target="gene:KANTR" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">KLF6_direct_-/-</data>
+      <data key="d7">0.8929623188654472</data>
+      <data key="d8">-0.0961896398125345</data>
+    </edge>
+    <edge source="TF:KLF6" target="gene:KIZ" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">KLF6_direct_-/-</data>
+      <data key="d7">0.4710281494290833</data>
+      <data key="d8">-0.0837923496528597</data>
+    </edge>
+    <edge source="TF:KLF6" target="gene:PBX3" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">KLF6_direct_-/-</data>
+      <data key="d7">0.4677874872162573</data>
+      <data key="d8">-0.0809274744623074</data>
+    </edge>
+    <edge source="TF:KLF6" target="gene:PRAG1" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">KLF6_direct_-/-</data>
+      <data key="d7">0.7451170200055881</data>
+      <data key="d8">-0.1058529537473023</data>
+    </edge>
+    <edge source="TF:KLF6" target="gene:PRKN" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">KLF6_direct_-/-</data>
+      <data key="d7">1.2339056070553145</data>
+      <data key="d8">-0.1675583017148208</data>
+    </edge>
+    <edge source="TF:KLF6" target="gene:RALGAPA2" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">KLF6_direct_-/-</data>
+      <data key="d7">0.6069974499335087</data>
+      <data key="d8">-0.0702965652832244</data>
+    </edge>
+    <edge source="TF:KLF6" target="gene:SLC12A6" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">KLF6_direct_-/-</data>
+      <data key="d7">1.6076740852889575</data>
+      <data key="d8">-0.072547182323239</data>
+    </edge>
+    <edge source="TF:KLF6" target="gene:TNRC6C" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">KLF6_direct_-/-</data>
+      <data key="d7">0.4706382753027614</data>
+      <data key="d8">-0.126166326392646</data>
+    </edge>
+    <edge source="TF:LEF1" target="region:chr11:14768571-14769071" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">LEF1_direct_+/+</data>
+    </edge>
+    <edge source="TF:LEF1" target="region:chr11:96016106-96016606" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">LEF1_direct_+/+</data>
+    </edge>
+    <edge source="TF:LEF1" target="region:chr11:96105556-96106056" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">LEF1_direct_+/+</data>
+    </edge>
+    <edge source="TF:LEF1" target="region:chr11:96278465-96278965" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">LEF1_direct_+/+</data>
+    </edge>
+    <edge source="TF:LEF1" target="region:chr15:28876162-28876662" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">LEF1_direct_+/+</data>
+    </edge>
+    <edge source="TF:LEF1" target="region:chr15:28890755-28891255" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">LEF1_direct_+/+</data>
+    </edge>
+    <edge source="TF:LEF1" target="region:chr15:98649378-98649878" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">LEF1_direct_+/+</data>
+    </edge>
+    <edge source="TF:LEF1" target="region:chr15:98650993-98651493" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">LEF1_direct_+/+</data>
+    </edge>
+    <edge source="TF:LEF1" target="region:chr17:40533368-40533868" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">LEF1_direct_+/+</data>
+    </edge>
+    <edge source="TF:LEF1" target="region:chr17:40547342-40547842" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">LEF1_direct_+/+</data>
+    </edge>
+    <edge source="TF:LEF1" target="region:chr17:40597110-40597610" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">LEF1_direct_+/+</data>
+    </edge>
+    <edge source="TF:LEF1" target="region:chr17:66331099-66331599" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">LEF1_direct_+/+</data>
+    </edge>
+    <edge source="TF:LEF1" target="region:chr17:66673599-66674099" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">LEF1_direct_+/+</data>
+    </edge>
+    <edge source="TF:LEF1" target="region:chr2:224764506-224765006" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">LEF1_direct_+/+</data>
+    </edge>
+    <edge source="TF:LEF1" target="region:chr2:84694139-84694639" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">LEF1_direct_+/+</data>
+    </edge>
+    <edge source="TF:LEF1" target="region:chr2:84846029-84846529" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">LEF1_direct_+/+</data>
+    </edge>
+    <edge source="TF:LEF1" target="region:chr2:84855668-84856168" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">LEF1_direct_+/+</data>
+    </edge>
+    <edge source="TF:LEF1" target="region:chr2:95074581-95075081" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">LEF1_direct_+/+</data>
+    </edge>
+    <edge source="TF:LEF1" target="region:chr3:60048469-60048969" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">LEF1_direct_+/+</data>
+    </edge>
+    <edge source="TF:LEF1" target="region:chr4:108036227-108036727" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">LEF1_direct_+/+</data>
+    </edge>
+    <edge source="TF:LEF1" target="region:chr4:108045394-108045894" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">LEF1_direct_+/+</data>
+    </edge>
+    <edge source="TF:LEF1" target="region:chr4:108070765-108071265" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">LEF1_direct_+/+</data>
+    </edge>
+    <edge source="TF:LEF1" target="region:chr4:108107966-108108466" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">LEF1_direct_+/+</data>
+    </edge>
+    <edge source="TF:LEF1" target="region:chr4:108168498-108168998" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">LEF1_direct_+/+</data>
+    </edge>
+    <edge source="TF:LEF1" target="region:chr4:108315103-108315603" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">LEF1_direct_+/+</data>
+    </edge>
+    <edge source="TF:LEF1" target="region:chr4:142847129-142847629" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">LEF1_direct_+/+</data>
+    </edge>
+    <edge source="TF:LEF1" target="region:chr5:111230323-111230823" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">LEF1_direct_+/+</data>
+    </edge>
+    <edge source="TF:LEF1" target="region:chr5:111252907-111253407" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">LEF1_direct_+/+</data>
+    </edge>
+    <edge source="TF:LEF1" target="region:chr5:134079644-134080144" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">LEF1_direct_+/+</data>
+    </edge>
+    <edge source="TF:LEF1" target="region:chr5:134086862-134087362" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">LEF1_direct_+/+</data>
+    </edge>
+    <edge source="TF:LEF1" target="region:chr5:134090523-134091023" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">LEF1_direct_+/+</data>
+    </edge>
+    <edge source="TF:LEF1" target="region:chr5:142063772-142064272" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">LEF1_direct_+/+</data>
+    </edge>
+    <edge source="TF:LEF1" target="region:chr5:157217492-157217992" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">LEF1_direct_+/+</data>
+    </edge>
+    <edge source="TF:LEF1" target="region:chr5:35780177-35780677" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">LEF1_direct_+/+</data>
+    </edge>
+    <edge source="TF:LEF1" target="region:chr5:35830560-35831060" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">LEF1_direct_+/+</data>
+    </edge>
+    <edge source="TF:LEF1" target="region:chr5:35854231-35854731" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">LEF1_direct_+/+</data>
+    </edge>
+    <edge source="TF:LEF1" target="region:chr5:56058769-56059269" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">LEF1_direct_+/+</data>
+    </edge>
+    <edge source="TF:LEF1" target="region:chr5:56071176-56071676" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">LEF1_direct_+/+</data>
+    </edge>
+    <edge source="TF:LEF1" target="region:chr5:56100322-56100822" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">LEF1_direct_+/+</data>
+    </edge>
+    <edge source="TF:LEF1" target="region:chr5:80152743-80153243" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">LEF1_direct_+/+</data>
+    </edge>
+    <edge source="TF:LEF1" target="region:chr9:76023815-76024315" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">LEF1_direct_+/+</data>
+    </edge>
+    <edge source="TF:LEF1" target="gene:APBA2" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">LEF1_direct_+/+</data>
+      <data key="d7">8.632914454470678</data>
+      <data key="d8">0.389287509117779</data>
+    </edge>
+    <edge source="TF:LEF1" target="gene:CAMK4" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">LEF1_direct_+/+</data>
+      <data key="d7">12.98723374273393</data>
+      <data key="d8">0.5721525955085964</data>
+    </edge>
+    <edge source="TF:LEF1" target="gene:CCR7" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">LEF1_direct_+/+</data>
+      <data key="d7">8.569701586368868</data>
+      <data key="d8">0.5010648156558284</data>
+    </edge>
+    <edge source="TF:LEF1" target="gene:DOCK10" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">LEF1_direct_+/+</data>
+      <data key="d7">9.338619271460043</data>
+      <data key="d8">0.368964527418738</data>
+    </edge>
+    <edge source="TF:LEF1" target="gene:FHIT" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">LEF1_direct_+/+</data>
+      <data key="d7">10.875251632998255</data>
+      <data key="d8">0.4190953711911504</data>
+    </edge>
+    <edge source="TF:LEF1" target="gene:IGF1R" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">LEF1_direct_+/+</data>
+      <data key="d7">8.845887127900276</data>
+      <data key="d8">0.3646753410290456</data>
+    </edge>
+    <edge source="TF:LEF1" target="gene:IL6ST" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">LEF1_direct_+/+</data>
+      <data key="d7">9.021532925298652</data>
+      <data key="d8">0.3975819009206115</data>
+    </edge>
+    <edge source="TF:LEF1" target="gene:IL7R" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">LEF1_direct_+/+</data>
+      <data key="d7">8.913094125213124</data>
+      <data key="d8">0.5246297787511244</data>
+    </edge>
+    <edge source="TF:LEF1" target="gene:INPP4B" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">LEF1_direct_+/+</data>
+      <data key="d7">9.940587396788436</data>
+      <data key="d8">0.3873507620917658</data>
+    </edge>
+    <edge source="TF:LEF1" target="gene:ITK" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">LEF1_direct_+/+</data>
+      <data key="d7">9.98928518929534</data>
+      <data key="d8">0.4190816908191641</data>
+    </edge>
+    <edge source="TF:LEF1" target="gene:LEF1" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">LEF1_direct_+/+</data>
+      <data key="d7">13.712219992644185</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="TF:LEF1" target="gene:MAL" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">LEF1_direct_+/+</data>
+      <data key="d7">8.470816499904444</data>
+      <data key="d8">0.352361115130903</data>
+    </edge>
+    <edge source="TF:LEF1" target="gene:MAML2" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">LEF1_direct_+/+</data>
+      <data key="d7">9.118680938548316</data>
+      <data key="d8">0.4604285843422511</data>
+    </edge>
+    <edge source="TF:LEF1" target="gene:NDFIP1" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">LEF1_direct_+/+</data>
+      <data key="d7">8.482412170725231</data>
+      <data key="d8">0.3880975929380232</data>
+    </edge>
+    <edge source="TF:LEF1" target="gene:PCSK5" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">LEF1_direct_+/+</data>
+      <data key="d7">8.277472996751758</data>
+      <data key="d8">0.3117735717110454</data>
+    </edge>
+    <edge source="TF:LEF1" target="gene:PDE3B" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">LEF1_direct_+/+</data>
+      <data key="d7">8.571102797834705</data>
+      <data key="d8">0.5652702496254455</data>
+    </edge>
+    <edge source="TF:LEF1" target="gene:PRKCA" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">LEF1_direct_+/+</data>
+      <data key="d7">13.712209992644183</data>
+      <data key="d8">0.5064876530076011</data>
+    </edge>
+    <edge source="TF:LEF1" target="gene:SERINC5" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">LEF1_direct_+/+</data>
+      <data key="d7">10.01546759557429</data>
+      <data key="d8">0.5131544976361254</data>
+    </edge>
+    <edge source="TF:LEF1" target="gene:TCF7" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">LEF1_direct_+/+</data>
+      <data key="d7">9.993011485512133</data>
+      <data key="d8">0.5118475758507279</data>
+    </edge>
+    <edge source="TF:LEF1" target="gene:TRABD2A" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">LEF1_direct_+/+</data>
+      <data key="d7">8.71289683376796</data>
+      <data key="d8">0.4363395887024944</data>
+    </edge>
+    <edge source="TF:TBX21" target="region:chr11:62640664-62641164" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">TBX21_direct_-/+</data>
+    </edge>
+    <edge source="TF:TBX21" target="region:chr13:40485585-40486085" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">TBX21_direct_-/+</data>
+    </edge>
+    <edge source="TF:TBX21" target="region:chr17:40605390-40605890" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">TBX21_direct_-/+</data>
+    </edge>
+    <edge source="TF:TBX21" target="region:chr17:66201735-66202235" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">TBX21_direct_-/+</data>
+    </edge>
+    <edge source="TF:TBX21" target="region:chr17:66285870-66286370" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">TBX21_direct_-/+</data>
+    </edge>
+    <edge source="TF:TBX21" target="region:chr17:66331099-66331599" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">TBX21_direct_-/+</data>
+    </edge>
+    <edge source="TF:TBX21" target="region:chr17:66426317-66426817" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">TBX21_direct_-/+</data>
+    </edge>
+    <edge source="TF:TBX21" target="region:chr19:12793458-12793958" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">TBX21_direct_-/+</data>
+    </edge>
+    <edge source="TF:TBX21" target="region:chr19:47600233-47600733" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">TBX21_direct_-/+</data>
+    </edge>
+    <edge source="TF:TBX21" target="region:chr19:47745388-47745888" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">TBX21_direct_-/+</data>
+    </edge>
+    <edge source="TF:TBX21" target="region:chr1:207336541-207337041" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">TBX21_direct_-/+</data>
+    </edge>
+    <edge source="TF:TBX21" target="region:chr2:95074581-95075081" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">TBX21_direct_-/+</data>
+    </edge>
+    <edge source="TF:TBX21" target="region:chr3:60056030-60056530" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">TBX21_direct_-/+</data>
+    </edge>
+    <edge source="TF:TBX21" target="region:chr3:71127330-71127830" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">TBX21_direct_-/+</data>
+    </edge>
+    <edge source="TF:TBX21" target="region:chr3:71421883-71422383" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">TBX21_direct_-/+</data>
+    </edge>
+    <edge source="TF:TBX21" target="region:chr4:108072204-108072704" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">TBX21_direct_-/+</data>
+    </edge>
+    <edge source="TF:TBX21" target="region:chr4:108113292-108113792" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">TBX21_direct_-/+</data>
+    </edge>
+    <edge source="TF:TBX21" target="region:chr4:109649093-109649593" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">TBX21_direct_-/+</data>
+    </edge>
+    <edge source="TF:TBX21" target="region:chr4:153426440-153426940" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">TBX21_direct_-/+</data>
+    </edge>
+    <edge source="TF:TBX21" target="region:chr5:111252907-111253407" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">TBX21_direct_-/+</data>
+    </edge>
+    <edge source="TF:TBX21" target="region:chr5:134079644-134080144" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">TBX21_direct_-/+</data>
+    </edge>
+    <edge source="TF:TBX21" target="region:chr5:134137310-134137810" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">TBX21_direct_-/+</data>
+    </edge>
+    <edge source="TF:TBX21" target="region:chr5:16617967-16618467" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">TBX21_direct_-/+</data>
+    </edge>
+    <edge source="TF:TBX21" target="region:chr5:80218489-80218989" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">TBX21_direct_-/+</data>
+    </edge>
+    <edge source="TF:TBX21" target="region:chr5:80268910-80269410" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">TBX21_direct_-/+</data>
+    </edge>
+    <edge source="TF:TBX21" target="region:chr6:90219619-90220119" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">TBX21_direct_-/+</data>
+    </edge>
+    <edge source="TF:TBX21" target="region:chr7:111009624-111010124" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">TBX21_direct_-/+</data>
+    </edge>
+    <edge source="TF:TBX21" target="region:chr7:111083363-111083863" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">TBX21_direct_-/+</data>
+    </edge>
+    <edge source="TF:TBX21" target="region:chrX:1468333-1468833" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">TBX21_direct_-/+</data>
+    </edge>
+    <edge source="TF:TBX21" target="gene:BACH2" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">TBX21_direct_-/+</data>
+      <data key="d7">1.1177283343057771</data>
+      <data key="d8">-0.2475069062882202</data>
+    </edge>
+    <edge source="TF:TBX21" target="gene:CAMK4" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">TBX21_direct_-/+</data>
+      <data key="d7">0.6975426337341865</data>
+      <data key="d8">-0.215443097524443</data>
+    </edge>
+    <edge source="TF:TBX21" target="gene:CCR7" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">TBX21_direct_-/+</data>
+      <data key="d7">0.6783359823935714</data>
+      <data key="d8">-0.1952147820515926</data>
+    </edge>
+    <edge source="TF:TBX21" target="gene:CD55" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">TBX21_direct_-/+</data>
+      <data key="d7">1.3360106151222084</data>
+      <data key="d8">-0.1424151636062312</data>
+    </edge>
+    <edge source="TF:TBX21" target="gene:EEF1G" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">TBX21_direct_-/+</data>
+      <data key="d7">1.043042143766476</data>
+      <data key="d8">-0.1835836026857067</data>
+    </edge>
+    <edge source="TF:TBX21" target="gene:FHIT" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">TBX21_direct_-/+</data>
+      <data key="d7">0.7789855319003486</data>
+      <data key="d8">-0.1678680775579897</data>
+    </edge>
+    <edge source="TF:TBX21" target="gene:FOXO1" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">TBX21_direct_-/+</data>
+      <data key="d7">0.7595632447748846</data>
+      <data key="d8">-0.174392982983627</data>
+    </edge>
+    <edge source="TF:TBX21" target="gene:FOXP1" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">TBX21_direct_-/+</data>
+      <data key="d7">0.4748470109258187</data>
+      <data key="d8">-0.2244713197469307</data>
+    </edge>
+    <edge source="TF:TBX21" target="gene:IMMP2L" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">TBX21_direct_-/+</data>
+      <data key="d7">0.7424713133928567</data>
+      <data key="d8">-0.1285218801001648</data>
+    </edge>
+    <edge source="TF:TBX21" target="gene:JUNB" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">TBX21_direct_-/+</data>
+      <data key="d7">0.6239488629076361</data>
+      <data key="d8">-0.1142035559235078</data>
+    </edge>
+    <edge source="TF:TBX21" target="gene:LEF1" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">TBX21_direct_-/+</data>
+      <data key="d7">0.7818771926352548</data>
+      <data key="d8">-0.2099997522605575</data>
+    </edge>
+    <edge source="TF:TBX21" target="gene:MAL" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">TBX21_direct_-/+</data>
+      <data key="d7">0.5504714607496171</data>
+      <data key="d8">-0.1264919675988243</data>
+    </edge>
+    <edge source="TF:TBX21" target="gene:MCUB" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">TBX21_direct_-/+</data>
+      <data key="d7">0.6253719849981455</data>
+      <data key="d8">-0.1264644614874781</data>
+    </edge>
+    <edge source="TF:TBX21" target="gene:NOP53" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">TBX21_direct_-/+</data>
+      <data key="d7">1.2778030104655715</data>
+      <data key="d8">-0.1737395470094805</data>
+    </edge>
+    <edge source="TF:TBX21" target="gene:PRKCA" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">TBX21_direct_-/+</data>
+      <data key="d7">0.495814648367027</data>
+      <data key="d8">-0.1744874946406291</data>
+    </edge>
+    <edge source="TF:TBX21" target="gene:RETREG1" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">TBX21_direct_-/+</data>
+      <data key="d7">0.5834257542328317</data>
+      <data key="d8">-0.1330087160807231</data>
+    </edge>
+    <edge source="TF:TBX21" target="gene:SERINC5" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">TBX21_direct_-/+</data>
+      <data key="d7">0.5454864035765322</data>
+      <data key="d8">-0.182645346955229</data>
+    </edge>
+    <edge source="TF:TBX21" target="gene:SLC25A6" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">TBX21_direct_-/+</data>
+      <data key="d7">0.8621608139911613</data>
+      <data key="d8">-0.0704847831924576</data>
+    </edge>
+    <edge source="TF:TBX21" target="gene:TCF7" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">TBX21_direct_-/+</data>
+      <data key="d7">0.7467811428870015</data>
+      <data key="d8">-0.1829963606914738</data>
+    </edge>
+    <edge source="TF:TBX21" target="gene:TMEM131L" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">TBX21_direct_-/+</data>
+      <data key="d7">0.4737150026919024</data>
+      <data key="d8">-0.0919717979339547</data>
+    </edge>
+    <edge source="TF:TCF7" target="region:chr11:96016106-96016606" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">TCF7_direct_+/+</data>
+    </edge>
+    <edge source="TF:TCF7" target="region:chr11:96105556-96106056" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">TCF7_direct_+/+</data>
+    </edge>
+    <edge source="TF:TCF7" target="region:chr12:21676728-21677228" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">TCF7_direct_+/+</data>
+    </edge>
+    <edge source="TF:TCF7" target="region:chr15:28876162-28876662" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">TCF7_direct_+/+</data>
+    </edge>
+    <edge source="TF:TCF7" target="region:chr17:40547342-40547842" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">TCF7_direct_+/+</data>
+    </edge>
+    <edge source="TF:TCF7" target="region:chr17:66331099-66331599" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">TCF7_direct_+/+</data>
+    </edge>
+    <edge source="TF:TCF7" target="region:chr1:61782615-61783115" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">TCF7_direct_+/+</data>
+    </edge>
+    <edge source="TF:TCF7" target="region:chr1:62271960-62272460" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">TCF7_direct_+/+</data>
+    </edge>
+    <edge source="TF:TCF7" target="region:chr1:62295882-62296382" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">TCF7_direct_+/+</data>
+    </edge>
+    <edge source="TF:TCF7" target="region:chr22:39940694-39941194" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">TCF7_direct_+/+</data>
+    </edge>
+    <edge source="TF:TCF7" target="region:chr2:203740907-203741407" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">TCF7_direct_+/+</data>
+    </edge>
+    <edge source="TF:TCF7" target="region:chr2:203867488-203867988" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">TCF7_direct_+/+</data>
+    </edge>
+    <edge source="TF:TCF7" target="region:chr3:60048469-60048969" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">TCF7_direct_+/+</data>
+    </edge>
+    <edge source="TF:TCF7" target="region:chr4:108036227-108036727" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">TCF7_direct_+/+</data>
+    </edge>
+    <edge source="TF:TCF7" target="region:chr4:108045394-108045894" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">TCF7_direct_+/+</data>
+    </edge>
+    <edge source="TF:TCF7" target="region:chr4:108070765-108071265" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">TCF7_direct_+/+</data>
+    </edge>
+    <edge source="TF:TCF7" target="region:chr4:108107966-108108466" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">TCF7_direct_+/+</data>
+    </edge>
+    <edge source="TF:TCF7" target="region:chr4:108168498-108168998" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">TCF7_direct_+/+</data>
+    </edge>
+    <edge source="TF:TCF7" target="region:chr4:108315103-108315603" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">TCF7_direct_+/+</data>
+    </edge>
+    <edge source="TF:TCF7" target="region:chr4:109648512-109649012" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">TCF7_direct_+/+</data>
+    </edge>
+    <edge source="TF:TCF7" target="region:chr4:142847129-142847629" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">TCF7_direct_+/+</data>
+    </edge>
+    <edge source="TF:TCF7" target="region:chr4:148060518-148061018" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">TCF7_direct_+/+</data>
+    </edge>
+    <edge source="TF:TCF7" target="region:chr5:111230323-111230823" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">TCF7_direct_+/+</data>
+    </edge>
+    <edge source="TF:TCF7" target="region:chr5:111252907-111253407" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">TCF7_direct_+/+</data>
+    </edge>
+    <edge source="TF:TCF7" target="region:chr5:134079644-134080144" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">TCF7_direct_+/+</data>
+    </edge>
+    <edge source="TF:TCF7" target="region:chr5:134086862-134087362" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">TCF7_direct_+/+</data>
+    </edge>
+    <edge source="TF:TCF7" target="region:chr5:134090523-134091023" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">TCF7_direct_+/+</data>
+    </edge>
+    <edge source="TF:TCF7" target="region:chr5:16617457-16617957" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">TCF7_direct_+/+</data>
+    </edge>
+    <edge source="TF:TCF7" target="region:chr5:16673129-16673629" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">TCF7_direct_+/+</data>
+    </edge>
+    <edge source="TF:TCF7" target="region:chr5:35780177-35780677" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">TCF7_direct_+/+</data>
+    </edge>
+    <edge source="TF:TCF7" target="region:chr5:35830560-35831060" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">TCF7_direct_+/+</data>
+    </edge>
+    <edge source="TF:TCF7" target="region:chr5:35854231-35854731" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">TCF7_direct_+/+</data>
+    </edge>
+    <edge source="TF:TCF7" target="region:chr5:80152743-80153243" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">TCF7_direct_+/+</data>
+    </edge>
+    <edge source="TF:TCF7" target="region:chr8:30097848-30098348" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">TCF7_direct_+/+</data>
+    </edge>
+    <edge source="TF:TCF7" target="region:chr9:128092936-128093436" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">TCF7_direct_+/+</data>
+    </edge>
+    <edge source="TF:TCF7" target="gene:APBA2" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">TCF7_direct_+/+</data>
+      <data key="d7">3.1292577043702177</data>
+      <data key="d8">0.295636675516032</data>
+    </edge>
+    <edge source="TF:TCF7" target="gene:CAMK4" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">TCF7_direct_+/+</data>
+      <data key="d7">5.949034033807924</data>
+      <data key="d8">0.51018144976664</data>
+    </edge>
+    <edge source="TF:TCF7" target="gene:CCR7" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">TCF7_direct_+/+</data>
+      <data key="d7">2.990039066100243</data>
+      <data key="d8">0.3496104146477948</data>
+    </edge>
+    <edge source="TF:TCF7" target="gene:CD28" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">TCF7_direct_+/+</data>
+      <data key="d7">3.088720424969402</data>
+      <data key="d8">0.2293561685682763</data>
+    </edge>
+    <edge source="TF:TCF7" target="gene:FAM102A" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">TCF7_direct_+/+</data>
+      <data key="d7">3.330458436584033</data>
+      <data key="d8">0.2820567644322637</data>
+    </edge>
+    <edge source="TF:TCF7" target="gene:FHIT" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">TCF7_direct_+/+</data>
+      <data key="d7">3.311391870230543</data>
+      <data key="d8">0.2879037123333389</data>
+    </edge>
+    <edge source="TF:TCF7" target="gene:GRAP2" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">TCF7_direct_+/+</data>
+      <data key="d7">3.022806082254679</data>
+      <data key="d8">0.2034960543235617</data>
+    </edge>
+    <edge source="TF:TCF7" target="gene:IL7R" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">TCF7_direct_+/+</data>
+      <data key="d7">5.382001331011891</data>
+      <data key="d8">0.4726688966184307</data>
+    </edge>
+    <edge source="TF:TCF7" target="gene:INPP4B" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">TCF7_direct_+/+</data>
+      <data key="d7">4.223979293812573</data>
+      <data key="d8">0.3503342186119154</data>
+    </edge>
+    <edge source="TF:TCF7" target="gene:LDHB" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">TCF7_direct_+/+</data>
+      <data key="d7">3.9807678887942046</data>
+      <data key="d8">0.3656653060093774</data>
+    </edge>
+    <edge source="TF:TCF7" target="gene:LEF1" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">TCF7_direct_+/+</data>
+      <data key="d7">7.47887547379747</data>
+      <data key="d8">0.5118475758507279</data>
+    </edge>
+    <edge source="TF:TCF7" target="gene:MAML2" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">TCF7_direct_+/+</data>
+      <data key="d7">4.390797422414019</data>
+      <data key="d8">0.3873917526647089</data>
+    </edge>
+    <edge source="TF:TCF7" target="gene:MCUB" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">TCF7_direct_+/+</data>
+      <data key="d7">3.095867100552679</data>
+      <data key="d8">0.2254587090356661</data>
+    </edge>
+    <edge source="TF:TCF7" target="gene:NR3C2" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">TCF7_direct_+/+</data>
+      <data key="d7">3.4012242205631966</data>
+      <data key="d8">0.2862815285745421</data>
+    </edge>
+    <edge source="TF:TCF7" target="gene:PATJ" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">TCF7_direct_+/+</data>
+      <data key="d7">3.730544267425689</data>
+      <data key="d8">0.2450795089777672</data>
+    </edge>
+    <edge source="TF:TCF7" target="gene:PRKCA" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">TCF7_direct_+/+</data>
+      <data key="d7">5.079267822533418</data>
+      <data key="d8">0.4046798398758191</data>
+    </edge>
+    <edge source="TF:TCF7" target="gene:RETREG1" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">TCF7_direct_+/+</data>
+      <data key="d7">2.9577117812660343</data>
+      <data key="d8">0.2321319743949693</data>
+    </edge>
+    <edge source="TF:TCF7" target="gene:SARAF" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">TCF7_direct_+/+</data>
+      <data key="d7">3.237948586006317</data>
+      <data key="d8">0.2685301540996984</data>
+    </edge>
+    <edge source="TF:TCF7" target="gene:SERINC5" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">TCF7_direct_+/+</data>
+      <data key="d7">4.278494506963503</data>
+      <data key="d8">0.4091652882483834</data>
+    </edge>
+    <edge source="TF:TCF7" target="gene:TCF7" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">TCF7_direct_+/+</data>
+      <data key="d7">7.47888547379747</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="region:chr10:119596581-119597081" target="gene:RGS10" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">BACH2_direct_+/-</data>
+      <data key="d7">0.0191713100006726</data>
+      <data key="d8">-0.0820437277987845</data>
+    </edge>
+    <edge source="region:chr11:14768571-14769071" target="gene:PDE3B" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">LEF1_direct_+/+</data>
+      <data key="d7">0.115426885388661</data>
+      <data key="d8">0.6151900446488022</data>
+    </edge>
+    <edge source="region:chr11:62621924-62622424" target="gene:EEF1G" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">BACH2_direct_+/-</data>
+      <data key="d7">0.0063692831163242</data>
+      <data key="d8">-0.1667922074104799</data>
+    </edge>
+    <edge source="region:chr11:62640664-62641164" target="gene:EEF1G" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">TBX21_direct_-/+</data>
+      <data key="d7">0.0325179405623597</data>
+      <data key="d8">0.3992874627596608</data>
+    </edge>
+    <edge source="region:chr11:85664868-85665368" target="gene:DLG2" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">BACH2_direct_+/-</data>
+      <data key="d7">0.0569951013699153</data>
+      <data key="d8">-0.0804926430450839</data>
+    </edge>
+    <edge source="region:chr11:96016106-96016606" target="gene:MAML2" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">LEF1_direct_+/+;TCF7_direct_+/+</data>
+      <data key="d7">0.0314216597438759</data>
+      <data key="d8">0.5095632469935801</data>
+    </edge>
+    <edge source="region:chr11:96105556-96106056" target="gene:MAML2" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">LEF1_direct_+/+;TCF7_direct_+/+</data>
+      <data key="d7">0.0525239490685327</data>
+      <data key="d8">0.5399158947414506</data>
+    </edge>
+    <edge source="region:chr11:96278465-96278965" target="gene:MAML2" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">LEF1_direct_+/+</data>
+      <data key="d7">0.0329801757090259</data>
+      <data key="d8">0.5152878624500583</data>
+    </edge>
+    <edge source="region:chr12:21676728-21677228" target="gene:LDHB" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">TCF7_direct_+/+</data>
+      <data key="d7">0.083269933084769</data>
+      <data key="d8">0.4541901525207414</data>
+    </edge>
+    <edge source="region:chr12:31728851-31729351" target="gene:AMN1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">BACH2_direct_+/-</data>
+      <data key="d7">0.0754377812004338</data>
+      <data key="d8">-0.0705125856698128</data>
+    </edge>
+    <edge source="region:chr13:40485585-40486085" target="gene:FOXO1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">TBX21_direct_-/+</data>
+      <data key="d7">0.0348218801832963</data>
+      <data key="d8">0.2694279931637316</data>
+    </edge>
+    <edge source="region:chr13:40666957-40667457" target="gene:FOXO1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">KLF6_direct_-/-</data>
+      <data key="d7">0.0411286208935643</data>
+      <data key="d8">-0.1121332500371109</data>
+    </edge>
+    <edge source="region:chr14:68793068-68793568" target="gene:ACTN1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">BACH2_direct_+/-</data>
+      <data key="d7">0.0081528332369835</data>
+      <data key="d8">-0.0634565896153208</data>
+    </edge>
+    <edge source="region:chr15:28876162-28876662" target="gene:APBA2" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">LEF1_direct_+/+;TCF7_direct_+/+</data>
+      <data key="d7">0.0442592673786972</data>
+      <data key="d8">0.4502916330889324</data>
+    </edge>
+    <edge source="region:chr15:28890755-28891255" target="gene:APBA2" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">LEF1_direct_+/+</data>
+      <data key="d7">0.0706656439818994</data>
+      <data key="d8">0.4392384860906132</data>
+    </edge>
+    <edge source="region:chr15:34366186-34366686" target="gene:SLC12A6" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">KLF6_direct_-/-</data>
+      <data key="d7">0.0346521959886686</data>
+      <data key="d8">-0.0702648792917175</data>
+    </edge>
+    <edge source="region:chr15:90388536-90389036" target="gene:CRTC3" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">KLF6_direct_-/-</data>
+      <data key="d7">0.0144922474099374</data>
+      <data key="d8">-0.0920481377114391</data>
+    </edge>
+    <edge source="region:chr15:93028563-93029063" target="gene:CHD2" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">BACH2_direct_+/-</data>
+      <data key="d7">0.0011926474786669</data>
+      <data key="d8">-0.0745663401449669</data>
+    </edge>
+    <edge source="region:chr15:98649378-98649878" target="gene:IGF1R" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">LEF1_direct_+/+</data>
+      <data key="d7">0.0513877495698156</data>
+      <data key="d8">0.4172089373925637</data>
+    </edge>
+    <edge source="region:chr15:98650993-98651493" target="gene:IGF1R" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">LEF1_direct_+/+</data>
+      <data key="d7">0.0689023986470435</data>
+      <data key="d8">0.415814469030142</data>
+    </edge>
+    <edge source="region:chr16:27367453-27367953" target="gene:IL4R" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">BACH2_direct_+/-</data>
+      <data key="d7">0.0101526801868414</data>
+      <data key="d8">-0.0686027167471735</data>
+    </edge>
+    <edge source="region:chr17:40480463-40480963" target="gene:CCR7" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">KLF6_direct_-/-</data>
+      <data key="d7">0.0033116680551078</data>
+      <data key="d8">-0.0520004097591079</data>
+    </edge>
+    <edge source="region:chr17:40533368-40533868" target="gene:CCR7" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">LEF1_direct_+/+</data>
+      <data key="d7">0.0228362874841571</data>
+      <data key="d8">0.5065251521651754</data>
+    </edge>
+    <edge source="region:chr17:40547342-40547842" target="gene:CCR7" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">LEF1_direct_+/+;TCF7_direct_+/+</data>
+      <data key="d7">0.0733828983694803</data>
+      <data key="d8">0.6016804992026408</data>
+    </edge>
+    <edge source="region:chr17:40560776-40561276" target="gene:CCR7" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">BACH2_direct_+/-</data>
+      <data key="d7">0.0034388919180831</data>
+      <data key="d8">-0.2999139380221461</data>
+    </edge>
+    <edge source="region:chr17:40564225-40564725" target="gene:CCR7" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">KLF6_direct_-/-</data>
+      <data key="d7">0.0032250611761289</data>
+      <data key="d8">-0.0759343921595059</data>
+    </edge>
+    <edge source="region:chr17:40597110-40597610" target="gene:CCR7" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">LEF1_direct_+/+</data>
+      <data key="d7">0.1086524303535041</data>
+      <data key="d8">0.5743330872184227</data>
+    </edge>
+    <edge source="region:chr17:40605390-40605890" target="gene:CCR7" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">TBX21_direct_-/+</data>
+      <data key="d7">0.0473014936582339</data>
+      <data key="d8">0.5478060341715091</data>
+    </edge>
+    <edge source="region:chr17:66201735-66202235" target="gene:PRKCA" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">TBX21_direct_-/+</data>
+      <data key="d7">0.0965651354739261</data>
+      <data key="d8">0.5714802108638183</data>
+    </edge>
+    <edge source="region:chr17:66285870-66286370" target="gene:PRKCA" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">TBX21_direct_-/+</data>
+      <data key="d7">0.1041906472555518</data>
+      <data key="d8">0.5752901008251006</data>
+    </edge>
+    <edge source="region:chr17:66331099-66331599" target="gene:PRKCA" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">LEF1_direct_+/+;TBX21_direct_-/+;TCF7_direct_+/+</data>
+      <data key="d7">0.0632769606846281</data>
+      <data key="d8">0.5690425016108409</data>
+    </edge>
+    <edge source="region:chr17:66426317-66426817" target="gene:PRKCA" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">TBX21_direct_-/+</data>
+      <data key="d7">0.039400539447621</data>
+      <data key="d8">0.5580568675147402</data>
+    </edge>
+    <edge source="region:chr17:66673599-66674099" target="gene:PRKCA" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">LEF1_direct_+/+</data>
+      <data key="d7">0.0339619981010521</data>
+      <data key="d8">0.4438797719901058</data>
+    </edge>
+    <edge source="region:chr17:78186938-78187438" target="gene:TNRC6C" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">KLF6_direct_-/-</data>
+      <data key="d7">0.0078626542278434</data>
+      <data key="d8">-0.2239759317543386</data>
+    </edge>
+    <edge source="region:chr19:12793458-12793958" target="gene:JUNB" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">TBX21_direct_-/+</data>
+      <data key="d7">0.0227087410963692</data>
+      <data key="d8">0.1420480074146766</data>
+    </edge>
+    <edge source="region:chr19:4051742-4052242" target="gene:EEF2" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">BACH2_direct_+/-</data>
+      <data key="d7">0.0117571680608297</data>
+      <data key="d8">-0.190241503353154</data>
+    </edge>
+    <edge source="region:chr19:4058233-4058733" target="gene:EEF2" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">BACH2_direct_+/-</data>
+      <data key="d7">0.0777621205273244</data>
+      <data key="d8">-0.2372987041079394</data>
+    </edge>
+    <edge source="region:chr19:47600233-47600733" target="gene:NOP53" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">TBX21_direct_-/+</data>
+      <data key="d7">0.0313808695251304</data>
+      <data key="d8">0.0858851053320601</data>
+    </edge>
+    <edge source="region:chr19:47745388-47745888" target="gene:NOP53" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">TBX21_direct_-/+</data>
+      <data key="d7">0.0296904892571984</data>
+      <data key="d8">0.2329062432522579</data>
+    </edge>
+    <edge source="region:chr1:207336541-207337041" target="gene:CD55" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">TBX21_direct_-/+</data>
+      <data key="d7">0.0371272683363367</data>
+      <data key="d8">0.1599628051916584</data>
+    </edge>
+    <edge source="region:chr1:44674121-44674621" target="gene:ARMH1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">KLF6_direct_-/-</data>
+      <data key="d7">0.0377602455588913</data>
+      <data key="d8">-0.1867697386583189</data>
+    </edge>
+    <edge source="region:chr1:44809429-44809929" target="gene:EIF2B3" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">KLF6_direct_-/-</data>
+      <data key="d7">0.0349544578744794</data>
+      <data key="d8">-0.0635646037894418</data>
+    </edge>
+    <edge source="region:chr1:61782615-61783115" target="gene:PATJ" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">TCF7_direct_+/+</data>
+      <data key="d7">0.1762092148829506</data>
+      <data key="d8">0.2879233575778833</data>
+    </edge>
+    <edge source="region:chr1:62271960-62272460" target="gene:PATJ" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">TCF7_direct_+/+</data>
+      <data key="d7">0.1539461414151057</data>
+      <data key="d8">0.2739394538489264</data>
+    </edge>
+    <edge source="region:chr1:62295882-62296382" target="gene:PATJ" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">TCF7_direct_+/+</data>
+      <data key="d7">0.091559976210987</data>
+      <data key="d8">0.1941337943383963</data>
+    </edge>
+    <edge source="region:chr20:20712528-20713028" target="gene:RALGAPA2" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">KLF6_direct_-/-</data>
+      <data key="d7">0.1502439858513394</data>
+      <data key="d8">-0.1090942767313718</data>
+    </edge>
+    <edge source="region:chr20:21125715-21126215" target="gene:KIZ" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">KLF6_direct_-/-</data>
+      <data key="d7">0.0677256917774142</data>
+      <data key="d8">-0.0702971553775397</data>
+    </edge>
+    <edge source="region:chr22:39940694-39941194" target="gene:GRAP2" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">TCF7_direct_+/+</data>
+      <data key="d7">0.0240760176744699</data>
+      <data key="d8">0.3223961723228131</data>
+    </edge>
+    <edge source="region:chr22:39961385-39961885" target="gene:TNRC6B" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">BACH2_direct_+/-</data>
+      <data key="d7">0.0068224899212368</data>
+      <data key="d8">-0.2042707477779212</data>
+    </edge>
+    <edge source="region:chr2:136008089-136008589" target="gene:CXCR4" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">BACH2_direct_+/-</data>
+      <data key="d7">0.0123979804508207</data>
+      <data key="d8">-0.1246404041589778</data>
+    </edge>
+    <edge source="region:chr2:136242674-136243174" target="gene:CXCR4" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">BACH2_direct_+/-</data>
+      <data key="d7">0.019486752221899</data>
+      <data key="d8">-0.0554596345051259</data>
+    </edge>
+    <edge source="region:chr2:203740907-203741407" target="gene:CD28" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">TCF7_direct_+/+</data>
+      <data key="d7">0.0605196870111491</data>
+      <data key="d8">0.2840853620540942</data>
+    </edge>
+    <edge source="region:chr2:203867488-203867988" target="gene:CD28" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">TCF7_direct_+/+</data>
+      <data key="d7">0.0703216988644513</data>
+      <data key="d8">0.3035001959904059</data>
+    </edge>
+    <edge source="region:chr2:224764506-224765006" target="gene:DOCK10" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">LEF1_direct_+/+</data>
+      <data key="d7">0.0193239449251463</data>
+      <data key="d8">0.3186082368258504</data>
+    </edge>
+    <edge source="region:chr2:84694139-84694639" target="gene:TRABD2A" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">LEF1_direct_+/+</data>
+      <data key="d7">0.0669337285819381</data>
+      <data key="d8">0.4910100442068675</data>
+    </edge>
+    <edge source="region:chr2:84846029-84846529" target="gene:TRABD2A" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">LEF1_direct_+/+</data>
+      <data key="d7">0.0868761913729629</data>
+      <data key="d8">0.4785031389168691</data>
+    </edge>
+    <edge source="region:chr2:84855668-84856168" target="gene:TRABD2A" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">LEF1_direct_+/+</data>
+      <data key="d7">0.0354567645627201</data>
+      <data key="d8">0.4960091823529655</data>
+    </edge>
+    <edge source="region:chr2:95074581-95075081" target="gene:MAL" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">LEF1_direct_+/+;TBX21_direct_-/+</data>
+      <data key="d7">0.1083178929025174</data>
+      <data key="d8">0.4225779046217355</data>
+    </edge>
+    <edge source="region:chr3:60048469-60048969" target="gene:FHIT" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">LEF1_direct_+/+;TCF7_direct_+/+</data>
+      <data key="d7">0.0980780856997033</data>
+      <data key="d8">0.4820887117913895</data>
+    </edge>
+    <edge source="region:chr3:60056030-60056530" target="gene:FHIT" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">TBX21_direct_-/+</data>
+      <data key="d7">0.0340108102287888</data>
+      <data key="d8">0.4812355380244564</data>
+    </edge>
+    <edge source="region:chr3:71063839-71064339" target="gene:FOXP1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">KLF6_direct_-/-</data>
+      <data key="d7">0.0292223086770578</data>
+      <data key="d8">-0.3339951017033344</data>
+    </edge>
+    <edge source="region:chr3:71127330-71127830" target="gene:FOXP1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">TBX21_direct_-/+</data>
+      <data key="d7">0.012004270309712</data>
+      <data key="d8">0.0576646126473502</data>
+    </edge>
+    <edge source="region:chr3:71226730-71227230" target="gene:FOXP1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">BACH2_direct_+/-</data>
+      <data key="d7">0.0244547386552137</data>
+      <data key="d8">-0.0985221733271635</data>
+    </edge>
+    <edge source="region:chr3:71421883-71422383" target="gene:FOXP1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">TBX21_direct_-/+</data>
+      <data key="d7">0.0091113557894067</data>
+      <data key="d8">0.0837071625720805</data>
+    </edge>
+    <edge source="region:chr4:108036227-108036727" target="gene:LEF1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">LEF1_direct_+/+;TCF7_direct_+/+</data>
+      <data key="d7">0.0413958685727298</data>
+      <data key="d8">0.7675728722825867</data>
+    </edge>
+    <edge source="region:chr4:108045394-108045894" target="gene:LEF1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">LEF1_direct_+/+;TCF7_direct_+/+</data>
+      <data key="d7">0.025545788017185</data>
+      <data key="d8">0.7703449467173934</data>
+    </edge>
+    <edge source="region:chr4:108070765-108071265" target="gene:LEF1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">LEF1_direct_+/+;TCF7_direct_+/+</data>
+      <data key="d7">0.0202195788621455</data>
+      <data key="d8">0.764426325480851</data>
+    </edge>
+    <edge source="region:chr4:108072204-108072704" target="gene:LEF1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">TBX21_direct_-/+</data>
+      <data key="d7">0.0795538138674151</data>
+      <data key="d8">0.7785128769165943</data>
+    </edge>
+    <edge source="region:chr4:108107966-108108466" target="gene:LEF1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">LEF1_direct_+/+;TCF7_direct_+/+</data>
+      <data key="d7">0.0967021403329143</data>
+      <data key="d8">0.76562804285275</data>
+    </edge>
+    <edge source="region:chr4:108113292-108113792" target="gene:LEF1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">TBX21_direct_-/+</data>
+      <data key="d7">0.0343480127188559</data>
+      <data key="d8">0.7629807188064495</data>
+    </edge>
+    <edge source="region:chr4:108168498-108168998" target="gene:LEF1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">LEF1_direct_+/+;TCF7_direct_+/+</data>
+      <data key="d7">0.0434585165739871</data>
+      <data key="d8">0.7434288449119532</data>
+    </edge>
+    <edge source="region:chr4:108315103-108315603" target="gene:LEF1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">LEF1_direct_+/+;TCF7_direct_+/+</data>
+      <data key="d7">0.0567444222248316</data>
+      <data key="d8">0.7614756784265848</data>
+    </edge>
+    <edge source="region:chr4:109648512-109649012" target="gene:MCUB" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">TCF7_direct_+/+</data>
+      <data key="d7">0.0702935440627696</data>
+      <data key="d8">0.2355961800633898</data>
+    </edge>
+    <edge source="region:chr4:109649093-109649593" target="gene:MCUB" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">TBX21_direct_-/+</data>
+      <data key="d7">0.03290849929596</data>
+      <data key="d8">0.233522354253024</data>
+    </edge>
+    <edge source="region:chr4:142847129-142847629" target="gene:INPP4B" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">LEF1_direct_+/+;TCF7_direct_+/+</data>
+      <data key="d7">0.0787161547481479</data>
+      <data key="d8">0.534852145052428</data>
+    </edge>
+    <edge source="region:chr4:148060518-148061018" target="gene:NR3C2" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">TCF7_direct_+/+</data>
+      <data key="d7">0.0745586436049401</data>
+      <data key="d8">0.3895699951275873</data>
+    </edge>
+    <edge source="region:chr4:153426440-153426940" target="gene:TMEM131L" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">TBX21_direct_-/+</data>
+      <data key="d7">0.0213885188074931</data>
+      <data key="d8">0.1118407879288147</data>
+    </edge>
+    <edge source="region:chr4:26857340-26857840" target="gene:STIM2" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">BACH2_direct_+/-</data>
+      <data key="d7">0.0556061321900975</data>
+      <data key="d8">-0.0542084962237168</data>
+    </edge>
+    <edge source="region:chr5:111230323-111230823" target="gene:CAMK4" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">LEF1_direct_+/+;TCF7_direct_+/+</data>
+      <data key="d7">0.0607808476164093</data>
+      <data key="d8">0.6441203758118826</data>
+    </edge>
+    <edge source="region:chr5:111252907-111253407" target="gene:CAMK4" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">LEF1_direct_+/+;TBX21_direct_-/+;TCF7_direct_+/+</data>
+      <data key="d7">0.0892628581062928</data>
+      <data key="d8">0.6301682878550273</data>
+    </edge>
+    <edge source="region:chr5:134079644-134080144" target="gene:TCF7" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">LEF1_direct_+/+;TBX21_direct_-/+;TCF7_direct_+/+</data>
+      <data key="d7">0.0542175003840498</data>
+      <data key="d8">0.583261613584008</data>
+    </edge>
+    <edge source="region:chr5:134086862-134087362" target="gene:TCF7" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">LEF1_direct_+/+;TCF7_direct_+/+</data>
+      <data key="d7">0.0844137922674317</data>
+      <data key="d8">0.5999798606522612</data>
+    </edge>
+    <edge source="region:chr5:134090523-134091023" target="gene:TCF7" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">LEF1_direct_+/+;TCF7_direct_+/+</data>
+      <data key="d7">0.0977197754629664</data>
+      <data key="d8">0.5836445306153106</data>
+    </edge>
+    <edge source="region:chr5:134137310-134137810" target="gene:TCF7" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">TBX21_direct_-/+</data>
+      <data key="d7">0.0539473665068974</data>
+      <data key="d8">0.5877597099380709</data>
+    </edge>
+    <edge source="region:chr5:142063772-142064272" target="gene:NDFIP1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">LEF1_direct_+/+</data>
+      <data key="d7">0.0259607429723641</data>
+      <data key="d8">0.4445798055520296</data>
+    </edge>
+    <edge source="region:chr5:157217492-157217992" target="gene:ITK" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">LEF1_direct_+/+</data>
+      <data key="d7">0.0273643489622436</data>
+      <data key="d8">0.4741789937101571</data>
+    </edge>
+    <edge source="region:chr5:16617457-16617957" target="gene:RETREG1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">TCF7_direct_+/+</data>
+      <data key="d7">0.1011445946204858</data>
+      <data key="d8">0.3546568215639507</data>
+    </edge>
+    <edge source="region:chr5:16617967-16618467" target="gene:RETREG1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">TBX21_direct_-/+</data>
+      <data key="d7">0.1002122565835722</data>
+      <data key="d8">0.3514395561340195</data>
+    </edge>
+    <edge source="region:chr5:16673129-16673629" target="gene:RETREG1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">TCF7_direct_+/+</data>
+      <data key="d7">0.0799424697751445</data>
+      <data key="d8">0.3475789735531869</data>
+    </edge>
+    <edge source="region:chr5:35780177-35780677" target="gene:IL7R" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">LEF1_direct_+/+;TCF7_direct_+/+</data>
+      <data key="d7">0.0884372192443799</data>
+      <data key="d8">0.6122018913779356</data>
+    </edge>
+    <edge source="region:chr5:35830560-35831060" target="gene:IL7R" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">LEF1_direct_+/+;TCF7_direct_+/+</data>
+      <data key="d7">0.0593278812875121</data>
+      <data key="d8">0.6295160014681452</data>
+    </edge>
+    <edge source="region:chr5:35854231-35854731" target="gene:IL7R" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">LEF1_direct_+/+;TCF7_direct_+/+</data>
+      <data key="d7">0.1233385510181728</data>
+      <data key="d8">0.634094275053575</data>
+    </edge>
+    <edge source="region:chr5:56058769-56059269" target="gene:IL6ST" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">LEF1_direct_+/+</data>
+      <data key="d7">0.0642235768511646</data>
+      <data key="d8">0.3888686563412515</data>
+    </edge>
+    <edge source="region:chr5:56071176-56071676" target="gene:IL6ST" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">LEF1_direct_+/+</data>
+      <data key="d7">0.0307206774070997</data>
+      <data key="d8">0.3670445775986569</data>
+    </edge>
+    <edge source="region:chr5:56100322-56100822" target="gene:IL6ST" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">LEF1_direct_+/+</data>
+      <data key="d7">0.0447085222264787</data>
+      <data key="d8">0.4148031390048473</data>
+    </edge>
+    <edge source="region:chr5:65035771-65036271" target="gene:ADAMTS6" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">BACH2_direct_+/-</data>
+      <data key="d7">0.0842807723912401</data>
+      <data key="d8">-0.1179891924318249</data>
+    </edge>
+    <edge source="region:chr5:80152743-80153243" target="gene:SERINC5" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">LEF1_direct_+/+;TCF7_direct_+/+</data>
+      <data key="d7">0.0860830076423052</data>
+      <data key="d8">0.5407433195999825</data>
+    </edge>
+    <edge source="region:chr5:80218489-80218989" target="gene:SERINC5" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">TBX21_direct_-/+</data>
+      <data key="d7">0.0466340247462479</data>
+      <data key="d8">0.5403308499921233</data>
+    </edge>
+    <edge source="region:chr5:80268910-80269410" target="gene:SERINC5" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">TBX21_direct_-/+</data>
+      <data key="d7">0.0384930026915825</data>
+      <data key="d8">0.5352511481140623</data>
+    </edge>
+    <edge source="region:chr6:12011122-12011622" target="gene:HIVEP1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">BACH2_direct_+/-</data>
+      <data key="d7">0.0894306460771584</data>
+      <data key="d8">-0.1238459061391217</data>
+    </edge>
+    <edge source="region:chr6:158031299-158031799" target="gene:SNX9" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">BACH2_direct_+/-</data>
+      <data key="d7">0.0076129829482314</data>
+      <data key="d8">-0.1488654264552301</data>
+    </edge>
+    <edge source="region:chr6:161273877-161274377" target="gene:PRKN" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">KLF6_direct_-/-</data>
+      <data key="d7">0.0683738528965182</data>
+      <data key="d8">-0.2297507903407811</data>
+    </edge>
+    <edge source="region:chr6:31619997-31620497" target="gene:LTB" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">BACH2_direct_+/-</data>
+      <data key="d7">0.0061910342436749</data>
+      <data key="d8">-0.1017233890789044</data>
+    </edge>
+    <edge source="region:chr6:90219619-90220119" target="gene:BACH2" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">TBX21_direct_-/+</data>
+      <data key="d7">0.0267921225940245</data>
+      <data key="d8">0.6578991726601007</data>
+    </edge>
+    <edge source="region:chr6:90397866-90398366" target="gene:BACH2" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">BACH2_direct_+/-</data>
+      <data key="d7">0.0050585265365557</data>
+      <data key="d8">-0.4378338733995157</data>
+    </edge>
+    <edge source="region:chr7:111009624-111010124" target="gene:IMMP2L" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">TBX21_direct_-/+</data>
+      <data key="d7">0.0457248032234292</data>
+      <data key="d8">0.236974663835892</data>
+    </edge>
+    <edge source="region:chr7:111083363-111083863" target="gene:IMMP2L" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">TBX21_direct_-/+</data>
+      <data key="d7">0.1372706010481962</data>
+      <data key="d8">0.2433576142515927</data>
+    </edge>
+    <edge source="region:chr7:66075544-66076044" target="gene:TPST1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">BACH2_direct_+/-</data>
+      <data key="d7">0.0784919743120016</data>
+      <data key="d8">-0.1816053254164386</data>
+    </edge>
+    <edge source="region:chr7:66493430-66493930" target="gene:TPST1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">BACH2_direct_+/-</data>
+      <data key="d7">0.0753519435774722</data>
+      <data key="d8">-0.0810742587948163</data>
+    </edge>
+    <edge source="region:chr8:27351678-27352178" target="gene:EPHX2" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">BACH2_direct_+/-</data>
+      <data key="d7">0.0327697211815086</data>
+      <data key="d8">-0.2178830512538319</data>
+    </edge>
+    <edge source="region:chr8:30097848-30098348" target="gene:SARAF" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">TCF7_direct_+/+</data>
+      <data key="d7">0.0556805602296445</data>
+      <data key="d8">0.439530628726165</data>
+    </edge>
+    <edge source="region:chr8:8228247-8228747" target="gene:PRAG1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">KLF6_direct_-/-</data>
+      <data key="d7">0.0695869153653611</data>
+      <data key="d8">-0.0781301766429539</data>
+    </edge>
+    <edge source="region:chr9:125746390-125746890" target="gene:PBX3" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">KLF6_direct_-/-</data>
+      <data key="d7">0.0979951992052846</data>
+      <data key="d8">-0.1489533811612452</data>
+    </edge>
+    <edge source="region:chr9:128092936-128093436" target="gene:FAM102A" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">TCF7_direct_+/+</data>
+      <data key="d7">0.0623751739780001</data>
+      <data key="d8">0.3480772990982085</data>
+    </edge>
+    <edge source="region:chr9:76023815-76024315" target="gene:PCSK5" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">LEF1_direct_+/+</data>
+      <data key="d7">0.0479211574328305</data>
+      <data key="d8">0.309893826932762</data>
+    </edge>
+    <edge source="region:chrX:1468333-1468833" target="gene:SLC25A6" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">TBX21_direct_-/+</data>
+      <data key="d7">0.0265336741011987</data>
+      <data key="d8">0.0705978197347049</data>
+    </edge>
+    <edge source="region:chrX:53082008-53082508" target="gene:KANTR" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">KLF6_direct_-/-</data>
+      <data key="d7">0.0537017865610965</data>
+      <data key="d8">-0.0542971251344776</data>
+    </edge>
+  </graph>
+</graphml>

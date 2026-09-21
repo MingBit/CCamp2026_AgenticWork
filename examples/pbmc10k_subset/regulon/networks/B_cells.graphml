@@ -1,0 +1,2746 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d8" for="edge" attr.name="rho" attr.type="double" />
+  <key id="d7" for="edge" attr.name="importance" attr.type="double" />
+  <key id="d6" for="edge" attr.name="eregulons" attr.type="string" />
+  <key id="d5" for="edge" attr.name="interaction" attr.type="string" />
+  <key id="d4" for="node" attr.name="n_targets" attr.type="long" />
+  <key id="d3" for="node" attr.name="detected_fraction" attr.type="double" />
+  <key id="d2" for="node" attr.name="eregulons" attr.type="string" />
+  <key id="d1" for="node" attr.name="node_type" attr.type="string" />
+  <key id="d0" for="node" attr.name="label" attr.type="string" />
+  <graph edgedefault="directed">
+    <node id="TF:BCL11A">
+      <data key="d0">BCL11A</data>
+      <data key="d1">tf</data>
+      <data key="d2">BCL11A_direct_+/+</data>
+      <data key="d3">0.7490636704119864</data>
+      <data key="d4">20</data>
+    </node>
+    <node id="TF:POU2AF1">
+      <data key="d0">POU2AF1</data>
+      <data key="d1">tf</data>
+      <data key="d2">POU2AF1_direct_+/+</data>
+      <data key="d3">0.33333333333333376</data>
+      <data key="d4">20</data>
+    </node>
+    <node id="TF:SPIB">
+      <data key="d0">SPIB</data>
+      <data key="d1">tf</data>
+      <data key="d2">SPIB_direct_+/+;SPIB_direct_+/-</data>
+      <data key="d3">0.3595505617977533</data>
+      <data key="d4">20</data>
+    </node>
+    <node id="region:chr10:48634242-48634742">
+      <data key="d0">chr10:48634242-48634742</data>
+      <data key="d1">region</data>
+      <data key="d2">BCL11A_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr10:48672264-48672764">
+      <data key="d0">chr10:48672264-48672764</data>
+      <data key="d1">region</data>
+      <data key="d2">POU2AF1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr10:48802488-48802988">
+      <data key="d0">chr10:48802488-48802988</data>
+      <data key="d1">region</data>
+      <data key="d2">BCL11A_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr10:96211892-96212392">
+      <data key="d0">chr10:96211892-96212392</data>
+      <data key="d1">region</data>
+      <data key="d2">BCL11A_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr10:96229458-96229958">
+      <data key="d0">chr10:96229458-96229958</data>
+      <data key="d1">region</data>
+      <data key="d2">BCL11A_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr10:96273297-96273797">
+      <data key="d0">chr10:96273297-96273797</data>
+      <data key="d1">region</data>
+      <data key="d2">BCL11A_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr11:60310753-60311253">
+      <data key="d0">chr11:60310753-60311253</data>
+      <data key="d1">region</data>
+      <data key="d2">BCL11A_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr11:60396702-60397202">
+      <data key="d0">chr11:60396702-60397202</data>
+      <data key="d1">region</data>
+      <data key="d2">BCL11A_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr11:60455452-60455952">
+      <data key="d0">chr11:60455452-60455952</data>
+      <data key="d1">region</data>
+      <data key="d2">BCL11A_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr11:60482324-60482824">
+      <data key="d0">chr11:60482324-60482824</data>
+      <data key="d1">region</data>
+      <data key="d2">BCL11A_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr11:60528911-60529411">
+      <data key="d0">chr11:60528911-60529411</data>
+      <data key="d1">region</data>
+      <data key="d2">BCL11A_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr11:72738078-72738578">
+      <data key="d0">chr11:72738078-72738578</data>
+      <data key="d1">region</data>
+      <data key="d2">POU2AF1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr12:26156176-26156676">
+      <data key="d0">chr12:26156176-26156676</data>
+      <data key="d1">region</data>
+      <data key="d2">POU2AF1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr12:31362987-31363487">
+      <data key="d0">chr12:31362987-31363487</data>
+      <data key="d1">region</data>
+      <data key="d2">SPIB_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr12:31687059-31687559">
+      <data key="d0">chr12:31687059-31687559</data>
+      <data key="d1">region</data>
+      <data key="d2">SPIB_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr12:79689927-79690427">
+      <data key="d0">chr12:79689927-79690427</data>
+      <data key="d1">region</data>
+      <data key="d2">SPIB_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr12:9731705-9732205">
+      <data key="d0">chr12:9731705-9732205</data>
+      <data key="d1">region</data>
+      <data key="d2">SPIB_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr12:9761300-9761800">
+      <data key="d0">chr12:9761300-9761800</data>
+      <data key="d1">region</data>
+      <data key="d2">SPIB_direct_+/-</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr12:9764703-9765203">
+      <data key="d0">chr12:9764703-9765203</data>
+      <data key="d1">region</data>
+      <data key="d2">SPIB_direct_+/-</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr12:9810621-9811121">
+      <data key="d0">chr12:9810621-9811121</data>
+      <data key="d1">region</data>
+      <data key="d2">SPIB_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr15:70036555-70037055">
+      <data key="d0">chr15:70036555-70037055</data>
+      <data key="d1">region</data>
+      <data key="d2">POU2AF1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr15:70196558-70197058">
+      <data key="d0">chr15:70196558-70197058</data>
+      <data key="d1">region</data>
+      <data key="d2">POU2AF1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr16:28923935-28924435">
+      <data key="d0">chr16:28923935-28924435</data>
+      <data key="d1">region</data>
+      <data key="d2">SPIB_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr16:28930696-28931196">
+      <data key="d0">chr16:28930696-28931196</data>
+      <data key="d1">region</data>
+      <data key="d2">SPIB_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr17:63922341-63922841">
+      <data key="d0">chr17:63922341-63922841</data>
+      <data key="d1">region</data>
+      <data key="d2">BCL11A_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr17:63925517-63926017">
+      <data key="d0">chr17:63925517-63926017</data>
+      <data key="d1">region</data>
+      <data key="d2">BCL11A_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr17:63932152-63932652">
+      <data key="d0">chr17:63932152-63932652</data>
+      <data key="d1">region</data>
+      <data key="d2">POU2AF1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr17:63954302-63954802">
+      <data key="d0">chr17:63954302-63954802</data>
+      <data key="d1">region</data>
+      <data key="d2">BCL11A_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr19:16259776-16260276">
+      <data key="d0">chr19:16259776-16260276</data>
+      <data key="d1">region</data>
+      <data key="d2">POU2AF1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr19:16445337-16445837">
+      <data key="d0">chr19:16445337-16445837</data>
+      <data key="d1">region</data>
+      <data key="d2">POU2AF1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr19:17523127-17523627">
+      <data key="d0">chr19:17523127-17523627</data>
+      <data key="d1">region</data>
+      <data key="d2">BCL11A_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr19:17526950-17527450">
+      <data key="d0">chr19:17526950-17527450</data>
+      <data key="d1">region</data>
+      <data key="d2">BCL11A_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr19:2486081-2486581">
+      <data key="d0">chr19:2486081-2486581</data>
+      <data key="d1">region</data>
+      <data key="d2">POU2AF1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr19:35330437-35330937">
+      <data key="d0">chr19:35330437-35330937</data>
+      <data key="d1">region</data>
+      <data key="d2">POU2AF1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr19:35458879-35459379">
+      <data key="d0">chr19:35458879-35459379</data>
+      <data key="d1">region</data>
+      <data key="d2">BCL11A_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr19:50330707-50331207">
+      <data key="d0">chr19:50330707-50331207</data>
+      <data key="d1">region</data>
+      <data key="d2">SPIB_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr19:50415547-50416047">
+      <data key="d0">chr19:50415547-50416047</data>
+      <data key="d1">region</data>
+      <data key="d2">SPIB_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr19:50419633-50420133">
+      <data key="d0">chr19:50419633-50420133</data>
+      <data key="d1">region</data>
+      <data key="d2">SPIB_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr19:50430957-50431457">
+      <data key="d0">chr19:50430957-50431457</data>
+      <data key="d1">region</data>
+      <data key="d2">SPIB_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr1:157704709-157705209">
+      <data key="d0">chr1:157704709-157705209</data>
+      <data key="d1">region</data>
+      <data key="d2">BCL11A_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr1:157726745-157727245">
+      <data key="d0">chr1:157726745-157727245</data>
+      <data key="d1">region</data>
+      <data key="d2">POU2AF1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr1:157773806-157774306">
+      <data key="d0">chr1:157773806-157774306</data>
+      <data key="d1">region</data>
+      <data key="d2">SPIB_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr1:157803787-157804287">
+      <data key="d0">chr1:157803787-157804287</data>
+      <data key="d1">region</data>
+      <data key="d2">SPIB_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr1:157806725-157807225">
+      <data key="d0">chr1:157806725-157807225</data>
+      <data key="d1">region</data>
+      <data key="d2">BCL11A_direct_+/+;SPIB_direct_+/+</data>
+      <data key="d4">2</data>
+    </node>
+    <node id="region:chr1:157819885-157820385">
+      <data key="d0">chr1:157819885-157820385</data>
+      <data key="d1">region</data>
+      <data key="d2">BCL11A_direct_+/+;SPIB_direct_+/+</data>
+      <data key="d4">2</data>
+    </node>
+    <node id="region:chr1:157849453-157849953">
+      <data key="d0">chr1:157849453-157849953</data>
+      <data key="d1">region</data>
+      <data key="d2">SPIB_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr1:159068150-159068650">
+      <data key="d0">chr1:159068150-159068650</data>
+      <data key="d1">region</data>
+      <data key="d2">POU2AF1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr1:160432329-160432829">
+      <data key="d0">chr1:160432329-160432829</data>
+      <data key="d1">region</data>
+      <data key="d2">POU2AF1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr1:161706840-161707340">
+      <data key="d0">chr1:161706840-161707340</data>
+      <data key="d1">region</data>
+      <data key="d2">SPIB_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr1:161738889-161739389">
+      <data key="d0">chr1:161738889-161739389</data>
+      <data key="d1">region</data>
+      <data key="d2">SPIB_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr1:161739807-161740307">
+      <data key="d0">chr1:161739807-161740307</data>
+      <data key="d1">region</data>
+      <data key="d2">SPIB_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr1:175225417-175225917">
+      <data key="d0">chr1:175225417-175225917</data>
+      <data key="d1">region</data>
+      <data key="d2">POU2AF1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr1:178575738-178576238">
+      <data key="d0">chr1:178575738-178576238</data>
+      <data key="d1">region</data>
+      <data key="d2">BCL11A_direct_+/+;SPIB_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr1:178579558-178580058">
+      <data key="d0">chr1:178579558-178580058</data>
+      <data key="d1">region</data>
+      <data key="d2">SPIB_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr1:178581260-178581760">
+      <data key="d0">chr1:178581260-178581760</data>
+      <data key="d1">region</data>
+      <data key="d2">POU2AF1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr1:178726143-178726643">
+      <data key="d0">chr1:178726143-178726643</data>
+      <data key="d1">region</data>
+      <data key="d2">SPIB_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr22:24401124-24401624">
+      <data key="d0">chr22:24401124-24401624</data>
+      <data key="d1">region</data>
+      <data key="d2">SPIB_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr22:24555590-24556090">
+      <data key="d0">chr22:24555590-24556090</data>
+      <data key="d1">region</data>
+      <data key="d2">SPIB_direct_+/-</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr22:24607341-24607841">
+      <data key="d0">chr22:24607341-24607841</data>
+      <data key="d1">region</data>
+      <data key="d2">SPIB_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr22:41925347-41925847">
+      <data key="d0">chr22:41925347-41925847</data>
+      <data key="d1">region</data>
+      <data key="d2">SPIB_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr22:41952036-41952536">
+      <data key="d0">chr22:41952036-41952536</data>
+      <data key="d1">region</data>
+      <data key="d2">SPIB_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr22:42022400-42022900">
+      <data key="d0">chr22:42022400-42022900</data>
+      <data key="d1">region</data>
+      <data key="d2">SPIB_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr2:100113996-100114496">
+      <data key="d0">chr2:100113996-100114496</data>
+      <data key="d1">region</data>
+      <data key="d2">BCL11A_direct_+/+;SPIB_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr2:100142369-100142869">
+      <data key="d0">chr2:100142369-100142869</data>
+      <data key="d1">region</data>
+      <data key="d2">BCL11A_direct_+/+;SPIB_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr2:100235049-100235549">
+      <data key="d0">chr2:100235049-100235549</data>
+      <data key="d1">region</data>
+      <data key="d2">BCL11A_direct_+/+;SPIB_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr2:100247477-100247977">
+      <data key="d0">chr2:100247477-100247977</data>
+      <data key="d1">region</data>
+      <data key="d2">BCL11A_direct_+/+;SPIB_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr2:17749778-17750278">
+      <data key="d0">chr2:17749778-17750278</data>
+      <data key="d1">region</data>
+      <data key="d2">SPIB_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr2:17804382-17804882">
+      <data key="d0">chr2:17804382-17804882</data>
+      <data key="d1">region</data>
+      <data key="d2">SPIB_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr2:60317805-60318305">
+      <data key="d0">chr2:60317805-60318305</data>
+      <data key="d1">region</data>
+      <data key="d2">BCL11A_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr2:60350837-60351337">
+      <data key="d0">chr2:60350837-60351337</data>
+      <data key="d1">region</data>
+      <data key="d2">BCL11A_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr2:99928403-99928903">
+      <data key="d0">chr2:99928403-99928903</data>
+      <data key="d1">region</data>
+      <data key="d2">SPIB_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr3:129282639-129283139">
+      <data key="d0">chr3:129282639-129283139</data>
+      <data key="d1">region</data>
+      <data key="d2">SPIB_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr3:129305616-129306116">
+      <data key="d0">chr3:129305616-129306116</data>
+      <data key="d1">region</data>
+      <data key="d2">SPIB_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr3:129439391-129439891">
+      <data key="d0">chr3:129439391-129439891</data>
+      <data key="d1">region</data>
+      <data key="d2">SPIB_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr3:129526046-129526546">
+      <data key="d0">chr3:129526046-129526546</data>
+      <data key="d1">region</data>
+      <data key="d2">SPIB_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr3:129577917-129578417">
+      <data key="d0">chr3:129577917-129578417</data>
+      <data key="d1">region</data>
+      <data key="d2">SPIB_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr3:31917208-31917708">
+      <data key="d0">chr3:31917208-31917708</data>
+      <data key="d1">region</data>
+      <data key="d2">POU2AF1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr3:31952157-31952657">
+      <data key="d0">chr3:31952157-31952657</data>
+      <data key="d1">region</data>
+      <data key="d2">BCL11A_direct_+/+;SPIB_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr4:101790443-101790943">
+      <data key="d0">chr4:101790443-101790943</data>
+      <data key="d1">region</data>
+      <data key="d2">BCL11A_direct_+/+;SPIB_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr4:101813555-101814055">
+      <data key="d0">chr4:101813555-101814055</data>
+      <data key="d1">region</data>
+      <data key="d2">SPIB_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr4:101862508-101863008">
+      <data key="d0">chr4:101862508-101863008</data>
+      <data key="d1">region</data>
+      <data key="d2">BCL11A_direct_+/+;SPIB_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr4:25904297-25904797">
+      <data key="d0">chr4:25904297-25904797</data>
+      <data key="d1">region</data>
+      <data key="d2">BCL11A_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr4:90071723-90072223">
+      <data key="d0">chr4:90071723-90072223</data>
+      <data key="d1">region</data>
+      <data key="d2">POU2AF1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr5:10632135-10632635">
+      <data key="d0">chr5:10632135-10632635</data>
+      <data key="d1">region</data>
+      <data key="d2">POU2AF1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr5:158676611-158677111">
+      <data key="d0">chr5:158676611-158677111</data>
+      <data key="d1">region</data>
+      <data key="d2">BCL11A_direct_+/+;SPIB_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr5:158953893-158954393">
+      <data key="d0">chr5:158953893-158954393</data>
+      <data key="d1">region</data>
+      <data key="d2">BCL11A_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr5:158958206-158958706">
+      <data key="d0">chr5:158958206-158958706</data>
+      <data key="d1">region</data>
+      <data key="d2">POU2AF1_direct_+/+;SPIB_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr5:159052414-159052914">
+      <data key="d0">chr5:159052414-159052914</data>
+      <data key="d1">region</data>
+      <data key="d2">SPIB_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr5:159083959-159084459">
+      <data key="d0">chr5:159083959-159084459</data>
+      <data key="d1">region</data>
+      <data key="d2">SPIB_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr5:159155921-159156421">
+      <data key="d0">chr5:159155921-159156421</data>
+      <data key="d1">region</data>
+      <data key="d2">BCL11A_direct_+/+;SPIB_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr5:88732198-88732698">
+      <data key="d0">chr5:88732198-88732698</data>
+      <data key="d1">region</data>
+      <data key="d2">BCL11A_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr5:88827114-88827614">
+      <data key="d0">chr5:88827114-88827614</data>
+      <data key="d1">region</data>
+      <data key="d2">BCL11A_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr6:150599580-150600080">
+      <data key="d0">chr6:150599580-150600080</data>
+      <data key="d1">region</data>
+      <data key="d2">BCL11A_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr6:150622895-150623395">
+      <data key="d0">chr6:150622895-150623395</data>
+      <data key="d1">region</data>
+      <data key="d2">BCL11A_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr6:150631507-150632007">
+      <data key="d0">chr6:150631507-150632007</data>
+      <data key="d1">region</data>
+      <data key="d2">BCL11A_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr6:150641318-150641818">
+      <data key="d0">chr6:150641318-150641818</data>
+      <data key="d1">region</data>
+      <data key="d2">BCL11A_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr6:150689986-150690486">
+      <data key="d0">chr6:150689986-150690486</data>
+      <data key="d1">region</data>
+      <data key="d2">BCL11A_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr6:150765331-150765831">
+      <data key="d0">chr6:150765331-150765831</data>
+      <data key="d1">region</data>
+      <data key="d2">BCL11A_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr6:32584026-32584526">
+      <data key="d0">chr6:32584026-32584526</data>
+      <data key="d1">region</data>
+      <data key="d2">BCL11A_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr6:32638500-32639000">
+      <data key="d0">chr6:32638500-32639000</data>
+      <data key="d1">region</data>
+      <data key="d2">BCL11A_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr7:90595549-90596049">
+      <data key="d0">chr7:90595549-90596049</data>
+      <data key="d1">region</data>
+      <data key="d2">SPIB_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr7:90596243-90596743">
+      <data key="d0">chr7:90596243-90596743</data>
+      <data key="d1">region</data>
+      <data key="d2">SPIB_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr7:90600139-90600639">
+      <data key="d0">chr7:90600139-90600639</data>
+      <data key="d1">region</data>
+      <data key="d2">SPIB_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr7:90709710-90710210">
+      <data key="d0">chr7:90709710-90710210</data>
+      <data key="d1">region</data>
+      <data key="d2">SPIB_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr8:11491859-11492359">
+      <data key="d0">chr8:11491859-11492359</data>
+      <data key="d1">region</data>
+      <data key="d2">BCL11A_direct_+/+;POU2AF1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr8:11538925-11539425">
+      <data key="d0">chr8:11538925-11539425</data>
+      <data key="d1">region</data>
+      <data key="d2">POU2AF1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr8:24297755-24298255">
+      <data key="d0">chr8:24297755-24298255</data>
+      <data key="d1">region</data>
+      <data key="d2">BCL11A_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr8:24330388-24330888">
+      <data key="d0">chr8:24330388-24330888</data>
+      <data key="d1">region</data>
+      <data key="d2">BCL11A_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr8:94978851-94979351">
+      <data key="d0">chr8:94978851-94979351</data>
+      <data key="d1">region</data>
+      <data key="d2">POU2AF1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr8:95073054-95073554">
+      <data key="d0">chr8:95073054-95073554</data>
+      <data key="d1">region</data>
+      <data key="d2">POU2AF1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr9:36993820-36994320">
+      <data key="d0">chr9:36993820-36994320</data>
+      <data key="d1">region</data>
+      <data key="d2">BCL11A_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr9:37004430-37004930">
+      <data key="d0">chr9:37004430-37004930</data>
+      <data key="d1">region</data>
+      <data key="d2">BCL11A_direct_+/+;POU2AF1_direct_+/+;SPIB_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr9:37028948-37029448">
+      <data key="d0">chr9:37028948-37029448</data>
+      <data key="d1">region</data>
+      <data key="d2">BCL11A_direct_+/+;SPIB_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr9:37032645-37033145">
+      <data key="d0">chr9:37032645-37033145</data>
+      <data key="d1">region</data>
+      <data key="d2">BCL11A_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr9:37034102-37034602">
+      <data key="d0">chr9:37034102-37034602</data>
+      <data key="d1">region</data>
+      <data key="d2">BCL11A_direct_+/+;SPIB_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr9:37034641-37035141">
+      <data key="d0">chr9:37034641-37035141</data>
+      <data key="d1">region</data>
+      <data key="d2">SPIB_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr9:37120183-37120683">
+      <data key="d0">chr9:37120183-37120683</data>
+      <data key="d1">region</data>
+      <data key="d2">SPIB_direct_+/-</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr9:68643733-68644233">
+      <data key="d0">chr9:68643733-68644233</data>
+      <data key="d1">region</data>
+      <data key="d2">SPIB_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr9:68704944-68705444">
+      <data key="d0">chr9:68704944-68705444</data>
+      <data key="d1">region</data>
+      <data key="d2">SPIB_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr9:68708382-68708882">
+      <data key="d0">chr9:68708382-68708882</data>
+      <data key="d1">region</data>
+      <data key="d2">SPIB_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr9:68919535-68920035">
+      <data key="d0">chr9:68919535-68920035</data>
+      <data key="d1">region</data>
+      <data key="d2">SPIB_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr9:69121913-69122413">
+      <data key="d0">chr9:69121913-69122413</data>
+      <data key="d1">region</data>
+      <data key="d2">SPIB_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="gene:ADAM28">
+      <data key="d0">ADAM28</data>
+      <data key="d1">gene</data>
+      <data key="d2">BCL11A_direct_+/+</data>
+      <data key="d3">0.7265917602996268</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:AFF3">
+      <data key="d0">AFF3</data>
+      <data key="d1">gene</data>
+      <data key="d2">BCL11A_direct_+/+;SPIB_direct_+/+</data>
+      <data key="d3">0.9737827715355825</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:AIM2">
+      <data key="d0">AIM2</data>
+      <data key="d1">gene</data>
+      <data key="d2">POU2AF1_direct_+/+</data>
+      <data key="d3">0.3483146067415735</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:ANGPTL1">
+      <data key="d0">ANGPTL1</data>
+      <data key="d1">gene</data>
+      <data key="d2">SPIB_direct_+/+</data>
+      <data key="d3">0.49812734082397087</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:ANKRD33B">
+      <data key="d0">ANKRD33B</data>
+      <data key="d1">gene</data>
+      <data key="d2">POU2AF1_direct_+/+</data>
+      <data key="d3">0.1273408239700374</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:BANK1">
+      <data key="d0">BANK1</data>
+      <data key="d1">gene</data>
+      <data key="d2">BCL11A_direct_+/+;SPIB_direct_+/+</data>
+      <data key="d3">0.9850187265917623</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:BCL11A">
+      <data key="d0">BCL11A</data>
+      <data key="d1">gene</data>
+      <data key="d2">BCL11A_direct_+/+</data>
+      <data key="d3">0.7490636704119864</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:BLK">
+      <data key="d0">BLK</data>
+      <data key="d1">gene</data>
+      <data key="d2">BCL11A_direct_+/+;POU2AF1_direct_+/+</data>
+      <data key="d3">0.8239700374531851</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:BLNK">
+      <data key="d0">BLNK</data>
+      <data key="d1">gene</data>
+      <data key="d2">BCL11A_direct_+/+</data>
+      <data key="d3">0.6067415730337089</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:CCSER1">
+      <data key="d0">CCSER1</data>
+      <data key="d1">gene</data>
+      <data key="d2">POU2AF1_direct_+/+</data>
+      <data key="d3">0.49812734082397087</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:CD22">
+      <data key="d0">CD22</data>
+      <data key="d1">gene</data>
+      <data key="d2">BCL11A_direct_+/+;POU2AF1_direct_+/+</data>
+      <data key="d3">0.7528089887640463</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:CD79B">
+      <data key="d0">CD79B</data>
+      <data key="d1">gene</data>
+      <data key="d2">BCL11A_direct_+/+;POU2AF1_direct_+/+</data>
+      <data key="d3">0.8052434456928854</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:CDK14">
+      <data key="d0">CDK14</data>
+      <data key="d1">gene</data>
+      <data key="d2">SPIB_direct_+/+</data>
+      <data key="d3">0.7041198501872672</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:CLECL1">
+      <data key="d0">CLECL1</data>
+      <data key="d1">gene</data>
+      <data key="d2">SPIB_direct_+/+;SPIB_direct_+/-</data>
+      <data key="d3">0.19850187265917615</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:DENND5B">
+      <data key="d0">DENND5B</data>
+      <data key="d1">gene</data>
+      <data key="d2">SPIB_direct_+/+</data>
+      <data key="d3">0.5355805243445702</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:EBF1">
+      <data key="d0">EBF1</data>
+      <data key="d1">gene</data>
+      <data key="d2">BCL11A_direct_+/+;POU2AF1_direct_+/+;SPIB_direct_+/+</data>
+      <data key="d3">0.8352059925093649</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:EPS15L1">
+      <data key="d0">EPS15L1</data>
+      <data key="d1">gene</data>
+      <data key="d2">POU2AF1_direct_+/+</data>
+      <data key="d3">0.3146067415730341</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:FCHSD2">
+      <data key="d0">FCHSD2</data>
+      <data key="d1">gene</data>
+      <data key="d2">POU2AF1_direct_+/+</data>
+      <data key="d3">0.8988764044943838</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:FCRL1">
+      <data key="d0">FCRL1</data>
+      <data key="d1">gene</data>
+      <data key="d2">BCL11A_direct_+/+</data>
+      <data key="d3">0.8614232209737844</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:FCRL2">
+      <data key="d0">FCRL2</data>
+      <data key="d1">gene</data>
+      <data key="d2">POU2AF1_direct_+/+;SPIB_direct_+/+</data>
+      <data key="d3">0.3895131086142328</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:FCRLA">
+      <data key="d0">FCRLA</data>
+      <data key="d1">gene</data>
+      <data key="d2">SPIB_direct_+/+</data>
+      <data key="d3">0.3408239700374536</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:GNG7">
+      <data key="d0">GNG7</data>
+      <data key="d1">gene</data>
+      <data key="d2">POU2AF1_direct_+/+</data>
+      <data key="d3">0.7340823970037467</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:GUCD1">
+      <data key="d0">GUCD1</data>
+      <data key="d1">gene</data>
+      <data key="d2">SPIB_direct_+/+;SPIB_direct_+/-</data>
+      <data key="d3">0.17228464419475661</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:HLA-DQA1">
+      <data key="d0">HLA-DQA1</data>
+      <data key="d1">gene</data>
+      <data key="d2">BCL11A_direct_+/+</data>
+      <data key="d3">0.8951310861423238</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:KIAA0040">
+      <data key="d0">KIAA0040</data>
+      <data key="d1">gene</data>
+      <data key="d2">POU2AF1_direct_+/+</data>
+      <data key="d3">0.3408239700374536</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:MBD4">
+      <data key="d0">MBD4</data>
+      <data key="d1">gene</data>
+      <data key="d2">SPIB_direct_+/+</data>
+      <data key="d3">0.4382022471910119</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:MEF2C">
+      <data key="d0">MEF2C</data>
+      <data key="d1">gene</data>
+      <data key="d2">BCL11A_direct_+/+</data>
+      <data key="d3">0.8913857677902639</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:MS4A1">
+      <data key="d0">MS4A1</data>
+      <data key="d1">gene</data>
+      <data key="d2">BCL11A_direct_+/+</data>
+      <data key="d3">0.9325842696629232</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:NIBAN3">
+      <data key="d0">NIBAN3</data>
+      <data key="d1">gene</data>
+      <data key="d2">BCL11A_direct_+/+</data>
+      <data key="d3">0.7453183520599265</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:OSBPL10">
+      <data key="d0">OSBPL10</data>
+      <data key="d1">gene</data>
+      <data key="d2">BCL11A_direct_+/+;POU2AF1_direct_+/+;SPIB_direct_+/+</data>
+      <data key="d3">0.8164794007490652</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:PAWR">
+      <data key="d0">PAWR</data>
+      <data key="d1">gene</data>
+      <data key="d2">SPIB_direct_+/+</data>
+      <data key="d3">0.3258426966292139</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:PAX5">
+      <data key="d0">PAX5</data>
+      <data key="d1">gene</data>
+      <data key="d2">BCL11A_direct_+/+;POU2AF1_direct_+/+;SPIB_direct_+/+;SPIB_direct_+/-</data>
+      <data key="d3">0.9176029962546834</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:PIP5K1B">
+      <data key="d0">PIP5K1B</data>
+      <data key="d1">gene</data>
+      <data key="d2">SPIB_direct_+/+</data>
+      <data key="d3">0.45318352059925165</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:PLEKHG1">
+      <data key="d0">PLEKHG1</data>
+      <data key="d1">gene</data>
+      <data key="d2">BCL11A_direct_+/+</data>
+      <data key="d3">0.659176029962548</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:RABEP2">
+      <data key="d0">RABEP2</data>
+      <data key="d1">gene</data>
+      <data key="d2">SPIB_direct_+/+</data>
+      <data key="d3">0.4119850187265924</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:RALGPS2">
+      <data key="d0">RALGPS2</data>
+      <data key="d1">gene</data>
+      <data key="d2">BCL11A_direct_+/+;POU2AF1_direct_+/+;SPIB_direct_+/+</data>
+      <data key="d3">0.9737827715355825</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:SEL1L3">
+      <data key="d0">SEL1L3</data>
+      <data key="d1">gene</data>
+      <data key="d2">BCL11A_direct_+/+</data>
+      <data key="d3">0.827715355805245</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:SLAMF6">
+      <data key="d0">SLAMF6</data>
+      <data key="d1">gene</data>
+      <data key="d2">POU2AF1_direct_+/+</data>
+      <data key="d3">0.3370786516853937</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:SMC6">
+      <data key="d0">SMC6</data>
+      <data key="d1">gene</data>
+      <data key="d2">SPIB_direct_+/+</data>
+      <data key="d3">0.5168539325842705</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:SPIB">
+      <data key="d0">SPIB</data>
+      <data key="d1">gene</data>
+      <data key="d2">SPIB_direct_+/+</data>
+      <data key="d3">0.3595505617977533</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:SSPN">
+      <data key="d0">SSPN</data>
+      <data key="d1">gene</data>
+      <data key="d2">POU2AF1_direct_+/+</data>
+      <data key="d3">0.18726591760299635</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:TLE3">
+      <data key="d0">TLE3</data>
+      <data key="d1">gene</data>
+      <data key="d2">POU2AF1_direct_+/+</data>
+      <data key="d3">0.22097378277153576</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:TNFRSF13C">
+      <data key="d0">TNFRSF13C</data>
+      <data key="d1">gene</data>
+      <data key="d2">SPIB_direct_+/+</data>
+      <data key="d3">0.434456928838952</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:TP53INP1">
+      <data key="d0">TP53INP1</data>
+      <data key="d1">gene</data>
+      <data key="d2">POU2AF1_direct_+/+</data>
+      <data key="d3">0.19101123595505629</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:WDFY4">
+      <data key="d0">WDFY4</data>
+      <data key="d1">gene</data>
+      <data key="d2">BCL11A_direct_+/+;POU2AF1_direct_+/+</data>
+      <data key="d3">0.7228464419475669</data>
+      <data key="d4">0</data>
+    </node>
+    <edge source="TF:BCL11A" target="region:chr10:48634242-48634742" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">BCL11A_direct_+/+</data>
+    </edge>
+    <edge source="TF:BCL11A" target="region:chr10:48802488-48802988" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">BCL11A_direct_+/+</data>
+    </edge>
+    <edge source="TF:BCL11A" target="region:chr10:96211892-96212392" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">BCL11A_direct_+/+</data>
+    </edge>
+    <edge source="TF:BCL11A" target="region:chr10:96229458-96229958" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">BCL11A_direct_+/+</data>
+    </edge>
+    <edge source="TF:BCL11A" target="region:chr10:96273297-96273797" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">BCL11A_direct_+/+</data>
+    </edge>
+    <edge source="TF:BCL11A" target="region:chr11:60310753-60311253" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">BCL11A_direct_+/+</data>
+    </edge>
+    <edge source="TF:BCL11A" target="region:chr11:60396702-60397202" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">BCL11A_direct_+/+</data>
+    </edge>
+    <edge source="TF:BCL11A" target="region:chr11:60455452-60455952" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">BCL11A_direct_+/+</data>
+    </edge>
+    <edge source="TF:BCL11A" target="region:chr11:60482324-60482824" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">BCL11A_direct_+/+</data>
+    </edge>
+    <edge source="TF:BCL11A" target="region:chr11:60528911-60529411" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">BCL11A_direct_+/+</data>
+    </edge>
+    <edge source="TF:BCL11A" target="region:chr17:63922341-63922841" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">BCL11A_direct_+/+</data>
+    </edge>
+    <edge source="TF:BCL11A" target="region:chr17:63925517-63926017" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">BCL11A_direct_+/+</data>
+    </edge>
+    <edge source="TF:BCL11A" target="region:chr17:63954302-63954802" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">BCL11A_direct_+/+</data>
+    </edge>
+    <edge source="TF:BCL11A" target="region:chr19:17523127-17523627" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">BCL11A_direct_+/+</data>
+    </edge>
+    <edge source="TF:BCL11A" target="region:chr19:17526950-17527450" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">BCL11A_direct_+/+</data>
+    </edge>
+    <edge source="TF:BCL11A" target="region:chr19:35458879-35459379" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">BCL11A_direct_+/+</data>
+    </edge>
+    <edge source="TF:BCL11A" target="region:chr1:157704709-157705209" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">BCL11A_direct_+/+</data>
+    </edge>
+    <edge source="TF:BCL11A" target="region:chr1:157806725-157807225" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">BCL11A_direct_+/+</data>
+    </edge>
+    <edge source="TF:BCL11A" target="region:chr1:157819885-157820385" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">BCL11A_direct_+/+</data>
+    </edge>
+    <edge source="TF:BCL11A" target="region:chr1:178575738-178576238" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">BCL11A_direct_+/+</data>
+    </edge>
+    <edge source="TF:BCL11A" target="region:chr2:100113996-100114496" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">BCL11A_direct_+/+</data>
+    </edge>
+    <edge source="TF:BCL11A" target="region:chr2:100142369-100142869" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">BCL11A_direct_+/+</data>
+    </edge>
+    <edge source="TF:BCL11A" target="region:chr2:100235049-100235549" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">BCL11A_direct_+/+</data>
+    </edge>
+    <edge source="TF:BCL11A" target="region:chr2:100247477-100247977" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">BCL11A_direct_+/+</data>
+    </edge>
+    <edge source="TF:BCL11A" target="region:chr2:60317805-60318305" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">BCL11A_direct_+/+</data>
+    </edge>
+    <edge source="TF:BCL11A" target="region:chr2:60350837-60351337" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">BCL11A_direct_+/+</data>
+    </edge>
+    <edge source="TF:BCL11A" target="region:chr3:31952157-31952657" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">BCL11A_direct_+/+</data>
+    </edge>
+    <edge source="TF:BCL11A" target="region:chr4:101790443-101790943" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">BCL11A_direct_+/+</data>
+    </edge>
+    <edge source="TF:BCL11A" target="region:chr4:101862508-101863008" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">BCL11A_direct_+/+</data>
+    </edge>
+    <edge source="TF:BCL11A" target="region:chr4:25904297-25904797" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">BCL11A_direct_+/+</data>
+    </edge>
+    <edge source="TF:BCL11A" target="region:chr5:158676611-158677111" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">BCL11A_direct_+/+</data>
+    </edge>
+    <edge source="TF:BCL11A" target="region:chr5:158953893-158954393" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">BCL11A_direct_+/+</data>
+    </edge>
+    <edge source="TF:BCL11A" target="region:chr5:159155921-159156421" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">BCL11A_direct_+/+</data>
+    </edge>
+    <edge source="TF:BCL11A" target="region:chr5:88732198-88732698" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">BCL11A_direct_+/+</data>
+    </edge>
+    <edge source="TF:BCL11A" target="region:chr5:88827114-88827614" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">BCL11A_direct_+/+</data>
+    </edge>
+    <edge source="TF:BCL11A" target="region:chr6:150599580-150600080" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">BCL11A_direct_+/+</data>
+    </edge>
+    <edge source="TF:BCL11A" target="region:chr6:150622895-150623395" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">BCL11A_direct_+/+</data>
+    </edge>
+    <edge source="TF:BCL11A" target="region:chr6:150631507-150632007" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">BCL11A_direct_+/+</data>
+    </edge>
+    <edge source="TF:BCL11A" target="region:chr6:150641318-150641818" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">BCL11A_direct_+/+</data>
+    </edge>
+    <edge source="TF:BCL11A" target="region:chr6:150689986-150690486" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">BCL11A_direct_+/+</data>
+    </edge>
+    <edge source="TF:BCL11A" target="region:chr6:150765331-150765831" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">BCL11A_direct_+/+</data>
+    </edge>
+    <edge source="TF:BCL11A" target="region:chr6:32584026-32584526" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">BCL11A_direct_+/+</data>
+    </edge>
+    <edge source="TF:BCL11A" target="region:chr6:32638500-32639000" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">BCL11A_direct_+/+</data>
+    </edge>
+    <edge source="TF:BCL11A" target="region:chr8:11491859-11492359" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">BCL11A_direct_+/+</data>
+    </edge>
+    <edge source="TF:BCL11A" target="region:chr8:24297755-24298255" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">BCL11A_direct_+/+</data>
+    </edge>
+    <edge source="TF:BCL11A" target="region:chr8:24330388-24330888" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">BCL11A_direct_+/+</data>
+    </edge>
+    <edge source="TF:BCL11A" target="region:chr9:36993820-36994320" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">BCL11A_direct_+/+</data>
+    </edge>
+    <edge source="TF:BCL11A" target="region:chr9:37004430-37004930" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">BCL11A_direct_+/+</data>
+    </edge>
+    <edge source="TF:BCL11A" target="region:chr9:37028948-37029448" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">BCL11A_direct_+/+</data>
+    </edge>
+    <edge source="TF:BCL11A" target="region:chr9:37032645-37033145" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">BCL11A_direct_+/+</data>
+    </edge>
+    <edge source="TF:BCL11A" target="region:chr9:37034102-37034602" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">BCL11A_direct_+/+</data>
+    </edge>
+    <edge source="TF:BCL11A" target="gene:ADAM28" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">BCL11A_direct_+/+</data>
+      <data key="d7">6.592378463679701</data>
+      <data key="d8">0.6042173773561398</data>
+    </edge>
+    <edge source="TF:BCL11A" target="gene:AFF3" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">BCL11A_direct_+/+</data>
+      <data key="d7">6.851150975833357</data>
+      <data key="d8">0.6129475009872245</data>
+    </edge>
+    <edge source="TF:BCL11A" target="gene:BANK1" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">BCL11A_direct_+/+</data>
+      <data key="d7">6.202953934336975</data>
+      <data key="d8">0.7228713489167463</data>
+    </edge>
+    <edge source="TF:BCL11A" target="gene:BCL11A" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">BCL11A_direct_+/+</data>
+      <data key="d7">6.884273188113169</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="TF:BCL11A" target="gene:BLK" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">BCL11A_direct_+/+</data>
+      <data key="d7">5.245137701992274</data>
+      <data key="d8">0.5819705445951006</data>
+    </edge>
+    <edge source="TF:BCL11A" target="gene:BLNK" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">BCL11A_direct_+/+</data>
+      <data key="d7">5.638386042722181</data>
+      <data key="d8">0.5182904711796448</data>
+    </edge>
+    <edge source="TF:BCL11A" target="gene:CD22" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">BCL11A_direct_+/+</data>
+      <data key="d7">5.498956772817539</data>
+      <data key="d8">0.6419659145431597</data>
+    </edge>
+    <edge source="TF:BCL11A" target="gene:CD79B" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">BCL11A_direct_+/+</data>
+      <data key="d7">5.792352947491003</data>
+      <data key="d8">0.5471737825733562</data>
+    </edge>
+    <edge source="TF:BCL11A" target="gene:EBF1" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">BCL11A_direct_+/+</data>
+      <data key="d7">5.486612125410761</data>
+      <data key="d8">0.6132264314216713</data>
+    </edge>
+    <edge source="TF:BCL11A" target="gene:FCRL1" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">BCL11A_direct_+/+</data>
+      <data key="d7">5.40660397172779</data>
+      <data key="d8">0.7294778018679208</data>
+    </edge>
+    <edge source="TF:BCL11A" target="gene:HLA-DQA1" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">BCL11A_direct_+/+</data>
+      <data key="d7">5.490565028900388</data>
+      <data key="d8">0.6066614578387972</data>
+    </edge>
+    <edge source="TF:BCL11A" target="gene:MEF2C" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">BCL11A_direct_+/+</data>
+      <data key="d7">5.4882261563776655</data>
+      <data key="d8">0.6010584096052116</data>
+    </edge>
+    <edge source="TF:BCL11A" target="gene:MS4A1" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">BCL11A_direct_+/+</data>
+      <data key="d7">6.289024179870056</data>
+      <data key="d8">0.6743423828724308</data>
+    </edge>
+    <edge source="TF:BCL11A" target="gene:NIBAN3" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">BCL11A_direct_+/+</data>
+      <data key="d7">5.432821422006475</data>
+      <data key="d8">0.6148829229669305</data>
+    </edge>
+    <edge source="TF:BCL11A" target="gene:OSBPL10" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">BCL11A_direct_+/+</data>
+      <data key="d7">5.2807976729995785</data>
+      <data key="d8">0.5710035525562116</data>
+    </edge>
+    <edge source="TF:BCL11A" target="gene:PAX5" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">BCL11A_direct_+/+</data>
+      <data key="d7">6.109974911732434</data>
+      <data key="d8">0.7005597618066256</data>
+    </edge>
+    <edge source="TF:BCL11A" target="gene:PLEKHG1" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">BCL11A_direct_+/+</data>
+      <data key="d7">5.298905772432591</data>
+      <data key="d8">0.5382009790086584</data>
+    </edge>
+    <edge source="TF:BCL11A" target="gene:RALGPS2" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">BCL11A_direct_+/+</data>
+      <data key="d7">6.884263188113169</data>
+      <data key="d8">0.589415015136756</data>
+    </edge>
+    <edge source="TF:BCL11A" target="gene:SEL1L3" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">BCL11A_direct_+/+</data>
+      <data key="d7">5.840563754814545</data>
+      <data key="d8">0.4381040817188699</data>
+    </edge>
+    <edge source="TF:BCL11A" target="gene:WDFY4" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">BCL11A_direct_+/+</data>
+      <data key="d7">5.788362729416429</data>
+      <data key="d8">0.5906806729319765</data>
+    </edge>
+    <edge source="TF:POU2AF1" target="region:chr10:48672264-48672764" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">POU2AF1_direct_+/+</data>
+    </edge>
+    <edge source="TF:POU2AF1" target="region:chr11:72738078-72738578" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">POU2AF1_direct_+/+</data>
+    </edge>
+    <edge source="TF:POU2AF1" target="region:chr12:26156176-26156676" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">POU2AF1_direct_+/+</data>
+    </edge>
+    <edge source="TF:POU2AF1" target="region:chr15:70036555-70037055" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">POU2AF1_direct_+/+</data>
+    </edge>
+    <edge source="TF:POU2AF1" target="region:chr15:70196558-70197058" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">POU2AF1_direct_+/+</data>
+    </edge>
+    <edge source="TF:POU2AF1" target="region:chr17:63932152-63932652" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">POU2AF1_direct_+/+</data>
+    </edge>
+    <edge source="TF:POU2AF1" target="region:chr19:16259776-16260276" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">POU2AF1_direct_+/+</data>
+    </edge>
+    <edge source="TF:POU2AF1" target="region:chr19:16445337-16445837" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">POU2AF1_direct_+/+</data>
+    </edge>
+    <edge source="TF:POU2AF1" target="region:chr19:2486081-2486581" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">POU2AF1_direct_+/+</data>
+    </edge>
+    <edge source="TF:POU2AF1" target="region:chr19:35330437-35330937" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">POU2AF1_direct_+/+</data>
+    </edge>
+    <edge source="TF:POU2AF1" target="region:chr1:157726745-157727245" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">POU2AF1_direct_+/+</data>
+    </edge>
+    <edge source="TF:POU2AF1" target="region:chr1:159068150-159068650" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">POU2AF1_direct_+/+</data>
+    </edge>
+    <edge source="TF:POU2AF1" target="region:chr1:160432329-160432829" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">POU2AF1_direct_+/+</data>
+    </edge>
+    <edge source="TF:POU2AF1" target="region:chr1:175225417-175225917" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">POU2AF1_direct_+/+</data>
+    </edge>
+    <edge source="TF:POU2AF1" target="region:chr1:178581260-178581760" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">POU2AF1_direct_+/+</data>
+    </edge>
+    <edge source="TF:POU2AF1" target="region:chr3:31917208-31917708" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">POU2AF1_direct_+/+</data>
+    </edge>
+    <edge source="TF:POU2AF1" target="region:chr4:90071723-90072223" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">POU2AF1_direct_+/+</data>
+    </edge>
+    <edge source="TF:POU2AF1" target="region:chr5:10632135-10632635" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">POU2AF1_direct_+/+</data>
+    </edge>
+    <edge source="TF:POU2AF1" target="region:chr5:158958206-158958706" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">POU2AF1_direct_+/+</data>
+    </edge>
+    <edge source="TF:POU2AF1" target="region:chr8:11491859-11492359" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">POU2AF1_direct_+/+</data>
+    </edge>
+    <edge source="TF:POU2AF1" target="region:chr8:11538925-11539425" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">POU2AF1_direct_+/+</data>
+    </edge>
+    <edge source="TF:POU2AF1" target="region:chr8:94978851-94979351" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">POU2AF1_direct_+/+</data>
+    </edge>
+    <edge source="TF:POU2AF1" target="region:chr8:95073054-95073554" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">POU2AF1_direct_+/+</data>
+    </edge>
+    <edge source="TF:POU2AF1" target="region:chr9:37004430-37004930" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">POU2AF1_direct_+/+</data>
+    </edge>
+    <edge source="TF:POU2AF1" target="gene:AIM2" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">POU2AF1_direct_+/+</data>
+      <data key="d7">2.552012954270745</data>
+      <data key="d8">0.2602535122536643</data>
+    </edge>
+    <edge source="TF:POU2AF1" target="gene:ANKRD33B" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">POU2AF1_direct_+/+</data>
+      <data key="d7">2.649312508667792</data>
+      <data key="d8">0.1457187103909211</data>
+    </edge>
+    <edge source="TF:POU2AF1" target="gene:BLK" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">POU2AF1_direct_+/+</data>
+      <data key="d7">2.727895458799229</data>
+      <data key="d8">0.3727959553631084</data>
+    </edge>
+    <edge source="TF:POU2AF1" target="gene:CCSER1" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">POU2AF1_direct_+/+</data>
+      <data key="d7">2.528271852240496</data>
+      <data key="d8">0.3315748792388322</data>
+    </edge>
+    <edge source="TF:POU2AF1" target="gene:CD22" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">POU2AF1_direct_+/+</data>
+      <data key="d7">3.4056653650999174</data>
+      <data key="d8">0.4215414913849656</data>
+    </edge>
+    <edge source="TF:POU2AF1" target="gene:CD79B" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">POU2AF1_direct_+/+</data>
+      <data key="d7">2.6034560370510795</data>
+      <data key="d8">0.3471248446417695</data>
+    </edge>
+    <edge source="TF:POU2AF1" target="gene:EBF1" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">POU2AF1_direct_+/+</data>
+      <data key="d7">2.4686267861857085</data>
+      <data key="d8">0.3830021958493357</data>
+    </edge>
+    <edge source="TF:POU2AF1" target="gene:EPS15L1" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">POU2AF1_direct_+/+</data>
+      <data key="d7">2.141189094946493</data>
+      <data key="d8">0.1130790089488033</data>
+    </edge>
+    <edge source="TF:POU2AF1" target="gene:FCHSD2" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">POU2AF1_direct_+/+</data>
+      <data key="d7">2.150845645114748</data>
+      <data key="d8">0.2374408883490715</data>
+    </edge>
+    <edge source="TF:POU2AF1" target="gene:FCRL2" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">POU2AF1_direct_+/+</data>
+      <data key="d7">2.156181046447061</data>
+      <data key="d8">0.4135795414650837</data>
+    </edge>
+    <edge source="TF:POU2AF1" target="gene:GNG7" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">POU2AF1_direct_+/+</data>
+      <data key="d7">1.960344529846864</data>
+      <data key="d8">0.308303039674671</data>
+    </edge>
+    <edge source="TF:POU2AF1" target="gene:KIAA0040" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">POU2AF1_direct_+/+</data>
+      <data key="d7">1.9777956183607408</data>
+      <data key="d8">0.0967838830939647</data>
+    </edge>
+    <edge source="TF:POU2AF1" target="gene:OSBPL10" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">POU2AF1_direct_+/+</data>
+      <data key="d7">3.359052727872858</data>
+      <data key="d8">0.4258618762634598</data>
+    </edge>
+    <edge source="TF:POU2AF1" target="gene:PAX5" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">POU2AF1_direct_+/+</data>
+      <data key="d7">2.6299437082992405</data>
+      <data key="d8">0.4140330535866944</data>
+    </edge>
+    <edge source="TF:POU2AF1" target="gene:RALGPS2" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">POU2AF1_direct_+/+</data>
+      <data key="d7">3.373486381214569</data>
+      <data key="d8">0.400101773678784</data>
+    </edge>
+    <edge source="TF:POU2AF1" target="gene:SLAMF6" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">POU2AF1_direct_+/+</data>
+      <data key="d7">2.217821282518633</data>
+      <data key="d8">0.1184647455016761</data>
+    </edge>
+    <edge source="TF:POU2AF1" target="gene:SSPN" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">POU2AF1_direct_+/+</data>
+      <data key="d7">2.0711657751503925</data>
+      <data key="d8">0.2456619281479487</data>
+    </edge>
+    <edge source="TF:POU2AF1" target="gene:TLE3" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">POU2AF1_direct_+/+</data>
+      <data key="d7">1.963989220232999</data>
+      <data key="d8">0.1168572898673415</data>
+    </edge>
+    <edge source="TF:POU2AF1" target="gene:TP53INP1" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">POU2AF1_direct_+/+</data>
+      <data key="d7">2.470181984606194</data>
+      <data key="d8">0.1432666956151651</data>
+    </edge>
+    <edge source="TF:POU2AF1" target="gene:WDFY4" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">POU2AF1_direct_+/+</data>
+      <data key="d7">2.2483812575213333</data>
+      <data key="d8">0.3471908549868147</data>
+    </edge>
+    <edge source="TF:SPIB" target="region:chr12:31362987-31363487" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPIB_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPIB" target="region:chr12:31687059-31687559" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPIB_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPIB" target="region:chr12:79689927-79690427" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPIB_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPIB" target="region:chr12:9731705-9732205" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPIB_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPIB" target="region:chr12:9761300-9761800" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPIB_direct_+/-</data>
+    </edge>
+    <edge source="TF:SPIB" target="region:chr12:9764703-9765203" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPIB_direct_+/-</data>
+    </edge>
+    <edge source="TF:SPIB" target="region:chr12:9810621-9811121" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPIB_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPIB" target="region:chr16:28923935-28924435" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPIB_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPIB" target="region:chr16:28930696-28931196" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPIB_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPIB" target="region:chr19:50330707-50331207" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPIB_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPIB" target="region:chr19:50415547-50416047" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPIB_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPIB" target="region:chr19:50419633-50420133" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPIB_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPIB" target="region:chr19:50430957-50431457" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPIB_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPIB" target="region:chr1:157773806-157774306" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPIB_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPIB" target="region:chr1:157803787-157804287" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPIB_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPIB" target="region:chr1:157806725-157807225" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPIB_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPIB" target="region:chr1:157819885-157820385" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPIB_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPIB" target="region:chr1:157849453-157849953" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPIB_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPIB" target="region:chr1:161706840-161707340" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPIB_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPIB" target="region:chr1:161738889-161739389" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPIB_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPIB" target="region:chr1:161739807-161740307" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPIB_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPIB" target="region:chr1:178575738-178576238" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPIB_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPIB" target="region:chr1:178579558-178580058" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPIB_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPIB" target="region:chr1:178726143-178726643" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPIB_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPIB" target="region:chr22:24401124-24401624" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPIB_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPIB" target="region:chr22:24555590-24556090" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPIB_direct_+/-</data>
+    </edge>
+    <edge source="TF:SPIB" target="region:chr22:24607341-24607841" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPIB_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPIB" target="region:chr22:41925347-41925847" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPIB_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPIB" target="region:chr22:41952036-41952536" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPIB_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPIB" target="region:chr22:42022400-42022900" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPIB_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPIB" target="region:chr2:100113996-100114496" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPIB_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPIB" target="region:chr2:100142369-100142869" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPIB_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPIB" target="region:chr2:100235049-100235549" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPIB_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPIB" target="region:chr2:100247477-100247977" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPIB_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPIB" target="region:chr2:17749778-17750278" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPIB_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPIB" target="region:chr2:17804382-17804882" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPIB_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPIB" target="region:chr2:99928403-99928903" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPIB_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPIB" target="region:chr3:129282639-129283139" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPIB_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPIB" target="region:chr3:129305616-129306116" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPIB_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPIB" target="region:chr3:129439391-129439891" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPIB_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPIB" target="region:chr3:129526046-129526546" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPIB_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPIB" target="region:chr3:129577917-129578417" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPIB_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPIB" target="region:chr3:31952157-31952657" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPIB_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPIB" target="region:chr4:101790443-101790943" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPIB_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPIB" target="region:chr4:101813555-101814055" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPIB_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPIB" target="region:chr4:101862508-101863008" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPIB_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPIB" target="region:chr5:158676611-158677111" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPIB_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPIB" target="region:chr5:158958206-158958706" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPIB_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPIB" target="region:chr5:159052414-159052914" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPIB_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPIB" target="region:chr5:159083959-159084459" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPIB_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPIB" target="region:chr5:159155921-159156421" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPIB_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPIB" target="region:chr7:90595549-90596049" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPIB_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPIB" target="region:chr7:90596243-90596743" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPIB_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPIB" target="region:chr7:90600139-90600639" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPIB_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPIB" target="region:chr7:90709710-90710210" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPIB_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPIB" target="region:chr9:37004430-37004930" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPIB_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPIB" target="region:chr9:37028948-37029448" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPIB_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPIB" target="region:chr9:37034102-37034602" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPIB_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPIB" target="region:chr9:37034641-37035141" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPIB_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPIB" target="region:chr9:37120183-37120683" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPIB_direct_+/-</data>
+    </edge>
+    <edge source="TF:SPIB" target="region:chr9:68643733-68644233" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPIB_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPIB" target="region:chr9:68704944-68705444" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPIB_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPIB" target="region:chr9:68708382-68708882" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPIB_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPIB" target="region:chr9:68919535-68920035" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPIB_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPIB" target="region:chr9:69121913-69122413" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPIB_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPIB" target="gene:AFF3" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">SPIB_direct_+/+</data>
+      <data key="d7">3.971356895243965</data>
+      <data key="d8">0.4160708527686311</data>
+    </edge>
+    <edge source="TF:SPIB" target="gene:ANGPTL1" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">SPIB_direct_+/+</data>
+      <data key="d7">5.907307066173823</data>
+      <data key="d8">0.4388659552872803</data>
+    </edge>
+    <edge source="TF:SPIB" target="gene:BANK1" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">SPIB_direct_+/+</data>
+      <data key="d7">4.620496404319962</data>
+      <data key="d8">0.5106491811399623</data>
+    </edge>
+    <edge source="TF:SPIB" target="gene:CDK14" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">SPIB_direct_+/+</data>
+      <data key="d7">4.019664031050139</data>
+      <data key="d8">0.3947717561815167</data>
+    </edge>
+    <edge source="TF:SPIB" target="gene:CLECL1" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">SPIB_direct_+/+;SPIB_direct_+/-</data>
+      <data key="d7">4.003291964483134</data>
+      <data key="d8">0.2106172703158498</data>
+    </edge>
+    <edge source="TF:SPIB" target="gene:DENND5B" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">SPIB_direct_+/+</data>
+      <data key="d7">4.400716528309298</data>
+      <data key="d8">0.3566960164235831</data>
+    </edge>
+    <edge source="TF:SPIB" target="gene:EBF1" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">SPIB_direct_+/+</data>
+      <data key="d7">4.650683637489223</data>
+      <data key="d8">0.5044011729521094</data>
+    </edge>
+    <edge source="TF:SPIB" target="gene:FCRL2" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">SPIB_direct_+/+</data>
+      <data key="d7">4.818051827621221</data>
+      <data key="d8">0.418584434996955</data>
+    </edge>
+    <edge source="TF:SPIB" target="gene:FCRLA" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">SPIB_direct_+/+</data>
+      <data key="d7">4.876503488073501</data>
+      <data key="d8">0.3513907318887663</data>
+    </edge>
+    <edge source="TF:SPIB" target="gene:GUCD1" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">SPIB_direct_+/+;SPIB_direct_+/-</data>
+      <data key="d7">4.830689985850329</data>
+      <data key="d8">0.1214156506345195</data>
+    </edge>
+    <edge source="TF:SPIB" target="gene:MBD4" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">SPIB_direct_+/+</data>
+      <data key="d7">4.0022802620549385</data>
+      <data key="d8">0.1254935384916908</data>
+    </edge>
+    <edge source="TF:SPIB" target="gene:OSBPL10" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">SPIB_direct_+/+</data>
+      <data key="d7">5.434953161425974</data>
+      <data key="d8">0.4989647408727566</data>
+    </edge>
+    <edge source="TF:SPIB" target="gene:PAWR" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">SPIB_direct_+/+</data>
+      <data key="d7">6.756551226563515</data>
+      <data key="d8">0.2555419874337474</data>
+    </edge>
+    <edge source="TF:SPIB" target="gene:PAX5" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">SPIB_direct_+/+;SPIB_direct_+/-</data>
+      <data key="d7">4.243652286511479</data>
+      <data key="d8">0.4835116071690806</data>
+    </edge>
+    <edge source="TF:SPIB" target="gene:PIP5K1B" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">SPIB_direct_+/+</data>
+      <data key="d7">3.9564989890042472</data>
+      <data key="d8">0.3165147903687547</data>
+    </edge>
+    <edge source="TF:SPIB" target="gene:RABEP2" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">SPIB_direct_+/+</data>
+      <data key="d7">4.067447660775911</data>
+      <data key="d8">0.2445818919297711</data>
+    </edge>
+    <edge source="TF:SPIB" target="gene:RALGPS2" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">SPIB_direct_+/+</data>
+      <data key="d7">4.607310227063664</data>
+      <data key="d8">0.4594749146129537</data>
+    </edge>
+    <edge source="TF:SPIB" target="gene:SMC6" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">SPIB_direct_+/+</data>
+      <data key="d7">4.911846622347058</data>
+      <data key="d8">0.2215246168490552</data>
+    </edge>
+    <edge source="TF:SPIB" target="gene:SPIB" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">SPIB_direct_+/+</data>
+      <data key="d7">7.442179932894609</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="TF:SPIB" target="gene:TNFRSF13C" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">SPIB_direct_+/+</data>
+      <data key="d7">6.1019054733240345</data>
+      <data key="d8">0.391519723449366</data>
+    </edge>
+    <edge source="region:chr10:48634242-48634742" target="gene:WDFY4" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">BCL11A_direct_+/+</data>
+      <data key="d7">0.0229066492571357</data>
+      <data key="d8">0.4987632376366196</data>
+    </edge>
+    <edge source="region:chr10:48672264-48672764" target="gene:WDFY4" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">POU2AF1_direct_+/+</data>
+      <data key="d7">0.0544307959024134</data>
+      <data key="d8">0.6897483901007966</data>
+    </edge>
+    <edge source="region:chr10:48802488-48802988" target="gene:WDFY4" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">BCL11A_direct_+/+</data>
+      <data key="d7">0.0312377916773536</data>
+      <data key="d8">0.4426074680318801</data>
+    </edge>
+    <edge source="region:chr10:96211892-96212392" target="gene:BLNK" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">BCL11A_direct_+/+</data>
+      <data key="d7">0.0282461611369282</data>
+      <data key="d8">0.5588404213842035</data>
+    </edge>
+    <edge source="region:chr10:96229458-96229958" target="gene:BLNK" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">BCL11A_direct_+/+</data>
+      <data key="d7">0.0594927095479408</data>
+      <data key="d8">0.3786537512997625</data>
+    </edge>
+    <edge source="region:chr10:96273297-96273797" target="gene:BLNK" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">BCL11A_direct_+/+</data>
+      <data key="d7">0.0875859592091421</data>
+      <data key="d8">0.6047592325264788</data>
+    </edge>
+    <edge source="region:chr11:60310753-60311253" target="gene:MS4A1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">BCL11A_direct_+/+</data>
+      <data key="d7">0.0553537549222284</data>
+      <data key="d8">0.8185203324074878</data>
+    </edge>
+    <edge source="region:chr11:60396702-60397202" target="gene:MS4A1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">BCL11A_direct_+/+</data>
+      <data key="d7">0.0298887657001973</data>
+      <data key="d8">0.6902736081384427</data>
+    </edge>
+    <edge source="region:chr11:60455452-60455952" target="gene:MS4A1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">BCL11A_direct_+/+</data>
+      <data key="d7">0.0748555927226321</data>
+      <data key="d8">0.6059662347554602</data>
+    </edge>
+    <edge source="region:chr11:60482324-60482824" target="gene:MS4A1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">BCL11A_direct_+/+</data>
+      <data key="d7">0.0576586379459195</data>
+      <data key="d8">0.6997692988702794</data>
+    </edge>
+    <edge source="region:chr11:60528911-60529411" target="gene:MS4A1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">BCL11A_direct_+/+</data>
+      <data key="d7">0.0334556539252549</data>
+      <data key="d8">0.6897178810372339</data>
+    </edge>
+    <edge source="region:chr11:72738078-72738578" target="gene:FCHSD2" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">POU2AF1_direct_+/+</data>
+      <data key="d7">0.0639235725973398</data>
+      <data key="d8">0.2734371767946356</data>
+    </edge>
+    <edge source="region:chr12:26156176-26156676" target="gene:SSPN" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">POU2AF1_direct_+/+</data>
+      <data key="d7">0.060562051033139</data>
+      <data key="d8">0.2539228285918961</data>
+    </edge>
+    <edge source="region:chr12:31362987-31363487" target="gene:DENND5B" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPIB_direct_+/+</data>
+      <data key="d7">0.0270472967875001</data>
+      <data key="d8">0.2678163758214135</data>
+    </edge>
+    <edge source="region:chr12:31687059-31687559" target="gene:DENND5B" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPIB_direct_+/+</data>
+      <data key="d7">0.0311399919864478</data>
+      <data key="d8">0.4597095886550078</data>
+    </edge>
+    <edge source="region:chr12:79689927-79690427" target="gene:PAWR" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPIB_direct_+/+</data>
+      <data key="d7">0.2482132889517704</data>
+      <data key="d8">0.2444053683245012</data>
+    </edge>
+    <edge source="region:chr12:9731705-9732205" target="gene:CLECL1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPIB_direct_+/+</data>
+      <data key="d7">0.0103157840747844</data>
+      <data key="d8">0.1454107511293936</data>
+    </edge>
+    <edge source="region:chr12:9761300-9761800" target="gene:CLECL1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPIB_direct_+/-</data>
+      <data key="d7">0.0157033603033407</data>
+      <data key="d8">-0.1474844899145957</data>
+    </edge>
+    <edge source="region:chr12:9764703-9765203" target="gene:CLECL1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPIB_direct_+/-</data>
+      <data key="d7">0.0152941107569777</data>
+      <data key="d8">-0.139136626164886</data>
+    </edge>
+    <edge source="region:chr12:9810621-9811121" target="gene:CLECL1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPIB_direct_+/+</data>
+      <data key="d7">0.0167017588618834</data>
+      <data key="d8">0.1859132026443551</data>
+    </edge>
+    <edge source="region:chr15:70036555-70037055" target="gene:TLE3" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">POU2AF1_direct_+/+</data>
+      <data key="d7">0.0166324325625428</data>
+      <data key="d8">0.1254100155374904</data>
+    </edge>
+    <edge source="region:chr15:70196558-70197058" target="gene:TLE3" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">POU2AF1_direct_+/+</data>
+      <data key="d7">0.0655733922066255</data>
+      <data key="d8">0.1293983008569906</data>
+    </edge>
+    <edge source="region:chr16:28923935-28924435" target="gene:RABEP2" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPIB_direct_+/+</data>
+      <data key="d7">0.054596880011029</data>
+      <data key="d8">0.1797821348206941</data>
+    </edge>
+    <edge source="region:chr16:28930696-28931196" target="gene:RABEP2" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPIB_direct_+/+</data>
+      <data key="d7">0.0329513370063386</data>
+      <data key="d8">0.1438703792199448</data>
+    </edge>
+    <edge source="region:chr17:63922341-63922841" target="gene:CD79B" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">BCL11A_direct_+/+</data>
+      <data key="d7">0.0629440339113883</data>
+      <data key="d8">0.6541833496683208</data>
+    </edge>
+    <edge source="region:chr17:63925517-63926017" target="gene:CD79B" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">BCL11A_direct_+/+</data>
+      <data key="d7">0.0436568735806788</data>
+      <data key="d8">0.4067936717890905</data>
+    </edge>
+    <edge source="region:chr17:63932152-63932652" target="gene:CD79B" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">POU2AF1_direct_+/+</data>
+      <data key="d7">0.02260805350016</data>
+      <data key="d8">0.3660673420934984</data>
+    </edge>
+    <edge source="region:chr17:63954302-63954802" target="gene:CD79B" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">BCL11A_direct_+/+</data>
+      <data key="d7">0.0420104896535287</data>
+      <data key="d8">0.3611241361075373</data>
+    </edge>
+    <edge source="region:chr19:16259776-16260276" target="gene:EPS15L1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">POU2AF1_direct_+/+</data>
+      <data key="d7">0.0059253376094633</data>
+      <data key="d8">0.0881837598756421</data>
+    </edge>
+    <edge source="region:chr19:16445337-16445837" target="gene:EPS15L1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">POU2AF1_direct_+/+</data>
+      <data key="d7">0.0142973343627543</data>
+      <data key="d8">0.084704919888799</data>
+    </edge>
+    <edge source="region:chr19:17523127-17523627" target="gene:NIBAN3" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">BCL11A_direct_+/+</data>
+      <data key="d7">0.0685407772674784</data>
+      <data key="d8">0.4268694055119286</data>
+    </edge>
+    <edge source="region:chr19:17526950-17527450" target="gene:NIBAN3" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">BCL11A_direct_+/+</data>
+      <data key="d7">0.1378735287840229</data>
+      <data key="d8">0.4440288978264773</data>
+    </edge>
+    <edge source="region:chr19:2486081-2486581" target="gene:GNG7" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">POU2AF1_direct_+/+</data>
+      <data key="d7">0.05745771250234</data>
+      <data key="d8">0.5876127263493043</data>
+    </edge>
+    <edge source="region:chr19:35330437-35330937" target="gene:CD22" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">POU2AF1_direct_+/+</data>
+      <data key="d7">0.0680544551794375</data>
+      <data key="d8">0.6529675912909675</data>
+    </edge>
+    <edge source="region:chr19:35458879-35459379" target="gene:CD22" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">BCL11A_direct_+/+</data>
+      <data key="d7">0.0433592352288254</data>
+      <data key="d8">0.6535802158573769</data>
+    </edge>
+    <edge source="region:chr19:50330707-50331207" target="gene:SPIB" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPIB_direct_+/+</data>
+      <data key="d7">0.0392694979634482</data>
+      <data key="d8">0.2544296357856883</data>
+    </edge>
+    <edge source="region:chr19:50415547-50416047" target="gene:SPIB" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPIB_direct_+/+</data>
+      <data key="d7">0.0370040116692204</data>
+      <data key="d8">0.2929675516281144</data>
+    </edge>
+    <edge source="region:chr19:50419633-50420133" target="gene:SPIB" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPIB_direct_+/+</data>
+      <data key="d7">0.0257935685958857</data>
+      <data key="d8">0.3998079169931383</data>
+    </edge>
+    <edge source="region:chr19:50430957-50431457" target="gene:SPIB" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPIB_direct_+/+</data>
+      <data key="d7">0.0604187127473934</data>
+      <data key="d8">0.2944056884270994</data>
+    </edge>
+    <edge source="region:chr1:157704709-157705209" target="gene:FCRL1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">BCL11A_direct_+/+</data>
+      <data key="d7">0.0645609168370146</data>
+      <data key="d8">0.6672430074581007</data>
+    </edge>
+    <edge source="region:chr1:157726745-157727245" target="gene:FCRL2" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">POU2AF1_direct_+/+</data>
+      <data key="d7">0.08635707256603</data>
+      <data key="d8">0.3886992746729398</data>
+    </edge>
+    <edge source="region:chr1:157773806-157774306" target="gene:FCRL2" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPIB_direct_+/+</data>
+      <data key="d7">0.0604461249155651</data>
+      <data key="d8">0.3916317164531863</data>
+    </edge>
+    <edge source="region:chr1:157803787-157804287" target="gene:FCRL2" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPIB_direct_+/+</data>
+      <data key="d7">0.0390655699556033</data>
+      <data key="d8">0.4332386051143596</data>
+    </edge>
+    <edge source="region:chr1:157806725-157807225" target="gene:FCRL1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">BCL11A_direct_+/+</data>
+      <data key="d7">0.0953776513966615</data>
+      <data key="d8">0.6649700385564411</data>
+    </edge>
+    <edge source="region:chr1:157806725-157807225" target="gene:FCRL2" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPIB_direct_+/+</data>
+      <data key="d7">0.0351609237665003</data>
+      <data key="d8">0.4340699009903978</data>
+    </edge>
+    <edge source="region:chr1:157819885-157820385" target="gene:FCRL1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">BCL11A_direct_+/+</data>
+      <data key="d7">0.0682712785719466</data>
+      <data key="d8">0.6396785016329012</data>
+    </edge>
+    <edge source="region:chr1:157819885-157820385" target="gene:FCRL2" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPIB_direct_+/+</data>
+      <data key="d7">0.0598341879764234</data>
+      <data key="d8">0.4200991729133291</data>
+    </edge>
+    <edge source="region:chr1:157849453-157849953" target="gene:FCRL2" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPIB_direct_+/+</data>
+      <data key="d7">0.0481969661397071</data>
+      <data key="d8">0.4566808448894665</data>
+    </edge>
+    <edge source="region:chr1:159068150-159068650" target="gene:AIM2" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">POU2AF1_direct_+/+</data>
+      <data key="d7">0.0488699170043884</data>
+      <data key="d8">0.2983045584599495</data>
+    </edge>
+    <edge source="region:chr1:160432329-160432829" target="gene:SLAMF6" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">POU2AF1_direct_+/+</data>
+      <data key="d7">0.0561764005441306</data>
+      <data key="d8">0.2097050808253945</data>
+    </edge>
+    <edge source="region:chr1:161706840-161707340" target="gene:FCRLA" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPIB_direct_+/+</data>
+      <data key="d7">0.0647601312435254</data>
+      <data key="d8">0.3771167484755456</data>
+    </edge>
+    <edge source="region:chr1:161738889-161739389" target="gene:FCRLA" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPIB_direct_+/+</data>
+      <data key="d7">0.0288472841075853</data>
+      <data key="d8">0.1163573376496993</data>
+    </edge>
+    <edge source="region:chr1:161739807-161740307" target="gene:FCRLA" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPIB_direct_+/+</data>
+      <data key="d7">0.0455521770884466</data>
+      <data key="d8">0.299668981288529</data>
+    </edge>
+    <edge source="region:chr1:175225417-175225917" target="gene:KIAA0040" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">POU2AF1_direct_+/+</data>
+      <data key="d7">0.0774906771595654</data>
+      <data key="d8">0.1131957598589118</data>
+    </edge>
+    <edge source="region:chr1:178575738-178576238" target="gene:RALGPS2" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">BCL11A_direct_+/+;SPIB_direct_+/+</data>
+      <data key="d7">0.0978982867104429</data>
+      <data key="d8">0.6959317643276228</data>
+    </edge>
+    <edge source="region:chr1:178579558-178580058" target="gene:RALGPS2" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPIB_direct_+/+</data>
+      <data key="d7">0.0400921669000063</data>
+      <data key="d8">0.6959487125793926</data>
+    </edge>
+    <edge source="region:chr1:178581260-178581760" target="gene:RALGPS2" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">POU2AF1_direct_+/+</data>
+      <data key="d7">0.0635038589416076</data>
+      <data key="d8">0.6882522680040224</data>
+    </edge>
+    <edge source="region:chr1:178726143-178726643" target="gene:ANGPTL1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPIB_direct_+/+</data>
+      <data key="d7">0.0380410849025883</data>
+      <data key="d8">0.3108259525103097</data>
+    </edge>
+    <edge source="region:chr22:24401124-24401624" target="gene:GUCD1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPIB_direct_+/+</data>
+      <data key="d7">0.0148101670230972</data>
+      <data key="d8">0.1523343086036864</data>
+    </edge>
+    <edge source="region:chr22:24555590-24556090" target="gene:GUCD1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPIB_direct_+/-</data>
+      <data key="d7">0.0632474134051112</data>
+      <data key="d8">-0.1303693273449349</data>
+    </edge>
+    <edge source="region:chr22:24607341-24607841" target="gene:GUCD1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPIB_direct_+/+</data>
+      <data key="d7">0.027063432882024</data>
+      <data key="d8">0.064917764742789</data>
+    </edge>
+    <edge source="region:chr22:41925347-41925847" target="gene:TNFRSF13C" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPIB_direct_+/+</data>
+      <data key="d7">0.037993487125225</data>
+      <data key="d8">0.3288807518004606</data>
+    </edge>
+    <edge source="region:chr22:41952036-41952536" target="gene:TNFRSF13C" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPIB_direct_+/+</data>
+      <data key="d7">0.0348482109878608</data>
+      <data key="d8">0.5466653798628042</data>
+    </edge>
+    <edge source="region:chr22:42022400-42022900" target="gene:TNFRSF13C" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPIB_direct_+/+</data>
+      <data key="d7">0.0245392345133115</data>
+      <data key="d8">0.3515661531859141</data>
+    </edge>
+    <edge source="region:chr2:100113996-100114496" target="gene:AFF3" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">BCL11A_direct_+/+;SPIB_direct_+/+</data>
+      <data key="d7">0.1196721449911163</data>
+      <data key="d8">0.5052832998745693</data>
+    </edge>
+    <edge source="region:chr2:100142369-100142869" target="gene:AFF3" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">BCL11A_direct_+/+;SPIB_direct_+/+</data>
+      <data key="d7">0.1071944211859482</data>
+      <data key="d8">0.4821038449590067</data>
+    </edge>
+    <edge source="region:chr2:100235049-100235549" target="gene:AFF3" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">BCL11A_direct_+/+;SPIB_direct_+/+</data>
+      <data key="d7">0.1048311539691873</data>
+      <data key="d8">0.3590571242525131</data>
+    </edge>
+    <edge source="region:chr2:100247477-100247977" target="gene:AFF3" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">BCL11A_direct_+/+;SPIB_direct_+/+</data>
+      <data key="d7">0.0473609581944356</data>
+      <data key="d8">0.6525387035442566</data>
+    </edge>
+    <edge source="region:chr2:17749778-17750278" target="gene:SMC6" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPIB_direct_+/+</data>
+      <data key="d7">0.0644659025357206</data>
+      <data key="d8">0.2233528299457169</data>
+    </edge>
+    <edge source="region:chr2:17804382-17804882" target="gene:SMC6" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPIB_direct_+/+</data>
+      <data key="d7">0.0835876741789221</data>
+      <data key="d8">0.2319527225723365</data>
+    </edge>
+    <edge source="region:chr2:60317805-60318305" target="gene:BCL11A" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">BCL11A_direct_+/+</data>
+      <data key="d7">0.0161314604058315</data>
+      <data key="d8">0.7144857822085683</data>
+    </edge>
+    <edge source="region:chr2:60350837-60351337" target="gene:BCL11A" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">BCL11A_direct_+/+</data>
+      <data key="d7">0.0478835847541976</data>
+      <data key="d8">0.7205120391318063</data>
+    </edge>
+    <edge source="region:chr2:99928403-99928903" target="gene:AFF3" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPIB_direct_+/+</data>
+      <data key="d7">0.052663213763041</data>
+      <data key="d8">0.5116647444544645</data>
+    </edge>
+    <edge source="region:chr3:129282639-129283139" target="gene:MBD4" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPIB_direct_+/+</data>
+      <data key="d7">0.0595421379416749</data>
+      <data key="d8">0.0708057503258251</data>
+    </edge>
+    <edge source="region:chr3:129305616-129306116" target="gene:MBD4" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPIB_direct_+/+</data>
+      <data key="d7">0.0148168006251184</data>
+      <data key="d8">0.1183158069154667</data>
+    </edge>
+    <edge source="region:chr3:129439391-129439891" target="gene:MBD4" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPIB_direct_+/+</data>
+      <data key="d7">0.0593657169735888</data>
+      <data key="d8">0.1003351725111737</data>
+    </edge>
+    <edge source="region:chr3:129526046-129526546" target="gene:MBD4" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPIB_direct_+/+</data>
+      <data key="d7">0.0268645872891519</data>
+      <data key="d8">0.0943709481131782</data>
+    </edge>
+    <edge source="region:chr3:129577917-129578417" target="gene:MBD4" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPIB_direct_+/+</data>
+      <data key="d7">0.0246357596985828</data>
+      <data key="d8">0.1076050552643484</data>
+    </edge>
+    <edge source="region:chr3:31917208-31917708" target="gene:OSBPL10" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">POU2AF1_direct_+/+</data>
+      <data key="d7">0.0799082567728566</data>
+      <data key="d8">0.8301449472417652</data>
+    </edge>
+    <edge source="region:chr3:31952157-31952657" target="gene:OSBPL10" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">BCL11A_direct_+/+;SPIB_direct_+/+</data>
+      <data key="d7">0.0542171008523743</data>
+      <data key="d8">0.8014764602150871</data>
+    </edge>
+    <edge source="region:chr4:101790443-101790943" target="gene:BANK1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">BCL11A_direct_+/+;SPIB_direct_+/+</data>
+      <data key="d7">0.0739952121262694</data>
+      <data key="d8">0.554125219088788</data>
+    </edge>
+    <edge source="region:chr4:101813555-101814055" target="gene:BANK1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPIB_direct_+/+</data>
+      <data key="d7">0.1238954824731597</data>
+      <data key="d8">0.91875681754363</data>
+    </edge>
+    <edge source="region:chr4:101862508-101863008" target="gene:BANK1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">BCL11A_direct_+/+;SPIB_direct_+/+</data>
+      <data key="d7">0.0713701357730987</data>
+      <data key="d8">0.9164870337873676</data>
+    </edge>
+    <edge source="region:chr4:25904297-25904797" target="gene:SEL1L3" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">BCL11A_direct_+/+</data>
+      <data key="d7">0.0538197366144739</data>
+      <data key="d8">0.5137880786713521</data>
+    </edge>
+    <edge source="region:chr4:90071723-90072223" target="gene:CCSER1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">POU2AF1_direct_+/+</data>
+      <data key="d7">0.1648270039564188</data>
+      <data key="d8">0.4854694482298797</data>
+    </edge>
+    <edge source="region:chr5:10632135-10632635" target="gene:ANKRD33B" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">POU2AF1_direct_+/+</data>
+      <data key="d7">0.0418331468752938</data>
+      <data key="d8">0.1363877038026288</data>
+    </edge>
+    <edge source="region:chr5:158676611-158677111" target="gene:EBF1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">BCL11A_direct_+/+;SPIB_direct_+/+</data>
+      <data key="d7">0.0238898278431733</data>
+      <data key="d8">0.874876801335472</data>
+    </edge>
+    <edge source="region:chr5:158953893-158954393" target="gene:EBF1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">BCL11A_direct_+/+</data>
+      <data key="d7">0.0611393161685232</data>
+      <data key="d8">0.6981455506424109</data>
+    </edge>
+    <edge source="region:chr5:158958206-158958706" target="gene:EBF1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">POU2AF1_direct_+/+;SPIB_direct_+/+</data>
+      <data key="d7">0.0348651946162152</data>
+      <data key="d8">0.4769136145716502</data>
+    </edge>
+    <edge source="region:chr5:159052414-159052914" target="gene:EBF1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPIB_direct_+/+</data>
+      <data key="d7">0.041840918159605</data>
+      <data key="d8">0.8755065988897943</data>
+    </edge>
+    <edge source="region:chr5:159083959-159084459" target="gene:EBF1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPIB_direct_+/+</data>
+      <data key="d7">0.0541632016189698</data>
+      <data key="d8">0.707632320988106</data>
+    </edge>
+    <edge source="region:chr5:159155921-159156421" target="gene:EBF1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">BCL11A_direct_+/+;SPIB_direct_+/+</data>
+      <data key="d7">0.0226557339223401</data>
+      <data key="d8">0.8412117986229042</data>
+    </edge>
+    <edge source="region:chr5:88732198-88732698" target="gene:MEF2C" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">BCL11A_direct_+/+</data>
+      <data key="d7">0.0423146434958541</data>
+      <data key="d8">0.8719499625960151</data>
+    </edge>
+    <edge source="region:chr5:88827114-88827614" target="gene:MEF2C" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">BCL11A_direct_+/+</data>
+      <data key="d7">0.099503330021452</data>
+      <data key="d8">0.7933113853603199</data>
+    </edge>
+    <edge source="region:chr6:150599580-150600080" target="gene:PLEKHG1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">BCL11A_direct_+/+</data>
+      <data key="d7">0.0892563440192172</data>
+      <data key="d8">0.4031452495563327</data>
+    </edge>
+    <edge source="region:chr6:150622895-150623395" target="gene:PLEKHG1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">BCL11A_direct_+/+</data>
+      <data key="d7">0.0675936056629288</data>
+      <data key="d8">0.4480740535562177</data>
+    </edge>
+    <edge source="region:chr6:150631507-150632007" target="gene:PLEKHG1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">BCL11A_direct_+/+</data>
+      <data key="d7">0.0744304591924219</data>
+      <data key="d8">0.6084878083348528</data>
+    </edge>
+    <edge source="region:chr6:150641318-150641818" target="gene:PLEKHG1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">BCL11A_direct_+/+</data>
+      <data key="d7">0.0298667066513378</data>
+      <data key="d8">0.6728128521877712</data>
+    </edge>
+    <edge source="region:chr6:150689986-150690486" target="gene:PLEKHG1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">BCL11A_direct_+/+</data>
+      <data key="d7">0.0315269191526993</data>
+      <data key="d8">0.6995419548497303</data>
+    </edge>
+    <edge source="region:chr6:150765331-150765831" target="gene:PLEKHG1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">BCL11A_direct_+/+</data>
+      <data key="d7">0.0394124413782033</data>
+      <data key="d8">0.70036516151263</data>
+    </edge>
+    <edge source="region:chr6:32584026-32584526" target="gene:HLA-DQA1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">BCL11A_direct_+/+</data>
+      <data key="d7">0.0455620696416714</data>
+      <data key="d8">0.4572442601448809</data>
+    </edge>
+    <edge source="region:chr6:32638500-32639000" target="gene:HLA-DQA1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">BCL11A_direct_+/+</data>
+      <data key="d7">0.1072240442355598</data>
+      <data key="d8">0.5774359733179154</data>
+    </edge>
+    <edge source="region:chr7:90595549-90596049" target="gene:CDK14" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPIB_direct_+/+</data>
+      <data key="d7">0.0366774274749001</data>
+      <data key="d8">0.6576787946431749</data>
+    </edge>
+    <edge source="region:chr7:90596243-90596743" target="gene:CDK14" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPIB_direct_+/+</data>
+      <data key="d7">0.0259016343225834</data>
+      <data key="d8">0.4856544933588578</data>
+    </edge>
+    <edge source="region:chr7:90600139-90600639" target="gene:CDK14" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPIB_direct_+/+</data>
+      <data key="d7">0.0399455782281835</data>
+      <data key="d8">0.5985788696464874</data>
+    </edge>
+    <edge source="region:chr7:90709710-90710210" target="gene:CDK14" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPIB_direct_+/+</data>
+      <data key="d7">0.0686596908642801</data>
+      <data key="d8">0.6342732362373281</data>
+    </edge>
+    <edge source="region:chr8:11491859-11492359" target="gene:BLK" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">BCL11A_direct_+/+;POU2AF1_direct_+/+</data>
+      <data key="d7">0.0876630193320679</data>
+      <data key="d8">0.4369406065746375</data>
+    </edge>
+    <edge source="region:chr8:11538925-11539425" target="gene:BLK" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">POU2AF1_direct_+/+</data>
+      <data key="d7">0.0737595676935833</data>
+      <data key="d8">0.7885435512542505</data>
+    </edge>
+    <edge source="region:chr8:24297755-24298255" target="gene:ADAM28" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">BCL11A_direct_+/+</data>
+      <data key="d7">0.043804837919869</data>
+      <data key="d8">0.7930018360594303</data>
+    </edge>
+    <edge source="region:chr8:24330388-24330888" target="gene:ADAM28" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">BCL11A_direct_+/+</data>
+      <data key="d7">0.1120309833997017</data>
+      <data key="d8">0.6496081606183874</data>
+    </edge>
+    <edge source="region:chr8:94978851-94979351" target="gene:TP53INP1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">POU2AF1_direct_+/+</data>
+      <data key="d7">0.05350836643813</data>
+      <data key="d8">0.150829971314403</data>
+    </edge>
+    <edge source="region:chr8:95073054-95073554" target="gene:TP53INP1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">POU2AF1_direct_+/+</data>
+      <data key="d7">0.0197717660133755</data>
+      <data key="d8">0.1379782060480254</data>
+    </edge>
+    <edge source="region:chr9:36993820-36994320" target="gene:PAX5" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">BCL11A_direct_+/+</data>
+      <data key="d7">0.033237144948425</data>
+      <data key="d8">0.911972648727259</data>
+    </edge>
+    <edge source="region:chr9:37004430-37004930" target="gene:PAX5" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">BCL11A_direct_+/+;POU2AF1_direct_+/+;SPIB_direct_+/+</data>
+      <data key="d7">0.0324511678145785</data>
+      <data key="d8">0.947205773238706</data>
+    </edge>
+    <edge source="region:chr9:37028948-37029448" target="gene:PAX5" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">BCL11A_direct_+/+;SPIB_direct_+/+</data>
+      <data key="d7">0.0127663587617576</data>
+      <data key="d8">0.8543601143320095</data>
+    </edge>
+    <edge source="region:chr9:37032645-37033145" target="gene:PAX5" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">BCL11A_direct_+/+</data>
+      <data key="d7">0.0584853071306201</data>
+      <data key="d8">0.952629835657484</data>
+    </edge>
+    <edge source="region:chr9:37034102-37034602" target="gene:PAX5" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">BCL11A_direct_+/+;SPIB_direct_+/+</data>
+      <data key="d7">0.0696013730396779</data>
+      <data key="d8">0.5241483161378122</data>
+    </edge>
+    <edge source="region:chr9:37034641-37035141" target="gene:PAX5" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPIB_direct_+/+</data>
+      <data key="d7">0.0318236391244915</data>
+      <data key="d8">0.5274584501840568</data>
+    </edge>
+    <edge source="region:chr9:37120183-37120683" target="gene:PAX5" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPIB_direct_+/-</data>
+      <data key="d7">0.0048738131503996</data>
+      <data key="d8">-0.1110630374250343</data>
+    </edge>
+    <edge source="region:chr9:68643733-68644233" target="gene:PIP5K1B" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPIB_direct_+/+</data>
+      <data key="d7">0.0433230948697384</data>
+      <data key="d8">0.4320815363929129</data>
+    </edge>
+    <edge source="region:chr9:68704944-68705444" target="gene:PIP5K1B" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPIB_direct_+/+</data>
+      <data key="d7">0.0743537602026312</data>
+      <data key="d8">0.4686741865266641</data>
+    </edge>
+    <edge source="region:chr9:68708382-68708882" target="gene:PIP5K1B" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPIB_direct_+/+</data>
+      <data key="d7">0.0392296899540121</data>
+      <data key="d8">0.4453086796562717</data>
+    </edge>
+    <edge source="region:chr9:68919535-68920035" target="gene:PIP5K1B" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPIB_direct_+/+</data>
+      <data key="d7">0.0321476013695917</data>
+      <data key="d8">0.4671158112666208</data>
+    </edge>
+    <edge source="region:chr9:69121913-69122413" target="gene:PIP5K1B" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPIB_direct_+/+</data>
+      <data key="d7">0.0472465833992253</data>
+      <data key="d8">0.1719157292172106</data>
+    </edge>
+  </graph>
+</graphml>

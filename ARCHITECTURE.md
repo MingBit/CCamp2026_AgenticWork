@@ -12,6 +12,8 @@
 | Validation | Independent critique | All preceding task results | Integrity checks, issues and review requests |
 | Reporting | Report specialist | Validation + evidence files | Scientific report, figures |
 
+Modality routing occurs before inspection. RNA follows QC, PCA, the cell graph, and clustering. ATAC branches to TF-IDF/LSI, protein branches to CLR normalization, and multi-modal inputs request optional WNN/MultiVI integration. Unsupported or unavailable branches are recorded as explicit skips.
+
 ```mermaid
 flowchart LR
   input[Read-only input] --> inspection --> qc --> representation --> graph --> clustering

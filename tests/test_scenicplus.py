@@ -373,6 +373,7 @@ def test_report_uses_eregulon_outputs(tmp_path):
     result = report(ctx)
     names = {Path(p).name for k, p in result["outputs"].items() if k.startswith("figure_")}
     assert {"eregulon_activity_heatmap.png", "eregulon_tf_network.png", "eregulon_rss_heatmap.png"} <= names
+    assert "candidate_tf_network.png" not in names  # the coexpression-only figure needs spearman_r
     ledger = pd.read_csv(result["outputs"]["evidence_ledger"], sep="\t")
     assert ledger["finding"].str.contains("SCENIC\\+ eRegulons").any()
 

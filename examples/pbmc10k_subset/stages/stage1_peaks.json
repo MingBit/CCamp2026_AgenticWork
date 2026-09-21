@@ -1,0 +1,30 @@
+{
+  "fingerprint": "c095146bb8f133fdd819df5dad435bf24d4a8f277f9933d21791d6dc913e9aca",
+  "metrics": {
+    "cells_in_pseudobulks": 1320,
+    "consensus_peaks": 187083,
+    "consensus_peaks_before_chromosome_filter": 187083,
+    "consensus_peaks_removed_outside_keep_chromosomes": 0,
+    "peaks_per_pseudobulk": {
+      "B_cells": 101337,
+      "FCGR3A_monocytes": 99006,
+      "NK_cells": 75604,
+      "Plasmacytoid_dendritic_cells": 31101,
+      "T_cells": 92478
+    },
+    "pseudobulks": 5
+  },
+  "outputs": {
+    "consensus_regions": "/mnt/storageBig8/work/muratli/PBMC10k_subset/scenicplus_work/stage1_peaks/consensus_regions.bed",
+    "macs2_dir": "/mnt/storageBig8/work/muratli/PBMC10k_subset/scenicplus_work/stage1_peaks/macs2",
+    "pseudobulk_bed_dir": "/mnt/storageBig8/work/muratli/PBMC10k_subset/scenicplus_work/stage1_peaks/pseudobulk_bed",
+    "pseudobulk_bigwig_dir": "/mnt/storageBig8/work/muratli/PBMC10k_subset/scenicplus_work/stage1_peaks/pseudobulk_bigwig"
+  },
+  "status": "completed",
+  "versions": {
+    "MACS2": "2.2.9.1",
+    "pycisTopic": "2.0a0",
+    "pyranges": "0.0.111"
+  },
+  "warnings": []
+}

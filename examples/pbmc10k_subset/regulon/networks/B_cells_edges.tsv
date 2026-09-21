@@ -1,0 +1,325 @@
+source	target	interaction	eregulons	importance	rho
+TF:BCL11A	region:chr10:48634242-48634742	tf_binds_region	BCL11A_direct_+/+		
+TF:BCL11A	region:chr10:48802488-48802988	tf_binds_region	BCL11A_direct_+/+		
+TF:BCL11A	region:chr10:96211892-96212392	tf_binds_region	BCL11A_direct_+/+		
+TF:BCL11A	region:chr10:96229458-96229958	tf_binds_region	BCL11A_direct_+/+		
+TF:BCL11A	region:chr10:96273297-96273797	tf_binds_region	BCL11A_direct_+/+		
+TF:BCL11A	region:chr11:60310753-60311253	tf_binds_region	BCL11A_direct_+/+		
+TF:BCL11A	region:chr11:60396702-60397202	tf_binds_region	BCL11A_direct_+/+		
+TF:BCL11A	region:chr11:60455452-60455952	tf_binds_region	BCL11A_direct_+/+		
+TF:BCL11A	region:chr11:60482324-60482824	tf_binds_region	BCL11A_direct_+/+		
+TF:BCL11A	region:chr11:60528911-60529411	tf_binds_region	BCL11A_direct_+/+		
+TF:BCL11A	region:chr17:63922341-63922841	tf_binds_region	BCL11A_direct_+/+		
+TF:BCL11A	region:chr17:63925517-63926017	tf_binds_region	BCL11A_direct_+/+		
+TF:BCL11A	region:chr17:63954302-63954802	tf_binds_region	BCL11A_direct_+/+		
+TF:BCL11A	region:chr19:17523127-17523627	tf_binds_region	BCL11A_direct_+/+		
+TF:BCL11A	region:chr19:17526950-17527450	tf_binds_region	BCL11A_direct_+/+		
+TF:BCL11A	region:chr19:35458879-35459379	tf_binds_region	BCL11A_direct_+/+		
+TF:BCL11A	region:chr1:157704709-157705209	tf_binds_region	BCL11A_direct_+/+		
+TF:BCL11A	region:chr1:157806725-157807225	tf_binds_region	BCL11A_direct_+/+		
+TF:BCL11A	region:chr1:157819885-157820385	tf_binds_region	BCL11A_direct_+/+		
+TF:BCL11A	region:chr1:178575738-178576238	tf_binds_region	BCL11A_direct_+/+		
+TF:BCL11A	region:chr2:100113996-100114496	tf_binds_region	BCL11A_direct_+/+		
+TF:BCL11A	region:chr2:100142369-100142869	tf_binds_region	BCL11A_direct_+/+		
+TF:BCL11A	region:chr2:100235049-100235549	tf_binds_region	BCL11A_direct_+/+		
+TF:BCL11A	region:chr2:100247477-100247977	tf_binds_region	BCL11A_direct_+/+		
+TF:BCL11A	region:chr2:60317805-60318305	tf_binds_region	BCL11A_direct_+/+		
+TF:BCL11A	region:chr2:60350837-60351337	tf_binds_region	BCL11A_direct_+/+		
+TF:BCL11A	region:chr3:31952157-31952657	tf_binds_region	BCL11A_direct_+/+		
+TF:BCL11A	region:chr4:101790443-101790943	tf_binds_region	BCL11A_direct_+/+		
+TF:BCL11A	region:chr4:101862508-101863008	tf_binds_region	BCL11A_direct_+/+		
+TF:BCL11A	region:chr4:25904297-25904797	tf_binds_region	BCL11A_direct_+/+		
+TF:BCL11A	region:chr5:158676611-158677111	tf_binds_region	BCL11A_direct_+/+		
+TF:BCL11A	region:chr5:158953893-158954393	tf_binds_region	BCL11A_direct_+/+		
+TF:BCL11A	region:chr5:159155921-159156421	tf_binds_region	BCL11A_direct_+/+		
+TF:BCL11A	region:chr5:88732198-88732698	tf_binds_region	BCL11A_direct_+/+		
+TF:BCL11A	region:chr5:88827114-88827614	tf_binds_region	BCL11A_direct_+/+		
+TF:BCL11A	region:chr6:150599580-150600080	tf_binds_region	BCL11A_direct_+/+		
+TF:BCL11A	region:chr6:150622895-150623395	tf_binds_region	BCL11A_direct_+/+		
+TF:BCL11A	region:chr6:150631507-150632007	tf_binds_region	BCL11A_direct_+/+		
+TF:BCL11A	region:chr6:150641318-150641818	tf_binds_region	BCL11A_direct_+/+		
+TF:BCL11A	region:chr6:150689986-150690486	tf_binds_region	BCL11A_direct_+/+		
+TF:BCL11A	region:chr6:150765331-150765831	tf_binds_region	BCL11A_direct_+/+		
+TF:BCL11A	region:chr6:32584026-32584526	tf_binds_region	BCL11A_direct_+/+		
+TF:BCL11A	region:chr6:32638500-32639000	tf_binds_region	BCL11A_direct_+/+		
+TF:BCL11A	region:chr8:11491859-11492359	tf_binds_region	BCL11A_direct_+/+		
+TF:BCL11A	region:chr8:24297755-24298255	tf_binds_region	BCL11A_direct_+/+		
+TF:BCL11A	region:chr8:24330388-24330888	tf_binds_region	BCL11A_direct_+/+		
+TF:BCL11A	region:chr9:36993820-36994320	tf_binds_region	BCL11A_direct_+/+		
+TF:BCL11A	region:chr9:37004430-37004930	tf_binds_region	BCL11A_direct_+/+		
+TF:BCL11A	region:chr9:37028948-37029448	tf_binds_region	BCL11A_direct_+/+		
+TF:BCL11A	region:chr9:37032645-37033145	tf_binds_region	BCL11A_direct_+/+		
+TF:BCL11A	region:chr9:37034102-37034602	tf_binds_region	BCL11A_direct_+/+		
+TF:POU2AF1	region:chr10:48672264-48672764	tf_binds_region	POU2AF1_direct_+/+		
+TF:POU2AF1	region:chr11:72738078-72738578	tf_binds_region	POU2AF1_direct_+/+		
+TF:POU2AF1	region:chr12:26156176-26156676	tf_binds_region	POU2AF1_direct_+/+		
+TF:POU2AF1	region:chr15:70036555-70037055	tf_binds_region	POU2AF1_direct_+/+		
+TF:POU2AF1	region:chr15:70196558-70197058	tf_binds_region	POU2AF1_direct_+/+		
+TF:POU2AF1	region:chr17:63932152-63932652	tf_binds_region	POU2AF1_direct_+/+		
+TF:POU2AF1	region:chr19:16259776-16260276	tf_binds_region	POU2AF1_direct_+/+		
+TF:POU2AF1	region:chr19:16445337-16445837	tf_binds_region	POU2AF1_direct_+/+		
+TF:POU2AF1	region:chr19:2486081-2486581	tf_binds_region	POU2AF1_direct_+/+		
+TF:POU2AF1	region:chr19:35330437-35330937	tf_binds_region	POU2AF1_direct_+/+		
+TF:POU2AF1	region:chr1:157726745-157727245	tf_binds_region	POU2AF1_direct_+/+		
+TF:POU2AF1	region:chr1:159068150-159068650	tf_binds_region	POU2AF1_direct_+/+		
+TF:POU2AF1	region:chr1:160432329-160432829	tf_binds_region	POU2AF1_direct_+/+		
+TF:POU2AF1	region:chr1:175225417-175225917	tf_binds_region	POU2AF1_direct_+/+		
+TF:POU2AF1	region:chr1:178581260-178581760	tf_binds_region	POU2AF1_direct_+/+		
+TF:POU2AF1	region:chr3:31917208-31917708	tf_binds_region	POU2AF1_direct_+/+		
+TF:POU2AF1	region:chr4:90071723-90072223	tf_binds_region	POU2AF1_direct_+/+		
+TF:POU2AF1	region:chr5:10632135-10632635	tf_binds_region	POU2AF1_direct_+/+		
+TF:POU2AF1	region:chr5:158958206-158958706	tf_binds_region	POU2AF1_direct_+/+		
+TF:POU2AF1	region:chr8:11491859-11492359	tf_binds_region	POU2AF1_direct_+/+		
+TF:POU2AF1	region:chr8:11538925-11539425	tf_binds_region	POU2AF1_direct_+/+		
+TF:POU2AF1	region:chr8:94978851-94979351	tf_binds_region	POU2AF1_direct_+/+		
+TF:POU2AF1	region:chr8:95073054-95073554	tf_binds_region	POU2AF1_direct_+/+		
+TF:POU2AF1	region:chr9:37004430-37004930	tf_binds_region	POU2AF1_direct_+/+		
+TF:SPIB	region:chr12:31362987-31363487	tf_binds_region	SPIB_direct_+/+		
+TF:SPIB	region:chr12:31687059-31687559	tf_binds_region	SPIB_direct_+/+		
+TF:SPIB	region:chr12:79689927-79690427	tf_binds_region	SPIB_direct_+/+		
+TF:SPIB	region:chr12:9731705-9732205	tf_binds_region	SPIB_direct_+/+		
+TF:SPIB	region:chr12:9761300-9761800	tf_binds_region	SPIB_direct_+/-		
+TF:SPIB	region:chr12:9764703-9765203	tf_binds_region	SPIB_direct_+/-		
+TF:SPIB	region:chr12:9810621-9811121	tf_binds_region	SPIB_direct_+/+		
+TF:SPIB	region:chr16:28923935-28924435	tf_binds_region	SPIB_direct_+/+		
+TF:SPIB	region:chr16:28930696-28931196	tf_binds_region	SPIB_direct_+/+		
+TF:SPIB	region:chr19:50330707-50331207	tf_binds_region	SPIB_direct_+/+		
+TF:SPIB	region:chr19:50415547-50416047	tf_binds_region	SPIB_direct_+/+		
+TF:SPIB	region:chr19:50419633-50420133	tf_binds_region	SPIB_direct_+/+		
+TF:SPIB	region:chr19:50430957-50431457	tf_binds_region	SPIB_direct_+/+		
+TF:SPIB	region:chr1:157773806-157774306	tf_binds_region	SPIB_direct_+/+		
+TF:SPIB	region:chr1:157803787-157804287	tf_binds_region	SPIB_direct_+/+		
+TF:SPIB	region:chr1:157806725-157807225	tf_binds_region	SPIB_direct_+/+		
+TF:SPIB	region:chr1:157819885-157820385	tf_binds_region	SPIB_direct_+/+		
+TF:SPIB	region:chr1:157849453-157849953	tf_binds_region	SPIB_direct_+/+		
+TF:SPIB	region:chr1:161706840-161707340	tf_binds_region	SPIB_direct_+/+		
+TF:SPIB	region:chr1:161738889-161739389	tf_binds_region	SPIB_direct_+/+		
+TF:SPIB	region:chr1:161739807-161740307	tf_binds_region	SPIB_direct_+/+		
+TF:SPIB	region:chr1:178575738-178576238	tf_binds_region	SPIB_direct_+/+		
+TF:SPIB	region:chr1:178579558-178580058	tf_binds_region	SPIB_direct_+/+		
+TF:SPIB	region:chr1:178726143-178726643	tf_binds_region	SPIB_direct_+/+		
+TF:SPIB	region:chr22:24401124-24401624	tf_binds_region	SPIB_direct_+/+		
+TF:SPIB	region:chr22:24555590-24556090	tf_binds_region	SPIB_direct_+/-		
+TF:SPIB	region:chr22:24607341-24607841	tf_binds_region	SPIB_direct_+/+		
+TF:SPIB	region:chr22:41925347-41925847	tf_binds_region	SPIB_direct_+/+		
+TF:SPIB	region:chr22:41952036-41952536	tf_binds_region	SPIB_direct_+/+		
+TF:SPIB	region:chr22:42022400-42022900	tf_binds_region	SPIB_direct_+/+		
+TF:SPIB	region:chr2:100113996-100114496	tf_binds_region	SPIB_direct_+/+		
+TF:SPIB	region:chr2:100142369-100142869	tf_binds_region	SPIB_direct_+/+		
+TF:SPIB	region:chr2:100235049-100235549	tf_binds_region	SPIB_direct_+/+		
+TF:SPIB	region:chr2:100247477-100247977	tf_binds_region	SPIB_direct_+/+		
+TF:SPIB	region:chr2:17749778-17750278	tf_binds_region	SPIB_direct_+/+		
+TF:SPIB	region:chr2:17804382-17804882	tf_binds_region	SPIB_direct_+/+		
+TF:SPIB	region:chr2:99928403-99928903	tf_binds_region	SPIB_direct_+/+		
+TF:SPIB	region:chr3:129282639-129283139	tf_binds_region	SPIB_direct_+/+		
+TF:SPIB	region:chr3:129305616-129306116	tf_binds_region	SPIB_direct_+/+		
+TF:SPIB	region:chr3:129439391-129439891	tf_binds_region	SPIB_direct_+/+		
+TF:SPIB	region:chr3:129526046-129526546	tf_binds_region	SPIB_direct_+/+		
+TF:SPIB	region:chr3:129577917-129578417	tf_binds_region	SPIB_direct_+/+		
+TF:SPIB	region:chr3:31952157-31952657	tf_binds_region	SPIB_direct_+/+		
+TF:SPIB	region:chr4:101790443-101790943	tf_binds_region	SPIB_direct_+/+		
+TF:SPIB	region:chr4:101813555-101814055	tf_binds_region	SPIB_direct_+/+		
+TF:SPIB	region:chr4:101862508-101863008	tf_binds_region	SPIB_direct_+/+		
+TF:SPIB	region:chr5:158676611-158677111	tf_binds_region	SPIB_direct_+/+		
+TF:SPIB	region:chr5:158958206-158958706	tf_binds_region	SPIB_direct_+/+		
+TF:SPIB	region:chr5:159052414-159052914	tf_binds_region	SPIB_direct_+/+		
+TF:SPIB	region:chr5:159083959-159084459	tf_binds_region	SPIB_direct_+/+		
+TF:SPIB	region:chr5:159155921-159156421	tf_binds_region	SPIB_direct_+/+		
+TF:SPIB	region:chr7:90595549-90596049	tf_binds_region	SPIB_direct_+/+		
+TF:SPIB	region:chr7:90596243-90596743	tf_binds_region	SPIB_direct_+/+		
+TF:SPIB	region:chr7:90600139-90600639	tf_binds_region	SPIB_direct_+/+		
+TF:SPIB	region:chr7:90709710-90710210	tf_binds_region	SPIB_direct_+/+		
+TF:SPIB	region:chr9:37004430-37004930	tf_binds_region	SPIB_direct_+/+		
+TF:SPIB	region:chr9:37028948-37029448	tf_binds_region	SPIB_direct_+/+		
+TF:SPIB	region:chr9:37034102-37034602	tf_binds_region	SPIB_direct_+/+		
+TF:SPIB	region:chr9:37034641-37035141	tf_binds_region	SPIB_direct_+/+		
+TF:SPIB	region:chr9:37120183-37120683	tf_binds_region	SPIB_direct_+/-		
+TF:SPIB	region:chr9:68643733-68644233	tf_binds_region	SPIB_direct_+/+		
+TF:SPIB	region:chr9:68704944-68705444	tf_binds_region	SPIB_direct_+/+		
+TF:SPIB	region:chr9:68708382-68708882	tf_binds_region	SPIB_direct_+/+		
+TF:SPIB	region:chr9:68919535-68920035	tf_binds_region	SPIB_direct_+/+		
+TF:SPIB	region:chr9:69121913-69122413	tf_binds_region	SPIB_direct_+/+		
+region:chr10:48634242-48634742	gene:WDFY4	region_regulates_gene	BCL11A_direct_+/+	0.0229066492571357	0.4987632376366196
+region:chr10:48672264-48672764	gene:WDFY4	region_regulates_gene	POU2AF1_direct_+/+	0.0544307959024134	0.6897483901007966
+region:chr10:48802488-48802988	gene:WDFY4	region_regulates_gene	BCL11A_direct_+/+	0.0312377916773536	0.4426074680318801
+region:chr10:96211892-96212392	gene:BLNK	region_regulates_gene	BCL11A_direct_+/+	0.0282461611369282	0.5588404213842035
+region:chr10:96229458-96229958	gene:BLNK	region_regulates_gene	BCL11A_direct_+/+	0.0594927095479408	0.3786537512997625
+region:chr10:96273297-96273797	gene:BLNK	region_regulates_gene	BCL11A_direct_+/+	0.0875859592091421	0.6047592325264788
+region:chr11:60310753-60311253	gene:MS4A1	region_regulates_gene	BCL11A_direct_+/+	0.0553537549222284	0.8185203324074878
+region:chr11:60396702-60397202	gene:MS4A1	region_regulates_gene	BCL11A_direct_+/+	0.0298887657001973	0.6902736081384427
+region:chr11:60455452-60455952	gene:MS4A1	region_regulates_gene	BCL11A_direct_+/+	0.0748555927226321	0.6059662347554602
+region:chr11:60482324-60482824	gene:MS4A1	region_regulates_gene	BCL11A_direct_+/+	0.0576586379459195	0.6997692988702794
+region:chr11:60528911-60529411	gene:MS4A1	region_regulates_gene	BCL11A_direct_+/+	0.0334556539252549	0.6897178810372339
+region:chr11:72738078-72738578	gene:FCHSD2	region_regulates_gene	POU2AF1_direct_+/+	0.0639235725973398	0.2734371767946356
+region:chr12:26156176-26156676	gene:SSPN	region_regulates_gene	POU2AF1_direct_+/+	0.060562051033139	0.2539228285918961
+region:chr12:31362987-31363487	gene:DENND5B	region_regulates_gene	SPIB_direct_+/+	0.0270472967875001	0.2678163758214135
+region:chr12:31687059-31687559	gene:DENND5B	region_regulates_gene	SPIB_direct_+/+	0.0311399919864478	0.4597095886550078
+region:chr12:79689927-79690427	gene:PAWR	region_regulates_gene	SPIB_direct_+/+	0.2482132889517704	0.2444053683245012
+region:chr12:9731705-9732205	gene:CLECL1	region_regulates_gene	SPIB_direct_+/+	0.0103157840747844	0.1454107511293936
+region:chr12:9761300-9761800	gene:CLECL1	region_regulates_gene	SPIB_direct_+/-	0.0157033603033407	-0.1474844899145957
+region:chr12:9764703-9765203	gene:CLECL1	region_regulates_gene	SPIB_direct_+/-	0.0152941107569777	-0.139136626164886
+region:chr12:9810621-9811121	gene:CLECL1	region_regulates_gene	SPIB_direct_+/+	0.0167017588618834	0.1859132026443551
+region:chr15:70036555-70037055	gene:TLE3	region_regulates_gene	POU2AF1_direct_+/+	0.0166324325625428	0.1254100155374904
+region:chr15:70196558-70197058	gene:TLE3	region_regulates_gene	POU2AF1_direct_+/+	0.0655733922066255	0.1293983008569906
+region:chr16:28923935-28924435	gene:RABEP2	region_regulates_gene	SPIB_direct_+/+	0.054596880011029	0.1797821348206941
+region:chr16:28930696-28931196	gene:RABEP2	region_regulates_gene	SPIB_direct_+/+	0.0329513370063386	0.1438703792199448
+region:chr17:63922341-63922841	gene:CD79B	region_regulates_gene	BCL11A_direct_+/+	0.0629440339113883	0.6541833496683208
+region:chr17:63925517-63926017	gene:CD79B	region_regulates_gene	BCL11A_direct_+/+	0.0436568735806788	0.4067936717890905
+region:chr17:63932152-63932652	gene:CD79B	region_regulates_gene	POU2AF1_direct_+/+	0.02260805350016	0.3660673420934984
+region:chr17:63954302-63954802	gene:CD79B	region_regulates_gene	BCL11A_direct_+/+	0.0420104896535287	0.3611241361075373
+region:chr19:16259776-16260276	gene:EPS15L1	region_regulates_gene	POU2AF1_direct_+/+	0.0059253376094633	0.0881837598756421
+region:chr19:16445337-16445837	gene:EPS15L1	region_regulates_gene	POU2AF1_direct_+/+	0.0142973343627543	0.084704919888799
+region:chr19:17523127-17523627	gene:NIBAN3	region_regulates_gene	BCL11A_direct_+/+	0.0685407772674784	0.4268694055119286
+region:chr19:17526950-17527450	gene:NIBAN3	region_regulates_gene	BCL11A_direct_+/+	0.1378735287840229	0.4440288978264773
+region:chr19:2486081-2486581	gene:GNG7	region_regulates_gene	POU2AF1_direct_+/+	0.05745771250234	0.5876127263493043
+region:chr19:35330437-35330937	gene:CD22	region_regulates_gene	POU2AF1_direct_+/+	0.0680544551794375	0.6529675912909675
+region:chr19:35458879-35459379	gene:CD22	region_regulates_gene	BCL11A_direct_+/+	0.0433592352288254	0.6535802158573769
+region:chr19:50330707-50331207	gene:SPIB	region_regulates_gene	SPIB_direct_+/+	0.0392694979634482	0.2544296357856883
+region:chr19:50415547-50416047	gene:SPIB	region_regulates_gene	SPIB_direct_+/+	0.0370040116692204	0.2929675516281144
+region:chr19:50419633-50420133	gene:SPIB	region_regulates_gene	SPIB_direct_+/+	0.0257935685958857	0.3998079169931383
+region:chr19:50430957-50431457	gene:SPIB	region_regulates_gene	SPIB_direct_+/+	0.0604187127473934	0.2944056884270994
+region:chr1:157704709-157705209	gene:FCRL1	region_regulates_gene	BCL11A_direct_+/+	0.0645609168370146	0.6672430074581007
+region:chr1:157726745-157727245	gene:FCRL2	region_regulates_gene	POU2AF1_direct_+/+	0.08635707256603	0.3886992746729398
+region:chr1:157773806-157774306	gene:FCRL2	region_regulates_gene	SPIB_direct_+/+	0.0604461249155651	0.3916317164531863
+region:chr1:157803787-157804287	gene:FCRL2	region_regulates_gene	SPIB_direct_+/+	0.0390655699556033	0.4332386051143596
+region:chr1:157806725-157807225	gene:FCRL1	region_regulates_gene	BCL11A_direct_+/+	0.0953776513966615	0.6649700385564411
+region:chr1:157806725-157807225	gene:FCRL2	region_regulates_gene	SPIB_direct_+/+	0.0351609237665003	0.4340699009903978
+region:chr1:157819885-157820385	gene:FCRL1	region_regulates_gene	BCL11A_direct_+/+	0.0682712785719466	0.6396785016329012
+region:chr1:157819885-157820385	gene:FCRL2	region_regulates_gene	SPIB_direct_+/+	0.0598341879764234	0.4200991729133291
+region:chr1:157849453-157849953	gene:FCRL2	region_regulates_gene	SPIB_direct_+/+	0.0481969661397071	0.4566808448894665
+region:chr1:159068150-159068650	gene:AIM2	region_regulates_gene	POU2AF1_direct_+/+	0.0488699170043884	0.2983045584599495
+region:chr1:160432329-160432829	gene:SLAMF6	region_regulates_gene	POU2AF1_direct_+/+	0.0561764005441306	0.2097050808253945
+region:chr1:161706840-161707340	gene:FCRLA	region_regulates_gene	SPIB_direct_+/+	0.0647601312435254	0.3771167484755456
+region:chr1:161738889-161739389	gene:FCRLA	region_regulates_gene	SPIB_direct_+/+	0.0288472841075853	0.1163573376496993
+region:chr1:161739807-161740307	gene:FCRLA	region_regulates_gene	SPIB_direct_+/+	0.0455521770884466	0.299668981288529
+region:chr1:175225417-175225917	gene:KIAA0040	region_regulates_gene	POU2AF1_direct_+/+	0.0774906771595654	0.1131957598589118
+region:chr1:178575738-178576238	gene:RALGPS2	region_regulates_gene	BCL11A_direct_+/+;SPIB_direct_+/+	0.0978982867104429	0.6959317643276228
+region:chr1:178579558-178580058	gene:RALGPS2	region_regulates_gene	SPIB_direct_+/+	0.0400921669000063	0.6959487125793926
+region:chr1:178581260-178581760	gene:RALGPS2	region_regulates_gene	POU2AF1_direct_+/+	0.0635038589416076	0.6882522680040224
+region:chr1:178726143-178726643	gene:ANGPTL1	region_regulates_gene	SPIB_direct_+/+	0.0380410849025883	0.3108259525103097
+region:chr22:24401124-24401624	gene:GUCD1	region_regulates_gene	SPIB_direct_+/+	0.0148101670230972	0.1523343086036864
+region:chr22:24555590-24556090	gene:GUCD1	region_regulates_gene	SPIB_direct_+/-	0.0632474134051112	-0.1303693273449349
+region:chr22:24607341-24607841	gene:GUCD1	region_regulates_gene	SPIB_direct_+/+	0.027063432882024	0.064917764742789
+region:chr22:41925347-41925847	gene:TNFRSF13C	region_regulates_gene	SPIB_direct_+/+	0.037993487125225	0.3288807518004606
+region:chr22:41952036-41952536	gene:TNFRSF13C	region_regulates_gene	SPIB_direct_+/+	0.0348482109878608	0.5466653798628042
+region:chr22:42022400-42022900	gene:TNFRSF13C	region_regulates_gene	SPIB_direct_+/+	0.0245392345133115	0.3515661531859141
+region:chr2:100113996-100114496	gene:AFF3	region_regulates_gene	BCL11A_direct_+/+;SPIB_direct_+/+	0.1196721449911163	0.5052832998745693
+region:chr2:100142369-100142869	gene:AFF3	region_regulates_gene	BCL11A_direct_+/+;SPIB_direct_+/+	0.1071944211859482	0.4821038449590067
+region:chr2:100235049-100235549	gene:AFF3	region_regulates_gene	BCL11A_direct_+/+;SPIB_direct_+/+	0.1048311539691873	0.3590571242525131
+region:chr2:100247477-100247977	gene:AFF3	region_regulates_gene	BCL11A_direct_+/+;SPIB_direct_+/+	0.0473609581944356	0.6525387035442566
+region:chr2:17749778-17750278	gene:SMC6	region_regulates_gene	SPIB_direct_+/+	0.0644659025357206	0.2233528299457169
+region:chr2:17804382-17804882	gene:SMC6	region_regulates_gene	SPIB_direct_+/+	0.0835876741789221	0.2319527225723365
+region:chr2:60317805-60318305	gene:BCL11A	region_regulates_gene	BCL11A_direct_+/+	0.0161314604058315	0.7144857822085683
+region:chr2:60350837-60351337	gene:BCL11A	region_regulates_gene	BCL11A_direct_+/+	0.0478835847541976	0.7205120391318063
+region:chr2:99928403-99928903	gene:AFF3	region_regulates_gene	SPIB_direct_+/+	0.052663213763041	0.5116647444544645
+region:chr3:129282639-129283139	gene:MBD4	region_regulates_gene	SPIB_direct_+/+	0.0595421379416749	0.0708057503258251
+region:chr3:129305616-129306116	gene:MBD4	region_regulates_gene	SPIB_direct_+/+	0.0148168006251184	0.1183158069154667
+region:chr3:129439391-129439891	gene:MBD4	region_regulates_gene	SPIB_direct_+/+	0.0593657169735888	0.1003351725111737
+region:chr3:129526046-129526546	gene:MBD4	region_regulates_gene	SPIB_direct_+/+	0.0268645872891519	0.0943709481131782
+region:chr3:129577917-129578417	gene:MBD4	region_regulates_gene	SPIB_direct_+/+	0.0246357596985828	0.1076050552643484
+region:chr3:31917208-31917708	gene:OSBPL10	region_regulates_gene	POU2AF1_direct_+/+	0.0799082567728566	0.8301449472417652
+region:chr3:31952157-31952657	gene:OSBPL10	region_regulates_gene	BCL11A_direct_+/+;SPIB_direct_+/+	0.0542171008523743	0.8014764602150871
+region:chr4:101790443-101790943	gene:BANK1	region_regulates_gene	BCL11A_direct_+/+;SPIB_direct_+/+	0.0739952121262694	0.554125219088788
+region:chr4:101813555-101814055	gene:BANK1	region_regulates_gene	SPIB_direct_+/+	0.1238954824731597	0.91875681754363
+region:chr4:101862508-101863008	gene:BANK1	region_regulates_gene	BCL11A_direct_+/+;SPIB_direct_+/+	0.0713701357730987	0.9164870337873676
+region:chr4:25904297-25904797	gene:SEL1L3	region_regulates_gene	BCL11A_direct_+/+	0.0538197366144739	0.5137880786713521
+region:chr4:90071723-90072223	gene:CCSER1	region_regulates_gene	POU2AF1_direct_+/+	0.1648270039564188	0.4854694482298797
+region:chr5:10632135-10632635	gene:ANKRD33B	region_regulates_gene	POU2AF1_direct_+/+	0.0418331468752938	0.1363877038026288
+region:chr5:158676611-158677111	gene:EBF1	region_regulates_gene	BCL11A_direct_+/+;SPIB_direct_+/+	0.0238898278431733	0.874876801335472
+region:chr5:158953893-158954393	gene:EBF1	region_regulates_gene	BCL11A_direct_+/+	0.0611393161685232	0.6981455506424109
+region:chr5:158958206-158958706	gene:EBF1	region_regulates_gene	POU2AF1_direct_+/+;SPIB_direct_+/+	0.0348651946162152	0.4769136145716502
+region:chr5:159052414-159052914	gene:EBF1	region_regulates_gene	SPIB_direct_+/+	0.041840918159605	0.8755065988897943
+region:chr5:159083959-159084459	gene:EBF1	region_regulates_gene	SPIB_direct_+/+	0.0541632016189698	0.707632320988106
+region:chr5:159155921-159156421	gene:EBF1	region_regulates_gene	BCL11A_direct_+/+;SPIB_direct_+/+	0.0226557339223401	0.8412117986229042
+region:chr5:88732198-88732698	gene:MEF2C	region_regulates_gene	BCL11A_direct_+/+	0.0423146434958541	0.8719499625960151
+region:chr5:88827114-88827614	gene:MEF2C	region_regulates_gene	BCL11A_direct_+/+	0.099503330021452	0.7933113853603199
+region:chr6:150599580-150600080	gene:PLEKHG1	region_regulates_gene	BCL11A_direct_+/+	0.0892563440192172	0.4031452495563327
+region:chr6:150622895-150623395	gene:PLEKHG1	region_regulates_gene	BCL11A_direct_+/+	0.0675936056629288	0.4480740535562177
+region:chr6:150631507-150632007	gene:PLEKHG1	region_regulates_gene	BCL11A_direct_+/+	0.0744304591924219	0.6084878083348528
+region:chr6:150641318-150641818	gene:PLEKHG1	region_regulates_gene	BCL11A_direct_+/+	0.0298667066513378	0.6728128521877712
+region:chr6:150689986-150690486	gene:PLEKHG1	region_regulates_gene	BCL11A_direct_+/+	0.0315269191526993	0.6995419548497303
+region:chr6:150765331-150765831	gene:PLEKHG1	region_regulates_gene	BCL11A_direct_+/+	0.0394124413782033	0.70036516151263
+region:chr6:32584026-32584526	gene:HLA-DQA1	region_regulates_gene	BCL11A_direct_+/+	0.0455620696416714	0.4572442601448809
+region:chr6:32638500-32639000	gene:HLA-DQA1	region_regulates_gene	BCL11A_direct_+/+	0.1072240442355598	0.5774359733179154
+region:chr7:90595549-90596049	gene:CDK14	region_regulates_gene	SPIB_direct_+/+	0.0366774274749001	0.6576787946431749
+region:chr7:90596243-90596743	gene:CDK14	region_regulates_gene	SPIB_direct_+/+	0.0259016343225834	0.4856544933588578
+region:chr7:90600139-90600639	gene:CDK14	region_regulates_gene	SPIB_direct_+/+	0.0399455782281835	0.5985788696464874
+region:chr7:90709710-90710210	gene:CDK14	region_regulates_gene	SPIB_direct_+/+	0.0686596908642801	0.6342732362373281
+region:chr8:11491859-11492359	gene:BLK	region_regulates_gene	BCL11A_direct_+/+;POU2AF1_direct_+/+	0.0876630193320679	0.4369406065746375
+region:chr8:11538925-11539425	gene:BLK	region_regulates_gene	POU2AF1_direct_+/+	0.0737595676935833	0.7885435512542505
+region:chr8:24297755-24298255	gene:ADAM28	region_regulates_gene	BCL11A_direct_+/+	0.043804837919869	0.7930018360594303
+region:chr8:24330388-24330888	gene:ADAM28	region_regulates_gene	BCL11A_direct_+/+	0.1120309833997017	0.6496081606183874
+region:chr8:94978851-94979351	gene:TP53INP1	region_regulates_gene	POU2AF1_direct_+/+	0.05350836643813	0.150829971314403
+region:chr8:95073054-95073554	gene:TP53INP1	region_regulates_gene	POU2AF1_direct_+/+	0.0197717660133755	0.1379782060480254
+region:chr9:36993820-36994320	gene:PAX5	region_regulates_gene	BCL11A_direct_+/+	0.033237144948425	0.911972648727259
+region:chr9:37004430-37004930	gene:PAX5	region_regulates_gene	BCL11A_direct_+/+;POU2AF1_direct_+/+;SPIB_direct_+/+	0.0324511678145785	0.947205773238706
+region:chr9:37028948-37029448	gene:PAX5	region_regulates_gene	BCL11A_direct_+/+;SPIB_direct_+/+	0.0127663587617576	0.8543601143320095
+region:chr9:37032645-37033145	gene:PAX5	region_regulates_gene	BCL11A_direct_+/+	0.0584853071306201	0.952629835657484
+region:chr9:37034102-37034602	gene:PAX5	region_regulates_gene	BCL11A_direct_+/+;SPIB_direct_+/+	0.0696013730396779	0.5241483161378122
+region:chr9:37034641-37035141	gene:PAX5	region_regulates_gene	SPIB_direct_+/+	0.0318236391244915	0.5274584501840568
+region:chr9:37120183-37120683	gene:PAX5	region_regulates_gene	SPIB_direct_+/-	0.0048738131503996	-0.1110630374250343
+region:chr9:68643733-68644233	gene:PIP5K1B	region_regulates_gene	SPIB_direct_+/+	0.0433230948697384	0.4320815363929129
+region:chr9:68704944-68705444	gene:PIP5K1B	region_regulates_gene	SPIB_direct_+/+	0.0743537602026312	0.4686741865266641
+region:chr9:68708382-68708882	gene:PIP5K1B	region_regulates_gene	SPIB_direct_+/+	0.0392296899540121	0.4453086796562717
+region:chr9:68919535-68920035	gene:PIP5K1B	region_regulates_gene	SPIB_direct_+/+	0.0321476013695917	0.4671158112666208
+region:chr9:69121913-69122413	gene:PIP5K1B	region_regulates_gene	SPIB_direct_+/+	0.0472465833992253	0.1719157292172106
+TF:BCL11A	gene:ADAM28	tf_regulates_gene	BCL11A_direct_+/+	6.592378463679701	0.6042173773561398
+TF:BCL11A	gene:AFF3	tf_regulates_gene	BCL11A_direct_+/+	6.851150975833357	0.6129475009872245
+TF:BCL11A	gene:BANK1	tf_regulates_gene	BCL11A_direct_+/+	6.202953934336975	0.7228713489167463
+TF:BCL11A	gene:BCL11A	tf_regulates_gene	BCL11A_direct_+/+	6.884273188113169	1.0
+TF:BCL11A	gene:BLK	tf_regulates_gene	BCL11A_direct_+/+	5.245137701992274	0.5819705445951006
+TF:BCL11A	gene:BLNK	tf_regulates_gene	BCL11A_direct_+/+	5.638386042722181	0.5182904711796448
+TF:BCL11A	gene:CD22	tf_regulates_gene	BCL11A_direct_+/+	5.498956772817539	0.6419659145431597
+TF:BCL11A	gene:CD79B	tf_regulates_gene	BCL11A_direct_+/+	5.792352947491003	0.5471737825733562
+TF:BCL11A	gene:EBF1	tf_regulates_gene	BCL11A_direct_+/+	5.486612125410761	0.6132264314216713
+TF:BCL11A	gene:FCRL1	tf_regulates_gene	BCL11A_direct_+/+	5.40660397172779	0.7294778018679208
+TF:BCL11A	gene:HLA-DQA1	tf_regulates_gene	BCL11A_direct_+/+	5.490565028900388	0.6066614578387972
+TF:BCL11A	gene:MEF2C	tf_regulates_gene	BCL11A_direct_+/+	5.4882261563776655	0.6010584096052116
+TF:BCL11A	gene:MS4A1	tf_regulates_gene	BCL11A_direct_+/+	6.289024179870056	0.6743423828724308
+TF:BCL11A	gene:NIBAN3	tf_regulates_gene	BCL11A_direct_+/+	5.432821422006475	0.6148829229669305
+TF:BCL11A	gene:OSBPL10	tf_regulates_gene	BCL11A_direct_+/+	5.2807976729995785	0.5710035525562116
+TF:BCL11A	gene:PAX5	tf_regulates_gene	BCL11A_direct_+/+	6.109974911732434	0.7005597618066256
+TF:BCL11A	gene:PLEKHG1	tf_regulates_gene	BCL11A_direct_+/+	5.298905772432591	0.5382009790086584
+TF:BCL11A	gene:RALGPS2	tf_regulates_gene	BCL11A_direct_+/+	6.884263188113169	0.589415015136756
+TF:BCL11A	gene:SEL1L3	tf_regulates_gene	BCL11A_direct_+/+	5.840563754814545	0.4381040817188699
+TF:BCL11A	gene:WDFY4	tf_regulates_gene	BCL11A_direct_+/+	5.788362729416429	0.5906806729319765
+TF:POU2AF1	gene:AIM2	tf_regulates_gene	POU2AF1_direct_+/+	2.552012954270745	0.2602535122536643
+TF:POU2AF1	gene:ANKRD33B	tf_regulates_gene	POU2AF1_direct_+/+	2.649312508667792	0.1457187103909211
+TF:POU2AF1	gene:BLK	tf_regulates_gene	POU2AF1_direct_+/+	2.727895458799229	0.3727959553631084
+TF:POU2AF1	gene:CCSER1	tf_regulates_gene	POU2AF1_direct_+/+	2.528271852240496	0.3315748792388322
+TF:POU2AF1	gene:CD22	tf_regulates_gene	POU2AF1_direct_+/+	3.4056653650999174	0.4215414913849656
+TF:POU2AF1	gene:CD79B	tf_regulates_gene	POU2AF1_direct_+/+	2.6034560370510795	0.3471248446417695
+TF:POU2AF1	gene:EBF1	tf_regulates_gene	POU2AF1_direct_+/+	2.4686267861857085	0.3830021958493357
+TF:POU2AF1	gene:EPS15L1	tf_regulates_gene	POU2AF1_direct_+/+	2.141189094946493	0.1130790089488033
+TF:POU2AF1	gene:FCHSD2	tf_regulates_gene	POU2AF1_direct_+/+	2.150845645114748	0.2374408883490715
+TF:POU2AF1	gene:FCRL2	tf_regulates_gene	POU2AF1_direct_+/+	2.156181046447061	0.4135795414650837
+TF:POU2AF1	gene:GNG7	tf_regulates_gene	POU2AF1_direct_+/+	1.960344529846864	0.308303039674671
+TF:POU2AF1	gene:KIAA0040	tf_regulates_gene	POU2AF1_direct_+/+	1.9777956183607408	0.0967838830939647
+TF:POU2AF1	gene:OSBPL10	tf_regulates_gene	POU2AF1_direct_+/+	3.359052727872858	0.4258618762634598
+TF:POU2AF1	gene:PAX5	tf_regulates_gene	POU2AF1_direct_+/+	2.6299437082992405	0.4140330535866944
+TF:POU2AF1	gene:RALGPS2	tf_regulates_gene	POU2AF1_direct_+/+	3.373486381214569	0.400101773678784
+TF:POU2AF1	gene:SLAMF6	tf_regulates_gene	POU2AF1_direct_+/+	2.217821282518633	0.1184647455016761
+TF:POU2AF1	gene:SSPN	tf_regulates_gene	POU2AF1_direct_+/+	2.0711657751503925	0.2456619281479487
+TF:POU2AF1	gene:TLE3	tf_regulates_gene	POU2AF1_direct_+/+	1.963989220232999	0.1168572898673415
+TF:POU2AF1	gene:TP53INP1	tf_regulates_gene	POU2AF1_direct_+/+	2.470181984606194	0.1432666956151651
+TF:POU2AF1	gene:WDFY4	tf_regulates_gene	POU2AF1_direct_+/+	2.2483812575213333	0.3471908549868147
+TF:SPIB	gene:AFF3	tf_regulates_gene	SPIB_direct_+/+	3.971356895243965	0.4160708527686311
+TF:SPIB	gene:ANGPTL1	tf_regulates_gene	SPIB_direct_+/+	5.907307066173823	0.4388659552872803
+TF:SPIB	gene:BANK1	tf_regulates_gene	SPIB_direct_+/+	4.620496404319962	0.5106491811399623
+TF:SPIB	gene:CDK14	tf_regulates_gene	SPIB_direct_+/+	4.019664031050139	0.3947717561815167
+TF:SPIB	gene:CLECL1	tf_regulates_gene	SPIB_direct_+/+;SPIB_direct_+/-	4.003291964483134	0.2106172703158498
+TF:SPIB	gene:DENND5B	tf_regulates_gene	SPIB_direct_+/+	4.400716528309298	0.3566960164235831
+TF:SPIB	gene:EBF1	tf_regulates_gene	SPIB_direct_+/+	4.650683637489223	0.5044011729521094
+TF:SPIB	gene:FCRL2	tf_regulates_gene	SPIB_direct_+/+	4.818051827621221	0.418584434996955
+TF:SPIB	gene:FCRLA	tf_regulates_gene	SPIB_direct_+/+	4.876503488073501	0.3513907318887663
+TF:SPIB	gene:GUCD1	tf_regulates_gene	SPIB_direct_+/+;SPIB_direct_+/-	4.830689985850329	0.1214156506345195
+TF:SPIB	gene:MBD4	tf_regulates_gene	SPIB_direct_+/+	4.0022802620549385	0.1254935384916908
+TF:SPIB	gene:OSBPL10	tf_regulates_gene	SPIB_direct_+/+	5.434953161425974	0.4989647408727566
+TF:SPIB	gene:PAWR	tf_regulates_gene	SPIB_direct_+/+	6.756551226563515	0.2555419874337474
+TF:SPIB	gene:PAX5	tf_regulates_gene	SPIB_direct_+/+;SPIB_direct_+/-	4.243652286511479	0.4835116071690806
+TF:SPIB	gene:PIP5K1B	tf_regulates_gene	SPIB_direct_+/+	3.9564989890042472	0.3165147903687547
+TF:SPIB	gene:RABEP2	tf_regulates_gene	SPIB_direct_+/+	4.067447660775911	0.2445818919297711
+TF:SPIB	gene:RALGPS2	tf_regulates_gene	SPIB_direct_+/+	4.607310227063664	0.4594749146129537
+TF:SPIB	gene:SMC6	tf_regulates_gene	SPIB_direct_+/+	4.911846622347058	0.2215246168490552
+TF:SPIB	gene:SPIB	tf_regulates_gene	SPIB_direct_+/+	7.442179932894609	1.0
+TF:SPIB	gene:TNFRSF13C	tf_regulates_gene	SPIB_direct_+/+	6.1019054733240345	0.391519723449366

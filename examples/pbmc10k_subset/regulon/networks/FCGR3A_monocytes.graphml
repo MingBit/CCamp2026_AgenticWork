@@ -1,0 +1,4347 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d8" for="edge" attr.name="rho" attr.type="double" />
+  <key id="d7" for="edge" attr.name="importance" attr.type="double" />
+  <key id="d6" for="edge" attr.name="eregulons" attr.type="string" />
+  <key id="d5" for="edge" attr.name="interaction" attr.type="string" />
+  <key id="d4" for="node" attr.name="n_targets" attr.type="long" />
+  <key id="d3" for="node" attr.name="detected_fraction" attr.type="double" />
+  <key id="d2" for="node" attr.name="eregulons" attr.type="string" />
+  <key id="d1" for="node" attr.name="node_type" attr.type="string" />
+  <key id="d0" for="node" attr.name="label" attr.type="string" />
+  <graph edgedefault="directed">
+    <node id="TF:KLF4">
+      <data key="d0">KLF4</data>
+      <data key="d1">tf</data>
+      <data key="d2">KLF4_direct_+/+</data>
+      <data key="d3">0.7475083056478434</data>
+      <data key="d4">20</data>
+    </node>
+    <node id="TF:RXRA">
+      <data key="d0">RXRA</data>
+      <data key="d1">tf</data>
+      <data key="d2">RXRA_direct_+/+</data>
+      <data key="d3">0.6411960132890387</data>
+      <data key="d4">20</data>
+    </node>
+    <node id="TF:SPI1">
+      <data key="d0">SPI1</data>
+      <data key="d1">tf</data>
+      <data key="d2">SPI1_direct_+/+;SPI1_direct_+/-</data>
+      <data key="d3">0.8571428571428608</data>
+      <data key="d4">20</data>
+    </node>
+    <node id="TF:TCF7L2">
+      <data key="d0">TCF7L2</data>
+      <data key="d1">tf</data>
+      <data key="d2">TCF7L2_direct_+/+</data>
+      <data key="d3">0.976744186046516</data>
+      <data key="d4">20</data>
+    </node>
+    <node id="region:chr10:112852203-112852703">
+      <data key="d0">chr10:112852203-112852703</data>
+      <data key="d1">region</data>
+      <data key="d2">TCF7L2_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr10:113099549-113100049">
+      <data key="d0">chr10:113099549-113100049</data>
+      <data key="d1">region</data>
+      <data key="d2">TCF7L2_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr10:113153678-113154178">
+      <data key="d0">chr10:113153678-113154178</data>
+      <data key="d1">region</data>
+      <data key="d2">TCF7L2_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr10:113273396-113273896">
+      <data key="d0">chr10:113273396-113273896</data>
+      <data key="d1">region</data>
+      <data key="d2">TCF7L2_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr10:19816522-19817022">
+      <data key="d0">chr10:19816522-19817022</data>
+      <data key="d1">region</data>
+      <data key="d2">SPI1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr10:19819320-19819820">
+      <data key="d0">chr10:19819320-19819820</data>
+      <data key="d1">region</data>
+      <data key="d2">SPI1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr10:19825121-19825621">
+      <data key="d0">chr10:19825121-19825621</data>
+      <data key="d1">region</data>
+      <data key="d2">SPI1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr10:19825695-19826195">
+      <data key="d0">chr10:19825695-19826195</data>
+      <data key="d1">region</data>
+      <data key="d2">SPI1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr10:20003617-20004117">
+      <data key="d0">chr10:20003617-20004117</data>
+      <data key="d1">region</data>
+      <data key="d2">SPI1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr10:20202238-20202738">
+      <data key="d0">chr10:20202238-20202738</data>
+      <data key="d1">region</data>
+      <data key="d2">KLF4_direct_+/+;SPI1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr10:71701443-71701943">
+      <data key="d0">chr10:71701443-71701943</data>
+      <data key="d1">region</data>
+      <data key="d2">SPI1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr10:71727474-71727974">
+      <data key="d0">chr10:71727474-71727974</data>
+      <data key="d1">region</data>
+      <data key="d2">SPI1_direct_+/-</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr10:71753471-71753971">
+      <data key="d0">chr10:71753471-71753971</data>
+      <data key="d1">region</data>
+      <data key="d2">SPI1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr10:71805784-71806284">
+      <data key="d0">chr10:71805784-71806284</data>
+      <data key="d1">region</data>
+      <data key="d2">SPI1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr10:71851075-71851575">
+      <data key="d0">chr10:71851075-71851575</data>
+      <data key="d1">region</data>
+      <data key="d2">SPI1_direct_+/-</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr10:71852434-71852934">
+      <data key="d0">chr10:71852434-71852934</data>
+      <data key="d1">region</data>
+      <data key="d2">SPI1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr10:71868063-71868563">
+      <data key="d0">chr10:71868063-71868563</data>
+      <data key="d1">region</data>
+      <data key="d2">SPI1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr10:71889975-71890475">
+      <data key="d0">chr10:71889975-71890475</data>
+      <data key="d1">region</data>
+      <data key="d2">SPI1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr10:75358919-75359419">
+      <data key="d0">chr10:75358919-75359419</data>
+      <data key="d1">region</data>
+      <data key="d2">SPI1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr10:75375814-75376314">
+      <data key="d0">chr10:75375814-75376314</data>
+      <data key="d1">region</data>
+      <data key="d2">SPI1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr10:75402095-75402595">
+      <data key="d0">chr10:75402095-75402595</data>
+      <data key="d1">region</data>
+      <data key="d2">SPI1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr10:75431500-75432000">
+      <data key="d0">chr10:75431500-75432000</data>
+      <data key="d1">region</data>
+      <data key="d2">SPI1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr10:75612801-75613301">
+      <data key="d0">chr10:75612801-75613301</data>
+      <data key="d1">region</data>
+      <data key="d2">SPI1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr10:76403798-76404298">
+      <data key="d0">chr10:76403798-76404298</data>
+      <data key="d1">region</data>
+      <data key="d2">SPI1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr11:10400860-10401360">
+      <data key="d0">chr11:10400860-10401360</data>
+      <data key="d1">region</data>
+      <data key="d2">RXRA_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr11:47244893-47245393">
+      <data key="d0">chr11:47244893-47245393</data>
+      <data key="d1">region</data>
+      <data key="d2">TCF7L2_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr11:47257590-47258090">
+      <data key="d0">chr11:47257590-47258090</data>
+      <data key="d1">region</data>
+      <data key="d2">SPI1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr11:47268979-47269479">
+      <data key="d0">chr11:47268979-47269479</data>
+      <data key="d1">region</data>
+      <data key="d2">SPI1_direct_+/-</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr11:47359497-47359997">
+      <data key="d0">chr11:47359497-47359997</data>
+      <data key="d1">region</data>
+      <data key="d2">SPI1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr11:47378336-47378836">
+      <data key="d0">chr11:47378336-47378836</data>
+      <data key="d1">region</data>
+      <data key="d2">SPI1_direct_+/+;TCF7L2_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr11:47388046-47388546">
+      <data key="d0">chr11:47388046-47388546</data>
+      <data key="d1">region</data>
+      <data key="d2">SPI1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr11:47390969-47391469">
+      <data key="d0">chr11:47390969-47391469</data>
+      <data key="d1">region</data>
+      <data key="d2">SPI1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr11:47392861-47393361">
+      <data key="d0">chr11:47392861-47393361</data>
+      <data key="d1">region</data>
+      <data key="d2">SPI1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr11:47394637-47395137">
+      <data key="d0">chr11:47394637-47395137</data>
+      <data key="d1">region</data>
+      <data key="d2">SPI1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr11:47400128-47400628">
+      <data key="d0">chr11:47400128-47400628</data>
+      <data key="d1">region</data>
+      <data key="d2">SPI1_direct_+/-</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr11:47408196-47408696">
+      <data key="d0">chr11:47408196-47408696</data>
+      <data key="d1">region</data>
+      <data key="d2">SPI1_direct_+/-</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr11:47508910-47509410">
+      <data key="d0">chr11:47508910-47509410</data>
+      <data key="d1">region</data>
+      <data key="d2">SPI1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr11:60242704-60243204">
+      <data key="d0">chr11:60242704-60243204</data>
+      <data key="d1">region</data>
+      <data key="d2">TCF7L2_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr11:60280315-60280815">
+      <data key="d0">chr11:60280315-60280815</data>
+      <data key="d1">region</data>
+      <data key="d2">TCF7L2_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr11:60389449-60389949">
+      <data key="d0">chr11:60389449-60389949</data>
+      <data key="d1">region</data>
+      <data key="d2">TCF7L2_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr11:60392366-60392866">
+      <data key="d0">chr11:60392366-60392866</data>
+      <data key="d1">region</data>
+      <data key="d2">TCF7L2_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr11:63871967-63872467">
+      <data key="d0">chr11:63871967-63872467</data>
+      <data key="d1">region</data>
+      <data key="d2">KLF4_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr11:93541711-93542211">
+      <data key="d0">chr11:93541711-93542211</data>
+      <data key="d1">region</data>
+      <data key="d2">TCF7L2_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr12:123432529-123433029">
+      <data key="d0">chr12:123432529-123433029</data>
+      <data key="d1">region</data>
+      <data key="d2">KLF4_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr12:51242065-51242565">
+      <data key="d0">chr12:51242065-51242565</data>
+      <data key="d1">region</data>
+      <data key="d2">RXRA_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr12:51246225-51246725">
+      <data key="d0">chr12:51246225-51246725</data>
+      <data key="d1">region</data>
+      <data key="d2">RXRA_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr12:66072019-66072519">
+      <data key="d0">chr12:66072019-66072519</data>
+      <data key="d1">region</data>
+      <data key="d2">SPI1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr12:66144946-66145446">
+      <data key="d0">chr12:66144946-66145446</data>
+      <data key="d1">region</data>
+      <data key="d2">SPI1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr12:66169635-66170135">
+      <data key="d0">chr12:66169635-66170135</data>
+      <data key="d1">region</data>
+      <data key="d2">SPI1_direct_+/-</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr12:66187788-66188288">
+      <data key="d0">chr12:66187788-66188288</data>
+      <data key="d1">region</data>
+      <data key="d2">KLF4_direct_+/+;SPI1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr12:66241538-66242038">
+      <data key="d0">chr12:66241538-66242038</data>
+      <data key="d1">region</data>
+      <data key="d2">SPI1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr12:66268511-66269011">
+      <data key="d0">chr12:66268511-66269011</data>
+      <data key="d1">region</data>
+      <data key="d2">SPI1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr12:66388441-66388941">
+      <data key="d0">chr12:66388441-66388941</data>
+      <data key="d1">region</data>
+      <data key="d2">SPI1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr12:7948800-7949300">
+      <data key="d0">chr12:7948800-7949300</data>
+      <data key="d1">region</data>
+      <data key="d2">TCF7L2_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr12:8052638-8053138">
+      <data key="d0">chr12:8052638-8053138</data>
+      <data key="d1">region</data>
+      <data key="d2">TCF7L2_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr12:8070610-8071110">
+      <data key="d0">chr12:8070610-8071110</data>
+      <data key="d1">region</data>
+      <data key="d2">TCF7L2_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr12:8156769-8157269">
+      <data key="d0">chr12:8156769-8157269</data>
+      <data key="d1">region</data>
+      <data key="d2">TCF7L2_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr12:89333798-89334298">
+      <data key="d0">chr12:89333798-89334298</data>
+      <data key="d1">region</data>
+      <data key="d2">SPI1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr12:89352334-89352834">
+      <data key="d0">chr12:89352334-89352834</data>
+      <data key="d1">region</data>
+      <data key="d2">SPI1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr13:51562079-51562579">
+      <data key="d0">chr13:51562079-51562579</data>
+      <data key="d1">region</data>
+      <data key="d2">SPI1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr13:51793790-51794290">
+      <data key="d0">chr13:51793790-51794290</data>
+      <data key="d1">region</data>
+      <data key="d2">SPI1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr14:100221449-100221949">
+      <data key="d0">chr14:100221449-100221949</data>
+      <data key="d1">region</data>
+      <data key="d2">SPI1_direct_+/-</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr14:100341266-100341766">
+      <data key="d0">chr14:100341266-100341766</data>
+      <data key="d1">region</data>
+      <data key="d2">SPI1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr14:100373676-100374176">
+      <data key="d0">chr14:100373676-100374176</data>
+      <data key="d1">region</data>
+      <data key="d2">SPI1_direct_+/+;TCF7L2_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr14:100375224-100375724">
+      <data key="d0">chr14:100375224-100375724</data>
+      <data key="d1">region</data>
+      <data key="d2">RXRA_direct_+/+;SPI1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr14:22822603-22823103">
+      <data key="d0">chr14:22822603-22823103</data>
+      <data key="d1">region</data>
+      <data key="d2">TCF7L2_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr14:22823184-22823684">
+      <data key="d0">chr14:22823184-22823684</data>
+      <data key="d1">region</data>
+      <data key="d2">TCF7L2_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr14:75268800-75269300">
+      <data key="d0">chr14:75268800-75269300</data>
+      <data key="d1">region</data>
+      <data key="d2">KLF4_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr14:92677190-92677690">
+      <data key="d0">chr14:92677190-92677690</data>
+      <data key="d1">region</data>
+      <data key="d2">RXRA_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr14:92680997-92681497">
+      <data key="d0">chr14:92680997-92681497</data>
+      <data key="d1">region</data>
+      <data key="d2">RXRA_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr14:94384841-94385341">
+      <data key="d0">chr14:94384841-94385341</data>
+      <data key="d1">region</data>
+      <data key="d2">SPI1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr14:94392476-94392976">
+      <data key="d0">chr14:94392476-94392976</data>
+      <data key="d1">region</data>
+      <data key="d2">SPI1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr14:94394565-94395065">
+      <data key="d0">chr14:94394565-94395065</data>
+      <data key="d1">region</data>
+      <data key="d2">SPI1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr16:12543995-12544495">
+      <data key="d0">chr16:12543995-12544495</data>
+      <data key="d1">region</data>
+      <data key="d2">SPI1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr16:12573234-12573734">
+      <data key="d0">chr16:12573234-12573734</data>
+      <data key="d1">region</data>
+      <data key="d2">SPI1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr16:12816713-12817213">
+      <data key="d0">chr16:12816713-12817213</data>
+      <data key="d1">region</data>
+      <data key="d2">SPI1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr16:17259248-17259748">
+      <data key="d0">chr16:17259248-17259748</data>
+      <data key="d1">region</data>
+      <data key="d2">RXRA_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr16:17343666-17344166">
+      <data key="d0">chr16:17343666-17344166</data>
+      <data key="d1">region</data>
+      <data key="d2">RXRA_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr16:17416566-17417066">
+      <data key="d0">chr16:17416566-17417066</data>
+      <data key="d1">region</data>
+      <data key="d2">RXRA_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr16:84569534-84570034">
+      <data key="d0">chr16:84569534-84570034</data>
+      <data key="d1">region</data>
+      <data key="d2">SPI1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr16:84594103-84594603">
+      <data key="d0">chr16:84594103-84594603</data>
+      <data key="d1">region</data>
+      <data key="d2">SPI1_direct_+/-</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr16:84600698-84601198">
+      <data key="d0">chr16:84600698-84601198</data>
+      <data key="d1">region</data>
+      <data key="d2">SPI1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr16:84602956-84603456">
+      <data key="d0">chr16:84602956-84603456</data>
+      <data key="d1">region</data>
+      <data key="d2">SPI1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr16:84726038-84726538">
+      <data key="d0">chr16:84726038-84726538</data>
+      <data key="d1">region</data>
+      <data key="d2">SPI1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr16:84742524-84743024">
+      <data key="d0">chr16:84742524-84743024</data>
+      <data key="d1">region</data>
+      <data key="d2">SPI1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr16:84751977-84752477">
+      <data key="d0">chr16:84751977-84752477</data>
+      <data key="d1">region</data>
+      <data key="d2">SPI1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr17:21285899-21286399">
+      <data key="d0">chr17:21285899-21286399</data>
+      <data key="d1">region</data>
+      <data key="d2">RXRA_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr17:59847694-59848194">
+      <data key="d0">chr17:59847694-59848194</data>
+      <data key="d1">region</data>
+      <data key="d2">KLF4_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr17:74520125-74520625">
+      <data key="d0">chr17:74520125-74520625</data>
+      <data key="d1">region</data>
+      <data key="d2">TCF7L2_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr17:74599430-74599930">
+      <data key="d0">chr17:74599430-74599930</data>
+      <data key="d1">region</data>
+      <data key="d2">TCF7L2_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr17:74631809-74632309">
+      <data key="d0">chr17:74631809-74632309</data>
+      <data key="d1">region</data>
+      <data key="d2">TCF7L2_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr17:78778872-78779372">
+      <data key="d0">chr17:78778872-78779372</data>
+      <data key="d1">region</data>
+      <data key="d2">RXRA_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr18:10004997-10005497">
+      <data key="d0">chr18:10004997-10005497</data>
+      <data key="d1">region</data>
+      <data key="d2">SPI1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr18:9712523-9713023">
+      <data key="d0">chr18:9712523-9713023</data>
+      <data key="d1">region</data>
+      <data key="d2">SPI1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr18:9753868-9754368">
+      <data key="d0">chr18:9753868-9754368</data>
+      <data key="d1">region</data>
+      <data key="d2">SPI1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr18:9762463-9762963">
+      <data key="d0">chr18:9762463-9762963</data>
+      <data key="d1">region</data>
+      <data key="d2">SPI1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr18:9771103-9771603">
+      <data key="d0">chr18:9771103-9771603</data>
+      <data key="d1">region</data>
+      <data key="d2">SPI1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr18:9910571-9911071">
+      <data key="d0">chr18:9910571-9911071</data>
+      <data key="d1">region</data>
+      <data key="d2">SPI1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr19:10717612-10718112">
+      <data key="d0">chr19:10717612-10718112</data>
+      <data key="d1">region</data>
+      <data key="d2">SPI1_direct_+/-</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr19:10759658-10760158">
+      <data key="d0">chr19:10759658-10760158</data>
+      <data key="d1">region</data>
+      <data key="d2">SPI1_direct_+/-</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr19:10777271-10777771">
+      <data key="d0">chr19:10777271-10777771</data>
+      <data key="d1">region</data>
+      <data key="d2">SPI1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr19:10780258-10780758">
+      <data key="d0">chr19:10780258-10780758</data>
+      <data key="d1">region</data>
+      <data key="d2">SPI1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr19:10784196-10784696">
+      <data key="d0">chr19:10784196-10784696</data>
+      <data key="d1">region</data>
+      <data key="d2">SPI1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr19:10805385-10805885">
+      <data key="d0">chr19:10805385-10805885</data>
+      <data key="d1">region</data>
+      <data key="d2">SPI1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr19:10809761-10810261">
+      <data key="d0">chr19:10809761-10810261</data>
+      <data key="d1">region</data>
+      <data key="d2">SPI1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr19:10813029-10813529">
+      <data key="d0">chr19:10813029-10813529</data>
+      <data key="d1">region</data>
+      <data key="d2">SPI1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr19:10848174-10848674">
+      <data key="d0">chr19:10848174-10848674</data>
+      <data key="d1">region</data>
+      <data key="d2">SPI1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr19:10928483-10928983">
+      <data key="d0">chr19:10928483-10928983</data>
+      <data key="d1">region</data>
+      <data key="d2">SPI1_direct_+/-</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr19:14661411-14661911">
+      <data key="d0">chr19:14661411-14661911</data>
+      <data key="d1">region</data>
+      <data key="d2">TCF7L2_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr19:18392397-18392897">
+      <data key="d0">chr19:18392397-18392897</data>
+      <data key="d1">region</data>
+      <data key="d2">TCF7L2_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr19:54208068-54208568">
+      <data key="d0">chr19:54208068-54208568</data>
+      <data key="d1">region</data>
+      <data key="d2">RXRA_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr19:54209701-54210201">
+      <data key="d0">chr19:54209701-54210201</data>
+      <data key="d1">region</data>
+      <data key="d2">KLF4_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr19:54593472-54593972">
+      <data key="d0">chr19:54593472-54593972</data>
+      <data key="d1">region</data>
+      <data key="d2">TCF7L2_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr19:54630144-54630644">
+      <data key="d0">chr19:54630144-54630644</data>
+      <data key="d1">region</data>
+      <data key="d2">TCF7L2_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr19:54643475-54643975">
+      <data key="d0">chr19:54643475-54643975</data>
+      <data key="d1">region</data>
+      <data key="d2">TCF7L2_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr1:11960666-11961166">
+      <data key="d0">chr1:11960666-11961166</data>
+      <data key="d1">region</data>
+      <data key="d2">SPI1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr1:11985793-11986293">
+      <data key="d0">chr1:11985793-11986293</data>
+      <data key="d1">region</data>
+      <data key="d2">SPI1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr1:12020082-12020582">
+      <data key="d0">chr1:12020082-12020582</data>
+      <data key="d1">region</data>
+      <data key="d2">SPI1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr1:12143152-12143652">
+      <data key="d0">chr1:12143152-12143652</data>
+      <data key="d1">region</data>
+      <data key="d2">SPI1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr1:12143654-12144154">
+      <data key="d0">chr1:12143654-12144154</data>
+      <data key="d1">region</data>
+      <data key="d2">SPI1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr1:12153199-12153699">
+      <data key="d0">chr1:12153199-12153699</data>
+      <data key="d1">region</data>
+      <data key="d2">SPI1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr1:12157800-12158300">
+      <data key="d0">chr1:12157800-12158300</data>
+      <data key="d1">region</data>
+      <data key="d2">SPI1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr1:12180230-12180730">
+      <data key="d0">chr1:12180230-12180730</data>
+      <data key="d1">region</data>
+      <data key="d2">SPI1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr1:12184150-12184650">
+      <data key="d0">chr1:12184150-12184650</data>
+      <data key="d1">region</data>
+      <data key="d2">SPI1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr1:12196576-12197076">
+      <data key="d0">chr1:12196576-12197076</data>
+      <data key="d1">region</data>
+      <data key="d2">SPI1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr1:12229759-12230259">
+      <data key="d0">chr1:12229759-12230259</data>
+      <data key="d1">region</data>
+      <data key="d2">SPI1_direct_+/-</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr1:157106202-157106702">
+      <data key="d0">chr1:157106202-157106702</data>
+      <data key="d1">region</data>
+      <data key="d2">KLF4_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr1:212752535-212753035">
+      <data key="d0">chr1:212752535-212753035</data>
+      <data key="d1">region</data>
+      <data key="d2">KLF4_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr1:248804914-248805414">
+      <data key="d0">chr1:248804914-248805414</data>
+      <data key="d1">region</data>
+      <data key="d2">RXRA_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr1:248807058-248807558">
+      <data key="d0">chr1:248807058-248807558</data>
+      <data key="d1">region</data>
+      <data key="d2">RXRA_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr1:248838078-248838578">
+      <data key="d0">chr1:248838078-248838578</data>
+      <data key="d1">region</data>
+      <data key="d2">RXRA_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr1:88983814-88984314">
+      <data key="d0">chr1:88983814-88984314</data>
+      <data key="d1">region</data>
+      <data key="d2">RXRA_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr20:23655765-23656265">
+      <data key="d0">chr20:23655765-23656265</data>
+      <data key="d1">region</data>
+      <data key="d2">SPI1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr20:32040126-32040626">
+      <data key="d0">chr20:32040126-32040626</data>
+      <data key="d1">region</data>
+      <data key="d2">RXRA_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr20:32051198-32051698">
+      <data key="d0">chr20:32051198-32051698</data>
+      <data key="d1">region</data>
+      <data key="d2">RXRA_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr20:32062761-32063261">
+      <data key="d0">chr20:32062761-32063261</data>
+      <data key="d1">region</data>
+      <data key="d2">RXRA_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr20:32111726-32112226">
+      <data key="d0">chr20:32111726-32112226</data>
+      <data key="d1">region</data>
+      <data key="d2">RXRA_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr20:32112818-32113318">
+      <data key="d0">chr20:32112818-32113318</data>
+      <data key="d1">region</data>
+      <data key="d2">RXRA_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr20:40571724-40572224">
+      <data key="d0">chr20:40571724-40572224</data>
+      <data key="d1">region</data>
+      <data key="d2">RXRA_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr20:40689916-40690416">
+      <data key="d0">chr20:40689916-40690416</data>
+      <data key="d1">region</data>
+      <data key="d2">RXRA_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr20:40779001-40779501">
+      <data key="d0">chr20:40779001-40779501</data>
+      <data key="d1">region</data>
+      <data key="d2">RXRA_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr20:41003387-41003887">
+      <data key="d0">chr20:41003387-41003887</data>
+      <data key="d1">region</data>
+      <data key="d2">KLF4_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr20:41047885-41048385">
+      <data key="d0">chr20:41047885-41048385</data>
+      <data key="d1">region</data>
+      <data key="d2">KLF4_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr21:33199790-33200290">
+      <data key="d0">chr21:33199790-33200290</data>
+      <data key="d1">region</data>
+      <data key="d2">RXRA_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr21:33265708-33266208">
+      <data key="d0">chr21:33265708-33266208</data>
+      <data key="d1">region</data>
+      <data key="d2">RXRA_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr2:173005713-173006213">
+      <data key="d0">chr2:173005713-173006213</data>
+      <data key="d1">region</data>
+      <data key="d2">SPI1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr2:173043368-173043868">
+      <data key="d0">chr2:173043368-173043868</data>
+      <data key="d1">region</data>
+      <data key="d2">SPI1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr2:173075626-173076126">
+      <data key="d0">chr2:173075626-173076126</data>
+      <data key="d1">region</data>
+      <data key="d2">SPI1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr2:173076383-173076883">
+      <data key="d0">chr2:173076383-173076883</data>
+      <data key="d1">region</data>
+      <data key="d2">SPI1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr2:229287762-229288262">
+      <data key="d0">chr2:229287762-229288262</data>
+      <data key="d1">region</data>
+      <data key="d2">RXRA_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr2:229409004-229409504">
+      <data key="d0">chr2:229409004-229409504</data>
+      <data key="d1">region</data>
+      <data key="d2">RXRA_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr2:40394488-40394988">
+      <data key="d0">chr2:40394488-40394988</data>
+      <data key="d1">region</data>
+      <data key="d2">RXRA_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr2:40450024-40450524">
+      <data key="d0">chr2:40450024-40450524</data>
+      <data key="d1">region</data>
+      <data key="d2">RXRA_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr2:40455516-40456016">
+      <data key="d0">chr2:40455516-40456016</data>
+      <data key="d1">region</data>
+      <data key="d2">KLF4_direct_+/+;RXRA_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr2:40558720-40559220">
+      <data key="d0">chr2:40558720-40559220</data>
+      <data key="d1">region</data>
+      <data key="d2">RXRA_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr3:187773186-187773686">
+      <data key="d0">chr3:187773186-187773686</data>
+      <data key="d1">region</data>
+      <data key="d2">KLF4_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr3:38009948-38010448">
+      <data key="d0">chr3:38009948-38010448</data>
+      <data key="d1">region</data>
+      <data key="d2">KLF4_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr4:152643399-152643899">
+      <data key="d0">chr4:152643399-152643899</data>
+      <data key="d1">region</data>
+      <data key="d2">KLF4_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr4:152663052-152663552">
+      <data key="d0">chr4:152663052-152663552</data>
+      <data key="d1">region</data>
+      <data key="d2">KLF4_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr4:153661361-153661861">
+      <data key="d0">chr4:153661361-153661861</data>
+      <data key="d1">region</data>
+      <data key="d2">KLF4_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr4:158817906-158818406">
+      <data key="d0">chr4:158817906-158818406</data>
+      <data key="d1">region</data>
+      <data key="d2">TCF7L2_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr5:150058683-150059183">
+      <data key="d0">chr5:150058683-150059183</data>
+      <data key="d1">region</data>
+      <data key="d2">TCF7L2_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr5:94618419-94618919">
+      <data key="d0">chr5:94618419-94618919</data>
+      <data key="d1">region</data>
+      <data key="d2">SPI1_direct_+/-</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr5:95048620-95049120">
+      <data key="d0">chr5:95048620-95049120</data>
+      <data key="d1">region</data>
+      <data key="d2">SPI1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr5:95069806-95070306">
+      <data key="d0">chr5:95069806-95070306</data>
+      <data key="d1">region</data>
+      <data key="d2">SPI1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr5:95081424-95081924">
+      <data key="d0">chr5:95081424-95081924</data>
+      <data key="d1">region</data>
+      <data key="d2">SPI1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr6:108742032-108742532">
+      <data key="d0">chr6:108742032-108742532</data>
+      <data key="d1">region</data>
+      <data key="d2">TCF7L2_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr6:144150134-144150634">
+      <data key="d0">chr6:144150134-144150634</data>
+      <data key="d1">region</data>
+      <data key="d2">KLF4_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr6:18171792-18172292">
+      <data key="d0">chr6:18171792-18172292</data>
+      <data key="d1">region</data>
+      <data key="d2">SPI1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr6:18179908-18180408">
+      <data key="d0">chr6:18179908-18180408</data>
+      <data key="d1">region</data>
+      <data key="d2">SPI1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr6:18329672-18330172">
+      <data key="d0">chr6:18329672-18330172</data>
+      <data key="d1">region</data>
+      <data key="d2">SPI1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr6:18330563-18331063">
+      <data key="d0">chr6:18330563-18331063</data>
+      <data key="d1">region</data>
+      <data key="d2">SPI1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr6:18501601-18502101">
+      <data key="d0">chr6:18501601-18502101</data>
+      <data key="d1">region</data>
+      <data key="d2">TCF7L2_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr6:31586511-31587011">
+      <data key="d0">chr6:31586511-31587011</data>
+      <data key="d1">region</data>
+      <data key="d2">TCF7L2_direct_+/+</data>
+      <data key="d4">2</data>
+    </node>
+    <node id="region:chr7:106344765-106345265">
+      <data key="d0">chr7:106344765-106345265</data>
+      <data key="d1">region</data>
+      <data key="d2">KLF4_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr7:139828939-139829439">
+      <data key="d0">chr7:139828939-139829439</data>
+      <data key="d1">region</data>
+      <data key="d2">KLF4_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr7:139830959-139831459">
+      <data key="d0">chr7:139830959-139831459</data>
+      <data key="d1">region</data>
+      <data key="d2">KLF4_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr7:150665852-150666352">
+      <data key="d0">chr7:150665852-150666352</data>
+      <data key="d1">region</data>
+      <data key="d2">RXRA_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr7:150785340-150785840">
+      <data key="d0">chr7:150785340-150785840</data>
+      <data key="d1">region</data>
+      <data key="d2">RXRA_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr7:150787590-150788090">
+      <data key="d0">chr7:150787590-150788090</data>
+      <data key="d1">region</data>
+      <data key="d2">RXRA_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr7:28684536-28685036">
+      <data key="d0">chr7:28684536-28685036</data>
+      <data key="d1">region</data>
+      <data key="d2">TCF7L2_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr7:43876116-43876616">
+      <data key="d0">chr7:43876116-43876616</data>
+      <data key="d1">region</data>
+      <data key="d2">TCF7L2_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr8:115451426-115451926">
+      <data key="d0">chr8:115451426-115451926</data>
+      <data key="d1">region</data>
+      <data key="d2">KLF4_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr8:117881503-117882003">
+      <data key="d0">chr8:117881503-117882003</data>
+      <data key="d1">region</data>
+      <data key="d2">RXRA_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr8:117989383-117989883">
+      <data key="d0">chr8:117989383-117989883</data>
+      <data key="d1">region</data>
+      <data key="d2">RXRA_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr8:118060746-118061246">
+      <data key="d0">chr8:118060746-118061246</data>
+      <data key="d1">region</data>
+      <data key="d2">RXRA_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr8:118108667-118109167">
+      <data key="d0">chr8:118108667-118109167</data>
+      <data key="d1">region</data>
+      <data key="d2">RXRA_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr8:89759076-89759576">
+      <data key="d0">chr8:89759076-89759576</data>
+      <data key="d1">region</data>
+      <data key="d2">KLF4_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr9:134195457-134195957">
+      <data key="d0">chr9:134195457-134195957</data>
+      <data key="d1">region</data>
+      <data key="d2">RXRA_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr9:134341252-134341752">
+      <data key="d0">chr9:134341252-134341752</data>
+      <data key="d1">region</data>
+      <data key="d2">RXRA_direct_+/+;TCF7L2_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr9:134409236-134409736">
+      <data key="d0">chr9:134409236-134409736</data>
+      <data key="d1">region</data>
+      <data key="d2">TCF7L2_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr9:134929107-134929607">
+      <data key="d0">chr9:134929107-134929607</data>
+      <data key="d1">region</data>
+      <data key="d2">RXRA_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr9:134936713-134937213">
+      <data key="d0">chr9:134936713-134937213</data>
+      <data key="d1">region</data>
+      <data key="d2">RXRA_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr9:87601217-87601717">
+      <data key="d0">chr9:87601217-87601717</data>
+      <data key="d1">region</data>
+      <data key="d2">SPI1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr9:87614317-87614817">
+      <data key="d0">chr9:87614317-87614817</data>
+      <data key="d1">region</data>
+      <data key="d2">SPI1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr9:87722288-87722788">
+      <data key="d0">chr9:87722288-87722788</data>
+      <data key="d1">region</data>
+      <data key="d2">SPI1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr9:87725918-87726418">
+      <data key="d0">chr9:87725918-87726418</data>
+      <data key="d1">region</data>
+      <data key="d2">SPI1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr9:87783099-87783599">
+      <data key="d0">chr9:87783099-87783599</data>
+      <data key="d1">region</data>
+      <data key="d2">SPI1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr9:87792702-87793202">
+      <data key="d0">chr9:87792702-87793202</data>
+      <data key="d1">region</data>
+      <data key="d2">SPI1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chr9:87796051-87796551">
+      <data key="d0">chr9:87796051-87796551</data>
+      <data key="d1">region</data>
+      <data key="d2">SPI1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chrX:23742338-23742838">
+      <data key="d0">chrX:23742338-23742838</data>
+      <data key="d1">region</data>
+      <data key="d2">SPI1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chrX:23781151-23781651">
+      <data key="d0">chrX:23781151-23781651</data>
+      <data key="d1">region</data>
+      <data key="d2">SPI1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chrX:23811102-23811602">
+      <data key="d0">chrX:23811102-23811602</data>
+      <data key="d1">region</data>
+      <data key="d2">SPI1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chrX:23911212-23911712">
+      <data key="d0">chrX:23911212-23911712</data>
+      <data key="d1">region</data>
+      <data key="d2">SPI1_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="region:chrX:48683505-48684005">
+      <data key="d0">chrX:48683505-48684005</data>
+      <data key="d1">region</data>
+      <data key="d2">RXRA_direct_+/+</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="gene:ADGRE2">
+      <data key="d0">ADGRE2</data>
+      <data key="d1">gene</data>
+      <data key="d2">TCF7L2_direct_+/+</data>
+      <data key="d3">0.7242524916943549</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:AIF1">
+      <data key="d0">AIF1</data>
+      <data key="d1">gene</data>
+      <data key="d2">TCF7L2_direct_+/+</data>
+      <data key="d3">0.9568106312292401</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:ARHGEF11">
+      <data key="d0">ARHGEF11</data>
+      <data key="d1">gene</data>
+      <data key="d2">KLF4_direct_+/+</data>
+      <data key="d3">0.3255813953488374</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:ATF3">
+      <data key="d0">ATF3</data>
+      <data key="d1">gene</data>
+      <data key="d2">KLF4_direct_+/+</data>
+      <data key="d3">0.5149501661129582</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:BCL6">
+      <data key="d0">BCL6</data>
+      <data key="d1">gene</data>
+      <data key="d2">KLF4_direct_+/+</data>
+      <data key="d3">0.47176079734219384</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:BLVRA">
+      <data key="d0">BLVRA</data>
+      <data key="d1">gene</data>
+      <data key="d2">TCF7L2_direct_+/+</data>
+      <data key="d3">0.49501661129568236</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:C19orf38">
+      <data key="d0">C19orf38</data>
+      <data key="d1">gene</data>
+      <data key="d2">SPI1_direct_+/+;SPI1_direct_+/-</data>
+      <data key="d3">0.29235880398671094</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:C3AR1">
+      <data key="d0">C3AR1</data>
+      <data key="d1">gene</data>
+      <data key="d2">TCF7L2_direct_+/+</data>
+      <data key="d3">0.32225913621262475</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:CD300C">
+      <data key="d0">CD300C</data>
+      <data key="d1">gene</data>
+      <data key="d2">TCF7L2_direct_+/+</data>
+      <data key="d3">0.15946843853820583</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:COTL1">
+      <data key="d0">COTL1</data>
+      <data key="d1">gene</data>
+      <data key="d2">SPI1_direct_+/+;SPI1_direct_+/-</data>
+      <data key="d3">0.9601328903654528</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:CPPED1">
+      <data key="d0">CPPED1</data>
+      <data key="d1">gene</data>
+      <data key="d2">SPI1_direct_+/+</data>
+      <data key="d3">0.8903654485049872</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:CREB5">
+      <data key="d0">CREB5</data>
+      <data key="d1">gene</data>
+      <data key="d2">TCF7L2_direct_+/+</data>
+      <data key="d3">0.4119601328903662</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:CSF1R">
+      <data key="d0">CSF1R</data>
+      <data key="d1">gene</data>
+      <data key="d2">TCF7L2_direct_+/+</data>
+      <data key="d3">0.7408637873754181</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:CST3">
+      <data key="d0">CST3</data>
+      <data key="d1">gene</data>
+      <data key="d2">SPI1_direct_+/+</data>
+      <data key="d3">0.9833887043189413</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:CTSL">
+      <data key="d0">CTSL</data>
+      <data key="d1">gene</data>
+      <data key="d2">SPI1_direct_+/+</data>
+      <data key="d3">0.2558139534883718</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:DUSP6">
+      <data key="d0">DUSP6</data>
+      <data key="d1">gene</data>
+      <data key="d2">SPI1_direct_+/+</data>
+      <data key="d3">0.8272425249169469</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:EXT1">
+      <data key="d0">EXT1</data>
+      <data key="d1">gene</data>
+      <data key="d2">RXRA_direct_+/+</data>
+      <data key="d3">0.6843853820598031</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:FBXW7">
+      <data key="d0">FBXW7</data>
+      <data key="d1">gene</data>
+      <data key="d2">KLF4_direct_+/+</data>
+      <data key="d3">0.817275747508309</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:FCN1">
+      <data key="d0">FCN1</data>
+      <data key="d1">gene</data>
+      <data key="d2">RXRA_direct_+/+</data>
+      <data key="d3">0.9435215946843896</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:FNIP2">
+      <data key="d0">FNIP2</data>
+      <data key="d1">gene</data>
+      <data key="d2">TCF7L2_direct_+/+</data>
+      <data key="d3">0.5116279069767455</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:FOS">
+      <data key="d0">FOS</data>
+      <data key="d1">gene</data>
+      <data key="d2">KLF4_direct_+/+</data>
+      <data key="d3">0.9700996677740907</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:FOXO3">
+      <data key="d0">FOXO3</data>
+      <data key="d1">gene</data>
+      <data key="d2">TCF7L2_direct_+/+</data>
+      <data key="d3">0.6976744186046537</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:GBP1">
+      <data key="d0">GBP1</data>
+      <data key="d1">gene</data>
+      <data key="d2">RXRA_direct_+/+</data>
+      <data key="d3">0.7574750830564814</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:IFNAR2">
+      <data key="d0">IFNAR2</data>
+      <data key="d1">gene</data>
+      <data key="d2">RXRA_direct_+/+</data>
+      <data key="d3">0.7541528239202687</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:IRAK3">
+      <data key="d0">IRAK3</data>
+      <data key="d1">gene</data>
+      <data key="d2">KLF4_direct_+/+;SPI1_direct_+/+;SPI1_direct_+/-</data>
+      <data key="d3">0.9036544850498378</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:KDM1B">
+      <data key="d0">KDM1B</data>
+      <data key="d1">gene</data>
+      <data key="d2">SPI1_direct_+/+</data>
+      <data key="d3">0.7009966777408664</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:LILRB1">
+      <data key="d0">LILRB1</data>
+      <data key="d1">gene</data>
+      <data key="d2">TCF7L2_direct_+/+</data>
+      <data key="d3">0.7342192691029928</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:LILRB2">
+      <data key="d0">LILRB2</data>
+      <data key="d1">gene</data>
+      <data key="d2">RXRA_direct_+/+</data>
+      <data key="d3">0.7342192691029928</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:LRMDA">
+      <data key="d0">LRMDA</data>
+      <data key="d1">gene</data>
+      <data key="d2">SPI1_direct_+/+</data>
+      <data key="d3">0.863787375415286</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:LRRC25">
+      <data key="d0">LRRC25</data>
+      <data key="d1">gene</data>
+      <data key="d2">TCF7L2_direct_+/+</data>
+      <data key="d3">0.6046511627906996</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:LST1">
+      <data key="d0">LST1</data>
+      <data key="d1">gene</data>
+      <data key="d2">TCF7L2_direct_+/+</data>
+      <data key="d3">0.8571428571428608</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:MAFB">
+      <data key="d0">MAFB</data>
+      <data key="d1">gene</data>
+      <data key="d2">RXRA_direct_+/+</data>
+      <data key="d3">0.7441860465116308</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:MAP2K3">
+      <data key="d0">MAP2K3</data>
+      <data key="d1">gene</data>
+      <data key="d2">RXRA_direct_+/+</data>
+      <data key="d3">0.37209302325581445</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:MAP3K20">
+      <data key="d0">MAP3K20</data>
+      <data key="d1">gene</data>
+      <data key="d2">SPI1_direct_+/+</data>
+      <data key="d3">0.46511627906976855</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:MCTP1">
+      <data key="d0">MCTP1</data>
+      <data key="d1">gene</data>
+      <data key="d2">SPI1_direct_+/+;SPI1_direct_+/-</data>
+      <data key="d3">0.9700996677740907</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:MS4A7">
+      <data key="d0">MS4A7</data>
+      <data key="d1">gene</data>
+      <data key="d2">TCF7L2_direct_+/+</data>
+      <data key="d3">0.7641196013289067</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:MYD88">
+      <data key="d0">MYD88</data>
+      <data key="d1">gene</data>
+      <data key="d2">KLF4_direct_+/+</data>
+      <data key="d3">0.49501661129568236</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:NAMPT">
+      <data key="d0">NAMPT</data>
+      <data key="d1">gene</data>
+      <data key="d2">KLF4_direct_+/+</data>
+      <data key="d3">0.9136212624584757</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:OSCAR">
+      <data key="d0">OSCAR</data>
+      <data key="d1">gene</data>
+      <data key="d2">KLF4_direct_+/+</data>
+      <data key="d3">0.5681063122923605</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:PID1">
+      <data key="d0">PID1</data>
+      <data key="d1">gene</data>
+      <data key="d2">RXRA_direct_+/+</data>
+      <data key="d3">0.7009966777408664</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:PLXDC2">
+      <data key="d0">PLXDC2</data>
+      <data key="d1">gene</data>
+      <data key="d2">KLF4_direct_+/+;SPI1_direct_+/+</data>
+      <data key="d3">0.986710963455154</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:PSAP">
+      <data key="d0">PSAP</data>
+      <data key="d1">gene</data>
+      <data key="d2">SPI1_direct_+/+;SPI1_direct_+/-</data>
+      <data key="d3">0.9966777408637919</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:RAB31">
+      <data key="d0">RAB31</data>
+      <data key="d1">gene</data>
+      <data key="d2">SPI1_direct_+/+</data>
+      <data key="d3">0.8205980066445216</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:RILPL2">
+      <data key="d0">RILPL2</data>
+      <data key="d1">gene</data>
+      <data key="d2">KLF4_direct_+/+</data>
+      <data key="d3">0.5847176079734238</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:RIN3">
+      <data key="d0">RIN3</data>
+      <data key="d1">gene</data>
+      <data key="d2">RXRA_direct_+/+</data>
+      <data key="d3">0.8239202657807343</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:RIPK2">
+      <data key="d0">RIPK2</data>
+      <data key="d1">gene</data>
+      <data key="d2">KLF4_direct_+/+</data>
+      <data key="d3">0.6644518272425273</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:RNF144B">
+      <data key="d0">RNF144B</data>
+      <data key="d1">gene</data>
+      <data key="d2">TCF7L2_direct_+/+</data>
+      <data key="d3">0.5315614617940214</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:RTN3">
+      <data key="d0">RTN3</data>
+      <data key="d1">gene</data>
+      <data key="d2">KLF4_direct_+/+</data>
+      <data key="d3">0.44186046511628</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:RXRA">
+      <data key="d0">RXRA</data>
+      <data key="d1">gene</data>
+      <data key="d2">RXRA_direct_+/+;TCF7L2_direct_+/+</data>
+      <data key="d3">0.6411960132890387</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:SAT1">
+      <data key="d0">SAT1</data>
+      <data key="d1">gene</data>
+      <data key="d2">SPI1_direct_+/+</data>
+      <data key="d3">1.0000000000000044</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:SBF2">
+      <data key="d0">SBF2</data>
+      <data key="d1">gene</data>
+      <data key="d2">RXRA_direct_+/+</data>
+      <data key="d3">0.9269102990033263</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:SERPINA1">
+      <data key="d0">SERPINA1</data>
+      <data key="d1">gene</data>
+      <data key="d2">SPI1_direct_+/+</data>
+      <data key="d3">0.9468438538206022</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:SLC7A7">
+      <data key="d0">SLC7A7</data>
+      <data key="d1">gene</data>
+      <data key="d2">TCF7L2_direct_+/+</data>
+      <data key="d3">0.5747508305647858</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:SLC8A1">
+      <data key="d0">SLC8A1</data>
+      <data key="d1">gene</data>
+      <data key="d2">KLF4_direct_+/+;RXRA_direct_+/+</data>
+      <data key="d3">0.9966777408637919</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:SMCO4">
+      <data key="d0">SMCO4</data>
+      <data key="d1">gene</data>
+      <data key="d2">TCF7L2_direct_+/+</data>
+      <data key="d3">0.5548172757475099</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:SPI1">
+      <data key="d0">SPI1</data>
+      <data key="d1">gene</data>
+      <data key="d2">SPI1_direct_+/+;SPI1_direct_+/-;TCF7L2_direct_+/+</data>
+      <data key="d3">0.8571428571428608</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:STX11">
+      <data key="d0">STX11</data>
+      <data key="d1">gene</data>
+      <data key="d2">KLF4_direct_+/+</data>
+      <data key="d3">0.7674418604651193</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:TBXAS1">
+      <data key="d0">TBXAS1</data>
+      <data key="d1">gene</data>
+      <data key="d2">KLF4_direct_+/+</data>
+      <data key="d3">0.9833887043189413</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:TCF7L2">
+      <data key="d0">TCF7L2</data>
+      <data key="d1">gene</data>
+      <data key="d2">TCF7L2_direct_+/+</data>
+      <data key="d3">0.976744186046516</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:TFCP2">
+      <data key="d0">TFCP2</data>
+      <data key="d1">gene</data>
+      <data key="d2">RXRA_direct_+/+</data>
+      <data key="d3">0.45182724252491796</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:TIMP2">
+      <data key="d0">TIMP2</data>
+      <data key="d1">gene</data>
+      <data key="d2">RXRA_direct_+/+</data>
+      <data key="d3">0.46511627906976855</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:TLR2">
+      <data key="d0">TLR2</data>
+      <data key="d1">gene</data>
+      <data key="d2">KLF4_direct_+/+</data>
+      <data key="d3">0.8006644518272458</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:TM9SF4">
+      <data key="d0">TM9SF4</data>
+      <data key="d1">gene</data>
+      <data key="d2">RXRA_direct_+/+</data>
+      <data key="d3">0.498338870431895</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:TMEM176A">
+      <data key="d0">TMEM176A</data>
+      <data key="d1">gene</data>
+      <data key="d2">RXRA_direct_+/+</data>
+      <data key="d3">0.27906976744186035</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:TNFRSF8">
+      <data key="d0">TNFRSF8</data>
+      <data key="d1">gene</data>
+      <data key="d2">SPI1_direct_+/+;SPI1_direct_+/-</data>
+      <data key="d3">0.1893687707641194</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:TOP1">
+      <data key="d0">TOP1</data>
+      <data key="d1">gene</data>
+      <data key="d2">KLF4_direct_+/+</data>
+      <data key="d3">0.7840531561461825</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:TRPS1">
+      <data key="d0">TRPS1</data>
+      <data key="d1">gene</data>
+      <data key="d2">KLF4_direct_+/+</data>
+      <data key="d3">0.6644518272425273</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:VMP1">
+      <data key="d0">VMP1</data>
+      <data key="d1">gene</data>
+      <data key="d2">KLF4_direct_+/+</data>
+      <data key="d3">0.9534883720930275</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:WARS">
+      <data key="d0">WARS</data>
+      <data key="d1">gene</data>
+      <data key="d2">RXRA_direct_+/+;SPI1_direct_+/+;SPI1_direct_+/-;TCF7L2_direct_+/+</data>
+      <data key="d3">0.976744186046516</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:WAS">
+      <data key="d0">WAS</data>
+      <data key="d1">gene</data>
+      <data key="d2">RXRA_direct_+/+</data>
+      <data key="d3">0.5548172757475099</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:WDFY2">
+      <data key="d0">WDFY2</data>
+      <data key="d1">gene</data>
+      <data key="d2">SPI1_direct_+/+</data>
+      <data key="d3">0.8139534883720964</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:XYLT1">
+      <data key="d0">XYLT1</data>
+      <data key="d1">gene</data>
+      <data key="d2">RXRA_direct_+/+</data>
+      <data key="d3">0.8106312292358837</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="gene:ZNF672">
+      <data key="d0">ZNF672</data>
+      <data key="d1">gene</data>
+      <data key="d2">RXRA_direct_+/+</data>
+      <data key="d3">0.12624584717607965</data>
+      <data key="d4">0</data>
+    </node>
+    <edge source="TF:KLF4" target="region:chr10:20202238-20202738" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">KLF4_direct_+/+</data>
+    </edge>
+    <edge source="TF:KLF4" target="region:chr11:63871967-63872467" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">KLF4_direct_+/+</data>
+    </edge>
+    <edge source="TF:KLF4" target="region:chr12:123432529-123433029" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">KLF4_direct_+/+</data>
+    </edge>
+    <edge source="TF:KLF4" target="region:chr12:66187788-66188288" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">KLF4_direct_+/+</data>
+    </edge>
+    <edge source="TF:KLF4" target="region:chr14:75268800-75269300" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">KLF4_direct_+/+</data>
+    </edge>
+    <edge source="TF:KLF4" target="region:chr17:59847694-59848194" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">KLF4_direct_+/+</data>
+    </edge>
+    <edge source="TF:KLF4" target="region:chr19:54209701-54210201" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">KLF4_direct_+/+</data>
+    </edge>
+    <edge source="TF:KLF4" target="region:chr1:157106202-157106702" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">KLF4_direct_+/+</data>
+    </edge>
+    <edge source="TF:KLF4" target="region:chr1:212752535-212753035" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">KLF4_direct_+/+</data>
+    </edge>
+    <edge source="TF:KLF4" target="region:chr20:41003387-41003887" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">KLF4_direct_+/+</data>
+    </edge>
+    <edge source="TF:KLF4" target="region:chr20:41047885-41048385" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">KLF4_direct_+/+</data>
+    </edge>
+    <edge source="TF:KLF4" target="region:chr2:40455516-40456016" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">KLF4_direct_+/+</data>
+    </edge>
+    <edge source="TF:KLF4" target="region:chr3:187773186-187773686" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">KLF4_direct_+/+</data>
+    </edge>
+    <edge source="TF:KLF4" target="region:chr3:38009948-38010448" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">KLF4_direct_+/+</data>
+    </edge>
+    <edge source="TF:KLF4" target="region:chr4:152643399-152643899" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">KLF4_direct_+/+</data>
+    </edge>
+    <edge source="TF:KLF4" target="region:chr4:152663052-152663552" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">KLF4_direct_+/+</data>
+    </edge>
+    <edge source="TF:KLF4" target="region:chr4:153661361-153661861" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">KLF4_direct_+/+</data>
+    </edge>
+    <edge source="TF:KLF4" target="region:chr6:144150134-144150634" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">KLF4_direct_+/+</data>
+    </edge>
+    <edge source="TF:KLF4" target="region:chr7:106344765-106345265" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">KLF4_direct_+/+</data>
+    </edge>
+    <edge source="TF:KLF4" target="region:chr7:139828939-139829439" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">KLF4_direct_+/+</data>
+    </edge>
+    <edge source="TF:KLF4" target="region:chr7:139830959-139831459" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">KLF4_direct_+/+</data>
+    </edge>
+    <edge source="TF:KLF4" target="region:chr8:115451426-115451926" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">KLF4_direct_+/+</data>
+    </edge>
+    <edge source="TF:KLF4" target="region:chr8:89759076-89759576" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">KLF4_direct_+/+</data>
+    </edge>
+    <edge source="TF:KLF4" target="gene:ARHGEF11" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">KLF4_direct_+/+</data>
+      <data key="d7">2.2931255725453203</data>
+      <data key="d8">0.4220950530223692</data>
+    </edge>
+    <edge source="TF:KLF4" target="gene:ATF3" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">KLF4_direct_+/+</data>
+      <data key="d7">4.213673587600493</data>
+      <data key="d8">0.4170990300728773</data>
+    </edge>
+    <edge source="TF:KLF4" target="gene:BCL6" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">KLF4_direct_+/+</data>
+      <data key="d7">2.301756864179719</data>
+      <data key="d8">0.2858641427092287</data>
+    </edge>
+    <edge source="TF:KLF4" target="gene:FBXW7" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">KLF4_direct_+/+</data>
+      <data key="d7">2.376388501787457</data>
+      <data key="d8">0.2139866673564898</data>
+    </edge>
+    <edge source="TF:KLF4" target="gene:FOS" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">KLF4_direct_+/+</data>
+      <data key="d7">2.8151315935888084</data>
+      <data key="d8">0.3143517924230234</data>
+    </edge>
+    <edge source="TF:KLF4" target="gene:IRAK3" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">KLF4_direct_+/+</data>
+      <data key="d7">2.360176156799322</data>
+      <data key="d8">0.6132407143477934</data>
+    </edge>
+    <edge source="TF:KLF4" target="gene:MYD88" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">KLF4_direct_+/+</data>
+      <data key="d7">2.2672516770482227</data>
+      <data key="d8">0.1730924038517907</data>
+    </edge>
+    <edge source="TF:KLF4" target="gene:NAMPT" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">KLF4_direct_+/+</data>
+      <data key="d7">4.02366619254929</data>
+      <data key="d8">0.6222284210085115</data>
+    </edge>
+    <edge source="TF:KLF4" target="gene:OSCAR" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">KLF4_direct_+/+</data>
+      <data key="d7">2.4679044315785275</data>
+      <data key="d8">0.5074247300242363</data>
+    </edge>
+    <edge source="TF:KLF4" target="gene:PLXDC2" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">KLF4_direct_+/+</data>
+      <data key="d7">3.9289184447913175</data>
+      <data key="d8">0.7085673219096027</data>
+    </edge>
+    <edge source="TF:KLF4" target="gene:RILPL2" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">KLF4_direct_+/+</data>
+      <data key="d7">2.7063551046332</data>
+      <data key="d8">0.3188961046584639</data>
+    </edge>
+    <edge source="TF:KLF4" target="gene:RIPK2" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">KLF4_direct_+/+</data>
+      <data key="d7">3.149195223563893</data>
+      <data key="d8">0.4556329963945316</data>
+    </edge>
+    <edge source="TF:KLF4" target="gene:RTN3" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">KLF4_direct_+/+</data>
+      <data key="d7">3.27382610378839</data>
+      <data key="d8">0.2612324629065614</data>
+    </edge>
+    <edge source="TF:KLF4" target="gene:SLC8A1" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">KLF4_direct_+/+</data>
+      <data key="d7">4.048608446005394</data>
+      <data key="d8">0.7080294944412446</data>
+    </edge>
+    <edge source="TF:KLF4" target="gene:STX11" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">KLF4_direct_+/+</data>
+      <data key="d7">2.36058791069966</data>
+      <data key="d8">0.5494756863082007</data>
+    </edge>
+    <edge source="TF:KLF4" target="gene:TBXAS1" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">KLF4_direct_+/+</data>
+      <data key="d7">2.6207720991632075</data>
+      <data key="d8">0.5456373021282235</data>
+    </edge>
+    <edge source="TF:KLF4" target="gene:TLR2" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">KLF4_direct_+/+</data>
+      <data key="d7">2.247366101096861</data>
+      <data key="d8">0.5949468004711895</data>
+    </edge>
+    <edge source="TF:KLF4" target="gene:TOP1" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">KLF4_direct_+/+</data>
+      <data key="d7">2.441183783247429</data>
+      <data key="d8">0.1870701560653911</data>
+    </edge>
+    <edge source="TF:KLF4" target="gene:TRPS1" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">KLF4_direct_+/+</data>
+      <data key="d7">2.528814217320071</data>
+      <data key="d8">0.3135603224362883</data>
+    </edge>
+    <edge source="TF:KLF4" target="gene:VMP1" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">KLF4_direct_+/+</data>
+      <data key="d7">2.5402472665425373</data>
+      <data key="d8">0.4264452957164594</data>
+    </edge>
+    <edge source="TF:RXRA" target="region:chr11:10400860-10401360" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">RXRA_direct_+/+</data>
+    </edge>
+    <edge source="TF:RXRA" target="region:chr12:51242065-51242565" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">RXRA_direct_+/+</data>
+    </edge>
+    <edge source="TF:RXRA" target="region:chr12:51246225-51246725" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">RXRA_direct_+/+</data>
+    </edge>
+    <edge source="TF:RXRA" target="region:chr14:100375224-100375724" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">RXRA_direct_+/+</data>
+    </edge>
+    <edge source="TF:RXRA" target="region:chr14:92677190-92677690" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">RXRA_direct_+/+</data>
+    </edge>
+    <edge source="TF:RXRA" target="region:chr14:92680997-92681497" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">RXRA_direct_+/+</data>
+    </edge>
+    <edge source="TF:RXRA" target="region:chr16:17259248-17259748" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">RXRA_direct_+/+</data>
+    </edge>
+    <edge source="TF:RXRA" target="region:chr16:17343666-17344166" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">RXRA_direct_+/+</data>
+    </edge>
+    <edge source="TF:RXRA" target="region:chr16:17416566-17417066" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">RXRA_direct_+/+</data>
+    </edge>
+    <edge source="TF:RXRA" target="region:chr17:21285899-21286399" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">RXRA_direct_+/+</data>
+    </edge>
+    <edge source="TF:RXRA" target="region:chr17:78778872-78779372" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">RXRA_direct_+/+</data>
+    </edge>
+    <edge source="TF:RXRA" target="region:chr19:54208068-54208568" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">RXRA_direct_+/+</data>
+    </edge>
+    <edge source="TF:RXRA" target="region:chr1:248804914-248805414" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">RXRA_direct_+/+</data>
+    </edge>
+    <edge source="TF:RXRA" target="region:chr1:248807058-248807558" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">RXRA_direct_+/+</data>
+    </edge>
+    <edge source="TF:RXRA" target="region:chr1:248838078-248838578" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">RXRA_direct_+/+</data>
+    </edge>
+    <edge source="TF:RXRA" target="region:chr1:88983814-88984314" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">RXRA_direct_+/+</data>
+    </edge>
+    <edge source="TF:RXRA" target="region:chr20:32040126-32040626" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">RXRA_direct_+/+</data>
+    </edge>
+    <edge source="TF:RXRA" target="region:chr20:32051198-32051698" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">RXRA_direct_+/+</data>
+    </edge>
+    <edge source="TF:RXRA" target="region:chr20:32062761-32063261" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">RXRA_direct_+/+</data>
+    </edge>
+    <edge source="TF:RXRA" target="region:chr20:32111726-32112226" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">RXRA_direct_+/+</data>
+    </edge>
+    <edge source="TF:RXRA" target="region:chr20:32112818-32113318" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">RXRA_direct_+/+</data>
+    </edge>
+    <edge source="TF:RXRA" target="region:chr20:40571724-40572224" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">RXRA_direct_+/+</data>
+    </edge>
+    <edge source="TF:RXRA" target="region:chr20:40689916-40690416" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">RXRA_direct_+/+</data>
+    </edge>
+    <edge source="TF:RXRA" target="region:chr20:40779001-40779501" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">RXRA_direct_+/+</data>
+    </edge>
+    <edge source="TF:RXRA" target="region:chr21:33199790-33200290" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">RXRA_direct_+/+</data>
+    </edge>
+    <edge source="TF:RXRA" target="region:chr21:33265708-33266208" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">RXRA_direct_+/+</data>
+    </edge>
+    <edge source="TF:RXRA" target="region:chr2:229287762-229288262" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">RXRA_direct_+/+</data>
+    </edge>
+    <edge source="TF:RXRA" target="region:chr2:229409004-229409504" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">RXRA_direct_+/+</data>
+    </edge>
+    <edge source="TF:RXRA" target="region:chr2:40394488-40394988" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">RXRA_direct_+/+</data>
+    </edge>
+    <edge source="TF:RXRA" target="region:chr2:40450024-40450524" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">RXRA_direct_+/+</data>
+    </edge>
+    <edge source="TF:RXRA" target="region:chr2:40455516-40456016" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">RXRA_direct_+/+</data>
+    </edge>
+    <edge source="TF:RXRA" target="region:chr2:40558720-40559220" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">RXRA_direct_+/+</data>
+    </edge>
+    <edge source="TF:RXRA" target="region:chr7:150665852-150666352" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">RXRA_direct_+/+</data>
+    </edge>
+    <edge source="TF:RXRA" target="region:chr7:150785340-150785840" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">RXRA_direct_+/+</data>
+    </edge>
+    <edge source="TF:RXRA" target="region:chr7:150787590-150788090" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">RXRA_direct_+/+</data>
+    </edge>
+    <edge source="TF:RXRA" target="region:chr8:117881503-117882003" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">RXRA_direct_+/+</data>
+    </edge>
+    <edge source="TF:RXRA" target="region:chr8:117989383-117989883" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">RXRA_direct_+/+</data>
+    </edge>
+    <edge source="TF:RXRA" target="region:chr8:118060746-118061246" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">RXRA_direct_+/+</data>
+    </edge>
+    <edge source="TF:RXRA" target="region:chr8:118108667-118109167" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">RXRA_direct_+/+</data>
+    </edge>
+    <edge source="TF:RXRA" target="region:chr9:134195457-134195957" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">RXRA_direct_+/+</data>
+    </edge>
+    <edge source="TF:RXRA" target="region:chr9:134341252-134341752" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">RXRA_direct_+/+</data>
+    </edge>
+    <edge source="TF:RXRA" target="region:chr9:134929107-134929607" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">RXRA_direct_+/+</data>
+    </edge>
+    <edge source="TF:RXRA" target="region:chr9:134936713-134937213" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">RXRA_direct_+/+</data>
+    </edge>
+    <edge source="TF:RXRA" target="region:chrX:48683505-48684005" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">RXRA_direct_+/+</data>
+    </edge>
+    <edge source="TF:RXRA" target="gene:EXT1" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">RXRA_direct_+/+</data>
+      <data key="d7">3.3584913236901937</data>
+      <data key="d8">0.2394836395901909</data>
+    </edge>
+    <edge source="TF:RXRA" target="gene:FCN1" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">RXRA_direct_+/+</data>
+      <data key="d7">3.277187408856028</data>
+      <data key="d8">0.3993883423629462</data>
+    </edge>
+    <edge source="TF:RXRA" target="gene:GBP1" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">RXRA_direct_+/+</data>
+      <data key="d7">4.0484137384356815</data>
+      <data key="d8">0.2499950951662408</data>
+    </edge>
+    <edge source="TF:RXRA" target="gene:IFNAR2" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">RXRA_direct_+/+</data>
+      <data key="d7">2.93153832147774</data>
+      <data key="d8">0.1222940508851746</data>
+    </edge>
+    <edge source="TF:RXRA" target="gene:LILRB2" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">RXRA_direct_+/+</data>
+      <data key="d7">2.784218672761855</data>
+      <data key="d8">0.3405542291839259</data>
+    </edge>
+    <edge source="TF:RXRA" target="gene:MAFB" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">RXRA_direct_+/+</data>
+      <data key="d7">3.9819808271638593</data>
+      <data key="d8">0.3521398077255472</data>
+    </edge>
+    <edge source="TF:RXRA" target="gene:MAP2K3" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">RXRA_direct_+/+</data>
+      <data key="d7">3.0180626537594457</data>
+      <data key="d8">0.1708811937336102</data>
+    </edge>
+    <edge source="TF:RXRA" target="gene:PID1" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">RXRA_direct_+/+</data>
+      <data key="d7">3.264809691060132</data>
+      <data key="d8">0.450644525000737</data>
+    </edge>
+    <edge source="TF:RXRA" target="gene:RIN3" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">RXRA_direct_+/+</data>
+      <data key="d7">2.832838111366208</data>
+      <data key="d8">0.188462696064962</data>
+    </edge>
+    <edge source="TF:RXRA" target="gene:RXRA" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">RXRA_direct_+/+</data>
+      <data key="d7">4.738233726821694</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="TF:RXRA" target="gene:SBF2" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">RXRA_direct_+/+</data>
+      <data key="d7">3.192649593301708</data>
+      <data key="d8">0.2959246569124025</data>
+    </edge>
+    <edge source="TF:RXRA" target="gene:SLC8A1" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">RXRA_direct_+/+</data>
+      <data key="d7">3.0350205945020714</data>
+      <data key="d8">0.4888169408549898</data>
+    </edge>
+    <edge source="TF:RXRA" target="gene:TFCP2" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">RXRA_direct_+/+</data>
+      <data key="d7">3.018541435038478</data>
+      <data key="d8">0.1308933796273087</data>
+    </edge>
+    <edge source="TF:RXRA" target="gene:TIMP2" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">RXRA_direct_+/+</data>
+      <data key="d7">3.079305213600396</data>
+      <data key="d8">0.2748071905332118</data>
+    </edge>
+    <edge source="TF:RXRA" target="gene:TM9SF4" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">RXRA_direct_+/+</data>
+      <data key="d7">2.761126454418291</data>
+      <data key="d8">0.1382261017498944</data>
+    </edge>
+    <edge source="TF:RXRA" target="gene:TMEM176A" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">RXRA_direct_+/+</data>
+      <data key="d7">3.905055197152396</data>
+      <data key="d8">0.2377151541578071</data>
+    </edge>
+    <edge source="TF:RXRA" target="gene:WARS" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">RXRA_direct_+/+</data>
+      <data key="d7">2.85475280415711</data>
+      <data key="d8">0.4068370634812665</data>
+    </edge>
+    <edge source="TF:RXRA" target="gene:WAS" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">RXRA_direct_+/+</data>
+      <data key="d7">2.7896796291647705</data>
+      <data key="d8">0.1298305593423583</data>
+    </edge>
+    <edge source="TF:RXRA" target="gene:XYLT1" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">RXRA_direct_+/+</data>
+      <data key="d7">2.7617474529498875</data>
+      <data key="d8">0.145364586257007</data>
+    </edge>
+    <edge source="TF:RXRA" target="gene:ZNF672" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">RXRA_direct_+/+</data>
+      <data key="d7">3.4539146566218912</data>
+      <data key="d8">0.1267845107486701</data>
+    </edge>
+    <edge source="TF:SPI1" target="region:chr10:19816522-19817022" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPI1_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPI1" target="region:chr10:19819320-19819820" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPI1_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPI1" target="region:chr10:19825121-19825621" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPI1_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPI1" target="region:chr10:19825695-19826195" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPI1_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPI1" target="region:chr10:20003617-20004117" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPI1_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPI1" target="region:chr10:20202238-20202738" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPI1_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPI1" target="region:chr10:71701443-71701943" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPI1_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPI1" target="region:chr10:71727474-71727974" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPI1_direct_+/-</data>
+    </edge>
+    <edge source="TF:SPI1" target="region:chr10:71753471-71753971" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPI1_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPI1" target="region:chr10:71805784-71806284" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPI1_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPI1" target="region:chr10:71851075-71851575" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPI1_direct_+/-</data>
+    </edge>
+    <edge source="TF:SPI1" target="region:chr10:71852434-71852934" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPI1_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPI1" target="region:chr10:71868063-71868563" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPI1_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPI1" target="region:chr10:71889975-71890475" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPI1_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPI1" target="region:chr10:75358919-75359419" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPI1_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPI1" target="region:chr10:75375814-75376314" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPI1_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPI1" target="region:chr10:75402095-75402595" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPI1_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPI1" target="region:chr10:75431500-75432000" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPI1_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPI1" target="region:chr10:75612801-75613301" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPI1_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPI1" target="region:chr10:76403798-76404298" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPI1_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPI1" target="region:chr11:47257590-47258090" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPI1_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPI1" target="region:chr11:47268979-47269479" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPI1_direct_+/-</data>
+    </edge>
+    <edge source="TF:SPI1" target="region:chr11:47359497-47359997" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPI1_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPI1" target="region:chr11:47378336-47378836" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPI1_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPI1" target="region:chr11:47388046-47388546" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPI1_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPI1" target="region:chr11:47390969-47391469" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPI1_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPI1" target="region:chr11:47392861-47393361" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPI1_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPI1" target="region:chr11:47394637-47395137" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPI1_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPI1" target="region:chr11:47400128-47400628" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPI1_direct_+/-</data>
+    </edge>
+    <edge source="TF:SPI1" target="region:chr11:47408196-47408696" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPI1_direct_+/-</data>
+    </edge>
+    <edge source="TF:SPI1" target="region:chr11:47508910-47509410" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPI1_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPI1" target="region:chr12:66072019-66072519" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPI1_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPI1" target="region:chr12:66144946-66145446" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPI1_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPI1" target="region:chr12:66169635-66170135" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPI1_direct_+/-</data>
+    </edge>
+    <edge source="TF:SPI1" target="region:chr12:66187788-66188288" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPI1_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPI1" target="region:chr12:66241538-66242038" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPI1_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPI1" target="region:chr12:66268511-66269011" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPI1_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPI1" target="region:chr12:66388441-66388941" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPI1_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPI1" target="region:chr12:89333798-89334298" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPI1_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPI1" target="region:chr12:89352334-89352834" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPI1_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPI1" target="region:chr13:51562079-51562579" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPI1_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPI1" target="region:chr13:51793790-51794290" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPI1_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPI1" target="region:chr14:100221449-100221949" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPI1_direct_+/-</data>
+    </edge>
+    <edge source="TF:SPI1" target="region:chr14:100341266-100341766" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPI1_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPI1" target="region:chr14:100373676-100374176" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPI1_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPI1" target="region:chr14:100375224-100375724" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPI1_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPI1" target="region:chr14:94384841-94385341" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPI1_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPI1" target="region:chr14:94392476-94392976" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPI1_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPI1" target="region:chr14:94394565-94395065" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPI1_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPI1" target="region:chr16:12543995-12544495" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPI1_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPI1" target="region:chr16:12573234-12573734" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPI1_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPI1" target="region:chr16:12816713-12817213" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPI1_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPI1" target="region:chr16:84569534-84570034" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPI1_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPI1" target="region:chr16:84594103-84594603" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPI1_direct_+/-</data>
+    </edge>
+    <edge source="TF:SPI1" target="region:chr16:84600698-84601198" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPI1_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPI1" target="region:chr16:84602956-84603456" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPI1_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPI1" target="region:chr16:84726038-84726538" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPI1_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPI1" target="region:chr16:84742524-84743024" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPI1_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPI1" target="region:chr16:84751977-84752477" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPI1_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPI1" target="region:chr18:10004997-10005497" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPI1_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPI1" target="region:chr18:9712523-9713023" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPI1_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPI1" target="region:chr18:9753868-9754368" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPI1_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPI1" target="region:chr18:9762463-9762963" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPI1_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPI1" target="region:chr18:9771103-9771603" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPI1_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPI1" target="region:chr18:9910571-9911071" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPI1_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPI1" target="region:chr19:10717612-10718112" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPI1_direct_+/-</data>
+    </edge>
+    <edge source="TF:SPI1" target="region:chr19:10759658-10760158" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPI1_direct_+/-</data>
+    </edge>
+    <edge source="TF:SPI1" target="region:chr19:10777271-10777771" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPI1_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPI1" target="region:chr19:10780258-10780758" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPI1_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPI1" target="region:chr19:10784196-10784696" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPI1_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPI1" target="region:chr19:10805385-10805885" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPI1_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPI1" target="region:chr19:10809761-10810261" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPI1_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPI1" target="region:chr19:10813029-10813529" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPI1_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPI1" target="region:chr19:10848174-10848674" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPI1_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPI1" target="region:chr19:10928483-10928983" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPI1_direct_+/-</data>
+    </edge>
+    <edge source="TF:SPI1" target="region:chr1:11960666-11961166" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPI1_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPI1" target="region:chr1:11985793-11986293" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPI1_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPI1" target="region:chr1:12020082-12020582" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPI1_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPI1" target="region:chr1:12143152-12143652" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPI1_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPI1" target="region:chr1:12143654-12144154" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPI1_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPI1" target="region:chr1:12153199-12153699" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPI1_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPI1" target="region:chr1:12157800-12158300" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPI1_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPI1" target="region:chr1:12180230-12180730" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPI1_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPI1" target="region:chr1:12184150-12184650" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPI1_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPI1" target="region:chr1:12196576-12197076" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPI1_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPI1" target="region:chr1:12229759-12230259" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPI1_direct_+/-</data>
+    </edge>
+    <edge source="TF:SPI1" target="region:chr20:23655765-23656265" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPI1_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPI1" target="region:chr2:173005713-173006213" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPI1_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPI1" target="region:chr2:173043368-173043868" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPI1_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPI1" target="region:chr2:173075626-173076126" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPI1_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPI1" target="region:chr2:173076383-173076883" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPI1_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPI1" target="region:chr5:94618419-94618919" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPI1_direct_+/-</data>
+    </edge>
+    <edge source="TF:SPI1" target="region:chr5:95048620-95049120" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPI1_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPI1" target="region:chr5:95069806-95070306" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPI1_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPI1" target="region:chr5:95081424-95081924" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPI1_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPI1" target="region:chr6:18171792-18172292" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPI1_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPI1" target="region:chr6:18179908-18180408" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPI1_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPI1" target="region:chr6:18329672-18330172" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPI1_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPI1" target="region:chr6:18330563-18331063" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPI1_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPI1" target="region:chr9:87601217-87601717" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPI1_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPI1" target="region:chr9:87614317-87614817" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPI1_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPI1" target="region:chr9:87722288-87722788" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPI1_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPI1" target="region:chr9:87725918-87726418" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPI1_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPI1" target="region:chr9:87783099-87783599" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPI1_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPI1" target="region:chr9:87792702-87793202" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPI1_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPI1" target="region:chr9:87796051-87796551" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPI1_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPI1" target="region:chrX:23742338-23742838" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPI1_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPI1" target="region:chrX:23781151-23781651" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPI1_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPI1" target="region:chrX:23811102-23811602" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPI1_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPI1" target="region:chrX:23911212-23911712" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">SPI1_direct_+/+</data>
+    </edge>
+    <edge source="TF:SPI1" target="gene:C19orf38" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/+;SPI1_direct_+/-</data>
+      <data key="d7">4.203417972399419</data>
+      <data key="d8">0.2987495945007476</data>
+    </edge>
+    <edge source="TF:SPI1" target="gene:COTL1" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/+;SPI1_direct_+/-</data>
+      <data key="d7">4.915047332788356</data>
+      <data key="d8">0.2552669777938114</data>
+    </edge>
+    <edge source="TF:SPI1" target="gene:CPPED1" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/+</data>
+      <data key="d7">4.105914315065535</data>
+      <data key="d8">0.450643998280285</data>
+    </edge>
+    <edge source="TF:SPI1" target="gene:CST3" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/+</data>
+      <data key="d7">5.694197432970467</data>
+      <data key="d8">0.3821003694708929</data>
+    </edge>
+    <edge source="TF:SPI1" target="gene:CTSL" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/+</data>
+      <data key="d7">4.039432219577139</data>
+      <data key="d8">0.1567505501622734</data>
+    </edge>
+    <edge source="TF:SPI1" target="gene:DUSP6" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/+</data>
+      <data key="d7">4.13570927636014</data>
+      <data key="d8">0.3650521357185519</data>
+    </edge>
+    <edge source="TF:SPI1" target="gene:IRAK3" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/+;SPI1_direct_+/-</data>
+      <data key="d7">4.045497528008082</data>
+      <data key="d8">0.4993457755699586</data>
+    </edge>
+    <edge source="TF:SPI1" target="gene:KDM1B" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/+</data>
+      <data key="d7">4.957230970972773</data>
+      <data key="d8">0.2892502532600767</data>
+    </edge>
+    <edge source="TF:SPI1" target="gene:LRMDA" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/+</data>
+      <data key="d7">4.111994170254787</data>
+      <data key="d8">0.4836025254692487</data>
+    </edge>
+    <edge source="TF:SPI1" target="gene:MAP3K20" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/+</data>
+      <data key="d7">4.605062558861566</data>
+      <data key="d8">0.3534444822136158</data>
+    </edge>
+    <edge source="TF:SPI1" target="gene:MCTP1" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/+;SPI1_direct_+/-</data>
+      <data key="d7">4.260073697432321</data>
+      <data key="d8">0.5064744921239263</data>
+    </edge>
+    <edge source="TF:SPI1" target="gene:PLXDC2" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/+</data>
+      <data key="d7">4.117557552101159</data>
+      <data key="d8">0.4960064514992829</data>
+    </edge>
+    <edge source="TF:SPI1" target="gene:PSAP" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/+;SPI1_direct_+/-</data>
+      <data key="d7">4.919268410575558</data>
+      <data key="d8">0.3552993186945688</data>
+    </edge>
+    <edge source="TF:SPI1" target="gene:RAB31" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/+</data>
+      <data key="d7">4.070524022626241</data>
+      <data key="d8">0.4345552552783889</data>
+    </edge>
+    <edge source="TF:SPI1" target="gene:SAT1" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/+</data>
+      <data key="d7">4.067650199743319</data>
+      <data key="d8">0.3888340500016322</data>
+    </edge>
+    <edge source="TF:SPI1" target="gene:SERPINA1" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/+</data>
+      <data key="d7">4.116958261517103</data>
+      <data key="d8">0.3592411858573401</data>
+    </edge>
+    <edge source="TF:SPI1" target="gene:SPI1" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/+;SPI1_direct_+/-</data>
+      <data key="d7">6.640258265984493</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="TF:SPI1" target="gene:TNFRSF8" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/+;SPI1_direct_+/-</data>
+      <data key="d7">5.293020577983935</data>
+      <data key="d8">0.2629078631153164</data>
+    </edge>
+    <edge source="TF:SPI1" target="gene:WARS" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/+;SPI1_direct_+/-</data>
+      <data key="d7">4.209285676467682</data>
+      <data key="d8">0.4419910671904777</data>
+    </edge>
+    <edge source="TF:SPI1" target="gene:WDFY2" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/+</data>
+      <data key="d7">4.15331353944706</data>
+      <data key="d8">0.249777438865314</data>
+    </edge>
+    <edge source="TF:TCF7L2" target="region:chr10:112852203-112852703" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">TCF7L2_direct_+/+</data>
+    </edge>
+    <edge source="TF:TCF7L2" target="region:chr10:113099549-113100049" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">TCF7L2_direct_+/+</data>
+    </edge>
+    <edge source="TF:TCF7L2" target="region:chr10:113153678-113154178" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">TCF7L2_direct_+/+</data>
+    </edge>
+    <edge source="TF:TCF7L2" target="region:chr10:113273396-113273896" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">TCF7L2_direct_+/+</data>
+    </edge>
+    <edge source="TF:TCF7L2" target="region:chr11:47244893-47245393" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">TCF7L2_direct_+/+</data>
+    </edge>
+    <edge source="TF:TCF7L2" target="region:chr11:47378336-47378836" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">TCF7L2_direct_+/+</data>
+    </edge>
+    <edge source="TF:TCF7L2" target="region:chr11:60242704-60243204" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">TCF7L2_direct_+/+</data>
+    </edge>
+    <edge source="TF:TCF7L2" target="region:chr11:60280315-60280815" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">TCF7L2_direct_+/+</data>
+    </edge>
+    <edge source="TF:TCF7L2" target="region:chr11:60389449-60389949" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">TCF7L2_direct_+/+</data>
+    </edge>
+    <edge source="TF:TCF7L2" target="region:chr11:60392366-60392866" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">TCF7L2_direct_+/+</data>
+    </edge>
+    <edge source="TF:TCF7L2" target="region:chr11:93541711-93542211" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">TCF7L2_direct_+/+</data>
+    </edge>
+    <edge source="TF:TCF7L2" target="region:chr12:7948800-7949300" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">TCF7L2_direct_+/+</data>
+    </edge>
+    <edge source="TF:TCF7L2" target="region:chr12:8052638-8053138" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">TCF7L2_direct_+/+</data>
+    </edge>
+    <edge source="TF:TCF7L2" target="region:chr12:8070610-8071110" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">TCF7L2_direct_+/+</data>
+    </edge>
+    <edge source="TF:TCF7L2" target="region:chr12:8156769-8157269" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">TCF7L2_direct_+/+</data>
+    </edge>
+    <edge source="TF:TCF7L2" target="region:chr14:100373676-100374176" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">TCF7L2_direct_+/+</data>
+    </edge>
+    <edge source="TF:TCF7L2" target="region:chr14:22822603-22823103" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">TCF7L2_direct_+/+</data>
+    </edge>
+    <edge source="TF:TCF7L2" target="region:chr14:22823184-22823684" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">TCF7L2_direct_+/+</data>
+    </edge>
+    <edge source="TF:TCF7L2" target="region:chr17:74520125-74520625" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">TCF7L2_direct_+/+</data>
+    </edge>
+    <edge source="TF:TCF7L2" target="region:chr17:74599430-74599930" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">TCF7L2_direct_+/+</data>
+    </edge>
+    <edge source="TF:TCF7L2" target="region:chr17:74631809-74632309" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">TCF7L2_direct_+/+</data>
+    </edge>
+    <edge source="TF:TCF7L2" target="region:chr19:14661411-14661911" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">TCF7L2_direct_+/+</data>
+    </edge>
+    <edge source="TF:TCF7L2" target="region:chr19:18392397-18392897" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">TCF7L2_direct_+/+</data>
+    </edge>
+    <edge source="TF:TCF7L2" target="region:chr19:54593472-54593972" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">TCF7L2_direct_+/+</data>
+    </edge>
+    <edge source="TF:TCF7L2" target="region:chr19:54630144-54630644" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">TCF7L2_direct_+/+</data>
+    </edge>
+    <edge source="TF:TCF7L2" target="region:chr19:54643475-54643975" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">TCF7L2_direct_+/+</data>
+    </edge>
+    <edge source="TF:TCF7L2" target="region:chr4:158817906-158818406" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">TCF7L2_direct_+/+</data>
+    </edge>
+    <edge source="TF:TCF7L2" target="region:chr5:150058683-150059183" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">TCF7L2_direct_+/+</data>
+    </edge>
+    <edge source="TF:TCF7L2" target="region:chr6:108742032-108742532" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">TCF7L2_direct_+/+</data>
+    </edge>
+    <edge source="TF:TCF7L2" target="region:chr6:18501601-18502101" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">TCF7L2_direct_+/+</data>
+    </edge>
+    <edge source="TF:TCF7L2" target="region:chr6:31586511-31587011" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">TCF7L2_direct_+/+</data>
+    </edge>
+    <edge source="TF:TCF7L2" target="region:chr7:28684536-28685036" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">TCF7L2_direct_+/+</data>
+    </edge>
+    <edge source="TF:TCF7L2" target="region:chr7:43876116-43876616" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">TCF7L2_direct_+/+</data>
+    </edge>
+    <edge source="TF:TCF7L2" target="region:chr9:134341252-134341752" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">TCF7L2_direct_+/+</data>
+    </edge>
+    <edge source="TF:TCF7L2" target="region:chr9:134409236-134409736" id="0">
+      <data key="d5">tf_binds_region</data>
+      <data key="d6">TCF7L2_direct_+/+</data>
+    </edge>
+    <edge source="TF:TCF7L2" target="gene:ADGRE2" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">TCF7L2_direct_+/+</data>
+      <data key="d7">4.650389431764726</data>
+      <data key="d8">0.5371561788122803</data>
+    </edge>
+    <edge source="TF:TCF7L2" target="gene:AIF1" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">TCF7L2_direct_+/+</data>
+      <data key="d7">3.5681764906965965</data>
+      <data key="d8">0.359992631314046</data>
+    </edge>
+    <edge source="TF:TCF7L2" target="gene:BLVRA" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">TCF7L2_direct_+/+</data>
+      <data key="d7">3.618096326329785</data>
+      <data key="d8">0.1912604310584165</data>
+    </edge>
+    <edge source="TF:TCF7L2" target="gene:C3AR1" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">TCF7L2_direct_+/+</data>
+      <data key="d7">4.451614561725911</data>
+      <data key="d8">0.2928566118196448</data>
+    </edge>
+    <edge source="TF:TCF7L2" target="gene:CD300C" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">TCF7L2_direct_+/+</data>
+      <data key="d7">3.72574177940068</data>
+      <data key="d8">0.2368656118054884</data>
+    </edge>
+    <edge source="TF:TCF7L2" target="gene:CREB5" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">TCF7L2_direct_+/+</data>
+      <data key="d7">3.3909301636655265</data>
+      <data key="d8">0.4130732396444591</data>
+    </edge>
+    <edge source="TF:TCF7L2" target="gene:CSF1R" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">TCF7L2_direct_+/+</data>
+      <data key="d7">5.078403613988376</data>
+      <data key="d8">0.467708269599449</data>
+    </edge>
+    <edge source="TF:TCF7L2" target="gene:FNIP2" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">TCF7L2_direct_+/+</data>
+      <data key="d7">3.761241195928255</data>
+      <data key="d8">0.2446254592581942</data>
+    </edge>
+    <edge source="TF:TCF7L2" target="gene:FOXO3" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">TCF7L2_direct_+/+</data>
+      <data key="d7">3.929522174437771</data>
+      <data key="d8">0.2464842460920935</data>
+    </edge>
+    <edge source="TF:TCF7L2" target="gene:LILRB1" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">TCF7L2_direct_+/+</data>
+      <data key="d7">3.493226693764691</data>
+      <data key="d8">0.3265727607255638</data>
+    </edge>
+    <edge source="TF:TCF7L2" target="gene:LRRC25" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">TCF7L2_direct_+/+</data>
+      <data key="d7">5.351132577277267</data>
+      <data key="d8">0.4381595934868208</data>
+    </edge>
+    <edge source="TF:TCF7L2" target="gene:LST1" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">TCF7L2_direct_+/+</data>
+      <data key="d7">4.355423276802359</data>
+      <data key="d8">0.3651671203262778</data>
+    </edge>
+    <edge source="TF:TCF7L2" target="gene:MS4A7" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">TCF7L2_direct_+/+</data>
+      <data key="d7">4.966694039176123</data>
+      <data key="d8">0.4898149331758498</data>
+    </edge>
+    <edge source="TF:TCF7L2" target="gene:RNF144B" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">TCF7L2_direct_+/+</data>
+      <data key="d7">3.3404669003093064</data>
+      <data key="d8">0.4587261184918578</data>
+    </edge>
+    <edge source="TF:TCF7L2" target="gene:RXRA" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">TCF7L2_direct_+/+</data>
+      <data key="d7">3.793208978691111</data>
+      <data key="d8">0.3836309842617871</data>
+    </edge>
+    <edge source="TF:TCF7L2" target="gene:SLC7A7" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">TCF7L2_direct_+/+</data>
+      <data key="d7">4.027702673596954</data>
+      <data key="d8">0.4019422347964302</data>
+    </edge>
+    <edge source="TF:TCF7L2" target="gene:SMCO4" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">TCF7L2_direct_+/+</data>
+      <data key="d7">3.4785153991478994</data>
+      <data key="d8">0.2789309506022288</data>
+    </edge>
+    <edge source="TF:TCF7L2" target="gene:SPI1" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">TCF7L2_direct_+/+</data>
+      <data key="d7">3.776456556888482</data>
+      <data key="d8">0.4326531819234864</data>
+    </edge>
+    <edge source="TF:TCF7L2" target="gene:TCF7L2" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">TCF7L2_direct_+/+</data>
+      <data key="d7">5.741863502006518</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="TF:TCF7L2" target="gene:WARS" id="0">
+      <data key="d5">tf_regulates_gene</data>
+      <data key="d6">TCF7L2_direct_+/+</data>
+      <data key="d7">4.31644475948092</data>
+      <data key="d8">0.5433256356390043</data>
+    </edge>
+    <edge source="region:chr10:112852203-112852703" target="gene:TCF7L2" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">TCF7L2_direct_+/+</data>
+      <data key="d7">0.0340862668836063</data>
+      <data key="d8">0.6172239660961668</data>
+    </edge>
+    <edge source="region:chr10:113099549-113100049" target="gene:TCF7L2" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">TCF7L2_direct_+/+</data>
+      <data key="d7">0.0153904188376037</data>
+      <data key="d8">0.644860664997764</data>
+    </edge>
+    <edge source="region:chr10:113153678-113154178" target="gene:TCF7L2" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">TCF7L2_direct_+/+</data>
+      <data key="d7">0.061339579746094</data>
+      <data key="d8">0.6500112956262204</data>
+    </edge>
+    <edge source="region:chr10:113273396-113273896" target="gene:TCF7L2" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">TCF7L2_direct_+/+</data>
+      <data key="d7">0.1017698092003188</data>
+      <data key="d8">0.6406538245145765</data>
+    </edge>
+    <edge source="region:chr10:19816522-19817022" target="gene:PLXDC2" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/+</data>
+      <data key="d7">0.0694266075394635</data>
+      <data key="d8">0.8695233000655502</data>
+    </edge>
+    <edge source="region:chr10:19819320-19819820" target="gene:PLXDC2" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/+</data>
+      <data key="d7">0.0712038870792637</data>
+      <data key="d8">0.8673310448674577</data>
+    </edge>
+    <edge source="region:chr10:19825121-19825621" target="gene:PLXDC2" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/+</data>
+      <data key="d7">0.0424667867998519</data>
+      <data key="d8">0.8675478997636967</data>
+    </edge>
+    <edge source="region:chr10:19825695-19826195" target="gene:PLXDC2" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/+</data>
+      <data key="d7">0.1059129052373115</data>
+      <data key="d8">0.8672713566311077</data>
+    </edge>
+    <edge source="region:chr10:20003617-20004117" target="gene:PLXDC2" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/+</data>
+      <data key="d7">0.0789997342257887</data>
+      <data key="d8">0.6553990089996642</data>
+    </edge>
+    <edge source="region:chr10:20202238-20202738" target="gene:PLXDC2" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">KLF4_direct_+/+;SPI1_direct_+/+</data>
+      <data key="d7">0.0451549509006918</data>
+      <data key="d8">0.7788056810839847</data>
+    </edge>
+    <edge source="region:chr10:71701443-71701943" target="gene:PSAP" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/+</data>
+      <data key="d7">0.048263147653444</data>
+      <data key="d8">0.5035168931968721</data>
+    </edge>
+    <edge source="region:chr10:71727474-71727974" target="gene:PSAP" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/-</data>
+      <data key="d7">0.013812586735089</data>
+      <data key="d8">-0.2191491424427915</data>
+    </edge>
+    <edge source="region:chr10:71753471-71753971" target="gene:PSAP" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/+</data>
+      <data key="d7">0.029012959285036</data>
+      <data key="d8">0.3112741326852303</data>
+    </edge>
+    <edge source="region:chr10:71805784-71806284" target="gene:PSAP" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/+</data>
+      <data key="d7">0.0468008863630703</data>
+      <data key="d8">0.4844334554671121</data>
+    </edge>
+    <edge source="region:chr10:71851075-71851575" target="gene:PSAP" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/-</data>
+      <data key="d7">0.0049011169327008</data>
+      <data key="d8">-0.0988177431716714</data>
+    </edge>
+    <edge source="region:chr10:71852434-71852934" target="gene:PSAP" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/+</data>
+      <data key="d7">0.0192383535458759</data>
+      <data key="d8">0.2946908657842436</data>
+    </edge>
+    <edge source="region:chr10:71868063-71868563" target="gene:PSAP" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/+</data>
+      <data key="d7">0.0313507156084701</data>
+      <data key="d8">0.4885133335012736</data>
+    </edge>
+    <edge source="region:chr10:71889975-71890475" target="gene:PSAP" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/+</data>
+      <data key="d7">0.0446245020687663</data>
+      <data key="d8">0.3870345121618072</data>
+    </edge>
+    <edge source="region:chr10:75358919-75359419" target="gene:LRMDA" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/+</data>
+      <data key="d7">0.0758800975935199</data>
+      <data key="d8">0.8948645391490011</data>
+    </edge>
+    <edge source="region:chr10:75375814-75376314" target="gene:LRMDA" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/+</data>
+      <data key="d7">0.051548519308341</data>
+      <data key="d8">0.8231336510818956</data>
+    </edge>
+    <edge source="region:chr10:75402095-75402595" target="gene:LRMDA" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/+</data>
+      <data key="d7">0.071760174072246</data>
+      <data key="d8">0.5700699248575656</data>
+    </edge>
+    <edge source="region:chr10:75431500-75432000" target="gene:LRMDA" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/+</data>
+      <data key="d7">0.0512833830444424</data>
+      <data key="d8">0.8080048098407151</data>
+    </edge>
+    <edge source="region:chr10:75612801-75613301" target="gene:LRMDA" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/+</data>
+      <data key="d7">0.046115744126576</data>
+      <data key="d8">0.8897369772921447</data>
+    </edge>
+    <edge source="region:chr10:76403798-76404298" target="gene:LRMDA" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/+</data>
+      <data key="d7">0.0710374418541256</data>
+      <data key="d8">0.8893674226877372</data>
+    </edge>
+    <edge source="region:chr11:10400860-10401360" target="gene:SBF2" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">RXRA_direct_+/+</data>
+      <data key="d7">0.0255507667633873</data>
+      <data key="d8">0.5009842667153077</data>
+    </edge>
+    <edge source="region:chr11:47244893-47245393" target="gene:SPI1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">TCF7L2_direct_+/+</data>
+      <data key="d7">0.0354963968341012</data>
+      <data key="d8">0.4017853995792998</data>
+    </edge>
+    <edge source="region:chr11:47257590-47258090" target="gene:SPI1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/+</data>
+      <data key="d7">0.0615352819413894</data>
+      <data key="d8">0.3407722154222525</data>
+    </edge>
+    <edge source="region:chr11:47268979-47269479" target="gene:SPI1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/-</data>
+      <data key="d7">0.0073915127419404</data>
+      <data key="d8">-0.2429527339041782</data>
+    </edge>
+    <edge source="region:chr11:47359497-47359997" target="gene:SPI1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/+</data>
+      <data key="d7">0.0325308507760256</data>
+      <data key="d8">0.3362861995384748</data>
+    </edge>
+    <edge source="region:chr11:47378336-47378836" target="gene:SPI1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/+;TCF7L2_direct_+/+</data>
+      <data key="d7">0.0252854606328824</data>
+      <data key="d8">0.3759993132267227</data>
+    </edge>
+    <edge source="region:chr11:47388046-47388546" target="gene:SPI1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/+</data>
+      <data key="d7">0.0643634838047217</data>
+      <data key="d8">0.3843699851143815</data>
+    </edge>
+    <edge source="region:chr11:47390969-47391469" target="gene:SPI1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/+</data>
+      <data key="d7">0.0589860040325337</data>
+      <data key="d8">0.4238692459982774</data>
+    </edge>
+    <edge source="region:chr11:47392861-47393361" target="gene:SPI1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/+</data>
+      <data key="d7">0.0588731629615275</data>
+      <data key="d8">0.343353741960321</data>
+    </edge>
+    <edge source="region:chr11:47394637-47395137" target="gene:SPI1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/+</data>
+      <data key="d7">0.0326466483615445</data>
+      <data key="d8">0.3489689238171902</data>
+    </edge>
+    <edge source="region:chr11:47400128-47400628" target="gene:SPI1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/-</data>
+      <data key="d7">0.0140353032697606</data>
+      <data key="d8">-0.1873052805589317</data>
+    </edge>
+    <edge source="region:chr11:47408196-47408696" target="gene:SPI1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/-</data>
+      <data key="d7">0.0170561540545892</data>
+      <data key="d8">-0.1090025863790785</data>
+    </edge>
+    <edge source="region:chr11:47508910-47509410" target="gene:SPI1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/+</data>
+      <data key="d7">0.0349410451850859</data>
+      <data key="d8">0.3531641614491018</data>
+    </edge>
+    <edge source="region:chr11:60242704-60243204" target="gene:MS4A7" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">TCF7L2_direct_+/+</data>
+      <data key="d7">0.028099114030859</data>
+      <data key="d8">0.5105548721439694</data>
+    </edge>
+    <edge source="region:chr11:60280315-60280815" target="gene:MS4A7" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">TCF7L2_direct_+/+</data>
+      <data key="d7">0.0775926160590905</data>
+      <data key="d8">0.4324555070460041</data>
+    </edge>
+    <edge source="region:chr11:60389449-60389949" target="gene:MS4A7" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">TCF7L2_direct_+/+</data>
+      <data key="d7">0.0430266867436481</data>
+      <data key="d8">0.4053218621642049</data>
+    </edge>
+    <edge source="region:chr11:60392366-60392866" target="gene:MS4A7" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">TCF7L2_direct_+/+</data>
+      <data key="d7">0.0922999353576315</data>
+      <data key="d8">0.516760018701561</data>
+    </edge>
+    <edge source="region:chr11:63871967-63872467" target="gene:RTN3" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">KLF4_direct_+/+</data>
+      <data key="d7">0.067073439987686</data>
+      <data key="d8">0.1897632396294415</data>
+    </edge>
+    <edge source="region:chr11:93541711-93542211" target="gene:SMCO4" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">TCF7L2_direct_+/+</data>
+      <data key="d7">0.0288730710951346</data>
+      <data key="d8">0.2662875989720646</data>
+    </edge>
+    <edge source="region:chr12:123432529-123433029" target="gene:RILPL2" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">KLF4_direct_+/+</data>
+      <data key="d7">0.0787179914738292</data>
+      <data key="d8">0.3313189132626328</data>
+    </edge>
+    <edge source="region:chr12:51242065-51242565" target="gene:TFCP2" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">RXRA_direct_+/+</data>
+      <data key="d7">0.0219881037761046</data>
+      <data key="d8">0.0807363634402913</data>
+    </edge>
+    <edge source="region:chr12:51246225-51246725" target="gene:TFCP2" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">RXRA_direct_+/+</data>
+      <data key="d7">0.042265602345834</data>
+      <data key="d8">0.0780280124607263</data>
+    </edge>
+    <edge source="region:chr12:66072019-66072519" target="gene:IRAK3" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/+</data>
+      <data key="d7">0.050829897912281</data>
+      <data key="d8">0.7367075236036007</data>
+    </edge>
+    <edge source="region:chr12:66144946-66145446" target="gene:IRAK3" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/+</data>
+      <data key="d7">0.0400915677664471</data>
+      <data key="d8">0.5267553560024834</data>
+    </edge>
+    <edge source="region:chr12:66169635-66170135" target="gene:IRAK3" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/-</data>
+      <data key="d7">0.0048287585835717</data>
+      <data key="d8">-0.3998729357958126</data>
+    </edge>
+    <edge source="region:chr12:66187788-66188288" target="gene:IRAK3" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">KLF4_direct_+/+;SPI1_direct_+/+</data>
+      <data key="d7">0.0898585176249275</data>
+      <data key="d8">0.7362973845657442</data>
+    </edge>
+    <edge source="region:chr12:66241538-66242038" target="gene:IRAK3" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/+</data>
+      <data key="d7">0.0809673303665884</data>
+      <data key="d8">0.8455846996588353</data>
+    </edge>
+    <edge source="region:chr12:66268511-66269011" target="gene:IRAK3" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/+</data>
+      <data key="d7">0.0720833360229125</data>
+      <data key="d8">0.6701666039608477</data>
+    </edge>
+    <edge source="region:chr12:66388441-66388941" target="gene:IRAK3" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/+</data>
+      <data key="d7">0.0456791330088015</data>
+      <data key="d8">0.8155648543291166</data>
+    </edge>
+    <edge source="region:chr12:7948800-7949300" target="gene:C3AR1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">TCF7L2_direct_+/+</data>
+      <data key="d7">0.0228127385265933</data>
+      <data key="d8">0.2271853744766651</data>
+    </edge>
+    <edge source="region:chr12:8052638-8053138" target="gene:C3AR1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">TCF7L2_direct_+/+</data>
+      <data key="d7">0.0303518679009676</data>
+      <data key="d8">0.3393378776790706</data>
+    </edge>
+    <edge source="region:chr12:8070610-8071110" target="gene:C3AR1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">TCF7L2_direct_+/+</data>
+      <data key="d7">0.0661516710204512</data>
+      <data key="d8">0.367384585949268</data>
+    </edge>
+    <edge source="region:chr12:8156769-8157269" target="gene:C3AR1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">TCF7L2_direct_+/+</data>
+      <data key="d7">0.0251902573306887</data>
+      <data key="d8">0.3074650342213376</data>
+    </edge>
+    <edge source="region:chr12:89333798-89334298" target="gene:DUSP6" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/+</data>
+      <data key="d7">0.1281312929326602</data>
+      <data key="d8">0.3939917641271194</data>
+    </edge>
+    <edge source="region:chr12:89352334-89352834" target="gene:DUSP6" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/+</data>
+      <data key="d7">0.0320131884180159</data>
+      <data key="d8">0.3267608526819046</data>
+    </edge>
+    <edge source="region:chr13:51562079-51562579" target="gene:WDFY2" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/+</data>
+      <data key="d7">0.0673102014300621</data>
+      <data key="d8">0.325764983493696</data>
+    </edge>
+    <edge source="region:chr13:51793790-51794290" target="gene:WDFY2" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/+</data>
+      <data key="d7">0.0297247781837091</data>
+      <data key="d8">0.2902492776359487</data>
+    </edge>
+    <edge source="region:chr14:100221449-100221949" target="gene:WARS" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/-</data>
+      <data key="d7">0.0056771172691364</data>
+      <data key="d8">-0.2551438863099218</data>
+    </edge>
+    <edge source="region:chr14:100341266-100341766" target="gene:WARS" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/+</data>
+      <data key="d7">0.0297771459566348</data>
+      <data key="d8">0.4862069120292766</data>
+    </edge>
+    <edge source="region:chr14:100373676-100374176" target="gene:WARS" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/+;TCF7L2_direct_+/+</data>
+      <data key="d7">0.0712672834424088</data>
+      <data key="d8">0.6343284521976195</data>
+    </edge>
+    <edge source="region:chr14:100375224-100375724" target="gene:WARS" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">RXRA_direct_+/+;SPI1_direct_+/+</data>
+      <data key="d7">0.0318067136847784</data>
+      <data key="d8">0.3733946421218321</data>
+    </edge>
+    <edge source="region:chr14:22822603-22823103" target="gene:SLC7A7" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">TCF7L2_direct_+/+</data>
+      <data key="d7">0.0199088721111178</data>
+      <data key="d8">0.1521036615861618</data>
+    </edge>
+    <edge source="region:chr14:22823184-22823684" target="gene:SLC7A7" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">TCF7L2_direct_+/+</data>
+      <data key="d7">0.019580233680081</data>
+      <data key="d8">0.2743283588317395</data>
+    </edge>
+    <edge source="region:chr14:75268800-75269300" target="gene:FOS" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">KLF4_direct_+/+</data>
+      <data key="d7">0.0209650097220575</data>
+      <data key="d8">0.2689244397791998</data>
+    </edge>
+    <edge source="region:chr14:92677190-92677690" target="gene:RIN3" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">RXRA_direct_+/+</data>
+      <data key="d7">0.0056687549031743</data>
+      <data key="d8">0.2268205509308562</data>
+    </edge>
+    <edge source="region:chr14:92680997-92681497" target="gene:RIN3" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">RXRA_direct_+/+</data>
+      <data key="d7">0.0112943569896404</data>
+      <data key="d8">0.2569311842296919</data>
+    </edge>
+    <edge source="region:chr14:94384841-94385341" target="gene:SERPINA1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/+</data>
+      <data key="d7">0.1153737363047882</data>
+      <data key="d8">0.5159308747935429</data>
+    </edge>
+    <edge source="region:chr14:94392476-94392976" target="gene:SERPINA1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/+</data>
+      <data key="d7">0.0990207916151256</data>
+      <data key="d8">0.5143002046627779</data>
+    </edge>
+    <edge source="region:chr14:94394565-94395065" target="gene:SERPINA1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/+</data>
+      <data key="d7">0.0897460401398003</data>
+      <data key="d8">0.5149128214017082</data>
+    </edge>
+    <edge source="region:chr16:12543995-12544495" target="gene:CPPED1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/+</data>
+      <data key="d7">0.0089712427222492</data>
+      <data key="d8">0.2076887785678389</data>
+    </edge>
+    <edge source="region:chr16:12573234-12573734" target="gene:CPPED1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/+</data>
+      <data key="d7">0.0684023522105345</data>
+      <data key="d8">0.6438056933251328</data>
+    </edge>
+    <edge source="region:chr16:12816713-12817213" target="gene:CPPED1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/+</data>
+      <data key="d7">0.0991310680714008</data>
+      <data key="d8">0.7194809601615261</data>
+    </edge>
+    <edge source="region:chr16:17259248-17259748" target="gene:XYLT1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">RXRA_direct_+/+</data>
+      <data key="d7">0.0146620438237457</data>
+      <data key="d8">0.1355759048566126</data>
+    </edge>
+    <edge source="region:chr16:17343666-17344166" target="gene:XYLT1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">RXRA_direct_+/+</data>
+      <data key="d7">0.0167413097854125</data>
+      <data key="d8">0.1073528536452827</data>
+    </edge>
+    <edge source="region:chr16:17416566-17417066" target="gene:XYLT1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">RXRA_direct_+/+</data>
+      <data key="d7">0.0145947984980289</data>
+      <data key="d8">0.075298821181611</data>
+    </edge>
+    <edge source="region:chr16:84569534-84570034" target="gene:COTL1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/+</data>
+      <data key="d7">0.0254285700971979</data>
+      <data key="d8">0.2783849741178001</data>
+    </edge>
+    <edge source="region:chr16:84594103-84594603" target="gene:COTL1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/-</data>
+      <data key="d7">0.0190767704798241</data>
+      <data key="d8">-0.1080294216098088</data>
+    </edge>
+    <edge source="region:chr16:84600698-84601198" target="gene:COTL1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/+</data>
+      <data key="d7">0.0182897121091302</data>
+      <data key="d8">0.2261226618410221</data>
+    </edge>
+    <edge source="region:chr16:84602956-84603456" target="gene:COTL1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/+</data>
+      <data key="d7">0.0337144683079961</data>
+      <data key="d8">0.1920250596698632</data>
+    </edge>
+    <edge source="region:chr16:84726038-84726538" target="gene:COTL1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/+</data>
+      <data key="d7">0.0193481126127553</data>
+      <data key="d8">0.1974455358752889</data>
+    </edge>
+    <edge source="region:chr16:84742524-84743024" target="gene:COTL1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/+</data>
+      <data key="d7">0.020173026823198</data>
+      <data key="d8">0.3159951289541735</data>
+    </edge>
+    <edge source="region:chr16:84751977-84752477" target="gene:COTL1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/+</data>
+      <data key="d7">0.0539177900643158</data>
+      <data key="d8">0.299718565148582</data>
+    </edge>
+    <edge source="region:chr17:21285899-21286399" target="gene:MAP2K3" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">RXRA_direct_+/+</data>
+      <data key="d7">0.0516959382157599</data>
+      <data key="d8">0.160759185321194</data>
+    </edge>
+    <edge source="region:chr17:59847694-59848194" target="gene:VMP1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">KLF4_direct_+/+</data>
+      <data key="d7">0.1283007434116813</data>
+      <data key="d8">0.3214766701339214</data>
+    </edge>
+    <edge source="region:chr17:74520125-74520625" target="gene:CD300C" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">TCF7L2_direct_+/+</data>
+      <data key="d7">0.0448485962867816</data>
+      <data key="d8">0.1581731115585896</data>
+    </edge>
+    <edge source="region:chr17:74599430-74599930" target="gene:CD300C" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">TCF7L2_direct_+/+</data>
+      <data key="d7">0.0310788491513621</data>
+      <data key="d8">0.1829939693563123</data>
+    </edge>
+    <edge source="region:chr17:74631809-74632309" target="gene:CD300C" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">TCF7L2_direct_+/+</data>
+      <data key="d7">0.0282137535666536</data>
+      <data key="d8">0.1672164674805848</data>
+    </edge>
+    <edge source="region:chr17:78778872-78779372" target="gene:TIMP2" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">RXRA_direct_+/+</data>
+      <data key="d7">0.0272739728955594</data>
+      <data key="d8">0.2546145231688266</data>
+    </edge>
+    <edge source="region:chr18:10004997-10005497" target="gene:RAB31" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/+</data>
+      <data key="d7">0.0535803902928161</data>
+      <data key="d8">0.7301726985569312</data>
+    </edge>
+    <edge source="region:chr18:9712523-9713023" target="gene:RAB31" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/+</data>
+      <data key="d7">0.0225554104511406</data>
+      <data key="d8">0.6542866006587065</data>
+    </edge>
+    <edge source="region:chr18:9753868-9754368" target="gene:RAB31" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/+</data>
+      <data key="d7">0.0663173048215687</data>
+      <data key="d8">0.6489673583863114</data>
+    </edge>
+    <edge source="region:chr18:9762463-9762963" target="gene:RAB31" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/+</data>
+      <data key="d7">0.023023992109088</data>
+      <data key="d8">0.7307875555961026</data>
+    </edge>
+    <edge source="region:chr18:9771103-9771603" target="gene:RAB31" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/+</data>
+      <data key="d7">0.0607033565880085</data>
+      <data key="d8">0.7204569392689513</data>
+    </edge>
+    <edge source="region:chr18:9910571-9911071" target="gene:RAB31" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/+</data>
+      <data key="d7">0.0357829046725062</data>
+      <data key="d8">0.69776617820309</data>
+    </edge>
+    <edge source="region:chr19:10717612-10718112" target="gene:C19orf38" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/-</data>
+      <data key="d7">0.0148976797565576</data>
+      <data key="d8">-0.081412503453395</data>
+    </edge>
+    <edge source="region:chr19:10759658-10760158" target="gene:C19orf38" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/-</data>
+      <data key="d7">0.0465454048424475</data>
+      <data key="d8">-0.2313003805133866</data>
+    </edge>
+    <edge source="region:chr19:10777271-10777771" target="gene:C19orf38" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/+</data>
+      <data key="d7">0.0161562838378425</data>
+      <data key="d8">0.2607362812621048</data>
+    </edge>
+    <edge source="region:chr19:10780258-10780758" target="gene:C19orf38" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/+</data>
+      <data key="d7">0.0612767494711205</data>
+      <data key="d8">0.2558340417360307</data>
+    </edge>
+    <edge source="region:chr19:10784196-10784696" target="gene:C19orf38" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/+</data>
+      <data key="d7">0.0414427321867495</data>
+      <data key="d8">0.3075823302388039</data>
+    </edge>
+    <edge source="region:chr19:10805385-10805885" target="gene:C19orf38" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/+</data>
+      <data key="d7">0.0235506856112553</data>
+      <data key="d8">0.3634074196474042</data>
+    </edge>
+    <edge source="region:chr19:10809761-10810261" target="gene:C19orf38" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/+</data>
+      <data key="d7">0.0415870415683845</data>
+      <data key="d8">0.1953794810243238</data>
+    </edge>
+    <edge source="region:chr19:10813029-10813529" target="gene:C19orf38" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/+</data>
+      <data key="d7">0.0480649059291451</data>
+      <data key="d8">0.1960437170647168</data>
+    </edge>
+    <edge source="region:chr19:10848174-10848674" target="gene:C19orf38" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/+</data>
+      <data key="d7">0.0327433383310836</data>
+      <data key="d8">0.2076809758850967</data>
+    </edge>
+    <edge source="region:chr19:10928483-10928983" target="gene:C19orf38" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/-</data>
+      <data key="d7">0.0116150923901811</data>
+      <data key="d8">-0.1249187342643382</data>
+    </edge>
+    <edge source="region:chr19:14661411-14661911" target="gene:ADGRE2" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">TCF7L2_direct_+/+</data>
+      <data key="d7">0.0693672906709124</data>
+      <data key="d8">0.6352233247972158</data>
+    </edge>
+    <edge source="region:chr19:18392397-18392897" target="gene:LRRC25" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">TCF7L2_direct_+/+</data>
+      <data key="d7">0.0263632810084166</data>
+      <data key="d8">0.292810879990254</data>
+    </edge>
+    <edge source="region:chr19:54208068-54208568" target="gene:LILRB2" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">RXRA_direct_+/+</data>
+      <data key="d7">0.0268465922228284</data>
+      <data key="d8">0.2913064475491253</data>
+    </edge>
+    <edge source="region:chr19:54209701-54210201" target="gene:OSCAR" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">KLF4_direct_+/+</data>
+      <data key="d7">0.0712452669422088</data>
+      <data key="d8">0.4029649478127677</data>
+    </edge>
+    <edge source="region:chr19:54593472-54593972" target="gene:LILRB1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">TCF7L2_direct_+/+</data>
+      <data key="d7">0.0672672019156798</data>
+      <data key="d8">0.4329813239925499</data>
+    </edge>
+    <edge source="region:chr19:54630144-54630644" target="gene:LILRB1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">TCF7L2_direct_+/+</data>
+      <data key="d7">0.0368436547356164</data>
+      <data key="d8">0.4253366216764919</data>
+    </edge>
+    <edge source="region:chr19:54643475-54643975" target="gene:LILRB1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">TCF7L2_direct_+/+</data>
+      <data key="d7">0.0288800257468491</data>
+      <data key="d8">0.3907231382228654</data>
+    </edge>
+    <edge source="region:chr1:11960666-11961166" target="gene:TNFRSF8" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/+</data>
+      <data key="d7">0.0149141275932959</data>
+      <data key="d8">0.2158676099500278</data>
+    </edge>
+    <edge source="region:chr1:11985793-11986293" target="gene:TNFRSF8" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/+</data>
+      <data key="d7">0.0172643438022632</data>
+      <data key="d8">0.2108381137915907</data>
+    </edge>
+    <edge source="region:chr1:12020082-12020582" target="gene:TNFRSF8" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/+</data>
+      <data key="d7">0.0486515247635385</data>
+      <data key="d8">0.1710329083023215</data>
+    </edge>
+    <edge source="region:chr1:12143152-12143652" target="gene:TNFRSF8" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/+</data>
+      <data key="d7">0.0207418964136372</data>
+      <data key="d8">0.1416383781628138</data>
+    </edge>
+    <edge source="region:chr1:12143654-12144154" target="gene:TNFRSF8" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/+</data>
+      <data key="d7">0.0165041054931014</data>
+      <data key="d8">0.1528485920780838</data>
+    </edge>
+    <edge source="region:chr1:12153199-12153699" target="gene:TNFRSF8" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/+</data>
+      <data key="d7">0.0260636414875072</data>
+      <data key="d8">0.1689166662585935</data>
+    </edge>
+    <edge source="region:chr1:12157800-12158300" target="gene:TNFRSF8" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/+</data>
+      <data key="d7">0.0255888454959712</data>
+      <data key="d8">0.1514110044883725</data>
+    </edge>
+    <edge source="region:chr1:12180230-12180730" target="gene:TNFRSF8" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/+</data>
+      <data key="d7">0.0543837741570356</data>
+      <data key="d8">0.1829706498032407</data>
+    </edge>
+    <edge source="region:chr1:12184150-12184650" target="gene:TNFRSF8" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/+</data>
+      <data key="d7">0.0245258507017327</data>
+      <data key="d8">0.168095124453575</data>
+    </edge>
+    <edge source="region:chr1:12196576-12197076" target="gene:TNFRSF8" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/+</data>
+      <data key="d7">0.0188814814591463</data>
+      <data key="d8">0.2149021979929026</data>
+    </edge>
+    <edge source="region:chr1:12229759-12230259" target="gene:TNFRSF8" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/-</data>
+      <data key="d7">0.019342085273579</data>
+      <data key="d8">-0.1711181570614308</data>
+    </edge>
+    <edge source="region:chr1:157106202-157106702" target="gene:ARHGEF11" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">KLF4_direct_+/+</data>
+      <data key="d7">0.0446370161312617</data>
+      <data key="d8">0.5181306568903692</data>
+    </edge>
+    <edge source="region:chr1:212752535-212753035" target="gene:ATF3" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">KLF4_direct_+/+</data>
+      <data key="d7">0.0493597655657602</data>
+      <data key="d8">0.2682960712911603</data>
+    </edge>
+    <edge source="region:chr1:248804914-248805414" target="gene:ZNF672" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">RXRA_direct_+/+</data>
+      <data key="d7">0.0380090577522983</data>
+      <data key="d8">0.1565797584169729</data>
+    </edge>
+    <edge source="region:chr1:248807058-248807558" target="gene:ZNF672" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">RXRA_direct_+/+</data>
+      <data key="d7">0.1008429423719115</data>
+      <data key="d8">0.1080243185559647</data>
+    </edge>
+    <edge source="region:chr1:248838078-248838578" target="gene:ZNF672" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">RXRA_direct_+/+</data>
+      <data key="d7">0.0367180915263272</data>
+      <data key="d8">0.0662356213290705</data>
+    </edge>
+    <edge source="region:chr1:88983814-88984314" target="gene:GBP1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">RXRA_direct_+/+</data>
+      <data key="d7">0.024570922333462</data>
+      <data key="d8">0.1574797658707188</data>
+    </edge>
+    <edge source="region:chr20:23655765-23656265" target="gene:CST3" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/+</data>
+      <data key="d7">0.1226584363143635</data>
+      <data key="d8">0.4519067544291655</data>
+    </edge>
+    <edge source="region:chr20:32040126-32040626" target="gene:TM9SF4" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">RXRA_direct_+/+</data>
+      <data key="d7">0.0196970044520522</data>
+      <data key="d8">0.1544771715121429</data>
+    </edge>
+    <edge source="region:chr20:32051198-32051698" target="gene:TM9SF4" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">RXRA_direct_+/+</data>
+      <data key="d7">0.0171842139876686</data>
+      <data key="d8">0.1938797256689741</data>
+    </edge>
+    <edge source="region:chr20:32062761-32063261" target="gene:TM9SF4" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">RXRA_direct_+/+</data>
+      <data key="d7">0.0209180890150037</data>
+      <data key="d8">0.2440569227664898</data>
+    </edge>
+    <edge source="region:chr20:32111726-32112226" target="gene:TM9SF4" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">RXRA_direct_+/+</data>
+      <data key="d7">0.0199900606409903</data>
+      <data key="d8">0.1661978671354744</data>
+    </edge>
+    <edge source="region:chr20:32112818-32113318" target="gene:TM9SF4" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">RXRA_direct_+/+</data>
+      <data key="d7">0.0477701313201585</data>
+      <data key="d8">0.2064448231182706</data>
+    </edge>
+    <edge source="region:chr20:40571724-40572224" target="gene:MAFB" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">RXRA_direct_+/+</data>
+      <data key="d7">0.0606345204629333</data>
+      <data key="d8">0.5628210584987587</data>
+    </edge>
+    <edge source="region:chr20:40689916-40690416" target="gene:MAFB" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">RXRA_direct_+/+</data>
+      <data key="d7">0.0560404258541584</data>
+      <data key="d8">0.3493964092604686</data>
+    </edge>
+    <edge source="region:chr20:40779001-40779501" target="gene:MAFB" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">RXRA_direct_+/+</data>
+      <data key="d7">0.0446342801443333</data>
+      <data key="d8">0.5559139878372023</data>
+    </edge>
+    <edge source="region:chr20:41003387-41003887" target="gene:TOP1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">KLF4_direct_+/+</data>
+      <data key="d7">0.0570445895993974</data>
+      <data key="d8">0.054318879993367</data>
+    </edge>
+    <edge source="region:chr20:41047885-41048385" target="gene:TOP1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">KLF4_direct_+/+</data>
+      <data key="d7">0.0187027741973013</data>
+      <data key="d8">0.0656465473309056</data>
+    </edge>
+    <edge source="region:chr21:33199790-33200290" target="gene:IFNAR2" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">RXRA_direct_+/+</data>
+      <data key="d7">0.0258285023961924</data>
+      <data key="d8">0.0529314352269944</data>
+    </edge>
+    <edge source="region:chr21:33265708-33266208" target="gene:IFNAR2" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">RXRA_direct_+/+</data>
+      <data key="d7">0.0151117219902448</data>
+      <data key="d8">0.0653886068436945</data>
+    </edge>
+    <edge source="region:chr2:173005713-173006213" target="gene:MAP3K20" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/+</data>
+      <data key="d7">0.0677201931062745</data>
+      <data key="d8">0.5752131094237466</data>
+    </edge>
+    <edge source="region:chr2:173043368-173043868" target="gene:MAP3K20" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/+</data>
+      <data key="d7">0.0842556579746008</data>
+      <data key="d8">0.5730373249736952</data>
+    </edge>
+    <edge source="region:chr2:173075626-173076126" target="gene:MAP3K20" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/+</data>
+      <data key="d7">0.041140721620088</data>
+      <data key="d8">0.3459332898065208</data>
+    </edge>
+    <edge source="region:chr2:173076383-173076883" target="gene:MAP3K20" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/+</data>
+      <data key="d7">0.0838197152256532</data>
+      <data key="d8">0.3802845096493906</data>
+    </edge>
+    <edge source="region:chr2:229287762-229288262" target="gene:PID1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">RXRA_direct_+/+</data>
+      <data key="d7">0.0785796635353032</data>
+      <data key="d8">0.7672474035389062</data>
+    </edge>
+    <edge source="region:chr2:229409004-229409504" target="gene:PID1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">RXRA_direct_+/+</data>
+      <data key="d7">0.0512884439145461</data>
+      <data key="d8">0.7597766178521892</data>
+    </edge>
+    <edge source="region:chr2:40394488-40394988" target="gene:SLC8A1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">RXRA_direct_+/+</data>
+      <data key="d7">0.0627288442997754</data>
+      <data key="d8">0.8929835801255464</data>
+    </edge>
+    <edge source="region:chr2:40450024-40450524" target="gene:SLC8A1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">RXRA_direct_+/+</data>
+      <data key="d7">0.0464175265211409</data>
+      <data key="d8">0.89573030062794</data>
+    </edge>
+    <edge source="region:chr2:40455516-40456016" target="gene:SLC8A1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">KLF4_direct_+/+;RXRA_direct_+/+</data>
+      <data key="d7">0.0969190356630406</data>
+      <data key="d8">0.8980510990329579</data>
+    </edge>
+    <edge source="region:chr2:40558720-40559220" target="gene:SLC8A1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">RXRA_direct_+/+</data>
+      <data key="d7">0.0541038528155775</data>
+      <data key="d8">0.8956386111562615</data>
+    </edge>
+    <edge source="region:chr3:187773186-187773686" target="gene:BCL6" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">KLF4_direct_+/+</data>
+      <data key="d7">0.0198166310094087</data>
+      <data key="d8">0.3083532381817605</data>
+    </edge>
+    <edge source="region:chr3:38009948-38010448" target="gene:MYD88" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">KLF4_direct_+/+</data>
+      <data key="d7">0.0175241187480255</data>
+      <data key="d8">0.1089276830717586</data>
+    </edge>
+    <edge source="region:chr4:152643399-152643899" target="gene:FBXW7" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">KLF4_direct_+/+</data>
+      <data key="d7">0.0286078382568461</data>
+      <data key="d8">0.1807209991192326</data>
+    </edge>
+    <edge source="region:chr4:152663052-152663552" target="gene:FBXW7" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">KLF4_direct_+/+</data>
+      <data key="d7">0.0182516258077632</data>
+      <data key="d8">0.0932873456805285</data>
+    </edge>
+    <edge source="region:chr4:153661361-153661861" target="gene:TLR2" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">KLF4_direct_+/+</data>
+      <data key="d7">0.078702703636228</data>
+      <data key="d8">0.7904962533896424</data>
+    </edge>
+    <edge source="region:chr4:158817906-158818406" target="gene:FNIP2" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">TCF7L2_direct_+/+</data>
+      <data key="d7">0.0602958547608346</data>
+      <data key="d8">0.2305184424169016</data>
+    </edge>
+    <edge source="region:chr5:150058683-150059183" target="gene:CSF1R" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">TCF7L2_direct_+/+</data>
+      <data key="d7">0.0458564341877227</data>
+      <data key="d8">0.315588705338759</data>
+    </edge>
+    <edge source="region:chr5:94618419-94618919" target="gene:MCTP1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/-</data>
+      <data key="d7">0.0131539885676876</data>
+      <data key="d8">-0.4136238506629227</data>
+    </edge>
+    <edge source="region:chr5:95048620-95049120" target="gene:MCTP1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/+</data>
+      <data key="d7">0.081799195376162</data>
+      <data key="d8">0.866566339229909</data>
+    </edge>
+    <edge source="region:chr5:95069806-95070306" target="gene:MCTP1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/+</data>
+      <data key="d7">0.0561204003817778</data>
+      <data key="d8">0.8624259163428245</data>
+    </edge>
+    <edge source="region:chr5:95081424-95081924" target="gene:MCTP1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/+</data>
+      <data key="d7">0.0701415325380431</data>
+      <data key="d8">0.5880290578644807</data>
+    </edge>
+    <edge source="region:chr6:108742032-108742532" target="gene:FOXO3" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">TCF7L2_direct_+/+</data>
+      <data key="d7">0.0528944536834312</data>
+      <data key="d8">0.3673599959092977</data>
+    </edge>
+    <edge source="region:chr6:144150134-144150634" target="gene:STX11" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">KLF4_direct_+/+</data>
+      <data key="d7">0.027829854325046</data>
+      <data key="d8">0.4255342631893413</data>
+    </edge>
+    <edge source="region:chr6:18171792-18172292" target="gene:KDM1B" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/+</data>
+      <data key="d7">0.0353110615844537</data>
+      <data key="d8">0.4590948864510942</data>
+    </edge>
+    <edge source="region:chr6:18179908-18180408" target="gene:KDM1B" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/+</data>
+      <data key="d7">0.0305157051642717</data>
+      <data key="d8">0.4588866904689617</data>
+    </edge>
+    <edge source="region:chr6:18329672-18330172" target="gene:KDM1B" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/+</data>
+      <data key="d7">0.02943579591817</data>
+      <data key="d8">0.4609788712548103</data>
+    </edge>
+    <edge source="region:chr6:18330563-18331063" target="gene:KDM1B" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/+</data>
+      <data key="d7">0.0626689334352936</data>
+      <data key="d8">0.3629381250264193</data>
+    </edge>
+    <edge source="region:chr6:18501601-18502101" target="gene:RNF144B" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">TCF7L2_direct_+/+</data>
+      <data key="d7">0.0428794668540507</data>
+      <data key="d8">0.6008864709235611</data>
+    </edge>
+    <edge source="region:chr6:31586511-31587011" target="gene:AIF1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">TCF7L2_direct_+/+</data>
+      <data key="d7">0.0862716260767586</data>
+      <data key="d8">0.1876811072731056</data>
+    </edge>
+    <edge source="region:chr6:31586511-31587011" target="gene:LST1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">TCF7L2_direct_+/+</data>
+      <data key="d7">0.0441061759516283</data>
+      <data key="d8">0.2206997257169895</data>
+    </edge>
+    <edge source="region:chr7:106344765-106345265" target="gene:NAMPT" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">KLF4_direct_+/+</data>
+      <data key="d7">0.028480544630211</data>
+      <data key="d8">0.6440884537508633</data>
+    </edge>
+    <edge source="region:chr7:139828939-139829439" target="gene:TBXAS1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">KLF4_direct_+/+</data>
+      <data key="d7">0.0192476457972893</data>
+      <data key="d8">0.4896476084346816</data>
+    </edge>
+    <edge source="region:chr7:139830959-139831459" target="gene:TBXAS1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">KLF4_direct_+/+</data>
+      <data key="d7">0.0259342854766109</data>
+      <data key="d8">0.4513756483169147</data>
+    </edge>
+    <edge source="region:chr7:150665852-150666352" target="gene:TMEM176A" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">RXRA_direct_+/+</data>
+      <data key="d7">0.0654951981439169</data>
+      <data key="d8">0.1341839721649159</data>
+    </edge>
+    <edge source="region:chr7:150785340-150785840" target="gene:TMEM176A" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">RXRA_direct_+/+</data>
+      <data key="d7">0.0426576042330239</data>
+      <data key="d8">0.3241427687622876</data>
+    </edge>
+    <edge source="region:chr7:150787590-150788090" target="gene:TMEM176A" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">RXRA_direct_+/+</data>
+      <data key="d7">0.040815956199691</data>
+      <data key="d8">0.3033530799089745</data>
+    </edge>
+    <edge source="region:chr7:28684536-28685036" target="gene:CREB5" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">TCF7L2_direct_+/+</data>
+      <data key="d7">0.1073286376622294</data>
+      <data key="d8">0.5900921414369523</data>
+    </edge>
+    <edge source="region:chr7:43876116-43876616" target="gene:BLVRA" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">TCF7L2_direct_+/+</data>
+      <data key="d7">0.0479664821991566</data>
+      <data key="d8">0.2751996039547796</data>
+    </edge>
+    <edge source="region:chr8:115451426-115451926" target="gene:TRPS1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">KLF4_direct_+/+</data>
+      <data key="d7">0.0712449559175295</data>
+      <data key="d8">0.2178412422874894</data>
+    </edge>
+    <edge source="region:chr8:117881503-117882003" target="gene:EXT1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">RXRA_direct_+/+</data>
+      <data key="d7">0.0554659832799562</data>
+      <data key="d8">0.2654818431922914</data>
+    </edge>
+    <edge source="region:chr8:117989383-117989883" target="gene:EXT1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">RXRA_direct_+/+</data>
+      <data key="d7">0.0560981134546371</data>
+      <data key="d8">0.3952366559534178</data>
+    </edge>
+    <edge source="region:chr8:118060746-118061246" target="gene:EXT1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">RXRA_direct_+/+</data>
+      <data key="d7">0.0701288816445441</data>
+      <data key="d8">0.3951749685930933</data>
+    </edge>
+    <edge source="region:chr8:118108667-118109167" target="gene:EXT1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">RXRA_direct_+/+</data>
+      <data key="d7">0.0875305856425031</data>
+      <data key="d8">0.2377712462521716</data>
+    </edge>
+    <edge source="region:chr8:89759076-89759576" target="gene:RIPK2" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">KLF4_direct_+/+</data>
+      <data key="d7">0.0599433061372894</data>
+      <data key="d8">0.3270962377936102</data>
+    </edge>
+    <edge source="region:chr9:134195457-134195957" target="gene:RXRA" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">RXRA_direct_+/+</data>
+      <data key="d7">0.0245175094562868</data>
+      <data key="d8">0.3496394553042639</data>
+    </edge>
+    <edge source="region:chr9:134341252-134341752" target="gene:RXRA" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">RXRA_direct_+/+;TCF7L2_direct_+/+</data>
+      <data key="d7">0.0370114881409121</data>
+      <data key="d8">0.4792886582670994</data>
+    </edge>
+    <edge source="region:chr9:134409236-134409736" target="gene:RXRA" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">TCF7L2_direct_+/+</data>
+      <data key="d7">0.030623147445645</data>
+      <data key="d8">0.3957533236030225</data>
+    </edge>
+    <edge source="region:chr9:134929107-134929607" target="gene:FCN1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">RXRA_direct_+/+</data>
+      <data key="d7">0.1104349527537156</data>
+      <data key="d8">0.5052070087675345</data>
+    </edge>
+    <edge source="region:chr9:134936713-134937213" target="gene:FCN1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">RXRA_direct_+/+</data>
+      <data key="d7">0.1050107682297516</data>
+      <data key="d8">0.5077012074047211</data>
+    </edge>
+    <edge source="region:chr9:87601217-87601717" target="gene:CTSL" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/+</data>
+      <data key="d7">0.0353444919661232</data>
+      <data key="d8">0.1854160944480726</data>
+    </edge>
+    <edge source="region:chr9:87614317-87614817" target="gene:CTSL" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/+</data>
+      <data key="d7">0.0330538181014536</data>
+      <data key="d8">0.1841156837907233</data>
+    </edge>
+    <edge source="region:chr9:87722288-87722788" target="gene:CTSL" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/+</data>
+      <data key="d7">0.093568414113929</data>
+      <data key="d8">0.1869241271511307</data>
+    </edge>
+    <edge source="region:chr9:87725918-87726418" target="gene:CTSL" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/+</data>
+      <data key="d7">0.0544289454304758</data>
+      <data key="d8">0.1250030342581055</data>
+    </edge>
+    <edge source="region:chr9:87783099-87783599" target="gene:CTSL" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/+</data>
+      <data key="d7">0.0700789546254827</data>
+      <data key="d8">0.2016434227797718</data>
+    </edge>
+    <edge source="region:chr9:87792702-87793202" target="gene:CTSL" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/+</data>
+      <data key="d7">0.0633768661987769</data>
+      <data key="d8">0.1113812984278869</data>
+    </edge>
+    <edge source="region:chr9:87796051-87796551" target="gene:CTSL" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/+</data>
+      <data key="d7">0.0817886721090814</data>
+      <data key="d8">0.1993740641870801</data>
+    </edge>
+    <edge source="region:chrX:23742338-23742838" target="gene:SAT1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/+</data>
+      <data key="d7">0.056755314449034</data>
+      <data key="d8">0.3613048117543099</data>
+    </edge>
+    <edge source="region:chrX:23781151-23781651" target="gene:SAT1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/+</data>
+      <data key="d7">0.0919028825492463</data>
+      <data key="d8">0.36260234985169</data>
+    </edge>
+    <edge source="region:chrX:23811102-23811602" target="gene:SAT1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/+</data>
+      <data key="d7">0.0199608070781863</data>
+      <data key="d8">0.4733542763149634</data>
+    </edge>
+    <edge source="region:chrX:23911212-23911712" target="gene:SAT1" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">SPI1_direct_+/+</data>
+      <data key="d7">0.0469257628126139</data>
+      <data key="d8">0.541597998895335</data>
+    </edge>
+    <edge source="region:chrX:48683505-48684005" target="gene:WAS" id="0">
+      <data key="d5">region_regulates_gene</data>
+      <data key="d6">RXRA_direct_+/+</data>
+      <data key="d7">0.0514835976596535</data>
+      <data key="d8">0.1411487889603871</data>
+    </edge>
+  </graph>
+</graphml>

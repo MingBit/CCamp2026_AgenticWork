@@ -1,0 +1,111 @@
+{
+  "backend": "local_ollama",
+  "model": "qwen2.5:7b",
+  "knowledge_base": {
+    "path": "/mnt/storageBig8/work/muratli/Coding_Camps/2026/scrna_workflow/knowledge/human_pbmc_markers.yaml",
+    "name": "Human PBMC broad cell types",
+    "organism": "human",
+    "tissue": "peripheral blood mononuclear cells",
+    "source": [
+      "https://satijalab.org/seurat/articles/pbmc3k_tutorial",
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC5775029/"
+    ]
+  },
+  "clusters": [
+    {
+      "cluster": "0",
+      "proposed_label": "unknown",
+      "accepted_label": "unknown",
+      "accepted": true,
+      "supporting_markers": [],
+      "model_reason": "Insufficient marker evidence"
+    },
+    {
+      "cluster": "1",
+      "proposed_label": "unknown",
+      "accepted_label": "unknown",
+      "accepted": true,
+      "supporting_markers": [],
+      "model_reason": "Insufficient marker evidence"
+    },
+    {
+      "cluster": "2",
+      "proposed_label": "T cells",
+      "accepted_label": "T cells",
+      "accepted": true,
+      "supporting_markers": [
+        "CCR7",
+        "IL7R"
+      ],
+      "model_reason": "Overlap with T cells markers CCR7, IL7R"
+    },
+    {
+      "cluster": "3",
+      "proposed_label": "NK cells",
+      "accepted_label": "NK cells",
+      "accepted": true,
+      "supporting_markers": [
+        "GNLY",
+        "NKG7",
+        "PRF1"
+      ],
+      "model_reason": "Overlap with NK cells markers GNLY, NKG7, PRF1"
+    },
+    {
+      "cluster": "4",
+      "proposed_label": "FCGR3A+ monocytes",
+      "accepted_label": "FCGR3A+ monocytes",
+      "accepted": true,
+      "supporting_markers": [
+        "LST1",
+        "MS4A7"
+      ],
+      "model_reason": "Overlap with FCGR3A+ monocytes markers LST1, MS4A7"
+    },
+    {
+      "cluster": "5",
+      "proposed_label": "B cells",
+      "accepted_label": "B cells",
+      "accepted": true,
+      "supporting_markers": [
+        "CD79A",
+        "CD79B",
+        "MS4A1"
+      ],
+      "model_reason": "Overlap with B cells markers CD79A, CD79B, MS4A1"
+    },
+    {
+      "cluster": "6",
+      "proposed_label": "unknown",
+      "accepted_label": "unknown",
+      "accepted": true,
+      "supporting_markers": [],
+      "model_reason": "Insufficient marker evidence"
+    },
+    {
+      "cluster": "7",
+      "proposed_label": "Plasmacytoid dendritic cells",
+      "accepted_label": "Plasmacytoid dendritic cells",
+      "accepted": true,
+      "supporting_markers": [
+        "CLEC4C",
+        "LILRA4",
+        "PLD4",
+        "TCF4"
+      ],
+      "model_reason": "Overlap with Plasmacytoid dendritic cells markers CLEC4C, LILRA4, TCF4, PLD4"
+    },
+    {
+      "cluster": "8",
+      "proposed_label": "B cells",
+      "accepted_label": "B cells",
+      "accepted": true,
+      "supporting_markers": [
+        "CD79A",
+        "CD79B",
+        "MS4A1"
+      ],
+      "model_reason": "Overlap with B cells markers CD79A, CD79B, MS4A1"
+    }
+  ]
+}

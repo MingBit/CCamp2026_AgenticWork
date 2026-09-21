@@ -24,6 +24,10 @@ scrna_workflow/
 tests/               CLI, scientific guards, end-to-end resume
 ```
 
+## Modality-aware routing
+
+The input boundary detects `rna`, `atac`, and `protein` modalities from `.h5`, `.h5ad`, and `.h5mu` inputs. RNA follows the existing path. ATAC inputs trigger TF-IDF plus LSI, protein inputs trigger CLR normalization, and multi-modal inputs request optional Muon WNN or scvi-tools MultiVI integration. Missing modalities and unavailable optional backends are recorded as explicit skips in the run state. Detected modalities are written to `inspection/modalities.json`.
+
 ## Run on a server
 
 Python 3.10+; CPU is sufficient. Install in an isolated environment:
@@ -101,7 +105,13 @@ The regulon task (`scrna_workflow/regulon_scenicplus.py`) runs four stages from 
 
 Besides eRegulon triplets and AUC activity (direct and extended, gene- and region-based), the regulon outputs include per-group activity summaries with cell counts and regulon specificity scores (`rss_group_*.tsv`, as in `scenicplus.RSS`) with rank plots and heatmaps per cell type; the report shows the direct gene-based RSS heatmap.
 
+Per-cell-type activity summaries carry `n_cells`/`n_cells_scored`, and regulon specificity scores (RSS, as in `scenicplus.RSS`) rank how concentrated each eRegulon's activity is in a group (`rss_group_*.tsv`, with rank plots and heatmaps per cell type).
+
 `run/regulon/networks/` holds one TF -> region -> target gene network per pseudobulk cell type (PNG, GraphML for Cytoscape/Gephi, node and edge TSVs, `summary.tsv`). SCENIC+ infers a single network from all cells, so these are cell-type *views* of it: the direct eRegulons with the highest RSS for the type (`scenicplus_network_top_eregulons`), restricted to regions overlapping that type's MACS2 pseudobulk peaks and to target genes detected in at least `scenicplus_network_min_gene_fraction` of its cells, with at most `scenicplus_network_max_targets_per_tf` targets per TF. They are for navigation and hypothesis generation, not separately inferred networks.
+
+Worked examples are committed: `examples/pbmc10k_subset/` (a genome-wide run on 3,000 PBMC cells, from clustering with local-LLM annotation to eRegulons and per-cell-type networks) and `examples/scenicplus_smoke/` (a two-chromosome smoke test used to check the plumbing).
+
+Practical constraints when running SCENIC+ on a batch system: keep `scenicplus_temp_dir` short (Ray's unix sockets fail above ~45 characters; the step refuses a longer path up front), give MALLET a memory budget that fits the allocation, and expect the first run to checksum the motif databases. With `annotation_backend: ollama` on CPU-only nodes, `SCRNA_OLLAMA_TIMEOUT` (seconds) and `SCRNA_OLLAMA_NUM_THREADS` override the 120 s call limit and Ollama's host-core thread count, which otherwise oversubscribes the cores the scheduler gave the job.
 
 Cell-type labels (`scenicplus_cell_type_column`) must contain at least two types with `scenicplus_min_cells_per_cell_type` cells; `unknown`/`ambiguous` labels are not pseudobulk groups. Completed stages are fingerprinted (parameters, resource size/mtime, upstream results, stage code) in `scenicplus_work_dir` and reused, so a failed run restarted in a new output directory resumes at the failed stage; CPU count and temp directory do not invalidate stages. Expect topic modelling and GRN inference to need a server (tens of GB of RAM, many cores); set `scenicplus_n_cpu`, `scenicplus_mallet_memory_gb` and a short, fast `scenicplus_temp_dir`. Input checksums of files larger than 256 MB are cached in `~/.cache/scrna_workflow/input_digests.json` (override with `SCRNA_WORKFLOW_DIGEST_CACHE`).
 

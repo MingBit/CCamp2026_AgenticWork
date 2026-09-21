@@ -1,0 +1,32 @@
+{
+  "status": "completed",
+  "input_references": [
+    "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/clustering/annotated.h5ad"
+  ],
+  "outputs": {
+    "report": "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/report/scientific_report.md",
+    "evidence_ledger": "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/report/evidence_ledger.tsv",
+    "figure_0": "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/report/qc_distributions.png",
+    "figure_1": "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/report/embedding.png",
+    "figure_2": "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/report/eregulon_activity_heatmap.png",
+    "figure_3": "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/report/eregulon_rss_heatmap.png",
+    "figure_4": "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/report/eregulon_tf_network.png",
+    "figure_5": "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/report/cluster_marker_heatmap.png"
+  },
+  "metrics": {
+    "figures": 6
+  },
+  "warnings": [],
+  "recommended_next_actions": [],
+  "attempts": 1,
+  "artifact_hashes": {
+    "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/report/scientific_report.md": "d51d906cac35296fe918c65b099c163b90549e219ab8a76c4f7f87bb4701c2a4",
+    "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/report/evidence_ledger.tsv": "e154d2f9ff6c1877d64082a83320a25e64cd2600b7643a5e58b4491c7cb51666",
+    "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/report/qc_distributions.png": "87725aaeef41940d0a832175a10367c49ec2c783769da50d0185cd677b7ea095",
+    "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/report/embedding.png": "de9f4400cdecf7ebda27e84c2de09fdf75c52f857d080eaf4926e4442c978e1a",
+    "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/report/eregulon_activity_heatmap.png": "1d2ffefd9e37c7dc4f6def1bad5976b56410975fb5ed4d5c40cedfaf55a65b2f",
+    "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/report/eregulon_rss_heatmap.png": "0a420d88b022ee11d6d14151371fe1a7c0e308af851448d6788ab9a2a1c76f66",
+    "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/report/eregulon_tf_network.png": "bc1b76cf62423c307e3e95d8fd02846326da8f0754ec40547f00e094db4e07bd",
+    "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/report/cluster_marker_heatmap.png": "5b087e6712f06e18c84918749360a79f43785216da260f831e2d08086dee5988"
+  }
+}

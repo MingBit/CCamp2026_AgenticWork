@@ -1,0 +1,6 @@
+cell_type	eregulons_selected	tfs	regions	target_genes	edges	cells
+B cells	SPIB_direct_+/-_(38g);POU2AF1_direct_+/+_(73g);SPIB_direct_+/+_(241g);BCL11A_direct_+/+_(275g);BCL11A_direct_+/-_(119g)	3	122	45	324	267
+FCGR3A+ monocytes	TCF7L2_direct_+/+_(451g);SPI1_direct_+/+_(721g);RXRA_direct_+/+_(616g);SPI1_direct_+/-_(359g);KLF4_direct_+/+_(412g)	4	205	73	498	301
+NK cells	TBX21_direct_+/+_(228g);RUNX3_direct_+/+_(208g);FOXO1_direct_-/+_(203g);LEF1_direct_-/-_(165g);TCF7_direct_-/-_(55g)	5	185	87	499	333
+Plasmacytoid dendritic cells	BCL11A_direct_+/+_(275g);SPIB_direct_+/+_(241g);ZEB1_direct_-/+_(10g);KLF3_direct_-/+_(13g);POU2AF1_direct_+/+_(73g)	5	92	63	270	23
+T cells	KLF6_direct_-/-_(16g);LEF1_direct_+/+_(188g);TBX21_direct_-/+_(26g);TCF7_direct_+/+_(141g);BACH2_direct_+/-_(57g)	5	117	66	354	396

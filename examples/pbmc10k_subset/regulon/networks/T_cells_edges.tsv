@@ -1,0 +1,355 @@
+source	target	interaction	eregulons	importance	rho
+TF:BACH2	region:chr10:119596581-119597081	tf_binds_region	BACH2_direct_+/-		
+TF:BACH2	region:chr11:62621924-62622424	tf_binds_region	BACH2_direct_+/-		
+TF:BACH2	region:chr11:85664868-85665368	tf_binds_region	BACH2_direct_+/-		
+TF:BACH2	region:chr12:31728851-31729351	tf_binds_region	BACH2_direct_+/-		
+TF:BACH2	region:chr14:68793068-68793568	tf_binds_region	BACH2_direct_+/-		
+TF:BACH2	region:chr15:93028563-93029063	tf_binds_region	BACH2_direct_+/-		
+TF:BACH2	region:chr16:27367453-27367953	tf_binds_region	BACH2_direct_+/-		
+TF:BACH2	region:chr17:40560776-40561276	tf_binds_region	BACH2_direct_+/-		
+TF:BACH2	region:chr19:4051742-4052242	tf_binds_region	BACH2_direct_+/-		
+TF:BACH2	region:chr19:4058233-4058733	tf_binds_region	BACH2_direct_+/-		
+TF:BACH2	region:chr22:39961385-39961885	tf_binds_region	BACH2_direct_+/-		
+TF:BACH2	region:chr2:136008089-136008589	tf_binds_region	BACH2_direct_+/-		
+TF:BACH2	region:chr2:136242674-136243174	tf_binds_region	BACH2_direct_+/-		
+TF:BACH2	region:chr3:71226730-71227230	tf_binds_region	BACH2_direct_+/-		
+TF:BACH2	region:chr4:26857340-26857840	tf_binds_region	BACH2_direct_+/-		
+TF:BACH2	region:chr5:65035771-65036271	tf_binds_region	BACH2_direct_+/-		
+TF:BACH2	region:chr6:12011122-12011622	tf_binds_region	BACH2_direct_+/-		
+TF:BACH2	region:chr6:158031299-158031799	tf_binds_region	BACH2_direct_+/-		
+TF:BACH2	region:chr6:31619997-31620497	tf_binds_region	BACH2_direct_+/-		
+TF:BACH2	region:chr6:90397866-90398366	tf_binds_region	BACH2_direct_+/-		
+TF:BACH2	region:chr7:66075544-66076044	tf_binds_region	BACH2_direct_+/-		
+TF:BACH2	region:chr7:66493430-66493930	tf_binds_region	BACH2_direct_+/-		
+TF:BACH2	region:chr8:27351678-27352178	tf_binds_region	BACH2_direct_+/-		
+TF:KLF6	region:chr13:40666957-40667457	tf_binds_region	KLF6_direct_-/-		
+TF:KLF6	region:chr15:34366186-34366686	tf_binds_region	KLF6_direct_-/-		
+TF:KLF6	region:chr15:90388536-90389036	tf_binds_region	KLF6_direct_-/-		
+TF:KLF6	region:chr17:40480463-40480963	tf_binds_region	KLF6_direct_-/-		
+TF:KLF6	region:chr17:40564225-40564725	tf_binds_region	KLF6_direct_-/-		
+TF:KLF6	region:chr17:78186938-78187438	tf_binds_region	KLF6_direct_-/-		
+TF:KLF6	region:chr1:44674121-44674621	tf_binds_region	KLF6_direct_-/-		
+TF:KLF6	region:chr1:44809429-44809929	tf_binds_region	KLF6_direct_-/-		
+TF:KLF6	region:chr20:20712528-20713028	tf_binds_region	KLF6_direct_-/-		
+TF:KLF6	region:chr20:21125715-21126215	tf_binds_region	KLF6_direct_-/-		
+TF:KLF6	region:chr3:71063839-71064339	tf_binds_region	KLF6_direct_-/-		
+TF:KLF6	region:chr6:161273877-161274377	tf_binds_region	KLF6_direct_-/-		
+TF:KLF6	region:chr8:8228247-8228747	tf_binds_region	KLF6_direct_-/-		
+TF:KLF6	region:chr9:125746390-125746890	tf_binds_region	KLF6_direct_-/-		
+TF:KLF6	region:chrX:53082008-53082508	tf_binds_region	KLF6_direct_-/-		
+TF:LEF1	region:chr11:14768571-14769071	tf_binds_region	LEF1_direct_+/+		
+TF:LEF1	region:chr11:96016106-96016606	tf_binds_region	LEF1_direct_+/+		
+TF:LEF1	region:chr11:96105556-96106056	tf_binds_region	LEF1_direct_+/+		
+TF:LEF1	region:chr11:96278465-96278965	tf_binds_region	LEF1_direct_+/+		
+TF:LEF1	region:chr15:28876162-28876662	tf_binds_region	LEF1_direct_+/+		
+TF:LEF1	region:chr15:28890755-28891255	tf_binds_region	LEF1_direct_+/+		
+TF:LEF1	region:chr15:98649378-98649878	tf_binds_region	LEF1_direct_+/+		
+TF:LEF1	region:chr15:98650993-98651493	tf_binds_region	LEF1_direct_+/+		
+TF:LEF1	region:chr17:40533368-40533868	tf_binds_region	LEF1_direct_+/+		
+TF:LEF1	region:chr17:40547342-40547842	tf_binds_region	LEF1_direct_+/+		
+TF:LEF1	region:chr17:40597110-40597610	tf_binds_region	LEF1_direct_+/+		
+TF:LEF1	region:chr17:66331099-66331599	tf_binds_region	LEF1_direct_+/+		
+TF:LEF1	region:chr17:66673599-66674099	tf_binds_region	LEF1_direct_+/+		
+TF:LEF1	region:chr2:224764506-224765006	tf_binds_region	LEF1_direct_+/+		
+TF:LEF1	region:chr2:84694139-84694639	tf_binds_region	LEF1_direct_+/+		
+TF:LEF1	region:chr2:84846029-84846529	tf_binds_region	LEF1_direct_+/+		
+TF:LEF1	region:chr2:84855668-84856168	tf_binds_region	LEF1_direct_+/+		
+TF:LEF1	region:chr2:95074581-95075081	tf_binds_region	LEF1_direct_+/+		
+TF:LEF1	region:chr3:60048469-60048969	tf_binds_region	LEF1_direct_+/+		
+TF:LEF1	region:chr4:108036227-108036727	tf_binds_region	LEF1_direct_+/+		
+TF:LEF1	region:chr4:108045394-108045894	tf_binds_region	LEF1_direct_+/+		
+TF:LEF1	region:chr4:108070765-108071265	tf_binds_region	LEF1_direct_+/+		
+TF:LEF1	region:chr4:108107966-108108466	tf_binds_region	LEF1_direct_+/+		
+TF:LEF1	region:chr4:108168498-108168998	tf_binds_region	LEF1_direct_+/+		
+TF:LEF1	region:chr4:108315103-108315603	tf_binds_region	LEF1_direct_+/+		
+TF:LEF1	region:chr4:142847129-142847629	tf_binds_region	LEF1_direct_+/+		
+TF:LEF1	region:chr5:111230323-111230823	tf_binds_region	LEF1_direct_+/+		
+TF:LEF1	region:chr5:111252907-111253407	tf_binds_region	LEF1_direct_+/+		
+TF:LEF1	region:chr5:134079644-134080144	tf_binds_region	LEF1_direct_+/+		
+TF:LEF1	region:chr5:134086862-134087362	tf_binds_region	LEF1_direct_+/+		
+TF:LEF1	region:chr5:134090523-134091023	tf_binds_region	LEF1_direct_+/+		
+TF:LEF1	region:chr5:142063772-142064272	tf_binds_region	LEF1_direct_+/+		
+TF:LEF1	region:chr5:157217492-157217992	tf_binds_region	LEF1_direct_+/+		
+TF:LEF1	region:chr5:35780177-35780677	tf_binds_region	LEF1_direct_+/+		
+TF:LEF1	region:chr5:35830560-35831060	tf_binds_region	LEF1_direct_+/+		
+TF:LEF1	region:chr5:35854231-35854731	tf_binds_region	LEF1_direct_+/+		
+TF:LEF1	region:chr5:56058769-56059269	tf_binds_region	LEF1_direct_+/+		
+TF:LEF1	region:chr5:56071176-56071676	tf_binds_region	LEF1_direct_+/+		
+TF:LEF1	region:chr5:56100322-56100822	tf_binds_region	LEF1_direct_+/+		
+TF:LEF1	region:chr5:80152743-80153243	tf_binds_region	LEF1_direct_+/+		
+TF:LEF1	region:chr9:76023815-76024315	tf_binds_region	LEF1_direct_+/+		
+TF:TBX21	region:chr11:62640664-62641164	tf_binds_region	TBX21_direct_-/+		
+TF:TBX21	region:chr13:40485585-40486085	tf_binds_region	TBX21_direct_-/+		
+TF:TBX21	region:chr17:40605390-40605890	tf_binds_region	TBX21_direct_-/+		
+TF:TBX21	region:chr17:66201735-66202235	tf_binds_region	TBX21_direct_-/+		
+TF:TBX21	region:chr17:66285870-66286370	tf_binds_region	TBX21_direct_-/+		
+TF:TBX21	region:chr17:66331099-66331599	tf_binds_region	TBX21_direct_-/+		
+TF:TBX21	region:chr17:66426317-66426817	tf_binds_region	TBX21_direct_-/+		
+TF:TBX21	region:chr19:12793458-12793958	tf_binds_region	TBX21_direct_-/+		
+TF:TBX21	region:chr19:47600233-47600733	tf_binds_region	TBX21_direct_-/+		
+TF:TBX21	region:chr19:47745388-47745888	tf_binds_region	TBX21_direct_-/+		
+TF:TBX21	region:chr1:207336541-207337041	tf_binds_region	TBX21_direct_-/+		
+TF:TBX21	region:chr2:95074581-95075081	tf_binds_region	TBX21_direct_-/+		
+TF:TBX21	region:chr3:60056030-60056530	tf_binds_region	TBX21_direct_-/+		
+TF:TBX21	region:chr3:71127330-71127830	tf_binds_region	TBX21_direct_-/+		
+TF:TBX21	region:chr3:71421883-71422383	tf_binds_region	TBX21_direct_-/+		
+TF:TBX21	region:chr4:108072204-108072704	tf_binds_region	TBX21_direct_-/+		
+TF:TBX21	region:chr4:108113292-108113792	tf_binds_region	TBX21_direct_-/+		
+TF:TBX21	region:chr4:109649093-109649593	tf_binds_region	TBX21_direct_-/+		
+TF:TBX21	region:chr4:153426440-153426940	tf_binds_region	TBX21_direct_-/+		
+TF:TBX21	region:chr5:111252907-111253407	tf_binds_region	TBX21_direct_-/+		
+TF:TBX21	region:chr5:134079644-134080144	tf_binds_region	TBX21_direct_-/+		
+TF:TBX21	region:chr5:134137310-134137810	tf_binds_region	TBX21_direct_-/+		
+TF:TBX21	region:chr5:16617967-16618467	tf_binds_region	TBX21_direct_-/+		
+TF:TBX21	region:chr5:80218489-80218989	tf_binds_region	TBX21_direct_-/+		
+TF:TBX21	region:chr5:80268910-80269410	tf_binds_region	TBX21_direct_-/+		
+TF:TBX21	region:chr6:90219619-90220119	tf_binds_region	TBX21_direct_-/+		
+TF:TBX21	region:chr7:111009624-111010124	tf_binds_region	TBX21_direct_-/+		
+TF:TBX21	region:chr7:111083363-111083863	tf_binds_region	TBX21_direct_-/+		
+TF:TBX21	region:chrX:1468333-1468833	tf_binds_region	TBX21_direct_-/+		
+TF:TCF7	region:chr11:96016106-96016606	tf_binds_region	TCF7_direct_+/+		
+TF:TCF7	region:chr11:96105556-96106056	tf_binds_region	TCF7_direct_+/+		
+TF:TCF7	region:chr12:21676728-21677228	tf_binds_region	TCF7_direct_+/+		
+TF:TCF7	region:chr15:28876162-28876662	tf_binds_region	TCF7_direct_+/+		
+TF:TCF7	region:chr17:40547342-40547842	tf_binds_region	TCF7_direct_+/+		
+TF:TCF7	region:chr17:66331099-66331599	tf_binds_region	TCF7_direct_+/+		
+TF:TCF7	region:chr1:61782615-61783115	tf_binds_region	TCF7_direct_+/+		
+TF:TCF7	region:chr1:62271960-62272460	tf_binds_region	TCF7_direct_+/+		
+TF:TCF7	region:chr1:62295882-62296382	tf_binds_region	TCF7_direct_+/+		
+TF:TCF7	region:chr22:39940694-39941194	tf_binds_region	TCF7_direct_+/+		
+TF:TCF7	region:chr2:203740907-203741407	tf_binds_region	TCF7_direct_+/+		
+TF:TCF7	region:chr2:203867488-203867988	tf_binds_region	TCF7_direct_+/+		
+TF:TCF7	region:chr3:60048469-60048969	tf_binds_region	TCF7_direct_+/+		
+TF:TCF7	region:chr4:108036227-108036727	tf_binds_region	TCF7_direct_+/+		
+TF:TCF7	region:chr4:108045394-108045894	tf_binds_region	TCF7_direct_+/+		
+TF:TCF7	region:chr4:108070765-108071265	tf_binds_region	TCF7_direct_+/+		
+TF:TCF7	region:chr4:108107966-108108466	tf_binds_region	TCF7_direct_+/+		
+TF:TCF7	region:chr4:108168498-108168998	tf_binds_region	TCF7_direct_+/+		
+TF:TCF7	region:chr4:108315103-108315603	tf_binds_region	TCF7_direct_+/+		
+TF:TCF7	region:chr4:109648512-109649012	tf_binds_region	TCF7_direct_+/+		
+TF:TCF7	region:chr4:142847129-142847629	tf_binds_region	TCF7_direct_+/+		
+TF:TCF7	region:chr4:148060518-148061018	tf_binds_region	TCF7_direct_+/+		
+TF:TCF7	region:chr5:111230323-111230823	tf_binds_region	TCF7_direct_+/+		
+TF:TCF7	region:chr5:111252907-111253407	tf_binds_region	TCF7_direct_+/+		
+TF:TCF7	region:chr5:134079644-134080144	tf_binds_region	TCF7_direct_+/+		
+TF:TCF7	region:chr5:134086862-134087362	tf_binds_region	TCF7_direct_+/+		
+TF:TCF7	region:chr5:134090523-134091023	tf_binds_region	TCF7_direct_+/+		
+TF:TCF7	region:chr5:16617457-16617957	tf_binds_region	TCF7_direct_+/+		
+TF:TCF7	region:chr5:16673129-16673629	tf_binds_region	TCF7_direct_+/+		
+TF:TCF7	region:chr5:35780177-35780677	tf_binds_region	TCF7_direct_+/+		
+TF:TCF7	region:chr5:35830560-35831060	tf_binds_region	TCF7_direct_+/+		
+TF:TCF7	region:chr5:35854231-35854731	tf_binds_region	TCF7_direct_+/+		
+TF:TCF7	region:chr5:80152743-80153243	tf_binds_region	TCF7_direct_+/+		
+TF:TCF7	region:chr8:30097848-30098348	tf_binds_region	TCF7_direct_+/+		
+TF:TCF7	region:chr9:128092936-128093436	tf_binds_region	TCF7_direct_+/+		
+region:chr10:119596581-119597081	gene:RGS10	region_regulates_gene	BACH2_direct_+/-	0.0191713100006726	-0.0820437277987845
+region:chr11:14768571-14769071	gene:PDE3B	region_regulates_gene	LEF1_direct_+/+	0.115426885388661	0.6151900446488022
+region:chr11:62621924-62622424	gene:EEF1G	region_regulates_gene	BACH2_direct_+/-	0.0063692831163242	-0.1667922074104799
+region:chr11:62640664-62641164	gene:EEF1G	region_regulates_gene	TBX21_direct_-/+	0.0325179405623597	0.3992874627596608
+region:chr11:85664868-85665368	gene:DLG2	region_regulates_gene	BACH2_direct_+/-	0.0569951013699153	-0.0804926430450839
+region:chr11:96016106-96016606	gene:MAML2	region_regulates_gene	LEF1_direct_+/+;TCF7_direct_+/+	0.0314216597438759	0.5095632469935801
+region:chr11:96105556-96106056	gene:MAML2	region_regulates_gene	LEF1_direct_+/+;TCF7_direct_+/+	0.0525239490685327	0.5399158947414506
+region:chr11:96278465-96278965	gene:MAML2	region_regulates_gene	LEF1_direct_+/+	0.0329801757090259	0.5152878624500583
+region:chr12:21676728-21677228	gene:LDHB	region_regulates_gene	TCF7_direct_+/+	0.083269933084769	0.4541901525207414
+region:chr12:31728851-31729351	gene:AMN1	region_regulates_gene	BACH2_direct_+/-	0.0754377812004338	-0.0705125856698128
+region:chr13:40485585-40486085	gene:FOXO1	region_regulates_gene	TBX21_direct_-/+	0.0348218801832963	0.2694279931637316
+region:chr13:40666957-40667457	gene:FOXO1	region_regulates_gene	KLF6_direct_-/-	0.0411286208935643	-0.1121332500371109
+region:chr14:68793068-68793568	gene:ACTN1	region_regulates_gene	BACH2_direct_+/-	0.0081528332369835	-0.0634565896153208
+region:chr15:28876162-28876662	gene:APBA2	region_regulates_gene	LEF1_direct_+/+;TCF7_direct_+/+	0.0442592673786972	0.4502916330889324
+region:chr15:28890755-28891255	gene:APBA2	region_regulates_gene	LEF1_direct_+/+	0.0706656439818994	0.4392384860906132
+region:chr15:34366186-34366686	gene:SLC12A6	region_regulates_gene	KLF6_direct_-/-	0.0346521959886686	-0.0702648792917175
+region:chr15:90388536-90389036	gene:CRTC3	region_regulates_gene	KLF6_direct_-/-	0.0144922474099374	-0.0920481377114391
+region:chr15:93028563-93029063	gene:CHD2	region_regulates_gene	BACH2_direct_+/-	0.0011926474786669	-0.0745663401449669
+region:chr15:98649378-98649878	gene:IGF1R	region_regulates_gene	LEF1_direct_+/+	0.0513877495698156	0.4172089373925637
+region:chr15:98650993-98651493	gene:IGF1R	region_regulates_gene	LEF1_direct_+/+	0.0689023986470435	0.415814469030142
+region:chr16:27367453-27367953	gene:IL4R	region_regulates_gene	BACH2_direct_+/-	0.0101526801868414	-0.0686027167471735
+region:chr17:40480463-40480963	gene:CCR7	region_regulates_gene	KLF6_direct_-/-	0.0033116680551078	-0.0520004097591079
+region:chr17:40533368-40533868	gene:CCR7	region_regulates_gene	LEF1_direct_+/+	0.0228362874841571	0.5065251521651754
+region:chr17:40547342-40547842	gene:CCR7	region_regulates_gene	LEF1_direct_+/+;TCF7_direct_+/+	0.0733828983694803	0.6016804992026408
+region:chr17:40560776-40561276	gene:CCR7	region_regulates_gene	BACH2_direct_+/-	0.0034388919180831	-0.2999139380221461
+region:chr17:40564225-40564725	gene:CCR7	region_regulates_gene	KLF6_direct_-/-	0.0032250611761289	-0.0759343921595059
+region:chr17:40597110-40597610	gene:CCR7	region_regulates_gene	LEF1_direct_+/+	0.1086524303535041	0.5743330872184227
+region:chr17:40605390-40605890	gene:CCR7	region_regulates_gene	TBX21_direct_-/+	0.0473014936582339	0.5478060341715091
+region:chr17:66201735-66202235	gene:PRKCA	region_regulates_gene	TBX21_direct_-/+	0.0965651354739261	0.5714802108638183
+region:chr17:66285870-66286370	gene:PRKCA	region_regulates_gene	TBX21_direct_-/+	0.1041906472555518	0.5752901008251006
+region:chr17:66331099-66331599	gene:PRKCA	region_regulates_gene	LEF1_direct_+/+;TBX21_direct_-/+;TCF7_direct_+/+	0.0632769606846281	0.5690425016108409
+region:chr17:66426317-66426817	gene:PRKCA	region_regulates_gene	TBX21_direct_-/+	0.039400539447621	0.5580568675147402
+region:chr17:66673599-66674099	gene:PRKCA	region_regulates_gene	LEF1_direct_+/+	0.0339619981010521	0.4438797719901058
+region:chr17:78186938-78187438	gene:TNRC6C	region_regulates_gene	KLF6_direct_-/-	0.0078626542278434	-0.2239759317543386
+region:chr19:12793458-12793958	gene:JUNB	region_regulates_gene	TBX21_direct_-/+	0.0227087410963692	0.1420480074146766
+region:chr19:4051742-4052242	gene:EEF2	region_regulates_gene	BACH2_direct_+/-	0.0117571680608297	-0.190241503353154
+region:chr19:4058233-4058733	gene:EEF2	region_regulates_gene	BACH2_direct_+/-	0.0777621205273244	-0.2372987041079394
+region:chr19:47600233-47600733	gene:NOP53	region_regulates_gene	TBX21_direct_-/+	0.0313808695251304	0.0858851053320601
+region:chr19:47745388-47745888	gene:NOP53	region_regulates_gene	TBX21_direct_-/+	0.0296904892571984	0.2329062432522579
+region:chr1:207336541-207337041	gene:CD55	region_regulates_gene	TBX21_direct_-/+	0.0371272683363367	0.1599628051916584
+region:chr1:44674121-44674621	gene:ARMH1	region_regulates_gene	KLF6_direct_-/-	0.0377602455588913	-0.1867697386583189
+region:chr1:44809429-44809929	gene:EIF2B3	region_regulates_gene	KLF6_direct_-/-	0.0349544578744794	-0.0635646037894418
+region:chr1:61782615-61783115	gene:PATJ	region_regulates_gene	TCF7_direct_+/+	0.1762092148829506	0.2879233575778833
+region:chr1:62271960-62272460	gene:PATJ	region_regulates_gene	TCF7_direct_+/+	0.1539461414151057	0.2739394538489264
+region:chr1:62295882-62296382	gene:PATJ	region_regulates_gene	TCF7_direct_+/+	0.091559976210987	0.1941337943383963
+region:chr20:20712528-20713028	gene:RALGAPA2	region_regulates_gene	KLF6_direct_-/-	0.1502439858513394	-0.1090942767313718
+region:chr20:21125715-21126215	gene:KIZ	region_regulates_gene	KLF6_direct_-/-	0.0677256917774142	-0.0702971553775397
+region:chr22:39940694-39941194	gene:GRAP2	region_regulates_gene	TCF7_direct_+/+	0.0240760176744699	0.3223961723228131
+region:chr22:39961385-39961885	gene:TNRC6B	region_regulates_gene	BACH2_direct_+/-	0.0068224899212368	-0.2042707477779212
+region:chr2:136008089-136008589	gene:CXCR4	region_regulates_gene	BACH2_direct_+/-	0.0123979804508207	-0.1246404041589778
+region:chr2:136242674-136243174	gene:CXCR4	region_regulates_gene	BACH2_direct_+/-	0.019486752221899	-0.0554596345051259
+region:chr2:203740907-203741407	gene:CD28	region_regulates_gene	TCF7_direct_+/+	0.0605196870111491	0.2840853620540942
+region:chr2:203867488-203867988	gene:CD28	region_regulates_gene	TCF7_direct_+/+	0.0703216988644513	0.3035001959904059
+region:chr2:224764506-224765006	gene:DOCK10	region_regulates_gene	LEF1_direct_+/+	0.0193239449251463	0.3186082368258504
+region:chr2:84694139-84694639	gene:TRABD2A	region_regulates_gene	LEF1_direct_+/+	0.0669337285819381	0.4910100442068675
+region:chr2:84846029-84846529	gene:TRABD2A	region_regulates_gene	LEF1_direct_+/+	0.0868761913729629	0.4785031389168691
+region:chr2:84855668-84856168	gene:TRABD2A	region_regulates_gene	LEF1_direct_+/+	0.0354567645627201	0.4960091823529655
+region:chr2:95074581-95075081	gene:MAL	region_regulates_gene	LEF1_direct_+/+;TBX21_direct_-/+	0.1083178929025174	0.4225779046217355
+region:chr3:60048469-60048969	gene:FHIT	region_regulates_gene	LEF1_direct_+/+;TCF7_direct_+/+	0.0980780856997033	0.4820887117913895
+region:chr3:60056030-60056530	gene:FHIT	region_regulates_gene	TBX21_direct_-/+	0.0340108102287888	0.4812355380244564
+region:chr3:71063839-71064339	gene:FOXP1	region_regulates_gene	KLF6_direct_-/-	0.0292223086770578	-0.3339951017033344
+region:chr3:71127330-71127830	gene:FOXP1	region_regulates_gene	TBX21_direct_-/+	0.012004270309712	0.0576646126473502
+region:chr3:71226730-71227230	gene:FOXP1	region_regulates_gene	BACH2_direct_+/-	0.0244547386552137	-0.0985221733271635
+region:chr3:71421883-71422383	gene:FOXP1	region_regulates_gene	TBX21_direct_-/+	0.0091113557894067	0.0837071625720805
+region:chr4:108036227-108036727	gene:LEF1	region_regulates_gene	LEF1_direct_+/+;TCF7_direct_+/+	0.0413958685727298	0.7675728722825867
+region:chr4:108045394-108045894	gene:LEF1	region_regulates_gene	LEF1_direct_+/+;TCF7_direct_+/+	0.025545788017185	0.7703449467173934
+region:chr4:108070765-108071265	gene:LEF1	region_regulates_gene	LEF1_direct_+/+;TCF7_direct_+/+	0.0202195788621455	0.764426325480851
+region:chr4:108072204-108072704	gene:LEF1	region_regulates_gene	TBX21_direct_-/+	0.0795538138674151	0.7785128769165943
+region:chr4:108107966-108108466	gene:LEF1	region_regulates_gene	LEF1_direct_+/+;TCF7_direct_+/+	0.0967021403329143	0.76562804285275
+region:chr4:108113292-108113792	gene:LEF1	region_regulates_gene	TBX21_direct_-/+	0.0343480127188559	0.7629807188064495
+region:chr4:108168498-108168998	gene:LEF1	region_regulates_gene	LEF1_direct_+/+;TCF7_direct_+/+	0.0434585165739871	0.7434288449119532
+region:chr4:108315103-108315603	gene:LEF1	region_regulates_gene	LEF1_direct_+/+;TCF7_direct_+/+	0.0567444222248316	0.7614756784265848
+region:chr4:109648512-109649012	gene:MCUB	region_regulates_gene	TCF7_direct_+/+	0.0702935440627696	0.2355961800633898
+region:chr4:109649093-109649593	gene:MCUB	region_regulates_gene	TBX21_direct_-/+	0.03290849929596	0.233522354253024
+region:chr4:142847129-142847629	gene:INPP4B	region_regulates_gene	LEF1_direct_+/+;TCF7_direct_+/+	0.0787161547481479	0.534852145052428
+region:chr4:148060518-148061018	gene:NR3C2	region_regulates_gene	TCF7_direct_+/+	0.0745586436049401	0.3895699951275873
+region:chr4:153426440-153426940	gene:TMEM131L	region_regulates_gene	TBX21_direct_-/+	0.0213885188074931	0.1118407879288147
+region:chr4:26857340-26857840	gene:STIM2	region_regulates_gene	BACH2_direct_+/-	0.0556061321900975	-0.0542084962237168
+region:chr5:111230323-111230823	gene:CAMK4	region_regulates_gene	LEF1_direct_+/+;TCF7_direct_+/+	0.0607808476164093	0.6441203758118826
+region:chr5:111252907-111253407	gene:CAMK4	region_regulates_gene	LEF1_direct_+/+;TBX21_direct_-/+;TCF7_direct_+/+	0.0892628581062928	0.6301682878550273
+region:chr5:134079644-134080144	gene:TCF7	region_regulates_gene	LEF1_direct_+/+;TBX21_direct_-/+;TCF7_direct_+/+	0.0542175003840498	0.583261613584008
+region:chr5:134086862-134087362	gene:TCF7	region_regulates_gene	LEF1_direct_+/+;TCF7_direct_+/+	0.0844137922674317	0.5999798606522612
+region:chr5:134090523-134091023	gene:TCF7	region_regulates_gene	LEF1_direct_+/+;TCF7_direct_+/+	0.0977197754629664	0.5836445306153106
+region:chr5:134137310-134137810	gene:TCF7	region_regulates_gene	TBX21_direct_-/+	0.0539473665068974	0.5877597099380709
+region:chr5:142063772-142064272	gene:NDFIP1	region_regulates_gene	LEF1_direct_+/+	0.0259607429723641	0.4445798055520296
+region:chr5:157217492-157217992	gene:ITK	region_regulates_gene	LEF1_direct_+/+	0.0273643489622436	0.4741789937101571
+region:chr5:16617457-16617957	gene:RETREG1	region_regulates_gene	TCF7_direct_+/+	0.1011445946204858	0.3546568215639507
+region:chr5:16617967-16618467	gene:RETREG1	region_regulates_gene	TBX21_direct_-/+	0.1002122565835722	0.3514395561340195
+region:chr5:16673129-16673629	gene:RETREG1	region_regulates_gene	TCF7_direct_+/+	0.0799424697751445	0.3475789735531869
+region:chr5:35780177-35780677	gene:IL7R	region_regulates_gene	LEF1_direct_+/+;TCF7_direct_+/+	0.0884372192443799	0.6122018913779356
+region:chr5:35830560-35831060	gene:IL7R	region_regulates_gene	LEF1_direct_+/+;TCF7_direct_+/+	0.0593278812875121	0.6295160014681452
+region:chr5:35854231-35854731	gene:IL7R	region_regulates_gene	LEF1_direct_+/+;TCF7_direct_+/+	0.1233385510181728	0.634094275053575
+region:chr5:56058769-56059269	gene:IL6ST	region_regulates_gene	LEF1_direct_+/+	0.0642235768511646	0.3888686563412515
+region:chr5:56071176-56071676	gene:IL6ST	region_regulates_gene	LEF1_direct_+/+	0.0307206774070997	0.3670445775986569
+region:chr5:56100322-56100822	gene:IL6ST	region_regulates_gene	LEF1_direct_+/+	0.0447085222264787	0.4148031390048473
+region:chr5:65035771-65036271	gene:ADAMTS6	region_regulates_gene	BACH2_direct_+/-	0.0842807723912401	-0.1179891924318249
+region:chr5:80152743-80153243	gene:SERINC5	region_regulates_gene	LEF1_direct_+/+;TCF7_direct_+/+	0.0860830076423052	0.5407433195999825
+region:chr5:80218489-80218989	gene:SERINC5	region_regulates_gene	TBX21_direct_-/+	0.0466340247462479	0.5403308499921233
+region:chr5:80268910-80269410	gene:SERINC5	region_regulates_gene	TBX21_direct_-/+	0.0384930026915825	0.5352511481140623
+region:chr6:12011122-12011622	gene:HIVEP1	region_regulates_gene	BACH2_direct_+/-	0.0894306460771584	-0.1238459061391217
+region:chr6:158031299-158031799	gene:SNX9	region_regulates_gene	BACH2_direct_+/-	0.0076129829482314	-0.1488654264552301
+region:chr6:161273877-161274377	gene:PRKN	region_regulates_gene	KLF6_direct_-/-	0.0683738528965182	-0.2297507903407811
+region:chr6:31619997-31620497	gene:LTB	region_regulates_gene	BACH2_direct_+/-	0.0061910342436749	-0.1017233890789044
+region:chr6:90219619-90220119	gene:BACH2	region_regulates_gene	TBX21_direct_-/+	0.0267921225940245	0.6578991726601007
+region:chr6:90397866-90398366	gene:BACH2	region_regulates_gene	BACH2_direct_+/-	0.0050585265365557	-0.4378338733995157
+region:chr7:111009624-111010124	gene:IMMP2L	region_regulates_gene	TBX21_direct_-/+	0.0457248032234292	0.236974663835892
+region:chr7:111083363-111083863	gene:IMMP2L	region_regulates_gene	TBX21_direct_-/+	0.1372706010481962	0.2433576142515927
+region:chr7:66075544-66076044	gene:TPST1	region_regulates_gene	BACH2_direct_+/-	0.0784919743120016	-0.1816053254164386
+region:chr7:66493430-66493930	gene:TPST1	region_regulates_gene	BACH2_direct_+/-	0.0753519435774722	-0.0810742587948163
+region:chr8:27351678-27352178	gene:EPHX2	region_regulates_gene	BACH2_direct_+/-	0.0327697211815086	-0.2178830512538319
+region:chr8:30097848-30098348	gene:SARAF	region_regulates_gene	TCF7_direct_+/+	0.0556805602296445	0.439530628726165
+region:chr8:8228247-8228747	gene:PRAG1	region_regulates_gene	KLF6_direct_-/-	0.0695869153653611	-0.0781301766429539
+region:chr9:125746390-125746890	gene:PBX3	region_regulates_gene	KLF6_direct_-/-	0.0979951992052846	-0.1489533811612452
+region:chr9:128092936-128093436	gene:FAM102A	region_regulates_gene	TCF7_direct_+/+	0.0623751739780001	0.3480772990982085
+region:chr9:76023815-76024315	gene:PCSK5	region_regulates_gene	LEF1_direct_+/+	0.0479211574328305	0.309893826932762
+region:chrX:1468333-1468833	gene:SLC25A6	region_regulates_gene	TBX21_direct_-/+	0.0265336741011987	0.0705978197347049
+region:chrX:53082008-53082508	gene:KANTR	region_regulates_gene	KLF6_direct_-/-	0.0537017865610965	-0.0542971251344776
+TF:BACH2	gene:ACTN1	tf_regulates_gene	BACH2_direct_+/-	3.7476247718274727	0.2680345394800399
+TF:BACH2	gene:ADAMTS6	tf_regulates_gene	BACH2_direct_+/-	1.9637109653285856	0.1681613119752575
+TF:BACH2	gene:AMN1	tf_regulates_gene	BACH2_direct_+/-	1.919699723086265	0.1214178991102598
+TF:BACH2	gene:BACH2	tf_regulates_gene	BACH2_direct_+/-	10.318698214247934	1.0
+TF:BACH2	gene:CCR7	tf_regulates_gene	BACH2_direct_+/-	4.697285446509335	0.4227153216734887
+TF:BACH2	gene:CHD2	tf_regulates_gene	BACH2_direct_+/-	1.957783860896685	0.1002734552398613
+TF:BACH2	gene:CXCR4	tf_regulates_gene	BACH2_direct_+/-	3.2768567542921248	0.2076769962641591
+TF:BACH2	gene:DLG2	tf_regulates_gene	BACH2_direct_+/-	2.645738505218437	0.155969126088955
+TF:BACH2	gene:EEF1G	tf_regulates_gene	BACH2_direct_+/-	2.1215108914565977	0.2553961023456776
+TF:BACH2	gene:EEF2	tf_regulates_gene	BACH2_direct_+/-	2.170536046632172	0.1459325483119331
+TF:BACH2	gene:EPHX2	tf_regulates_gene	BACH2_direct_+/-	2.279932719446169	0.1924715757957841
+TF:BACH2	gene:FOXP1	tf_regulates_gene	BACH2_direct_+/-	4.247636828192661	0.4240435083853415
+TF:BACH2	gene:HIVEP1	tf_regulates_gene	BACH2_direct_+/-	2.934392159786726	0.1110397289031412
+TF:BACH2	gene:IL4R	tf_regulates_gene	BACH2_direct_+/-	6.357163436218012	0.1882653381091435
+TF:BACH2	gene:LTB	tf_regulates_gene	BACH2_direct_+/-	3.0627661739403864	0.2495384345820278
+TF:BACH2	gene:RGS10	tf_regulates_gene	BACH2_direct_+/-	2.2241005188076177	0.1499392539576466
+TF:BACH2	gene:SNX9	tf_regulates_gene	BACH2_direct_+/-	4.058458679917278	0.2065251685155877
+TF:BACH2	gene:STIM2	tf_regulates_gene	BACH2_direct_+/-	2.495223847633117	0.0762895843367994
+TF:BACH2	gene:TNRC6B	tf_regulates_gene	BACH2_direct_+/-	3.065308883020754	0.196567655400984
+TF:BACH2	gene:TPST1	tf_regulates_gene	BACH2_direct_+/-	2.0722346987532845	0.1608015570562945
+TF:KLF6	gene:ARMH1	tf_regulates_gene	KLF6_direct_-/-	0.572816407786233	-0.133682370263801
+TF:KLF6	gene:CCR7	tf_regulates_gene	KLF6_direct_-/-	1.956806467134992	-0.3021084692152157
+TF:KLF6	gene:CRTC3	tf_regulates_gene	KLF6_direct_-/-	0.7790107761844836	-0.1280613119859571
+TF:KLF6	gene:EIF2B3	tf_regulates_gene	KLF6_direct_-/-	1.807905481171167	-0.0994819629821169
+TF:KLF6	gene:FOXO1	tf_regulates_gene	KLF6_direct_-/-	0.8169356885464361	-0.1531406329395648
+TF:KLF6	gene:FOXP1	tf_regulates_gene	KLF6_direct_-/-	1.169411115628148	-0.2452047828991183
+TF:KLF6	gene:KANTR	tf_regulates_gene	KLF6_direct_-/-	0.8929623188654472	-0.0961896398125345
+TF:KLF6	gene:KIZ	tf_regulates_gene	KLF6_direct_-/-	0.4710281494290833	-0.0837923496528597
+TF:KLF6	gene:PBX3	tf_regulates_gene	KLF6_direct_-/-	0.4677874872162573	-0.0809274744623074
+TF:KLF6	gene:PRAG1	tf_regulates_gene	KLF6_direct_-/-	0.7451170200055881	-0.1058529537473023
+TF:KLF6	gene:PRKN	tf_regulates_gene	KLF6_direct_-/-	1.2339056070553145	-0.1675583017148208
+TF:KLF6	gene:RALGAPA2	tf_regulates_gene	KLF6_direct_-/-	0.6069974499335087	-0.0702965652832244
+TF:KLF6	gene:SLC12A6	tf_regulates_gene	KLF6_direct_-/-	1.6076740852889575	-0.072547182323239
+TF:KLF6	gene:TNRC6C	tf_regulates_gene	KLF6_direct_-/-	0.4706382753027614	-0.126166326392646
+TF:LEF1	gene:APBA2	tf_regulates_gene	LEF1_direct_+/+	8.632914454470678	0.389287509117779
+TF:LEF1	gene:CAMK4	tf_regulates_gene	LEF1_direct_+/+	12.98723374273393	0.5721525955085964
+TF:LEF1	gene:CCR7	tf_regulates_gene	LEF1_direct_+/+	8.569701586368868	0.5010648156558284
+TF:LEF1	gene:DOCK10	tf_regulates_gene	LEF1_direct_+/+	9.338619271460043	0.368964527418738
+TF:LEF1	gene:FHIT	tf_regulates_gene	LEF1_direct_+/+	10.875251632998255	0.4190953711911504
+TF:LEF1	gene:IGF1R	tf_regulates_gene	LEF1_direct_+/+	8.845887127900276	0.3646753410290456
+TF:LEF1	gene:IL6ST	tf_regulates_gene	LEF1_direct_+/+	9.021532925298652	0.3975819009206115
+TF:LEF1	gene:IL7R	tf_regulates_gene	LEF1_direct_+/+	8.913094125213124	0.5246297787511244
+TF:LEF1	gene:INPP4B	tf_regulates_gene	LEF1_direct_+/+	9.940587396788436	0.3873507620917658
+TF:LEF1	gene:ITK	tf_regulates_gene	LEF1_direct_+/+	9.98928518929534	0.4190816908191641
+TF:LEF1	gene:LEF1	tf_regulates_gene	LEF1_direct_+/+	13.712219992644185	1.0
+TF:LEF1	gene:MAL	tf_regulates_gene	LEF1_direct_+/+	8.470816499904444	0.352361115130903
+TF:LEF1	gene:MAML2	tf_regulates_gene	LEF1_direct_+/+	9.118680938548316	0.4604285843422511
+TF:LEF1	gene:NDFIP1	tf_regulates_gene	LEF1_direct_+/+	8.482412170725231	0.3880975929380232
+TF:LEF1	gene:PCSK5	tf_regulates_gene	LEF1_direct_+/+	8.277472996751758	0.3117735717110454
+TF:LEF1	gene:PDE3B	tf_regulates_gene	LEF1_direct_+/+	8.571102797834705	0.5652702496254455
+TF:LEF1	gene:PRKCA	tf_regulates_gene	LEF1_direct_+/+	13.712209992644183	0.5064876530076011
+TF:LEF1	gene:SERINC5	tf_regulates_gene	LEF1_direct_+/+	10.01546759557429	0.5131544976361254
+TF:LEF1	gene:TCF7	tf_regulates_gene	LEF1_direct_+/+	9.993011485512133	0.5118475758507279
+TF:LEF1	gene:TRABD2A	tf_regulates_gene	LEF1_direct_+/+	8.71289683376796	0.4363395887024944
+TF:TBX21	gene:BACH2	tf_regulates_gene	TBX21_direct_-/+	1.1177283343057771	-0.2475069062882202
+TF:TBX21	gene:CAMK4	tf_regulates_gene	TBX21_direct_-/+	0.6975426337341865	-0.215443097524443
+TF:TBX21	gene:CCR7	tf_regulates_gene	TBX21_direct_-/+	0.6783359823935714	-0.1952147820515926
+TF:TBX21	gene:CD55	tf_regulates_gene	TBX21_direct_-/+	1.3360106151222084	-0.1424151636062312
+TF:TBX21	gene:EEF1G	tf_regulates_gene	TBX21_direct_-/+	1.043042143766476	-0.1835836026857067
+TF:TBX21	gene:FHIT	tf_regulates_gene	TBX21_direct_-/+	0.7789855319003486	-0.1678680775579897
+TF:TBX21	gene:FOXO1	tf_regulates_gene	TBX21_direct_-/+	0.7595632447748846	-0.174392982983627
+TF:TBX21	gene:FOXP1	tf_regulates_gene	TBX21_direct_-/+	0.4748470109258187	-0.2244713197469307
+TF:TBX21	gene:IMMP2L	tf_regulates_gene	TBX21_direct_-/+	0.7424713133928567	-0.1285218801001648
+TF:TBX21	gene:JUNB	tf_regulates_gene	TBX21_direct_-/+	0.6239488629076361	-0.1142035559235078
+TF:TBX21	gene:LEF1	tf_regulates_gene	TBX21_direct_-/+	0.7818771926352548	-0.2099997522605575
+TF:TBX21	gene:MAL	tf_regulates_gene	TBX21_direct_-/+	0.5504714607496171	-0.1264919675988243
+TF:TBX21	gene:MCUB	tf_regulates_gene	TBX21_direct_-/+	0.6253719849981455	-0.1264644614874781
+TF:TBX21	gene:NOP53	tf_regulates_gene	TBX21_direct_-/+	1.2778030104655715	-0.1737395470094805
+TF:TBX21	gene:PRKCA	tf_regulates_gene	TBX21_direct_-/+	0.495814648367027	-0.1744874946406291
+TF:TBX21	gene:RETREG1	tf_regulates_gene	TBX21_direct_-/+	0.5834257542328317	-0.1330087160807231
+TF:TBX21	gene:SERINC5	tf_regulates_gene	TBX21_direct_-/+	0.5454864035765322	-0.182645346955229
+TF:TBX21	gene:SLC25A6	tf_regulates_gene	TBX21_direct_-/+	0.8621608139911613	-0.0704847831924576
+TF:TBX21	gene:TCF7	tf_regulates_gene	TBX21_direct_-/+	0.7467811428870015	-0.1829963606914738
+TF:TBX21	gene:TMEM131L	tf_regulates_gene	TBX21_direct_-/+	0.4737150026919024	-0.0919717979339547
+TF:TCF7	gene:APBA2	tf_regulates_gene	TCF7_direct_+/+	3.1292577043702177	0.295636675516032
+TF:TCF7	gene:CAMK4	tf_regulates_gene	TCF7_direct_+/+	5.949034033807924	0.51018144976664
+TF:TCF7	gene:CCR7	tf_regulates_gene	TCF7_direct_+/+	2.990039066100243	0.3496104146477948
+TF:TCF7	gene:CD28	tf_regulates_gene	TCF7_direct_+/+	3.088720424969402	0.2293561685682763
+TF:TCF7	gene:FAM102A	tf_regulates_gene	TCF7_direct_+/+	3.330458436584033	0.2820567644322637
+TF:TCF7	gene:FHIT	tf_regulates_gene	TCF7_direct_+/+	3.311391870230543	0.2879037123333389
+TF:TCF7	gene:GRAP2	tf_regulates_gene	TCF7_direct_+/+	3.022806082254679	0.2034960543235617
+TF:TCF7	gene:IL7R	tf_regulates_gene	TCF7_direct_+/+	5.382001331011891	0.4726688966184307
+TF:TCF7	gene:INPP4B	tf_regulates_gene	TCF7_direct_+/+	4.223979293812573	0.3503342186119154
+TF:TCF7	gene:LDHB	tf_regulates_gene	TCF7_direct_+/+	3.9807678887942046	0.3656653060093774
+TF:TCF7	gene:LEF1	tf_regulates_gene	TCF7_direct_+/+	7.47887547379747	0.5118475758507279
+TF:TCF7	gene:MAML2	tf_regulates_gene	TCF7_direct_+/+	4.390797422414019	0.3873917526647089
+TF:TCF7	gene:MCUB	tf_regulates_gene	TCF7_direct_+/+	3.095867100552679	0.2254587090356661
+TF:TCF7	gene:NR3C2	tf_regulates_gene	TCF7_direct_+/+	3.4012242205631966	0.2862815285745421
+TF:TCF7	gene:PATJ	tf_regulates_gene	TCF7_direct_+/+	3.730544267425689	0.2450795089777672
+TF:TCF7	gene:PRKCA	tf_regulates_gene	TCF7_direct_+/+	5.079267822533418	0.4046798398758191
+TF:TCF7	gene:RETREG1	tf_regulates_gene	TCF7_direct_+/+	2.9577117812660343	0.2321319743949693
+TF:TCF7	gene:SARAF	tf_regulates_gene	TCF7_direct_+/+	3.237948586006317	0.2685301540996984
+TF:TCF7	gene:SERINC5	tf_regulates_gene	TCF7_direct_+/+	4.278494506963503	0.4091652882483834
+TF:TCF7	gene:TCF7	tf_regulates_gene	TCF7_direct_+/+	7.47888547379747	1.0

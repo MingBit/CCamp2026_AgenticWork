@@ -1,0 +1,369 @@
+{
+  "cell_type_labels": [
+    "B cells",
+    "FCGR3A+ monocytes",
+    "NK cells",
+    "Plasmacytoid dendritic cells",
+    "T cells",
+    "unknown"
+  ],
+  "cell_type_networks": [
+    {
+      "cell_type": "B cells",
+      "cells": 267,
+      "edges": 324,
+      "eregulons_selected": "SPIB_direct_+/-_(38g);POU2AF1_direct_+/+_(73g);SPIB_direct_+/+_(241g);BCL11A_direct_+/+_(275g);BCL11A_direct_+/-_(119g)",
+      "regions": 122,
+      "target_genes": 45,
+      "tfs": 3
+    },
+    {
+      "cell_type": "FCGR3A+ monocytes",
+      "cells": 301,
+      "edges": 498,
+      "eregulons_selected": "TCF7L2_direct_+/+_(451g);SPI1_direct_+/+_(721g);RXRA_direct_+/+_(616g);SPI1_direct_+/-_(359g);KLF4_direct_+/+_(412g)",
+      "regions": 205,
+      "target_genes": 73,
+      "tfs": 4
+    },
+    {
+      "cell_type": "NK cells",
+      "cells": 333,
+      "edges": 499,
+      "eregulons_selected": "TBX21_direct_+/+_(228g);RUNX3_direct_+/+_(208g);FOXO1_direct_-/+_(203g);LEF1_direct_-/-_(165g);TCF7_direct_-/-_(55g)",
+      "regions": 185,
+      "target_genes": 87,
+      "tfs": 5
+    },
+    {
+      "cell_type": "Plasmacytoid dendritic cells",
+      "cells": 23,
+      "edges": 270,
+      "eregulons_selected": "BCL11A_direct_+/+_(275g);SPIB_direct_+/+_(241g);ZEB1_direct_-/+_(10g);KLF3_direct_-/+_(13g);POU2AF1_direct_+/+_(73g)",
+      "regions": 92,
+      "target_genes": 63,
+      "tfs": 5
+    },
+    {
+      "cell_type": "T cells",
+      "cells": 396,
+      "edges": 354,
+      "eregulons_selected": "KLF6_direct_-/-_(16g);LEF1_direct_+/+_(188g);TBX21_direct_-/+_(26g);TCF7_direct_+/+_(141g);BACH2_direct_+/-_(57g)",
+      "regions": 117,
+      "target_genes": 66,
+      "tfs": 5
+    }
+  ],
+  "handoff": {
+    "cell_type_sizes": {
+      "B cells": 267,
+      "FCGR3A+ monocytes": 301,
+      "NK cells": 333,
+      "Plasmacytoid dendritic cells": 23,
+      "T cells": 396
+    },
+    "cells": 2904,
+    "cells_in_pseudobulk_groups": 1320,
+    "genes": 26157,
+    "pseudobulk_groups": 5
+  },
+  "interpretation": "eRegulons are inferred TF-region-gene associations (TF and target co-variation, region accessibility-gene correlation and motif enrichment in the same cells); they are not binding, perturbation or causal evidence.",
+  "method": "scenicplus",
+  "regulon_specificity": [
+    {
+      "eregulon_kind": "direct",
+      "group_column": "annotation",
+      "heatmap": "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/rss_heatmap.png",
+      "modality": "gene_based",
+      "path": "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/rss_group_0.tsv",
+      "rank_plot": "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/rss_ranks.png"
+    },
+    {
+      "eregulon_kind": "direct",
+      "group_column": "annotation",
+      "heatmap": "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/rss_heatmap_region_based_direct.png",
+      "modality": "region_based",
+      "path": "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/rss_group_0_region_based_direct.tsv",
+      "rank_plot": "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/rss_ranks_region_based_direct.png"
+    },
+    {
+      "eregulon_kind": "extended",
+      "group_column": "annotation",
+      "heatmap": "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/rss_heatmap_gene_based_extended.png",
+      "modality": "gene_based",
+      "path": "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/rss_group_0_gene_based_extended.tsv",
+      "rank_plot": "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/rss_ranks_gene_based_extended.png"
+    },
+    {
+      "eregulon_kind": "extended",
+      "group_column": "annotation",
+      "heatmap": "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/rss_heatmap_region_based_extended.png",
+      "modality": "region_based",
+      "path": "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/rss_group_0_region_based_extended.tsv",
+      "rank_plot": "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/rss_ranks_region_based_extended.png"
+    },
+    {
+      "eregulon_kind": "direct",
+      "group_column": "cluster",
+      "modality": "gene_based",
+      "path": "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/rss_group_1.tsv"
+    },
+    {
+      "eregulon_kind": "direct",
+      "group_column": "cluster",
+      "modality": "region_based",
+      "path": "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/rss_group_1_region_based_direct.tsv"
+    },
+    {
+      "eregulon_kind": "extended",
+      "group_column": "cluster",
+      "modality": "gene_based",
+      "path": "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/rss_group_1_gene_based_extended.tsv"
+    },
+    {
+      "eregulon_kind": "extended",
+      "group_column": "cluster",
+      "modality": "region_based",
+      "path": "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/rss_group_1_region_based_extended.tsv"
+    }
+  ],
+  "stages": {
+    "stage1_peaks": {
+      "fingerprint": "c095146bb8f133fdd819df5dad435bf24d4a8f277f9933d21791d6dc913e9aca",
+      "metrics": {
+        "cells_in_pseudobulks": 1320,
+        "consensus_peaks": 187083,
+        "consensus_peaks_before_chromosome_filter": 187083,
+        "consensus_peaks_removed_outside_keep_chromosomes": 0,
+        "peaks_per_pseudobulk": {
+          "B_cells": 101337,
+          "FCGR3A_monocytes": 99006,
+          "NK_cells": 75604,
+          "Plasmacytoid_dendritic_cells": 31101,
+          "T_cells": 92478
+        },
+        "pseudobulks": 5
+      },
+      "outputs": {
+        "consensus_regions": "/mnt/storageBig8/work/muratli/PBMC10k_subset/scenicplus_work/stage1_peaks/consensus_regions.bed",
+        "macs2_dir": "/mnt/storageBig8/work/muratli/PBMC10k_subset/scenicplus_work/stage1_peaks/macs2",
+        "pseudobulk_bed_dir": "/mnt/storageBig8/work/muratli/PBMC10k_subset/scenicplus_work/stage1_peaks/pseudobulk_bed",
+        "pseudobulk_bigwig_dir": "/mnt/storageBig8/work/muratli/PBMC10k_subset/scenicplus_work/stage1_peaks/pseudobulk_bigwig"
+      },
+      "reused": false,
+      "versions": {
+        "MACS2": "2.2.9.1",
+        "pycisTopic": "2.0a0",
+        "pyranges": "0.0.111"
+      },
+      "warnings": []
+    },
+    "stage2_cistopic": {
+      "fingerprint": "e03d09249d8c4091473bc24dd275ce4058fea2e63f40440f70027b5d127d6ad2",
+      "metrics": {
+        "barcodes_passing_atac_qc": 1580,
+        "cells_used": 1558,
+        "otsu_thresholds": {
+          "tss_enrichment_otsu_threshold": 23.095532496859303,
+          "unique_fragments_in_peaks_count_otsu_threshold": 4105.493738529434
+        },
+        "qc_thresholds": {
+          "frip_threshold": 0.0,
+          "tss_enrichment_threshold": 23.095532496859303,
+          "unique_fragments_threshold": 4105.493738529434
+        },
+        "region_set_sizes": {
+          "DARs_cell_type/B_cells": 9797,
+          "DARs_cell_type/FCGR3A_monocytes": 12731,
+          "DARs_cell_type/NK_cells": 7807,
+          "DARs_cell_type/T_cells": 6118,
+          "Topics_otsu/Topic1": 6599,
+          "Topics_otsu/Topic10": 4574,
+          "Topics_otsu/Topic11": 7271,
+          "Topics_otsu/Topic12": 7080,
+          "Topics_otsu/Topic13": 5088,
+          "Topics_otsu/Topic14": 7045,
+          "Topics_otsu/Topic15": 6584,
+          "Topics_otsu/Topic16": 9530,
+          "Topics_otsu/Topic17": 9541,
+          "Topics_otsu/Topic18": 7365,
+          "Topics_otsu/Topic19": 9327,
+          "Topics_otsu/Topic2": 7243,
+          "Topics_otsu/Topic20": 7080,
+          "Topics_otsu/Topic3": 5339,
+          "Topics_otsu/Topic4": 6382,
+          "Topics_otsu/Topic5": 5908,
+          "Topics_otsu/Topic6": 8816,
+          "Topics_otsu/Topic7": 6233,
+          "Topics_otsu/Topic8": 6439,
+          "Topics_otsu/Topic9": 10559,
+          "Topics_top_3000/Topic1": 3000,
+          "Topics_top_3000/Topic10": 3000,
+          "Topics_top_3000/Topic11": 3000,
+          "Topics_top_3000/Topic12": 3000,
+          "Topics_top_3000/Topic13": 3000,
+          "Topics_top_3000/Topic14": 3000,
+          "Topics_top_3000/Topic15": 3000,
+          "Topics_top_3000/Topic16": 2998,
+          "Topics_top_3000/Topic17": 3000,
+          "Topics_top_3000/Topic18": 3000,
+          "Topics_top_3000/Topic19": 3000,
+          "Topics_top_3000/Topic2": 3000,
+          "Topics_top_3000/Topic20": 3000,
+          "Topics_top_3000/Topic3": 3000,
+          "Topics_top_3000/Topic4": 3000,
+          "Topics_top_3000/Topic5": 3000,
+          "Topics_top_3000/Topic6": 3000,
+          "Topics_top_3000/Topic7": 3000,
+          "Topics_top_3000/Topic8": 3000,
+          "Topics_top_3000/Topic9": 3000
+        },
+        "regions": 186186,
+        "rna_qc_cells": 2904,
+        "selected_topics": 20,
+        "variable_regions": 35649
+      },
+      "outputs": {
+        "cells": "/mnt/storageBig8/work/muratli/PBMC10k_subset/scenicplus_work/stage2_cistopic/cells_passing_atac_and_rna_qc.tsv",
+        "cistopic_object": "/mnt/storageBig8/work/muratli/PBMC10k_subset/scenicplus_work/stage2_cistopic/cistopic_object.pkl",
+        "qc_dir": "/mnt/storageBig8/work/muratli/PBMC10k_subset/scenicplus_work/stage2_cistopic/qc",
+        "region_set_folder": "/mnt/storageBig8/work/muratli/PBMC10k_subset/scenicplus_work/stage2_cistopic/region_sets",
+        "topic_models": "/mnt/storageBig8/work/muratli/PBMC10k_subset/scenicplus_work/stage2_cistopic/topic_models.pkl"
+      },
+      "reused": false,
+      "versions": {
+        "gensim": "4.3.2",
+        "lda": "3.0.0",
+        "pycisTopic": "2.0a0"
+      },
+      "warnings": [
+        "No DARs passed thresholds for: ['Plasmacytoid_dendritic_cells']"
+      ]
+    },
+    "stage3_motif_databases": {
+      "fingerprint": "bdf23b4c20b8f51c168b8f540466df2107dbbe9fb8303994d54a87b61a458687",
+      "metrics": {
+        "annotated_motif_fraction": 1.0,
+        "checksums": {
+          "ctx_db": "verified",
+          "dem_db": "verified"
+        },
+        "consensus_peak_coverage_fraction": 0.7903,
+        "consensus_peaks": 187083,
+        "consensus_peaks_covered_by_database": 147844,
+        "database_motifs": 5876,
+        "database_regions": 1837304,
+        "dem_database_motifs": 5876
+      },
+      "outputs": {
+        "ctx_db": "/mnt/storageBig8/work/muratli/Coding_Camps/2026/public_data/scenicplus_resources/hg38/cistarget/hg38_screen_v10_clust.regions_vs_motifs.rankings.feather",
+        "dem_db": "/mnt/storageBig8/work/muratli/Coding_Camps/2026/public_data/scenicplus_resources/hg38/cistarget/hg38_screen_v10_clust.regions_vs_motifs.scores.feather",
+        "motif_annotations": "/mnt/storageBig8/work/muratli/Coding_Camps/2026/public_data/scenicplus_resources/hg38/cistarget/motifs-v10nr_clust-nr.hgnc-m0.001-o0.0.tbl"
+      },
+      "reused": false,
+      "versions": {
+        "pyarrow": "15.0.0",
+        "pycistarget": "1.1",
+        "pyranges": "0.0.111"
+      },
+      "warnings": []
+    },
+    "stage4_scenicplus": {
+      "fingerprint": "cb062a193125871a27b9c9e32a148fed08e54189b57190ed473ffc27ad0fe9c3",
+      "metrics": {
+        "direct": {
+          "cells_scored": 1558,
+          "eregulons": 45,
+          "regions": 8674,
+          "target_genes": 3026,
+          "tfs": 24,
+          "triplets": 13412
+        },
+        "extended": {
+          "cells_scored": 1558,
+          "eregulons": 25,
+          "regions": 5929,
+          "target_genes": 2229,
+          "tfs": 14,
+          "triplets": 7394
+        },
+        "extended_eregulons_built": true,
+        "gex_cells": 2904,
+        "gex_genes": 26157
+      },
+      "outputs": {
+        "auc_gene_based_direct": "/mnt/storageBig8/work/muratli/PBMC10k_subset/scenicplus_work/stage4_scenicplus/auc_gene_based_direct.tsv.gz",
+        "auc_gene_based_extended": "/mnt/storageBig8/work/muratli/PBMC10k_subset/scenicplus_work/stage4_scenicplus/auc_gene_based_extended.tsv.gz",
+        "auc_region_based_direct": "/mnt/storageBig8/work/muratli/PBMC10k_subset/scenicplus_work/stage4_scenicplus/auc_region_based_direct.tsv.gz",
+        "auc_region_based_extended": "/mnt/storageBig8/work/muratli/PBMC10k_subset/scenicplus_work/stage4_scenicplus/auc_region_based_extended.tsv.gz",
+        "gex_anndata": "/mnt/storageBig8/work/muratli/PBMC10k_subset/scenicplus_work/stage4_scenicplus/gex.h5ad",
+        "scplus_mudata": "/mnt/storageBig8/work/muratli/PBMC10k_subset/scenicplus_work/stage4_scenicplus/Snakemake/scplusmdata.h5mu",
+        "snakemake_dir": "/mnt/storageBig8/work/muratli/PBMC10k_subset/scenicplus_work/stage4_scenicplus/Snakemake",
+        "triplets_direct": "/mnt/storageBig8/work/muratli/PBMC10k_subset/scenicplus_work/stage4_scenicplus/eregulon_triplets_direct.tsv",
+        "triplets_extended": "/mnt/storageBig8/work/muratli/PBMC10k_subset/scenicplus_work/stage4_scenicplus/eregulon_triplets_extended.tsv"
+      },
+      "reused": false,
+      "versions": {
+        "anndata": "0.10.5.post1",
+        "mudata": "0.2.3",
+        "pycisTopic": "2.0a0",
+        "pycistarget": "1.1",
+        "scenicplus": "1.0a2",
+        "snakemake": "8.5.5"
+      },
+      "warnings": []
+    }
+  },
+  "summaries": [
+    {
+      "eregulon_kind": "direct",
+      "group_column": "annotation",
+      "modality": "gene_based",
+      "path": "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/activity_group_0.tsv"
+    },
+    {
+      "eregulon_kind": "direct",
+      "group_column": "annotation",
+      "modality": "region_based",
+      "path": "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/activity_group_0_region_based_direct.tsv"
+    },
+    {
+      "eregulon_kind": "extended",
+      "group_column": "annotation",
+      "modality": "gene_based",
+      "path": "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/activity_group_0_gene_based_extended.tsv"
+    },
+    {
+      "eregulon_kind": "extended",
+      "group_column": "annotation",
+      "modality": "region_based",
+      "path": "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/activity_group_0_region_based_extended.tsv"
+    },
+    {
+      "eregulon_kind": "direct",
+      "group_column": "cluster",
+      "modality": "gene_based",
+      "path": "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/activity_group_1.tsv"
+    },
+    {
+      "eregulon_kind": "direct",
+      "group_column": "cluster",
+      "modality": "region_based",
+      "path": "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/activity_group_1_region_based_direct.tsv"
+    },
+    {
+      "eregulon_kind": "extended",
+      "group_column": "cluster",
+      "modality": "gene_based",
+      "path": "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/activity_group_1_gene_based_extended.tsv"
+    },
+    {
+      "eregulon_kind": "extended",
+      "group_column": "cluster",
+      "modality": "region_based",
+      "path": "/mnt/storageBig8/work/muratli/PBMC10k_subset/results_run4/regulon/activity_group_1_region_based_extended.tsv"
+    }
+  ],
+  "temp_dir": "/tmp/sp_muratli",
+  "work_dir": "/mnt/storageBig8/work/muratli/PBMC10k_subset/scenicplus_work"
+}
