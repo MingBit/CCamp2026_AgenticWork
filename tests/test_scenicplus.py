@@ -383,6 +383,7 @@ class ScenicPlusTests(unittest.TestCase):
         for check in (test_regions_labels_and_qc_thresholds, test_missing_resources_skip_without_running,
                       test_handoff_stages_reuse_and_aligned_outputs, test_failed_attempt_keeps_files_only_for_same_parameters,
                       test_direct_only_fallback_detection_and_results, test_cell_type_network_filters,
+                      test_activity_heatmap_reserves_room_for_long_labels,
                       test_long_temp_dir_is_refused_before_any_stage_runs,
                       test_single_cell_type_and_stage_failure,
                       test_report_uses_eregulon_outputs):
@@ -391,3 +392,19 @@ class ScenicPlusTests(unittest.TestCase):
         test_snakemake_overrides_and_missing_template_keys()
         test_group_activity_summary_means_over_scored_cells()
         test_regulon_specificity_scores_match_scenicplus_definition()
+
+
+def test_activity_heatmap_reserves_room_for_long_labels(tmp_path):
+    """Long eRegulon names must not squeeze the map into a band (the figure grows instead)."""
+    from PIL import Image
+    from scrna_workflow.tools.report import activity_heatmap
+    values = np.linspace(0, 1, 9 * 20).reshape(9, 20)
+    long_names = [f"{n}_direct_+/+_(123g)_eRegulon" for n in range(20)]
+    sizes = {}
+    for name, columns in (("long", long_names), ("short", [str(n) for n in range(20)])):
+        frame = pd.DataFrame(values, index=[f"c{i}" for i in range(9)], columns=columns)
+        destination = tmp_path / f"{name}.png"
+        activity_heatmap(frame, destination, "title", "colour bar label")
+        sizes[name] = Image.open(destination).size
+    assert sizes["long"][1] > sizes["short"][1]  # taller when labels are long
+    assert sizes["long"][1] > 500 and sizes["long"][0] > sizes["long"][1] * 0.6  # map is not a thin band

@@ -3,6 +3,32 @@ from pathlib import Path
 import json
 from ._downstream_common import _get, _base, _result, _dataset, _json
 
+def activity_heatmap(means, destination, title, colorbar_label, row_label="Cluster"):
+    """Groups x modules heatmap sized for its rotated column labels.
+
+    eRegulon names are long, so the figure reserves height for them instead of letting
+    tight_layout squeeze the map into a band, and is saved with a tight bounding box so
+    the colorbar label is not clipped.
+    """
+    import matplotlib
+    matplotlib.use("Agg")
+    import matplotlib.pyplot as plt
+
+    columns = [str(c) for c in means.columns]
+    label_height = min(4.5, 0.075 * max((len(c) for c in columns), default=10))
+    fig, ax = plt.subplots(figsize=(max(6.0, 0.34 * len(columns) + 2.5),
+                                    max(2.2, 0.32 * len(means)) + label_height + 1.0))
+    plot = ax.imshow(means.to_numpy(dtype=float), cmap="viridis", aspect="auto")
+    ax.set_xticks(range(len(columns)), columns, rotation=90, fontsize=7)
+    ax.set_yticks(range(len(means)), [str(i) for i in means.index], fontsize=8)
+    ax.set(title=title, ylabel=row_label)
+    fig.colorbar(plot, ax=ax, label=colorbar_label, fraction=0.03, pad=0.02)
+    fig.tight_layout()
+    fig.savefig(destination, dpi=200, bbox_inches="tight")
+    plt.close(fig)
+    return str(destination)
+
+
 def report(ctx):
     """Write an artifact-linked scientific report and figures from actual data only."""
     out, cfg, artifacts = _base(ctx, "report")
@@ -75,17 +101,11 @@ def report(ctx):
             chosen = means.var(axis=0).nlargest(min(20, means.shape[1])).index
             means = means[chosen]
             if means.size:
-                fig, ax = plt.subplots(figsize=(max(5, len(chosen) * .35), max(3, len(means) * .3)))
-                plot = ax.imshow(means, cmap="viridis", aspect="auto")
-                ax.set_xticks(range(len(chosen)), chosen, rotation=90)
-                ax.set_yticks(range(len(means)), means.index)
-                ax.set(title="SCENIC+ eRegulon activity (direct, gene-based)" if scenicplus else "Candidate coexpression module activity", ylabel="Cluster")
-                fig.colorbar(plot, ax=ax, label="Mean AUC (cells with ATAC and RNA QC)" if scenicplus else "Mean target log-normalized expression")
-                fig.tight_layout()
                 f = out / ("eregulon_activity_heatmap.png" if scenicplus else "candidate_module_heatmap.png")
-                fig.savefig(f, dpi=300)
-                plt.close(fig)
-                figures.append(str(f))
+                figures.append(activity_heatmap(
+                    means, f,
+                    title="SCENIC+ eRegulon activity (direct, gene-based)" if scenicplus else "Candidate coexpression module activity",
+                    colorbar_label="Mean AUC (cells with ATAC and RNA QC)" if scenicplus else "Mean target log-normalized expression"))
         rssfile = artifacts.get("regulon", {}).get("outputs", {}).get("rss_0")
         if scenicplus and rssfile and Path(rssfile).is_file():
             from ..regulon_scenicplus import plot_rss_heatmap
