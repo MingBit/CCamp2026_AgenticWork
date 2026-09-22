@@ -19,7 +19,10 @@ types, so the results are interpretable, with the caveats below.
   (3 models, 150 iterations) for run time. Launched with `run_scripts/run_subset.sbatch`
   on a SLURM cluster (40 CPUs, 128 GB); see `run_scripts/slurm-6506341.out`.
 - **Run recorded here:** SLURM job 6506341, 2026-09-21, about 2 hours wall clock.
-  Code as committed with these files.
+  Code as committed with these files, except that
+  `report/eregulon_activity_heatmap.png` was re-rendered afterwards from this run's own
+  `regulon/activity_group_1.tsv` (same data and selection) once the figure sizing was
+  fixed; the run itself produced a squashed version of it.
 
 ## Results in brief
 
