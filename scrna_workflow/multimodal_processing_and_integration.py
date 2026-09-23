@@ -1,8 +1,6 @@
 """Xenium and multimodal processing built around the existing core specialists."""
 from pathlib import Path
-import json
 
-from . import core
 from .graph import spatial_cell_graph, plot_spatial_cells, plot_spatial_gene_density
 
 

@@ -10,8 +10,14 @@ if str(project_root) not in sys.path:
     sys.path.insert(0, str(project_root))
 
 from scrna_workflow.multimodal_processing_and_integration import process_xenium
-from scrna_workflow.graph import plot_spatial_gene_density
+from scrna_workflow.graph import plot_spatial_gene_density, export_graph_metrics_md
 from scrna_workflow.downstream import report
+import networkx as nx
+
+
+# How to run in terminal:
+# python /home/ov24456/Downloads/CCamp2026_AgenticWork/CCamp2026_AgenticWork/scrna_workflow/test_xenium_pipeline.py
+
 
 # Configure context with resolved paths relative to the project root
 input_dir = project_root / "public_data" / "xenium_breast_cancer" / "outs"
@@ -34,6 +40,8 @@ def run_pipeline():
     print("Running Xenium preprocessing and spatial graph creation...")
     xenium_results = process_xenium(ctx)
     print("Xenium Process Status:", xenium_results.get("status", "completed"))
+
+    print("Computing spatial graph ROI metrics...")
 
     # 2. Generate target spatial gene expression density plot (EPCAM)
     print("Generating spatial expression plot for EPCAM...")

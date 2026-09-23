@@ -2,10 +2,9 @@
 import hashlib
 import json
 from pathlib import Path
+import os
 
-from matplotlib import pyplot as plt
-import numpy as np
-from scipy import sparse
+import pandas as pd
 
 from .core import _dir, _json, _previous, _result
 
@@ -129,11 +128,30 @@ def plot_spatial_cells(ctx, dataset_path=None):
         fill=False, edgecolor="#e74c3c", linewidth=1.5, linestyle="--"
     )
     axes[0].add_patch(rect)
-    
-    out = _multimodal_dir(ctx) / "spatial_cells_overview.png"
-    fig.savefig(out, dpi=300)
+
+    # Extract cell IDs inside ROI mask
+    roi_nodes = data.obs_names[roi_mask].tolist()
+
+    out_dir = _multimodal_dir(ctx)
+    fig_out = out_dir / "spatial_cells_overview.png"
+
+    # Define metadata columns you wish to display (e.g. total counts and cell area)
+    # You can change this list to match any dataset format (e.g., ["cell_type", "total_counts"])
+
+    edge_path = out_dir / "spatial_cell_edges.csv"
+    if edge_path.exists():
+        edges_df = pd.read_csv(edge_path)
+        export_graph_metrics_md(
+            edges_df,
+            output_dir=str(out_dir),
+            roi_nodes=roi_nodes,
+            node_metadata=data.obs,
+            label_cols=["total_counts", "cell_area"]  # data.obs.columns
+        )
+
+    fig.savefig(fig_out, dpi=300)
     plt.close(fig)
-    return _result(outputs={"overview": str(out)})
+    return _result(outputs={"overview": str(fig_out)})
 
 
 def plot_spatial_gene_density(ctx, dataset_path=None, gene="EPCAM"):
@@ -601,3 +619,187 @@ def integrate_graph_evidence(ctx):
     return _result(outputs=outputs, metrics={"comparison_rows": len(comparison)},
                    warnings=["Integrated graph evidence is exploratory and does not independently validate biological mechanisms."],
                    inputs=[str(pca_path), str(gene_graph_path)] + ([str(marker_path)] if marker_path else []) + ([str(regulon_path)] if regulon_path else []))
+
+
+def export_graph_metrics_md(
+    graph_input,
+    output_dir="multimodal analysis output",
+    roi_nodes=None,
+    top_k=5,
+    node_metadata=None,
+    label_cols=None
+):
+    """
+    Computes graph theory metrics using python-igraph and exports a Markdown report.
+
+    Parameters:
+    -----------
+    graph_input : igraph.Graph, networkx.Graph, or pd.DataFrame
+        Input graph structure.
+    output_dir : str
+        Target directory where 'graph_metrics.md' will be saved.
+    roi_nodes : iterable, optional
+        List/set of ROI node identifiers to compute metrics on the ROI subgraph.
+    top_k : int, optional
+        Number of top nodes to display for each centrality ranking.
+    node_metadata : pd.DataFrame, optional
+        DataFrame containing node metadata indexed by cell/node ID (e.g., data.obs).
+    label_cols : list[str] or str, optional
+        List of column names from node_metadata to include as descriptive node attributes.
+    """
+    import igraph as ig
+    import numpy as np
+
+    os.makedirs(output_dir, exist_ok=True)
+    output_file = os.path.join(output_dir, "graph_metrics.md")
+
+    # Format label_cols parameter
+    if isinstance(label_cols, str):
+        label_cols = [label_cols]
+    elif label_cols is None:
+        label_cols = []
+
+    # 1. Input conversion to igraph.Graph
+    if isinstance(graph_input, pd.DataFrame):
+        has_weight = "weight" in graph_input.columns
+        cols = ["source", "target"] + (["weight"] if has_weight else [])
+        G = ig.Graph.TupleList(graph_input[cols].itertuples(index=False), directed=False, weights=has_weight)
+    elif hasattr(graph_input, "to_undirected"):
+        G = ig.Graph.from_networkx(graph_input)
+    elif isinstance(graph_input, ig.Graph):
+        G = graph_input
+    else:
+        raise ValueError("Unsupported input type. Provide an igraph.Graph, networkx.Graph, or pandas DataFrame.")
+
+    # Retrieve node names
+    if "name" in G.vs.attributes():
+        node_names = G.vs["name"]
+    elif "_nx_name" in G.vs.attributes():
+        node_names = G.vs["_nx_name"]
+    else:
+        node_names = [str(i) for i in range(G.vcount())]
+
+    G.vs["node_id"] = [str(n) for n in node_names]
+
+    # 2. Isolate ROI if provided
+    if roi_nodes is not None:
+        roi_set = set(str(n) for n in roi_nodes)
+        valid_indices = [v.index for v in G.vs if v["node_id"] in roi_set]
+        target_G = G.subgraph(valid_indices)
+        analysis_scope = f"ROI Analysis ({len(valid_indices)} valid nodes)"
+    else:
+        target_G = G
+        analysis_scope = "Global Graph Analysis"
+
+    num_nodes = target_G.vcount()
+    num_edges = target_G.ecount()
+
+    if num_nodes == 0:
+        print("Warning: Graph/ROI contains no valid nodes. Report generation skipped.")
+        return
+
+    # 3. Global Topological Statistics
+    density = target_G.density()
+    is_directed = target_G.is_directed()
+
+    components = target_G.connected_components(mode="weak" if is_directed else "strong")
+    largest_comp_subgraph = components.giant()
+
+    try:
+        avg_path_length = largest_comp_subgraph.average_path_length(directed=is_directed)
+        diameter = largest_comp_subgraph.diameter(directed=is_directed)
+    except Exception:
+        avg_path_length = "N/A"
+        diameter = "N/A"
+
+    avg_clustering = target_G.transitivity_avglocal_undirected(mode="zero")
+
+    # 4. Centrality Calculations
+    denom = max(1, num_nodes - 1)
+    degrees = target_G.degree()
+    degree_cent = {v["node_id"]: d / denom for v, d in zip(target_G.vs, degrees)}
+
+    betweenness_scores = target_G.betweenness(directed=is_directed, normalized=True)
+    betweenness_cent = {v["node_id"]: b for v, b in zip(target_G.vs, betweenness_scores)}
+
+    closeness_scores = target_G.closeness(normalized=True)
+    closeness_cent = {v["node_id"]: c for v, c in zip(target_G.vs, closeness_scores)}
+
+    def get_top(metric_dict, k):
+        return sorted(metric_dict.items(), key=lambda x: x[1], reverse=True)[:k]
+
+    top_hubs = get_top(degree_cent, top_k)
+    top_bridges = get_top(betweenness_cent, top_k)
+    top_closeness = get_top(closeness_cent, top_k)
+
+    # 5. Helper function to build dynamic Markdown ranking tables
+    def build_ranking_table(top_list, metric_title):
+        headers = ["Rank", "Node"] + [c.replace("_", " ").title() for c in label_cols] + ["Score"]
+        table_lines = [
+            f"\n### Top {top_k} {metric_title}",
+            "| " + " | ".join(headers) + " |",
+            "| " + " | ".join([":---"] * len(headers)) + " |"
+        ]
+
+        for idx, (node, score) in enumerate(top_list, 1):
+            row = [str(idx), f"`{node}`"]
+
+            # Lookup metadata row for current node
+            meta_row = None
+            if node_metadata is not None and not node_metadata.empty:
+                if node in node_metadata.index:
+                    meta_row = node_metadata.loc[node]
+                elif str(node) in node_metadata.index:
+                    meta_row = node_metadata.loc[str(node)]
+                elif str(node).isdigit() and int(node) in node_metadata.index:
+                    meta_row = node_metadata.loc[int(node)]
+
+            for col in label_cols:
+                if meta_row is not None and col in meta_row:
+                    val = meta_row[col]
+                    row.append(f"`{val:.2f}`" if isinstance(val, (float, np.floating)) else f"`{val}`")
+                else:
+                    row.append("`N/A`")
+
+            row.append(f"`{score:.4f}`")
+            table_lines.append("| " + " | ".join(row) + " |")
+
+        return table_lines
+
+    # 6. Build Markdown Content
+    largest_clique_size = target_G.clique_number()
+    try:
+        num_cliques = len(target_G.maximal_cliques())
+    except Exception:
+        num_cliques = "N/A"
+
+    md = [
+        "# Graph Theory Metrics Summary\n",
+        f"**Scope:** `{analysis_scope}`  ",
+        f"**Graph Type:** `{'Directed' if is_directed else 'Undirected'}`\n",
+        "---",
+        "## 1. Global Topology & Connectivity",
+        f"- **Total Nodes:** `{num_nodes}`",
+        f"- **Total Edges:** `{num_edges}`",
+        f"- **Graph Density:** `{density:.4f}`",
+        f"- **Connected Components:** `{len(components)}`",
+        f"- **Average Clustering Coefficient:** `{avg_clustering:.4f}`",
+        f"- **Largest Component Diameter:** `{diameter}`",
+        f"- **Largest Component Avg Path Length:** `{avg_path_length if isinstance(avg_path_length, str) else f'{avg_path_length:.4f}'}`\n",
+        "## 2. Key Centrality Rankings"
+    ]
+
+    md.extend(build_ranking_table(top_hubs, "Hubs (Degree Centrality)"))
+    md.extend(build_ranking_table(top_bridges, "Bridges (Betweenness Centrality)"))
+    md.extend(build_ranking_table(top_closeness, "Closest Nodes (Closeness Centrality)"))
+
+    md.extend([
+        "\n## 3. Substructures & Cliques",
+        f"- **Total Maximal Cliques:** `{num_cliques}`",
+        f"- **Largest Clique Size:** `{largest_clique_size}` nodes"
+    ])
+
+    with open(output_file, "w", encoding="utf-8") as f:
+        f.write("\n".join(md))
+
+    print(f"[+] Metrics successfully written to {output_file}")
